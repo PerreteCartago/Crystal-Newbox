@@ -149,7 +149,7 @@ PrintPartyMonPage1:
 	call Request1bpp
 
 	ld de, StatsScreenPageTilesGFX + 14 tiles ; shiny icon
-	ld hl, vTiles2 tile "⁂"
+	ld hl, vTiles2 tile "■"
 	lb bc, BANK(StatsScreenPageTilesGFX), 1
 	call Get2bpp
 
@@ -322,7 +322,7 @@ PlaceGenderAndShininess:
 	farcall CheckShininess
 	ret nc
 	hlcoord 18, 2
-	ld [hl], "⁂"
+	ld [hl], "■"
 	ret
 
 PrintParty_OTString:
