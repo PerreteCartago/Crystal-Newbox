@@ -134,9 +134,9 @@
 	charmap "■",         $d7
 	charmap "▲",         $d8
 	charmap "☎",        $d9
-	charmap "ó>",        $da ; VIVA ESPAÑA
-	charmap "<ñ>",       $db ; VIVA ESPAÑA
-	charmap "<í>",       $dc ; VIVA ESPAÑA
+	charmap "ó",         $da ; VIVA ESPAÑA
+	charmap "ñ",         $db ; VIVA ESPAÑA
+	charmap "í",         $dc ; VIVA ESPAÑA
 	charmap "“",         $dd ; opening quote
 	charmap "”",         $de ; closing quote
 

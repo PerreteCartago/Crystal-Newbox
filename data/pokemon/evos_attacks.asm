@@ -176,8 +176,8 @@ CaterpieEvosAttacks:
 MetapodEvosAttacks:
 	db EVOLVE_LEVEL, 10, BUTTERFREE
 	db 0 ; no more evolutions
-	db 1, HARDEN
-	db 7, HARDEN
+	db 1, DEFENSE_CURL
+	db 7, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
 ButterfreeEvosAttacks:
@@ -204,8 +204,8 @@ WeedleEvosAttacks:
 KakunaEvosAttacks:
 	db EVOLVE_LEVEL, 10, BEEDRILL
 	db 0 ; no more evolutions
-	db 1, HARDEN
-	db 7, HARDEN
+	db 1, DEFENSE_CURL
+	db 7, DEFENSE_CURL
 	db 0 ; no more level-up moves
 
 BeedrillEvosAttacks:
@@ -985,7 +985,7 @@ GeodudeEvosAttacks:
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
 	db 21, SELFDESTRUCT
-	db 26, HARDEN
+	db 26, DEFENSE_CURL
 	db 31, ROLLOUT
 	db 36, EARTHQUAKE
 	db 41, EXPLOSION
@@ -1001,7 +1001,7 @@ GravelerEvosAttacks:
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
 	db 21, SELFDESTRUCT
-	db 27, HARDEN
+	db 27, DEFENSE_CURL
 	db 34, ROLLOUT
 	db 41, EARTHQUAKE
 	db 48, EXPLOSION
@@ -1017,7 +1017,7 @@ GolemEvosAttacks:
 	db 11, ROCK_THROW
 	db 16, MAGNITUDE
 	db 21, SELFDESTRUCT
-	db 27, HARDEN
+	db 27, DEFENSE_CURL
 	db 34, ROLLOUT
 	db 41, EARTHQUAKE
 	db 48, EXPLOSION
@@ -1184,7 +1184,7 @@ GrimerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, POUND
-	db 5, HARDEN
+	db 5, DEFENSE_CURL
 	db 10, DISABLE
 	db 16, SLUDGE
 	db 23, MINIMIZE
@@ -1198,8 +1198,8 @@ MukEvosAttacks:
 	; moves are not sorted by level
 	db 1, POISON_GAS
 	db 1, POUND
-	db 1, HARDEN
-	db 33, HARDEN
+	db 1, DEFENSE_CURL
+	db 33, DEFENSE_CURL
 	db 37, DISABLE
 	db 45, SLUDGE
 	db 23, MINIMIZE
@@ -1281,7 +1281,7 @@ OnixEvosAttacks:
 	db 1, SCREECH
 	db 10, BIND
 	db 14, ROCK_THROW
-	db 23, HARDEN
+	db 23, DEFENSE_CURL
 	db 27, RAGE
 	db 36, SANDSTORM
 	db 40, SLAM
@@ -1324,7 +1324,7 @@ KrabbyEvosAttacks:
 	db 1, BUBBLE
 	db 5, LEER
 	db 12, VICEGRIP
-	db 16, HARDEN
+	db 16, DEFENSE_CURL
 	db 23, STOMP
 	db 27, GUILLOTINE
 	db 34, PROTECT
@@ -1338,7 +1338,7 @@ KinglerEvosAttacks:
 	db 1, VICEGRIP
 	db 5, LEER
 	db 12, VICEGRIP
-	db 16, HARDEN
+	db 16, DEFENSE_CURL
 	db 23, STOMP
 	db 27, GUILLOTINE
 	db 38, PROTECT
@@ -1631,7 +1631,7 @@ StaryuEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, STARMIE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, HARDEN
+	db 1, DEFENSE_CURL
 	db 7, WATER_GUN
 	db 13, RAPID_SPIN
 	db 19, RECOVER
@@ -1732,7 +1732,7 @@ PinsirEvosAttacks:
 	db 7, FOCUS_ENERGY
 	db 13, BIND
 	db 19, SEISMIC_TOSS
-	db 25, HARDEN
+	db 25, DEFENSE_CURL
 	db 31, GUILLOTINE
 	db 37, SUBMISSION
 	db 43, SWORDS_DANCE
@@ -1896,7 +1896,7 @@ KabutoEvosAttacks:
 	db EVOLVE_LEVEL, 40, KABUTOPS
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, HARDEN
+	db 1, DEFENSE_CURL
 	db 10, ABSORB
 	db 19, LEER
 	db 28, SAND_ATTACK
@@ -1908,7 +1908,7 @@ KabutoEvosAttacks:
 KabutopsEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, HARDEN
+	db 1, DEFENSE_CURL
 	db 1, ABSORB
 	db 10, ABSORB
 	db 19, LEER
@@ -2059,7 +2059,7 @@ ChikoritaEvosAttacks:
 	db EVOLVE_LEVEL, 16, BAYLEEF
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
+	db 1, SILVER_WIND
 	db 8, RAZOR_LEAF
 	db 12, REFLECT
 	db 15, POISONPOWDER
@@ -2773,7 +2773,7 @@ GligarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 6, SAND_ATTACK
-	db 13, HARDEN
+	db 13, DEFENSE_CURL
 	db 20, QUICK_ATTACK
 	db 28, FAINT_ATTACK
 	db 36, SLASH
@@ -2787,7 +2787,7 @@ SteelixEvosAttacks:
 	db 1, SCREECH
 	db 10, BIND
 	db 14, ROCK_THROW
-	db 23, HARDEN
+	db 23, DEFENSE_CURL
 	db 27, RAGE
 	db 36, SANDSTORM
 	db 40, SLAM
@@ -2826,7 +2826,7 @@ QwilfishEvosAttacks:
 	db 1, SPIKES
 	db 1, TACKLE
 	db 1, POISON_STING
-	db 10, HARDEN
+	db 10, DEFENSE_CURL
 	db 10, MINIMIZE
 	db 19, WATER_GUN
 	db 28, PIN_MISSILE
@@ -2921,7 +2921,7 @@ SlugmaEvosAttacks:
 	db 1, SMOG
 	db 8, EMBER
 	db 15, ROCK_THROW
-	db 22, HARDEN
+	db 22, DEFENSE_CURL
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
 	db 43, ROCK_SLIDE
@@ -2935,7 +2935,7 @@ MagcargoEvosAttacks:
 	db 1, ROCK_THROW
 	db 8, EMBER
 	db 15, ROCK_THROW
-	db 22, HARDEN
+	db 22, DEFENSE_CURL
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
 	db 48, ROCK_SLIDE
@@ -2971,7 +2971,7 @@ PiloswineEvosAttacks:
 CorsolaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 7, HARDEN
+	db 7, DEFENSE_CURL
 	db 13, BUBBLE
 	db 19, RECOVER
 	db 25, BUBBLEBEAM

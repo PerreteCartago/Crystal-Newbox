@@ -174,6 +174,28 @@ SetDefaultBGPAndOBP::
 	pop de
 	ret
 
+SetPalettes::
+; Inits the Palettes
+; depending on the system the monochromes palettes or color palettes
+	ldh a, [hCGB]
+	and a
+	jr nz, .SetPalettesForGameBoyColor
+	ld a, %11100100
+	ldh [rBGP], a
+	ld a, %11010000
+	ldh [rOBP0], a
+	ldh [rOBP1], a
+	ret
+
+.SetPalettesForGameBoyColor:
+	push de
+	ld a, %11100100
+	call DmgToCgbBGPals
+	lb de, %11100100, %11100100
+	call DmgToCgbObjPals
+	pop de
+	ret
+
 ClearPalettes::
 ; Make all palettes white
 

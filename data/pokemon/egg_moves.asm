@@ -667,7 +667,7 @@ ShuckleEggMoves:
 	db -1 ; end
 
 HeracrossEggMoves:
-	db HARDEN
+	db DEFENSE_CURL
 	db BIDE
 	db FLAIL
 	db -1 ; end
