@@ -13,6 +13,76 @@ ShowLinkBattleParticipants:
 	ret
 
 FindFirstAliveMonAndStartBattle:
+; First we do environment checks. Adapt this however you want. Since both Forests and Caves use the "CAVE" environment,
+; we'll do a check for the forest environment first. In this case, it's using Ilex Forest.
+
+	ld a, [wMapGroup]
+	ld b, a	
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp LANDMARK_ILEX_FOREST
+	jr z, .forestpal
+
+	call GetMapEnvironment
+	cp DUNGEON
+	jr z, .indoorpal
+
+	call GetMapEnvironment  
+	cp INDOOR
+	jr z, .indoorpal
+
+	call GetMapEnvironment	  
+	cp CAVE
+	jr z, .cavepal
+	  
+ ; Now we check for the Time of Day 
+    ld a, [wTimeOfDay]
+	cp DAY_F
+    jr z, .daypal
+
+   ld a, [wTimeOfDay]
+	cp MORN_F
+    jr z, .daypal
+	
+    ld a, [wTimeOfDay]
+	cp NITE_F
+    jr z, .nightpal
+
+
+.indoorpal
+	ld a, 0
+	ld [wBattleTimeOfDay], a
+	jr .timeofdaypalset 
+	
+.cavepal
+	ld a, 2
+	ld [wBattleTimeOfDay], a	
+	jr .timeofdaypalset 
+
+.forestpal
+	ld a, 3
+	ld [wBattleTimeOfDay], a	
+	jr .timeofdaypalset 
+
+.daypal
+    ld a, 0
+	ld [wBattleTimeOfDay], a
+	jr .timeofdaypalset
+
+.nightpal
+    ld a, 1
+	ld [wBattleTimeOfDay], a
+	jr .timeofdaypalset 
+
+.timeofdaypalset
+	xor a
+	ldh [hMapAnims], a
+	call DelayFrame
+	ld b, PARTY_LENGTH
+	ld hl, wPartyMon1HP
+	ld de, PARTYMON_STRUCT_LENGTH - 1	
+
 	xor a
 	ldh [hMapAnims], a
 	call DelayFrame

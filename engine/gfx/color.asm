@@ -492,6 +492,131 @@ LoadPalette_White_Col1_Col2_Black:
 	ld a, BANK(wBGPals1)
 	ldh [rSVBK], a
 
+; A double-check to see whether Stat Pages 1, 2 or 3 are active, to make sure that palettes stay consistent when switching between pages and Pokemon, 
+; set them to day palette to avoid graphical error. Assuming you added a fourth stats page, we skip the 0 check here due to the value's default state
+; being 0, which causes inconsistent battle palette loading when on particular tiles due to memory overlap, but that's handled by the Stats Screen 
+; initialization in the prior steps.
+
+.StatsFlags
+	ld a, [wStatsScreenFlags]
+	cp 1
+	jr z, .day
+	cp 2
+	jr z, .day
+	cp 3
+	jr z, .day
+
+; Check whether the weather is Sunny (re: Sunny Day), set to day palette.	
+
+	ld a, [wBattleWeather]
+	cp WEATHER_SUN
+	jr z, .day
+
+	ld a, [wBattleTimeOfDay]
+	and a
+	jr z, .day
+
+	ld a, [wBattleTimeOfDay]
+	cp 1
+	jr z, .night
+	
+	ld a, [wBattleTimeOfDay]
+	cp 2
+	jr z, .cave
+
+	ld a, [wBattleTimeOfDay]
+	cp 3
+	jr z, .forest
+
+
+;  Below are the sections which call the correct colors, formatted into easily marked commented blocks, for easy recognition amongst the extended code, 
+;  which can be easily copy+pasted for your own custom palettes.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	NIGHT START
+.night
+;call background colors
+	ld a, LOW(PALRGB_NIGHT)
+	ld [de], a
+	inc de
+	ld a, HIGH(PALRGB_NIGHT)
+	ld [de], a
+	inc de
+
+
+;call sprite colors
+	call NightColors
+	ld c, 2 * PAL_COLOR_SIZE
+
+	jr .black
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; NIGHT END
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; CAVE START
+.cave
+;call background colors
+	ld a, LOW(PALRGB_CAVE)
+	ld [de], a
+	inc de
+	ld a, HIGH(PALRGB_CAVE)
+	ld [de], a
+	inc de
+	
+
+;call sprite colors
+	call CaveColors
+	ld c, 2 * PAL_COLOR_SIZE
+
+	jr .black
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; CAVE END
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; FOREST START
+.forest
+;call background colors
+	ld a, LOW(PALRGB_FOREST)
+	ld [de], a
+	inc de
+	ld a, HIGH(PALRGB_FOREST)
+	ld [de], a
+	inc de
+	
+
+;call sprite colors
+	call ForestColors
+	ld c, 2 * PAL_COLOR_SIZE
+
+	jr .black
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; FOREST END
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; DAY START
+.day
+;call background colors
+	ld a, LOW(PALRGB_WHITE)
+	ld [de], a
+	inc de
+	ld a, HIGH(PALRGB_WHITE)
+	ld [de], a
+	inc de
+;call sprite colors    
+	ld c, 2 * PAL_COLOR_SIZE
+
+.loop
+	ld a, [hli]
+	ld [de], a
+	inc de
+	dec c
+	jr nz, .loop
+
+.black
+	xor a
+	ld [de], a
+	inc de
+	ld [de], a
+	inc de
+
+	pop af
+	ldh [rSVBK], a
+	ret
+
 	ld a, LOW(PALRGB_WHITE)
 	ld [de], a
 	inc de
@@ -500,12 +625,6 @@ LoadPalette_White_Col1_Col2_Black:
 	inc de
 
 	ld c, 2 * PAL_COLOR_SIZE
-.loop
-	ld a, [hli]
-	ld [de], a
-	inc de
-	dec c
-	jr nz, .loop
 
 	xor a
 	ld [de], a
@@ -1365,3 +1484,287 @@ INCLUDE "gfx/beta_poker/beta_poker.pal"
 
 SlotMachinePals:
 INCLUDE "gfx/slots/slots.pal"
+
+NightColors:
+	call NightColorSwap
+
+; b = gggrrrrr, c = 0bbbbbGG	
+.loop
+	ld a, b
+	ld [de], a
+	inc de
+	inc hl
+	
+	ld a, c
+	ld [de], a
+	inc de
+	inc hl
+	
+	call NightColorSwap
+	
+; b = gggrrrrr, c = 0bbbbbGG
+.loop2
+	ld a, b
+	ld [de], a
+	inc hl
+	inc de
+
+	ld a, c
+	ld [de], a
+	inc hl
+	inc de
+
+	ret
+	
+NightColorSwap:
+	push de
+	
+; red
+	ld a, [hl] ; gggrrrrr
+	and $1f ; 00011111 -> 000rrrrr
+
+	ld e, a ; red in e
+
+;green
+	ld a, [hli] ; gggrrrrr
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a 
+	ld a, [hl] ; 0bbbbbGG
+	and 3 ; 00000011 -> 000000GG
+	or b ; 000000GG + ggg00000
+	swap a ; ggg0 00GG -> 00GGggg0
+	rrca ; 000GGggg
+
+	ld d, a ; green in d
+
+;blue
+	ld a, [hld] ; 0bbbbbGG
+	and $7c ; 1111100 -> 0bbbbb00
+
+	ld c, a ; blue in c
+
+;modify colors here
+	srl e ; 1/2 red
+	srl d ; 1/2 green
+
+; 3/4 blue	
+	ld a, c
+	rrca ; 1/2
+	ld b, a
+	rrca ; 1/4
+	add b ; 2/4 + 1/4 = 3/4
+	and %01111100 ; mask the blue bits
+	ld c, a
+
+;reassemble green
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and 3 ; 00000011 -> 000000GG
+	ld d, a
+
+;red in e, low green in b, high green in d, blue in c
+	ld a, e 
+	or b ; 000rrrrr + ggg00000
+	ld b, a ; gggrrrrr
+	ld a, d
+	or c ; 0bbbbb00 + 000000GG
+	ld c, a ; 0bbbbbGG
+	pop de
+	ret
+
+CaveColors:
+	call CaveColorSwap
+	
+; b = gggrrrrr, c = 0bbbbbGG	
+.loop
+	ld a, b
+	ld [de], a
+	inc de
+	inc hl
+	
+	ld a, c
+	ld [de], a
+	inc de
+	inc hl
+	
+	call CaveColorSwap
+	
+; b = gggrrrrr, c = 0bbbbbGG
+.loop2
+	ld a, b
+	ld [de], a
+	inc hl
+	inc de
+	
+	ld a, c
+	ld [de], a
+	inc hl
+	inc de
+	
+	ret
+	
+CaveColorSwap:   
+	push de
+	
+; red
+	ld a, [hl] ; gggrrrrr
+	and $1f ; 00011111 -> 000rrrrr
+	
+	ld e, a ; red in e
+	
+;green
+	ld a, [hli] ; gggrrrrr
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a 
+	ld a, [hl] ; 0bbbbbGG
+	and 3 ; 00000011 -> 000000GG
+	or b ; 000000GG + ggg00000
+	swap a ; ggg0 00GG -> 00GGggg0+	rrca ; 000GGggg
+	
+	ld d, a ; green in d
+
+;blue
+	ld a, [hld] ; 0bbbbbGG
+	and $7c ; 1111100 -> 0bbbbb00
+	
+	ld c, a ; blue in c
+
+;modify colors here
+
+    
+	srl e ; 1/2 red
+	srl d ; 1/2 green
+	srl d ; 1/2 green
+   
+; 3/4 blue	
+	ld a, c
+	rrca ; 1/2
+	ld b, a
+	rrca ; 1/4
+	add b ; 2/4 + 1/4 = 3/4
+	and %01111100 ; mask the blue bits
+	ld c, a
+
+;reassemble green
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and 3 ; 00000011 -> 000000GG
+	ld d, a
+	
+;red in e, low green in b, high green in d, blue in c
+	ld a, e 
+	or b ; 000rrrrr + ggg00000
+	ld b, a ; gggrrrrr
+	ld a, d
+	or c ; 0bbbbb00 + 000000GG
+	ld c, a ; 0bbbbbGG
+	pop de
+	ret
+
+ForestColors:
+	call ForestColorSwap
+	
+; b = gggrrrrr, c = 0bbbbbGG	
+.loop
+	ld a, b
+	ld [de], a
+	inc de
+	inc hl
+	
+	ld a, c
+	ld [de], a
+	inc de
+	inc hl
+	
+	call ForestColorSwap
+	
+; b = gggrrrrr, c = 0bbbbbGG
+.loop2
+	ld a, b
+	ld [de], a
+	inc hl
+	inc de
+	
+	ld a, c
+	ld [de], a
+	inc hl
+	inc de
+	
+	ret
+	
+ForestColorSwap: 
+	push de
+	
+; red
+	ld a, [hl] ; gggrrrrr
+	and $1f ; 00011111 -> 000rrrrr
+	
+	ld e, a ; red in e
+	
+;green
+	ld a, [hli] ; gggrrrrr
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a 
+	ld a, [hl] ; 0bbbbbGG
+	and 3 ; 00000011 -> 000000GG
+	or b ; 000000GG + ggg00000
+	swap a ; ggg0 00GG -> 00GGggg0+	rrca ; 000GGggg
+	
+	ld d, a ; green in d
+
+;blue
+	ld a, [hld] ; 0bbbbbGG
+	and $7c ; 1111100 -> 0bbbbb00
+	
+	ld c, a ; blue in c
+
+;modify colors here
+
+    
+	srl e ; 1/2 red
+	srl d ; 1/2 green
+	srl d ; 1/2 green
+   
+	
+; 3/4 blue	
+	ld a, c
+	rrca ; 1/2
+	ld b, a
+	rrca ; 1/4
+	add b ; 2/4 + 1/4 = 3/4
+	and %01111100 ; mask the blue bits
+	ld c, a
+
+;reassemble green
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and $e0 ; 11100000 -> ggg00000
+	ld b, a
+	ld a, d
+	rlca ; 00GGggg0
+	swap a ; 00GG ggg0 -> ggg000GG
+	and 3 ; 00000011 -> 000000GG
+	ld d, a
+	
+;red in e, low green in b, high green in d, blue in c
+	ld a, e 
+	or b ; 000rrrrr + ggg00000
+	ld b, a ; gggrrrrr
+	ld a, d
+	or c ; 0bbbbb00 + 000000GG
+	ld c, a ; 0bbbbbGG
+	pop de
+	ret

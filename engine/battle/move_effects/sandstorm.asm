@@ -7,6 +7,7 @@ BattleCommand_StartSandstorm:
 	ld [wBattleWeather], a
 	ld a, 5
 	ld [wWeatherCount], a
+	farcall _CGB_BattleColors
 	call AnimateCurrentMove
 	ld hl, SandstormBrewedText
 	jp StdBattleTextbox

@@ -7,6 +7,9 @@ DEF PAL_COLOR_SIZE EQU 2
 DEF PALETTE_SIZE EQU NUM_PAL_COLORS * PAL_COLOR_SIZE
 
 DEF PALRGB_WHITE EQU palred 31 + palgreen 31 + palblue 31 ; $7fff
+DEF PALRGB_NIGHT EQU palred 20 + palgreen 20 + palblue 31
+DEF PALRGB_CAVE EQU palred 31 + palgreen 20 + palblue 20
+DEF PALRGB_FOREST EQU palred 9 + palgreen 18 + palblue 20
 
 DEF SCREEN_WIDTH  EQU 20 ; tiles
 DEF SCREEN_HEIGHT EQU 18 ; tiles

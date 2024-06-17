@@ -130,8 +130,10 @@ wSpriteUpdatesEnabled:: db
 wUnusedScriptByte:: db
 
 wMapTimeOfDay:: db
+wBattleTimeOfDay:: db
+wBattleTimeOfDayBackup:: db
 
-	ds 3
+	ds 1
 
 wPrinterConnectionOpen:: db
 wPrinterOpcode:: db
@@ -551,6 +553,9 @@ wBattleWeather::
 ; 05 sunliight faded
 ; 06 sandstorm subsided
 	db
+
+wBattleWeatherBackup::
+   db
 
 wWeatherCount::
 ; # turns remaining
@@ -1860,7 +1865,7 @@ wGBPrinterBrightness::
 ;   darkest:  $7F
 	db
 wOptions2::
-; bit 1: menu account off/on
+; bit 1: menu clock off/on
 	db
 	ds 2
 wOptionsEnd::
