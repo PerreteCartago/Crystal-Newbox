@@ -198,14 +198,9 @@ Text_ReceivedGlacierBadge:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	text "That BADGE will"
-	line "raise the SPECIAL"
-	cont "stats of #MON."
-
-	para "It also lets your"
-	line "#MON use WHIRL-"
-	cont "POOL to get across"
-	cont "real whirlpools."
+	text "It lets your #MON"
+	line "use WHIRLPOOL"
+	cont "out of battle."
 
 	para "And this… This is"
 	line "a gift from me!"
