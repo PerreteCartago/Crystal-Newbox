@@ -10,7 +10,7 @@ SaveMenu:
 	call AskOverwriteSaveFile
 	jr c, .refused
 	call PauseGameLogic
-	call _SavingDontTurnOffThePower
+	call SavedTheGame
 	call ResumeGameLogic
 	call ExitMenu
 	and a
@@ -41,7 +41,7 @@ Link_SaveGame:
 	ret c
 ForceGameSave:
 	call PauseGameLogic
-	call _SavingDontTurnOffThePower
+	call SavedTheGame
 	call ResumeGameLogic
 	and a
 	ret
@@ -86,10 +86,6 @@ AddHallOfFameEntry:
 		"sGSBallFlagBackup is no longer located at 01:be44."
 	vc_assert GS_BALL_AVAILABLE == $b, \
 		"GS_BALL_AVAILABLE is no longer equal to $b."
-	ret
-
-SaveGameData:
-	call _SaveGameData
 	ret
 
 AskOverwriteSaveFile:
@@ -150,18 +146,20 @@ CompareLoadedAndSavedPlayerID:
 	cp c
 	ret
 
-_SavingDontTurnOffThePower:
-	call SavingDontTurnOffThePower
 SavedTheGame:
-	call _SaveGameData
-	; wait 32 frames
-	ld c, 32
-	call DelayFrames
+	ld hl, wOptions
+	set NO_TEXT_SCROLL, [hl]
+	push hl
+	ld hl, .saving_text
+	call PrintText
+	pop hl
+	res NO_TEXT_SCROLL, [hl]
+	call SaveGameData
 	; copy the original text speed setting to the stack
 	ld a, [wOptions]
 	push af
-	; set text speed to medium
-	ld a, TEXT_DELAY_MED
+	; set text speed to fast
+	ld a, TEXT_DELAY_FAST
 	ld [wOptions], a
 	; <PLAYER> saved the game!
 	ld hl, SavedTheGameText
@@ -171,13 +169,13 @@ SavedTheGame:
 	ld [wOptions], a
 	ld de, SFX_SAVE
 	call WaitPlaySFX
-	call WaitSFX
-	; wait 30 frames
-	ld c, 30
-	call DelayFrames
-	ret
+	jp WaitSFX
 
-_SaveGameData:
+.saving_text
+	text "SAVING…"
+	done
+
+SaveGameData:
 	ld a, TRUE
 	ld [wSaveFileExists], a
 	farcall StageRTCTimeForSave
@@ -312,6 +310,10 @@ SavingDontTurnOffThePower:
 	ld c, 16
 	call DelayFrames
 	ret
+
+SavingDontTurnOffThePowerText:
+	text_far _SavingDontTurnOffThePowerText
+	text_end
 
 ErasePreviousSave:
 	call EraseHallOfFame
@@ -847,10 +849,6 @@ Checksum:
 
 WouldYouLikeToSaveTheGameText:
 	text_far _WouldYouLikeToSaveTheGameText
-	text_end
-
-SavingDontTurnOffThePowerText:
-	text_far _SavingDontTurnOffThePowerText
 	text_end
 
 SavedTheGameText:
