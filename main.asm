@@ -701,6 +701,10 @@ SECTION "VWF", ROMX
 INCLUDE "engine/gfx/vwf.asm"
 
 
+SECTION "Time Of Day Images", ROMX
+
+INCLUDE "gfx/timeofday_images.asm"
+
 SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
 
 ; The end of the ROM is taken up by checksums of the content, apparently used
