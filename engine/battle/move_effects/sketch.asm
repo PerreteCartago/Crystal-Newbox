@@ -11,8 +11,7 @@ BattleCommand_Sketch:
 ; If the opponent has a substitute up, fail.
 	call CheckSubstituteOpp
 	jp nz, .fail
-; If the opponent is transformed, fail.
-; BUG: A Transformed Pokémon can use Sketch and learn otherwise unobtainable moves (see docs/bugs_and_glitches.md)
+; If the user is transformed, fail.
 	ld a, BATTLE_VARS_SUBSTATUS5_OPP
 	call GetBattleVarAddr
 	bit SUBSTATUS_TRANSFORMED, [hl]
