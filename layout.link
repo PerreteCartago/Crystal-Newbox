@@ -143,7 +143,6 @@ ROMX $32
 	"bank32"
 	"The End"
 ROMX $33
-	"Move Animations"
 	"Extra Songs 2"
 ROMX $34
 	"Pic Animations 1"
@@ -308,6 +307,8 @@ ROMX $77
 ROMX $78
 	"Debug Room"
 	"Tileset Data 8"
+ROMX $79
+	"Move Animations"
 ROMX $7b
 	"Battle Tower Text"
 ROMX $7c
