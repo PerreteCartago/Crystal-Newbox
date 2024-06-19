@@ -162,6 +162,10 @@ INCLUDE "data/trainers/parties.asm"
 SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
+
+
+SECTION "Effect Command", ROMX
+
 INCLUDE "data/battle/effect_command_pointers.asm"
 
 
