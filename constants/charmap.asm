@@ -47,8 +47,10 @@
 	charmap "№",         $74
 
 ; Actual characters (from other graphics files)
-
 	charmap " ",         $7f ; gfx/frames/space.png
+
+	; needed for StatsScreen_PlaceShinyIcon and PrintPartyMonPage1
+	charmap "⁂",         $3f ; gfx/stats/stats_tiles.png, tile 14
 
 ; Actual characters (from gfx/font/font.png)
 

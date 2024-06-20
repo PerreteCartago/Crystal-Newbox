@@ -3003,10 +3003,9 @@ endr
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
 
-
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
-; wMap1Object - wMap15Object
+; wMap1Object - wMap17Object
 for n, 1, NUM_OBJECTS
 wMap{d:n}Object:: map_object wMap{d:n}
 endr
@@ -3189,7 +3188,6 @@ wMobileBattleRoomSceneID::                        db
 
 wNumBalls:: db
 wBalls: ds MAX_BALLS * 2 + 1
-	ds 23
 
 ; fight counts
 wJackFightCount::    db
@@ -3228,7 +3226,7 @@ wEventFlags:: flag_array NUM_EVENTS
 
 wCurBox:: db
 
-	ds 128
+	ds 117
 
 wCelebiEvent::
 ; bit 2: forest is restless

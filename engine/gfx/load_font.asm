@@ -16,7 +16,6 @@ Get2bppOptionalHDMA: ; unreferenced
 	jp Get2bpp
 
 _LoadStandardFont::
-
 	ld de, Font
 	ld hl, vTiles1
 	lb bc, BANK(Font), 32 ; "A" to "]"
