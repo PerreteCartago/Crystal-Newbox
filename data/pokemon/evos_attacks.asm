@@ -519,6 +519,7 @@ JigglypuffEvosAttacks:
 	db 29, REST
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
+	db 40, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
@@ -526,7 +527,7 @@ WigglytuffEvosAttacks:
 	db 1, SING
 	db 1, DISABLE
 	db 1, DEFENSE_CURL
-	db 1, DOUBLESLAP
+	db 1, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -566,6 +567,7 @@ OddishEvosAttacks:
 	db 23, ACID
 	db 32, MOONLIGHT
 	db 39, PETAL_DANCE
+	db 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 GloomEvosAttacks:
@@ -582,11 +584,12 @@ GloomEvosAttacks:
 	db 24, ACID
 	db 35, MOONLIGHT
 	db 44, PETAL_DANCE
+	db 47, MOONBLAST
 	db 0 ; no more level-up moves
 
 VileplumeEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, ABSORB
+	db 1, MOONBLAST
 	db 1, SWEET_SCENT
 	db 1, STUN_SPORE
 	db 1, PETAL_DANCE
@@ -689,6 +692,7 @@ MeowthEvosAttacks:
 	db 20, PAY_DAY
 	db 28, FAINT_ATTACK
 	db 35, SCREECH
+	db 35, PLAY_ROUGH
 	db 41, FURY_SWIPES
 	db 46, SLASH
 	db 0 ; no more level-up moves
@@ -703,6 +707,7 @@ PersianEvosAttacks:
 	db 29, FAINT_ATTACK
 	db 38, SCREECH
 	db 46, FURY_SWIPES
+	db 47, PLAY_ROUGH
 	db 53, SLASH
 	db 0 ; no more level-up moves
 
@@ -775,6 +780,7 @@ GrowlitheEvosAttacks:
 	db 18, LEER
 	db 26, TAKE_DOWN
 	db 34, FLAME_WHEEL
+	db 35, PLAY_ROUGH
 	db 42, AGILITY
 	db 50, FLAMETHROWER
 	db 0 ; no more level-up moves
@@ -782,7 +788,7 @@ GrowlitheEvosAttacks:
 ArcanineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROAR
-	db 1, LEER
+	db 1, PLAY_ROUGH
 	db 1, TAKE_DOWN
 	db 1, FLAME_WHEEL
 	db 50, EXTREMESPEED
@@ -1164,6 +1170,7 @@ SeelEvosAttacks:
 	db 32, TAKE_DOWN
 	db 37, ICE_BEAM
 	db 48, SAFEGUARD
+	db 53, HAIL
 	db 0 ; no more level-up moves
 
 DewgongEvosAttacks:
@@ -1177,6 +1184,7 @@ DewgongEvosAttacks:
 	db 32, TAKE_DOWN
 	db 43, ICE_BEAM
 	db 60, SAFEGUARD
+	db 65, HAIL
 	db 0 ; no more level-up moves
 
 GrimerEvosAttacks:
@@ -1955,6 +1963,7 @@ ArticunoEvosAttacks:
 	db 49, ICE_BEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
+	db 73, HAIL
 	db 0 ; no more level-up moves
 
 ZapdosEvosAttacks:
@@ -2147,8 +2156,8 @@ TyphlosionEvosAttacks:
 TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
-	db 1, MOONBLAST
-	db 1, PLAY_ROUGH
+	db 1, SCRATCH
+	db 1, LEER
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 20, BITE
@@ -2224,6 +2233,7 @@ HoothootEvosAttacks:
 	db 22, REFLECT
 	db 28, TAKE_DOWN
 	db 34, CONFUSION
+	db 40, MOONBLAST
 	db 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2239,6 +2249,7 @@ NoctowlEvosAttacks:
 	db 25, REFLECT
 	db 33, TAKE_DOWN
 	db 41, CONFUSION
+	db 47, MOONBLAST
 	db 57, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -2362,6 +2373,7 @@ CleffaEvosAttacks:
 	db 4, ENCORE
 	db 8, SING
 	db 13, SWEET_KISS
+	db 13, MOONBLAST
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
@@ -2384,6 +2396,7 @@ TogepiEvosAttacks:
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -2395,6 +2408,7 @@ TogeticEvosAttacks:
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
+	db 43, MOONBLAST
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:
@@ -2462,7 +2476,7 @@ AmpharosEvosAttacks:
 
 BellossomEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, ABSORB
+	db 1, MOONBLAST
 	db 1, SWEET_SCENT
 	db 1, STUN_SPORE
 	db 1, PETAL_DANCE
@@ -2480,6 +2494,7 @@ MarillEvosAttacks:
 	db 21, BUBBLEBEAM
 	db 28, DOUBLE_EDGE
 	db 36, RAIN_DANCE
+	db 45, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 AzumarillEvosAttacks:
@@ -2495,6 +2510,7 @@ AzumarillEvosAttacks:
 	db 25, BUBBLEBEAM
 	db 36, DOUBLE_EDGE
 	db 48, RAIN_DANCE
+	db 50, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 SudowoodoEvosAttacks:
@@ -2805,6 +2821,7 @@ SnubbullEvosAttacks:
 	db 19, LICK
 	db 26, ROAR
 	db 34, RAGE
+	db 37, PLAY_ROUGH
 	db 43, TAKE_DOWN
 	db 0 ; no more level-up moves
 
@@ -2818,6 +2835,7 @@ GranbullEvosAttacks:
 	db 19, LICK
 	db 28, ROAR
 	db 38, RAGE
+	db 43, PLAY_ROUGH
 	db 51, TAKE_DOWN
 	db 0 ; no more level-up moves
 
@@ -2894,6 +2912,7 @@ TeddiursaEvosAttacks:
 	db 8, LICK
 	db 15, FURY_SWIPES
 	db 22, FAINT_ATTACK
+	db 25, PLAY_ROUGH
 	db 29, REST
 	db 36, SLASH
 	db 43, SNORE
@@ -2909,6 +2928,7 @@ UrsaringEvosAttacks:
 	db 8, LICK
 	db 15, FURY_SWIPES
 	db 22, FAINT_ATTACK
+	db 25, PLAY_ROUGH
 	db 29, REST
 	db 39, SLASH
 	db 49, SNORE
@@ -3210,6 +3230,7 @@ MiltankEvosAttacks:
 	db 26, BIDE
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
+	db 45, PLAY_ROUGH
 	db 53, HEAL_BELL
 	db 0 ; no more level-up moves
 
