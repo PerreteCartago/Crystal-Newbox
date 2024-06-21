@@ -253,16 +253,13 @@ MoveDescriptions::
 	dw WhirlpoolDescription
 	dw BeatUpDescription
 	dw HailDescription
+	dw MoonblastDescription
+	dw PlayRoughDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFDDescription
-	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
 
-MoveFCDescription:
-MoveFDDescription:
-MoveFEDescription:
 MoveFFDescription:
 Move00Description:
 	db "?@"
@@ -511,6 +508,7 @@ BubblebeamDescription:
 	db   "An attack that may"
 	line "lower SPEED.@"
 
+PlayRoughDescription:
 AuroraBeamDescription:
 	db   "An attack that may"
 	line "lower ATTACK.@"
@@ -1275,3 +1273,7 @@ BeatUpDescription:
 HailDescription:
 	db   "Boosts ice-type"
 	line "moves for 5 turns.@"
+
+MoonblastDescription:
+	db 	 "An attack that may"
+	line "lower Sp.Atk.@"

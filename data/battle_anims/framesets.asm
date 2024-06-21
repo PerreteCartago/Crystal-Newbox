@@ -188,6 +188,7 @@ BattleAnimFrameData:
 	dw .Frameset_PlayerHead2Row      ; BATTLE_ANIM_FRAMESET_PLAYERHEAD_2ROW
 	dw .Frameset_SparkleLong ; BATTLEANIMFRAMESET_SPARKLE_LONG
 	dw .Frameset_Hail ; BATTLEANIMFRAMESET_HAIL
+	dw .Frameset_Moonblast 			 ; BATTLEANIMFRAMESET_MOONBLAST
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
 
 .Frameset_HitBig:
@@ -1279,4 +1280,8 @@ BattleAnimFrameData:
 
 .Frameset_Hail:
 	oamframe BATTLEANIMOAMSET_HAIL, 32
+	oamend
+
+.Frameset_Moonblast:
+	oamframe BATTLE_ANIM_OAMSET_54, 40
 	oamend

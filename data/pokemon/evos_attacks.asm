@@ -2147,8 +2147,8 @@ TyphlosionEvosAttacks:
 TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, LEER
+	db 1, MOONBLAST
+	db 1, PLAY_ROUGH
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 20, BITE

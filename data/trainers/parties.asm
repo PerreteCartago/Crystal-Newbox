@@ -14,16 +14,62 @@ SECTION "Enemy Trainer Parties 1", ROMX
 
 FalknerGroup:
 	; FALKNER (1)
-	db "FALKNER@", TRAINERTYPE_MOVES
-	db  7, PIDGEY,     TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
-	db  9, PIDGEOTTO,  TACKLE, MUD_SLAP, GUST, NO_MOVE
+	db "FALKNER@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM_MOVES
+	db  14, SPEAROW
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db SHARP_BEAK
+		db WING_ATTACK, DRILL_PECK, MUD_SLAP, NO_MOVE
+	db  14, DELIBIRD
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db NEVERMELTICE
+		db ICE_BEAM, PRESENT, HAIL, NO_MOVE
+	db  14, MURKROW
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db QUICK_CLAW
+		db PURSUIT, DOUBLE_TEAM, BATON_PASS, WING_ATTACK
+	db  14, FARFETCH_D
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db LEFTOVERS
+		db WING_ATTACK, SLASH, SWORDS_DANCE, RAZOR_LEAF
+	db  14, AERODACTYL
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db KINGS_ROCK
+		db ANCIENTPOWER, ROCK_THROW, SWORDS_DANCE, BITE
 	db -1 ; end
 
 WhitneyGroup:
 	; WHITNEY (1)
-	db "WHITNEY@", TRAINERTYPE_MOVES
-	db 19, CLEFAIRY,   DOUBLESLAP, MIMIC, ENCORE, METRONOME
-	db 20, MILTANK,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db "WHITNEY@", TRAINERTYPE_DVS | TRAINERTYPE_STAT_EXP | TRAINERTYPE_ITEM_MOVES
+	db  29, CLEFAIRY
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db LUCKY_PUNCH
+		db MOONBLAST, MIMIC, ENCORE, DOUBLESLAP
+	db  29, MILTANK
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db LEFTOVERS
+		db ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db  30, URSARING
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db MINT_BERRY
+		db REST, SNORE, SLASH, SWORDS_DANCE
+	db  14, FARFETCH_D
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db LEFTOVERS
+		db WING_ATTACK, SLASH, SWORDS_DANCE, RAZOR_LEAF
+	db  14, AERODACTYL
+		db PERFECT_DV, $de ; atk|def, spd|spc
+		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
+		db KINGS_ROCK
+		db ANCIENTPOWER, ROCK_THROW, SWORDS_DANCE, BITE
 	db -1 ; end
 
 BugsyGroup:
