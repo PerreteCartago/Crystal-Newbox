@@ -278,6 +278,7 @@ GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
 	db HAZE
+	db WILL_O_WISP
 	db -1 ; end
 
 OnixEggMoves:
@@ -328,6 +329,7 @@ KoffingEggMoves:
 	db PSYBEAM
 	db DESTINY_BOND
 	db PAIN_SPLIT
+	db WILL_O_WISP
 	db -1 ; end
 
 RhyhornEggMoves:
@@ -390,6 +392,7 @@ ScytherEggMoves:
 	db RAZOR_WIND
 	db REVERSAL
 	db LIGHT_SCREEN
+	db SILVER_WIND
 	db -1 ; end
 
 PinsirEggMoves:
@@ -592,6 +595,7 @@ YanmaEggMoves:
 	db WHIRLWIND
 	db REVERSAL
 	db LEECH_LIFE
+	db SILVER_WIND
 	db -1 ; end
 
 WooperEggMoves:
@@ -747,6 +751,7 @@ HoundourEggMoves:
 	db SPITE
 	db REVERSAL
 	db BEAT_UP
+	db WILL_O_WISP
 	db -1 ; end
 
 PhanpyEggMoves:

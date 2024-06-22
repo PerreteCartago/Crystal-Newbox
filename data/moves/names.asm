@@ -164,7 +164,7 @@ MoveNames::
 	li "Superdiente"
 	li "Cuchillada"
 	li "Sustituto"
-	li "Combate"
+	li "Fuego fatuo"
 	li "Esquema"
 	li "Triplepatada"
 	li "Ladrón"
@@ -190,7 +190,7 @@ MoveNames::
 	li "Bomba lodo"
 	li "Bofetón lodo"
 	li "Pulpocañón"
-	li "Púas"
+	li "Puas"
 	li "Electrocañón"
 	li "Profecía"
 	li "Mismodestino"
@@ -254,4 +254,5 @@ MoveNames::
 	li "Granizo"
 	li "Fuerza lunar"
 	li "Carantoña"
+	li "Combate"
 	assert_list_length NUM_ATTACKS

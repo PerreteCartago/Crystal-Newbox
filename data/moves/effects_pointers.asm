@@ -44,6 +44,7 @@ MoveEffectsPointers:
 	dw AccuracyDown2
 	dw EvasionDown2
 	dw DoPoison
+	dw DoBurn
 	dw DoParalyze
 	dw AttackDownHit
 	dw DefenseDownHit

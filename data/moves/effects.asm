@@ -1047,6 +1047,18 @@ DoPoison:
 	poison
 	endmove
 
+DoBurn:
+WillOWisp:
+	checkobedience
+	usedmovetext
+	doturn
+	stab
+	checkhit
+	checkpowder
+	checksafeguard
+	burn
+	endmove
+
 DoParalyze:
 	checkobedience
 	usedmovetext

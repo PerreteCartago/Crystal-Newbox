@@ -165,7 +165,7 @@ MoveDescriptions::
 	dw SuperFangDescription
 	dw SlashDescription
 	dw SubstituteDescription
-	dw StruggleDescription
+	dw WillOWispDescription
 	dw SketchDescription
 	dw TripleKickDescription
 	dw ThiefDescription
@@ -255,12 +255,11 @@ MoveDescriptions::
 	dw HailDescription
 	dw MoonblastDescription
 	dw PlayRoughDescription
+	dw StruggleDescription
 	assert_table_length NUM_ATTACKS
-	dw MoveFFDescription
 	dw Move00Description
 	assert_table_length $100
 
-MoveFFDescription:
 Move00Description:
 	db "?@"
 
@@ -921,9 +920,9 @@ SubstituteDescription:
 	db   "Makes a decoy with"
 	line "1/4 user's max HP.@"
 
-StruggleDescription:
-	db   "Used only if all"
-	line "PP are exhausted.@"
+WillOWispDescription:
+	db   "A move that may"
+	line "burn the foe.@"
 
 SketchDescription:
 	db   "Copies the foe's"
@@ -1277,3 +1276,7 @@ HailDescription:
 MoonblastDescription:
 	db 	 "An attack that may"
 	line "lower Sp.Atk.@"
+
+StruggleDescription:
+	db   "Used only if all"
+	line "PP are exhausted.@"

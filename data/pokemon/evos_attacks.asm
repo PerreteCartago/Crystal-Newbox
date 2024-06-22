@@ -192,6 +192,7 @@ ButterfreeEvosAttacks:
 	db 28, GUST
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
+	db 47, SILVER_WIND
 	db 0 ; no more level-up moves
 
 WeedleEvosAttacks:
@@ -492,6 +493,7 @@ VulpixEvosAttacks:
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
 	db 13, ROAR
+	db 17, WILL_O_WISP
 	db 19, CONFUSE_RAY
 	db 25, SAFEGUARD
 	db 31, FLAMETHROWER
@@ -636,6 +638,7 @@ VenonatEvosAttacks:
 	db 33, PSYBEAM
 	db 36, SLEEP_POWDER
 	db 41, PSYCHIC_M
+	db 48, SILVER_WIND
 	db 0 ; no more level-up moves
 
 VenomothEvosAttacks:
@@ -653,6 +656,7 @@ VenomothEvosAttacks:
 	db 36, PSYBEAM
 	db 42, SLEEP_POWDER
 	db 52, PSYCHIC_M
+	db 54, SILVER_WIND
 	db 0 ; no more level-up moves
 
 DiglettEvosAttacks:
@@ -2068,7 +2072,7 @@ ChikoritaEvosAttacks:
 	db EVOLVE_LEVEL, 16, BAYLEEF
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, SILVER_WIND
+	db 1, GROWL
 	db 8, RAZOR_LEAF
 	db 12, REFLECT
 	db 15, POISONPOWDER
@@ -2262,6 +2266,7 @@ LedybaEvosAttacks:
 	db 22, LIGHT_SCREEN
 	db 22, REFLECT
 	db 22, SAFEGUARD
+	db 25, SILVER_WIND
 	db 29, BATON_PASS
 	db 36, SWIFT
 	db 43, AGILITY
@@ -2277,6 +2282,7 @@ LedianEvosAttacks:
 	db 24, LIGHT_SCREEN
 	db 24, REFLECT
 	db 24, SAFEGUARD
+	db 29, SILVER_WIND
 	db 33, BATON_PASS
 	db 42, SWIFT
 	db 51, AGILITY

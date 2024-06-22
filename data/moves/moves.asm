@@ -178,7 +178,7 @@ Moves:
 	move SUPER_FANG,   EFFECT_SUPER_FANG,          1, NORMAL,        PHYSICAL,  90, 10,   0
 	move SLASH,        EFFECT_NORMAL_HIT,         70, NORMAL,        PHYSICAL, 100, 20,   0
 	move SUBSTITUTE,   EFFECT_SUBSTITUTE,          0, NORMAL,        STATUS,   100, 10,   0
-	move STRUGGLE,     EFFECT_RECOIL_HIT,         50, NORMAL,        PHYSICAL, 100,  1,   0
+	move WILL_O_WISP,  EFFECT_BURN,                0, FIRE,          STATUS,    85, 15,   0, 
 	move SKETCH,       EFFECT_SKETCH,              0, NORMAL,        STATUS,   100,  1,   0
 	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        10, FIGHTING,      PHYSICAL,  90, 10,   0
 	move THIEF,        EFFECT_THIEF,              60, DARK,          PHYSICAL, 100, 10, 100
@@ -268,4 +268,5 @@ Moves:
 	move HAIL, EFFECT_HAIL, 0, ICE, STATUS, 100, 10, 0
 	move MOONBLAST,    EFFECT_SP_ATK_DOWN_HIT, 	  95, FAIRY, 		 SPECIAL,  100, 15,  30
 	move PLAY_ROUGH,   EFFECT_ATTACK_DOWN_HIT, 	  90, FAIRY, 		 PHYSICAL,  90, 10,  10
+	move STRUGGLE,     EFFECT_RECOIL_HIT,         50, NORMAL,        PHYSICAL, 100,  1,   0
 	assert_table_length NUM_ATTACKS
