@@ -141,9 +141,9 @@ ROMX $31
 	"Sprites 2"
 ROMX $32
 	"bank32"
-	"The End"
 ROMX $33
 	"Extra Songs 2"
+	"The End"
 ROMX $34
 	"Pic Animations 1"
 ROMX $35

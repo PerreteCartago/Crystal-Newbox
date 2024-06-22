@@ -191,7 +191,7 @@ MoveNames::
 	li "Bofetón lodo"
 	li "Pulpocañón"
 	li "Puas"
-	li "Electrocañón"
+	li "Voltio cruel"
 	li "Profecía"
 	li "Mismodestino"
 	li "Canto mortal"

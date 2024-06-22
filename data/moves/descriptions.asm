@@ -192,7 +192,7 @@ MoveDescriptions::
 	dw MudSlapDescription
 	dw OctazookaDescription
 	dw SpikesDescription
-	dw ZapCannonDescription
+	dw WildChargeDescription
 	dw ForesightDescription
 	dw DestinyBondDescription
 	dw PerishSongDescription
@@ -1028,9 +1028,9 @@ SpikesDescription:
 	db   "Hurts foes when"
 	line "they switch out.@"
 
-ZapCannonDescription:
-	db   "An attack that"
-	line "always paralyzes.@"
+WildChargeDescription:
+	db   "A charge that also"
+	line "hurts the user.@"
 
 ForesightDescription:
 	db   "Negates accuracy"

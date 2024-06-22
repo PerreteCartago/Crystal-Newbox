@@ -167,20 +167,20 @@ PowerPlantManager:
 	setevent EVENT_RESTORED_POWER_TO_KANTO
 	clearevent EVENT_GOLDENROD_TRAIN_STATION_GENTLEMAN
 .ReturnedMachinePart:
-	checkevent EVENT_GOT_TM07_SILVER_WIND
-	iftrue .GotZapCannon
+	checkevent EVENT_GOT_TM07_WILD_CHARGE
+	iftrue .GotWildCharge
 	writetext PowerPlantManagerTakeThisTMText
 	promptbutton
-	verbosegiveitem TM_SILVER_WIND
+	verbosegiveitem TM_WILD_CHARGE
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM07_SILVER_WIND
-	writetext PowerPlantManagerTM07IsZapCannonText
+	setevent EVENT_GOT_TM07_WILD_CHARGE
+	writetext PowerPlantManagerTM07IsWildChargeText
 	waitbutton
 .NoRoom:
 	closetext
 	end
 
-.GotZapCannon:
+.GotWildCharge:
 	writetext PowerPlantManagerMyBelovedGeneratorText
 	waitbutton
 	closetext
@@ -331,8 +331,8 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "If I catch him,"
 	line "he's going to get"
 
-	para "a taste of my ZAP"
-	line "CANNON!"
+	para "a taste of my"
+	line "WILD CHARGE!"
 	done
 
 PowerPlantManagerIWontForgiveCulpritText:
@@ -364,18 +364,17 @@ PowerPlantManagerTakeThisTMText:
 	line "as a reward!"
 	done
 
-PowerPlantManagerTM07IsZapCannonText:
+PowerPlantManagerTM07IsWildChargeText:
 	text "MANAGER: TM07 is"
-	line "my ZAP CANNON."
+	line "WILD CHARGE."
 
 	para "It's a powerful"
 	line "technique!"
 
-	para "It's not what any-"
-	line "one would consider"
+	para "It deal physical"
+	line "damage and it is"
+	cont " very acurate"
 
-	para "accurate, but it"
-	line "packs a wallop!"
 	done
 
 PowerPlantManagerMyBelovedGeneratorText:

@@ -356,6 +356,7 @@ PikachuEvosAttacks:
 	db 33, AGILITY
 	db 41, THUNDER
 	db 50, LIGHT_SCREEN
+	db 50, WILD_CHARGE
 	db 0 ; no more level-up moves
 
 RaichuEvosAttacks:
@@ -1106,7 +1107,7 @@ MagnemiteEvosAttacks:
 	db 27, LOCK_ON
 	db 33, SWIFT
 	db 39, SCREECH
-	db 45, ZAP_CANNON
+	db 44, WILD_CHARGE
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
@@ -1122,7 +1123,7 @@ MagnetonEvosAttacks:
 	db 27, LOCK_ON
 	db 35, TRI_ATTACK
 	db 43, SCREECH
-	db 53, ZAP_CANNON
+	db 53, WILD_CHARGE
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1874,7 +1875,7 @@ PorygonEvosAttacks:
 	db 24, SHARPEN
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 44, WILD_CHARGE
 	db 0 ; no more level-up moves
 
 OmanyteEvosAttacks:
@@ -3135,7 +3136,7 @@ Porygon2EvosAttacks:
 	db 24, DEFENSE_CURL
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 44, WILD_CHARGE
 	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:
