@@ -1546,7 +1546,7 @@ BattleTowerMons:
 
 	db GENGAR
 	db GOLD_BERRY
-	db THIEF, LICK, NIGHT_SHADE, GIGA_DRAIN
+	db THIEF, LICK, HEX, GIGA_DRAIN
 	dw 0 ; OT ID
 	dt 27000 ; Exp
 	; Stat exp

@@ -102,7 +102,7 @@ BattleAnimations::
 	dw BattleAnim_QuickAttack
 	dw BattleAnim_Rage
 	dw BattleAnim_Teleport
-	dw BattleAnim_NightShade
+	dw BattleAnim_Hex
 	dw BattleAnim_Mimic
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
@@ -135,7 +135,7 @@ BattleAnimations::
 	dw BattleAnim_SpikeCannon
 	dw BattleAnim_Constrict
 	dw BattleAnim_Amnesia
-	dw BattleAnim_Kinesis
+	dw BattleAnim_Avalanche
 	dw BattleAnim_Softboiled
 	dw BattleAnim_HiJumpKick
 	dw BattleAnim_Glare
@@ -2482,19 +2482,27 @@ BattleAnim_SkullBash:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Kinesis:
-	anim_2gfx BATTLE_ANIM_GFX_MISC, BATTLE_ANIM_GFX_NOISE
-	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
-	anim_obj BATTLE_ANIM_OBJ_KINESIS, 80, 76, $0
-	anim_wait 32
+BattleAnim_Avalanche:
+	anim_1gfx BATTLE_ANIM_GFX_ROCKS
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $c0, $1, $0
 .loop
-	anim_sound 0, 0, SFX_KINESIS
-	anim_obj BATTLE_ANIM_OBJ_SOUND, 64, 88, $0
-	anim_wait 32
-	anim_loop 3, .loop
-	anim_wait 32
-	anim_sound 0, 0, SFX_KINESIS_2
-	anim_wait 32
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_SMALL_ICE_CHUNK,  16, 0,   8, 0, $40
+	anim_wait 4
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ICE_CHUNK,  15, 0,   8, 4, $30
+	anim_wait 4
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_SMALL_ICE_CHUNK, -13, 0,   8, 4, $30
+	anim_wait 4
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_BIG_ICE_CHUNK, -14, 0,   8, 0, $40
+	anim_wait 4
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj ANIM_OBJ_SMALL_ICE_CHUNK, -15, 0,   8, 4, $30
+	anim_wait 16
+	anim_loop 4, .loop
+	anim_wait 96
 	anim_ret
 
 BattleAnim_Peck:
@@ -2634,17 +2642,36 @@ BattleAnim_SkyAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_NightShade:
-	anim_1gfx BATTLE_ANIM_GFX_HIT
+BattleAnim_Hex:
+	anim_2gfx BATTLE_ANIM_GFX_FIRE, BATTLE_ANIM_GFX_SPEED
+	anim_bgp $f8
+	anim_wait 8
+	anim_sound 6, 2, SFX_SLUDGE_BOMB
+	anim_bgeffect BATTLE_BG_EFFECT_VIBRATE_MON, $0, $0, $0
+	anim_wait 40
 	anim_bgp $1b
-	anim_obp1 $1b
-	anim_wait 32
-	anim_call BattleAnim_UserObj_2Row
-	anim_bgeffect BATTLE_BG_EFFECT_NIGHT_SHADE, $0, BG_EFFECT_TARGET, $8
-	anim_sound 0, 1, SFX_PSYCHIC
-	anim_wait 96
-	anim_incbgeffect BATTLE_BG_EFFECT_NIGHT_SHADE
-	anim_call BattleAnim_ShowMon_1
+	anim_sound 0, 0, SFX_CURSE
+	anim_bgeffect BATTLE_BG_EFFECT_VIBRATE_MON, $0, $0, $0
+.loop
+	anim_obj ANIM_OBJ_HEX, 136, 72, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_HEX, 128, 72, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_BLUE_FLAME, 128, 54, $10
+	anim_obj ANIM_OBJ_HEX, 144, 72, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_HEX, 120, 72, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_HEX, 152, 72, $6
+	anim_wait 2
+	anim_obj ANIM_OBJ_BLUE_FLAME, 144, 38, $90
+	anim_obj ANIM_OBJ_HEX, 112, 72, $8
+	anim_wait 2
+	anim_obj ANIM_OBJ_HEX, 160, 72, $8
+	anim_wait 2
+	anim_loop 3, .loop
+	anim_wait 8
+	anim_wait 16
 	anim_ret
 
 BattleAnim_Lick:

@@ -101,7 +101,7 @@ MoveDescriptions::
 	dw QuickAttackDescription
 	dw RageDescription
 	dw TeleportDescription
-	dw NightShadeDescription
+	dw HexDescription
 	dw MimicDescription
 	dw ScreechDescription
 	dw DoubleTeamDescription
@@ -134,7 +134,7 @@ MoveDescriptions::
 	dw SpikeCannonDescription
 	dw ConstrictDescription
 	dw AmnesiaDescription
-	dw KinesisDescription
+	dw AvalancheDescription
 	dw SoftboiledDescription
 	dw HiJumpKickDescription
 	dw GlareDescription
@@ -665,9 +665,9 @@ TeleportDescription:
 	db   "A move for fleeing"
 	line "from battle.@"
 
-NightShadeDescription:
-	db   "The user's level"
-	line "equals damage HP.@"
+HexDescription:
+	db   "Damage doubles if"
+	line "foe has status.@"
 
 MimicDescription:
 	db   "Copies a move used"
@@ -797,9 +797,9 @@ AmnesiaDescription:
 	db   "Sharply raises the"
 	line "user's SPCL.DEF.@"
 
-KinesisDescription:
-	db   "Reduces the foe's"
-	line "accuracy.@"
+AvalancheDescription:
+	db   "Damage doubles if"
+	line "user is hit first.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"

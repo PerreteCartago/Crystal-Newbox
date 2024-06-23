@@ -499,6 +499,7 @@ VulpixEvosAttacks:
 	db 17, WILL_O_WISP
 	db 19, CONFUSE_RAY
 	db 25, SAFEGUARD
+	db 28, HEX
 	db 31, FLAMETHROWER
 	db 37, FIRE_SPIN
 	db 0 ; no more level-up moves
@@ -848,7 +849,6 @@ KadabraEvosAttacks:
 	db EVOLVE_TRADE, -1, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 18, DISABLE
@@ -862,7 +862,6 @@ KadabraEvosAttacks:
 AlakazamEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TELEPORT
-	db 1, KINESIS
 	db 1, CONFUSION
 	db 16, CONFUSION
 	db 18, DISABLE
@@ -970,6 +969,7 @@ TentacoolEvosAttacks:
 	db 30, WRAP
 	db 36, BARRIER
 	db 43, SCREECH
+	db 43, HEX
 	db 49, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -985,6 +985,7 @@ TentacruelEvosAttacks:
 	db 30, WRAP
 	db 38, BARRIER
 	db 47, SCREECH
+	db 47, HEX
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -1252,10 +1253,10 @@ GastlyEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
 	db 28, CONFUSE_RAY
 	db 33, DREAM_EATER
 	db 36, DESTINY_BOND
+	db 43, HEX
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
@@ -1267,10 +1268,10 @@ HaunterEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
 	db 48, DESTINY_BOND
+	db 55, HEX
 	db 0 ; no more level-up moves
 
 GengarEvosAttacks:
@@ -1281,10 +1282,10 @@ GengarEvosAttacks:
 	db 8, SPITE
 	db 13, MEAN_LOOK
 	db 16, CURSE
-	db 21, NIGHT_SHADE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
 	db 48, DESTINY_BOND
+	db 55, HEX
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
@@ -1703,6 +1704,7 @@ JynxEvosAttacks:
 	db 13, POWDER_SNOW
 	db 21, DOUBLESLAP
 	db 25, ICE_PUNCH
+	db 33, AVALANCHE
 	db 35, MEAN_LOOK
 	db 41, BODY_SLAM
 	db 51, PERISH_SONG
@@ -2162,7 +2164,7 @@ TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, SCALD
+	db 1, LEER
 	db 7, RAGE
 	db 13, BUBBLE
 	db 20, BITE
@@ -2299,7 +2301,6 @@ SpinarakEvosAttacks:
 	db 1, STRING_SHOT
 	db 6, SCARY_FACE
 	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
 	db 23, LEECH_LIFE
 	db 30, FURY_SWIPES
 	db 37, SPIDER_WEB
@@ -2315,7 +2316,6 @@ AriadosEvosAttacks:
 	db 1, CONSTRICT
 	db 6, SCARY_FACE
 	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
 	db 25, LEECH_LIFE
 	db 34, FURY_SWIPES
 	db 43, SPIDER_WEB
@@ -2424,7 +2424,6 @@ NatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 10, NIGHT_SHADE
 	db 20, TELEPORT
 	db 30, FUTURE_SIGHT
 	db 40, CONFUSE_RAY
@@ -2436,8 +2435,6 @@ XatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 1, NIGHT_SHADE
-	db 10, NIGHT_SHADE
 	db 20, TELEPORT
 	db 35, FUTURE_SIGHT
 	db 50, CONFUSE_RAY
@@ -2699,7 +2696,6 @@ MurkrowEvosAttacks:
 	db 1, PECK
 	db 11, PURSUIT
 	db 16, HAZE
-	db 26, NIGHT_SHADE
 	db 30, AIR_SLASH
 	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK
@@ -2725,6 +2721,7 @@ MisdreavusEvosAttacks:
 	db 6, SPITE
 	db 12, CONFUSE_RAY
 	db 19, MEAN_LOOK
+	db 23, HEX
 	db 27, PSYBEAM
 	db 36, PAIN_SPLIT
 	db 46, PERISH_SONG
@@ -3201,6 +3198,7 @@ SmoochumEvosAttacks:
 	db 13, POWDER_SNOW
 	db 21, CONFUSION
 	db 25, SING
+	db 31, AVALANCHE
 	db 33, MEAN_LOOK
 	db 37, PSYCHIC_M
 	db 45, PERISH_SONG

@@ -791,22 +791,6 @@ ResetStats:
 	resetstats
 	endmove
 
-Bide:
-	storeenergy
-	checkobedience
-	doturn
-	usedmovetext
-	unleashenergy
-	resettypematchup
-	checkhit
-	moveanim
-	bidefailtext
-	applydamage
-	checkfaint
-	buildopponentrage
-	kingsrock
-	endmove
-
 Rampage:
 	checkrampage
 	checkobedience
@@ -1151,6 +1135,7 @@ Mimic:
 	mimic
 	endmove
 
+Bide:
 Metronome:
 	checkobedience
 	usedmovetext
@@ -2096,4 +2081,22 @@ Hail:
 	usedmovetext
 	doturn
 	starthail
+	endmove
+
+ConditionalBoostHit:
+	checkobedience
+	usedmovetext
+	doturn
+	checkhit
+	critical
+	damagestats
+	damagecalc
+	stab
+	conditionalboost
+	damagevariation
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
 	endmove

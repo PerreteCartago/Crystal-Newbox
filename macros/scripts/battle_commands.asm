@@ -37,8 +37,6 @@ ENDM
 	command payday                  ; 1e
 	command conversion              ; 1f
 	command resetstats              ; 20
-	command storeenergy             ; 21
-	command unleashenergy           ; 22
 	command forceswitch             ; 23
 	command endloop                 ; 24
 	command flinchtarget            ; 25
@@ -97,7 +95,6 @@ ENDM
 	command endure                  ; 5a
 	command checkcurl               ; 5b
 	command rolloutpower            ; 5c
-	command effect0x5d              ; 5d
 	command furycutter              ; 5e
 	command attract                 ; 5f
 	command happinesspower          ; 60
@@ -169,7 +166,6 @@ ENDM
 	command ragedamage              ; a2
 	command resettypematchup        ; a3
 	command allstatsup              ; a4
-	command bidefailtext            ; a5
 	command raisesubnoanim          ; a6
 	command lowersubnoanim          ; a7
 	command beatupfailtext          ; a8
@@ -182,6 +178,7 @@ ENDM
 	command curl                    ; af
 	command starthail ; b0
 	command burn ; b1
+	command conditionalboost
 DEF NUM_EFFECT_COMMANDS EQU const_value - 1
 
 	const_def -1, -1

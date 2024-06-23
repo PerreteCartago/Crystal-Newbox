@@ -268,7 +268,7 @@ DEF TM01 EQU const_value
 	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
 	add_tm FURY_CUTTER  ; f1
-	add_tm NIGHTMARE    ; f2
+	add_tm HEX          ; f2
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm
@@ -310,6 +310,7 @@ DEF MT01 EQU const_value
 	add_mt WILL_O_WISP
 	add_mt SILVER_WIND
 	add_mt SCALD
+	add_mt AVALANCHE
 DEF NUM_TUTORS = __tmhm_value__ - NUM_TMS - NUM_HMS - 1
 
 DEF NUM_TM_HM_TUTOR EQU NUM_TMS + NUM_HMS + NUM_TUTORS

@@ -338,7 +338,7 @@ CantMove:
 	ld a, BATTLE_VARS_SUBSTATUS3
 	call GetBattleVarAddr
 	ld a, [hl]
-	and ~(1 << SUBSTATUS_BIDE | 1 << SUBSTATUS_RAMPAGE | 1 << SUBSTATUS_CHARGED)
+	and ~(1 << SUBSTATUS_RAMPAGE | 1 << SUBSTATUS_CHARGED)
 	ld [hl], a
 
 	call ResetFuryCutterCount
@@ -980,7 +980,7 @@ BattleCommand_DoTurn:
 	ret z
 
 	ld a, [de]
-	and 1 << SUBSTATUS_IN_LOOP | 1 << SUBSTATUS_RAMPAGE | 1 << SUBSTATUS_BIDE
+	and 1 << SUBSTATUS_IN_LOOP | 1 << SUBSTATUS_RAMPAGE
 	ret nz
 
 	call .consume_pp
@@ -1077,13 +1077,11 @@ BattleCommand_DoTurn:
 	ret
 
 .continuousmoves
-	db EFFECT_RAZOR_WIND
 	db EFFECT_SKY_ATTACK
 	db EFFECT_SKULL_BASH
 	db EFFECT_SOLARBEAM
 	db EFFECT_FLY
 	db EFFECT_ROLLOUT
-	db EFFECT_BIDE
 	db EFFECT_RAMPAGE
 	db -1
 
@@ -1905,8 +1903,6 @@ BattleCommand_LowerSub:
 
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
-	cp EFFECT_RAZOR_WIND
-	jr z, .charge_turn
 	cp EFFECT_SKY_ATTACK
 	jr z, .charge_turn
 	cp EFFECT_SKULL_BASH
@@ -2281,16 +2277,6 @@ FailText_CheckOpponentProtect:
 	ld l, e
 .not_protected
 	jp StdBattleTextbox
-
-BattleCommand_BideFailText:
-	ld a, [wAttackMissed]
-	and a
-	ret z
-
-	ld a, [wTypeModifier]
-	and $7f
-	jp z, PrintDoesntAffect
-	jp PrintButItFailed
 
 BattleCommand_CriticalText:
 ; Prints the message for critical hits or one-hit KOs.
@@ -4904,8 +4890,6 @@ CalcBattleStats:
 
 	ret
 
-INCLUDE "engine/battle/move_effects/bide.asm"
-
 BattleCommand_CheckRampage:
 	ld de, wPlayerRolloutCount
 	ldh a, [hBattleTurn]
@@ -5615,10 +5599,6 @@ BattleCommand_Charge:
 .BattleDugText:
 	text_far _BattleDugText
 	text_end
-
-BattleCommand_Unused3C:
-; effect0x3c
-	ret
 
 BattleCommand_TrapTarget:
 	ld a, [wAttackMissed]
@@ -6388,10 +6368,6 @@ INCLUDE "engine/battle/move_effects/sandstorm.asm"
 
 INCLUDE "engine/battle/move_effects/rollout.asm"
 
-BattleCommand_Unused5D:
-; effect0x5d
-	ret
-
 INCLUDE "engine/battle/move_effects/fury_cutter.asm"
 
 INCLUDE "engine/battle/move_effects/attract.asm"
@@ -6878,4 +6854,39 @@ SandstormSpDefBoost:
 	add hl, bc
 	ld b, h
 	ld c, l
+	ret
+
+BattleCommand_conditionalboost:
+	jp BoostJumptable
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+	jp BattleJumptable
+
+BoostJumptable::
+	dbw AVALANCHE,  DoAvalanche
+	dbw HEX,        DoHex
+
+DoAvalanche:
+	call CheckOpponentWentFirst
+	jr DoubleDamageIfNZ
+
+DoHex:
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVar
+	and a
+	jr DoubleDamageIfNZ
+
+DoubleDamageIfNZ:
+	ret z
+	; fallthrough
+DoubleDamage1:
+	ld hl, wCurDamage + 1
+	sla [hl]
+	dec hl
+	rl [hl]
+	ret nc
+
+	ld a, $ff
+	ld [hli], a
+	ld [hl], a
 	ret

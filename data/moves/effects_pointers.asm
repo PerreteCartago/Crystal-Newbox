@@ -90,7 +90,7 @@ MoveEffectsPointers:
 	dw Magnitude
 	dw Pursuit
 	dw RapidSpin
-	dw NormalHit
+	dw ConditionalBoostHit
 	dw NormalHit
 	dw HiddenPower
 	dw DefenseUpHit
