@@ -56,7 +56,7 @@ BattleAnimations::
 	dw BattleAnim_Ember
 	dw BattleAnim_Flamethrower
 	dw BattleAnim_Mist
-	dw BattleAnim_WaterGun
+	dw BattleAnim_Scald
 	dw BattleAnim_HydroPump
 	dw BattleAnim_Surf
 	dw BattleAnim_IceBeam
@@ -1067,26 +1067,40 @@ BattleAnim_Bubblebeam:
 	anim_wait 8
 	anim_ret
 
-BattleAnim_WaterGun:
-	anim_bgeffect BATTLE_BG_EFFECT_START_WATER, $0, BG_EFFECT_TARGET, $0
+BattleAnim_Scald:
+	anim_bgeffect BATTLE_BG_EFFECT_START_WATER, $0, $0, $0
 	anim_1gfx BATTLE_ANIM_GFX_WATER
-	anim_call BattleAnim_UserObj_2Row
-	anim_sound 16, 2, SFX_WATER_GUN
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 88, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 76, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_WATER_GUN, 64, 82, $0
-	anim_wait 24
+	anim_call BattleAnim_FollowPlayerHead_1
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP,  14, 4,   9, 0, $0
 	anim_bgeffect BATTLE_BG_EFFECT_WATER, $1c, $0, $0
 	anim_wait 8
+	;anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP,  15, 4,   9, 0, $0
 	anim_bgeffect BATTLE_BG_EFFECT_WATER, $8, $0, $0
 	anim_wait 8
+	;anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP, -16, 4,   9, 0, $0
 	anim_bgeffect BATTLE_BG_EFFECT_WATER, $30, $0, $0
-	anim_wait 32
-	anim_call BattleAnim_ShowMon_1
-	anim_bgeffect BATTLE_BG_EFFECT_END_WATER, $0, $0, $0
+	anim_wait 8
+	;anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP, -15, 4,   9, 0, $0
+	anim_bgeffect BATTLE_BG_EFFECT_WATER, $1c, $0, $0
+	anim_wait 8
+	;anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj BATTLE_ANIM_OBJ_HYDRO_PUMP, -14, 4,   9, 0, $0
+	anim_bgeffect BATTLE_BG_EFFECT_WATER, $8, $0, $0
 	anim_wait 16
+	anim_call BattleAnim_ShowMon_1
+	anim_bgeffect BATTLE_BG_EFFECT_END_WATER , $0, $0, $0
+	anim_wait 16
+	anim_1gfx BATTLE_ANIM_GFX_FIRE
+.loop
+	anim_sound 0, 0, SFX_BURN
+	anim_obj BATTLE_ANIM_OBJ_BURNED,  17, 0,   7, 0, $10
+	anim_wait 4
+	anim_loop 3, .loop
+	anim_wait 6
 	anim_ret
 
 BattleAnim_HydroPump:
@@ -4976,4 +4990,10 @@ BattleAnim_FollowEnemyFeet_0:
 	anim_enemyfeetobj
 	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_1ROW, $0, $0, $0
 	anim_wait 6
+	anim_ret
+
+BattleAnim_FollowPlayerHead_1:
+	anim_playerheadobj
+	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_2ROW, $0, $1, $0
+	anim_wait 4
 	anim_ret

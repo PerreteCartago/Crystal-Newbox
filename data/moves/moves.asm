@@ -68,11 +68,11 @@ Moves:
 	move EMBER,        EFFECT_BURN_HIT,           40, FIRE,          SPECIAL,  100, 25,  10
 	move FLAMETHROWER, EFFECT_BURN_HIT,           95, FIRE,          SPECIAL,  100, 15,  10
 	move MIST,         EFFECT_MIST,                0, ICE,           STATUS,   100, 30,   0
-	move WATER_GUN,    EFFECT_NORMAL_HIT,         40, WATER,         SPECIAL,  100, 25,   0
+	move SCALD,        EFFECT_BURN_HIT,           80, WATER,         SPECIAL,  100, 15,  30
 	move HYDRO_PUMP,   EFFECT_NORMAL_HIT,        120, WATER,         SPECIAL,   80,  5,   0
 	move SURF,         EFFECT_NORMAL_HIT,         95, WATER,         SPECIAL,  100, 15,   0
 	move ICE_BEAM,     EFFECT_FREEZE_HIT,         95, ICE,           SPECIAL,  100, 10,  10
-	move BLIZZARD, EFFECT_BLIZZARD, 120, ICE, SPECIAL, 70, 5, 10
+	move BLIZZARD,     EFFECT_BLIZZARD,          120, ICE,           SPECIAL,   70, 5, 10
 	move PSYBEAM,      EFFECT_CONFUSE_HIT,        65, PSYCHIC_TYPE,  SPECIAL,  100, 20,  10
 	move BUBBLEBEAM,   EFFECT_SPEED_DOWN_HIT,     65, WATER,         SPECIAL,  100, 20,  10
 	move AURORA_BEAM,  EFFECT_ATTACK_DOWN_HIT,    65, ICE,           SPECIAL,  100, 20,  10

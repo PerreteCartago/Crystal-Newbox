@@ -758,7 +758,6 @@ PhanpyEggMoves:
 	db FOCUS_ENERGY
 	db BODY_SLAM
 	db ANCIENTPOWER
-	db WATER_GUN
 	db -1 ; end
 
 StantlerEggMoves:

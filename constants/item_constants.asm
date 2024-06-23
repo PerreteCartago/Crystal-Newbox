@@ -309,6 +309,7 @@ DEF MT01 EQU const_value
 	add_mt PLAY_ROUGH
 	add_mt WILL_O_WISP
 	add_mt SILVER_WIND
+	add_mt SCALD
 DEF NUM_TUTORS = __tmhm_value__ - NUM_TMS - NUM_HMS - 1
 
 DEF NUM_TM_HM_TUTOR EQU NUM_TMS + NUM_HMS + NUM_TUTORS

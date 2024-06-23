@@ -55,7 +55,7 @@ MoveDescriptions::
 	dw EmberDescription
 	dw FlamethrowerDescription
 	dw MistDescription
-	dw WaterGunDescription
+	dw ScaldDescription
 	dw HydroPumpDescription
 	dw SurfDescription
 	dw IceBeamDescription
@@ -479,9 +479,9 @@ MistDescription:
 	db   "Prevents stat"
 	line "reduction.@"
 
-WaterGunDescription:
-	db   "Squirts water to"
-	line "attack.@"
+ScaldDescription:
+	db   "Water attack that"
+	line "may inflict burn.@"
 
 HydroPumpDescription:
 	db   "A powerful water-"

@@ -54,7 +54,7 @@ MoveNames::
 	li "Ascuas"
 	li "Lanzallamas"
 	li "Neblina"
-	li "Pistola agua"
+	li "Escaldar"
 	li "Hidrobomba"
 	li "Surf"
 	li "Rayo hielo"
