@@ -5574,10 +5574,6 @@ BattleCommand_Charge:
 	text_asm
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	cp RAZOR_WIND
-	ld hl, .BattleMadeWhirlwindText
-	jr z, .done
-
 	cp SOLARBEAM
 	ld hl, .BattleTookSunlightText
 	jr z, .done
@@ -5599,10 +5595,6 @@ BattleCommand_Charge:
 
 .done
 	ret
-
-.BattleMadeWhirlwindText:
-	text_far _BattleMadeWhirlwindText
-	text_end
 
 .BattleTookSunlightText:
 	text_far _BattleTookSunlightText

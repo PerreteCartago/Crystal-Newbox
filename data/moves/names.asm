@@ -12,7 +12,7 @@ MoveNames::
 	li "Arañazo"
 	li "Agarre"
 	li "Guillotina"
-	li "V. Cortante"
+	li "Tajo aéreo"
 	li "Danza espada"
 	li "Corte"
 	li "Tornado"

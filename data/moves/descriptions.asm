@@ -13,7 +13,7 @@ MoveDescriptions::
 	dw ScratchDescription
 	dw VicegripDescription
 	dw GuillotineDescription
-	dw RazorWindDescription
+	dw AirSlashDescription
 	dw SwordsDanceDescription
 	dw CutDescription
 	dw GustDescription
@@ -351,6 +351,7 @@ VineWhipDescription:
 	db   "Whips the foe with"
 	line "slender vines.@"
 
+AirSlashDescription:
 StompDescription:
 	db   "An attack that may"
 	line "cause flinching.@"

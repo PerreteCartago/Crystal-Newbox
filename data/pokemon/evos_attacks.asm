@@ -111,6 +111,7 @@ CharizardEvosAttacks:
 	db 36, WING_ATTACK
 	db 44, SLASH
 	db 54, DRAGON_RAGE
+	db 62, AIR_SLASH
 	db 64, FIRE_SPIN
 	db 0 ; no more level-up moves
 
@@ -189,6 +190,7 @@ ButterfreeEvosAttacks:
 	db 28, GUST
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
+	db 43, AIR_SLASH
 	db 47, SILVER_WIND
 	db 0 ; no more level-up moves
 
@@ -229,6 +231,7 @@ PidgeyEvosAttacks:
 	db 29, WING_ATTACK
 	db 37, AGILITY
 	db 47, MIRROR_MOVE
+	db 49, AIR_SLASH
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
@@ -244,6 +247,7 @@ PidgeottoEvosAttacks:
 	db 33, WING_ATTACK
 	db 43, AGILITY
 	db 55, MIRROR_MOVE
+	db 57, AIR_SLASH
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
@@ -259,6 +263,7 @@ PidgeotEvosAttacks:
 	db 33, WING_ATTACK
 	db 46, AGILITY
 	db 61, MIRROR_MOVE
+	db 62, AIR_SLASH
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -539,6 +544,7 @@ ZubatEvosAttacks:
 	db 19, CONFUSE_RAY
 	db 27, WING_ATTACK
 	db 36, MEAN_LOOK
+	db 41, AIR_SLASH
 	db 46, HAZE
 	db 0 ; no more level-up moves
 
@@ -553,6 +559,7 @@ GolbatEvosAttacks:
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
 	db 42, MEAN_LOOK
+	db 51, AIR_SLASH
 	db 55, HAZE
 	db 0 ; no more level-up moves
 
@@ -655,6 +662,7 @@ VenomothEvosAttacks:
 	db 42, SLEEP_POWDER
 	db 52, PSYCHIC_M
 	db 54, SILVER_WIND
+	db 62, AIR_SLASH
 	db 0 ; no more level-up moves
 
 DiglettEvosAttacks:
@@ -1126,6 +1134,7 @@ FarfetchDEvosAttacks:
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
+	db 37, AIR_SLASH
 	db 44, FALSE_SWIPE
 	db 0 ; no more level-up moves
 
@@ -1681,6 +1690,7 @@ ScytherEvosAttacks:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
+	db 53, AIR_SLASH
 	db 0 ; no more level-up moves
 
 JynxEvosAttacks:
@@ -1980,6 +1990,7 @@ MoltresEvosAttacks:
 	db 25, AGILITY
 	db 37, ENDURE
 	db 49, FLAMETHROWER
+	db 50, AIR_SLASH
 	db 61, SAFEGUARD
 	db 73, SKY_ATTACK
 	db 0 ; no more level-up moves
@@ -2224,6 +2235,7 @@ HoothootEvosAttacks:
 	db 16, HYPNOSIS
 	db 22, REFLECT
 	db 28, TAKE_DOWN
+	db 29, AIR_SLASH
 	db 34, CONFUSION
 	db 40, MOONBLAST
 	db 48, DREAM_EATER
@@ -2239,6 +2251,7 @@ NoctowlEvosAttacks:
 	db 11, PECK
 	db 16, HYPNOSIS
 	db 25, REFLECT
+	db 32, AIR_SLASH
 	db 33, TAKE_DOWN
 	db 41, CONFUSION
 	db 47, MOONBLAST
@@ -2257,6 +2270,7 @@ LedybaEvosAttacks:
 	db 25, SILVER_WIND
 	db 29, BATON_PASS
 	db 36, SWIFT
+	db 36, AIR_SLASH
 	db 43, AGILITY
 	db 50, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2273,6 +2287,7 @@ LedianEvosAttacks:
 	db 29, SILVER_WIND
 	db 33, BATON_PASS
 	db 42, SWIFT
+	db 42, AIR_SLASH
 	db 51, AGILITY
 	db 60, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2318,6 +2333,7 @@ CrobatEvosAttacks:
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
 	db 42, MEAN_LOOK
+	db 51, AIR_SLASH
 	db 55, HAZE
 	db 0 ; no more level-up moves
 
@@ -2385,6 +2401,7 @@ TogepiEvosAttacks:
 	db 7, METRONOME
 	db 18, SWEET_KISS
 	db 25, ENCORE
+	db 25, AIR_SLASH
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
 	db 43, MOONBLAST
@@ -2411,6 +2428,7 @@ NatuEvosAttacks:
 	db 20, TELEPORT
 	db 30, FUTURE_SIGHT
 	db 40, CONFUSE_RAY
+	db 46, AIR_SLASH
 	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
 
@@ -2423,6 +2441,7 @@ XatuEvosAttacks:
 	db 20, TELEPORT
 	db 35, FUTURE_SIGHT
 	db 50, CONFUSE_RAY
+	db 60, AIR_SLASH
 	db 65, PSYCHIC_M
 	db 0 ; no more level-up moves
 
@@ -2681,6 +2700,7 @@ MurkrowEvosAttacks:
 	db 11, PURSUIT
 	db 16, HAZE
 	db 26, NIGHT_SHADE
+	db 30, AIR_SLASH
 	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK
 	db 0 ; no more level-up moves
@@ -2855,6 +2875,7 @@ ScizorEvosAttacks:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
+	db 53, AIR_SLASH
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -3030,6 +3051,7 @@ MantineEvosAttacks:
 	db 18, BUBBLEBEAM
 	db 25, TAKE_DOWN
 	db 32, AGILITY
+	db 36, AIR_SLASH
 	db 40, WING_ATTACK
 	db 49, CONFUSE_RAY
 	db 0 ; no more level-up moves
@@ -3042,6 +3064,7 @@ SkarmoryEvosAttacks:
 	db 19, SWIFT
 	db 25, AGILITY
 	db 37, FURY_ATTACK
+	db 40, AIR_SLASH
 	db 49, STEEL_WING
 	db 0 ; no more level-up moves
 
