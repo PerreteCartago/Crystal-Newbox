@@ -199,7 +199,7 @@ KakunaEvosAttacks:
 BeedrillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, DEFENSE_CURL
-	db 10, FURY_ATTACK
+	db 10, FURY_SWIPES
 	db 15, FOCUS_ENERGY
 	db 20, TWINEEDLE
 	db 25, RAGE
@@ -279,7 +279,7 @@ SpearowEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 7, LEER
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 25, PURSUIT
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
@@ -291,7 +291,7 @@ FearowEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 7, LEER
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 26, PURSUIT
 	db 32, MIRROR_MOVE
 	db 40, DRILL_PECK
@@ -421,7 +421,7 @@ NidoranMEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 17, POISON_STING
 	db 23, FOCUS_ENERGY
-	db 30, FURY_ATTACK
+	db 30, FURY_SWIPES
 	db 37, POISON_JAB
 	db 38, HORN_DRILL
 	db 0 ; no more level-up moves
@@ -435,7 +435,7 @@ NidorinoEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
 	db 27, FOCUS_ENERGY
-	db 36, FURY_ATTACK
+	db 36, FURY_SWIPES
 	db 43, POISON_JAB
 	db 46, HORN_DRILL
 	db 0 ; no more level-up moves
@@ -1046,7 +1046,7 @@ RapidashEvosAttacks:
 	db 19, STOMP
 	db 26, FIRE_SPIN
 	db 34, TAKE_DOWN
-	db 40, FURY_ATTACK
+	db 40, FURY_SWIPES
 	db 47, AGILITY
 	db 61, FIRE_BLAST
 	db 0 ; no more level-up moves
@@ -1091,6 +1091,7 @@ MagnemiteEvosAttacks:
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 33, SWIFT
+	db 35, FLASH_CANNON
 	db 39, SCREECH
 	db 44, WILD_CHARGE
 	db 0 ; no more level-up moves
@@ -1107,6 +1108,7 @@ MagnetonEvosAttacks:
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 35, TRI_ATTACK
+	db 39, FLASH_CANNON
 	db 43, SCREECH
 	db 53, WILD_CHARGE
 	db 0 ; no more level-up moves
@@ -1116,7 +1118,7 @@ FarfetchDEvosAttacks:
 	db 1, PECK
 	db 7, SAND_ATTACK
 	db 13, LEER
-	db 19, FURY_ATTACK
+	db 19, FURY_SWIPES
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
@@ -1130,7 +1132,7 @@ DoduoEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 33, DRILL_PECK
@@ -1142,9 +1144,9 @@ DodrioEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 1, PURSUIT
-	db 1, FURY_ATTACK
+	db 1, FURY_SWIPES
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 38, DRILL_PECK
@@ -1507,7 +1509,7 @@ RhyhornEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, FURY_ATTACK
+	db 19, FURY_SWIPES
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
 	db 49, TAKE_DOWN
@@ -1519,9 +1521,9 @@ RhydonEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 1, STOMP
-	db 1, FURY_ATTACK
+	db 1, FURY_SWIPES
 	db 13, STOMP
-	db 19, FURY_ATTACK
+	db 19, FURY_SWIPES
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
 	db 54, TAKE_DOWN
@@ -1604,7 +1606,7 @@ GoldeenEvosAttacks:
 	db 10, SUPERSONIC
 	db 15, HORN_ATTACK
 	db 24, FLAIL
-	db 29, FURY_ATTACK
+	db 29, FURY_SWIPES
 	db 38, WATERFALL
 	db 43, HORN_DRILL
 	db 52, AGILITY
@@ -1618,7 +1620,7 @@ SeakingEvosAttacks:
 	db 10, SUPERSONIC
 	db 15, HORN_ATTACK
 	db 24, FLAIL
-	db 29, FURY_ATTACK
+	db 29, FURY_SWIPES
 	db 41, WATERFALL
 	db 49, HORN_DRILL
 	db 61, AGILITY
@@ -2148,7 +2150,7 @@ TyphlosionEvosAttacks:
 TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
-	db 1, POISON_JAB
+	db 1, SCRATCH
 	db 1, LEER
 	db 7, RAGE
 	db 13, BUBBLE
@@ -2881,7 +2883,7 @@ HeracrossEvosAttacks:
 	db 1, LEER
 	db 6, HORN_ATTACK
 	db 12, ENDURE
-	db 19, FURY_ATTACK
+	db 19, FURY_SWIPES
 	db 27, COUNTER
 	db 35, TAKE_DOWN
 	db 44, REVERSAL
@@ -2980,7 +2982,7 @@ PiloswineEvosAttacks:
 	db 10, POWDER_SNOW
 	db 19, ENDURE
 	db 28, TAKE_DOWN
-	db 33, FURY_ATTACK
+	db 33, FURY_SWIPES
 	db 42, MIST
 	db 56, BLIZZARD
 	db 70, AMNESIA
@@ -3049,7 +3051,7 @@ SkarmoryEvosAttacks:
 	db 13, SAND_ATTACK
 	db 19, SWIFT
 	db 25, AGILITY
-	db 37, FURY_ATTACK
+	db 37, FURY_SWIPES
 	db 40, AIR_SLASH
 	db 49, STEEL_WING
 	db 0 ; no more level-up moves
@@ -3112,7 +3114,7 @@ DonphanEvosAttacks:
 	db 1, GROWL
 	db 9, DEFENSE_CURL
 	db 17, FLAIL
-	db 25, FURY_ATTACK
+	db 25, FURY_SWIPES
 	db 33, ROLLOUT
 	db 41, RAPID_SPIN
 	db 49, EARTHQUAKE

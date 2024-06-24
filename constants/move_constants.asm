@@ -36,7 +36,7 @@
 	const SAND_ATTACK  ; 1c
 	const HEADBUTT     ; 1d
 	const HORN_ATTACK  ; 1e
-	const FURY_ATTACK  ; 1f
+	const FLASH_CANNON ; 1f
 	const HORN_DRILL   ; 20
 	const TACKLE       ; 21
 	const BODY_SLAM    ; 22

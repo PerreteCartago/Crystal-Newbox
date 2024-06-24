@@ -31,7 +31,7 @@ MoveDescriptions::
 	dw SandAttackDescription
 	dw HeadbuttDescription
 	dw HornAttackDescription
-	dw FuryAttackDescription
+	dw FlashCannonDescription
 	dw HornDrillDescription
 	dw TackleDescription
 	dw BodySlamDescription
@@ -384,10 +384,6 @@ HornAttackDescription:
 	db   "An attack using a"
 	line "horn to jab.@"
 
-FuryAttackDescription:
-	db   "Jabs the target"
-	line "2-5 times.@"
-
 HornDrillDescription:
 	db   "A one-hit KO,"
 	line "drill attack.@"
@@ -637,6 +633,7 @@ ConfusionDescription:
 	db   "An attack that may"
 	line "cause confusion.@"
 
+FlashCannonDescription:
 BugBuzzDescription:
 PsychicMDescription:
 	db   "An attack that may"

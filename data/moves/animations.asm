@@ -32,7 +32,7 @@ BattleAnimations::
 	dw BattleAnim_SandAttack
 	dw BattleAnim_Headbutt
 	dw BattleAnim_HornAttack
-	dw BattleAnim_FuryAttack
+	dw BattleAnim_FlashCannon
 	dw BattleAnim_HornDrill
 	dw BattleAnim_Tackle
 	dw BattleAnim_BodySlam
@@ -2277,23 +2277,33 @@ BattleAnim_HornAttack:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_FuryAttack:
-	anim_2gfx BATTLE_ANIM_GFX_HORN, BATTLE_ANIM_GFX_HIT
-	anim_obj BATTLE_ANIM_OBJ_HORN, 72, 72, $2
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj BATTLE_ANIM_OBJ_HIT, 128, 40, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_HORN, 80, 88, $2
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj BATTLE_ANIM_OBJ_HIT, 136, 56, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_HORN, 76, 80, $2
-	anim_wait 8
-	anim_sound 0, 1, SFX_HORN_ATTACK
-	anim_obj BATTLE_ANIM_OBJ_HIT, 132, 48, $0
-	anim_wait 8
+BattleAnim_FlashCannon:
+	anim_1gfx BATTLE_ANIM_GFX_EGG
+	anim_bgeffect BATTLE_BG_EFFECT_ALTERNATE_HUES, $0, $2, $0
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $60, $2, $0
+.loop
+	anim_bgeffect BATTLE_BG_EFFECT_FLASH_INVERTED, $0, $4, $3
+;	anim_bgp $1b
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj BATTLE_ANIM_OBJ_OCTAZOOKA,  8, 0, 11, 4, $4
+	anim_wait 4
+;	anim_bgp $e4
+	anim_sound 0, 1, SFX_SHINE
+	anim_obj BATTLE_ANIM_OBJ_OCTAZOOKA,  8, 0, 11, 4, $4
+	anim_wait 4
+	anim_loop 10, .loop
+	anim_call BattleAnim_FollowEnemyFeet_1
+	anim_bgeffect BATTLE_BG_EFFECT_VIBRATE_MON, $0, $0, $0
+	anim_wait 32
+	anim_call BattleAnim_ShowMon_1
+	anim_wait 1
+	anim_bgp $e4
+	anim_ret
+
+BattleAnim_FollowEnemyFeet_1:
+	anim_enemyfeetobj
+	anim_bgeffect BATTLE_BG_EFFECT_BATTLEROBJ_1ROW, $0, $1, $0
+	anim_wait 6
 	anim_ret
 
 BattleAnim_HornDrill:

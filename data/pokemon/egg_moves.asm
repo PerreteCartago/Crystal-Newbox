@@ -393,7 +393,7 @@ ScytherEggMoves:
 	db -1 ; end
 
 PinsirEggMoves:
-	db FURY_ATTACK
+	db FURY_SWIPES
 	db FLAIL
 	db -1 ; end
 

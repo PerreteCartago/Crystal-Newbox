@@ -30,7 +30,7 @@ MoveNames::
 	li "Ataque arena"
 	li "Golpe cabeza"
 	li "Cornada"
-	li "Ataque furia"
+	li "F.Resplandor"
 	li "Perforador"
 	li "Placaje"
 	li "Golpe cuerpo"
