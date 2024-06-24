@@ -274,7 +274,6 @@ ShellderEggMoves:
 	db -1 ; end
 
 GastlyEggMoves:
-	db PSYWAVE
 	db PERISH_SONG
 	db HAZE
 	db WILL_O_WISP
@@ -324,7 +323,6 @@ LickitungEggMoves:
 
 KoffingEggMoves:
 	db SCREECH
-	db PSYWAVE
 	db PSYBEAM
 	db DESTINY_BOND
 	db PAIN_SPLIT

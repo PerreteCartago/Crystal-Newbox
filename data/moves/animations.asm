@@ -150,7 +150,7 @@ BattleAnimations::
 	dw BattleAnim_DizzyPunch
 	dw BattleAnim_Spore
 	dw BattleAnim_Flash
-	dw BattleAnim_Psywave
+	dw BattleAnim_PoisonJab
 	dw BattleAnim_Splash
 	dw BattleAnim_AcidArmor
 	dw BattleAnim_Crabhammer
@@ -2779,23 +2779,15 @@ BattleAnim_SilverWind:
 	anim_wait 32
 	anim_ret
 
-BattleAnim_Psywave:
-	anim_1gfx BATTLE_ANIM_GFX_PSYCHIC
-	anim_bgeffect BATTLE_BG_EFFECT_PSYCHIC, $0, $0, $0
-.loop
-	anim_sound 6, 2, SFX_PSYCHIC
-	anim_obj BATTLE_ANIM_OBJ_WAVE, 64, 80, $2
+BattleAnim_PoisonJab:
+	anim_3gfx BATTLE_ANIM_GFX_HORN, BATTLE_ANIM_GFX_HIT, BATTLE_ANIM_GFX_POISON
+	anim_sound 0, 1, SFX_HORN_ATTACK
+	anim_obj BATTLE_ANIM_OBJ_HORN,   9, 0,  12, 0, $1
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 17, 0,  7, 0, $0
 	anim_wait 8
-	anim_sound 6, 2, SFX_PSYCHIC
-	anim_obj BATTLE_ANIM_OBJ_WAVE, 64, 88, $3
-	anim_wait 8
-	anim_sound 6, 2, SFX_PSYCHIC
-	anim_obj BATTLE_ANIM_OBJ_WAVE, 64, 96, $4
-	anim_wait 8
-	anim_loop 3, .loop
-	anim_wait 32
-	anim_incbgeffect BATTLE_BG_EFFECT_PSYCHIC
-	anim_wait 4
+	anim_call BattleAnimSub_Sludge
+	anim_wait 24
 	anim_ret
 
 BattleAnim_Glare:

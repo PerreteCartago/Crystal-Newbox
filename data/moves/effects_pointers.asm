@@ -63,7 +63,6 @@ MoveEffectsPointers:
 	dw LeechSeed
 	dw Disable
 	dw StaticDamage
-	dw Psywave
 	dw Counter
 	dw Encore
 	dw PainSplit

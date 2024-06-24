@@ -148,7 +148,7 @@ MoveNames::
 	li "Puño mareo"
 	li "Espora"
 	li "Destello"
-	li "Psicoonda"
+	li "Puya nociva"
 	li "Salpicadura"
 	li "Arm. acida"
 	li "Martillazo"

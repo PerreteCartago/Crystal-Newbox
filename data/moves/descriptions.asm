@@ -149,7 +149,7 @@ MoveDescriptions::
 	dw DizzyPunchDescription
 	dw SporeDescription
 	dw FlashDescription
-	dw PsywaveDescription
+	dw PoisonJabDescription
 	dw SplashDescription
 	dw AcidArmorDescription
 	dw CrabhammerDescription
@@ -854,9 +854,9 @@ FlashDescription:
 	db   "Blinds the foe to"
 	line "reduce accuracy.@"
 
-PsywaveDescription:
-	db   "An attack with"
-	line "variable power.@"
+PoisonJabDescription:
+	db   "Physical atack"
+	line "that may poison.@"
 
 SplashDescription:
 	db   "Has no effect"

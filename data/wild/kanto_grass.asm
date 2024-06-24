@@ -344,7 +344,7 @@ KantoGrassWildMons:
 	db 17, RATTATA
 	db 17, SPEAROW
 	db 18, SNUBBULL
-	db 18, RATICATE
+	db 18, VULPIX
 	db 18, JIGGLYPUFF
 	db 16, ABRA
 	db 16, ABRA
@@ -352,7 +352,7 @@ KantoGrassWildMons:
 	db 17, RATTATA
 	db 17, SPEAROW
 	db 18, SNUBBULL
-	db 18, RATICATE
+	db 18, VULPIX
 	db 18, JIGGLYPUFF
 	db 16, ABRA
 	db 16, ABRA
@@ -360,7 +360,7 @@ KantoGrassWildMons:
 	db 17, MEOWTH
 	db 17, MURKROW
 	db 18, HOUNDOUR
-	db 18, PERSIAN
+	db 18, VULPIX
 	db 18, JIGGLYPUFF
 	db 16, ABRA
 	db 16, ABRA
@@ -370,24 +370,24 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, JIGGLYPUFF
 	db 16, ABRA
 	db 17, GROWLITHE
-	db 16, JIGGLYPUFF
+	db 16, VULPIX
 	db 18, KADABRA
 	db 18, KADABRA
 	; day
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, JIGGLYPUFF
 	db 16, ABRA
 	db 17, GROWLITHE
-	db 16, JIGGLYPUFF
+	db 16, VULPIX
 	db 18, KADABRA
 	db 18, KADABRA
 	; nite
 	db 17, MEOWTH
 	db 20, NOCTOWL
-	db 16, ABRA
+	db 16, VULPIX
 	db 17, HAUNTER
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
@@ -399,7 +399,7 @@ KantoGrassWildMons:
 	; morn
 	db 15, RATTATA
 	db 15, SPEAROW
-	db 15, RATICATE
+	db 15, MANKEY
 	db 15, FEAROW
 	db 15, FEAROW
 	db 18, MAROWAK
@@ -407,19 +407,19 @@ KantoGrassWildMons:
 	; day
 	db 15, RATTATA
 	db 15, SPEAROW
-	db 15, RATICATE
-	db 15, FEAROW
-	db 15, FEAROW
+	db 15, MANKEY
+	db 15, MANKEY
+	db 15, MANKEY
 	db 18, MAROWAK
 	db 18, MAROWAK
 	; nite
 	db 15, RATTATA
 	db 15, VENONAT
-	db 15, RATICATE
+	db 15, MANKEY
 	db 15, VENOMOTH
 	db 15, ZUBAT
-	db 18, RATICATE
-	db 18, RATICATE
+	db 18, MANKEY
+	db 18, MANKEY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_10_NORTH
