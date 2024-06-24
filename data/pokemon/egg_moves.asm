@@ -391,6 +391,7 @@ ScytherEggMoves:
 	db REVERSAL
 	db LIGHT_SCREEN
 	db SILVER_WIND
+	db BUG_BUZZ
 	db -1 ; end
 
 PinsirEggMoves:
@@ -486,7 +487,6 @@ HoothootEggMoves:
 
 LedybaEggMoves:
 	db PSYBEAM
-	db BIDE
 	db LIGHT_SCREEN
 	db -1 ; end
 
@@ -506,7 +506,6 @@ ChinchouEggMoves:
 
 PichuEggMoves:
 	db REVERSAL
-	db BIDE
 	db PRESENT
 	db ENCORE
 	db DOUBLESLAP
@@ -631,7 +630,6 @@ PinecoEggMoves:
 	db -1 ; end
 
 DunsparceEggMoves:
-	db BIDE
 	db ANCIENTPOWER
 	db ROCK_SLIDE
 	db BITE
@@ -669,7 +667,6 @@ ShuckleEggMoves:
 
 HeracrossEggMoves:
 	db DEFENSE_CURL
-	db BIDE
 	db FLAIL
 	db -1 ; end
 

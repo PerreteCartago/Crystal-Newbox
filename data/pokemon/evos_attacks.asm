@@ -190,6 +190,7 @@ ButterfreeEvosAttacks:
 	db 28, GUST
 	db 34, PSYBEAM
 	db 40, SAFEGUARD
+	db 40, BUG_BUZZ
 	db 43, AIR_SLASH
 	db 47, SILVER_WIND
 	db 0 ; no more level-up moves
@@ -640,6 +641,7 @@ VenonatEvosAttacks:
 	db 17, CONFUSION
 	db 20, POISONPOWDER
 	db 25, LEECH_LIFE
+	db 25, BUG_BUZZ
 	db 28, STUN_SPORE
 	db 33, PSYBEAM
 	db 36, SLEEP_POWDER
@@ -663,6 +665,7 @@ VenomothEvosAttacks:
 	db 42, SLEEP_POWDER
 	db 52, PSYCHIC_M
 	db 54, SILVER_WIND
+	db 59, BUG_BUZZ
 	db 62, AIR_SLASH
 	db 0 ; no more level-up moves
 
@@ -2163,7 +2166,7 @@ TyphlosionEvosAttacks:
 TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
-	db 1, SCRATCH
+	db 1, BUG_BUZZ
 	db 1, LEER
 	db 7, RAGE
 	db 13, BUBBLE
@@ -2273,6 +2276,7 @@ LedybaEvosAttacks:
 	db 29, BATON_PASS
 	db 36, SWIFT
 	db 36, AIR_SLASH
+	db 41, BUG_BUZZ
 	db 43, AGILITY
 	db 50, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2291,6 +2295,7 @@ LedianEvosAttacks:
 	db 42, SWIFT
 	db 42, AIR_SLASH
 	db 51, AGILITY
+	db 53, BUG_BUZZ
 	db 60, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -2636,6 +2641,7 @@ YanmaEvosAttacks:
 	db 31, SUPERSONIC
 	db 37, WING_ATTACK
 	db 43, SCREECH
+	db 57, BUG_BUZZ
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
@@ -2762,7 +2768,6 @@ PinecoEvosAttacks:
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
 	db 22, RAPID_SPIN
-	db 29, BIDE
 	db 36, EXPLOSION
 	db 43, SPIKES
 	db 50, DOUBLE_EDGE
@@ -2776,7 +2781,6 @@ ForretressEvosAttacks:
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
 	db 22, RAPID_SPIN
-	db 29, BIDE
 	db 39, EXPLOSION
 	db 49, SPIKES
 	db 59, DOUBLE_EDGE
@@ -2882,7 +2886,6 @@ ShuckleEvosAttacks:
 	db 9, WRAP
 	db 14, ENCORE
 	db 23, SAFEGUARD
-	db 28, BIDE
 	db 37, REST
 	db 0 ; no more level-up moves
 
@@ -3239,7 +3242,6 @@ MiltankEvosAttacks:
 	db 8, DEFENSE_CURL
 	db 13, STOMP
 	db 19, MILK_DRINK
-	db 26, BIDE
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
 	db 45, PLAY_ROUGH

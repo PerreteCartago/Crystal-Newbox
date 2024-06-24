@@ -24,7 +24,7 @@ FalknerGroup:
 		db PERFECT_DV, $de ; atk|def, spd|spc
 		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
 		db NEVERMELTICE
-		db ICE_BEAM, PRESENT, HAIL, NO_MOVE
+		db ICE_BEAM, PRESENT, HAIL, AVALANCHE
 	db  14, MURKROW
 		db PERFECT_DV, $de ; atk|def, spd|spc
 		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
@@ -39,7 +39,7 @@ FalknerGroup:
 		db PERFECT_DV, $de ; atk|def, spd|spc
 		dw $FFFF, $FFFF, $FFFF, $FFFF, $FFFF ; hp, atk, def, spd, spc
 		db KINGS_ROCK
-		db ANCIENTPOWER, ROCK_THROW, SWORDS_DANCE, BITE
+		db ANCIENTPOWER, ROCK_THROW, SWORDS_DANCE, AIR_SLASH
 	db -1 ; end
 
 WhitneyGroup:
@@ -320,7 +320,7 @@ BrockGroup:
 	db 41, GRAVELER,   DEFENSE_CURL, ROCK_SLIDE, ROLLOUT, EARTHQUAKE
 	db 41, RHYHORN,    FURY_ATTACK, SCARY_FACE, EARTHQUAKE, HORN_DRILL
 	db 42, OMASTAR,    BITE, SURF, PROTECT, SPIKE_CANNON
-	db 44, ONIX,       BIND, ROCK_SLIDE, BIDE, SANDSTORM
+	db 44, ONIX,       BIND, ROCK_SLIDE, DOUBLE_EDGE, SANDSTORM
 	db 42, KABUTOPS,   SLASH, SURF, ENDURE, GIGA_DRAIN
 	db -1 ; end
 

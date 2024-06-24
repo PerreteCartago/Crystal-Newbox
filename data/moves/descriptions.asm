@@ -117,7 +117,7 @@ MoveDescriptions::
 	dw HazeDescription
 	dw ReflectDescription
 	dw FocusEnergyDescription
-	dw BideDescription
+	dw BugBuzzDescription
 	dw MetronomeDescription
 	dw MirrorMoveDescription
 	dw SelfdestructDescription
@@ -637,6 +637,7 @@ ConfusionDescription:
 	db   "An attack that may"
 	line "cause confusion.@"
 
+BugBuzzDescription:
 PsychicMDescription:
 	db   "An attack that may"
 	line "lower SPCL.DEF.@"
@@ -728,10 +729,6 @@ ReflectDescription:
 FocusEnergyDescription:
 	db   "Raises the criti-"
 	line "cal hit ratio.@"
-
-BideDescription:
-	db   "Waits 2-3 turns &"
-	line "hits back double.@"
 
 MetronomeDescription:
 	db   "Randomly uses any"

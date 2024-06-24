@@ -116,7 +116,7 @@ MoveNames::
 	li "Niebla"
 	li "Reflejo"
 	li "Foco energía"
-	li "Venganza"
+	li "Zumbido"
 	li "Metrónomo"
 	li "Mov. espejo"
 	li "Autodestruc."

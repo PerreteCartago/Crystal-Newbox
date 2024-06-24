@@ -38,7 +38,6 @@ MoveGrammar:
 ; 1: originally "[mon]の<LINE>[move]した!" ("[mon]<LINE>did [move]!")
 	db RECOVER
 	db TELEPORT
-	db BIDE
 	db SELFDESTRUCT
 	db AMNESIA
 	db FLAIL
