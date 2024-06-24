@@ -159,7 +159,7 @@ MoveDescriptions::
 	dw RestDescription
 	dw RockSlideDescription
 	dw HyperFangDescription
-	dw SharpenDescription
+	dw IronHeadDescription
 	dw ConversionDescription
 	dw TriAttackDescription
 	dw SuperFangDescription
@@ -891,9 +891,9 @@ HyperFangDescription:
 	db   "An attack that may"
 	line "cause flinching.@"
 
-SharpenDescription:
-	db   "A move that raises"
-	line "the user's ATTACK.@"
+IronHeadDescription:
+	db   "Iron attack that"
+	line "may cause a finch@"
 
 ConversionDescription:
 	db   "Change user's type"

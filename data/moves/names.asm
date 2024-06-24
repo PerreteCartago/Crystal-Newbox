@@ -158,7 +158,7 @@ MoveNames::
 	li "Descanso"
 	li "Avalancha"
 	li "Hip.colmillo"
-	li "Afilar"
+	li "Cabezahierro"
 	li "Conversión"
 	li "Tri-ataque"
 	li "Superdiente"

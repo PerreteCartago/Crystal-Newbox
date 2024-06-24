@@ -160,7 +160,7 @@ BattleAnimations::
 	dw BattleAnim_Rest
 	dw BattleAnim_RockSlide
 	dw BattleAnim_HyperFang
-	dw BattleAnim_Sharpen
+	dw BattleAnim_IronHead
 	dw BattleAnim_Conversion
 	dw BattleAnim_TriAttack
 	dw BattleAnim_SuperFang
@@ -2944,16 +2944,19 @@ BattleAnim_Meditate:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Sharpen:
-	anim_1gfx BATTLE_ANIM_GFX_SHAPES
-	anim_obp0 $e4
-	anim_call BattleAnim_TargetObj_1Row
-	anim_sound 0, 0, SFX_SHARPEN
-	anim_bgeffect BATTLE_BG_EFFECT_FADE_MON_TO_LIGHT_REPEATING, $0, BG_EFFECT_USER, $40
-	anim_obj BATTLE_ANIM_OBJ_SHARPEN, 48, 88, $0
-	anim_wait 96
-	anim_incobj 2
-	anim_incbgeffect BATTLE_BG_EFFECT_FADE_MON_TO_LIGHT_REPEATING
+BattleAnim_IronHead:
+	anim_2gfx BATTLE_ANIM_GFX_REFLECT, BATTLE_ANIM_GFX_HIT
+	anim_call BattleAnim_FollowEnemyFeet_0
+	anim_obp0 0, 0, 0, 0
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $40, $2, $0
+	anim_call BattleAnimSub_Metallic
+	anim_resetobp0
+	anim_sound 0, 1, SFX_TACKLE
+	anim_bgeffect BATTLE_BG_EFFECT_TACKLE, $0, $1, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_TACKLE
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 17, 0,  7, 0, $0
+	anim_wait 4
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 

@@ -1103,14 +1103,12 @@ MagnemiteEvosAttacks:
 	db 35, FLASH_CANNON
 	db 39, SCREECH
 	db 44, WILD_CHARGE
+	db 49, IRON_HEAD
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, THUNDERSHOCK
-	db 1, SUPERSONIC
-	db 1, SONICBOOM
 	db 6, THUNDERSHOCK
 	db 11, SUPERSONIC
 	db 16, SONICBOOM
@@ -1120,6 +1118,7 @@ MagnetonEvosAttacks:
 	db 39, FLASH_CANNON
 	db 43, SCREECH
 	db 53, WILD_CHARGE
+	db 55, IRON_HEAD
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1870,7 +1869,7 @@ PorygonEvosAttacks:
 	db 9, AGILITY
 	db 12, PSYBEAM
 	db 20, RECOVER
-	db 24, SHARPEN
+	db 24, SWORDS_DANCE
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
 	db 44, WILD_CHARGE
@@ -1937,6 +1936,7 @@ AerodactylEvosAttacks:
 	db 29, ANCIENTPOWER
 	db 36, SCARY_FACE
 	db 43, TAKE_DOWN
+	db 49, IRON_HEAD
 	db 50, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -2158,7 +2158,7 @@ TyphlosionEvosAttacks:
 TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
-	db 1, EARTH_POWER
+	db 1, SCRATCH
 	db 1, LEER
 	db 7, RAGE
 	db 13, BUBBLE
@@ -2779,6 +2779,7 @@ ForretressEvosAttacks:
 	db 39, EXPLOSION
 	db 49, SPIKES
 	db 59, DOUBLE_EDGE
+	db 65, IRON_HEAD
 	db 0 ; no more level-up moves
 
 DunsparceEvosAttacks:
@@ -2874,6 +2875,7 @@ ScizorEvosAttacks:
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
 	db 53, AIR_SLASH
+	db 53, IRON_HEAD
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -3067,6 +3069,7 @@ SkarmoryEvosAttacks:
 	db 37, FURY_SWIPES
 	db 40, AIR_SLASH
 	db 49, STEEL_WING
+	db 59, IRON_HEAD
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:

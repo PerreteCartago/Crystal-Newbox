@@ -313,6 +313,7 @@ CuboneEggMoves:
 	db SKULL_BASH
 	db PERISH_SONG
 	db SWORDS_DANCE
+	db IRON_HEAD
 	db -1 ; end
 
 LickitungEggMoves:
@@ -799,6 +800,7 @@ LarvitarEggMoves:
 	db OUTRAGE
 	db FOCUS_ENERGY
 	db ANCIENTPOWER
+	db IRON_HEAD
 	db -1 ; end
 
 NoEggMoves:
