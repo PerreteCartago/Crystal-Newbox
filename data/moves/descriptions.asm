@@ -132,7 +132,7 @@ MoveDescriptions::
 	dw SwiftDescription
 	dw SkullBashDescription
 	dw SpikeCannonDescription
-	dw ConstrictDescription
+	dw EarthPowerDescription
 	dw AmnesiaDescription
 	dw AvalancheDescription
 	dw SoftboiledDescription
@@ -1242,6 +1242,10 @@ ExtremespeedDescription:
 AncientpowerDescription:
 	db   "An attack that may"
 	line "raise all stats.@"
+
+EarthPowerDescription:
+	db   "Sand attack that"
+	line "may lower SP.DEF.@"
 
 ShadowBallDescription:
 	db   "An attack that may"

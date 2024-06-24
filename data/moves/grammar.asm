@@ -82,7 +82,6 @@ MoveGrammar:
 	db METRONOME
 	db LICK
 	db CLAMP
-	db CONSTRICT
 	db POISON_GAS
 	db BUBBLE
 	db SLASH

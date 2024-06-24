@@ -133,7 +133,7 @@ BattleAnimations::
 	dw BattleAnim_Swift
 	dw BattleAnim_SkullBash
 	dw BattleAnim_SpikeCannon
-	dw BattleAnim_Constrict
+	dw BattleAnim_EarthPower
 	dw BattleAnim_Amnesia
 	dw BattleAnim_Avalanche
 	dw BattleAnim_Softboiled
@@ -1839,17 +1839,37 @@ BattleAnim_Confusion:
 	anim_call BattleAnim_ShowMon_1
 	anim_ret
 
-BattleAnim_Constrict:
-	anim_1gfx BATTLE_ANIM_GFX_ROPE
-	anim_sound 0, 1, SFX_BIND
-	anim_obj BATTLE_ANIM_OBJ_BIND2, 132, 64, $0
+BattleAnim_EarthPower:
+	anim_2gfx BATTLE_ANIM_GFX_FIRE, BATTLE_ANIM_GFX_ROCKS
+	anim_sound 0, 0, SFX_EGG_BOMB
+	anim_bgp $1b
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $28, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 120, 68, $5c
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 120, 68, $e8
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 120, 68, $9c
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 120, 68, $50
+	anim_obj BATTLE_ANIM_OBJ_EMBER, 120, 68, $30
+	anim_wait 40
+	anim_clearobjs
 	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_BIND1, 132, 48, $0
+	anim_sound 0, 0, SFX_EGG_BOMB
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $28, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 144, 68, $5c
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 144, 68, $e8
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 144, 68, $d0
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 144, 68, $10
+	anim_obj BATTLE_ANIM_OBJ_EMBER, 144, 68, $30
+	anim_wait 40
+	anim_clearobjs
 	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_BIND2, 132, 40, $0
-	anim_wait 8
-	anim_obj BATTLE_ANIM_OBJ_BIND1, 132, 56, $0
-	anim_wait 64
+	anim_sound 0, 0, SFX_EGG_BOMB
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $28, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 132, 68, $28
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 132, 68, $e8
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 132, 68, $d0
+	anim_obj BATTLE_ANIM_OBJ_ROCK_SMASH, 132, 68, $50
+	anim_obj BATTLE_ANIM_OBJ_EMBER, 132, 68, $30
+	anim_wait 48
 	anim_ret
 
 BattleAnim_Earthquake:

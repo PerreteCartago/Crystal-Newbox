@@ -131,7 +131,7 @@ MoveNames::
 	li "Rapidez"
 	li "Cabezazo"
 	li "Clavo cañón"
-	li "Restricción"
+	li "Tierra viva"
 	li "Amnesia"
 	li "Alud"
 	li "Amortiguador"
