@@ -108,6 +108,7 @@ ZubatEggMoves:
 	db FAINT_ATTACK
 	db GUST
 	db WHIRLWIND
+	db ZEN_HEADBUTT
 	db -1 ; end
 
 OddishEggMoves:
@@ -539,6 +540,7 @@ NatuEggMoves:
 	db QUICK_ATTACK
 	db FAINT_ATTACK
 	db STEEL_WING
+	db ZEN_HEADBUTT
 	db -1 ; end
 
 MareepEggMoves:

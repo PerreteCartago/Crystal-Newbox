@@ -113,7 +113,7 @@ SquirtleEvosAttacks:
 	db 1, TACKLE
 	db 4, TAIL_WHIP
 	db 7, BUBBLE
-	db 10, WITHDRAW
+	db 10, ACID_ARMOR
 	db 18, BITE
 	db 23, RAPID_SPIN
 	db 28, PROTECT
@@ -128,7 +128,7 @@ WartortleEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 7, BUBBLE
-	db 10, WITHDRAW
+	db 10, ACID_ARMOR
 	db 19, BITE
 	db 25, RAPID_SPIN
 	db 31, PROTECT
@@ -142,7 +142,7 @@ BlastoiseEvosAttacks:
 	db 1, TACKLE
 	db 4, TAIL_WHIP
 	db 7, BUBBLE
-	db 10, WITHDRAW
+	db 10, ACID_ARMOR
 	db 19, BITE
 	db 25, RAPID_SPIN
 	db 31, PROTECT
@@ -632,6 +632,7 @@ VenonatEvosAttacks:
 	db 25, BUG_BUZZ
 	db 28, STUN_SPORE
 	db 33, PSYBEAM
+	db 37, ZEN_HEADBUTT
 	db 36, SLEEP_POWDER
 	db 41, PSYCHIC_M
 	db 48, SILVER_WIND
@@ -650,6 +651,7 @@ VenomothEvosAttacks:
 	db 28, STUN_SPORE
 	db 31, GUST
 	db 36, PSYBEAM
+	db 41, ZEN_HEADBUTT
 	db 42, SLEEP_POWDER
 	db 52, PSYCHIC_M
 	db 54, SILVER_WIND
@@ -725,6 +727,7 @@ PsyduckEvosAttacks:
 	db 23, SCREECH
 	db 31, PSYCH_UP
 	db 40, FURY_SWIPES
+	db 40, ZEN_HEADBUTT
 	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -740,6 +743,7 @@ GolduckEvosAttacks:
 	db 23, SCREECH
 	db 31, PSYCH_UP
 	db 44, FURY_SWIPES
+	db 44, ZEN_HEADBUTT
 	db 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -849,6 +853,7 @@ KadabraEvosAttacks:
 	db 16, CONFUSION
 	db 18, DISABLE
 	db 21, PSYBEAM
+	db 25, ZEN_HEADBUTT
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
 	db 38, PSYCHIC_M
@@ -862,6 +867,7 @@ AlakazamEvosAttacks:
 	db 16, CONFUSION
 	db 18, DISABLE
 	db 21, PSYBEAM
+	db 25, ZEN_HEADBUTT
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
 	db 38, PSYCHIC_M
@@ -1070,6 +1076,7 @@ SlowpokeEvosAttacks:
 	db 15, BUBBLE
 	db 20, CONFUSION
 	db 29, DISABLE
+	db 34, ZEN_HEADBUTT
 	db 34, HEADBUTT
 	db 43, AMNESIA
 	db 48, PSYCHIC_M
@@ -1085,7 +1092,8 @@ SlowbroEvosAttacks:
 	db 20, CONFUSION
 	db 29, DISABLE
 	db 34, HEADBUTT
-	db 37, WITHDRAW
+	db 34, ZEN_HEADBUTT
+	db 37, ACID_ARMOR
 	db 46, AMNESIA
 	db 54, PSYCHIC_M
 	db 0 ; no more level-up moves
@@ -1221,7 +1229,7 @@ ShellderEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, CLOYSTER
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, WITHDRAW
+	db 1, DEFENSE_CURL
 	db 9, SUPERSONIC
 	db 17, AURORA_BEAM
 	db 25, PROTECT
@@ -1232,7 +1240,7 @@ ShellderEvosAttacks:
 
 CloysterEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WITHDRAW
+	db 1, DEFENSE_CURL
 	db 1, SUPERSONIC
 	db 1, AURORA_BEAM
 	db 1, PROTECT
@@ -1309,6 +1317,7 @@ DrowzeeEvosAttacks:
 	db 40, PSYCHIC_M
 	db 43, PSYCH_UP
 	db 45, FUTURE_SIGHT
+	db 50, ZEN_HEADBUTT
 	db 0 ; no more level-up moves
 
 HypnoEvosAttacks:
@@ -1325,6 +1334,7 @@ HypnoEvosAttacks:
 	db 49, PSYCHIC_M
 	db 55, PSYCH_UP
 	db 60, FUTURE_SIGHT
+	db 64, ZEN_HEADBUTT
 	db 0 ; no more level-up moves
 
 KrabbyEvosAttacks:
@@ -1477,6 +1487,7 @@ LickitungEvosAttacks:
 	db 1, LICK
 	db 7, SUPERSONIC
 	db 13, DEFENSE_CURL
+	db 18, ZEN_HEADBUTT
 	db 19, STOMP
 	db 25, WRAP
 	db 31, DISABLE
@@ -1665,6 +1676,7 @@ MrMimeEvosAttacks:
 	db 6, CONFUSION
 	db 11, SUBSTITUTE
 	db 16, MEDITATE
+	db 18, ZEN_HEADBUTT
 	db 21, DOUBLESLAP
 	db 26, LIGHT_SCREEN
 	db 26, REFLECT
@@ -1756,6 +1768,7 @@ TaurosEvosAttacks:
 	db 13, HORN_ATTACK
 	db 19, SCARY_FACE
 	db 26, PURSUIT
+	db 29, ZEN_HEADBUTT
 	db 34, REST
 	db 43, THRASH
 	db 53, TAKE_DOWN
@@ -1878,7 +1891,7 @@ PorygonEvosAttacks:
 OmanyteEvosAttacks:
 	db EVOLVE_LEVEL, 40, OMASTAR
 	db 0 ; no more evolutions
-	db 1, WITHDRAW
+	db 1, DEFENSE_CURL
 	db 13, BITE
 	db 19, BUBBLE
 	db 31, LEER
@@ -1889,7 +1902,7 @@ OmanyteEvosAttacks:
 
 OmastarEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WITHDRAW
+	db 1, DEFENSE_CURL
 	db 1, BITE
 	db 13, BITE
 	db 19, BUBBLE
@@ -2233,6 +2246,7 @@ HoothootEvosAttacks:
 	db 22, REFLECT
 	db 28, TAKE_DOWN
 	db 29, AIR_SLASH
+	db 33, ZEN_HEADBUTT
 	db 34, CONFUSION
 	db 40, MOONBLAST
 	db 48, DREAM_EATER
@@ -2250,6 +2264,7 @@ NoctowlEvosAttacks:
 	db 25, REFLECT
 	db 32, AIR_SLASH
 	db 33, TAKE_DOWN
+	db 37, ZEN_HEADBUTT
 	db 41, CONFUSION
 	db 47, MOONBLAST
 	db 57, DREAM_EATER
@@ -2712,6 +2727,7 @@ SlowkingEvosAttacks:
 	db 20, CONFUSION
 	db 29, DISABLE
 	db 34, HEADBUTT
+	db 34, ZEN_HEADBUTT
 	db 43, SWAGGER
 	db 48, PSYCHIC_M
 	db 0 ; no more level-up moves
@@ -2752,6 +2768,7 @@ GirafarigEvosAttacks:
 	db 20, AGILITY
 	db 30, BATON_PASS
 	db 41, PSYBEAM
+	db 41, ZEN_HEADBUTT
 	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -2880,7 +2897,7 @@ ScizorEvosAttacks:
 
 ShuckleEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WITHDRAW
+	db 1, DEFENSE_CURL
 	db 1, EARTH_POWER
 	db 9, WRAP
 	db 14, ENCORE
@@ -3157,6 +3174,7 @@ StantlerEvosAttacks:
 	db 15, HYPNOSIS
 	db 23, STOMP
 	db 31, SAND_ATTACK
+	db 38, ZEN_HEADBUTT
 	db 40, TAKE_DOWN
 	db 49, CONFUSE_RAY
 	db 0 ; no more level-up moves
@@ -3246,6 +3264,7 @@ MiltankEvosAttacks:
 	db 8, DEFENSE_CURL
 	db 13, STOMP
 	db 19, MILK_DRINK
+	db 29, ZEN_HEADBUTT
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
 	db 45, PLAY_ROUGH

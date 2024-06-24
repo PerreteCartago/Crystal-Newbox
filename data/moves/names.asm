@@ -109,7 +109,7 @@ MoveNames::
 	li "Reducción"
 	li "Pantallahumo"
 	li "Rayo confuso"
-	li "Refugio"
+	li "Cabezazo zen"
 	li "Rizo defensa"
 	li "Barrera"
 	li "Pantalla luz"

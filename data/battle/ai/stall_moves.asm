@@ -17,7 +17,6 @@ StallMoves:
 	db RAGE
 	db MIMIC
 	db SCREECH
-	db WITHDRAW
 	db DEFENSE_CURL
 	db BARRIER
 	db LIGHT_SCREEN

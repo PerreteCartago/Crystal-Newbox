@@ -10,7 +10,6 @@ MoveGrammar:
 	db SILVER_WIND
 	db MINIMIZE
 	db SMOKESCREEN
-	db WITHDRAW
 	db DEFENSE_CURL
 	db EGG_BOMB
 	db SMOG

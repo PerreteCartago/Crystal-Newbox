@@ -110,7 +110,7 @@ MoveDescriptions::
 	dw MinimizeDescription
 	dw SmokescreenDescription
 	dw ConfuseRayDescription
-	dw WithdrawDescription
+	dw ZenHeadButtDescription
 	dw DefenseCurlDescription
 	dw BarrierDescription
 	dw LightScreenDescription
@@ -351,11 +351,6 @@ VineWhipDescription:
 	db   "Whips the foe with"
 	line "slender vines.@"
 
-AirSlashDescription:
-StompDescription:
-	db   "An attack that may"
-	line "cause flinching.@"
-
 DoubleKickDescription:
 	db   "A double kicking"
 	line "attack.@"
@@ -431,10 +426,6 @@ PinMissileDescription:
 LeerDescription:
 	db   "Reduces the foe's"
 	line "DEFENSE.@"
-
-BiteDescription:
-	db   "An attack that may"
-	line "cause flinching.@"
 
 GrowlDescription:
 	db   "Reduces the foe's"
@@ -524,10 +515,6 @@ DrillPeckDescription:
 SubmissionDescription:
 	db   "An attack that al-"
 	line "so hurts the user.@"
-
-LowKickDescription:
-	db   "An attack that may"
-	line "cause flinching.@"
 
 CounterDescription:
 	db   "Returns a physical"
@@ -699,10 +686,6 @@ ConfuseRayDescription:
 	db   "A move that causes"
 	line "confusion.@"
 
-WithdrawDescription:
-	db   "Heightens the"
-	line "user's DEFENSE.@"
-
 DefenseCurlDescription:
 	db   "Heightens the"
 	line "user's DEFENSE.@"
@@ -754,10 +737,6 @@ SmogDescription:
 SludgeDescription:
 	db   "An attack that may"
 	line "poison the foe.@"
-
-BoneClubDescription:
-	db   "An attack that may"
-	line "cause flinching.@"
 
 FireBlastDescription:
 	db   "An attack that"
@@ -883,11 +862,14 @@ RestDescription:
 	db   "Sleep for 2 turns"
 	line "to fully recover.@"
 
-RockSlideDescription:
-	db   "An attack that may"
-	line "cause flinching.@"
-
+LowKickDescription:
+BiteDescription:
+BoneClubDescription:
+AirSlashDescription:
+StompDescription:
 HyperFangDescription:
+ZenHeadButtDescription:
+RockSlideDescription:
 	db   "An attack that may"
 	line "cause flinching.@"
 
