@@ -1,6 +1,6 @@
 MoveNames::
 	list_start MoveNames
-	li "Destructor"
+	li "Placaje"
 	li "Golpe Karate"
 	li "DobleBofetón"
 	li "Puño cometa"
@@ -32,7 +32,7 @@ MoveNames::
 	li "Cornada"
 	li "F.Resplandor"
 	li "Perforador"
-	li "Placaje"
+	li "Roca afilada"
 	li "Golpe cuerpo"
 	li "Constricción"
 	li "Derribo"

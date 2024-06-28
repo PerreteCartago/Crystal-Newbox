@@ -34,7 +34,7 @@ BattleAnimations::
 	dw BattleAnim_HornAttack
 	dw BattleAnim_FlashCannon
 	dw BattleAnim_HornDrill
-	dw BattleAnim_Tackle
+	dw BattleAnim_StoneEdge
 	dw BattleAnim_BodySlam
 	dw BattleAnim_Wrap
 	dw BattleAnim_TakeDown
@@ -2135,15 +2135,37 @@ BattleAnim_Headbutt:
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
 
-BattleAnim_Tackle:
-	anim_1gfx BATTLE_ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_1Row
-	anim_bgeffect BATTLE_BG_EFFECT_TACKLE, $0, BG_EFFECT_USER, $0
-	anim_wait 4
-	anim_sound 0, 1, SFX_TACKLE
-	anim_obj BATTLE_ANIM_OBJ_HIT_BIG_YFIX, 136, 48, $0
-	anim_wait 8
-	anim_call BattleAnim_ShowMon_0
+BattleAnim_StoneEdge:
+	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_HIT
+.loop
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $e, $1, $0
+	anim_sound 0, 0, SFX_SPARK
+	anim_obj ANIM_OBJ_STONE_EDGE, 132, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 116, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 140, 60, $3
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 120, 40, $0
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 128, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 136, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 124, 60, $3
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 152, 48, $0
+	anim_sound 0, 0, SFX_SPARK
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 148, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 136, 60, $3
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 120, 60, $3
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 136, 56, $0
+	anim_wait 2
+	anim_obj ANIM_OBJ_STONE_EDGE, 144, 60, $3
+	anim_wait 2
+	anim_loop 5, .loop
+	anim_wait 24
 	anim_ret
 
 BattleAnim_BodySlam:

@@ -33,7 +33,7 @@ MoveDescriptions::
 	dw HornAttackDescription
 	dw FlashCannonDescription
 	dw HornDrillDescription
-	dw TackleDescription
+	dw StoneEdgeDescription
 	dw BodySlamDescription
 	dw WrapDescription
 	dw TakeDownDescription
@@ -383,9 +383,9 @@ HornDrillDescription:
 	db   "A one-hit KO,"
 	line "drill attack.@"
 
-TackleDescription:
-	db   "A full-body charge"
-	line "attack.@"
+StoneEdgeDescription:
+	db   "Has a high criti-"
+	line "cal hit ratio.@"
 
 BodySlamDescription:
 	db   "An attack that may"

@@ -38,7 +38,7 @@
 	const HORN_ATTACK  ; 1e
 	const FLASH_CANNON ; 1f
 	const HORN_DRILL   ; 20
-	const TACKLE       ; 21
+	const STONE_EDGE   ; 21
 	const BODY_SLAM    ; 22
 	const WRAP         ; 23
 	const TAKE_DOWN    ; 24
