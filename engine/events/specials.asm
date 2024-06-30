@@ -423,3 +423,8 @@ TrainerHouse:
 	ld a, [sMysteryGiftTrainerHouseFlag]
 	ld [wScriptVar], a
 	jp CloseSRAM
+
+TradebackNPC:
+	farcall TradebackGuy
+	ret
+
