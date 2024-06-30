@@ -516,12 +516,13 @@ JigglypuffEvosAttacks:
 	db 34, BODY_SLAM
 	db 39, DOUBLE_EDGE
 	db 40, PLAY_ROUGH
+	db 44, HYPERVOICE
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, DISABLE
+	db 1, HYPERVOICE
 	db 1, DEFENSE_CURL
 	db 1, PLAY_ROUGH
 	db 0 ; no more level-up moves
@@ -604,6 +605,7 @@ ParasEvosAttacks:
 	db 31, SLASH
 	db 37, GROWTH
 	db 43, GIGA_DRAIN
+	db 43, X_SCISSOR
 	db 0 ; no more level-up moves
 
 ParasectEvosAttacks:
@@ -617,6 +619,7 @@ ParasectEvosAttacks:
 	db 28, SPORE
 	db 37, SLASH
 	db 46, GROWTH
+	db 55, X_SCISSOR
 	db 55, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -1002,7 +1005,6 @@ GeodudeEvosAttacks:
 	db 31, ROLLOUT
 	db 36, EARTHQUAKE
 	db 39, STONE_EDGE
-	db 41, EXPLOSION
 	db 46, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -1019,7 +1021,6 @@ GravelerEvosAttacks:
 	db 27, DEFENSE_CURL
 	db 34, ROLLOUT
 	db 41, EARTHQUAKE
-	db 48, EXPLOSION
 	db 49, STONE_EDGE
 	db 54, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -1037,7 +1038,6 @@ GolemEvosAttacks:
 	db 27, DEFENSE_CURL
 	db 34, ROLLOUT
 	db 41, EARTHQUAKE
-	db 48, EXPLOSION
 	db 49, STONE_EDGE
 	db 54, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -1111,7 +1111,6 @@ MagnemiteEvosAttacks:
 	db 1, POUND
 	db 6, THUNDERSHOCK
 	db 11, SUPERSONIC
-	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 33, SWIFT
@@ -1126,7 +1125,6 @@ MagnetonEvosAttacks:
 	db 1, POUND
 	db 6, THUNDERSHOCK
 	db 11, SUPERSONIC
-	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 35, TRI_ATTACK
@@ -1380,12 +1378,10 @@ VoltorbEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 9, SCREECH
-	db 17, SONICBOOM
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 33, LIGHT_SCREEN
 	db 37, SWIFT
-	db 39, EXPLOSION
 	db 41, MIRROR_COAT
 	db 0 ; no more level-up moves
 
@@ -1393,15 +1389,12 @@ ElectrodeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, SCREECH
-	db 1, SONICBOOM
 	db 1, SELFDESTRUCT
 	db 9, SCREECH
-	db 17, SONICBOOM
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
 	db 34, LIGHT_SCREEN
 	db 40, SWIFT
-	db 44, EXPLOSION
 	db 48, MIRROR_COAT
 	db 0 ; no more level-up moves
 
@@ -1516,7 +1509,6 @@ KoffingEvosAttacks:
 	db 21, SLUDGE
 	db 25, SMOKESCREEN
 	db 33, HAZE
-	db 41, EXPLOSION
 	db 45, DESTINY_BOND
 	db 0 ; no more level-up moves
 
@@ -1531,7 +1523,6 @@ WeezingEvosAttacks:
 	db 21, SLUDGE
 	db 25, SMOKESCREEN
 	db 33, HAZE
-	db 44, EXPLOSION
 	db 51, DESTINY_BOND
 	db 0 ; no more level-up moves
 
@@ -1709,6 +1700,7 @@ ScytherEvosAttacks:
 	db 24, AGILITY
 	db 30, WING_ATTACK
 	db 36, SLASH
+	db 41, X_SCISSOR
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
 	db 53, AIR_SLASH
@@ -1767,6 +1759,7 @@ PinsirEvosAttacks:
 	db 13, BIND
 	db 19, SEISMIC_TOSS
 	db 25, DEFENSE_CURL
+	db 30, X_SCISSOR
 	db 31, GUILLOTINE
 	db 37, SUBMISSION
 	db 43, SWORDS_DANCE
@@ -2185,7 +2178,7 @@ TotodileEvosAttacks:
 	db EVOLVE_LEVEL, 18, CROCONAW
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, DRAIN_KISS
+	db 1, X_SCISSOR
 	db 7, RAGE
 	db 13, BUBBLE
 	db 20, BITE
@@ -2233,6 +2226,7 @@ SentretEvosAttacks:
 	db 25, SLAM
 	db 33, REST
 	db 41, AMNESIA
+	db 47, HYPERVOICE
 	db 0 ; no more level-up moves
 
 FurretEvosAttacks:
@@ -2246,6 +2240,7 @@ FurretEvosAttacks:
 	db 28, SLAM
 	db 38, REST
 	db 48, AMNESIA
+	db 56, HYPERVOICE
 	db 0 ; no more level-up moves
 
 HoothootEvosAttacks:
@@ -2570,6 +2565,7 @@ PolitoedEvosAttacks:
 	db 1, DOUBLESLAP
 	db 1, PERISH_SONG
 	db 35, PERISH_SONG
+	db 48, HYPERVOICE
 	db 51, SWAGGER
 	db 53, EARTH_POWER
 	db 0 ; no more level-up moves
@@ -2664,7 +2660,6 @@ YanmaEvosAttacks:
 	db 1, FORESIGHT
 	db 7, QUICK_ATTACK
 	db 13, DOUBLE_TEAM
-	db 19, SONICBOOM
 	db 25, DETECT
 	db 31, SUPERSONIC
 	db 37, WING_ATTACK
@@ -2797,7 +2792,6 @@ PinecoEvosAttacks:
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
 	db 22, RAPID_SPIN
-	db 36, EXPLOSION
 	db 43, SPIKES
 	db 50, DOUBLE_EDGE
 	db 0 ; no more level-up moves
@@ -2810,7 +2804,6 @@ ForretressEvosAttacks:
 	db 8, SELFDESTRUCT
 	db 15, TAKE_DOWN
 	db 22, RAPID_SPIN
-	db 39, EXPLOSION
 	db 49, SPIKES
 	db 59, DOUBLE_EDGE
 	db 65, IRON_HEAD
@@ -2836,6 +2829,7 @@ GligarEvosAttacks:
 	db 20, QUICK_ATTACK
 	db 28, FAINT_ATTACK
 	db 36, SLASH
+	db 42, X_SCISSOR
 	db 44, SCREECH
 	db 52, GUILLOTINE
 	db 0 ; no more level-up moves
@@ -2906,6 +2900,7 @@ ScizorEvosAttacks:
 	db 24, AGILITY
 	db 30, METAL_CLAW
 	db 36, SLASH
+	db 41, X_SCISSOR
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
 	db 53, AIR_SLASH

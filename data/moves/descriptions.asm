@@ -49,7 +49,7 @@ MoveDescriptions::
 	dw RoarDescription
 	dw SingDescription
 	dw SupersonicDescription
-	dw SonicboomDescription
+	dw HyperVoiceDescription
 	dw DisableDescription
 	dw AcidDescription
 	dw EmberDescription
@@ -153,7 +153,7 @@ MoveDescriptions::
 	dw SplashDescription
 	dw AcidArmorDescription
 	dw CrabhammerDescription
-	dw ExplosionDescription
+	dw XScissorDescription
 	dw FurySwipesDescription
 	dw BonemerangDescription
 	dw RestDescription
@@ -439,9 +439,9 @@ SupersonicDescription:
 	db   "Sound waves that"
 	line "cause confusion.@"
 
-SonicboomDescription:
-	db   "Always inflicts"
-	line "20HP damage.@"
+HyperVoiceDescription:
+	db   "Attack the foe"
+	line "with sound waves.@"
 
 DisableDescription:
 	db   "Disables the foe's"
@@ -839,9 +839,9 @@ CrabhammerDescription:
 	db   "Has a high criti-"
 	line "cal hit ratio.@"
 
-ExplosionDescription:
-	db   "Very powerful but"
-	line "makes user faint.@"
+XScissorDescription:
+	db   "Slashes foe with"
+	line "scythes or claws.@"
 
 FurySwipesDescription:
 	db   "Quickly scratches"
