@@ -180,7 +180,6 @@ DEF ALL_STATUS EQU (1 << PSN) | (1 << BRN) | (1 << FRZ) | (1 << PAR) | SLP_MASK
 
 ; wPlayerSubStatus3 or wEnemySubStatus3 bit flags
 	const_def
-	const SUBSTATUS_BIDE
 	const SUBSTATUS_RAMPAGE
 	const SUBSTATUS_IN_LOOP
 	const SUBSTATUS_FLINCHED
