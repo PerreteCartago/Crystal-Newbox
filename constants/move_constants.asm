@@ -44,7 +44,7 @@
 	const TAKE_DOWN    ; 24
 	const THRASH       ; 25
 	const DOUBLE_EDGE  ; 26
-	const TAIL_WHIP    ; 27
+	const DRAIN_KISS   ; 27
 	const POISON_STING ; 28
 	const TWINEEDLE    ; 29
 	const PIN_MISSILE  ; 2a

@@ -38,7 +38,7 @@ MoveNames::
 	li "Derribo"
 	li "Golpe"
 	li "Doble filo"
-	li "Latigo"
+	li "Beso drenaje"
 	li "Picotazo ven"
 	li "Doble ataque"
 	li "Pin misil"

@@ -40,7 +40,7 @@ BattleAnimations::
 	dw BattleAnim_TakeDown
 	dw BattleAnim_Thrash
 	dw BattleAnim_DoubleEdge
-	dw BattleAnim_TailWhip
+	dw BattleAnim_DrainKiss
 	dw BattleAnim_PoisonSting
 	dw BattleAnim_Twineedle
 	dw BattleAnim_PinMissile
@@ -3213,14 +3213,19 @@ BattleAnim_Disable:
 	anim_wait 96
 	anim_ret
 
-BattleAnim_TailWhip:
-	anim_1gfx BATTLE_ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_2Row
-	anim_sound 0, 0, SFX_TAIL_WHIP
-	anim_bgeffect BATTLE_BG_EFFECT_WOBBLE_MON, $0, BG_EFFECT_USER, $0
+BattleAnim_DrainKiss:
+	anim_3gfx BATTLE_ANIM_GFX_OBJECTS, BATTLE_ANIM_GFX_ANGELS, BATTLE_ANIM_GFX_BUBBLE
+	anim_bgeffect BATTLE_BG_EFFECT_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_SWEET_KISS, 12, 0,  5, 0, $0
+	anim_sound 0, 1, SFX_SWEET_KISS
 	anim_wait 32
-	anim_incbgeffect BATTLE_BG_EFFECT_WOBBLE_MON
-	anim_call BattleAnim_ShowMon_0
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj BATTLE_ANIM_OBJ_HEART, 15, 0,  5, 0, $0
+	anim_wait 40
+	anim_sound 6, 3, SFX_WATER_GUN
+	anim_call BattleAnimSub_Drain
+	anim_wait 128
+	anim_wait 48
 	anim_ret
 
 BattleAnim_Struggle:

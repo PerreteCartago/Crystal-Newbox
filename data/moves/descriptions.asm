@@ -39,7 +39,7 @@ MoveDescriptions::
 	dw TakeDownDescription
 	dw ThrashDescription
 	dw DoubleEdgeDescription
-	dw TailWhipDescription
+	dw DrainKissDescription
 	dw PoisonStingDescription
 	dw TwineedleDescription
 	dw PinMissileDescription
@@ -407,10 +407,6 @@ DoubleEdgeDescription:
 	db   "A tackle that also"
 	line "hurts the user.@"
 
-TailWhipDescription:
-	db   "Lowers the foe's"
-	line "DEFENSE.@"
-
 PoisonStingDescription:
 	db   "An attack that may"
 	line "poison the target.@"
@@ -528,10 +524,10 @@ StrengthDescription:
 	db   "A powerful physi-"
 	line "cal attack.@"
 
+LeechLifeDescription:
+GigaDrainDescription:
+DrainKissDescription:
 AbsorbDescription:
-	db   "Steals 1/2 of the"
-	line "damage inflicted.@"
-
 MegaDrainDescription:
 	db   "Steals 1/2 of the"
 	line "damage inflicted.@"
@@ -798,9 +794,6 @@ BarrageDescription:
 	db   "Throws orbs to hit"
 	line "2-5 times.@"
 
-LeechLifeDescription:
-	db   "Steals 1/2 of the"
-	line "damage inflicted.@"
 
 LovelyKissDescription:
 	db   "May cause the foe"
@@ -1044,10 +1037,6 @@ OutrageDescription:
 SandstormDescription:
 	db   "Inflicts damage"
 	line "every turn.@"
-
-GigaDrainDescription:
-	db   "Steals 1/2 of the"
-	line "damage inflicted.@"
 
 EndureDescription:
 	db   "Always leaves at"

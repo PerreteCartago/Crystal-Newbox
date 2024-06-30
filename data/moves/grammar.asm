@@ -63,7 +63,6 @@ MoveGrammar:
 	db HORN_ATTACK
 	db WRAP
 	db THRASH
-	db TAIL_WHIP
 	db LEER
 	db BITE
 	db GROWL

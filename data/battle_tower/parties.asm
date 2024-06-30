@@ -500,7 +500,7 @@ BattleTowerMons:
 
 	db TAUROS
 	db KINGS_ROCK
-	db HEADBUTT, SWAGGER, TAIL_WHIP, ICY_WIND
+	db HEADBUTT, SWAGGER, LEER, ICY_WIND
 	dw 0 ; OT ID
 	dt 1000 ; Exp
 	; Stat exp
