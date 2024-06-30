@@ -3198,7 +3198,7 @@ wBethFightCount::    db
 wJoseFightCount::    db
 wReenaFightCount::   db
 wJoeyFightCount::    db
-wWadeFightCount::    db
+	ds 1
 wRalphFightCount::   db
 wLizFightCount::     db
 wAnthonyFightCount:: db
@@ -3206,7 +3206,7 @@ wToddFightCount::    db
 wGinaFightCount::    db
 wIrwinFightCount::   db ; unreferenced
 wArnieFightCount::   db
-wAlanFightCount::    db
+	ds 1
 wDanaFightCount::    db
 wChadFightCount::    db
 wDerekFightCount::   db ; unreferenced

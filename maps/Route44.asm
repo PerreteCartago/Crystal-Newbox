@@ -509,6 +509,7 @@ Route44_MapEvents:
 
 	def_warp_events
 	warp_event 56,  7, ICE_PATH_1F, 1
+	warp_event 11,  3, ROUTE_44_HOUSE, 1
 
 	def_coord_events
 
