@@ -693,6 +693,7 @@ ENDM
 	map_attributes GuideGentsHouse, GUIDE_GENTS_HOUSE, $00, 0
 	map_attributes CherrygroveEvolutionSpeechHouse, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, $00, 0
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
+	map_attributes Route30BusyManHouse, ROUTE_30_BUSY_MAN_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes Route44House, ROUTE_44_HOUSE, $00, 0

@@ -6,15 +6,6 @@ ENDM
 
 SECTION "Tileset Data 1", ROMX
 
-TilesetKantoGFX::
-INCBIN "gfx/tilesets/kanto.2bpp.lz"
-
-TilesetKantoMeta::
-INCBIN "data/tilesets/kanto_metatiles.bin"
-
-TilesetKantoColl::
-INCLUDE "data/tilesets/kanto_collision.asm"
-
 Tileset0GFX::
 TilesetJohtoGFX::
 INCBIN "gfx/tilesets/johto.2bpp.lz"
@@ -224,25 +215,6 @@ INCBIN "data/tilesets/gate_metatiles.bin"
 TilesetGateColl::
 INCLUDE "data/tilesets/gate_collision.asm"
 
-TilesetJohtoModernGFX::
-TilesetBattleTowerOutsideGFX::
-INCBIN "gfx/tilesets/johto_modern.2bpp.lz"
-
-TilesetJohtoModernMeta::
-INCBIN "data/tilesets/johto_modern_metatiles.bin"
-
-TilesetJohtoModernColl::
-INCLUDE "data/tilesets/johto_modern_collision.asm"
-
-TilesetTraditionalHouseGFX::
-INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
-
-TilesetTraditionalHouseMeta::
-INCBIN "data/tilesets/traditional_house_metatiles.bin"
-
-TilesetTraditionalHouseColl::
-INCLUDE "data/tilesets/traditional_house_collision.asm"
-
 
 SECTION "Tileset Data 6", ROMX
 
@@ -335,3 +307,37 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta::
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+
+SECTION "Tileset Data 9", ROMX
+
+TilesetKantoGFX::
+INCBIN "gfx/tilesets/kanto.2bpp.lz"
+
+TilesetKantoMeta::
+INCBIN "data/tilesets/kanto_metatiles.bin"
+
+TilesetKantoColl::
+INCLUDE "data/tilesets/kanto_collision.asm"
+
+
+SECTION "Tileset Data A", ROMX
+
+TilesetJohtoModernGFX::
+TilesetBattleTowerOutsideGFX::
+INCBIN "gfx/tilesets/johto_modern.2bpp.lz"
+
+TilesetJohtoModernMeta::
+INCBIN "data/tilesets/johto_modern_metatiles.bin"
+
+TilesetJohtoModernColl::
+INCLUDE "data/tilesets/johto_modern_collision.asm"
+
+TilesetTraditionalHouseGFX::
+INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
+
+TilesetTraditionalHouseMeta::
+INCBIN "data/tilesets/traditional_house_metatiles.bin"
+
+TilesetTraditionalHouseColl::
+INCLUDE "data/tilesets/traditional_house_collision.asm"

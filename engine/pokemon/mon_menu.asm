@@ -1297,7 +1297,7 @@ PlaceMoveData:
 .if_null_chance
 	ld de, String_MoveNoPower
 	ld bc, 3
-	hlcoord 5, 13
+	hlcoord 8, 13
 	call PlaceString
 
 .skip_null_chance

@@ -148,6 +148,7 @@ Route38_Blocks:
 BetaCianwoodCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaCianwoodCity.blk"
 
+Route30BusyManHouse_Blocks:
 OlivineTimsHouse_Blocks:
 OlivineHouseBeta_Blocks:
 OlivinePunishmentSpeechHouse_Blocks:
