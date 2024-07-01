@@ -148,59 +148,6 @@ Route38_Blocks:
 BetaCianwoodCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaCianwoodCity.blk"
 
-Route30BusyManHouse_Blocks:
-OlivineTimsHouse_Blocks:
-OlivineHouseBeta_Blocks:
-OlivinePunishmentSpeechHouse_Blocks:
-OlivineGoodRodHouse_Blocks:
-Route39Farmhouse_Blocks:
-MahoganyRedGyaradosSpeechHouse_Blocks:
-BlackthornDragonSpeechHouse_Blocks:
-BlackthornEmysHouse_Blocks:
-MoveDeletersHouse_Blocks:
-CeruleanGymBadgeSpeechHouse_Blocks:
-CeruleanPoliceStation_Blocks:
-CeruleanTradeSpeechHouse_Blocks:
-BillsHouse_Blocks:
-CharcoalKiln_Blocks:
-LakeOfRageHiddenPowerHouse_Blocks:
-LakeOfRageMagikarpHouse_Blocks:
-GoldenrodHappinessRater_Blocks:
-BillsFamilysHouse_Blocks:
-GoldenrodPPSpeechHouse_Blocks:
-GoldenrodNameRater_Blocks:
-VermilionFishingSpeechHouse_Blocks:
-VermilionMagnetTrainSpeechHouse_Blocks:
-VermilionDiglettsCaveSpeechHouse_Blocks:
-BluesHouse_Blocks:
-PewterNidoranSpeechHouse_Blocks:
-PewterSnoozeSpeechHouse_Blocks:
-BillsBrothersHouse_Blocks:
-LavenderSpeechHouse_Blocks:
-LavenderNameRater_Blocks:
-Route12SuperRodHouse_Blocks:
-Route28SteelWingHouse_Blocks:
-CeladonMansionRoofHouse_Blocks:
-Route16FuchsiaSpeechHouse_Blocks:
-ManiasHouse_Blocks:
-CianwoodPharmacy_Blocks:
-CianwoodPhotoStudio_Blocks:
-CianwoodLugiaSpeechHouse_Blocks:
-PokeSeersHouse_Blocks:
-ViridianNicknameSpeechHouse_Blocks:
-Route2NuggetHouse_Blocks:
-PlayersNeighborsHouse_Blocks:
-Route26HealHouse_Blocks:
-DayOfWeekSiblingsHouse_Blocks:
-Route27SandstormHouse_Blocks:
-MrPsychicsHouse_Blocks:
-Route5CleanseTagHouse_Blocks:
-CherrygroveGymSpeechHouse_Blocks:
-GuideGentsHouse_Blocks:
-CherrygroveEvolutionSpeechHouse_Blocks:
-Route30BerryHouse_Blocks:
-	INCBIN "maps/House1.blk"
-
 Route44House_Blocks:
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
@@ -270,18 +217,6 @@ Route39_Blocks:
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
 
-Route38EcruteakGate_Blocks:
-Route42EcruteakGate_Blocks:
-Route32RuinsOfAlphGate_Blocks:
-IlexForestAzaleaGate_Blocks:
-Route15FuchsiaGate_Blocks:
-Route8SaffronGate_Blocks:
-Route16Gate_Blocks:
-Route7SaffronGate_Blocks:
-Route17Route18Gate_Blocks:
-Route31VioletGate_Blocks:
-	INCBIN "maps/EastWestGate.blk"
-
 BetaAzaleaTown_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaAzaleaTown.blk"
 
@@ -320,21 +255,6 @@ Route14_Blocks:
 
 BetaSproutTower8_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaSproutTower8.blk"
-
-OlivineMart_Blocks:
-EcruteakMart_Blocks:
-BlackthornMart_Blocks:
-CeruleanMart_Blocks:
-AzaleaMart_Blocks:
-VioletMart_Blocks:
-VermilionMart_Blocks:
-PewterMart_Blocks:
-FuchsiaMart_Blocks:
-LavenderMart_Blocks:
-ViridianMart_Blocks:
-SaffronMart_Blocks:
-CherrygroveMart_Blocks:
-	INCBIN "maps/Mart.blk"
 
 Route10North_Blocks:
 	INCBIN "maps/Route10North.blk"
@@ -1047,5 +967,85 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+
+Route38EcruteakGate_Blocks:
+Route42EcruteakGate_Blocks:
+Route32RuinsOfAlphGate_Blocks:
+IlexForestAzaleaGate_Blocks:
+Route15FuchsiaGate_Blocks:
+Route8SaffronGate_Blocks:
+Route16Gate_Blocks:
+Route7SaffronGate_Blocks:
+Route17Route18Gate_Blocks:
+Route31VioletGate_Blocks:
+	INCBIN "maps/EastWestGate.blk"
+
+OlivineMart_Blocks:
+EcruteakMart_Blocks:
+BlackthornMart_Blocks:
+CeruleanMart_Blocks:
+AzaleaMart_Blocks:
+VioletMart_Blocks:
+VermilionMart_Blocks:
+PewterMart_Blocks:
+FuchsiaMart_Blocks:
+LavenderMart_Blocks:
+ViridianMart_Blocks:
+SaffronMart_Blocks:
+CherrygroveMart_Blocks:
+	INCBIN "maps/Mart.blk"
+
+Route30BusyManHouse_Blocks:
+OlivineTimsHouse_Blocks:
+OlivineHouseBeta_Blocks:
+OlivinePunishmentSpeechHouse_Blocks:
+OlivineGoodRodHouse_Blocks:
+Route39Farmhouse_Blocks:
+MahoganyRedGyaradosSpeechHouse_Blocks:
+BlackthornDragonSpeechHouse_Blocks:
+BlackthornEmysHouse_Blocks:
+MoveDeletersHouse_Blocks:
+CeruleanGymBadgeSpeechHouse_Blocks:
+CeruleanPoliceStation_Blocks:
+CeruleanTradeSpeechHouse_Blocks:
+BillsHouse_Blocks:
+CharcoalKiln_Blocks:
+LakeOfRageHiddenPowerHouse_Blocks:
+LakeOfRageMagikarpHouse_Blocks:
+GoldenrodHappinessRater_Blocks:
+BillsFamilysHouse_Blocks:
+GoldenrodPPSpeechHouse_Blocks:
+GoldenrodNameRater_Blocks:
+VermilionFishingSpeechHouse_Blocks:
+VermilionMagnetTrainSpeechHouse_Blocks:
+VermilionDiglettsCaveSpeechHouse_Blocks:
+BluesHouse_Blocks:
+PewterNidoranSpeechHouse_Blocks:
+PewterSnoozeSpeechHouse_Blocks:
+BillsBrothersHouse_Blocks:
+LavenderSpeechHouse_Blocks:
+LavenderNameRater_Blocks:
+Route12SuperRodHouse_Blocks:
+Route28SteelWingHouse_Blocks:
+CeladonMansionRoofHouse_Blocks:
+Route16FuchsiaSpeechHouse_Blocks:
+ManiasHouse_Blocks:
+CianwoodPharmacy_Blocks:
+CianwoodPhotoStudio_Blocks:
+CianwoodLugiaSpeechHouse_Blocks:
+PokeSeersHouse_Blocks:
+ViridianNicknameSpeechHouse_Blocks:
+Route2NuggetHouse_Blocks:
+PlayersNeighborsHouse_Blocks:
+Route26HealHouse_Blocks:
+DayOfWeekSiblingsHouse_Blocks:
+Route27SandstormHouse_Blocks:
+MrPsychicsHouse_Blocks:
+Route5CleanseTagHouse_Blocks:
+CherrygroveGymSpeechHouse_Blocks:
+GuideGentsHouse_Blocks:
+CherrygroveEvolutionSpeechHouse_Blocks:
+Route30BerryHouse_Blocks:
+	INCBIN "maps/House1.blk"
 
 ENDSECTION
