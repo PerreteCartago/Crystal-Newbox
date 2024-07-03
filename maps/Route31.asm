@@ -226,8 +226,8 @@ Route31MailRecipientScript:
 	end
 
 ReceivedSpearowMailText:
-	db   "DARK CAVE leads"
-	next "to another road@"
+	db   "CUEVA OSCURA da"
+	next "a otro camino  @"
 
 Route31YoungsterScript:
 	jumptextfaceplayer Route31YoungsterText
