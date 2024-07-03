@@ -164,7 +164,7 @@ SavedTheGame:
 	jp WaitSFX
 
 .saving_text
-	text "SAVING…"
+	text "GUARDANDO…"
 	done
 
 SaveGameData:

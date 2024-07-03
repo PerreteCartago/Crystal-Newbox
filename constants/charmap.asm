@@ -122,6 +122,16 @@
 	charmap "└",         $be
 	charmap "┘",         $bf
 
+	charmap "á",         $c0
+	charmap "Ú",         $c1
+	charmap "¡",         $c2
+	charmap "¿",         $c3
+	charmap "É",         $c4
+	charmap "Á",         $c5
+	charmap "Í",         $c6
+	charmap "Ñ",         $c7
+	charmap "ú",         $c8
+	charmap "Ó",         $c9
 	charmap "′",         $ce
 	charmap "″",         $cf
 

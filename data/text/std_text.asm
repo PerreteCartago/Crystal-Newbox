@@ -1,79 +1,67 @@
 NurseMornText:
-	text "Good morning!"
-	line "Welcome to our"
-	cont "#MON CENTER."
-	done
-
 NurseDayText:
-	text "Hello!"
-	line "Welcome to our"
-	cont "#MON CENTER."
+	text "¡Bienvenido a"
+	line "nuestro CENTRO"
+	cont "#MON!"
 	done
 
 NurseNiteText:
-	text "Good evening!"
-	line "You're out late."
+	text "¡Buenas noches!"
+	line "Bienvenido a"
 
-	para "Welcome to our"
-	line "#MON CENTER."
+	para "nuestro CENTRO"
+	line "#MON."
 	done
 
 PokeComNurseMornText:
-	text "Good morning!"
+	text "¡Buenas!"
 
-	para "This is the #-"
-	line "MON COMMUNICATION"
+	para "Éste es el CENTRO"
+	line "de COMUNICACIONES"
 
-	para "CENTER--or the"
-	line "#COM CENTER."
+	para "#MON o"
+	line "CENTRO #COM."
 	done
 
 PokeComNurseDayText:
-	text "Hello!"
+	text "¡Hola!"
 
-	para "This is the #-"
-	line "MON COMMUNICATION"
+	para "Éste es el CENTRO"
+	line "de COMUNICACIONES"
 
-	para "CENTER--or the"
-	line "#COM CENTER."
+	para "#MON o"
+	line "CENTRO #COM."
 	done
 
 PokeComNurseNiteText:
-	text "Good to see you"
-	line "working so late."
+	text "Te veo trabajando"
+	line "hasta tarde…"
 
-	para "This is the #-"
-	line "MON COMMUNICATION"
+	para "Éste es el CENTRO"
+	line "de COMUNICACIONES"
 
-	para "CENTER--or the"
-	line "#COM CENTER."
+	para "#MON o"
+	line "CENTRO #COM."
 	done
 
 NurseAskHealText:
-	text "We can heal your"
-	line "#MON to perfect"
-	cont "health."
-
-	para "Shall we heal your"
-	line "#MON?"
+	text "¿Quieres curar a"
+	line "tus #MON?"
 	done
 
 NurseTakePokemonText:
-	text "OK, may I see your"
-	line "#MON?"
+	text "Muy bien, déjame"
+	line "tus #MON."
 	done
 
 NurseReturnPokemonText:
-	text "Thank you for"
-	line "waiting."
-
-	para "Your #MON are"
-	line "fully healed."
+	text "Tus #MON están"
+	line "en plena forma."
 	done
 
 NurseGoodbyeText:
-	text "We hope to see you"
-	line "again."
+	text "¡Vuelve siempre"
+	line "que quieras!"
 	done
 
 ; not used
@@ -82,47 +70,50 @@ NurseGoodbyeText:
 	done
 
 NursePokerusText:
-	text "Your #MON"
-	line "appear to be"
+	text "Tus #MON"
+	line "tienen minúsculas"
 
-	para "infected by tiny"
-	line "life forms."
+	para "formas de vida"
+	line "unidas a ellos."
 
-	para "Your #MON are"
-	line "healthy and seem"
-	cont "to be fine."
+	para "Tus #MON están"
+	line "sanos y parecen"
+	cont "contentos."
 
-	para "But we can't tell"
-	line "you anything more"
+	para "Pero no podemos"
+	line "darte más"
 
-	para "at a #MON"
-	line "CENTER."
+	para "información en un"
+	line "CENTRO #MON."
 	done
 
 PokeComNursePokerusText:
-	text "Your #MON"
-	line "appear to be"
+	text "Tus #MON"
+	line "tienen minúsculas"
 
-	para "infected by tiny"
-	line "life forms."
+	para "formas de vida"
+	line "unidas a ellos."
 
-	para "Your #MON are"
-	line "healthy and seem"
-	cont "to be fine."
+	para "Tus #MON están"
+	line "sanos y parecen"
+	cont "contentos."
 
-	para "But we can't tell"
-	line "you anything more."
+	para "Pero no podemos"
+	line "darte más"
+
+	para "información en"
+	line "este momento."
 	done
 
 DifficultBookshelfText:
-	text "It's full of"
-	line "difficult books."
+	text "Está llena de"
+	line "libros complejos."
 	done
 
 PictureBookshelfText:
-	text "A whole collection"
-	line "of #MON picture"
-	cont "books!"
+	text "¡Una colección de"
+	line "libros ilustrados"
+	cont "de #MON!"
 	done
 
 MagazineBookshelfText:

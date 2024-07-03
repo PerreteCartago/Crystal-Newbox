@@ -8,8 +8,8 @@ ItemPocketNames:
 	dw .Berry
 	assert_table_length NUM_ITEM_TYPES
 
-.Item: db "ITEM POCKET@"
-.Key:  db "KEY POCKET@"
-.Ball: db "BALL POCKET@"
-.TM:   db "TM POCKET@"
-.Berry: db "BERRY POCKET@"
+.Item: db "Objetos@"
+.Key:  db "Obj. Clave@"
+.Ball: db "Balls@"
+.TM:   db "Tubo MT@"
+.Berry: db "Caja Baya@"

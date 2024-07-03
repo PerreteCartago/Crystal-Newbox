@@ -3191,31 +3191,30 @@ wBalls: ds MAX_BALLS * 2 + 1
 
 ; fight counts
 wJackFightCount::    db
-wBeverlyFightCount:: db ; unreferenced
+	ds 1
 wHueyFightCount::    db
 wGavenFightCount::   db
 wBethFightCount::    db
 wJoseFightCount::    db
 wReenaFightCount::   db
-wJoeyFightCount::    db
-	ds 1
+	ds 2
 wRalphFightCount::   db
 wLizFightCount::     db
 wAnthonyFightCount:: db
 wToddFightCount::    db
 wGinaFightCount::    db
-wIrwinFightCount::   db ; unreferenced
+	ds 1
 wArnieFightCount::   db
 	ds 1
 wDanaFightCount::    db
 wChadFightCount::    db
-wDerekFightCount::   db ; unreferenced
+	ds 1
 wTullyFightCount::   db
 wBrentFightCount::   db
 wTiffanyFightCount:: db
 wVanceFightCount::   db
 wWiltonFightCount::  db
-wKenjiFightCount::   db ; unreferenced
+	ds 1
 wParryFightCount::   db
 wErinFightCount::    db
 

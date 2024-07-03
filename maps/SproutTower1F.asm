@@ -41,63 +41,75 @@ SproutTower1FStatue:
 	jumptext SproutTower1FStatueText
 
 SageChowSeenText:
-	text "We stand guard in"
-	line "this tower."
+	text "Montamos guardia"
+	line "en esta torre."
 
-	para "Here, we express"
-	line "our gratitude to"
-	cont "honor all #MON."
+	para "Así expresamos"
+	line "nuestra gratitud a"
+	cont "todos los #MON."
 	done
 
 SageChowBeatenText:
-	text "Th-Thank you!"
+	text "Gra… Gracias."
 	done
 
 SageChowAfterBattleText:
-	text "All living beings"
-	line "coexist through"
-	cont "cooperation."
+	text "Todos los seres"
+	line "vivos cooperan"
+	cont "para sobrevivir."
 
-	para "We must always be"
-	line "thankful for this."
+	para "Deberíamos estar"
+	line "agradecidos."
 	done
 
 SproutTower1FSage1Text:
-	text "Only if you reach"
-	line "the top will you"
-	cont "obtain an HM."
+	text "Obtendras una MO"
+	line "si llegas hasta"
+	cont "arriba."
 	done
 
 SproutTower1FSage2Text:
-	text "SPROUT TOWER was"
-	line "built long ago"
+	text "La TORRE"
+	line "BELLSPROUT fue"
 
-	para "as a place for"
-	line "#MON training."
+	para "construida para"
+	line "entrenar #MON."
 	done
 
 SproutTower1FGrannyText:
-	text "A BELLSPROUT over"
-	line "100 feet tall…"
+	text "Una majestuosa"
+	line "torre de 100 me-"
+	cont "tros de altura."
 
-	para "People say that it"
-	line "became the center"
-	cont "pillar here."
+	para "Actualmente viven"
+	line "aquí entrenadores"
+	cont "#MON retirados."
 	done
 
 SproutTower1FTeacherText:
-	text "See the pillar"
-	line "shaking?"
+	text "Este pilar no deja"
+	line "de moverse."
 
-	para "People are train-"
-	line "ing upstairs."
+	para "El edificio esta"
+	line "en ruinas."
+	
+	para "Mandan los entrena-"
+	line "dores mas seniles"
+	cont "aquí a morir"
+
+	para "Es el gobierno de"
+	line "Johto."
+
+	para "Por eso no pago"
+	line "impuestos."
 	done
 
 SproutTower1FStatueText:
-	text "A #MON statue…"
+	text "Una estatua #MON"
+	line "muy desgastada."
 
-	para "It looks very"
-	line "distinguished."
+	para "Debería ser verde"
+	line "y blanca."
 	done
 
 SproutTower1F_MapEvents:

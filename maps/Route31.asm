@@ -251,150 +251,157 @@ Route31PokeBall:
 	itemball POKE_BALL
 
 Route31CooltrainerMText:
-	text "DARK CAVE…"
+	text "CUEVA OSCURA…"
 
-	para "If #MON could"
-	line "light it up, I'd"
-	cont "explore it."
+	para "Si los #MON"
+	line "pudieran"
+
+	para "iluminarla,"
+	line "la exploraría."
 	done
 
 BugCatcherWade1SeenText:
-	text "I caught a bunch"
-	line "of #MON. Let me"
-	cont "battle with you!"
+	text "He atrapado un"
+	line "montón de #MON."
+	cont "¡Luchemos!"
 	done
 
 BugCatcherWade1BeatenText:
-	text "Awwwww…"
+	text "¡Auuuu…!"
 	done
 
 BugCatcherWade1AfterText:
-	text "You can catch"
-	line "#MON even if"
+	text "Puedes atrapar"
+	line "#MON aunque"
 
-	para "you have six with"
-	line "you."
+	para "ya lleves seis"
+	line "contigo."
 
-	para "If you catch one,"
-	line "it'll go to your"
-	cont "BOX automatically."
+	para "Si atrapas alguno"
+	line "más, será enviado"
+	cont "a la Caja."
 	done
 
 Text_Route31SleepyMan:
-	text "… Hnuurg… Huh?"
+	text "¡Arg…! ¿Eh?"
 
-	para "I walked too far"
-	line "today looking for"
+	para "Hoy he caminado"
+	line "mucho buscando"
 	cont "#MON."
 
-	para "My feet hurt and"
-	line "I'm sleepy…"
+	para "Me duelen los pies"
+	line "y tengo sueño…"
 
-	para "If I were a wild"
-	line "#MON, I'd be"
-	cont "easy to catch…"
+	para "Si fuera un"
+	line "#MON salvaje,"
 
-	para "…Zzzz…"
+	para "sería fácil"
+	line "atraparme…"
+
+	para "¡Zzzz…!"
 	done
 
 Text_Route31SleepyManGotMail:
-	text "…Zzzz… Huh?"
+	text "Zzzz… ¿Eh?"
 
-	para "What's that? You"
-	line "have MAIL for me?"
+	para "¿Qué es eso? ¿Una"
+	line "Carta para mí?"
 	done
 
 Text_Route31HandOverMailMon:
-	text "<PLAYER> handed"
-	line "over the #MON"
-	cont "holding the MAIL."
+	text "<PLAYER> entregó"
+	line "el #MON que"
+	cont "lleva la Carta."
 	done
 
 Text_Route31ReadingMail:
-	text "Let's see…"
+	text "Veamos…"
 
-	para "…DARK CAVE leads"
-	line "to another road…"
+	para "La C. OSCURA lleva"
+	line "a otro camino."
 
-	para "That's good to"
-	line "know."
+	para "Es bueno saberlo."
 
-	para "Thanks for bring-"
-	line "ing this to me."
+	para "Gracias por"
+	line "traerme esto."
 
-	para "My friend's a good"
-	line "guy, and you're"
-	cont "swell too!"
+	para "Mi amigo es un"
+	line "buen chico."
 
-	para "I'd like to do"
-	line "something good in"
-	cont "return too!"
+	para "¡Tú también eres"
+	line "increíble!"
 
-	para "I know! I want you"
-	line "to have this!"
+	para "¡Me gustaría"
+	line "devolverte el"
+	cont "favor!"
+
+	para "¡Ya sé!"
+	line "¡Toma esto!"
 	done
 
 Text_Route31DescribeNightmare:
-	text "TM50 is HEX."
+	text "Es Infortunio."
 
-	para "It's a wicked move"
-	line "It will hurt more"
+	para "Es un movimiento"
+	line "terrible, hace"
 
-	para "if the enemy has"
-	line "a status problem."
+	para "más daño si el"
+	line "enemigo tiene un"
+	cont "estado activo."
 
-	para "Ooooh…"
-	line "That's scary…"
+	para "¡Ooooh…!"
+	line "¡Qué miedo…!"
 	done
 
 Text_Route31WrongMail:
-	text "This MAIL isn't"
-	line "for me."
+	text "Esta Carta no"
+	line "es para mí."
 	done
 
 Text_Route31MissingMail:
-	text "Why is this #-"
-	line "MON so special?"
+	text "¿Por qué es espe-"
+	line "cial este #MON?"
 
-	para "It doesn't have"
-	line "any MAIL."
+	para "No tiene ninguna"
+	line "Carta."
 	done
 
 Text_Route31DeclinedToHandOverMail:
-	text "What? You don't"
-	line "want anything?"
+	text "¿Qué? ¿No quieres"
+	line "nada?"
 	done
 
 Text_Route31CantTakeLastMon:
-	text "If I take that"
-	line "#MON from you,"
+	text "Si te quito ese"
+	line "#MON, ¿qué"
 
-	para "what are you going"
-	line "to use in battle?"
+	para "vas a usar en los"
+	line "combates?"
 	done
 
 Route31YoungsterText:
-	text "I found a good"
-	line "#MON in DARK"
-	cont "CAVE."
+	text "He encontrado un"
+	line "buen #MON en"
+	cont "la Cueva Oscura."
 
-	para "I'm going to raise"
-	line "it to take on"
-	cont "FALKNER."
+	para "Voy a criarlo"
+	line "para enfrentarme"
+	cont "a Pegaso."
 
-	para "He's the leader of"
-	line "VIOLET CITY's GYM."
+	para "Es el Líder del"
+	line "Gimnasio de Ciudad"
+	cont "Malva."
 	done
 
 Route31SignText:
-	text "ROUTE 31"
+	text "RUTA 31"
 
-	para "VIOLET CITY -"
-	line "CHERRYGROVE CITY"
+	para "CIUDAD MALVA -"
+	line "CIUDAD CEREZO"
 	done
 
 DarkCaveSignText:
-	text "DARK CAVE"
+	text "CUEVA OSCURA"
 	done
 
 Route31_MapEvents:

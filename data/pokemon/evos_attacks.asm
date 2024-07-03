@@ -1300,7 +1300,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db EVOLVE_HELD, METAL_COAT, STEELIX
+	db EVOLVE_HELD, -1, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, SCREECH
