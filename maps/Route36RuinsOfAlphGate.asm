@@ -14,7 +14,7 @@ Route36RuinsOfAlphGateGrampsScript:
 	jumptextfaceplayer Route36RuinsOfAlphGateGrampsText
 
 Route36RuinsOfAlphGateOfficerText:
-	text "¿No me imagino"
+	text "No me imagino"
 	line "quién podría"
 
 	para "hacer algo así."

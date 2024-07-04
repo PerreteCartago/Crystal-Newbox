@@ -251,4 +251,5 @@ FramesPointers:
 	dw LugiaFrames
 	dw HoOhFrames
 	dw CelebiFrames
+	dw GliscorFrames
 	assert_table_length NUM_POKEMON

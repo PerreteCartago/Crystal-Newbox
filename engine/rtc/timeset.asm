@@ -298,7 +298,7 @@ OakTimeWhatTimeIsItText:
 	text_end
 
 String_oclock:
-	db "o'clock@"
+	db "en punto@"
 
 OakTimeWhatHoursText:
 	; What?@ @
@@ -706,9 +706,9 @@ GetTimeOfDayString:
 	ld de, .day_string
 	ret
 
-.nite_string: db "NITE@"
-.morn_string: db "MORN@"
-.day_string:  db "DAY@"
+.nite_string: db "NOCH@"
+.morn_string: db "MAÑ@"
+.day_string:  db "DÍA@"
 
 AdjustHourForAMorPM:
 ; Convert the hour stored in c (0-23) to a 1-12 value

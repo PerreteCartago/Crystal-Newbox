@@ -2822,7 +2822,7 @@ DunsparceEvosAttacks:
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:
-	db 0 ; no more evolutions
+	db EVOLVE_HAPPINESS, TR_NITE, GLISCOR
 	db 1, POISON_STING
 	db 6, SAND_ATTACK
 	db 13, DEFENSE_CURL
@@ -3432,4 +3432,17 @@ CelebiEvosAttacks:
 	db 30, FUTURE_SIGHT
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
+	db 0 ; no more level-up moves
+
+GliscorEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, POISON_STING
+	db 6, SAND_ATTACK
+	db 13, DEFENSE_CURL
+	db 20, QUICK_ATTACK
+	db 28, FAINT_ATTACK
+	db 36, SLASH
+	db 42, X_SCISSOR
+	db 44, SCREECH
+	db 52, GUILLOTINE
 	db 0 ; no more level-up moves
