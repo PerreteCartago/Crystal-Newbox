@@ -245,9 +245,9 @@ Route30_MikeysRattataAttacksMovement:
 	step_end
 
 Text_UseTackle:
-	text "¡Ve, RATTATA!"
+	text "¡Ve, Rattata!"
 
-	para "¡PLACAJE!"
+	para "¡Placaje!"
 	done
 
 Text_ThisIsABigBattle:
@@ -259,7 +259,7 @@ Text_ThisIsABigBattle:
 YoungsterJoey1SeenText:
 	text "Perdí, así que"
 	line "estoy buscando más"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "¡Espera! ¡Pareces"
 	line "débil! ¡Venga,"
@@ -273,7 +273,7 @@ YoungsterJoey1BeatenText:
 
 YoungsterJoey1AfterText:
 	text "¿Debo tener más"
-	line "#MON para poder"
+	line "Pokémon para poder"
 	cont "luchar mejor?"
 
 	para "¡No! ¡Continuaré"
@@ -282,7 +282,7 @@ YoungsterJoey1AfterText:
 	done
 
 YoungsterMikeySeenText:
-	text "Entrenas #MON,"
+	text "Entrenas Pokémon,"
 	line "¿verdad?"
 
 	para "¡Pues entonces"
@@ -306,7 +306,7 @@ YoungsterMikeyAfterText:
 
 BugCatcherDonSeenText:
 	text "¡En lugar de un"
-	line "#MON bicho,"
+	line "Pokémon bicho,"
 
 	para "he encontrado a"
 	line "alguien que los"
@@ -319,17 +319,17 @@ BugCatcherDonBeatenText:
 	done
 
 BugCatcherDonAfterText:
-	text "Me quedé sin #"
-	line "BALL mientras"
-	cont "atrapaba #MON."
+	text "Me quedé sin <POKE>-"
+	line "ball mientras"
+	cont "atrapaba Pokémon."
 
 	para "Debería haber"
 	line "comprado más…"
 	done
 
 Route30YoungsterText_DirectionsToMrPokemonsHouse:
-	text "¿La casa del SR."
-	line "#MON? Está un"
+	text "¿La casa del Sr."
+	line "Pokémon? Está un"
 	cont "poco más adelante."
 	done
 
@@ -353,30 +353,30 @@ Route30CooltrainerFText:
 	done
 
 Route30SignText:
-	text "RUTA 30"
+	text "Ruta 30"
 
-	para "CIUDAD MALVA -"
-	line "CIUDAD CEREZO"
+	para "Ciudad Malva -"
+	line "Ciudad Cerezo"
 	done
 
 MrPokemonsHouseDirectionsSignText:
-	text "CASA SR. #MON"
+	text "Casa Sr. Pokémon"
 	line "¡Todo recto!"
 	done
 
 MrPokemonsHouseSignText:
-	text "CASA SR. #MON"
+	text "Casa Sr. Pokémon"
 	done
 
 Route30TrainerTipsText:
 	text "PISTAS ENTRENADOR"
 
 	para "¡No robes los"
-	line "#MON de otros!"
+	line "Pokémon de otros!"
 
-	para "¡Las # BALL"
+	para "¡Las <POKE>ball"
 	line "sólo se lanzan a"
-	cont "#MON salvajes!"
+	cont "Pokémon salvajes!"
 	done
 
 YoungsterJoeyText_GiveHPUpAfterBattle:

@@ -141,108 +141,109 @@ MahoganyTownRageCandyBarMerchantReturnsMovement:
 	step_end
 
 RageCandyBarMerchantTryOneText:
-	text "Hiya, kid!"
+	text "¿Qué tal, joven?"
 
-	para "I see you're new"
-	line "in MAHOGANY TOWN."
+	para "Veo que no eres de"
+	line "Pueblo Caoba."
 
-	para "Since you're new,"
-	line "you should try a"
+	para "¡Por no ser de"
+	line "aquí, deberías"
 
-	para "yummy RAGECANDY-"
-	line "BAR!"
+	para "probar el Caramelo"
+	line "Furia!"
 
-	para "Right now, it can"
-	line "be yours for just"
-	cont "¥300! Want one?"
+	para "¡Puede ser tuyo"
+	line "por sólo 300¥!"
+	cont "¿Quieres uno?"
 	done
 
 RageCandyBarMerchantSavorItText:
-	text "Good! Savor it!"
+	text "¡Bien! ¡Saboréalo!"
 	done
 
 RageCandyBarMerchantNotEnoughMoneyText:
-	text "You don't have"
-	line "enough money."
+	text "No tienes bastante"
+	line "dinero."
 	done
 
 RageCandyBarMerchantRefusedText:
-	text "Oh, fine then…"
+	text "¡Oh, de acuerdo…!"
 	done
 
 RageCandyBarMerchantNoRoomText:
-	text "You don't have"
-	line "room for this."
+	text "No tienes espacio"
+	line "para esto."
 	done
 
 RageCandyBarMerchantSoldOutText:
-	text "RAGECANDYBAR's"
-	line "sold out."
+	text "Caramelos Furia"
+	line "agotados."
 
-	para "I'm packing up."
-	line "Don't bother me,"
-	cont "kiddo."
+	para "Estoy haciendo las"
+	line "maletas. No me"
+	cont "molestes, joven."
 	done
 
 MahoganyTownGrampsText:
-	text "Are you off to see"
-	line "the GYARADOS ram-"
-	cont "page at the LAKE?"
+	text "¿Vas al Lago a ver"
+	line "a los violentos"
+	cont "Gyarados?"
 	done
 
 MahoganyTownGrampsText_ClearedRocketHideout:
-	text "MAGIKARP have"
-	line "returned to LAKE"
-	cont "OF RAGE."
+	text "Los Magikarp han"
+	line "vuelto al Lago de"
+	cont "la Furia."
 
-	para "That should be"
-	line "good news for the"
-	cont "anglers there."
+	para "Son buenas"
+	line "noticias para"
+	cont "los pescadores."
 	done
 
 MahoganyTownFisherText:
-	text "Since you came"
-	line "this far, take the"
+	text "Has venido de muy"
+	line "lejos. Tómate"
 
-	para "time to do some"
-	line "sightseeing."
+	para "tiempo para ver el"
+	line "paisaje."
 
-	para "You should head"
-	line "north and check"
+	para "Deberías ir hacia"
+	line "el Norte y ver lo"
 
-	para "out LAKE OF RAGE"
-	line "right now."
+	para "que pasa en el"
+	line "LAGO DE LA FURIA."
 	done
 
 MahoganyTownLassText:
-	text "Visit Grandma's"
-	line "shop. She sells"
+	text "Visita la Tienda"
+	line "de la Abuela. Hay"
 
-	para "stuff that nobody"
-	line "else has."
+	para "cosas que sólo"
+	line "ella tiene."
 	done
 
 MahoganyTownSignText:
-	text "MAHOGANY TOWN"
+	text "Pueblo Caoba"
 
-	para "Welcome to the"
-	line "Home of the Ninja"
+	para "El hogar de"
+	line "los Ninja"
 	done
 
 MahoganyTownRagecandybarSignText:
-	text "While visiting"
-	line "MAHOGANY TOWN, try"
-	cont "a RAGECANDYBAR!"
+	text "¡Si visitas Pueblo"
+	line "Caoba, prueba un"
+	cont "Caramelo Furia!"
 	done
 
 MahoganyGymSignText:
-	text "MAHOGANY TOWN"
-	line "#MON GYM"
-	cont "LEADER: PRYCE"
+	text "Líder del Gimnasio"
+	line "Pokémon de Pueblo"
+	cont "Caoba: Fredo"
 
-	para "The Teacher of"
-	line "Winter's Harshness"
+	para "El maestro del"
+	line "crudo invierno"
 	done
+
 
 MahoganyTown_MapEvents:
 	db 0, 0 ; filler

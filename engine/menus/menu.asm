@@ -278,7 +278,7 @@ _NoYesBox::
 	lb bc, SCREEN_WIDTH - 6, 7
 	ld a, b
 	ld [wMenuBorderLeftCoord], a
-	add 5
+	add 4
 	ld [wMenuBorderRightCoord], a
 	ld a, c
 	ld [wMenuBorderTopCoord], a
@@ -305,8 +305,8 @@ _NoYesBox::
 .MenuData:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2 ; items
-	db "NO@"
-	db "YES@"
+	db "No@"
+	db "Sí@"
 
 MenuJoypadLoop:
 .loop

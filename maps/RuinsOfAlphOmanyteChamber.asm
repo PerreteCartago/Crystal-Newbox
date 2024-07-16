@@ -115,7 +115,7 @@ RuinsOfAlphOmanyteChamberWallPatternLeftText:
 	done
 
 RuinsOfAlphOmanyteChamberUnownText: ; unreferenced
-	text "¡Es texto UNOWN!"
+	text "¡Es texto Unown!"
 	done
 
 RuinsOfAlphOmanyteChamberWallPatternRightText:
@@ -131,12 +131,12 @@ RuinsOfAlphOmanyteChamberWallHoleText:
 
 RuinsOfAlphOmanyteChamberAncientReplicaText:
 	text "Es una réplica de"
-	line "un #MON"
+	line "un Pokémon"
 	cont "antiguo."
 	done
 
 RuinsOfAlphOmanyteChamberDescriptionText:
-	text "Este #MON"
+	text "Este Pokémon"
 	line "se desplazaba por"
 
 	para "el mar con sus"

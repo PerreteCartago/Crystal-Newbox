@@ -38,7 +38,7 @@ CherrygrovePokecenter1FFisherText:
 	text "¡Es genial! Puedo"
 	line "guardar a todos"
 
-	para "los #MON que"
+	para "los Pokémon que"
 	line "quiera, ¡y gratis!"
 	done
 
@@ -50,9 +50,9 @@ CherrygrovePokecenter1FGentlemanText:
 
 CherrygrovePokecenter1FTeacherText:
 	text "Se construyó un"
-	line "CENTRO de"
+	line "Centro de"
 
-	para "COMUNICACIÓN aquí"
+	para "Comunicación aquí"
 	line "arriba."
 
 	para "Pero todavía lo"
@@ -61,13 +61,13 @@ CherrygrovePokecenter1FTeacherText:
 
 CherrygrovePokecenter1FTeacherText_CommCenterOpen:
 	text "Se construyó un"
-	line "CENTRO de"
+	line "Centro de"
 
-	para "COMUNICACIÓN aquí"
+	para "Comunicación aquí"
 	line "arriba."
 
 	para "¡Ya intercambié"
-	line "#MON en él!"
+	line "Pokémon en él!"
 	done
 
 CherrygrovePokecenter1F_MapEvents:

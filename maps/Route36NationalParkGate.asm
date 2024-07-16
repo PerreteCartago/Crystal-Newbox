@@ -486,9 +486,9 @@ Route36NationalParkGateOfficer1AskToParticipateText:
 	line "sencillas."
 
 	para "Usa uno de tus"
-	line "#MON y captura"
+	line "Pokémon y captura"
 
-	para "un #MON bicho"
+	para "un Pokémon bicho"
 	line "para ganar."
 
 	para "¿Te gustaría"
@@ -497,7 +497,7 @@ Route36NationalParkGateOfficer1AskToParticipateText:
 
 Route36NationalParkGateOfficer1GiveParkBallsText:
 	text "Aquí tienes las"
-	line "PARQUE BALL para"
+	line "Parque Ball para"
 	cont "el Concurso."
 	done
 
@@ -508,7 +508,7 @@ Route36NationalParkGatePlayerReceivedParkBallsText:
 
 Route36NationalParkGateOfficer1ExplainsRulesText:
 	text "Aquel que consiga"
-	line "el #MON bicho"
+	line "el Pokémon bicho"
 
 	para "más fuerte será el"
 	line "ganador."
@@ -520,11 +520,11 @@ Route36NationalParkGateOfficer1ExplainsRulesText:
 	cont "tendrás opción."
 
 	para "Puedes quedarte"
-	line "el último #MON"
+	line "el último Pokémon"
 	cont "que captures."
 
 	para "¡Sal y captura"
-	line "el #MON"
+	line "el Pokémon"
 
 	para "bicho más fuerte"
 	line "que encuentres!"
@@ -534,14 +534,14 @@ Route36NationalParkGateOfficer1AskToUseFirstMonText:
 	text "¡Oh, oh…!"
 
 	para "Tienes más de un"
-	line "#MON."
+	line "Pokémon."
 
 	para "Tendrás que usar"
 	line "@"
 	text_ram wStringBuffer3
 	text ", el"
 
-	para "primer #MON de"
+	para "primer Pokémon de"
 	line "tu equipo."
 
 	para "¿Te parece bien?"
@@ -549,18 +549,18 @@ Route36NationalParkGateOfficer1AskToUseFirstMonText:
 
 Route36NationalParkGateOfficer1WellHoldYourMonText:
 	text "Bien, guardaremos"
-	line "los otros #MON"
+	line "los otros Pokémon"
 	cont "mientras compites."
 	done
 
 Route36NationalParkGatePlayersMonLeftWithHelperText:
-	text "Los #MON de"
+	text "Los Pokémon de"
 	line "<PLAYER> se quedan"
-	cont "con el AYUDANTE."
+	cont "con el Ayudante."
 	done
 
 Route36NationalParkGateOfficer1ChooseMonAndComeBackText:
-	text "Elige los #MON"
+	text "Elige los Pokémon"
 	line "que usarás en el"
 
 	para "Concurso y luego"
@@ -575,13 +575,13 @@ Route36NationalParkGateOfficer1TakePartInFutureText:
 
 Route36NationalParkGateOfficer1FirstMonCantBattleText:
 	text "¡Oh, oh…!"
-	line "El primer #MON"
+	line "El primer Pokémon"
 
 	para "de tu equipo no"
 	line "puede luchar."
 
 	para "Sustitúyelo por"
-	line "el #MON que"
+	line "el Pokémon que"
 
 	para "quieras usar y"
 	line "luego ven a verme."
@@ -591,29 +591,29 @@ Route36NationalParkGateOfficer1MakeRoomText:
 	text "¡Oh, oh…!"
 	line "Tu equipo y tu"
 
-	para "CAJA del PC están"
+	para "Caja del Pc están"
 	line "llenos."
 
 	para "No tienes sitio"
 	line "para guardar el"
-	cont "#MON bicho."
+	cont "Pokémon bicho."
 
 	para "Haz sitio en tu"
 	line "equipo o en la"
 
-	para "CAJA del PC y"
+	para "Caja del Pc y"
 	line "luego ven a verme."
 	done
 
 Route36NationalParkGateOfficer1EggAsFirstMonText:
 	text "¡Oh, oh…! Tienes"
-	line "un HUEVO como"
+	line "un Huevo como"
 
-	para "primer #MON"
+	para "primer Pokémon"
 	line "de tu equipo."
 
 	para "Sustitúyelo por"
-	line "el #MON que"
+	line "el Pokémon que"
 
 	para "quieras usar y"
 	line "luego ven a verme."
@@ -652,92 +652,92 @@ Route36NationalParkGateOfficer1ContestIsOverText:
 	done
 
 Route36NationalParkGateOfficer1SomeMonOnlySeenInParkText:
-	text "Algunos #MON"
+	text "Algunos Pokémon"
 	line "sólo aparecen en"
-	cont "el PARQUE."
+	cont "el Parque."
 	done
 
 BugCatchingContestant1BText:
-	text "RAFA: ¡Uau!"
+	text "Rafa: ¡Uau!"
 	line "Me has vencido."
 	cont "No está mal."
 	done
 
 BugCatchingContestant1BStillCompetingText:
-	text "RAFA: La suerte"
+	text "Rafa: La suerte"
 	line "cuenta mucho."
 
 	para "Nunca se sabe qué"
-	line "#MON va a"
+	line "Pokémon va a"
 	cont "aparecer."
 	done
 
 BugCatchingContestant2BText:
-	text "SAM: Te envidio."
+	text "Sam: Te envidio."
 	line "Esta vez no"
 	cont "lo he conseguido."
 	done
 
 BugCatchingContestant2BStillCompetingText:
-	text "SAM: A lo mejor es"
+	text "Sam: A lo mejor es"
 	line "que has ganado"
 
-	para "porque tus #MON"
+	para "porque tus Pokémon"
 	line "son grandes…"
 	done
 
 BugCatchingContestant3BText:
-	text "NANO: ¡Eso es!"
+	text "Nano: ¡Eso es!"
 	line "Voy a entrenar"
 
 	para "mejor a mis"
-	line "#MON."
+	line "Pokémon."
 	done
 
 BugCatchingContestant3BStillCompetingText:
-	text "NANO: Quizá ganes"
+	text "Nano: Quizá ganes"
 	line "más puntos por un"
 
-	para "#MON de un"
+	para "Pokémon de un"
 	line "color inusual."
 	done
 
 BugCatchingContestant4BText:
-	text "GUILLE: ¿Ganaste?"
+	text "Guille: ¿Ganaste?"
 	line "¿Qué has atrapado?"
 	done
 
 BugCatchingContestant4BStillCompetingText:
-	text "GUILLE: Me alegra"
+	text "Guille: Me alegra"
 	line "haber atrapado el"
 
-	para "#MON que"
+	para "Pokémon que"
 	line "quería."
 	done
 
 BugCatchingContestant5BText:
-	text "TINO: Enhorabuena."
+	text "Tino: Enhorabuena."
 	line "¡Te has ganado mi"
 	cont "respeto!"
 	done
 
 BugCatchingContestant5BStillCompetingText:
-	text "TINO: He atrapado"
+	text "Tino: He atrapado"
 	line "un Scyther, pero"
 	cont "he perdido."
 	done
 
 BugCatchingContestant6BText:
-	text "BENITO: El #MON"
+	text "Benito: El Pokémon"
 	line "que has atrapado…"
 	cont "es impresionante."
 	done
 
 BugCatchingContestant6BStillCompetingText:
-	text "BENITO: Es más"
+	text "Benito: Es más"
 	line "fácil ganar con"
 
-	para "un #MON bicho"
+	para "un Pokémon bicho"
 	line "de nivel alto."
 
 	para "Pero creo que"
@@ -746,44 +746,44 @@ BugCatchingContestant6BStillCompetingText:
 	done
 
 BugCatchingContestant7BText:
-	text "CINDY: ¿Ganaste?"
+	text "Cindy: ¿Ganaste?"
 	line "¡Qué bien!"
 
 	para "¿Te apetece buscar"
-	line "#MON bicho"
+	line "Pokémon bicho"
 	cont "conmigo?"
 	done
 
 BugCatchingContestant7BStillCompetingText:
-	text "CINDY: ¡Adoro los"
-	line "#MON bicho!"
+	text "Cindy: ¡Adoro los"
+	line "Pokémon bicho!"
 	done
 
 BugCatchingContestant8BText:
-	text "KAI: ¡No…!"
+	text "Kai: ¡No…!"
 	line "No me puedo creer"
 	cont "que haya perdido."
 	done
 
 BugCatchingContestant8BStillCompetingText:
-	text "KAI: ¡Dicen que"
+	text "Kai: ¡Dicen que"
 	line "alguien ha ganado"
 	cont "con un Caterpie!"
 	done
 
 BugCatchingContestant9BText:
-	text "SAMUEL: La próxima"
+	text "Samuel: La próxima"
 	line "vez ganaré yo."
 	done
 
 BugCatchingContestant9BStillCompetingText:
-	text "SAMUEL: Vaya, creí"
+	text "Samuel: Vaya, creí"
 	line "que obtendría más"
 	cont "puntos…"
 	done
 
 BugCatchingContestant10BText:
-	text "KOLDO: ¿Me das"
+	text "Koldo: ¿Me das"
 	line "algún consejo?"
 
 	para "Quiero estudiar"
@@ -791,7 +791,7 @@ BugCatchingContestant10BText:
 	done
 
 BugCatchingContestant10BStillCompetingText:
-	text "KOLDO: He"
+	text "Koldo: He"
 	line "estudiado mucho,"
 
 	para "pero eso no vale"
@@ -801,54 +801,54 @@ BugCatchingContestant10BStillCompetingText:
 UnusedSilphScope2Text: ; unreferenced
 ; This text is referring to Sudowoodo.
 ; The SILPHSCOPE2 was later reworked into the SQUIRTBOTTLE.
-	text "I hear there's a"
-	line "#MON that looks"
-	cont "just like a tree."
+	text "Dicen que hay"
+	line "un Pokémon que"
+	cont "parece un árbol."
 
-	para "You can reveal its"
-	line "identity using a"
-	cont "SILPHSCOPE 2."
+	para "Se puede descubrir"
+	line "su identidad con"
+	cont "el SCOPE SILPH 2."
 	done
 
 UnusedBugCatchingContestExplanationText:
 ; duplicate of BugCatchingContestExplanationText in Route35NationalParkGate.asm
-	text "The Bug-Catching"
-	line "Contest is held on"
+	text "El Concurso de"
+	line "Captura de Bichos"
 
-	para "Tuesday, Thursday"
-	line "and Saturday."
+	para "es los martes,"
+	line "jueves y sábados."
 
-	para "Not only do you"
-	line "earn a prize just"
+	para "No sólo ganas un"
+	line "premio por"
 
-	para "for participating,"
-	line "you also get to"
+	para "participar,"
+	line "sino que también"
 
-	para "keep the bug"
-	line "#MON you may"
+	para "te quedarás con el"
+	line "Pokémon bicho"
 
-	para "have at the end of"
-	line "the contest."
+	para "que tengas cuando"
+	line "termine."
 	done
 
 Route36NationalParkGateOfficer1WellHoldPrizeText:
-	text "Uh-oh… Your PACK"
-	line "is full."
+	text "¡Vaya…! Tu Mochila"
+	line "está llena."
 
-	para "We'll hold on to"
-	line "your prize, but"
-	cont "only for today."
+	para "Guardaremos tu"
+	line "premio, pero sólo"
+	cont "hoy."
 
-	para "Please make room,"
-	line "then come see me."
+	para "Haz sitio en ella"
+	line "y ven a verme."
 	done
 
 Route36NationalParkGateOfficer1HeresThePrizeText:
-	text "<PLAYER>?"
+	text "¿<PLAYER>?"
 
-	para "Here's the prize"
-	line "we were holding"
-	cont "for you."
+	para "Aquí tienes el"
+	line "premio que te"
+	cont "guardábamos."
 	done
 
 Route36NationalParkGate_MapEvents:

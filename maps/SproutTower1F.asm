@@ -46,7 +46,7 @@ SageChowSeenText:
 
 	para "Así expresamos"
 	line "nuestra gratitud a"
-	cont "todos los #MON."
+	cont "todos los Pokémon."
 	done
 
 SageChowBeatenText:
@@ -69,11 +69,11 @@ SproutTower1FSage1Text:
 	done
 
 SproutTower1FSage2Text:
-	text "La TORRE"
-	line "BELLSPROUT fue"
+	text "La Torre"
+	line "Bellsprout fue"
 
 	para "construida para"
-	line "entrenar #MON."
+	line "entrenar Pokémon."
 	done
 
 SproutTower1FGrannyText:
@@ -83,7 +83,7 @@ SproutTower1FGrannyText:
 
 	para "Actualmente viven"
 	line "aquí entrenadores"
-	cont "#MON retirados."
+	cont "Pokémon retirados."
 	done
 
 SproutTower1FTeacherText:
@@ -105,7 +105,7 @@ SproutTower1FTeacherText:
 	done
 
 SproutTower1FStatueText:
-	text "Una estatua #MON"
+	text "Una estatua Pokémon"
 	line "muy desgastada."
 
 	para "Debería ser verde"

@@ -120,7 +120,7 @@ FalknerIntroText:
 
 	para "puede acabar con"
 	line "las alas de los"
-	cont "#MON voladores."
+	cont "Pokémon voladores."
 
 	para "¡No permitiré que"
 	line "hablen así de"
@@ -130,12 +130,12 @@ FalknerIntroText:
 	line "auténtico poder de"
 
 	para "los magníficos"
-	line "pájaros #MON!"
+	line "pájaros Pokémon!"
 	done
 
 FalknerWinLossText:
 	text "¡Maldición! Los"
-	line "queridos #MON"
+	line "queridos Pokémon"
 	cont "de mi padre…"
 
 	para "¡Muy bien!"
@@ -143,7 +143,7 @@ FalknerWinLossText:
 
 	para "Es la Medalla"
 	line "Céfiro oficial de"
-	cont "la LIGA #MON."
+	cont "la Liga Pokémon."
 	done
 
 ReceivedZephyrBadgeText:
@@ -154,9 +154,9 @@ ReceivedZephyrBadgeText:
 FalknerZephyrBadgeText:
 	text "Medalla Céfiro"
 	line "Permite que"
-	line "los #MON"
+	line "los Pokémon"
 
-	para "usen DESTELLO, si"
+	para "usen Destello, si"
 	line "lo tienen."
 
 	para "Toma, también te"
@@ -165,7 +165,7 @@ FalknerZephyrBadgeText:
 
 FalknerTMMudSlapText:
 	text "Al usar una MT, el"
-	line "#MON aprenderá"
+	line "Pokémon aprenderá"
 
 	para "inmediatamente un"
 	line "nuevo movimiento."
@@ -192,7 +192,7 @@ FalknerTMMudSlapText:
 
 FalknerFightDoneText:
 	text "Encontrarás"
-	line "Gimnasios #MON"
+	line "Gimnasios Pokémon"
 
 	para "en las ciudades"
 	line "y en los pueblos."
@@ -216,7 +216,7 @@ BirdKeeperRodSeenText:
 	line "noche y día para"
 
 	para "convertirse en"
-	line "maestros #MON."
+	line "maestros Pokémon."
 
 	para "¡Adelante!"
 	done
@@ -286,8 +286,8 @@ VioletGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4, 15, VIOLET_CITY, 2
-	warp_event  5, 15, VIOLET_CITY, 2
+	warp_event  4, 15, AZALEA_TOWN, 5
+	warp_event  5, 15, AZALEA_TOWN, 5
 
 	def_coord_events
 

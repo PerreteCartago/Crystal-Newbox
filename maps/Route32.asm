@@ -48,9 +48,9 @@ Route32CooltrainerMContinueScene:
 	opentext
 	checkevent EVENT_GOT_MIRACLE_SEED_IN_ROUTE_32
 	iftrue .GotMiracleSeed
-	checkflag ENGINE_ZEPHYRBADGE
+	checkflag ENGINE_HIVEBADGE
 	iffalse .DontHaveZephyrBadge
-	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
+	checkevent EVENT_GOT_HM05_FLASH
 	iftrue .GiveMiracleSeed
 	writetext Route32CooltrainerMText_AideIsWaiting
 	waitbutton
@@ -168,7 +168,6 @@ TrainerFisherRalph1:
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_FISHER_RALPH
-	endifjustbattled
 	opentext
 	checkflag ENGINE_RALPH_READY_FOR_REMATCH
 	iftrue .Rematch
@@ -197,29 +196,17 @@ TrainerFisherRalph1:
 .Rematch:
 	scall .RematchStd
 	winlosstext FisherRalph1BeatenText, 0
-	readmem wRalphFightCount
-	ifequal 4, .Fight4
-	ifequal 3, .Fight3
-	ifequal 2, .Fight2
-	ifequal 1, .Fight1
-	ifequal 0, .LoadFight0
-.Fight4:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
 	iftrue .LoadFight4
-.Fight3:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
-.Fight2:
 	checkflag ENGINE_FLYPOINT_LAKE_OF_RAGE
 	iftrue .LoadFight2
-.Fight1:
 	checkflag ENGINE_FLYPOINT_ECRUTEAK
 	iftrue .LoadFight1
-.LoadFight0:
 	loadtrainer FISHER, RALPH1
 	startbattle
 	reloadmapafterbattle
-	loadmem wRalphFightCount, 1
 	clearflag ENGINE_RALPH_READY_FOR_REMATCH
 	end
 
@@ -227,7 +214,6 @@ TrainerFisherRalph1:
 	loadtrainer FISHER, RALPH2
 	startbattle
 	reloadmapafterbattle
-	loadmem wRalphFightCount, 2
 	clearflag ENGINE_RALPH_READY_FOR_REMATCH
 	end
 
@@ -235,7 +221,6 @@ TrainerFisherRalph1:
 	loadtrainer FISHER, RALPH3
 	startbattle
 	reloadmapafterbattle
-	loadmem wRalphFightCount, 3
 	clearflag ENGINE_RALPH_READY_FOR_REMATCH
 	end
 
@@ -243,7 +228,6 @@ TrainerFisherRalph1:
 	loadtrainer FISHER, RALPH4
 	startbattle
 	reloadmapafterbattle
-	loadmem wRalphFightCount, 4
 	clearflag ENGINE_RALPH_READY_FOR_REMATCH
 	end
 
@@ -304,7 +288,6 @@ TrainerPicnickerLiz1:
 
 .Script:
 	loadvar VAR_CALLERID, PHONE_PICNICKER_LIZ
-	endifjustbattled
 	opentext
 	checkflag ENGINE_LIZ_READY_FOR_REMATCH
 	iftrue .Rematch
@@ -331,29 +314,17 @@ TrainerPicnickerLiz1:
 .Rematch:
 	scall .RematchStd
 	winlosstext PicnickerLiz1BeatenText, 0
-	readmem wLizFightCount
-	ifequal 4, .Fight4
-	ifequal 3, .Fight3
-	ifequal 2, .Fight2
-	ifequal 1, .Fight1
-	ifequal 0, .LoadFight0
-.Fight4:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight4
-.Fight3:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight3
-.Fight2:
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue .LoadFight2
-.Fight1:
 	checkflag ENGINE_FLYPOINT_ECRUTEAK
 	iftrue .LoadFight1
-.LoadFight0:
 	loadtrainer PICNICKER, LIZ1
 	startbattle
 	reloadmapafterbattle
-	loadmem wLizFightCount, 1
 	clearflag ENGINE_LIZ_READY_FOR_REMATCH
 	end
 
@@ -361,7 +332,6 @@ TrainerPicnickerLiz1:
 	loadtrainer PICNICKER, LIZ2
 	startbattle
 	reloadmapafterbattle
-	loadmem wLizFightCount, 2
 	clearflag ENGINE_LIZ_READY_FOR_REMATCH
 	end
 
@@ -369,7 +339,6 @@ TrainerPicnickerLiz1:
 	loadtrainer PICNICKER, LIZ3
 	startbattle
 	reloadmapafterbattle
-	loadmem wLizFightCount, 3
 	clearflag ENGINE_LIZ_READY_FOR_REMATCH
 	end
 
@@ -377,7 +346,6 @@ TrainerPicnickerLiz1:
 	loadtrainer PICNICKER, LIZ4
 	startbattle
 	reloadmapafterbattle
-	loadmem wLizFightCount, 4
 	clearflag ENGINE_LIZ_READY_FOR_REMATCH
 	end
 
@@ -528,23 +496,11 @@ Route32CooltrainerMText_WhatsTheHurry:
 	done
 
 Route32CooltrainerMText_AideIsWaiting:
-	text "<PLAYER>, ¿verdad?"
-
-	para "Un tipo con gafas"
-	line "te buscaba."
-
-	para "Compruébalo. Te"
-	line "está esperando en"
-	cont "el CENTRO #MON."
-	done
-
-Route32CooltrainerMText_UnusedSproutTower:
-; unused
 	text "¿Has ido a la"
-	line "TORRE BELLSPROUT?"
+	line "Torre Bellsrpout?"
 
 	para "Si pasas por"
-	line "CIUDAD MALVA,"
+	line "Ciudad Malva,"
 
 	para "deberías"
 	line "entrenarte allí."
@@ -552,16 +508,34 @@ Route32CooltrainerMText_UnusedSproutTower:
 	para "Es crucial para"
 	line "los entrenadores."
 
-	para "¡Ve a la TORRE"
-	line "BELLSPROUT!"
+	para "¡Ve y consigue tu"
+	line "MO Destello.!"
+	done
+
+Route32CooltrainerMText_UnusedSproutTower:
+; unused
+	text "¿Has ido a la"
+	line "Torre Bellsrpout?"
+
+	para "Si pasas por"
+	line "Ciudad Malva,"
+
+	para "deberías"
+	line "entrenarte allí."
+
+	para "Es crucial para"
+	line "los entrenadores."
+
+	para "¡Ve y consigue tu"
+	line "MO Destello.!"
 	done
 
 Route32CooltrainerMText_VioletGym:
 	text "¿Has ido al"
-	line "GIMNASIO #MON?"
+	line "Gimnasio Pokémon?"
 
 	para "Allí puedes probar"
-	line "a tus #MON y"
+	line "a tus Pokémon y"
 	cont "a ti mismo."
 
 	para "¡Es un rito para"
@@ -570,24 +544,24 @@ Route32CooltrainerMText_VioletGym:
 	done
 
 Route32CooltrainerMText_HaveThisSeed:
-	text "Tienes #MON muy"
+	text "Tienes Pokémon muy"
 	line "buenos."
 
 	para "Seguro que es por"
 	line "haberlos entrenado"
 
 	para "en los alrededores"
-	line "de CIUDAD MALVA."
+	line "de Ciudad Malva."
 
 	para "El entrenamiento"
-	line "en el GIMNASIO ha"
+	line "en el Gimnasio ha"
 
 	para "debido de ser de"
 	line "gran ayuda."
 
 	para "Toma esto como"
 	line "recuerdo de"
-	cont "CIUDAD MALVA."
+	cont "Ciudad Malva."
 
 	para "Aumenta el poder"
 	line "de los movimientos"
@@ -596,7 +570,7 @@ Route32CooltrainerMText_HaveThisSeed:
 
 Route32CooltrainerMText_ExperiencesShouldBeUseful:
 	text "Tu experiencia en"
-	line "CIUDAD MALVA"
+	line "Ciudad Malva"
 
 	para "debería ayudarte"
 	line "en tu viaje."
@@ -607,7 +581,7 @@ Text_MillionDollarSlowpokeTail:
 	line "esta sabrosa y"
 
 	para "nutritiva"
-	line "COLASLOWPOKE?"
+	line "Colaslowpoke?"
 
 	para "¡Sólo te costará"
 	line "1.000.000¥!"
@@ -643,7 +617,7 @@ FisherJustinAfterText:
 	text "Paciencia… La"
 	line "base de la pesca"
 
-	para "y de los #MON"
+	para "y de los Pokémon"
 	line "es la misma."
 	done
 
@@ -652,7 +626,7 @@ FisherRalph1SeenText:
 	line "tanto pescando"
 
 	para "como con los"
-	line "#MON."
+	line "Pokémon."
 
 	para "¡No voy a perder"
 	line "con alguien tan"
@@ -668,7 +642,7 @@ FisherRalphAfterText:
 	text "¡Pescar es una"
 	line "pasión eterna y"
 
-	para "los #MON son"
+	para "los Pokémon son"
 	line "amigos eternos!"
 	done
 
@@ -687,7 +661,7 @@ FisherRalphSwarmText:
 
 Route32UnusedFisher1SeenText:
 	text "Siempre atrapo los"
-	line "mismos #MON…"
+	line "mismos Pokémon…"
 
 	para "Quizá con un"
 	line "combate cambien"
@@ -704,7 +678,7 @@ Route32UnusedFisher1AfterText:
 	line "que el tipo de al"
 
 	para "lado pesque buenos"
-	line "#MON?"
+	line "Pokémon?"
 	done
 
 Route32UnusedFisher2SeenText:
@@ -720,16 +694,16 @@ Route32UnusedFisher2BeatenText:
 
 Route32UnusedFisher2AfterText:
 	text "Si quieres atrapar"
-	line "buenos #MON,"
+	line "buenos Pokémon,"
 
 	para "tienes que tener"
-	line "una buena CAÑA."
+	line "una buena caña."
 	done
 
 ; --- end a segment of unused texts
 
 FisherHenrySeenText:
-	text "¿Mi #MON?"
+	text "¿Mi Pokémon?"
 	line "¡Recién pescado!"
 	done
 
@@ -738,7 +712,7 @@ FisherHenryBeatenText:
 	done
 
 FisherHenryAfterText:
-	text "Los #MON"
+	text "Los Pokémon"
 	line "recién atrapados"
 
 	para "no son comparables"
@@ -763,13 +737,13 @@ YoungsterAlbertAfterText:
 	cont "favoritos."
 
 	para "No uso los mismos"
-	line "#MON que"
+	line "Pokémon que"
 	cont "todo el mundo."
 	done
 
 YoungsterGordonSeenText:
 	text "¡He encontrado"
-	line "#MON muy buenos"
+	line "Pokémon muy buenos"
 	cont "en la hierba!"
 
 	para "¡Creo que me"
@@ -823,10 +797,10 @@ PicnickerLiz1AfterText:
 	done
 
 BirdKeeperPeterSeenText:
-	text "¡Esa MEDALLA! ¡Es"
-	line "de CIUDAD MALVA!"
+	text "¡Esa Medalla! ¡Es"
+	line "de Ciudad Malva!"
 
-	para "¿Ganaste a PEGASO?"
+	para "¿Ganaste a Antón?"
 	done
 
 BirdKeeperPeterBeatenText:
@@ -838,8 +812,8 @@ BirdKeeperPeterAfterText:
 	text "Debería volver a"
 	line "entrenarme en el"
 
-	para "GIMNASIO de"
-	line "CIUDAD MALVA."
+	para "Gimnasio de"
+	line "Ciudad Malva."
 	done
 
 Route32UnusedText:
@@ -864,28 +838,28 @@ Text_RoarOutro:
 	text "¡GRRRRRR!"
 	line "¡ES RUGIDO! HASTA"
 
-	para "LOS #MON HUYEN"
+	para "LOS Pokémon HUYEN"
 	line "CON UN RUGIDO."
 	done
 
 MeetFriedaText:
-	text "VICKI: ¡Yuju!"
+	text "Vicki: ¡Yuju!"
 	line "¡Es viernes!"
 
-	para "Soy VICKI, por"
+	para "Soy Vicki, por"
 	line "viernes."
 
 	para "¡Mucho gusto!"
 	done
 
 FriedaGivesGiftText:
-	text "¡Toma una FLECHA"
-	line "VENENOSA!"
+	text "¡Toma una Flecha"
+	line "Venenosa!"
 	done
 
 FriedaGaveGiftText:
-	text "VICKI: Dásela a un"
-	line "#MON de tipo"
+	text "Vicki: Dásela a un"
+	line "Pokémon de tipo"
 	cont "veneno."
 
 	para "¡Oh!"
@@ -900,7 +874,7 @@ FriedaGaveGiftText:
 	done
 
 FriedaFridayText:
-	text "VICKI: ¡Hola! ¿Qué"
+	text "Vicki: ¡Hola! ¿Qué"
 	line "día prefieres?"
 
 	para "A mí me gusta el"
@@ -911,7 +885,7 @@ FriedaFridayText:
 	done
 
 FriedaNotFridayText:
-	text "VICKI: ¿Hoy no es"
+	text "Vicki: ¿Hoy no es"
 	line "viernes?"
 
 	para "¡Me aburro cuando"
@@ -921,13 +895,13 @@ FriedaNotFridayText:
 Route32SignText:
 	text "RUTA 32"
 
-	para "CIUDAD MALVA -"
-	line "PUEBLO AZALEA"
+	para "Ciudad Malva -"
+	line "Pueblo Azalea"
 	done
 
 Route32RuinsSignText:
-	text "RUINAS ALFA"
-	line "ENTRADA ESTE"
+	text "Ruinas Alfa"
+	line "Entrada Este"
 	done
 
 Route32UnionCaveSignText:
@@ -945,7 +919,7 @@ Route32_MapEvents:
 	warp_event  6, 79, UNION_CAVE_1F, 4
 
 	def_coord_events
-	coord_event 18,  8, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS, Route32CooltrainerMStopsYouScene
+	coord_event 13,  8, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS, Route32CooltrainerMStopsYouScene
 	coord_event  7, 71, SCENE_ROUTE32_OFFER_SLOWPOKETAIL, Route32WannaBuyASlowpokeTailScript
 
 	def_bg_events

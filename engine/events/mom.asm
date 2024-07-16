@@ -460,7 +460,7 @@ Mom_WithdrawDepositMenuJoypad:
 	xor a
 	ldh [hBGMapMode], a
 	hlcoord 12, 6
-	ld bc, 7
+	ld bc, 6
 	ld a, " "
 	call ByteFill
 	hlcoord 12, 6
@@ -470,7 +470,7 @@ Mom_WithdrawDepositMenuJoypad:
 	ldh a, [hVBlankCounter]
 	and $10
 	jr nz, .skip
-	hlcoord 13, 6
+	hlcoord 12, 6
 	ld a, [wMomBankDigitCursorPosition]
 	ld c, a
 	ld b, 0
@@ -638,16 +638,16 @@ MomJustDoWhatYouCanText:
 	text_end
 
 Mom_SavedString:
-	db "SAVED@"
+	db "Guardado@"
 
 Mon_WithdrawString:
-	db "WITHDRAW@"
+	db "Sacar@"
 
 Mom_DepositString:
-	db "DEPOSIT@"
+	db "Dejar@"
 
 Mom_HeldString:
-	db "HELD@"
+	db "Tienes@"
 
 BankOfMom_MenuHeader:
 	db MENU_BACKUP_TILES ; flags
@@ -658,7 +658,7 @@ BankOfMom_MenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "GET@"
-	db "SAVE@"
-	db "CHANGE@"
-	db "CANCEL@"
+	db "Coger@"
+	db "Guarda@"
+	db "Cambio@"
+	db "Salir@"

@@ -724,7 +724,7 @@ AfterChikoritaMovement:
 	step_end
 
 ElmText_Intro:
-	text "ELM: ¡<PLAY_G>!"
+	text "Elm: ¡<PLAY_G>!"
 	line "¡Aquí estás!"
 
 	para "Tengo que pedirte"
@@ -732,7 +732,7 @@ ElmText_Intro:
 
 	para "Estoy llevando una"
 	line "nueva investiga-"
-	cont "ción #MON en"
+	cont "ción Pokémon en"
 	cont "este momento."
 
 	para "Me preguntaba si"
@@ -758,7 +758,7 @@ ElmText_Intro:
 	para "Necesito que"
 	line "cuides de un"
 
-	para "#MON que"
+	para "Pokémon que"
 	line "capturé hace poco."
 	done
 
@@ -784,7 +784,7 @@ ElmText_ResearchAmbitions:
 
 	para "misterios que"
 	line "rodean a los"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "¡Con toda"
 	line "seguridad!"
@@ -805,7 +805,7 @@ ElmText_MissionFromMrPokemon:
 
 	para "Conozco a"
 	line "alguien llamado"
-	cont "SR. #MON."
+	cont "SR. Pokémon."
 
 	para "Investiga cosas"
 	line "extrañas y le"
@@ -838,11 +838,11 @@ ElmText_ChooseAPokemon:
 	text "Quiero que cuides"
 	line "de uno de los"
 
-	para "#MON que hay"
+	para "Pokémon que hay"
 	line "dentro de las"
-	cont "BALL."
+	cont "<POKE>BALL."
 
-	para "¡Estos #MON"
+	para "¡Estos Pokémon"
 	line "nunca han tenido"
 
 	para "un compañero,"
@@ -853,37 +853,37 @@ ElmText_ChooseAPokemon:
 
 ElmText_LetYourMonBattleIt:
 	text "Si aparece un"
-	line "#MON salvaje,"
+	line "Pokémon salvaje,"
 
-	para "haz que tu #MON"
+	para "haz que tu Pokémon"
 	line "luche contra él."
 	done
 
 LabWhereGoingText:
-	text "ELM: ¡Espera!"
+	text "Elm: ¡Espera!"
 	line "¿Adónde vas?"
 	done
 
 TakeCyndaquilText:
-	text "ELM: ¿Quieres a"
-	line "CYNDAQUIL, el"
-	cont "#MON de fuego?"
+	text "Elm: ¿Quieres a"
+	line "Cyndaquil, el"
+	cont "Pokémon de fuego?"
 	done
 
 TakeTotodileText:
-	text "ELM: ¿Quieres a"
-	line "TOTODILE, el"
-	cont "#MON de agua?"
+	text "Elm: ¿Quieres a"
+	line "Totodile, el"
+	cont "Pokémon de agua?"
 	done
 
 TakeChikoritaText:
-	text "ELM: ¿Quieres a"
-	line "CHIKORITA, el"
-	cont "#MON planta?"
+	text "Elm: ¿Quieres a"
+	line "Chikorita, el"
+	cont "Pokémon planta?"
 	done
 
 DidntChooseStarterText:
-	text "ELM: Piénsalo con"
+	text "Elm: Piénsalo con"
 	line "cuidado."
 
 	para "Tu compañero es"
@@ -891,9 +891,9 @@ DidntChooseStarterText:
 	done
 
 ChoseStarterText:
-	text "ELM: ¡Yo también"
+	text "Elm: ¡Yo también"
 	line "creo que es un"
-	cont "#MON genial!"
+	cont "Pokémon genial!"
 	done
 
 ReceivedStarterText:
@@ -905,10 +905,10 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "El SR. #MON"
+	text "El SR. Pokémon"
 	line "vive un poco más"
 
-	para "allá de CEREZO, la"
+	para "allá de Cerezo, la"
 	line "próxima ciudad."
 
 	para "Es casi una ruta"
@@ -924,7 +924,7 @@ ElmDirectionsText1:
 	done
 
 ElmDirectionsText2:
-	text "Si tu #MON"
+	text "Si tu Pokémon"
 	line "resulta dañado,"
 
 	para "debes curarlo con"
@@ -941,11 +941,11 @@ ElmDirectionsText3:
 
 GotElmsNumberText:
 	text "<PLAYER> anotó"
-	line "el número de ELM."
+	line "el número de Elm."
 	done
 
 ElmDescribesMrPokemonText:
-	text "El SR. #MON"
+	text "El Sr. Pokémon"
 	line "busca las rarezas"
 	cont "en todas partes."
 
@@ -958,8 +958,8 @@ ElmDescribesMrPokemonText:
 
 ElmPokeBallText:
 	text "Contiene un"
-	line "#MON atrapado"
-	cont "por el PROF. ELM."
+	line "Pokémon atrapado"
+	cont "por el Prof. Elm."
 	done
 
 ElmsLabHealingMachineText1:
@@ -969,42 +969,42 @@ ElmsLabHealingMachineText1:
 
 ElmsLabHealingMachineText2:
 	text "¿Quieres curar a"
-	line "tus #MON?"
+	line "tus Pokémon?"
 	done
 
 ElmAfterTheftText1:
-	text "ELM: <PLAY_G>,"
+	text "Elm: <PLAY_G>,"
 	line "es terrible…"
 
 	para "Oh, sí, ¿cuál era"
 	line "el gran descubri-"
-	cont "miento del SR."
-	cont "#MON?"
+	cont "miento del Sr."
+	cont "Pokémon?"
 	done
 
 ElmAfterTheftText2:
 	text "<PLAYER> le dio el"
-	line "HUEVO MISTERIOSO"
-	cont "al PROF. ELM."
+	line "Huevo Misterioso"
+	cont "al Prof. Elm."
 	done
 
 ElmAfterTheftText3:
-	text "ELM: ¿Esto?"
+	text "Elm: ¿Esto?"
 	done
 
 ElmAfterTheftText4:
 	text "Pero… ¿es un"
-	line "HUEVO de #MON?"
+	line "Huevo de Pokémon?"
 
 	para "Si lo es, ¡vaya"
 	line "descubrimiento!"
 	done
 
 ElmAfterTheftText5:
-	text "ELM: ¿¡Qué!?"
+	text "Elm: ¿¡Qué!?"
 
-	para "¿El PROF. OAK te"
-	line "dio una #DEX?"
+	para "¿El Prof. Oak te"
+	line "dio una <POKE>dex?"
 
 	para "<PLAY_G>, ¿es"
 	line "cierto? Es… ¡Es"
@@ -1024,15 +1024,15 @@ ElmAfterTheftText5:
 
 	para "Y parece que te"
 	line "llevas muy bien"
-	cont "con los #MON."
+	cont "con los Pokémon."
 
 	para "Deberías afrontar"
 	line "el reto de los"
-	cont "GIMNASIOS #MON."
+	cont "Gimnasios Pokémon."
 
-	para "El GIMNASIO más"
+	para "El Gimnasio más"
 	line "cercano es el de"
-	cont "CIUDAD MALVA."
+	cont "Ciudad Malva."
 	done
 
 ElmAfterTheftText6:
@@ -1048,23 +1048,23 @@ ElmAfterTheftText6:
 	done
 
 ElmStudyingEggText:
-	text "ELM: ¡No te"
+	text "Elm: ¡No te"
 	line "rindas! Si sé algo"
 
-	para "sobre ese HUEVO,"
+	para "sobre ese Huevo,"
 	line "te llamaré."
 	done
 
 ElmAideHasEggText:
-	text "ELM: ¿<PLAY_G>?"
+	text "Elm: ¿<PLAY_G>?"
 	line "¿Te encontraste"
 	cont "con mi ayudante?"
 
 	para "Debía llevarte el"
-	line "HUEVO al CENTRO"
+	line "Huevo al Centro"
 
-	para "#MON de CIUDAD"
-	line "MALVA."
+	para "Pokémon de Ciudad"
+	line "Malva."
 
 	para "No le habrás"
 	line "visto. Búscale"
@@ -1072,36 +1072,36 @@ ElmAideHasEggText:
 	done
 
 ElmWaitingEggHatchText:
-	text "ELM: ¿Alguna"
+	text "Elm: ¿Alguna"
 	line "novedad?"
 	done
 
 ElmThoughtEggHatchedText:
 	text "¿<PLAY_G>? Creía"
-	line "que el HUEVO había"
+	line "que el Huevo había"
 	cont "eclosionado…"
 
 	para "¿Dónde está el"
-	line "#MON?"
+	line "Pokémon?"
 	done
 
 ShowElmTogepiText1:
-	text "ELM: ¡<PLAY_G>,"
+	text "Elm: ¡<PLAY_G>,"
 	line "estás genial!"
 	done
 
 ShowElmTogepiText2:
 	text "¿Qué?"
-	line "¿¡Ese #MON!?"
+	line "¿¡Ese Pokémon!?"
 	done
 
 ShowElmTogepiText3:
-	text "¡El HUEVO se"
-	line "abrió! Los #MON"
+	text "¡El Huevo se"
+	line "abrió! Los Pokémon"
 	cont "deben nacer así."
 
 	para "Quizá no todos"
-	line "los #MON."
+	line "los Pokémon."
 
 	para "¡Uauu! Aún nos"
 	line "queda mucho por"
@@ -1114,7 +1114,7 @@ ElmGiveEverstoneText1:
 
 	para "ayudarnos a"
 	line "desenmarañar los"
-	cont "misterios #MON!"
+	cont "misterios Pokémon!"
 
 	para "Quiero que lleves"
 	line "esto como muestra"
@@ -1123,28 +1123,28 @@ ElmGiveEverstoneText1:
 
 ElmGiveEverstoneText2:
 	text "Eso es una"
-	line "PIEDRAETERNA."
+	line "Piedraeterna."
 
-	para "Algunos #MON"
+	para "Algunos Pokémon"
 	line "evolucionan al"
 
 	para "alcanzar ciertos"
 	line "niveles."
 
-	para "Si un #MON"
+	para "Si un Pokémon"
 	line "va equipado con la"
 
-	para "PIEDRAETERNA,"
+	para "Piedraeterna,"
 	line "no evolucionará."
 
-	para "Dásela al #MON"
+	para "Dásela al Pokémon"
 	line ""
 	line "que no quieras que"
 	cont "evolucione."
 	done
 
 ElmText_CallYou:
-	text "ELM: <PLAY_G>,"
+	text "Elm: <PLAY_G>,"
 	line "te llamaré si"
 	cont "ocurre algo."
 	done
@@ -1152,20 +1152,20 @@ ElmText_CallYou:
 AideText_AfterTheft:
 	text "(Suspiro…)"
 
-	para "El #MON robado…"
+	para "El Pokémon robado…"
 
 	para "Me pregunto cómo"
 	line "estará."
 
 	para "Dicen que los"
-	line "#MON educados"
+	line "Pokémon educados"
 
 	para "por malas personas"
 	line "se vuelven malos."
 	done
 
 ElmGiveMasterBallText1:
-	text "ELM: ¡Hola,"
+	text "Elm: ¡Hola,"
 	line "<PLAY_G>!"
 
 	para "¡Mi investigación"
@@ -1180,21 +1180,21 @@ ElmGiveMasterBallText1:
 	done
 
 ElmGiveMasterBallText2:
-	text "¡La MASTER BALL es"
+	text "¡La Master Ball es"
 	line "la mejor!"
 
-	para "¡Es la BALL"
+	para "¡Es la Ball"
 	line "definitiva!"
 
 	para "Captura cualquier"
-	line "#MON sin"
+	line "Pokémon sin"
 	cont "fallar."
 
 	para "Se les entrega a"
 	line "los grandes"
 
 	para "investigadores"
-	line "#MON."
+	line "Pokémon."
 
 	para "¡Creo que tú harás"
 	line "un mejor uso de"
@@ -1204,41 +1204,41 @@ ElmGiveMasterBallText2:
 	done
 
 ElmGiveTicketText1:
-	text "ELM: ¡<PLAY_G>!"
+	text "Elm: ¡<PLAY_G>!"
 	line "¡Aquí estás!"
 
 	para "Te llamé porque"
 	line "tengo algo para"
 	cont "ti."
 
-	para "¿Ves? Es un TICKET"
-	line "BARCO."
+	para "¿Ves? Es un Ticket"
+	line "Barco."
 
 	para "Ahora puedes"
-	line "atrapar #MON"
-	cont "en KANTO."
+	line "atrapar Pokémon"
+	cont "en Kanto."
 	done
 
 ElmGiveTicketText2:
 	text "El barco parte de"
-	line "CIUDAD OLIVO."
+	line "Ciudad Olivo."
 
 	para "Pero eso ya lo"
 	line "sabes, <PLAY_G>."
 
 	para "Ya lo has reco-"
 	line "rrido todo con tus"
-	cont "#MON."
+	cont "Pokémon."
 
-	para "¡Saluda al PROF."
-	line "OAK de mi parte"
-	cont "en KANTO!"
+	para "¡Saluda al Prof."
+	line "Oak de mi parte"
+	cont "en Kanto!"
 	done
 
 ElmsLabSignpostText_Egg:
-	text "El HUEVO #MON"
+	text "El Huevo Pokémon"
 	line "que estudia"
-	cont "el PROF. ELM."
+	cont "el Prof. Elm."
 	done
 
 AideText_GiveYouPotion:
@@ -1261,7 +1261,7 @@ AideText_TheftTestimony:
 	line "a mirar, alguien"
 
 	para "nos robó un"
-	line "#MON."
+	line "Pokémon."
 
 	para "¡Es horrible"
 	line "que alguien"
@@ -1269,13 +1269,13 @@ AideText_TheftTestimony:
 
 	para "(Suspiro…)"
 
-	para "El #MON robado…"
+	para "El Pokémon robado…"
 
 	para "Me pregunto cómo"
 	line "estará."
 
 	para "Dicen que los"
-	line "#MON educados"
+	line "Pokémon educados"
 
 	para "por malas personas"
 	line "se vuelven malos."
@@ -1285,26 +1285,26 @@ AideText_GiveYouBalls:
 	text "¡<PLAY_G>!"
 
 	para "¡Úsalas en tu"
-	line "aventura #DEX!"
+	line "aventura <POKE>dex!"
 	done
 
 AideText_ExplainBalls:
-	text "Atrapa #MON"
+	text "Atrapa Pokémon"
 	line "para completar tu"
-	cont "#DEX."
+	cont "<POKE>dex."
 
-	para "Atrapa #MON"
+	para "Atrapa Pokémon"
 	line "salvajes usando"
-	cont "las # BALL."
+	cont "las <POKE>BALL."
 	done
 
 ElmsLabOfficerText1:
 	text "Dicen que han"
-	line "robado un #MON."
+	line "robado un Pokémon."
 
 	para "Y acabo de recibir"
 	line "cierta información"
-	cont "del PROF. ELM."
+	cont "del Prof. Elm."
 
 	para "Parece que fue un"
 	line "joven pelirrojo,"
@@ -1346,8 +1346,8 @@ ElmsLabTravelTip1Text:
 
 	para "Pista de viaje 1:"
 
-	para "Pulsa START para"
-	line "abrir el MENÚ."
+	para "Pulsa Start para"
+	line "abrir el Menú."
 	done
 
 ElmsLabTravelTip2Text:
@@ -1357,7 +1357,7 @@ ElmsLabTravelTip2Text:
 	para "Pista de viaje 2:"
 
 	para "¡Graba tu viaje"
-	line "con GUARDAR!"
+	line "con Guardar!"
 	done
 
 ElmsLabTravelTip3Text:
@@ -1366,8 +1366,8 @@ ElmsLabTravelTip3Text:
 
 	para "Pista de viaje 3:"
 
-	para "Abre tu MOCHILA y"
-	line "pulsa SELECT para"
+	para "Abre tu Mochila y"
+	line "pulsa Select para"
 	cont "mover objetos."
 	done
 
@@ -1378,7 +1378,7 @@ ElmsLabTravelTip4Text:
 	para "Pista de viaje 4:"
 
 	para "Mira los ataques"
-	line "de tus #MON."
+	line "de tus Pokémon."
 
 	para "Pulsa A para"
 	line "cambiar de ataque."
@@ -1389,12 +1389,12 @@ ElmsLabTrashcanText:
 	line "envoltorio del"
 
 	para "tentempié que se"
-	line "tomó el PROF. ELM."
+	line "tomó el Prof. Elm."
 	done
 
 ElmsLabPCText:
-	text "OBSERVACIONES DE"
-	line "EVOLUCIÓN #MON"
+	text "Observaciones de"
+	line "Evolución Pokémon"
 
 	para "Es lo que pone"
 	line "en la pantalla…"

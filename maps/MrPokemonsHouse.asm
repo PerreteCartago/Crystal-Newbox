@@ -174,58 +174,58 @@ MrPokemonIntroText1:
 	text "¡Hola, hola! Debes"
 	line "de ser <PLAY_G>."
 
-	para "El PROF. ELM me"
+	para "El Prof. Elm me"
 	line "dijo que vendrías."
 	done
 
 MrPokemonIntroText2:
 	text "Esto es lo que"
 	line "quiero que examine"
-	cont "el PROF. ELM."
+	cont "el Prof. Elm."
 	done
 
 MrPokemonsHouse_GotEggText:
 	text "<PLAYER> recibió"
-	line "un HUEVO MIST."
+	line "un Huevo Mist."
 	done
 
 MrPokemonIntroText3:
 	text "Conozco a una"
 	line "pareja que tiene"
 
-	para "una GUARDERÍA"
-	line "#MON."
+	para "una Guardería"
+	line "Pokémon."
 
 	para "Ellos me dieron"
-	line "ese HUEVO."
+	line "ese Huevo."
 
 	para "Como me intrigaba,"
 	line "le mandé una carta"
-	cont "al PROF. ELM."
+	cont "al Prof. Elm."
 
-	para "El PROF. ELM es la"
+	para "El Prof. Elm es la"
 	line "máxima autoridad"
 
 	para "en evolución de"
-	line "los #MON."
+	line "los Pokémon."
 	done
 
 MrPokemonIntroText4:
-	text "Hasta el PROF. OAK"
+	text "Hasta el Prof. Oak"
 	line "lo reconoce."
 	done
 
 MrPokemonIntroText5:
 	text "Si tengo razón,"
-	line "el PROF. ELM lo"
+	line "el Prof. Elm lo"
 	cont "sabrá."
 	done
 
 MrPokemonsHouse_MrPokemonHealText:
 	text "¿Vas a ir a ver"
-	line "al PROF. ELM?"
+	line "al Prof. Elm?"
 
-	para "Toma. Tus #MON"
+	para "Toma. Tus Pokémon"
 	line "deberían descansar"
 	cont "un poco."
 	done
@@ -243,46 +243,46 @@ MrPokemonText_AlwaysNewDiscoveries:
 	done
 
 MrPokemonsHouse_OakText1:
-	text "OAK: ¡Ajá! ¡Así"
+	text "Oak: ¡Ajá! ¡Así"
 	line "que eres <PLAY_G>!"
 
-	para "¡Soy OAK! Investi-"
-	line "go a los #MON."
+	para "¡Soy Oak! Investi-"
+	line "go a los Pokémon."
 
 	para "Estaba visitando a"
 	line "mi viejo amigo el"
-	cont "SR. #MON."
+	cont "Sr. Pokémon."
 
 	para "Oí que estabas"
 	line "haciendo un recado"
 
-	para "para el PROF. ELM,"
+	para "para el Prof. Elm,"
 	line "así que te esperé"
 	cont "aquí."
 
 	para "¡Oh! ¿Qué es esto?"
-	line "¡Un #MON raro!"
+	line "¡Un Pokémon raro!"
 
 	para "Veamos…"
 
 	para "Mmm… ¡Ya veo!"
 
 	para "Ya entiendo por"
-	line "qué el PROF. ELM"
+	line "qué el Prof. Elm"
 
-	para "te dio un #MON"
+	para "te dio un Pokémon"
 	line "para este recado."
 
 	para "Los investigadores"
-	line "como el PROF. ELM"
+	line "como el Prof. Elm"
 
 	para "y yo somos amigos"
-	line "de los #MON."
+	line "de los Pokémon."
 
 	para "Se dio cuenta de"
 	line "que cuidarías a tu"
 
-	para "#MON con amor"
+	para "Pokémon con amor"
 	line "y cariño."
 
 	para "¡Ah…!"
@@ -295,12 +295,12 @@ MrPokemonsHouse_OakText1:
 
 	para "¿Ves? Ésta es la"
 	line "última versión de"
-	cont "la #DEX."
+	cont "la <POKE>dex."
 
 	para "Guarda automática-"
 	line "mente datos de los"
 
-	para "#MON que hayas"
+	para "Pokémon que hayas"
 	line "visto o capturado."
 
 	para "¡Es una enciclo-"
@@ -310,21 +310,21 @@ MrPokemonsHouse_OakText1:
 
 MrPokemonsHouse_GetDexText:
 	text "¡<PLAYER> recibió"
-	line "la #DEX!"
+	line "la <POKE>dex!"
 	done
 
 MrPokemonsHouse_OakText2:
 	text "¡Ve a conocer"
-	line "todos los #MON"
+	line "todos los Pokémon"
 
 	para "que puedas y com-"
-	line "pleta esa #DEX!"
+	line "pleta esa <POKE>dex!"
 
 	para "Llevo demasiado"
 	line "tiempo aquí."
 
 	para "Tengo que ir a"
-	line "CIUDAD TRIGAL por"
+	line "Ciudad Trigal por"
 
 	para "mi programa de"
 	line "radio."
@@ -334,9 +334,9 @@ MrPokemonsHouse_OakText2:
 	done
 
 MrPokemonText_GimmeTheScale:
-	text "¿Mmm? ¡Esa ESCAMA!"
+	text "¿Mmm? ¡Esa Escama!"
 	line "¿Qué es esto?"
-	cont "¿Un GYARADOS rojo?"
+	cont "¿Un Gyarados rojo?"
 
 	para "¡Qué raro! "
 	line "Lo quiero…"
@@ -345,10 +345,10 @@ MrPokemonText_GimmeTheScale:
 	line "intercambiarlo?"
 
 	para "Puedo ofrecerte"
-	line "este REPARTIR EXP"
+	line "este Repartir Exp"
 
 	para "que me dio el"
-	line "PROF. OAK."
+	line "Prof. Oak."
 	done
 
 MrPokemonText_Disappointed:

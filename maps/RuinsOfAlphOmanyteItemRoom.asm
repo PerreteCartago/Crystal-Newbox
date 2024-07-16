@@ -26,7 +26,7 @@ RuinsOfAlphOmanyteItemRoomAncientReplica:
 
 RuinsOfAlphOmanyteItemRoomAncientReplicaText:
 	text "Es una réplica de"
-	line "un #MON"
+	line "un Pokémon"
 	cont "antiguo."
 	done
 

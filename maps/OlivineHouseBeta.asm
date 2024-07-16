@@ -25,16 +25,16 @@ OlivineHouseBetaBookshelf2:
 	jumpstd MagazineBookshelfScript
 
 OlivineHouseBetaTeacherText:
-	text "When my #MON"
-	line "got sick, the"
+	text "Cuando mis Pokémon"
+	line "enfermaron, el"
 
-	para "PHARMACIST in"
-	line "ECRUTEAK made some"
-	cont "medicine for me."
+	para "Farmacéutico de"
+	line "Ciudad Iris me"
+	cont "dio una medicina."
 	done
 
 OlivineHouseBetaRhydonText:
-	text "RHYDON: Gugooh!"
+	text "Rhydon: ¡Rhydo!"
 	done
 
 OlivineHouseBeta_MapEvents:

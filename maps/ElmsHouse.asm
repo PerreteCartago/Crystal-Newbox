@@ -31,7 +31,7 @@ ElmsWifeText:
 	line "embebido en la"
 
 	para "investigación"
-	line "#MON, se olvida"
+	line "Pokémon, se olvida"
 	cont "hasta de comer."
 	done
 
@@ -41,38 +41,38 @@ ElmsSonText:
 	cont "padre!"
 
 	para "¡Voy a ser un gran"
-	line "profesor #MON!"
+	line "profesor Pokémon!"
 	done
 
 ElmsHouseLabFoodText:
 ; unused
 	text "Aquí hay comida."
 	line "Debe de ser para"
-	cont "el LABORATORIO."
+	cont "el Laboratorio."
 	done
 
 ElmsHousePokemonFoodText:
 ; unused
 	text "Aquí hay comida."
 	line "Debe de ser para"
-	cont "los #MON."
+	cont "los Pokémon."
 	done
 
 ElmsHousePCText:
-	text "#MON… ¿De"
+	text "Pokémon… ¿De"
 	line "dónde vienen?"
 
 	para "¿Adónde van?"
 
 	para "¿Por qué nadie ha"
-	line "visto un #MON"
+	line "visto un Pokémon"
 	cont "nacer?"
 
 	para "¡Quiero saberlo!"
 	line "¡Dedicaré mi vida"
 
 	para "al estudio de"
-	line "los #MON!"
+	line "los Pokémon!"
 
 	para "…"
 
@@ -80,7 +80,7 @@ ElmsHousePCText:
 	line "papeles de la"
 
 	para "investigación del"
-	line "PROF. ELM."
+	line "Profesor Elm."
 	done
 
 

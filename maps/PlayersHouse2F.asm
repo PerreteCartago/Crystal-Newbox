@@ -93,25 +93,25 @@ PlayersHousePCScript:
 	end
 
 PlayersRadioText1:
-	text "¡La HORA #MON"
-	line "del PROF. OAK!"
+	text "¡La Hora Pokémon"
+	line "del Prof. Oak!"
 
 	para "¡Sintonízanos la"
 	line "próxima vez!"
 	done
 
 PlayersRadioText2:
-	text "¡EL CANAL #MON!"
+	text "¡El Canal Pokémon!"
 	done
 
 PlayersRadioText3:
-	text "¡Soy DJ ROSA,"
+	text "¡Soy DJ Rosa,"
 	line "la presentadora!"
 	done
 
 PlayersRadioText4:
-	text "¡#MON!"
-	line "El CANAL #MON…"
+	text "¡Pokémon!"
+	line "El Canal Pokémon…"
 	done
 
 PlayersHouse2F_MapEvents:

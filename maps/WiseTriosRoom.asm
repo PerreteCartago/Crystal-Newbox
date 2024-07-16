@@ -129,217 +129,231 @@ WiseTriosRoomSageAllowsPassageMovement:
 	step_end
 
 WiseTriosRoomSage1Text:
-	text "Astounding…"
+	text "Asombroso…"
 
-	para "SUICUNE, ENTEI and"
-	line "RAIKOU have arisen"
-	cont "from their sleep…"
+	para "Suicune, Entei y"
+	line "Raikou han salido"
+	cont "de su letargo…"
 
-	para "Is the legend"
-	line "coming true?"
+	para "¿Se hará realidad"
+	line "la leyenda?"
 	done
 
 WiseTriosRoomSage2Text:
-	text "We train at the"
-	line "BURNED TOWER, but"
+	text "Nos entrenamos en"
+	line "Torre Quemada,"
 
-	para "we've never heard"
-	line "of a hole opening"
+	para "pero nunca oímos"
+	line "hablar de que"
 
-	para "up there before."
-	line "It must have been"
+	para "hubiera ningún"
+	line "agujero."
 
-	para "deliberately made"
-	line "by someone."
+	para "Alguien lo debió"
+	line "de hacer a"
+	cont "propósito."
 	done
 
 WiseTriosRoomSage3BlocksExitText:
-	text "TIN TOWER may be"
-	line "entered by those"
+	text "Sólo pueden entrar"
+	line "en la Torre"
 
-	para "bearing ECRUTEAK's"
-	line "GYM BADGE."
+	para "Hojalata aquellos"
+	line "que lleven la"
 
-	para "However, now that"
-	line "SUICUNE, RAIKOU"
+	para "Medalla del"
+	line "Gimnasio Iris."
 
-	para "and ENTEI have"
-	line "arisen, I ask you"
+	para "¡Aunque, ahora que"
+	line "Suicune, Raikou"
 
-	para "to refrain from"
-	line "entering!"
+	para "y Entei han des-"
+	line "pertado, te pido"
+
+	para "que te abstengas"
+	line "de entrar!"
 	done
 
 WiseTriosRoomSage3Text:
-	text "We, the WISE TRIO,"
-	line "are the protectors"
+	text "Nosotros, el Trío"
+	line "de Sabios, somos"
 
-	para "of the legendary"
-	line "#MON."
+	para "los protectores"
+	line "del Pokémon"
+	cont "legendario."
 	done
 
 SageGakuSeenText:
-	text "Legend has it that"
-	line "upon the emergence"
+	text "Cuenta la leyenda"
+	line "que cuando resurja"
 
-	para "of a trainer who"
-	line "has the ability to"
+	para "un entrenador con"
+	line "la capacidad de"
 
-	para "touch the souls of"
-	line "#MON, a #MON"
+	para "tocar las almas de"
+	line "los Pokémon, un"
 
-	para "will come forth to"
-	line "put that trainer"
+	para "Pokémon aparecerá"
+	line "para retar al"
 
-	para "to test at the TIN"
-	line "TOWER."
+	para "entrenador en la"
+	line "Torre Hojalata."
 
-	para "The legend has"
-	line "come true!"
+	para "¡La leyenda se ha"
+	line "hecho realidad!"
 
-	para "The legendary"
-	line "#MON SUICUNE"
-	cont "has arrived!"
+	para "¡Suicune, el"
+	line "Pokémon legenda-"
+	cont "rio, ha llegado!"
 
-	para "We, the WISE TRIO,"
-	line "shall test your"
+	para "¡Nosotros, el Trío"
+	line "de Sabios, vamos a"
 
-	para "worthiness to go"
-	line "inside!"
+	para "probarte antes de"
+	line "que entres!"
 	done
 
 SageGakuBeatenText:
-	text "Stronger than we"
-	line "thought? Perhaps…"
+	text "¿Más fuerte que"
+	line "nosotros? Quizá…"
 	done
 
 SageGakuAfterBattleText:
-	text "Ah, so it is you"
-	line "who claim to have"
+	text "Ah, entonces tú"
+	line "eres quien dice"
 
-	para "seen SUICUNE,"
-	line "ENTEI and RAIKOU"
-	cont "while they slept?"
+	para "haber visto a"
+	line "Suicune, Entei y"
 
-	para "Unbelievable!"
+	para "Raikou mientras"
+	line "dormían…"
 
-	para "Legend has it that"
-	line "they can't be seen"
-	cont "while they sleep…"
+	para "¡Increíble!"
+
+	para "La leyenda cuenta"
+	line "que no se pueden"
+
+	para "ver mientras"
+	line "duermen…"
 	done
 
 SageMasaSeenText:
-	text "Can you be trusted"
-	line "with the truth?"
+	text "¿Mereces conocer"
+	line "la verdad?"
 
-	para "I must ascertain"
-	line "your worthiness."
+	para "Debo averiguar tu"
+	line "valía."
 	done
 
 SageMasaBeatenText:
-	text "…I will tell you"
-	line "the truth…"
+	text "Te contaré la"
+	line "verdad…"
 	done
 
 SageMasaAfterBattleText:
-	text "In the past, there"
-	line "were two nine-tier"
-	cont "towers here."
+	text "En el pasado, aquí"
+	line "se alzaban dos"
 
-	para "The BRASS TOWER,"
-	line "which was said to"
+	para "torres de nueve"
+	line "pisos."
 
-	para "awaken #MON,"
-	line "and the TIN TOWER,"
+	para "La Torre Latón, de"
+	line "la cual se decía"
 
-	para "where #MON were"
-	line "said to rest."
+	para "despertaba a los"
+	line "Pokémon, y la"
 
-	para "The view from the"
-	line "tops of the TOWERS"
+	para "Torre Hojalata,"
+	line "en la que dormían"
 
-	para "must have been"
-	line "magnificent."
+	para "los Pokémon,"
+	line "según parece."
 
-	para "At the time, an"
-	line "immense, silver-"
+	para "La vista desde las"
+	line "TORRES debía"
+	cont "ser magnífica."
 
-	para "colored #MON"
-	line "was said to make"
+	para "Se dice que, por"
+	line "aquel entonces, un"
 
-	para "its roost atop the"
-	line "BRASS TOWER."
+	para "inmenso Pokémon"
+	line "plateado hizo su"
 
-	para "However…"
+	para "nido sobre la"
+	line "Torre Latón."
 
-	para "About 150 years"
-	line "ago, a lightning"
+	para "Pero…"
 
-	para "bolt struck one of"
-	line "the TOWERS."
+	para "Hace unos 150"
+	line "años, un rayo"
 
-	para "It was engulfed in"
-	line "flames that raged"
-	cont "for three days."
+	para "destruyó una de"
+	line "las Torres."
 
-	para "A sudden downpour"
-	line "finally put out"
-	cont "the blaze."
+	para "La envolvió en"
+	line "feroces llamas"
 
-	para "And that is how"
-	line "the BURNED TOWER"
-	cont "came to be."
+	para "durante tres días"
+	line "y tres noches."
+
+	para "Un aguacero"
+	line "repentino acabó"
+	cont "con el fuego."
+
+	para "Y así es como pasó"
+	line "a ser la Torre"
+	cont "Quemada."
 	done
 
 SageKojiSeenText:
-	text "Let me see your"
-	line "power!"
+	text "¡Déjame ver tu"
+	line "poder!"
 	done
 
 SageKojiBeatenText:
-	text "Too strong!"
-	line "Why?"
+	text "¡Muy fuerte!"
+	line "¿Por qué?"
 	done
 
 SageKojiAfterBattleQuestionText:
-	text "You… Are you the"
-	line "trainer who is"
+	text "Tú… ¿Era a ti"
+	line "a quien esperaba"
 
-	para "awaited by the"
-	line "legendary #MON?"
+	para "el Pokémon legen-"
+	line "dario?"
 	done
 
 SageKojiAfterBattleSpeechText:
-	text "I see…"
+	text "Ya veo…"
 
-	para "We, the WISE TRIO,"
-	line "have been given "
+	para "Nosotros, el Trío"
+	line "de Sabios, tenemos"
 
-	para "the responsibility"
-	line "of protecting the"
+	para "la responsabilidad"
+	line "de proteger al"
 
-	para "legendary #MON."
-	line "We are to allow"
+	para "Pokémon legenda-"
+	line "rio. Sólo podemos"
 
-	para "passage only to"
-	line "those people who"
+	para "dejar pasar a"
+	line "aquellos que"
 
-	para "possess the power"
-	line "and soul of truth."
+	para "posean el poder y"
+	line "un alma pura."
 
-	para "Please, do go on"
-	line "and enter the TIN"
-	cont "TOWER ahead."
+	para "Por favor, sigue"
+	line "adelante hacia la"
+	cont "Torre Hojalata."
 
-	para "SUICUNE will put"
-	line "you to the test."
+	para "Suicune te pondrá"
+	line "a prueba."
 	done
 
 SageKojiAfterBattleFinalText:
-	text "Please, do go on."
+	text "Adelante."
 
-	para "SUICUNE will put"
-	line "you to the test."
+	para "Suicune te pondrá"
+	line "a prueba."
 	done
 
 WiseTriosRoom_MapEvents:

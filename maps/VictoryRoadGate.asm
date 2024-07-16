@@ -52,47 +52,49 @@ VictoryRoadGateStepDownMovement:
 	step_end
 
 VictoryRoadGateOfficerText:
-	text "Only trainers who"
-	line "have proven them-"
-	cont "selves may pass."
+	text "Sólo pueden pasar"
+	line "los entrenadores"
+
+	para "que demuestren su"
+	line "valía."
 	done
 
 VictoryRoadGateNotEnoughBadgesText:
-	text "You don't have all"
-	line "the GYM BADGES of"
-	cont "JOHTO."
+	text "No tienes todas"
+	line "las Medallas de"
+	cont "Johto."
 
-	para "I'm sorry, but I"
-	line "can't let you go"
-	cont "through."
+	para "Lo siento, pero no"
+	line "puedo dejarte"
+	cont "pasar."
 	done
 
 VictoryRoadGateEightBadgesText:
-	text "Oh! The eight"
-	line "BADGES of JOHTO!"
+	text "¡Oh! ¡Las ocho"
+	line "Medallas de Johto!"
 
-	para "Please, go right"
-	line "on through!"
+	para "¡Le ruego que"
+	line "pase, por favor!"
 	done
 
 VictoryRoadGateLeftBlackBeltText:
-	text "This way leads to"
-	line "MT.SILVER."
+	text "Este camino lleva"
+	line "a Mt. Plateado."
 
-	para "You'll see scary-"
-	line "strong #MON out"
-	cont "there."
+	para "Allí verás a unos"
+	line "Pokémon fuertes"
+	cont "y terribles."
 	done
 
 VictoryRoadGateRightBlackBeltText:
-	text "Off to the #MON"
-	line "LEAGUE, are you?"
+	text "Vas a la Liga"
+	line "Pokémon, ¿verdad?"
 
-	para "The ELITE FOUR are"
-	line "so strong it's"
+	para "El Alto Mando es"
+	line "tan fuerte que da"
 
-	para "scary, and they're"
-	line "ready for you!"
+	para "miedo. ¡Están"
+	line "esperándote!"
 	done
 
 VictoryRoadGate_MapEvents:

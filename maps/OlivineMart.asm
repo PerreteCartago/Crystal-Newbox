@@ -21,27 +21,28 @@ OlivineMartLassScript:
 	jumptextfaceplayer OlivineMartLassText
 
 OlivineMartCooltrainerFText:
-	text "Do your #MON"
-	line "already know the"
+	text "¿Tus Pokémon saben"
+	line "un movimiento para"
 
-	para "move for carrying"
-	line "people on water?"
+	para "llevar personas"
+	line "por el agua?"
 	done
 
 OlivineMartLassText:
-	text "My BUTTERFREE came"
-	line "from my boyfriend"
-	cont "overseas."
+	text "Mi Butterfree ha"
+	line "estado con mi"
+	cont "novio."
 
-	para "It carried some"
-	line "MAIL from him."
+	para "Y me ha traído"
+	line "una Carta suya."
 
-	para "Want to know what"
-	line "it says?"
+	para "¿Quieres saber"
+	line "lo que dice?"
 
-	para "Let's see… Nope!"
-	line "It's a secret!"
+	para "Veamos… ¡No!"
+	line "¡Es un secreto!"
 	done
+
 
 OlivineMart_MapEvents:
 	db 0, 0 ; filler

@@ -203,16 +203,16 @@ endc
 	ret
 
 AlphRuinsStampString:
-	db " ALPH RUINS STAMP@"
+	db "Sello Ruinas Alfa@"
 
 UnownDexDoWhatString:
-	db "Do what?@"
+	db "¿Qué hacer?@"
 
 UnownDexMenuString:
-	db   UNOWNSTAMP_BOLD_A, " PRINT"
-	next UNOWNSTAMP_BOLD_B, " CANCEL"
-	next "← PREVIOUS"
-	next "→ NEXT"
+	db   UNOWNSTAMP_BOLD_A, " Impr."
+	next UNOWNSTAMP_BOLD_B, " Cancela"
+	next "← Ant."
+	next "→ Sig."
 	db   "@"
 
 UnownDexVacantString:

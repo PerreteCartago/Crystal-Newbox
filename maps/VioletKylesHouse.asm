@@ -19,12 +19,12 @@ Kyle:
 	end
 
 VioletKylesHousePokefanMText:
-	text "Los #MON que"
+	text "Los Pokémon que"
 	line "se intercambian"
 	cont "crecen rápido."
 
 	para "Pero, si no tienes"
-	line "la MEDALLA"
+	line "la Medalla"
 
 	para "adecuada, podrían"
 	line "desobedecerte."

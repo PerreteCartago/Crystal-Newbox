@@ -8,7 +8,7 @@ _OakText7::
 	line "prepárate."
 
 	para "Tu propia historia"
-	line "#MON está a"
+	line "Pokémon está a"
 	cont "punto de empezar."
 
 	para "Te divertirás y"
@@ -19,7 +19,7 @@ _OakText7::
 	line "mundo de sueños y"
 
 	para "aventuras con"
-	line "#MON! ¡Vamos!"
+	line "Pokémon! ¡Vamos!"
 
 	para "¡Nos vemos!"
 	done
@@ -57,7 +57,7 @@ _LinkTimeoutText::
 
 _LinkTradeCantBattleText::
 	text "Si cambias ese"
-	line "#MON, no"
+	line "Pokémon, no"
 	cont "podrás luchar."
 	prompt
 
@@ -84,7 +84,7 @@ _MobileBattleMustPickThreeMonText::
 	line "battle, you must"
 
 	para "pick a team of"
-	line "three #MON."
+	line "three Pokémon."
 
 	para "Is that OK?"
 	done
@@ -97,7 +97,7 @@ _MobileBattleMoreInfoText::
 _MobileBattleRulesText::
 	text "For a mobile"
 	line "battle, choose"
-	cont "three #MON."
+	cont "three Pokémon."
 
 	para "The maximum daily"
 	line "play time is ten"
@@ -112,7 +112,7 @@ _MobileBattleRulesText::
 	line "the player with"
 
 	para "the fewest fainted"
-	line "#MON wins."
+	line "Pokémon wins."
 
 	para "If tied, the team"
 	line "that lost the"
@@ -173,7 +173,7 @@ _MobileBattleNoTimeLeftForLinkingText::
 	done
 
 _PickThreeMonForMobileBattleText::
-	text "Pick three #MON"
+	text "Pick three Pokémon"
 	line "for battle."
 	done
 
@@ -268,7 +268,7 @@ _SeerSeeAllText::
 
 	para "¡Ciertamente,"
 	line "conozco tus"
-	cont "#MON!"
+	cont "Pokémon!"
 	done
 
 _SeerCantTellAThingText::
@@ -346,7 +346,7 @@ _SeerNoLocationText::
 _SeerEggText::
 	text "¡Eh!"
 
-	para "¡Eso es un HUEVO!"
+	para "¡Eso es un huevo!"
 
 	para "Todavía no puedes"
 	line "decir que le"
@@ -364,7 +364,7 @@ _SeerMoreCareText::
 	para "Estaría bien que"
 	line "trataras a tus"
 
-	para "#MON con un"
+	para "Pokémon con un"
 	line "poco más de"
 	cont "cuidado."
 	done
@@ -403,7 +403,7 @@ _SeerMightyText::
 	text_start
 	line "debe de haber lu-"
 	cont "chado en numerosos"
-	cont "combates #MON."
+	cont "combates Pokémon."
 
 	para "Se le ve muy"
 	line "seguro."
@@ -418,7 +418,7 @@ _SeerImpressedText::
 	para "Hacía mucho desde"
 	line "la última vez que"
 
-	para "vi a un #MON"
+	para "vi a un Pokémon"
 	line "tan poderoso como"
 	cont "este @"
 	text_ram wSeerNickname
@@ -488,7 +488,7 @@ _HerbShopLadyIntroText::
 	para "Son buenas, pero"
 	line "un poco amargas."
 
-	para "Quizá tus #MON"
+	para "Quizá tus Pokémon"
 	line "no las quieran."
 
 	para "¡Je, je, je…!"
@@ -515,7 +515,7 @@ _HerbalLadyThanksText::
 	done
 
 _HerbalLadyPackFullText::
-	text "¡Oh! Tu MOCHILA"
+	text "¡Oh! Tu mochila"
 	line "está llena, joven."
 	done
 
@@ -554,7 +554,7 @@ _BargainShopThanksText::
 	done
 
 _BargainShopPackFullText::
-	text "¡Oh! Tu MOCHILA"
+	text "¡Oh! Tu mochila"
 	line "está a tope."
 	done
 
@@ -713,7 +713,7 @@ _MobileStadiumEntryText::
 	text "Los datos para"
 	line "utilizar en el"
 
-	para "#MON STADIUM 2"
+	para "Pokémon STADIUM 2"
 	line "de Nintendo 64"
 
 	para "pueden leerse"
@@ -730,7 +730,7 @@ _MobileStadiumSuccessText::
 	line "disfrutes con los"
 
 	para "combates en"
-	line "#MON STADIUM 2"
+	line "Pokémon STADIUM 2"
 	cont "de N64."
 
 	para ""
@@ -751,7 +751,7 @@ _DeletedTheLoginPasswordText::
 	done
 
 _MobilePickThreeMonForBattleText::
-	text "Pick three #MON"
+	text "Pick three Pokémon"
 	line "for battle."
 	prompt
 
@@ -769,7 +769,7 @@ _MobileUseTheseThreeMonText::
 	done
 
 _MobileOnlyThreeMonMayEnterText::
-	text "Only three #MON"
+	text "Only three Pokémon"
 	line "may enter."
 	prompt
 
@@ -812,7 +812,7 @@ _MobileCardFolderIntro3Text::
 
 	para "mobile phone on"
 	line "the 2nd floor of a"
-	cont "#MON CENTER."
+	cont "Pokémon CENTER."
 
 	para ""
 	done
@@ -909,7 +909,7 @@ _SpaceSpaceColonText:: ; unreferenced
 
 _PasswordAskResetText::
 	text "Contraseña válida."
-	line "Elige CONTINUAR"
+	line "Elige continuar"
 
 	para "y cambia las"
 	line "opciones."
@@ -1009,8 +1009,8 @@ _MoveForgotText::
 
 	para "@"
 	text_ram wMonOrItemNameBuffer
-	line "olvidó"
-	cont "@"
+	text " olvidó"
+	line "@"
 	text_ram wStringBuffer1
 	text "."
 
@@ -1147,21 +1147,21 @@ _BattleTowerReturnWhenReadyText::
 
 _NeedAtLeastThreeMonText::
 	text "Necesitas al menos"
-	line "tres #MON."
+	line "tres Pokémon."
 
 	para ""
 	done
 
 _EggDoesNotQualifyText::
 	text "Lo siento."
-	line "Un HUEVO no vale."
+	line "Un huevo no vale."
 
 	para ""
 	done
 
 _OnlyThreeMonMayBeEnteredText::
 	text "Sólo puedes usar"
-	line "tres #MON."
+	line "tres Pokémon."
 
 	para ""
 	done
@@ -1169,7 +1169,7 @@ _OnlyThreeMonMayBeEnteredText::
 _TheMonMustAllBeDifferentKindsText::
 	text "Los @"
 	text_ram wStringBuffer2
-	text " #MON"
+	text " Pokémon"
 	line "deben ser diferen-"
 	cont "tes."
 
@@ -1179,7 +1179,7 @@ _TheMonMustAllBeDifferentKindsText::
 _TheMonMustNotHoldTheSameItemsText::
 	text "Los @"
 	text_ram wStringBuffer2
-	text " #MON no"
+	text " Pokémon no"
 	line "pueden llevar los"
 	cont "mismos objetos."
 
@@ -1188,23 +1188,23 @@ _TheMonMustNotHoldTheSameItemsText::
 
 _YouCantTakeAnEggText::
 	text "¡No puedes llevar"
-	line "un HUEVO!"
+	line "un huevo!"
 	prompt
 
 _BallDodgedText::
-	text "¡Esquivó la BALL!"
+	text "¡Esquivó la ball!"
 
 	para "¡Imposible atrapar"
-	line "a este #MON!"
+	line "a este Pokémon!"
 	prompt
 
 _BallMissedText::
 	text "¡Has perdido al"
-	line "#MON!"
+	line "Pokémon!"
 	prompt
 
 _BallBrokeFreeText::
-	text "¡No! ¡El #MON"
+	text "¡No! ¡El Pokémon"
 	line "se ha escapado!"
 	prompt
 
@@ -1250,7 +1250,7 @@ _BallSentToPCText::
 
 _NewDexDataText::
 	text "Registrados en la"
-	line "#DEX los datos"
+	line "<POKE>dex los datos"
 
 	para "de @"
 	text_ram wEnemyMonNickname
@@ -1281,18 +1281,18 @@ _ItemStatRoseText::
 _ItemCantUseOnMonText::
 	text "Eso no se puede"
 	line "usar con este"
-	cont "#MON."
+	cont "Pokémon."
 	prompt
 
 _RepelUsedEarlierIsStillInEffectText::
 	text "Todavía funciona"
-	line "el REPELENTE que"
+	line "el repelente que"
 	cont "usaste antes."
 	prompt
 
 _PlayedFluteText::
 	text "Escuchaste la"
-	line "# FLAUTA."
+	line "<POKE>flauta."
 
 	para "¡Es una canción"
 	line "muy pegadiza!"
@@ -1300,13 +1300,13 @@ _PlayedFluteText::
 
 _FluteWakeUpText::
 	text "Se han despertado"
-	line "todos los #MON."
+	line "todos los Pokémon."
 	prompt
 
 Text_PlayedPokeFlute::
 	text "<PLAYER> sintonizó"
-	line "el canal FLAUTA"
-	cont "#MON.@"
+	line "el canal flauta"
+	cont "Pokémon.@"
 	text_promptbutton
 	text_end
 
@@ -1375,7 +1375,7 @@ _ItemLooksBitterText::
 
 _ItemCantUseOnEggText::
 	text "Eso no se puede"
-	line "usar con un HUEVO."
+	line "usar con un huevo."
 	prompt
 
 _ItemOakWarningText::
@@ -1396,11 +1396,11 @@ _ItemWontHaveEffectText::
 
 _BallBlockedText::
 	text "¡El entrenador"
-	line "bloqueó la BALL!"
+	line "bloqueó la ball!"
 	prompt
 
 _BallDontBeAThiefText::
-	text "¡No robes #MON!"
+	text "¡No robes Pokémon!"
 	prompt
 
 _NoCyclingText::
@@ -1422,8 +1422,8 @@ _CurBoxFullText::
 	prompt
 
 _StorageFullText::
-	text "El SISTEMA DE AL-"
-	line "MACENAMIENTO #MON"
+	text "El sistema de al-"
+	line "macenamiento Pokémon"
 	cont "está lleno. Ahora"
 	cont "no puedes usarla."
 	prompt
@@ -1469,7 +1469,7 @@ _KnowsMoveText::
 	prompt
 
 _MoveKnowsOneText::
-	text "Ese #MON"
+	text "Ese Pokémon"
 	line "sólo conoce un"
 	cont "movimiento."
 	done
@@ -1482,13 +1482,13 @@ _AskDeleteMoveText::
 	done
 
 _DeleterForgotMoveText::
-	text "¡Hecho! Tu #MON"
+	text "¡Hecho! Tu Pokémon"
 	line "olvidó el movi-"
 	cont "miento."
 	done
 
 _DeleterEggText::
-	text "¡Los HUEVOS no"
+	text "¡Los huevos no"
 	line "saben movimientos!"
 	done
 
@@ -1503,11 +1503,11 @@ _DeleterAskWhichMoveText::
 	prompt
 
 _DeleterIntroText::
-	text "Soy el QUITA-"
-	line "MOVIMIENTOS. Hago"
+	text "Soy el quita-"
+	line "movimientos. Hago"
 
 	para "olvidar movimien-"
-	line "tos a los #MON."
+	line "tos a los Pokémon."
 
 	para "¿Quieres que"
 	line "olviden algún"
@@ -1515,7 +1515,7 @@ _DeleterIntroText::
 	done
 
 _DeleterAskWhichMonText::
-	text "¿Qué #MON?"
+	text "¿Qué Pokémon?"
 	prompt
 
 _DSTIsThatOKText::
@@ -1559,7 +1559,7 @@ _MomLostGearBookletText::
 	text "He perdido las"
 	line "instrucciones del"
 
-	para "#GEAR."
+	para "<POKE>gear."
 	line "Vuelve dentro de"
 	cont "un rato."
 	prompt

@@ -3197,10 +3197,7 @@ wGavenFightCount::   db
 wBethFightCount::    db
 wJoseFightCount::    db
 wReenaFightCount::   db
-	ds 2
-wRalphFightCount::   db
-wLizFightCount::     db
-wAnthonyFightCount:: db
+	ds 5
 wToddFightCount::    db
 wGinaFightCount::    db
 	ds 1

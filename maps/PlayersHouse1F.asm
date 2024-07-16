@@ -104,7 +104,7 @@ MeetMomTalkedScript:
 	sjump MeetMomScript
 
 PokegearName:
-	db "#GEAR@"
+	db "<POKE>gear@"
 
 PlayersHouse1FReceiveItemStd:
 	jumpstd ReceiveItemScript
@@ -214,7 +214,7 @@ ElmsLookingForYouText:
 	text "¡Ah, <PLAYER>…!"
 	line "Nuestro vecino,"
 
-	para "el PROF. ELM, te"
+	para "el Prof. Elm, te"
 	line "estaba buscando."
 
 	para "Dijo que quería"
@@ -224,15 +224,15 @@ ElmsLookingForYouText:
 	para "¡Ah! ¡Casi se me"
 	line "olvida! Ya han"
 
-	para "traído tu #GEAR"
+	para "traído tu <POKE>gear"
 	line "del taller."
 
 	para "¡Aquí tienes!"
 	done
 
 MomGivesPokegearText:
-	text "El #MON GEAR o"
-	line "sólo #GEAR."
+	text "El Pokémon GEAR o"
+	line "sólo <POKE>gear."
 
 	para "Es básico para"
 	line "ser un buen"
@@ -257,7 +257,7 @@ ComeHomeForDSTText:
 
 	para "Por cierto…"
 	line "¿Sabes cómo usar"
-	cont "el TELÉFONO?"
+	cont "el Teléfono?"
 	done
 
 KnowTheInstructionsText:
@@ -266,7 +266,7 @@ KnowTheInstructionsText:
 
 	para "el #GEAR y"
 	line "elegir el"
-	cont "TELÉFONO?"
+	cont "Teléfono?"
 	done
 
 DontKnowTheInstructionsText:
@@ -275,7 +275,7 @@ DontKnowTheInstructionsText:
 
 	para "Enciende el"
 	line "#GEAR y elige"
-	cont "el TELÉFONO."
+	cont "el Teléfono."
 	done
 
 InstructionsNextText:
@@ -290,7 +290,7 @@ InstructionsNextText:
 	done
 
 HurryUpElmIsWaitingText:
-	text "El PROF. ELM te"
+	text "El Prof. Elm te"
 	line "está esperando."
 
 	para "¡Date prisa!"
@@ -298,7 +298,7 @@ HurryUpElmIsWaitingText:
 
 SoWhatWasProfElmsErrandText:
 	text "¿Qué quería el"
-	line "PROF. ELM?"
+	line "Prof. Elm?"
 
 	para "…"
 
@@ -346,19 +346,19 @@ NeighborText:
 	line "empeñada en"
 
 	para "convertirse en"
-	line "ayudante del PROF."
-	cont "ELM."
+	line "ayudante del Prof."
+	cont "Elm."
 
 	para "¡Le encantan"
-	line "los #MON!"
+	line "los Pokémon!"
 	done
 
 StoveText:
 	text "¡La especialidad"
 	line "de mi madre!"
 
-	para "¡HAMBURGUESA"
-	line "VOLCÁN CANELA!"
+	para "¡Hamburguesa"
+	line "Volcán Canela!"
 	done
 
 SinkText:
@@ -371,8 +371,8 @@ FridgeText:
 	text "Veamos qué hay en"
 	line "la nevera…"
 
-	para "¡AGUA FRESCA y una"
-	line "sabrosa LIMONADA!"
+	para "¡Agua Fresca y una"
+	line "sabrosa Limonada!"
 	done
 
 TVText:

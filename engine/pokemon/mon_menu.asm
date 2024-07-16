@@ -1267,13 +1267,13 @@ PlaceMoveData:
 	hlcoord 0, 11
 	ld de, String_MoveType_Bottom
 	call PlaceString
-	hlcoord 12, 12
+	hlcoord 1, 11
 	ld de, String_MoveAtk
 	call PlaceString
-	hlcoord 12, 13
+	hlcoord 1, 12
 	ld de, String_MoveAcc
 	call PlaceString
-	hlcoord 4, 13
+	hlcoord 1, 13
 	ld de, String_MoveEff
 	call PlaceString
 
@@ -1297,7 +1297,7 @@ PlaceMoveData:
 .if_null_chance
 	ld de, String_MoveNoPower
 	ld bc, 3
-	hlcoord 8, 13
+	hlcoord 5, 13
 	call PlaceString
 
 .skip_null_chance
@@ -1313,21 +1313,19 @@ PlaceMoveData:
 	ld [wBuffer1], a
 	ld de, wBuffer1
 	lb bc, 1, 3
-	hlcoord 16, 13
+	hlcoord 5, 12
 	call PrintNum
 
 ; Print move type
 	ld a, [wCurSpecies]
 	ld b, a
 	farcall GetMoveCategoryName
-	hlcoord 1, 11
+	hlcoord 9, 12
 	ld de, wStringBuffer1
 	call PlaceString
 	ld a, [wCurSpecies]
 	ld b, a
-	hlcoord 1, 12
-	ld [hl], "/"
-	inc hl
+	hlcoord 9, 13
 	predef PrintMoveType
 
 ; Print move power
@@ -1338,7 +1336,7 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 5, 11
 	cp 2
 	jr c, .no_power
 	ld [wTextDecimalByte], a
@@ -1410,17 +1408,17 @@ ConvertPercentages:
 
 ; UI elements
 String_MoveType_Top:
-	db "┌────────┐@"
+	db "┌───────┐@"
 String_MoveType_Bottom:
-	db "│        └@"
+	db "│       └@"
 String_MoveAtk:
-	db "ATK/@"
+	db "Atq:@"
 String_MoveAcc:
-	db "ACC/@"
+	db "Pre:@"
 String_MoveEff:
-	db "EFF/@"
+	db "Efe:@"
 String_MoveNoPower:
-	db "---@"
+	db "  0@"
 
 PlaceMoveScreenArrows:
 	call PlaceMoveScreenLeftArrow

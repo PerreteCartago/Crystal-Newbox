@@ -30,54 +30,56 @@ TrainerSailorKent:
 	end
 
 SailorKentSeenText:
-	text "JASMINE must be"
-	line "worried sick about"
-	cont "the #MON here."
+	text "Yasmina debe de"
+	line "estar preocupada"
+	cont "por ese Pokémon."
 
-	para "She won't even"
-	line "smile these days."
+	para "Ni siquiera"
+	line "sonríe."
 	done
 
 SailorKentBeatenText:
-	text "I can't manage a"
-	line "smile either…"
+	text "Yo tampoco puedo"
+	line "sonreír…"
 	done
 
 SailorKentAfterBattleText:
-	text "Speaking of sick,"
-	line "I've heard there's"
+	text "Hablando de"
+	line "enfermedades, hay"
 
-	para "a good PHARMACY in"
-	line "CIANWOOD."
+	para "una Farmacia en"
+	line "Ciudad Orquídea."
 	done
 
 LassConnie1SeenText:
-	text "JASMINE is this"
-	line "city's GYM LEADER."
+	text "Yasmina es Líder"
+	line "del Gimnasio."
 
-	para "I mean to bring"
-	line "her back with me."
+	para "Quiero que vuelva"
+	line "conmigo."
 
-	para "Nobody had better"
-	line "get in my way!"
+	para "¡No he encontrado"
+	line "a nadie mejor!"
 	done
 
 LassConnie1BeatenText:
-	text "Aaack! My #MON!"
+	text "¡Ay! ¡Mi Pokémon!"
 	done
 
 LassConnie1AfterBattleText:
-	text "Right. Anybody"
-	line "would be worried"
-	cont "if his or her own"
-	cont "#MON were hurt."
+	text "Cualquiera estaría"
+	line "preocupado si sus"
 
-	para "I'll pray for the"
-	line "#MON here, so"
+	para "Pokémon estuvieran"
+	line "enfermos."
 
-	para "JASMINE can come"
-	line "back to the GYM."
+	para "Rezaré por ese"
+	line "Pokémon, para que"
+
+	para "Yasmina regrese al"
+	line "Gimnasio."
 	done
+
 
 OlivineLighthouse4F_MapEvents:
 	db 0, 0 ; filler

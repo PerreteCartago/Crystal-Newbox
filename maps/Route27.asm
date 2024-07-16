@@ -315,154 +315,156 @@ Route27FisherStepLeftOnceMovement:
 	step_end
 
 Route27FisherHeyText:
-	text "Hey!"
+	text "¡Eh!"
 	done
 
 Route27FisherText:
-	text "Do you know what"
-	line "you just did?"
+	text "¿Sabes lo que"
+	line "acabas de hacer?"
 
-	para "You've taken your"
-	line "first step into"
-	cont "KANTO."
+	para "Acabas de entrar"
+	line "en Kanto."
 
-	para "Check your #-"
-	line "GEAR MAP and see."
+	para "Consulta el Mapa"
+	line "del <POKE>gear."
 	done
 
 CooltrainermBlakeSeenText:
-	text "You look pretty"
-	line "strong."
-	cont "Let me battle you!"
+	text "Pareces muy"
+	line "fuerte. ¡Déjame"
+	cont "luchar contigo!"
 	done
 
 CooltrainermBlakeBeatenText:
-	text "Yow!"
+	text "¡Yau!"
 	done
 
 CooltrainermBlakeAfterBattleText:
-	text "If you prevail on"
-	line "this harsh trek,"
+	text "Si continúas por"
+	line "este duro camino,"
 
-	para "the truth will be"
-	line "revealed!"
+	para "¡conocerás la"
+	line "verdad!"
 
-	para "Heh, sorry, I just"
-	line "wanted to say"
-	cont "something cool."
+	para "Lo siento, pero me"
+	line "apetecía decir"
+	cont "algo chulo."
 	done
 
 CooltrainermBrianSeenText:
-	text "Hm? You're good,"
-	line "aren't you?"
+	text "¿Mmm? Sabes cómo"
+	line "entrenar, ¿verdad?"
 	done
 
 CooltrainermBrianBeatenText:
-	text "Just as I thought!"
+	text "¡Tal como pensaba!"
 	done
 
 CooltrainermBrianAfterBattleText:
-	text "A good trainer can"
-	line "recognize other"
-	cont "good trainers."
+	text "Un buen entrenador"
+	line "puede reconocer a"
+
+	para "otros buenos"
+	line "entrenadores."
 	done
 
 CooltrainerfReenaSeenText:
-	text "You shouldn't"
-	line "underestimate the"
+	text "No deberías"
+	line "subestimar a los"
 
-	para "wild #MON in"
-	line "these parts."
+	para "Pokémon salvajes"
+	line "de esta zona."
 	done
 
 CooltrainerfReenaBeatenText:
-	text "Oh! You're much"
-	line "too strong!"
+	text "¡Oh! ¡Qué fuerte"
+	line "eres!"
 	done
 
 CooltrainerfReenaAfterBattleText:
-	text "You're just a kid,"
-	line "but you're not to"
-
-	para "be underestimated"
-	line "either."
+	text "Eres muy joven,"
+	line "pero tampoco se te"
+	cont "puede subestimar."
 	done
 
 CooltrainerfMeganSeenText:
-	text "It's rare to see"
-	line "anyone come here."
+	text "Es raro que venga"
+	line "alguien por aquí."
 
-	para "Are you training"
-	line "on your own?"
+	para "¿Te entrenas sin"
+	line "compañía?"
 	done
 
 CooltrainerfMeganBeatenText:
-	text "Oh! You're really"
-	line "strong!"
+	text "¡Oh! ¡Eres muy"
+	line "fuerte!"
 	done
 
 CooltrainerfMeganAfterBattleText:
-	text "I'm checking out"
-	line "pre- and post-"
-	cont "evolution #MON."
+	text "Estoy investigando"
+	line "los Pokémon antes"
 
-	para "Evolution really"
-	line "does make #MON"
-	cont "stronger."
+	para "y después de que"
+	line "evolucionen."
 
-	para "But evolved forms"
-	line "also learn moves"
-	cont "later on."
+	para "Los Pokémon se"
+	line "hacen más fuertes"
+	cont "al evolucionar."
+
+	para "Pero aprenderán"
+	line "nuevos movimientos"
+
+	para "mucho más despacio"
+	line "que antes."
 	done
 
 PsychicGilbertSeenText:
-	text "Don't say a thing!"
+	text "¡No digas nada!"
 
-	para "Let me guess what"
-	line "you're thinking."
+	para "Déjame adivinar lo"
+	line "que piensas."
 
-	para "Mmmmmmm…"
+	para "¡Mmmmmmm…!"
 
-	para "I got it! You're"
-	line "on the #MON"
-	cont "LEAGUE challenge!"
+	para "¡Listo! ¡Estás en"
+	line "la Liga Pokémon!"
 	done
 
 PsychicGilbertBeatenText:
-	text "You're too much!"
+	text "¡Eres demasiado!"
 	done
 
 PsychicGilbertAfterBattleText:
-	text "With your skills,"
-	line "you'll do well at"
-	cont "the LEAGUE."
+	text "Con tus habilida-"
+	line "des, te irá bien"
+	cont "en la Liga."
 
-	para "That's what my"
-	line "premonition says."
+	para "Eso es lo que"
+	line "presiento."
 	done
 
 BirdKeeperJose2SeenText:
-	text "Tweet! Tweet!"
-	line "Tetweet!"
+	text "¡Far! ¡Far!"
+	line "¡Feeetch!"
 	done
 
 BirdKeeperJose2BeatenText:
-	text "Tweet!"
+	text "¡Far!"
 	done
 
 BirdKeeperJose2AfterBattleText:
-	text "BIRD KEEPERS like"
-	line "me mimic bird"
+	text "Los Ornitólogos"
+	line "imitan el canto de"
 
-	para "whistles to com-"
-	line "mand #MON."
+	para "los pájaros para"
+	line "controlar Pokémon."
 	done
 
 TohjoFallsSignText:
-	text "TOHJO FALLS"
+	text "Cataratas Tohjo"
 
-	para "THE LINK BETWEEN"
-	line "KANTO AND JOHTO"
+	para "La conexión entre"
+	line "Kanto y Johto"
 	done
 
 Route27_MapEvents:

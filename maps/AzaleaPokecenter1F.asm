@@ -26,52 +26,55 @@ AzaleaPokecenter1FPokefanFScript:
 	jumptextfaceplayer AzaleaPokecenter1FPokefanFText
 
 AzaleaPokecenter1FGentlemanText:
-	text "Do your #MON"
-	line "know HM moves?"
+	text "¿Tus Pokémon saben"
+	line "movimientos MO?"
 
-	para "Those moves can"
-	line "be used even if"
+	para "Se pueden usar"
+	line "estos movimientos"
 
-	para "your #MON has"
-	line "fainted."
+	para "aunque el Pokémon"
+	line "esté debilitado."
 	done
 
-AzaleaPokecenter1FUnusedText: ; unreferenced
-	text "This BILL guy"
-	line "created the system"
+AzaleaPokecenter1FUnusedText:
+; unreferenced
+	text "Bill creó el"
+	line "Sistema de"
 
-	para "for storing"
-	line "#MON in a PC."
+	para "Almacenamiento en"
+	line "PC de los Pokémon."
 
-	para "BILL's PC can"
-	line "store up to 20"
-	cont "#MON per BOX."
+	para "El PC de Bill"
+	line "almacena hasta 20"
+	cont "Pokémon por Caja."
 	done
 
 AzaleaPokecenter1FFishingGuruText:
-	text "BILL's PC can"
-	line "store up to 20"
-	cont "#MON per BOX."
+	text "El PC de Bill"
+	line "puede almacenar"
+
+	para "hasta 20 Pokémon"
+	line "por Caja."
 	done
 
 AzaleaPokecenter1FPokefanFText:
-	text "Do you know about"
-	line "APRICORNS?"
+	text "¿Sabes algo sobre"
+	line "los Bonguri?"
 
-	para "Crack one open,"
-	line "hollow it out and"
+	para "Abre uno, vacíalo"
+	line "y rellénalo con"
 
-	para "fit it with a"
-	line "special device."
+	para "un aparato"
+	line "especial."
 
-	para "Then you can catch"
-	line "#MON with it."
+	para "Así podrás atrapar"
+	line "Pokémon."
 
-	para "Before # BALLS"
-	line "were invented,"
+	para "Antes de que se"
+	line "inventaran las"
 
-	para "everyone used"
-	line "APRICORNS."
+	para "<POKE>ball, todos"
+	line "usaban Bonguri."
 	done
 
 AzaleaPokecenter1F_MapEvents:

@@ -247,7 +247,7 @@ DudeMovementData2b:
 	step_end
 
 CatchingTutorialBoxFullText:
-	text "Los #MON se"
+	text "Los Pokémon se"
 	line "esconden en la"
 
 	para "hierba. Nadie sabe"
@@ -258,19 +258,19 @@ CatchingTutorialIntroText:
 	text "Te he visto un par"
 	line "de veces."
 
-	para "¿Cuántos #MON"
+	para "¿Cuántos Pokémon"
 	line "has cogido?"
 
 	para "¿Quieres que te"
 	line "enseñe cómo"
-	cont "atrapar #MON?"
+	cont "atrapar Pokémon?"
 	done
 
 CatchingTutorialDebriefText:
 	text "Así es como se"
 	line "hace."
 
-	para "Si los #MON"
+	para "Si los Pokémon"
 	line "están débiles, son"
 
 	para "más fáciles de"
@@ -281,7 +281,7 @@ CatchingTutorialDeclinedText:
 	text "¡Ah! ¡Muy bien!"
 
 	para "Pero si quieres"
-	line "atrapar #MON,"
+	line "atrapar Pokémon,"
 
 	para "tendrás que"
 	line "caminar mucho."
@@ -290,12 +290,12 @@ CatchingTutorialDeclinedText:
 CatchingTutorialRepeatText:
 	text "¿Qué? ¿Quieres que"
 	line "te enseñe a"
-	cont "atrapar #MON?"
+	cont "atrapar Pokémon?"
 	done
 
 Route29YoungsterText:
 	text "¿Cómo están tus"
-	line "#MON?"
+	line "Pokémon?"
 
 	para "Si están débiles y"
 	line "no pueden luchar,"
@@ -310,7 +310,7 @@ Route29TeacherText:
 	cont "saltarlos."
 
 	para "Pero puedes ir a"
-	line "PUEBLO PRIMAVERA"
+	line "Pueblo Primavera"
 
 	para "sin pasar por la"
 	line "hierba."
@@ -325,7 +325,7 @@ Route29FisherText:
 ; unused
 Text_WaitingForDay:
 	text "Estoy esperando a"
-	line "los #MON que"
+	line "los Pokémon que"
 
 	para "aparecen sólo por"
 	line "el día."
@@ -333,7 +333,7 @@ Text_WaitingForDay:
 
 Route29CooltrainerMText_WaitingForNight:
 	text "Estoy esperando a"
-	line "los #MON que"
+	line "los Pokémon que"
 
 	para "aparecen sólo por"
 	line "la noche."
@@ -341,20 +341,20 @@ Route29CooltrainerMText_WaitingForNight:
 
 Route29CooltrainerMText_WaitingForMorning:
 	text "Estoy esperando a"
-	line "los #MON que"
+	line "los Pokémon que"
 
 	para "aparecen sólo por"
 	line "la mañana."
 	done
 
 MeetTuscanyText:
-	text "MARTA: Creo que es"
+	text "Marta: Creo que es"
 	line "la primera vez que"
 	cont "nos vemos."
 
 	para "Déjame que me"
 	line "presente. Soy"
-	cont "MARTA, por martes."
+	cont "Marta, por martes."
 	done
 
 TuscanyGivesGiftText:
@@ -362,11 +362,11 @@ TuscanyGivesGiftText:
 	line "por favor, toma"
 
 	para "este regalo:"
-	line "un LAZO ROSA."
+	line "un Lazo Rosa."
 	done
 
 TuscanyGaveGiftText:
-	text "MARTA: ¿No crees"
+	text "Marta: ¿No crees"
 	line "que es adorable?"
 
 	para "Fortalece los"
@@ -378,35 +378,35 @@ TuscanyGaveGiftText:
 	done
 
 TuscanyTuesdayText:
-	text "MARTA: ¿Has visto"
-	line "a LUNA, mi hermana"
+	text "Marta: ¿Has visto"
+	line "a Luna, mi hermana"
 	cont "mayor?"
 
 	para "¿O a mi hermano"
-	line "pequeño, MIGUEL?"
+	line "pequeño, Miguel?"
 
 	para "Soy la segunda de"
 	line "siete hermanos."
 	done
 
 TuscanyNotTuesdayText:
-	text "MARTA: Hoy no es"
+	text "Marta: Hoy no es"
 	line "martes."
 	cont "¡Qué pena…!"
 	done
 
 Route29Sign1Text:
-	text "RUTA 29"
+	text "Ruta 29"
 
-	para "CIUDAD CEREZO -"
-	line "PUEBLO PRIMAVERA"
+	para "Ciudad Cerezo -"
+	line "Pueblo Primavera"
 	done
 
 Route29Sign2Text:
-	text "RUTA 29"
+	text "Ruta 29"
 
-	para "CIUDAD CEREZO -"
-	line "PUEBLO PRIMAVERA"
+	para "Ciudad Cerezo -"
+	line "Pueblo Primavera"
 	done
 
 Route29_MapEvents:

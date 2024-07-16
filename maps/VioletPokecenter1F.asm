@@ -105,21 +105,21 @@ MovementData_AideFinishesLeavingPokecenter:
 
 VioletPokecenterElmsAideFavorText:
 	text "<PLAY_G>, cuánto"
-	line "tiempo. El PROF."
+	line "tiempo. El Prof."
 
-	para "ELM me pidió que"
+	para "Elm me pidió que"
 	line "te buscara."
 
 	para "Tiene que pedirte"
 	line "otro favor."
 
 	para "¿Puedes llevar el"
-	line "Huevo #MON?"
+	line "Huevo Pokémon?"
 	done
 
 VioletPokecenterElmsAideGiveEggText:
 	text "Descubrimos que el"
-	line "#MON no saldrá"
+	line "Pokémon no saldrá"
 
 	para "hasta que no haya"
 	line "crecido dentro del"
@@ -127,7 +127,7 @@ VioletPokecenterElmsAideGiveEggText:
 
 	para "Además, tiene que"
 	line "ir acompañado de"
-	cont "#MON activos."
+	cont "Pokémon activos."
 
 	para "<PLAY_G>, eres"
 	line "la única persona"
@@ -145,7 +145,7 @@ VioletPokecenterElmsAideGiveEggText:
 VioletCityElmsAideFullPartyText:
 	text "¡Oh, no! No puedes"
 	line "llevar más"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "Esperaré aquí a"
 	line "que le hagas"
@@ -187,11 +187,11 @@ VioletPokecenterMobileAdapterText: ; unreferenced
 	done
 
 VioletPokecenter1FGameboyKidText:
-	text "Un tal BILL creó"
+	text "Un tal Bill creó"
 	line "el Sistema de"
 
 	para "Almacenamiento"
-	line "de #MON."
+	line "de Pokémon."
 	done
 
 VioletPokecenter1FGentlemanText:
@@ -200,7 +200,7 @@ VioletPokecenter1FGentlemanText:
 
 	para "El Team Rocket"
 	line "quería hacer daño"
-	cont "a los #MON."
+	cont "a los Pokémon."
 
 	para "Pero prevaleció la"
 	line "justicia y un niño"
@@ -208,7 +208,7 @@ VioletPokecenter1FGentlemanText:
 	done
 
 VioletPokecenter1FYoungsterText:
-	text "Los #MON son"
+	text "Los Pokémon son"
 	line "listos y no"
 
 	para "obedecen a quien"

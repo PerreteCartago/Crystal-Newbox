@@ -27,22 +27,25 @@ MrPsychicsHouseBookshelf:
 	jumpstd DifficultBookshelfScript
 
 MrPsychicText1:
-	text "…"
+	text "<……>"
 
-	para "…"
+	para "<……>"
 
-	para "…"
+	para "<……>"
 
-	para "…I got it!"
+	para "¡Lo conseguí!"
 
-	para "You wanted this!"
+	para "¡Tú lo quisiste!"
 	done
 
 MrPsychicText2:
-	text "TM29 is PSYCHIC."
+	text "MT29 es Psíquico."
 
-	para "It may lower the"
-	line "target's SPCL.DEF."
+	para "Puede reducir"
+	line "la Defensa"
+
+	para "Especial del"
+	line "blanco."
 	done
 
 MrPsychicsHouse_MapEvents:

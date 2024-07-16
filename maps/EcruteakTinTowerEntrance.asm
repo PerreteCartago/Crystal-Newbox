@@ -150,129 +150,129 @@ EcruteakTinTowerEntranceSageBlocksRightMovement:
 	step_end
 
 EcruteakTinTowerEntranceSageText:
-	text "TIN TOWER is off"
-	line "limits to anyone"
+	text "Sin la Medalla del"
+	line "Gimnasio de Ciudad"
 
-	para "without ECRUTEAK"
-	line "GYM's BADGE."
+	para "Iris, no se puede"
+	line "entrar en la Torre"
+	cont "Hojalata."
 
-	para "Sorry, but you'll"
-	line "have to leave."
+	para "¡Tendrás que irte!"
 	done
 
 EcruteakTinTowerEntranceSageText_GotFogBadge:
-	text "TIN TOWER is off"
-	line "limits to anyone"
+	text "Sin la Medalla del"
+	line "Gimnasio de Ciudad"
 
-	para "without ECRUTEAK"
-	line "GYM's BADGE."
+	para "Iris, no se puede"
+	line "entrar en la Torre"
+	cont "Hojalata."
 
-	para "Ah!"
+	para "¡Ah!"
 
-	para "ECRUTEAK's GYM"
-	line "BADGE! Please, go"
-	cont "right through."
+	para "¡La Medalla de"
+	line "Ciudad Iris!"
+
+	para "Puedes pasar."
 	done
 
 EcruteakTinTowerEntranceSageText_NoClearBell:
-	text "A momentous event"
-	line "has occurred."
+	text "Ha ocurrido un"
+	line "hecho importante."
 
-	para "I beg your pardon,"
-	line "but I must ask you"
-	cont "to leave."
+	para "Perdóname, pero"
+	line "tengo que pedirte"
+	cont "que te vayas."
 
-	para "…What soothes the"
-	line "soul…"
+	para "Lo que alivia el"
+	line "alma…"
 
-	para "The WISE TRIO say"
-	line "things that are so"
+	para "El Trío de Sabios"
+	line "dice cosas muy"
 
-	para "very difficult to"
-	line "understand…"
+	para "difíciles de"
+	line "entender…"
 	done
 
 EcruteakTinTowerEntranceSageText_HearsClearBell:
-	text "A momentous event"
-	line "has occurred."
+	text "Ha ocurrido un"
+	line "hecho importante."
 
-	para "I beg your pardon,"
-	line "but I must ask you"
-	cont "to leave."
+	para "Perdóname, pero"
+	line "tengo que pedirte"
+	cont "que te vayas."
 
-	para "<……><……><……>"
+	para "<……> <……> <……>"
 
-	para "Ah!"
+	para "¡Ah!"
 
-	para "The sound of that"
-	line "CLEAR BELL!"
+	para "¡El sonido de esa"
+	line "Campana Clara!"
 
-	para "It… It's sublime!"
+	para "Es… ¡Es sublime!"
 
-	para "I've never heard"
-	line "so beautiful a"
-	cont "sound before!"
+	para "¡Nunca antes había"
+	line "escuchado un"
+	cont "sonido así!"
 
-	para "That bell's chime"
-	line "is indicative of"
-	cont "the bearer's soul."
+	para "El sonido de la"
+	line "campana muestra el"
+	cont "alma del portador."
 
-	para "You…"
+	para "Tú…"
 
-	para "You may be able to"
-	line "make it through"
-	cont "TIN TOWER."
+	para "Puedes entrar en"
+	line "la Torre Hojalata."
 
-	para "Please, do go on."
+	para "Sigue adelante."
 	done
 
 EcruteakTinTowerEntranceSageText_PleaseDoGoOn:
-	text "Please, do go on."
+	text "Sigue adelante."
 	done
 
 EcruteakTinTowerEntranceSageText_HeardClearBell:
-	text "That bell's chime"
-	line "is indicative of"
-	cont "the bearer's soul."
+	text "El sonido de la"
+	line "campana muestra el"
+	cont "alma del portador."
 
-	para "You…"
+	para "Tú…"
 
-	para "You may be able to"
-	line "make it through"
-	cont "TIN TOWER."
+	para "Puedes entrar en"
+	line "la Torre Hojalata."
 
-	para "Please, do go on."
+	para "Sigue adelante."
 	done
 
 EcruteakTinTowerEntranceWanderingSageText:
-	text "The TIN TOWER"
-	line "ahead is a nine-"
+	text "La Torre Hojalata"
+	line "es una espléndida"
 
-	para "tier tower of"
-	line "divine beauty."
+	para "torre de nueve"
+	line "pisos."
 
-	para "It soothes the"
-	line "soul of all who"
-	cont "see it."
+	para "Alivia el alma de"
+	line "todos los que la"
+	cont "miran."
 	done
 
 EcruteakTinTowerEntranceWanderingSageText_GotClearBell:
-	text "The TIN TOWER"
-	line "shook! A #MON"
+	text "¡La Torre Hojalata"
+	line "se ha movido!"
 
-	para "must have returned"
-	line "to the top!"
+	para "¡Se habrá posado"
+	line "un Pokémon arriba!"
 	done
 
 EcruteakTinTowerEntranceGrampsText:
-	text "Two towers…"
-	line "Two #MON…"
+	text "Dos torres…"
+	line "Dos Pokémon…"
 
-	para "But when one"
-	line "burned down, both"
+	para "Pero cuando una se"
+	line "quemó, los dos"
 
-	para "#MON flew away,"
-	line "never to return."
+	para "Pokémon huyeron y"
+	line "nunca volvieron."
 	done
 
 EcruteakTinTowerEntrance_MapEvents:

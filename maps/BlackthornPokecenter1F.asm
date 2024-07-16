@@ -22,29 +22,29 @@ BlackthornPokecenter1FCooltrainerMScript:
 	jumpstd HappinessCheckScript
 
 BlackthornPokecenter1FGentlemanText:
-	text "Deep inside far-"
-	line "off INDIGO PLATEAU"
+	text "En el corazón de"
+	line "la remota Meseta"
 
-	para "is the #MON"
-	line "LEAGUE."
+	para "Añil se celebra la"
+	line "Liga Pokémon."
 
-	para "I hear the best"
-	line "trainers gather"
+	para "Dicen que allí se"
+	line "reúnen los mejores"
 
-	para "there from around"
-	line "the country."
+	para "entrenadores de"
+	line "todo el país."
 	done
 
 BlackthornPokecenter1FTwinText:
-	text "There was this"
-	line "move I just had"
+	text "Tenía un"
+	line "movimiento que"
 
-	para "to teach my #-"
-	line "MON."
+	para "quería enseñar"
+	line "a mi Pokémon."
 
-	para "So I got the MOVE"
-	line "DELETER to make it"
-	cont "forget an HM move."
+	para "Así que usé el"
+	line "Quita-movimientos"
+	cont "y eliminé una MO."
 	done
 
 BlackthornPokecenter1F_MapEvents:

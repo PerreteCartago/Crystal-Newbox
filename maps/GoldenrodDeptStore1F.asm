@@ -28,52 +28,53 @@ GoldenrodDeptStore1FElevatorButton:
 	jumpstd ElevatorButtonScript
 
 GoldenrodDeptStore1FReceptionistText:
-	text "Welcome to GOLDEN-"
-	line "ROD DEPT.STORE."
+	text "Éste es el Centro"
+	line "Comercial de"
+	cont "Ciudad Trigal."
 	done
 
 GoldenrodDeptStore1FGentlemanText:
-	text "The DEPT.STORE"
-	line "has a decent se-"
-	cont "lection."
+	text "El Centro"
+	line "Comercial tiene"
+	cont "buenos artículos."
 
-	para "But some items"
-	line "are only available"
+	para "Pero algunos"
+	line "objetos sólo se"
 
-	para "as GAME CORNER"
-	line "prizes."
+	para "consiguen en el"
+	line "Casino."
 	done
 
 GoldenrodDeptStore1FPokefanFText:
-	text "I'm raring to shop"
-	line "again today!"
+	text "¡Me encanta ir de"
+	line "compras!"
 	done
 
 GoldenrodDeptStore1FBugCatcherText:
-	text "Mom's good at"
-	line "bargain hunting."
+	text "Mamá es experta en"
+	line "conseguir gangas."
 
-	para "She always buys"
-	line "stuff at lower"
-	cont "prices."
+	para "Siempre compra"
+	line "cosas a precios"
+	cont "más bajos."
 	done
 
 GoldenrodDeptStore1FDirectoryText:
-	text "1F SERVICE COUNTER"
+	text "PB Información"
 
-	para "2F TRAINER'S"
-	line "   MARKET"
+	para "P1 Tienda de"
+	line "   Entrenadores"
 
-	para "3F BATTLE"
-	line "   COLLECTION"
+	para "P2 Artículos de"
+	line "   Combate"
 
-	para "4F MEDICINE BOX"
+	para "P3 Botiquín"
 
-	para "5F TM CORNER"
+	para "P4 Tienda de MT"
 
-	para "6F TRANQUIL SQUARE"
+	para "P5 Plaza tranquila"
 
-	para "ROOFTOP LOOKOUT"
+	para "Mirador"
 	done
 
 GoldenrodDeptStore1F_MapEvents:

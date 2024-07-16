@@ -76,99 +76,107 @@ Route8FruitTree:
 	fruittree FRUITTREE_ROUTE_8
 
 BikerDwayneSeenText:
-	text "We're the KANTO"
-	line "#MON FEDERATION"
-	cont "trainer group."
+	text "Somos el grupo de"
+	line "entrenadores de la"
 
-	para "We'll drive you"
-	line "under our wheels!"
+	para "Federación Pokémon"
+	line "de Kanto."
+
+	para "¡Te vamos a"
+	line "arrollar!"
 	done
 
 BikerDwayneBeatenText:
-	text "S-sorry!"
+	text "¡Lo… lo siento!"
 	done
 
 BikerDwayneAfterBattleText:
-	text "The KANTO #MON"
-	line "FEDERATION will"
-	cont "never fall!"
+	text "¡Viva la"
+	line "Federación"
+	cont "Pokémon de Kanto!"
 	done
 
 BikerHarrisSeenText:
-	text "The cops shut down"
-	line "our UNDERGROUND"
+	text "La policía ha"
+	line "cerrado la Vía"
 
-	para "PATH! That really"
-	line "fries me!"
+	para "Subterránea."
+	line "¡Qué fastidio!"
 	done
 
 BikerHarrisBeatenText:
-	text "F-forgive me!"
+	text "¡Per… perdóname!"
 	done
 
 BikerHarrisAfterBattleText:
-	text "Wiped out by some"
-	line "punk from JOHTO…"
+	text "Destruido por"
+	line "alguien de Johto…"
 	done
 
 BikerZekeSeenText:
-	text "We're the KANTO"
-	line "#MON FEDERA-"
-	cont "TION!"
-	cont "Right on!"
+	text "Somos la"
+	line "Federación"
+
+	para "Pokémon de Kanto."
+	line "¡Allá vamos!"
 	done
 
 BikerZekeBeatenText:
-	text "Yikes! Sorry!"
+	text "¡Vaya! ¡Perdona!"
 	done
 
 BikerZekeAfterBattleText:
-	text "We'll try not to"
-	line "disturb anyone"
-	cont "from now on…"
+	text "Intentaremos no"
+	line "molestar a nadie"
+	cont "a partir de ahora."
 	done
 
 SupernerdSamSeenText:
-	text "How does the MAG-"
-	line "NET TRAIN work?"
+	text "¿Cómo funciona el"
+	line "Magnetotrén?"
 	done
 
 SupernerdSamBeatenText:
-	text "I just want to see"
-	line "the MAGNET TRAIN…"
+	text "Quiero ver el"
+	line "Magnetotrén…"
 	done
 
 SupernerdSamAfterBattleText:
-	text "The power of mag-"
-	line "nets is awesome!"
+	text "¡El poder de los"
+	line "imanes es inmenso!"
 	done
 
 SupernerdTomSeenText:
-	text "Hm… You've got"
-	line "many GYM BADGES."
+	text "Mmm… Tienes muchas"
+	line "Medallas de"
+	cont "Gimnasio."
 	done
 
 SupernerdTomBeatenText:
-	text "Just as I thought…"
-	line "You're tough!"
+	text "Tal y como pensé…"
+	line "¡Eres fuerte!"
 	done
 
 SupernerdTomAfterBattleText:
-	text "GYM BADGES do not"
-	line "give you advantages"
-	cont "in battles now."
+	text "Las Medallas de"
+	line "Gimnasio te dan"
+
+	para "ventaja en los"
+	line "combates."
 	done
 
 Route8LockedDoorText:
-	text "It's locked…"
+	text "Está cerrada…"
 	done
 
 Route8UndergroundPathSignText:
-	text "The flyer's torn."
+	text "El cartel está"
+	line "roto."
 
-	para "It's impossible to"
-	line "read…"
+	para "Es imposible"
+	line "leerlo…"
 	done
+
 
 Route8_MapEvents:
 	db 0, 0 ; filler

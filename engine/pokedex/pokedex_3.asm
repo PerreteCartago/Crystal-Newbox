@@ -112,11 +112,11 @@ DrawPokedexSearchResultsWindow:
 	ret
 
 .esults_D
-; (SEARCH R)
-	db   "ESULTS"
+; (RESULT.)
+	db   "Busca"
 	next ""
-; (### FOUN)
-	next "D!@"
+; (### HALL)
+	next "Lados(s)!@"
 
 DrawDexEntryScreenRightEdge:
 	ldh a, [hBGMapAddress]

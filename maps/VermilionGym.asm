@@ -103,155 +103,163 @@ VermilionGymStatue:
 	jumpstd GymStatue2Script
 
 LtSurgeIntroText:
-	text "SURGE: Hey, you"
-	line "little tyke!"
+	text "Surge: ¡Eh, tú,"
+	line "joven!"
 
-	para "I have to hand it"
-	line "to you. It may not"
+	para "Tengo que recono-"
+	line "cerlo. No es que"
 
-	para "be very smart to"
-	line "challenge me, but"
-	cont "it takes guts!"
+	para "sea inteligente"
+	line "desafiarme, ¡pero"
+	cont "requiere agallas!"
 
-	para "When it comes to"
-	line "electric #MON,"
-	cont "I'm number one!"
+	para "Cuando se trata de"
+	line "Pokémon"
 
-	para "I've never lost on"
-	line "the battlefield."
+	para "eléctricos, ¡soy"
+	line "el número uno!"
 
-	para "I'll zap you just"
-	line "like I did my"
-	cont "enemies in war!"
+	para "Nunca he perdido"
+	line "en la batalla."
+
+	para "¡Te electrocutaré"
+	line "como hice con el"
+
+	para "enemigo en la"
+	line "guerra!"
 	done
 
 LtSurgeWinLossText:
-	text "SURGE: Arrrgh!"
-	line "You are strong!"
+	text "Surge: ¡Arrrgh!"
+	line "¡Eres fuerte!"
 
-	para "OK, kid. You get"
-	line "THUNDERBADGE!"
+	para "Vale, joven. ¡Toma"
+	line "la Medalla Trueno!"
 	done
 
 ReceivedThunderBadgeText:
-	text "<PLAYER> received"
-	line "THUNDERBADGE."
+	text "<PLAYER> recibió"
+	line "la Medalla Trueno."
 	done
 
 LtSurgeThunderBadgeText:
-	text "Consider it proof"
-	line "that you defeated"
+	text "Surge: La Medalla"
+	line "Trueno."
 
-	para "me. You wear it"
-	line "proudly, hear?"
+	para "Te la mereces por"
+	line "haberme vencido."
+
+	para "Llévala con"
+	line "orgullo, ¿me oyes?"
 	done
 
 LtSurgeFightDoneText:
-	text "SURGE: Hey, kid!"
-	line "Still slugging and"
-	cont "chugging away?"
+	text "Surge: ¡Eh, tú!"
+	line "¿Todavía estás"
 
-	para "My #MON and I"
-	line "are still at it!"
+	para "molestando por"
+	line "aquí?"
+
+	para "¡Mis Pokémon y yo"
+	line "seguimos en ello!"
 	done
 
 GentlemanGregorySeenText:
-	text "You're here to"
-	line "defeat LT.SURGE?"
+	text "¿Vienes a derrotar"
+	line "al Lt. Surge?"
 
-	para "Not if I can help"
-	line "it!"
+	para "¡No, si yo puedo"
+	line "impedirlo!"
 	done
 
 GentlemanGregoryBeatenText:
-	text "Sorry I failed"
-	line "you, LT.SURGE,"
-	cont "sir!"
+	text "¡Cuánto siento"
+	line "haberle fallado,"
+	cont "Lt. Surge!"
 	done
 
 GentlemanGregoryAfterBattleText:
-	text "When I was still"
-	line "in the army, LT."
+	text "Cuando aún estaba"
+	line "en el ejército, el"
 
-	para "SURGE saved my"
-	line "life."
+	para "Lt. Surge me salvó"
+	line "la vida."
 	done
 
 GuitaristVincentSeenText:
-	text "LT.SURGE recog-"
-	line "nized my potential"
+	text "El Lt. Surge reco-"
+	line "noció mi potencial"
 
-	para "with electric"
-	line "#MON."
+	para "con los Pokémon"
+	line "eléctricos."
 
-	para "Think you can beat"
-	line "me?"
+	para "¿Crees que puedes"
+	line "vencerme?"
 	done
 
 GuitaristVincentBeatenText:
-	text "Ooh, how shocking!"
+	text "¡Ooh! ¡Increíble!"
 	done
 
 GuitaristVincentAfterBattleText:
-	text "If the GYM's traps"
-	line "were working, you"
+	text "Si funcionaran las"
+	line "trampas del"
 
-	para "would have been"
-	line "toast…"
+	para "Gimnasio, no lo"
+	line "habrías logrado."
 	done
 
 JugglerHortonSeenText:
-	text "I'm going to take"
-	line "you down! Prepare"
-	cont "to be shocked!"
+	text "¡Voy a acabar"
+	line "contigo! ¡Vas a"
+	cont "echar chispas!"
 	done
 
 JugglerHortonBeatenText:
-	text "Gwaaah!"
-	line "I was overpowered…"
+	text "¡Vaya! Me has"
+	line "vencido…"
 	done
 
 JugglerHortonAfterBattleText:
-	text "Don't get too com-"
-	line "fortable about"
+	text "No te relajes por"
+	line "haberme vencido…"
 
-	para "beating me…"
-	line "LT.SURGE is tough."
+	para "Lt. Surge es muy"
+	line "fuerte."
 	done
 
 VermilionGymGuideText:
-	text "Yo! CHAMP in"
-	line "making!"
+	text "¡Hola!"
 
-	para "You lucked out"
-	line "this time."
+	para "Esta vez no ten-"
+	line "drás tanta suerte."
 
-	para "LT.SURGE is very"
-	line "cautious. He has"
+	para "El Lt. Surge es"
+	line "muy prudente. Ha"
 
-	para "traps set all over"
-	line "the GYM."
+	para "puesto trampas por"
+	line "todo el Gimnasio."
 
-	para "But--he-heh--the"
-	line "traps aren't"
-	cont "active right now."
+	para "Pero (risas), las"
+	line "trampas no están"
+	cont "activadas."
 
-	para "You'll have no"
-	line "problem getting to"
-	cont "LT.SURGE."
+	para "Te será fácil"
+	line "encontrar a"
+	cont "Lt. Surge."
 	done
 
 VermilionGymGuideWinText:
-	text "Whew! That was an"
-	line "electrifying bout!"
+	text "¡Vaya combate más"
+	line "electrizante!"
 
-	para "It sure made me"
-	line "nervous."
+	para "¡Me has puesto"
+	line "muy nervioso!"
 	done
 
 VermilionGymTrashCanText:
-	text "Nope! Nothing here"
-	line "but trash."
+	text "¡Bah! Aquí sólo"
+	line "hay basura."
 	done
 
 VermilionGym_MapEvents:

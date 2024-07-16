@@ -323,179 +323,183 @@ Route43MaxEther:
 	itemball MAX_ETHER
 
 PokemaniacBenSeenText:
-	text "I love #MON!"
+	text "¡Me encantan los"
+	line "Pokémon!"
 
-	para "That's why I"
-	line "started--and why"
+	para "¡Ésa es la razón"
+	line "por la que empecé"
 
-	para "I'll keep on col-"
-	line "lecting #MON!"
+	para "a coleccionar"
+	line "Pokémon!"
 	done
 
 PokemaniacBenBeatenText:
-	text "How could you do"
-	line "this to me?"
+	text "¿Cómo me has"
+	line "podido hacer esto?"
 	done
 
 PokemaniacBenAfterBattleText:
-	text "What else do I"
-	line "like besides"
-	cont "#MON?"
+	text "¿Que qué me gusta"
+	line "además de los"
+	cont "Pokémon?"
 
-	para "MARY on the radio."
-	line "I bet she's cute!"
+	para "Oír a Rosa en la"
+	line "radio. ¡Seguro que"
+	cont "es muy guapa!"
 	done
 
 PokemaniacBrentSeenText:
-	text "Hey! Do you have"
-	line "any rare #MON?"
+	text "¡Eh! ¿Tienes algún"
+	line "Pokémon raro?"
 	done
 
 PokemaniacBrentBeatenText:
-	text "Oh, my poor #-"
-	line "MON! Darlings!"
+	text "¡Oh, mis pobres"
+	line "Pokémon!"
 	done
 
 PokemaniacBrentAfterBattleText:
-	text "I'd be happy just"
-	line "to own a single"
-	cont "rare #MON."
+	text "Sería feliz con"
+	line "sólo tener un"
+	cont "Pokémon raro."
 	done
 
 PokemaniacRonSeenText:
-	text "Would you get"
-	line "this?"
+	text "¿Te lo puedes"
+	line "creer?"
 
-	para "Some <RIVAL> guy"
-	line "made fun of my"
-	cont "#MON!"
+	para "¡<RIVAL> se ha"
+	line "burlado de mi"
+	cont "Pokémon!"
 
-	para "Darn it! My #-"
-	line "MON's great!"
+	para "¡Maldición! ¡Mi"
+	line "Pokémon es genial!"
 	done
 
 PokemaniacRonBeatenText:
-	text "My NIDOKING did"
-	line "pretty right on!"
+	text "¡Mi Nidoking lo"
+	line "ha hecho muy bien!"
 	done
 
 PokemaniacRonAfterBattleText:
-	text "It's okay for"
-	line "people to like"
+	text "Es bueno que a la"
+	line "gente le gusten"
 
-	para "different types"
-	line "of #MON."
+	para "distintos tipos de"
+	line "Pokémon."
 
-	para "#MON isn't just"
-	line "about having the"
-	cont "most powerful one."
+	para "No sólo se trata"
+	line "de tener el más"
+	cont "fuerte."
 	done
 
 FisherMarvinSeenText:
-	text "I'm in a slump."
+	text "No estoy en racha."
 
-	para "Maybe it's the"
-	line "gear I'm using."
+	para "Quizá sea por el"
+	line "equipo que uso."
 
-	para "Let's battle for a"
-	line "change of pace!"
+	para "Luchemos. A ver si"
+	line "cambia mi suerte."
 	done
 
 FisherMarvinBeatenText:
-	text "I lost, but I feel"
-	line "better anyway."
+	text "He perdido, pero"
+	line "me siento mejor."
 	done
 
 FisherMarvinAfterBattleText:
-	text "KURT's LURE BALL"
-	line "is the best for"
+	text "Las Cebo Ball de"
+	line "César son las"
 
-	para "catching hooked"
-	line "#MON."
+	para "mejores para"
+	line "pescar Pokémon."
 
-	para "It's much more"
-	line "effective than a"
-	cont "ULTRA BALL."
+	para "Son mucho más"
+	line "efectivas que las"
+	cont "Ultra Ball."
 	done
 
 CamperSpencerSeenText:
-	text "I can do so much"
-	line "with my #MON--"
-	cont "it's super-fun!"
+	text "Puedo hacer muchas"
+	line "cosas con mis"
+
+	para "Pokémon."
+	line "¡Es muy divertido!"
 	done
 
 CamperSpencerBeatenText:
-	text "Losing isn't fun"
-	line "at all…"
+	text "Perder no es nada"
+	line "divertido…"
 	done
 
 CamperSpencerAfterBattleText:
-	text "What is going on"
-	line "at LAKE OF RAGE?"
+	text "¿Qué ocurre en el"
+	line "Lago de la Furia?"
 
-	para "We were planning"
-	line "to camp there."
+	para "Teníamos pensado"
+	line "acampar aquí."
 	done
 
 PicnickerTiffanySeenText:
-	text "Are you going to"
-	line "LAKE OF RAGE too?"
+	text "¿Tú también vas al"
+	line "Lago de la Furia?"
 
-	para "Let's play for a "
-	line "little while!"
+	para "¡Juguemos un"
+	line "ratito!"
 	done
 
 PicnickerTiffanyBeatenText:
-	text "I played too much!"
+	text "¡He jugado mucho!"
 	done
 
 PicnickerTiffanyWantsPicnicText:
-	text "I'm having a pic-"
-	line "nic with #MON."
+	text "Voy a ir de picnic"
+	line "con mis Pokémon."
 
-	para "Won't you join us?"
+	para "¿No te vienes?"
 	done
 
 PicnickerTiffanyClefairyText:
-	text "Isn't my CLEFAIRY"
-	line "just the most"
-	cont "adorable thing?"
+	text "¿No es mi Clefairy"
+	line "lo más bonito del"
+	cont "mundo?"
 	done
 
 Route43Sign1Text:
-	text "ROUTE 43"
+	text "Ruta 43"
 
-	para "LAKE OF RAGE -"
-	line "MAHOGANY TOWN"
+	para "Lago de la Furia -"
+	line "Pueblo Caoba"
 	done
 
 Route43Sign2Text:
-	text "ROUTE 43"
+	text "Ruta 43"
 
-	para "LAKE OF RAGE -"
-	line "MAHOGANY TOWN"
+	para "Lago de la Furia -"
+	line "Pueblo Caoba"
 	done
 
 Route43TrainerTipsText:
-	text "TRAINER TIPS"
+	text "PISTAS ENTRENADOR"
 
-	para "All #MON have"
-	line "pros and cons"
+	para "Todos los Pokémon"
+	line "tienen ventajas y"
 
-	para "depending on their"
-	line "types."
+	para "desventajas según"
+	line "el tipo."
 
-	para "If their types"
-	line "differ, a higher-"
+	para "Entre dos Pokémon"
+	line "de distinto tipo,"
 
-	para "level #MON may"
-	line "lose in battle."
+	para "puede perder el"
+	line "de nivel superior."
 
-	para "Learn which types"
-	line "are strong and"
+	para "Aprende qué tipos"
+	line "son fuertes o"
 
-	para "weak against your"
-	line "#MON's type."
+	para "débiles contra tu"
+	line "tipo de Pokémon"
 	done
 
 Route43_MapEvents:

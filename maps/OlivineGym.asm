@@ -93,102 +93,103 @@ OlivineGymStatue:
 	jumpstd GymStatue2Script
 
 Jasmine_SteelTypeIntro:
-	text "…Thank you for"
-	line "your help at the"
-	cont "LIGHTHOUSE…"
+	text "Gracias por"
+	line "ayudarnos en el"
+	cont "Faro…"
 
-	para "But this is dif-"
-	line "ferent. Please"
+	para "Pero esto es"
+	line "distinto. Déjame"
+	cont "que me presente."
 
-	para "allow me to intro-"
-	line "duce myself."
+	para "Soy Yasmina, una"
+	line "Líder de Gimnasio."
 
-	para "I am JASMINE, a"
-	line "GYM LEADER. I use"
-	cont "the steel-type."
+	para "Uso el tipo acero."
 
-	para "…Do you know about"
-	line "the steel-type?"
+	para "¿Sabes algo del"
+	line "tipo acero?"
 
-	para "It's a type that"
-	line "was only recently"
-	cont "discovered."
+	para "Fue descubierto"
+	line "hace poco tiempo."
 
-	para "…Um… May I begin?"
+	para "¡Um…! ¡Veamos!"
 	done
 
 Jasmine_BetterTrainer:
-	text "…You are a better"
-	line "trainer than me,"
+	text "Eres mejor que yo,"
+	line "tanto en habilidad"
+	cont "como en simpatía."
 
-	para "in both skill and"
-	line "kindness."
+	para "De acuerdo con las"
+	line "normas de la Liga,"
 
-	para "In accordance with"
-	line "LEAGUE rules, I"
-
-	para "confer upon you"
-	line "this BADGE."
+	para "te concedo esta"
+	line "Medalla."
 	done
 
 Text_ReceivedMineralBadge:
-	text "<PLAYER> received"
-	line "MINERALBADGE."
+	text "<PLAYER> recibió la"
+	line "Medalla Mineral."
 	done
 
 Jasmine_BadgeSpeech:
-	text "…Um… Please take"
-	line "this too…"
+	text "La Medalla Mineral"
+	line "aumenta la Defensa"
+	cont "de los Pokémon."
+
+	para "¡Eh…! Toma"
+	line "esto también…"
 	done
 
-Text_ReceivedTM09: ; unreferenced
-	text "<PLAYER> received"
-	line "TM09."
+Text_ReceivedTM09:
+	text "<PLAYER> recibió la"
+	line "Mt09."
 	done
 
 Jasmine_IronTailSpeech:
-	text "…You could use"
-	line "that TM to teach"
-	cont "IRON TAIL."
+	text "Usa esta Mt para"
+	line "enseñar Cola"
+	cont "Férrea."
 	done
 
 Jasmine_GoodLuck:
-	text "Um… I don't know"
-	line "how to say this,"
-	cont "but good luck…"
+	text "Eh… No sé"
+	line "cómo decirlo, pero"
+	cont "buena suerte…"
 	done
 
 OlivineGymGuideText:
-	text "JASMINE uses the"
-	line "newly discovered"
-	cont "steel-type."
+	text "Yasmina usa el"
+	line "tipo acero recién"
+	cont "descubierto."
 
-	para "I don't know very"
-	line "much about it."
+	para "No sé mucho sobre"
+	line "ese tipo."
 	done
 
 OlivineGymGuideWinText:
-	text "That was awesome."
+	text "Ha sido increíble."
 
-	para "The steel-type,"
-	line "huh?"
+	para "El tipo acero se"
+	line "las trae, ¿eh?"
 
-	para "That was a close"
-	line "encounter of an"
-	cont "unknown kind!"
+	para "¡No había visto un"
+	line "combate así en mi"
+	cont "vida!"
 	done
 
 OlivineGymGuidePreText:
-	text "JASMINE, the GYM"
-	line "LEADER, is at the"
-	cont "LIGHTHOUSE."
+	text "Yasmina, la Líder"
+	line "del Gimnasio, está"
+	cont "en el Faro."
 
-	para "She's been tending"
-	line "to a sick #MON."
+	para "Ha estado cuidando"
+	line "a un Pokémon"
+	cont "enfermo."
 
-	para "A strong trainer"
-	line "has to be compas-"
-	cont "sionate."
+	para "Un buen entrenador"
+	line "debe ser"
+	cont "compasivo."
 	done
 
 OlivineGym_MapEvents:

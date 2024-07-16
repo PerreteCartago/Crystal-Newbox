@@ -62,110 +62,114 @@ ViridianGymStatue:
 	jumpstd GymStatue2Script
 
 LeaderBlueBeforeText:
-	text "BLUE: Yo! Finally"
-	line "got here, huh?"
+	text "Azul: ¡Hola! Al"
+	line "fin llegaste, ¿eh?"
 
-	para "I wasn't in the"
-	line "mood at CINNABAR,"
+	para "En Isla Canela no"
+	line "estaba a punto,"
 
-	para "but now I'm ready"
-	line "to battle you."
+	para "pero ahora estoy"
+	line "listo para luchar."
 
 	para "…"
 
-	para "You're telling me"
-	line "you conquered all"
-	cont "the GYMS in JOHTO?"
+	para "¿Me estás contando"
+	line "que superaste los"
 
-	para "Heh! JOHTO's GYMS"
-	line "must be pretty"
-	cont "pathetic then."
+	para "Gimnasios de"
+	line "Johto?"
 
-	para "Hey, don't worry"
-	line "about it."
+	para "¡Vaya! Pues los"
+	line "Gimnasios de Johto"
 
-	para "I'll know if you"
-	line "are good or not by"
+	para "deben de ser"
+	line "patéticos."
 
-	para "battling you right"
-	line "now."
+	para "Pero bueno, no te"
+	line "preocupes."
 
-	para "Ready, JOHTO"
-	line "CHAMP?"
+	para "Sabremos si vales"
+	line "o no en un"
+
+	para "momento. Luchemos"
+	line "ahora."
+
+	para "¿Vale?"
 	done
 
 LeaderBlueWinText:
-	text "BLUE: What?"
+	text "Azul: ¿Qué?"
 
-	para "How the heck did I"
-	line "lose to you?"
+	para "¿Cómo diablos he"
+	line "perdido?"
 
 	para "…"
 
-	para "Tch, all right…"
-	line "Here, take this--"
-	cont "it's EARTHBADGE."
+	para "¡Está bien…!"
+	line "Toma. Aquí tienes"
+	cont "la Medalla Tierra."
 	done
 
 Text_ReceivedEarthBadge:
-	text "<PLAYER> received"
-	line "EARTHBADGE."
+	text "<PLAYER> recibió"
+	line "la Medalla Tierra."
 	done
 
 LeaderBlueAfterText:
-	text "BLUE: …"
+	text "Azul: …"
 
-	para "All right, I was"
-	line "wrong. You're the"
+	para "De acuerdo, me he"
+	line "equivocado."
 
-	para "real deal. You are"
-	line "a good trainer."
+	para "Tenías razón."
+	line "No me engañabas."
 
-	para "But I'm going to"
-	line "beat you someday."
+	para "Pero algún día te"
+	line "derrotaré."
 
-	para "Don't you forget"
-	line "it!"
+	para "¡No lo olvides!"
 	done
 
 LeaderBlueEpilogueText:
-	text "BLUE: Listen, you."
+	text "Azul: Escucha."
 
-	para "You'd better not"
-	line "lose until I beat"
-	cont "you. Got it?"
+	para "Será mejor que no"
+	line "pierdas hasta que"
+
+	para "yo te derrote."
+	line "¿Entendido?"
 	done
 
 ViridianGymGuideText:
-	text "Yo, CHAMP in"
-	line "making!"
+	text "¡Hola!"
+	line "¿Qué tal te va?"
 
-	para "How's it going?"
-	line "Looks like you're"
-	cont "on a roll."
+	para "Parece que estás"
+	line "de suerte."
 
-	para "The GYM LEADER is"
-	line "a guy who battled"
+	para "El Líder del"
+	line "Gimnasio luchó"
 
-	para "the CHAMPION three"
-	line "years ago."
+	para "contra el Campeón"
+	line "hace 3 años."
 
-	para "He's no pushover."
+	para "¡Es un tipo duro!"
 
-	para "Give it everything"
-	line "you've got!"
+	para "¡Debes esforzarte"
+	line "al máximo!"
 	done
 
 ViridianGymGuideWinText:
-	text "Man, you are truly"
-	line "tough…"
+	text "Vaya, eres"
+	line "realmente fuerte…"
 
-	para "That was a heck of"
-	line "an inspirational"
+	para "¡Qué batalla más"
+	line "emocionante!"
 
-	para "battle. It brought"
-	line "tears to my eyes."
+	para "Me ha hecho"
+	line "llorar."
 	done
+
 
 ViridianGym_MapEvents:
 	db 0, 0 ; filler

@@ -320,7 +320,7 @@ InitPokegearTilemap:
 	ret
 
 .switch
-	db " SWITCH▶@"
+	db " Cambio▶@"
 
 .Map:
 	ld a, [wPokegearMapPlayerIconLandmark]
@@ -1248,9 +1248,9 @@ PokegearPhoneContactSubmenu:
 .CallDeleteCancelStrings:
 	dwcoord 10, 6
 	db 3
-	db   "CALL"
-	next "DELETE"
-	next "CANCEL"
+	db   "Llamar"
+	next "Borrar"
+	next "Salir"
 	db   "@"
 
 .CallDeleteCancelJumptable:
@@ -1261,8 +1261,8 @@ PokegearPhoneContactSubmenu:
 .CallCancelStrings:
 	dwcoord 10, 8
 	db 2
-	db   "CALL"
-	next "CANCEL"
+	db   "Llamar"
+	next "Salir"
 	db   "@"
 
 .CallCancelJumptable:
@@ -1610,7 +1610,7 @@ LoadStation_BuenasPassword:
 	ld de, BuenasPasswordName
 	ret
 
-BuenasPasswordName:    db "BUENA'S PASSWORD@"
+BuenasPasswordName:    db "Código de Buena@"
 NotBuenasPasswordName: db "@"
 
 LoadStation_UnownRadio:
@@ -1743,15 +1743,15 @@ NoRadioName:
 	call Textbox
 	ret
 
-OaksPKMNTalkName:     db "OAK's <PK><MN> Talk@"
-PokedexShowName:      db "#DEX Show@"
-PokemonMusicName:     db "#MON Music@"
-LuckyChannelName:     db "Lucky Channel@"
-UnownStationName:     db "?????@"
+OaksPKMNTalkName:     db "La Hora de Oak@"
+PokedexShowName:      db "Ver <POKE>dex@"
+PokemonMusicName:     db "Música <POKE>mon@"
+LuckyChannelName:     db "Canal Suerte@"
+UnownStationName:     db "¿¿??@"
 
-PlacesAndPeopleName:  db "Places & People@"
-LetsAllSingName:      db "Let's All Sing!@"
-PokeFluteStationName: db "# FLUTE@"
+PlacesAndPeopleName:  db "Lugares y Gente@"
+LetsAllSingName:      db "Cantemos todos@"
+PokeFluteStationName: db "FLAUTA <POKE>mon@"
 
 _TownMap:
 	ld hl, wOptions
@@ -2177,7 +2177,7 @@ TownMapBubble:
 	ret
 
 .Where:
-	db "Where?@"
+	db "¿Dónde?@"
 
 .Name:
 ; We need the map location of the default flypoint
@@ -2459,17 +2459,17 @@ Pokedex_GetArea:
 	ld a, $07
 	call ByteFill
 	ld [hl], $17
-	call GetPokemonName
-	hlcoord 2, 0
-	call PlaceString
-	ld h, b
-	ld l, c
+	hlcoord 1, 0
 	ld de, .String_SNest
+	call PlaceString
+	push bc
+	call GetPokemonName
+	pop hl
 	call PlaceString
 	ret
 
 .String_SNest:
-	db "'S NEST@"
+	db "'Nido de@"
 
 .GetAndPlaceNest:
 	ld [wTownMapCursorLandmark], a

@@ -178,210 +178,209 @@ EcruteakGymGrampsSlowStepDownMovement:
 	step_end
 
 MortyIntroText:
-	text "Good of you to"
-	line "have come."
+	text "Me alegro de que"
+	line "hayas venido."
 
-	para "Here in ECRUTEAK,"
-	line "#MON have been"
-	cont "revered."
+	para "Aquí en Iris, los"
+	line "Pokémon son"
+	cont "venerados."
 
-	para "It's said that a"
-	line "rainbow-colored"
+	para "Se dice que un"
+	line "Pokémon de los"
 
-	para "#MON will come"
-	line "down to appear"
+	para "colores del arco"
+	line "iris aparecerá"
 
-	para "before a truly"
-	line "powerful trainer."
+	para "ante un verdadero"
+	line "entrenador."
 
-	para "I believed that"
-	line "tale, so I have"
+	para "Yo creo en esa"
+	line "historia y, por"
 
-	para "secretly trained"
-	line "here all my life."
+	para "eso, llevo entre-"
+	line "nándome aquí toda"
+	cont "mi vida."
 
-	para "As a result, I can"
-	line "now see what"
-	cont "others cannot."
+	para "Así que ahora"
+	line "puedo ver cosas"
+	cont "que otros no ven."
 
-	para "Just a bit more…"
+	para "Sólo un poco más…"
 
-	para "With a little"
-	line "more, I could see"
+	para "Con un poco más,"
+	line "podría ser yo"
 
-	para "a future in which"
-	line "I meet the #MON"
-	cont "of rainbow colors."
+	para "quien viera al"
+	line "Pokémon de los"
 
-	para "You're going to"
-	line "help me reach that"
-	cont "level!"
+	para "colores del arco"
+	line "iris."
+
+	para "¡Ayúdame a alcan-"
+	line "zar ese nivel!"
 	done
 
 MortyWinLossText:
-	text "I'm not good"
-	line "enough yet…"
+	text "Aún no soy lo"
+	line "bastante bueno…"
 
-	para "All right. This"
-	line "BADGE is yours."
+	para "De acuerdo. Esta"
+	line "Medalla es tuya."
 	done
 
 Text_ReceivedFogBadge:
-	text "<PLAYER> received"
-	line "FOGBADGE."
+	text "<PLAYER> recibió la"
+	line "Medalla Niebla."
 	done
 
 MortyText_FogBadgeSpeech:
-	text "By having FOG-"
-	line "BADGE, #MON up"
+	text "Con la Medalla"
+	line "Niebla, te obede-"
+	cont "cerán todos los"
+	cont "Pokémon hasta el"
+	cont "nivel 50."
 
-	para "to L50 will obey"
-	line "you."
+	para "Y los Pokémon que"
+	line "sepan Surf podrán"
 
-	para "Also, #MON that"
-	line "know SURF will be"
+	para "usarlo en"
+	line "cualquier momento."
 
-	para "able to use that"
-	line "move anytime."
-
-	para "I want you to have"
-	line "this too."
+	para "Quédate con esto"
+	line "también."
 	done
 
 MortyText_ShadowBallSpeech:
-	text "It's SHADOW BALL."
-	line "It causes damage"
+	text "Es Bola Sombra."
+	line "Causa daños y"
 
-	para "and may reduce"
-	line "SPCL.DEF."
+	para "puede reducir la"
+	line "Defensa Especial."
 
-	para "Use it if it"
-	line "appeals to you."
+	para "Úsala si te gusta."
 	done
 
 MortyFightDoneText:
-	text "I see…"
+	text "Entiendo…"
 
-	para "Your journey has"
-	line "taken you to far-"
-	cont "away places."
+	para "Tu viaje te ha"
+	line "llevado a tierras"
+	cont "lejanas."
 
-	para "And you have wit-"
-	line "nessed much more"
-	cont "than I."
+	para "Y has presenciado"
+	line "muchas más cosas"
+	cont "que yo."
 
-	para "I envy you for"
-	line "that…"
+	para "¡Cómo te envidio…!"
 	done
 
 SageJeffreySeenText:
-	text "I spent the spring"
-	line "with my #MON."
+	text "Pasé la primavera"
+	line "con mis Pokémon."
 
-	para "Then summer, fall"
-	line "and winter…"
+	para "Y el verano, otoño"
+	line "e invierno."
 
-	para "Then spring came"
-	line "again. We have"
+	para "Luego volvió la"
+	line "primavera. Hemos"
 
-	para "lived together"
-	line "for a long time."
+	para "vivido juntos"
+	line "mucho tiempo."
 	done
 
 SageJeffreyBeatenText:
-	text "Wins and losses, I"
-	line "experienced both."
+	text "Viví victorias y"
+	line "derrotas."
 	done
 
 SageJeffreyAfterBattleText:
-	text "Where did #MON"
-	line "come from?"
+	text "¿De dónde vienen"
+	line "los Pokémon?"
 	done
 
 SagePingSeenText:
-	text "Can you inflict"
-	line "any damage on our"
-	cont "#MON?"
+	text "¿Puedes causar"
+	line "algún daño a"
+	cont "nuestros Pokémon?"
 	done
 
 SagePingBeatenText:
-	text "Ah! Well done!"
+	text "¡Ah! ¡Bien hecho!"
 	done
 
 SagePingAfterBattleText:
-	text "We use only ghost-"
-	line "type #MON."
+	text "Sólo usamos"
+	line "Pokémon del tipo"
+	cont "fantasma."
 
-	para "No normal-type"
-	line "attack can harm"
-	cont "them!"
+	para "¡Los ataques"
+	line "normales no les"
+	cont "hacen daño!"
 	done
 
 MediumMarthaSeenText:
-	text "I shall win!"
+	text "¡Ganaré!"
 	done
 
 MediumMarthaBeatenText:
-	text "I, I, I lost!"
+	text "He… ¡He perdido!"
 	done
 
 MediumMarthaAfterBattleText:
-	text "The one who wants"
-	line "to win most--will!"
+	text "¡Ganará quien más"
+	line "lo desee!"
 	done
 
 MediumGraceSeenText:
-	text "Stumped by our in-"
-	line "visible floor?"
+	text "¿Te asombra el"
+	line "suelo invisible?"
 
-	para "Defeat me if you"
-	line "want a hint!"
+	para "¡Si quieres una"
+	line "pista, vénceme!"
 	done
 
 MediumGraceBeatenText:
-	text "Wha-what?"
+	text "¿Có… cómo?"
 	done
 
 MediumGraceAfterBattleText:
-	text "Fine. I shall tell"
-	line "you the secret of"
+	text "Bien. Te contaré"
+	line "el secreto del"
+	cont "suelo invisible."
 
-	para "the invisible"
-	line "floor."
-
-	para "The path is right"
-	line "before our eyes!"
+	para "¡La ruta está"
+	line "frente a ti!"
 	done
 
 EcruteakGymGuideText:
-	text "The trainers here"
-	line "have secret mo-"
-	cont "tives."
+	text "Estos entrenadores"
+	line "tienen motivos"
+	cont "secretos."
 
-	para "If you win, they"
-	line "may tell you some"
+	para "Si les ganas,"
+	line "podrían contarte"
 
-	para "deep secrets about"
-	line "ECRUTEAK."
+	para "algunos secretos"
+	line "sobre Ciudad Iris."
 	done
 
 EcruteakGymGuideWinText:
-	text "Whew, <PLAYER>."
-	line "You did great!"
+	text "¡Uauu, <PLAYER>!"
+	line "¡Genial!"
 
-	para "I was cowering in"
-	line "the corner out of"
-	cont "pure terror!"
+	para "¡Me escondí en el"
+	line "rincón muerto de"
+	cont "miedo!"
 	done
 
 EcruteakGymClosedText:
-	text "MORTY, the GYM"
-	line "LEADER, is absent."
+	text "Morti, el Líder de"
+	line "Gimnasio, no está."
 
-	para "Sorry, but you'll"
-	line "have to leave."
+	para "Lo siento, pero"
+	line "tendrás que irte."
 
-	para "Hohohoho."
+	para "Jo, jo, jo, jo."
 	done
 
 EcruteakGym_MapEvents:

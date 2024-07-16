@@ -162,11 +162,10 @@ endc
 	ret
 
 .String_PressAToLink_BToCancel:
-	db   "Press A to"
-	next "link IR-Device"
-	next "Press B to"
-	next "cancel it."
-	db   "@"
+	db   "Pulsa A para"
+	next "enlace IR."
+	next "Pulsa B para"
+	next "cancelar.@"
 
 .MysteryGiftCanceledText:
 	text_far _MysteryGiftCanceledText

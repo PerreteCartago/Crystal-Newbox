@@ -1794,9 +1794,9 @@ HandleScreens:
 	jp CopyName2
 
 .Your:
-	db "Your@"
+	db "tu@"
 .Enemy:
-	db "Enemy@"
+	db "Enemigo@"
 
 .LightScreenTick:
 	ld a, [de]
@@ -1834,6 +1834,11 @@ HandleWeather:
 ; ended
 	ld hl, .WeatherEndedMessages
 	call .PrintWeatherMessage
+
+	farcall _CGB_BattleColors
+	ld a, 1
+	ld [hCGBPalUpdate], a
+
 	xor a
 	ld [wBattleWeather], a
 	ret
@@ -5932,7 +5937,7 @@ MoveInfoBox:
 	ret
 
 .Disabled:
-	db "Disabled!@"
+	db "Desact.!@"
 
 .PrintPP:
 	hlcoord 5, 11
@@ -8591,7 +8596,7 @@ DisplayLinkBattleResult:
 	jr .store_result
 
 .store_result
-	hlcoord 6, 8
+	hlcoord 3, 8
 	call PlaceString
 	farcall BackupGSBallFlag
 	ld c, 200
@@ -8618,23 +8623,17 @@ DisplayLinkBattleResult:
 	ret
 
 .YouWin:
-	db "YOU WIN@"
+	db "Ganas   @"
 .YouLose:
-	db "YOU LOSE@"
+	db "Pierdes @"
 .Draw:
-	db "  DRAW@"
+	db "Empate  @"
 
 .Mobile_InvalidBattle:
-	hlcoord 6, 8
-	ld de, .InvalidBattle
-	call PlaceString
-	ld c, 200
-	call DelayFrames
-	call ClearTilemap
 	ret
 
 .InvalidBattle:
-	db "INVALID BATTLE@"
+	db "Batalla inválida@"
 
 IsMobileBattle2:
 	ld a, [wLinkMode]
@@ -8786,11 +8785,11 @@ ReadAndPrintLinkBattleRecord:
 	db "  ---  <LF>"
 	db "         -    -    -@"
 .Record:
-	db "<PLAYER>'s RECORD@"
+	db "Record de <PLAYER>@"
 .Result:
-	db "RESULT WIN LOSE DRAW@"
+	db "RESULT GAN PERD EMP@"
 .Total:
-	db "TOTAL  WIN LOSE DRAW@"
+	db "TOTAL GAN PERD EMP@"
 
 BattleEnd_HandleRoamMons:
 	ld a, [wBattleType]

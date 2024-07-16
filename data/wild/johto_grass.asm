@@ -1286,8 +1286,8 @@ JohtoGrassWildMons:
 	db 4, POLIWAG
 	db 4, HOOTHOOT
 	db 3, ZUBAT
-	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 4, MURKROW
+	db 4, MURKROW
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_31

@@ -67,87 +67,87 @@ PewterCityFruitTree2:
 	fruittree FRUITTREE_PEWTER_CITY_2
 
 PewterCityCooltrainerFText:
-	text "Have you visited"
-	line "PEWTER GYM?"
+	text "¿Has ido al"
+	line "Gimnasio de Ciudad"
+	cont "Plateada?"
 
-	para "The LEADER uses"
-	line "rock-type #MON."
+	para "El Líder utiliza"
+	line "Pokémon roca."
 	done
 
 PewterCityBugCatcherText:
-	text "At night, CLEFAIRY"
-	line "come out to play"
-	cont "at MT.MOON."
+	text "Por la noche, los"
+	line "Clefairy salen a"
 
-	para "But not every"
-	line "night."
+	para "jugar al Mt. Moon,"
+	line "pero no todas las"
+	cont "noches."
 	done
 
 PewterCityGrampsText:
-	text "Ah, you came all"
-	line "the way out here"
-	cont "from JOHTO?"
+	text "¡Vaya! ¿Vienes de"
+	line "Johto?"
 
-	para "That brings back"
-	line "memories. When I"
+	para "Me trae muchos"
+	line "recuerdos. Cuando"
 
-	para "was young, I went"
-	line "to JOHTO to train."
+	para "era joven, fui a"
+	line "Johto a entrenar."
 
-	para "You remind me so"
-	line "much of what I was"
+	para "Te pareces mucho"
+	line "a mí cuando yo"
+	cont "tenía tu edad."
 
-	para "like as a young"
-	line "man."
-
-	para "Here. I want you"
-	line "to have this item"
-	cont "I found in JOHTO."
+	para "Me gustaría darte"
+	line "este objeto que"
+	cont "encontré en Johto."
 	done
 
 PewterCityGrampsText_GotSilverWing:
-	text "Going to new, un-"
-	line "known places and"
-	cont "seeing new people…"
+	text "Visitar nuevos"
+	line "sitios y conocer"
+	cont "gente nueva…"
 
-	para "Those are the joys"
-	line "of travel."
+	para "Eso es lo bueno"
+	line "de viajar."
 	done
 
 PewterCitySignText:
-	text "PEWTER CITY"
-	line "A Stone Gray City"
+	text "Ciudad Plateada"
+	line "La ciudad de"
+	cont "piedra grisácea"
 	done
 
 PewterGymSignText:
-	text "PEWTER CITY"
-	line "#MON GYM"
-	cont "LEADER: BROCK"
+	text "Lider del Gimnasio"
+	line "Pokémon de Ciudad"
+	cont "Plateada: Brock"
 
-	para "The Rock Solid"
-	line "#MON Trainer"
+	para "El entrenador"
+	line "Pokémon más fuerte"
+	cont "que la roca"
 	done
 
 PewterMuseumSignText:
-	text "There's a notice"
-	line "here…"
+	text "Aquí hay una nota…"
 
-	para "PEWTER MUSEUM OF"
-	line "SCIENCE is closed"
-	cont "for renovations…"
+	para "Museo de la"
+	line "Ciencia de Ciudad"
+
+	para "Plateada: Cerrado"
+	line "por obras…"
 	done
 
 PewterCityMtMoonGiftShopSignText:
-	text "There's a notice"
-	line "here…"
+	text "Aquí hay una nota…"
 
-	para "MT.MOON GIFT SHOP"
-	line "NOW OPEN!"
+	para "¡Tienda de Regalos"
+	line "Mt. Moon abierta!"
 	done
 
 PewterCityWelcomeSignText:
-	text "WELCOME TO"
-	line "PEWTER CITY!"
+	text "¡Bienvenidos a"
+	line "Ciudad Plateada!"
 	done
 
 PewterCity_MapEvents:

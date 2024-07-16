@@ -88,50 +88,48 @@ Route34IlexForestGateTeacherReturnsMovement:
 	step_end
 
 Route34IlexForestGateTeacherText:
-	text "Oh, honey. You're"
-	line "making a #DEX?"
+	text "¿Estás completando"
+	line "una <POKE>dex?"
 
-	para "It must be hard if"
-	line "#MON won't"
+	para "Sería duro si los"
+	line "Pokémon no"
 
-	para "appear. Try using"
-	line "this TM."
+	para "aparecieran."
+	line "Prueba esta MT."
 	done
 
 Route34IlexForestGateTeacher_GotSweetScent:
-	text "It's SWEET SCENT."
+	text "Es Dulce Aroma."
 
-	para "Use it wherever"
-	line "#MON appear."
+	para "Úsala siempre que"
+	line "aparezcan Pokémon."
 
-	para "#MON will be"
-	line "enticed by it."
+	para "Atraerá a los"
+	line "Pokémon."
 	done
 
 Route34IlexForestGateTeacher_ForestIsRestless:
-	text "Something's wrong"
-	line "in ILEX FOREST…"
+	text "Algo va mal en el"
+	line "Encinar…"
 
-	para "You should stay"
-	line "away right now."
+	para "Deberías alejarte."
 	done
 
 Route34IlexForestGateButterfreeText:
-	text "BUTTERFREE: Freeh!"
+	text "Butterfree: ¡Free!"
 	done
 
 Route34IlexForestGateLassText:
-	text "Did you see the"
-	line "shrine honoring"
-	cont "the protector?"
+	text "¿Has visto el"
+	line "santuario en honor"
+	cont "del guardián?"
 
-	para "It watches over"
-	line "the FOREST from"
-	cont "across time."
+	para "Protege el Bosque"
+	line "desde antaño."
 
-	para "I think that it"
-	line "must be a grass-"
-	cont "type #MON."
+	para "Creo que debe de"
+	line "ser un Pokémon del"
+	cont "tipo planta."
 	done
 
 Route34IlexForestGate_MapEvents:

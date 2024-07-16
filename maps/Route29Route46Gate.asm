@@ -25,7 +25,7 @@ Route29Route46GateOfficerText:
 Route29Route46GateYoungsterText:
 	text "Más adelante"
 	line "aparecen muchos"
-	cont "tipos de #MON."
+	cont "tipos de Pokémon."
 
 	para "Si quieres hacerte"
 	line "con todos, tendrás"

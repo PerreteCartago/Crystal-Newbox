@@ -22,52 +22,56 @@ SoulHouseGrannyScript:
 	jumptextfaceplayer SoulHouseGrannyText
 
 MrFujiText:
-	text "MR.FUJI: Welcome."
+	text "SR. Fuji: ¡Hola!"
 
-	para "Hmm… You appear to"
-	line "be raising your"
+	para "¡Mmm…! Parece que"
+	line "estás educando a"
 
-	para "#MON in a kind"
-	line "and loving manner."
+	para "tus Pokémon con"
+	line "mucho cariño."
 
-	para "#MON lovers"
-	line "come here to pay"
+	para "Los amantes de los"
+	line "Pokémon vienen a"
 
-	para "their respects to"
-	line "departed #MON."
+	para "rendir homenaje a"
+	line "Pokémon muertos."
 
-	para "Please offer con-"
-	line "dolences for the"
+	para "Por favor, muestra"
+	line "tu condolencia por"
 
-	para "souls of the de-"
-	line "parted #MON."
+	para "las almas Pokémon"
+	line "que han partido."
 
-	para "I'm sure that will"
-	line "make them happy."
+	para "Seguro que eso"
+	line "les hará felices."
 	done
 
 SoulHouseTeacherText:
-	text "There are other"
-	line "graves of #MON"
-	cont "here, I think."
+	text "Creo que aquí hay"
+	line "otras tumbas de"
+	cont "Pokémon."
 
-	para "There are many"
-	line "chambers that only"
-	cont "MR.FUJI may enter."
+	para "Hay muchas cámaras"
+	line "en las que sólo"
+
+	para "puede entrar el"
+	line "Sr. Fuji."
 	done
 
 SoulHouseLassText:
-	text "I came with my mom"
-	line "to visit #MON"
-	cont "graves…"
+	text "He venido con mi"
+	line "madre a visitar"
+
+	para "las tumbas de los"
+	line "Pokémon…"
 	done
 
 SoulHouseGrannyText:
-	text "The #MON that"
-	line "lived with me…"
+	text "A los Pokémon que"
+	line "vivían conmigo…"
 
-	para "I loved them like"
-	line "my grandchildren…"
+	para "los quería como a"
+	line "mis nietos…"
 	done
 
 SoulHouse_MapEvents:

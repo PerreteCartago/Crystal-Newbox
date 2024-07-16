@@ -76,7 +76,7 @@ SageEdmondAfterBattleText:
 	done
 
 SproutTower2FStatueText:
-	text "Una estatua #MON"
+	text "Una estatua Pokémon"
 	line "muy desgastada."
 
 	para "Debería ser verde"

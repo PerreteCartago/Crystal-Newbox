@@ -76,74 +76,74 @@ CharcoalKilnRadio:
 	jumpstd Radio2Script
 
 CharcoalKilnBossText1:
-	text "All the SLOWPOKE"
-	line "have disappeared"
-	cont "from the town."
+	text "Todos los Slowpoke"
+	line "del pueblo han"
+	cont "desaparecido."
 
-	para "The forest's pro-"
-	line "tector may be"
-	cont "angry with us…"
+	para "Quizá el guardián"
+	line "del Encinar esté"
+	cont "enfadado…"
 
-	para "It may be a bad"
-	line "omen. We should"
-	cont "stay in."
+	para "Puede ser un mal"
+	line "presagio. Será"
+	cont "mejor no salir."
 	done
 
 CharcoalKilnBossText2:
-	text "The SLOWPOKE have"
-	line "returned…"
+	text "Los Slowpoke han"
+	line "vuelto…"
 
-	para "But my APPRENTICE"
-	line "hasn't come back"
-	cont "from ILEX FOREST."
+	para "Pero mi Aprendiz"
+	line "no ha vuelto del"
+	cont "Encinar."
 
-	para "Where in the world"
-	line "is that lazy guy?"
+	para "¿Dónde demonios"
+	line "está ese vago?"
 	done
 
 CharcoalKilnBossText3:
-	text "You chased off"
-	line "TEAM ROCKET and"
+	text "¿Expulsaste al"
+	line "Team Rocket y"
 
-	para "went to ILEX"
-	line "FOREST alone?"
+	para "fuiste solo al"
+	line "Encinar?"
 
-	para "That takes guts!"
-	line "I like that. Come"
-	cont "train with us."
+	para "¡Qué valiente! Me"
+	line "gustas. Entrena"
+	cont "con nosotros."
 	done
 
 CharcoalKilnApprenticeText1:
-	text "Where have all the"
-	line "SLOWPOKE gone?"
+	text "¿Adónde han ido"
+	line "los Slowpoke?"
 
-	para "Are they out play-"
-	line "ing somewhere?"
+	para "¿Están jugando"
+	line "fuera?"
 	done
 
 CharcoalKilnApprenticeText2:
-	text "I'm sorry--I for-"
-	line "got to thank you."
+	text "Lo siento. Olvidé"
+	line "darte las gracias."
 
-	para "This is CHARCOAL"
-	line "that I made."
+	para "Éste es el Carbón"
+	line "que he fabricado."
 
-	para "Fire-type #MON"
-	line "would be happy to"
-	cont "hold that."
+	para "A los Pokémon de"
+	line "fuego les gustará"
+	cont "llevarlo."
 	done
 
 CharcoalKilnApprenticeText3:
-	text "The SLOWPOKE came"
-	line "back, and you even"
-	cont "found FARFETCH'D."
+	text "Los Slowpoke han"
+	line "vuelto, hasta"
+	cont "Farfetch'd."
 
-	para "You're the cool-"
-	line "est, man!"
+	para "¡Eres lo mejor,"
+	line "de verdad!"
 	done
 
 FarfetchdText:
-	text "FARFETCH'D: Kwaa!"
+	text "Farfetch'd: Kwaa!"
 	done
 
 CharcoalKiln_MapEvents:

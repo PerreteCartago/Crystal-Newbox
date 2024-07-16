@@ -114,7 +114,7 @@ RuinsOfAlphAerodactylChamberWallPatternLeftText:
 	done
 
 RuinsOfAlphAerodactylChamberUnownText: ; unreferenced
-	text "¡Es texto UNOWN!"
+	text "¡Es texto Unown!"
 	done
 
 RuinsOfAlphAerodactylChamberWallPatternRightText:
@@ -130,12 +130,12 @@ RuinsOfAlphAerodactylChamberWallHoleText:
 
 RuinsOfAlphAerodactylChamberAncientReplicaText:
 	text "Es una réplica de"
-	line "un #MON"
+	line "un Pokémon"
 	cont "antiguo."
 	done
 
 RuinsOfAlphAerodactylChamberDescriptionText:
-	text "Este #MON"
+	text "Este Pokémon"
 	line "volador ataca a"
 
 	para "su presa con sus"

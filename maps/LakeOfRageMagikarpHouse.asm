@@ -90,118 +90,118 @@ MagikarpHouseBookshelf:
 	jumpstd DifficultBookshelfScript
 
 MagikarpLengthRaterText_LakeOfRageHistory:
-	text "LAKE OF RAGE is"
-	line "actually a crater"
+	text "El Lago de la"
+	line "Furia es un cráter"
 
-	para "made by rampaging"
-	line "GYARADOS."
+	para "obra de violentos"
+	line "Gyarados."
 
-	para "The crater filled"
-	line "up with rainwater"
+	para "El cráter se llenó"
+	line "de agua de lluvia"
 
-	para "and the LAKE was"
-	line "formed."
+	para "y se formó el"
+	line "Lago."
 
-	para "That's the story"
-	line "passed on from my"
+	para "Esta historia la"
+	line "contó por primera"
 
-	para "Grandpa's great-"
-	line "great-grandpa."
+	para "vez el tatarabuelo"
+	line "de mi abuelo."
 
-	para "It used to be that"
-	line "you could catch"
+	para "Antes se podían"
+	line "pescar Magikarp"
+	cont "en el lago, pero…"
 
-	para "lively MAGIKARP"
-	line "there, but…"
-
-	para "I don't understand"
-	line "what's happening."
+	para "No entiendo lo que"
+	line "ocurre ahora."
 	done
 
 MagikarpLengthRaterText_MenInBlack:
-	text "The LAKE hasn't"
-	line "been normal since"
+	text "En el Lago pasan"
+	line "cosas raras desde"
 
-	para "those men wearing"
-	line "black arrived."
+	para "que llegaron esos"
+	line "hombres de negro."
 	done
 
 MagikarpLengthRaterText_WorldsLargestMagikarp:
-	text "LAKE OF RAGE is"
-	line "back to normal."
+	text "La normalidad ha"
+	line "vuelto al Lago de"
 
-	para "The MAGIKARP have"
-	line "returned."
+	para "la Furia. Vuelve a"
+	line "haber Magikarp."
 
-	para "I may yet realize"
-	line "my dream of see-"
-	cont "ing the world's"
-	cont "largest MAGIKARP."
+	para "Quizá se cumpla mi"
+	line "sueño de ver al"
 
-	para "Do you have a ROD?"
-	line "Please help me if"
-	cont "you do."
+	para "Magikarp más"
+	line "grande del mundo."
+
+	para "¿Tienes una caña?"
+	line "Si tienes una,"
+	cont "ayúdame por favor."
 	done
 
 MagikarpLengthRaterText_YouHaveAMagikarp:
-	text "Ah, you have a"
-	line "MAGIKARP! Let's"
+	text "¡Ah, tienes un"
+	line "Magikarp! A ver lo"
 
-	para "see how big that"
-	line "baby is."
+	para "grande que es ese"
+	line "bebé."
 	done
 
 MagikarpLengthRaterText_Memento:
-	text "Wow! This one is"
-	line "outstanding!"
+	text "¡Uau! ¡Éste es"
+	line "impresionante!"
 
-	para "I tip my hat to"
-	line "you!"
+	para "¡Me quito el"
+	line "sombrero ante ti!"
 
-	para "Take this as a"
-	line "memento!"
+	para "¡Toma esto como"
+	line "recuerdo!"
 	done
 
 MagikarpLengthRaterText_Bonus:
-	text "The record is the"
-	line "important thing."
+	text "Lo importante es"
+	line "el récord. ¡Piensa"
 
-	para "Think of that as"
-	line "a bonus!"
+	para "en él como una"
+	line "bonificación!"
 	done
 
 MagikarpLengthRaterText_TooShort:
-	text "Wow! This one is"
-	line "outstanding!"
+	text "¡Uau! ¡Éste es"
+	line "impresionante!"
 
-	para "…I wish I could"
-	line "say that, but I've"
+	para "Ojalá no tuviera"
+	line "que decirlo, pero"
 
-	para "seen a bigger one"
-	line "before."
+	para "he visto uno más"
+	line "grande antes."
 	done
 
 MagikarpLengthRaterText_NotMagikarp:
-	text "What? That's not a"
-	line "MAGIKARP!"
+	text "¿Qué? ¡Eso no es"
+	line "un Magikarp!"
 	done
 
 MagikarpLengthRaterText_Refused:
-	text "Oh… So you didn't"
-	line "get one good"
+	text "¿No tienes ninguno"
+	line "bueno que"
 
-	para "enough to show me?"
-	line "Maybe next time."
+	para "enseñarme? Quizá"
+	line "la próxima vez."
 	done
 
 LakeOfRageMagikarpHouseUnusedRecordText:
-	text "CURRENT RECORD"
+	text "RÉCORD ACTUAL"
 
 	para "@"
 	text_ram wStringBuffer3
-	text " caught by"
-	line "@"
+	text " cm, atrapado"
+	line "por @"
 	text_ram wStringBuffer4
+	text ".@"
 	text_end
 
 LakeOfRageMagikarpHouseUnusedDummyText: ; unreferenced

@@ -14,24 +14,25 @@ OlivineLighthouse1FPokefanFScript:
 	jumptextfaceplayer OlivineLighthouse1FPokefanFText
 
 OlivineLighthouse1FSailorText:
-	text "People train at"
-	line "this LIGHTHOUSE."
+	text "En este Faro se"
+	line "entrena la gente."
 
-	para "It's not easy to"
-	line "climb because of"
-	cont "all the trainers."
+	para "No es fácil subir"
+	line "porque hay muchos"
+	cont "entrenadores."
 	done
 
 OlivineLighthouse1FPokefanFText:
-	text "In the past, #-"
-	line "MON used to light"
+	text "Antes había unos"
+	line "Pokémon que"
 
-	para "the sea around"
-	line "OLIVINE at night."
+	para "iluminaban el mar"
+	line "que rodea Ciudad"
+	cont "Olivo."
 
-	para "The LIGHTHOUSE was"
-	line "made in honor of"
-	cont "those #MON."
+	para "El Faro se"
+	line "construyó en honor"
+	cont "a esos Pokémon."
 	done
 
 OlivineLighthouse1F_MapEvents:

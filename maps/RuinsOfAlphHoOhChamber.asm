@@ -115,7 +115,7 @@ RuinsOfAlphHoOhChamberWallPatternLeftText:
 	done
 
 RuinsOfAlphHoOhChamberUnownText: ; unreferenced
-	text "¡Es texto UNOWN!"
+	text "¡Es texto Unown!"
 	done
 
 RuinsOfAlphHoOhChamberWallPatternRightText:
@@ -132,11 +132,11 @@ RuinsOfAlphHoOhChamberWallHoleText:
 RuinsOfAlphHoOhChamberAncientReplicaText:
 	text "Es una réplica de"
 	line "un antiguo"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 RuinsOfAlphHoOhChamberDescriptionText:
-	text "Un #MON que mo-"
+	text "Un Pokémon que mo-"
 	line "vía con gracia sus"
 
 	para "alas de los colo-"

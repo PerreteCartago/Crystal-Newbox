@@ -193,13 +193,13 @@ RuinsOfAlphResearchCenterModifiedDexText:
 	text "¡Ya está!"
 
 	para "He modificado tu"
-	line "#DEX."
+	line "<POKE>dex."
 
-	para "Añadí una #DEX"
+	para "Añadí una <POKE>dex"
 	line "opcional para"
 
 	para "guardar los datos"
-	line "de UNOWN."
+	line "de Unown."
 
 	para "Los registra en el"
 	line "orden en que son"
@@ -207,12 +207,12 @@ RuinsOfAlphResearchCenterModifiedDexText:
 	done
 
 RuinsOfAlphResearchCenterDexUpgradedText:
-	text "Mejorada #DEX"
+	text "Mejorada <POKE>dex"
 	line "de <PLAYER>."
 	done
 
 RuinsOfAlphResearchCenterScientist3Text:
-	text "Todos los UNOWN"
+	text "Todos los Unown"
 	line "que atrapes serán"
 	cont "registrados aquí."
 
@@ -222,20 +222,20 @@ RuinsOfAlphResearchCenterScientist3Text:
 
 RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	text "¿Atrapaste a todos"
-	line "los UNOWN?"
+	line "los Unown?"
 
 	para "¡Es un gran logro!"
 
 	para "He ajustado la"
 	line "impresora para"
-	cont "UNOWN."
+	cont "Unown."
 
 	para "Puedes usarla"
 	line "cuando quieras."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
-	text "Las RUINAS datan"
+	text "Las Ruinas datan"
 	line "de hace unos"
 	cont "1.500 años."
 
@@ -248,13 +248,13 @@ RuinsOfAlphResearchCenterScientist1Text:
 
 RuinsOfAlphResearchCenterScientist1Text_GotUnownDex:
 	text "¿Cuántos tipos de"
-	line "#MON habrá en"
-	cont "las RUINAS?"
+	line "Pokémon habrá en"
+	cont "las Ruinas?"
 	done
 
 RuinsOfAlphResearchCenterScientist1Text_UnownAppeared:
-	text "¿Hay #MON"
-	line "en las RUINAS?"
+	text "¿Hay Pokémon"
+	line "en las Ruinas?"
 
 	para "¡Qué noticia"
 	line "tan increíble!"
@@ -270,18 +270,18 @@ RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
 	para "ayuda, nos está"
 	line "reportando infor-"
 	cont "mación acerca de"
-	cont "las RUINAS."
+	cont "las Ruinas."
 
-	para "Las RUINAS parecen"
+	para "Las Ruinas parecen"
 	line "haber sido cons-"
 	cont "truidas como un"
 	cont "hábitat para"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 RuinsOfAlphResearchCenterScientist2Text:
 	text "En las paredes de"
-	line "las RUINAS hay"
+	line "las Ruinas hay"
 
 	para "unos dibujos muy"
 	line "raros."
@@ -290,13 +290,13 @@ RuinsOfAlphResearchCenterScientist2Text:
 	line "resolver el"
 
 	para "misterio de las"
-	line "RUINAS."
+	line "Ruinas."
 	done
 
 RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
-	text "¿Los #MON"
+	text "¿Los Pokémon"
 	line "raros que viste"
-	cont "en las RUINAS?"
+	cont "en las Ruinas?"
 
 	para "Son muy parecidos"
 	line "a los dibujos de"
@@ -351,15 +351,15 @@ RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
 	done
 
 RuinsOfAlphResearchCenterComputerText:
-	text "RUINAS ALFA"
+	text "Ruinas Alfa"
 
 	para "10 Años"
 	line "de Exploración"
 	done
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:
-	text "Nombre de #MON"
-	line "misterioso: UNOWN"
+	text "Nombre de Pokémon"
+	line "misterioso: Unown"
 
 	para "Encontrados un"
 	line "total de 26 tipos."
@@ -372,24 +372,25 @@ RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 
 RuinsOfAlphResearchCenterUnownPrinterText:
 	text "Se puede imprimir"
-	line "UNOWN."
+	line "Unown."
 	done
 
 RuinsOfAlphResearchCenterProfSilktreePhotoText:
-	text "It's a photo of"
-	line "the RESEARCH"
+	text "Es una foto del"
+	line "fundador del"
 
-	para "CENTER'S founder,"
-	line "PROF.SILKTREE."
+	para "Centro de Inves-"
+	line "tigación, el"
+	cont "Prof. Silktree."
 	done
 
 RuinsOfAlphResearchCenterAcademicBooksText:
 	text "Es una foto del"
 	line "fundador del"
 
-	para "CENTRO de INVES-"
-	line "TIGACIÓN, el"
-	cont "PROF. SILKTREE."
+	para "Centro de Inves-"
+	line "tigación, el"
+	cont "Prof. Silktree."
 	done
 
 RuinsOfAlphResearchCenter_MapEvents:

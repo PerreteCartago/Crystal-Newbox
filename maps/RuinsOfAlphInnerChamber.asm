@@ -73,7 +73,7 @@ RuinsOfAlphInnerChamberGrampsText:
 RuinsOfAlphInnerChamberStatueText:
 	text "Es una réplica de"
 	line "un antiguo"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 RuinsOfAlphInnerChamber_MapEvents:

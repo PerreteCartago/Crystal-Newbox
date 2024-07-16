@@ -152,7 +152,7 @@ RuinsOfAlphKabutoChamberReceptionistText:
 	para "Hay paneles móvi-"
 	line "les que muestran"
 
-	para "a un #MON"
+	para "a un Pokémon"
 	line "dibujado por los"
 	cont "antepasados."
 
@@ -162,7 +162,7 @@ RuinsOfAlphKabutoChamberReceptionistText:
 
 	para "A la derecha hay"
 	line "una descripción"
-	cont "del #MON."
+	cont "del Pokémon."
 
 	para "El científico"
 	line "del fondo está"
@@ -218,7 +218,7 @@ RuinsOfAlphKabutoChamberUnusedText: ; unreferenced
 	para "Creo que hacen"
 	line "aparecer a los"
 
-	para "#MON, pero aún"
+	para "Pokémon, pero aún"
 	line "no está claro…"
 	done
 
@@ -229,7 +229,7 @@ RuinsOfAlphKabutoChamberWallPatternLeftText:
 	done
 
 RuinsOfAlphKabutoChamberUnownText: ; unreferenced
-	text "¡Es texto UNOWN!"
+	text "¡Es texto Unown!"
 	done
 
 RuinsOfAlphKabutoChamberWallPatternRightText:
@@ -245,12 +245,12 @@ RuinsOfAlphKabutoChamberWallHoleText:
 
 RuinsOfAlphKabutoChamberAncientReplicaText:
 	text "Es una réplica"
-	line "de un #MON"
+	line "de un Pokémon"
 	cont "antiguo."
 	done
 
 RuinsOfAlphKabutoChamberDescriptionText:
-	text "Un #MON que se"
+	text "Un Pokémon que se"
 	line "oculta en el mar."
 
 	para "Con sus ojos"

@@ -31,41 +31,45 @@ BluesHouseSign:
 	jumptext BluesHouseSignText
 
 PalletTownTeacherText:
-	text "I'm raising #-"
-	line "MON too."
+	text "Yo también entreno"
+	line "Pokémon. Son"
 
-	para "They serve as my"
-	line "private guards."
+	para "mis guardaespaldas"
+	line "personales."
 	done
 
 PalletTownFisherText:
-	text "Technology is"
-	line "incredible!"
+	text "¡La tecnología es"
+	line "increíble!"
 
-	para "You can now trade"
-	line "#MON across"
-	cont "time like e-mail."
+	para "Ahora puedes"
+	line "cambiar Pokémon"
+
+	para "con el pasado,"
+	line "como un e-mail."
 	done
 
 PalletTownSignText:
-	text "PALLET TOWN"
+	text "PUEBLO PALETA"
 
-	para "A Tranquil Setting"
-	line "of Peace & Purity"
-	done
-
-RedsHouseSignText:
-	text "RED'S HOUSE"
-	done
-
-OaksLabSignText:
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	para "Un tranquilo lugar"
+	line "de paz y pureza"
 	done
 
 BluesHouseSignText:
-	text "BLUE'S HOUSE"
+	text "Casa de Azul"
 	done
+
+RedsHouseSignText:
+	text "Casa de Rojo"
+	done
+
+OaksLabSignText:
+	text "Laboratorio de"
+	line "Investigación"
+	cont "Pokémon de Oak"
+	done
+
 
 PalletTown_MapEvents:
 	db 0, 0 ; filler

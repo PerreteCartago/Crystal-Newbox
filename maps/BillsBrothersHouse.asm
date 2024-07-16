@@ -14,15 +14,19 @@ BillsBrothersHouseYoungsterScript:
 	jumptextfaceplayer BillsBrothersHouseYoungsterText
 
 BillsBrotherText:
-	text "My grandpa is at "
-	line "my brother BILL's"
-	cont "on CERULEAN CAPE."
+	text "Mi abuelo está en"
+	line "casa de mi hermano"
+
+	para "Bill, en Cabo"
+	line "Celeste."
 	done
 
 BillsBrothersHouseYoungsterText:
-	text "I saw these weird,"
-	line "slow #MON on"
-	cont "CYCLING ROAD."
+	text "He visto a unos"
+	line "Pokémon lentos y"
+
+	para "raros en el Camino"
+	line "de Bicis."
 	done
 
 BillsBrothersHouse_MapEvents:

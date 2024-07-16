@@ -172,7 +172,7 @@ HikerBaileySeenText:
 	text "De acuerdo. ¡Te"
 	line "enseñaré el poder"
 
-	para "de los #MON"
+	para "de los Pokémon"
 	line "de montaña!"
 	done
 
@@ -185,13 +185,13 @@ HikerBaileyAfterBattleText:
 	text "Se acabó, pero no"
 	line "me importa."
 
-	para "Los MONTAÑEROS"
+	para "Los montañeros"
 	line "somos así."
 	done
 
 CamperTedSeenText:
 	text "¡Yo también"
-	line "entreno #MON!"
+	line "entreno Pokémon!"
 
 	para "¿Quieres luchar"
 	line "contra mí?"
@@ -211,7 +211,7 @@ CamperTedAfterBattleText:
 
 PicnickerErin1SeenText:
 	text "¡Yo también"
-	line "entreno #MON!"
+	line "entreno Pokémon!"
 
 	para "¿Quieres luchar"
 	line "contra mí?"
@@ -223,9 +223,9 @@ PicnickerErin1BeatenText:
 
 PicnickerErinAfterBattleText:
 	text "He estado en"
-	line "muchos GIMNASIOS,"
+	line "muchos Gimnasios,"
 
-	para "pero el de TRIGAL"
+	para "pero el de Trigal"
 	line "es mi favorito."
 
 	para "¡Está lleno de"
@@ -248,8 +248,8 @@ PicnickerErin2BeatenText:
 	done
 
 Route46SignText:
-	text "RUTA 46"
-	line "CAMINO MONTAÑA"
+	text "Ruta 46"
+	line "Camino Montaña"
 	done
 
 Route46_MapEvents:

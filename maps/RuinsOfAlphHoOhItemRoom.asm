@@ -27,7 +27,7 @@ RuinsOfAlphHoOhItemRoomAncientReplica:
 RuinsOfAlphHoOhItemRoomAncientReplicaText:
 	text "Es una réplica de"
 	line "un antiguo"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 RuinsOfAlphHoOhItemRoom_MapEvents:

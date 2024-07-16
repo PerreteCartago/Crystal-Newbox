@@ -26,7 +26,7 @@ CherrygroveEvolutionSpeechHouseBookshelf:
 
 CherrygroveEvolutionSpeechHouseYoungsterText:
 	text "Luchando, los"
-	line "#MON ganan"
+	line "Pokémon ganan"
 
 	para "experiencia y se"
 	line "transforman."

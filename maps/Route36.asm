@@ -421,7 +421,7 @@ FloriaText1:
 	line "hacia atrás!"
 
 	para "Debe de tratarse"
-	line "de un #MON."
+	line "de un Pokémon."
 
 	para "¡Apuesto a que"
 	line "le sacarías del"
@@ -493,7 +493,7 @@ UnusedOddTreeText: ; unreferenced
 	cont "to GOLDENROD CITY."
 
 	para "I wanted to go see"
-	line "the huge #MON"
+	line "the huge Pokémon"
 
 	para "CENTER they just"
 	line "opened…"
@@ -518,7 +518,7 @@ Route36LassText_ClearedSudowoodo:
 	cont "dejar rastro."
 
 	para "¡Oh! ¿Ese árbol"
-	line "era un #MON?"
+	line "era un Pokémon?"
 	done
 
 PsychicMarkSeenText:
@@ -543,7 +543,7 @@ SchoolboyAlan1SeenText:
 	line "estudios, estoy"
 
 	para "preparado para"
-	line "cualquier #MON!"
+	line "cualquier Pokémon!"
 	done
 
 SchoolboyAlan1BeatenText:
@@ -561,10 +561,10 @@ SchoolboyAlanBooksText:
 	done
 
 MeetArthurText:
-	text "JOSUÉ: ¿Quién"
+	text "Josué: ¿Quién"
 	line "eres tú?"
 
-	para "Soy JOSUÉ, por"
+	para "Soy Josué, por"
 	line "jueves."
 	done
 
@@ -573,8 +573,8 @@ ArthurGivesGiftText:
 	done
 
 ArthurGaveGiftText:
-	text "JOSUÉ: Debería"
-	line "usarlo un #MON"
+	text "Josué: Debería"
+	line "usarlo un Pokémon"
 
 	para "con habilidades de"
 	line "tipo roca."
@@ -584,7 +584,7 @@ ArthurGaveGiftText:
 	done
 
 ArthurThursdayText:
-	text "JOSUÉ: Soy JOSUÉ,"
+	text "Josué: Soy Josué,"
 	line "por jueves. Soy el"
 
 	para "cuarto de siete"
@@ -592,7 +592,7 @@ ArthurThursdayText:
 	done
 
 ArthurNotThursdayText:
-	text "JOSUÉ: Hoy no es"
+	text "Josué: Hoy no es"
 	line "jueves."
 	cont "¡Qué desilusión!"
 	done
@@ -610,7 +610,7 @@ Route36TrainerTips1Text:
 	text "PISTAS ENTRENADOR"
 
 	para "Las habilidades de"
-	line "los #MON varían"
+	line "los Pokémon varían"
 
 	para "incluso dentro de"
 	line "una misma especie."
@@ -623,7 +623,7 @@ Route36TrainerTips1Text:
 	line "diferencias surgen"
 
 	para "a medida que el"
-	line "#MON crece"
+	line "Pokémon crece"
 	done
 
 Route36TrainerTips2Text:

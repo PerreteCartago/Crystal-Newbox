@@ -36,7 +36,7 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	line "asustado!"
 
 	para "Tenía puestas las"
-	line "GAFAS DE SOL y no"
+	line "Gafas de Sol y no"
 
 	para "me di cuenta de tu"
 	line "presencia."
@@ -47,15 +47,15 @@ DarkCaveBlackthornEntrancePharmacistText1:
 	para "No te preocupes"
 	line "por eso."
 
-	para "Te daré unas GAFAS"
-	line "DE SOL si olvidas"
+	para "Te daré unas Gafas"
+	line "de Sol si olvidas"
 
 	para "que me has visto,"
 	line "¿vale?"
 	done
 
 DarkCaveBlackthornEntrancePharmacistText2:
-	text "Las GAFAS DE SOL"
+	text "Las Gafas de Sol"
 	line "aumentan el poder"
 
 	para "de los movimientos"

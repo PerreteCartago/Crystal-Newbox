@@ -213,10 +213,12 @@ PidgeyEvosAttacks:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
 	db 1, SCRATCH
+	db 4, SCRATCH
 	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 21, WHIRLWIND
+	db 21, TWISTER
 	db 29, WING_ATTACK
 	db 37, AGILITY
 	db 47, MIRROR_MOVE
@@ -231,6 +233,7 @@ PidgeottoEvosAttacks:
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
+	db 23, TWISTER
 	db 33, WING_ATTACK
 	db 43, AGILITY
 	db 55, MIRROR_MOVE
@@ -244,6 +247,7 @@ PidgeotEvosAttacks:
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
+	db 23, TWISTER
 	db 33, WING_ATTACK
 	db 46, AGILITY
 	db 61, MIRROR_MOVE
@@ -2723,11 +2727,15 @@ UmbreonEvosAttacks:
 MurkrowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 11, PURSUIT
-	db 16, HAZE
+	db 5, GUST
+	db 9, PURSUIT
+	db 15, WING_ATTACK
+	db 17, HAZE
+	db 19, FAINT_ATTACK
+	db 25, THIEF
 	db 30, AIR_SLASH
-	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK
+	db 46, HEX
 	db 0 ; no more level-up moves
 
 SlowkingEvosAttacks:

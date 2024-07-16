@@ -64,82 +64,82 @@ DaisyScript:
 	end
 
 DaisyHelloText:
-	text "DAISY: Hi! My kid"
-	line "brother is the GYM"
+	text "Dalia: ¡Hola! Mi"
+	line "hermano es Líder"
 
-	para "LEADER in VIRIDIAN"
-	line "CITY."
+	para "del Gimnasio de"
+	line "Ciudad Verde."
 
-	para "But he goes out"
-	line "of town so often,"
+	para "Pero sale tanto de"
+	line "la ciudad que trae"
 
-	para "it causes problems"
-	line "for the trainers."
+	para "problemas a los"
+	line "entrenadores."
 	done
 
 DaisyOfferGroomingText:
-	text "DAISY: Hi! Good"
-	line "timing. I'm about"
-	cont "to have some tea."
+	text "Dalia: ¡Llegas"
+	line "a tiempo! Iba a"
+	cont "tomar un té."
 
-	para "Would you like to"
-	line "join me?"
+	para "¿Quieres"
+	line "tomarte uno?"
 
-	para "Oh, your #MON"
-	line "are a bit dirty."
+	para "Tus Pokémon están"
+	line "un poco sucios."
 
-	para "Would you like me"
-	line "to groom one?"
+	para "¿Quieres que"
+	line "limpie a uno?"
 	done
 
 DaisyWhichMonText:
-	text "DAISY: Which one"
-	line "should I groom?"
+	text "Dalia: ¿Qué"
+	line "Pokémon limpio?"
 	done
 
 DaisyAlrightText:
-	text "DAISY: OK, I'll"
-	line "get it looking"
-	cont "nice in no time."
+	text "Dalia: Vale, haré"
+	line "que mejore su"
+	cont "aspecto enseguida."
 	done
 
 GroomedMonLooksContentText:
 	text_ram wStringBuffer3
-	text " looks"
-	line "content."
+	text_start
+	line "parece contento."
 	done
 
 DaisyAllDoneText:
-	text "DAISY: There you"
-	line "go! All done."
+	text "Dalia: ¡Ya está!"
+	line "¡Listo!"
 
-	para "See? Doesn't it"
-	line "look nice?"
+	para "¿Qué? ¿Tiene buen"
+	line "aspecto o no?"
 
-	para "It's such a cute"
-	line "#MON."
+	para "¡Qué Pokémon"
+	line "más mono!"
 	done
 
 DaisyAlreadyGroomedText:
-	text "DAISY: I always"
-	line "have tea around"
+	text "Dalia: Siempre"
+	line "tomo té a esta"
 
-	para "this time. Come"
-	line "join me."
+	para "hora. Ven cuando"
+	line "quieras."
 	done
 
 DaisyRefusedText:
-	text "DAISY: You don't"
-	line "want to have one"
+	text "Dalia: ¿No quieres"
+	line "que limpie a un"
 
-	para "groomed? OK, we'll"
-	line "just have tea."
+	para "Pokémon? Vale, tan"
+	line "sólo tomaremos té."
 	done
 
 DaisyCantGroomEggText:
-	text "DAISY: Oh, sorry."
-	line "I honestly can't"
-	cont "groom an EGG."
+	text "Dalia: Lo siento."
+	line "No puedo limpiar"
+	cont "un Huevo."
 	done
 
 BluesHouse_MapEvents:

@@ -28,30 +28,34 @@ GoldenrodDeptStore3FElevatorButton:
 	jumpstd ElevatorButtonScript
 
 GoldenrodDeptStore3FSuperNerdText:
-	text "I, I, I'm really"
-	line "impatient!"
+	text "¡Yo, yo, yo soy"
+	line "muy impaciente!"
 
-	para "I use X SPEED in"
-	line "battle to speed up"
-	cont "my #MON."
+	para "Uso Velocidad X en"
+	line "el combate para"
+
+	para "dar velocidad a mi"
+	line "Pokémon."
 	done
 
 GoldenrodDeptStore3FRockerText:
-	text "Hey! When you bat-"
-	line "tle, do you use X"
-	cont "SPECIAL?"
+	text "¡Eh! ¿Utilizas"
+	line "Especial X cuando"
+	cont "luchas?"
 
-	para "It's awesome. It"
-	line "really jacks up"
-	cont "SPECIAL ATTACK!"
+	para "¡Es increíble!"
+	line "¡Aumenta los"
+
+	para "Ataques"
+	line "Especiales!"
 	done
 
 GoldenrodDeptStore3FDirectoryText:
-	text "For Victory"
-	line "Seekers"
+	text "Para los amantes"
+	line "de la victoria"
 
-	para "3F BATTLE"
-	line "   COLLECTION"
+	para "P2 Artículos"
+	line "   de Combate"
 	done
 
 GoldenrodDeptStore3F_MapEvents:

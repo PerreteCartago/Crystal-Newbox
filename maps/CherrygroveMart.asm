@@ -42,31 +42,31 @@ CherrygroveMartYoungsterScript:
 
 CherrygroveMartCooltrainerMText:
 	text "¡Se han quedado"
-	line "sin # BALL!"
+	line "sin <POKE>ball!"
 
 	para "¿Cuándo"
 	line "conseguirán más?"
 	done
 
 CherrygroveMartCooltrainerMText_PokeBallsInStock:
-	text "¡Tengo # BALL"
+	text "¡Tengo <POKE>ball"
 	line "de reserva! ¡Puedo"
-	cont "atrapar #MON!"
+	cont "atrapar Pokémon!"
 	done
 
 CherrygroveMartYoungsterText:
 	text "Cuando iba por la"
-	line "hierba, un #MON"
+	line "hierba, un Pokémon"
 
 	para "bicho envenenó a"
-	line "mis #MON."
+	line "mis Pokémon."
 
 	para "Yo seguí andando,"
-	line "pero mi #MON"
+	line "pero mi Pokémon"
 	cont "se debilitó."
 
 	para "Deberías llevar un"
-	line "ANTÍDOTO contigo."
+	line "Antídoto contigo."
 	done
 
 CherrygroveMart_MapEvents:

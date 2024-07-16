@@ -30,7 +30,7 @@ Route32RuinsOfAlphGateOfficerText:
 
 Route32RuinsOfAlphGatePokefanMText:
 	text "¿Estás estudiando"
-	line "las RUINAS?"
+	line "las Ruinas?"
 
 	para "Podrías dedicarte"
 	line "a la ciencia."

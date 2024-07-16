@@ -244,212 +244,214 @@ AzaleaTownPlayerLeavesKurtsHouseMovement:
 	step_end
 
 AzaleaTownRivalBeforeText:
-	text "…Tell me some-"
-	line "thing."
+	text "Dime una cosa…"
 
-	para "Is it true that"
-	line "TEAM ROCKET has"
-	cont "returned?"
+	para "¿Es cierto que el"
+	line "Team Rocket ha"
+	cont "vuelto?"
 
-	para "What? You beat"
-	line "them? Hah! Quit"
-	cont "lying."
+	para "¿Qué? ¿Los has"
+	line "derrotado? ¡Anda!"
 
-	para "You're not joking?"
-	line "Then let's see how"
-	cont "good you are."
+	para "¡No me mientas!"
+	line "¿Bromeas?"
+
+	para "Pues a ver qué tal"
+	line "eres."
 	done
 
 AzaleaTownRivalWinText:
-	text "… Humph! Useless"
-	line "#MON!"
+	text "¡Vaya!"
+	line "¡Inútiles Pokémon!"
 
-	para "Listen, you. You"
-	line "only won because"
+	para "¡Escúchame! ¡Has"
+	line "ganado porque mis"
 
-	para "my #MON were"
-	line "weak."
+	para "Pokémon eran"
+	line "débiles!"
 	done
 
 AzaleaTownRivalAfterText:
-	text "I hate the weak."
+	text "Odio a los"
+	line "débiles."
 
-	para "#MON, trainers."
-	line "It doesn't matter"
-	cont "who or what."
+	para "Ya sean Pokémon"
+	line "o entrenadores. Da"
+	cont "igual quién o qué."
 
-	para "I'm going to be"
-	line "strong and wipe"
-	cont "out the weak."
+	para "Seré fuerte"
+	line "y acabaré con los"
+	cont "enclenques."
 
-	para "That goes for TEAM"
-	line "ROCKET too."
+	para "Eso también va por"
+	line "el Team Rocket."
 
-	para "They act big and"
-	line "tough in a group."
+	para "Son fuertes cuando"
+	line "están en grupo,"
 
-	para "But get them"
-	line "alone, and they're"
-	cont "weak."
+	para "pero si están"
+	line "solos, son unos"
+	cont "cobardes."
 
-	para "I hate them all."
+	para "¡Cuánto les odio!"
 
-	para "You stay out of my"
-	line "way. A weakling"
+	para "¡Fuera de mi"
+	line "vista! ¡Eres tan"
 
-	para "like you is only a"
-	line "distraction."
+	para "insignificante"
+	line "como el resto!"
 	done
 
 AzaleaTownRivalLossText:
-	text "…Humph! I knew"
-	line "you were lying."
+	text "¡Ja! Sabía que"
+	line "mentías."
 	done
 
 AzaleaTownRocket1Text:
-	text "It's unsafe to go"
-	line "in there, so I'm"
-	cont "standing guard."
+	text "Entrar ahí es muy"
+	line "peligroso, por eso"
+	cont "estoy de guardia."
 
-	para "Aren't I a good"
-	line "Samaritan?"
+	para "¿A que soy un"
+	line "buen samaritano?"
 	done
 
 AzaleaTownRocket2Text:
-	text "Do you know about"
-	line "SLOWPOKETAIL? I"
-	cont "heard it's tasty!"
+	text "¿Sabes algo sobre"
+	line "las Colaslowpoke?"
 
-	para "Aren't you glad I"
-	line "told you that?"
+	para "¡Dicen que son muy"
+	line "sabrosas!"
+
+	para "¿Te gusta saberlo?"
 	done
 
 AzaleaTownGrampsTextBefore:
-	text "The SLOWPOKE have"
-	line "disappeared from"
-	cont "town…"
+	text "Los Slowpoke han"
+	line "desaparecido del"
+	cont "pueblo…"
 
-	para "I heard their"
-	line "TAILS are being"
-	cont "sold somewhere."
+	para "Dicen que venden"
+	line "sus colas en algún"
+	cont "lugar."
 	done
 
 AzaleaTownGrampsTextAfter:
-	text "The SLOWPOKE have"
-	line "returned."
+	text "Los Slowpoke han"
+	line "vuelto."
 
-	para "Knowing them, they"
-	line "could've just been"
+	para "Conociéndolos,"
+	line "quizá han estado"
 
-	para "goofing off some-"
-	line "where."
+	para "remoloneando en"
+	line "algún lugar."
 	done
 
 AzaleaTownTeacherText:
-	text "Did you come to"
-	line "get KURT to make"
-	cont "some BALLS?"
+	text "¿Viste a César"
+	line "para que te diera"
+	cont "algunas ball?"
 
-	para "A lot of people do"
-	line "just that."
+	para "Muchas personas"
+	line "lo hacen."
 	done
 
 AzaleaTownYoungsterText:
-	text "Cut through AZALEA"
-	line "and you'll be in"
-	cont "ILEX FOREST."
+	text "Ataja por Pueblo"
+	line "Azalea y llegarás"
+	cont "al Encinar."
 
-	para "But these skinny"
-	line "trees make it"
+	para "Pero estos"
+	line "arbolitos te"
+	cont "impiden pasar."
 
-	para "impossible to get"
-	line "through."
-
-	para "The CHARCOAL MAN's"
-	line "#MON can CUT"
-	cont "down trees."
+	para "Los Pokémon del"
+	line "Carbonero pueden"
+	cont "Cortar árboles."
 	done
 
 AzaleaTownSlowpokeText1:
-	text "SLOWPOKE: …"
+	text "Slowpoke: …"
 
 	para "<……> <……> <……>"
 	done
 
 AzaleaTownSlowpokeText2:
-	text "<……> <……>Yawn?"
+	text "(Bostezo)<……>"
 	done
 
 WoosterText:
-	text "WOOSTER: Gugyoo…"
+	text "Wooster: ¡Wooost…!"
 	done
 
 AzaleaTownKurtText1:
-	text "ILEX FOREST is"
-	line "restless!"
+	text "¡El Encinar está"
+	line "inquieto!"
 
-	para "What is going on?"
+	para "¿Qué está pasando?"
 	done
 
 AzaleaTownKurtText2:
-	text "<PLAYER>, here's"
-	line "your GS BALL back!"
+	text "¡<PLAYER>, aquí"
+	line "tienes tu GS BALL!"
 	done
 
 AzaleaTownKurtText3:
-	text "Could you go see"
-	line "why ILEX FOREST is"
-	cont "so restless?"
+	text "¿Puedes ir a ver"
+	line "por qué el Encinar"
+	cont "está tan inquieto?"
 	done
 
 AzaleaTownSignText:
-	text "AZALEA TOWN"
-	line "Where People and"
+	text "Pueblo Azalea"
+	line "Donde la gente y"
 
-	para "#MON Live in"
-	line "Happy Harmony"
+	para "los Pokémon viven"
+	line "en feliz armonía"
 	done
 
 KurtsHouseSignText:
-	text "KURT'S HOUSE"
+	text "Casa de César"
 	done
 
 AzaleaGymSignText:
-	text "AZALEA TOWN"
-	line "#MON GYM"
-	cont "LEADER: BUGSY"
+	text "Líder del Gimnasio"
+	line "Pokémon de Pueblo"
+	cont "Azalea: Pegaso"
 
-	para "The Walking"
-	line "Bug #MON"
-	cont "Encyclopedia"
+	para "El elegante"
+	line "maestro de los"
+	cont "Pokémon voladores"
 	done
 
 SlowpokeWellSignText:
-	text "SLOWPOKE WELL"
+	text "Pozo Slowpoke"
 
-	para "Also known as the"
-	line "RAINMAKER WELL."
+	para "Conocido también"
+	line "como Pozo Lluvia."
 
-	para "Locals believe"
-	line "that a SLOWPOKE's"
-	cont "yawn summons rain."
+	para "Los nativos creen"
+	line "que el bostezo de"
 
-	para "Records show that"
-	line "a SLOWPOKE's yawn"
+	para "Slowpoke invoca la"
+	line "lluvia."
 
-	para "ended a drought"
-	line "400 years ago."
+	para "Hace 400 años, un"
+	line "bostezo de"
+
+	para "Slowpoke acabó"
+	line "con una sequía"
 	done
 
 CharcoalKilnSignText:
-	text "CHARCOAL KILN"
+	text "Casa del Carbonero"
 	done
 
 AzaleaTownIlexForestSignText:
-	text "ILEX FOREST"
+	text "El Encinar"
 
-	para "Enter through the"
-	line "gate."
+	para "Entra por la"
+	line "puerta"
 	done
 
 AzaleaTown_MapEvents:
@@ -460,7 +462,7 @@ AzaleaTown_MapEvents:
 	warp_event 21, 13, CHARCOAL_KILN, 1
 	warp_event 21,  5, AZALEA_MART, 2
 	warp_event  9,  5, KURTS_HOUSE, 1
-	warp_event 10, 15, AZALEA_GYM, 1
+	warp_event 10, 15, VIOLET_GYM, 1
 	warp_event 31,  7, SLOWPOKE_WELL_B1F, 1
 	warp_event  2, 10, ILEX_FOREST_AZALEA_GATE, 3
 	warp_event  2, 11, ILEX_FOREST_AZALEA_GATE, 4
@@ -491,6 +493,6 @@ AzaleaTown_MapEvents:
 	object_event 29,  9, SPRITE_SLOWPOKE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownSlowpokeScript, EVENT_AZALEA_TOWN_SLOWPOKES
 	object_event 15, 15, SPRITE_SLOWPOKE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownSlowpokeScript, EVENT_AZALEA_TOWN_SLOWPOKES
 	object_event  8,  2, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WhiteApricornTree, -1
-	object_event 11, 10, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_AZALEA_TOWN
+	object_event 11, 10, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_AZALEA_TOWN
 	object_event 10, 16, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownRocket2Script, EVENT_SLOWPOKE_WELL_ROCKETS
 	object_event  6,  5, SPRITE_KURT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AzaleaTownKurtScript, EVENT_AZALEA_TOWN_KURT

@@ -27,17 +27,17 @@ Route30BerryHouseBookshelf:
 	jumpstd MagazineBookshelfScript
 
 Route30BerrySpeechHouseMonEatBerriesText:
-	text "Los #MON comen"
+	text "Los Pokémon comen"
 	line "Bayas."
 
-	para "Mi #MON se curó"
+	para "Mi Pokémon se curó"
 	line "comiendo una Baya."
 
 	para "¡Te daré una!"
 	done
 
 Route30BerrySpeechHouseCheckTreesText:
-	text "Busca BAYAS en los"
+	text "Busca bayas en los"
 	line "árboles."
 
 	para "Son muy fáciles de"

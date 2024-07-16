@@ -119,179 +119,182 @@ PokemonFanClubBraggingSign:
 	jumptext PokemonFanClubBraggingSignText
 
 PokemonFanClubChairmanDidYouVisitToHearAboutMyMonText:
-	text "I'm the CHAIRMAN"
-	line "of the #MON FAN"
-	cont "CLUB."
+	text "Soy el Presidente"
+	line "del Club de Fans"
+	cont "de Pokémon."
 
-	para "I've raised over"
-	line "150 #MON."
+	para "He curado a más de"
+	line "150 Pokémon."
 
-	para "I'm very fussy"
-	line "when it comes to"
-	cont "#MON."
+	para "Soy muy exigente"
+	line "cuando se trata de"
+	cont "Pokémon."
 
-	para "Did you visit just"
-	line "to hear about my"
-	cont "#MON?"
+	para "¿Has venido para"
+	line "saber de mis"
+	cont "Pokémon?"
 	done
 
 PokemonFanClubChairmanRapidashText:
-	text "Good!"
-	line "Then listen up!"
+	text "¡Muy bien!"
+	line "¡Pues escucha!"
 
-	para "So… my favorite"
-	line "RAPIDASH…"
+	para "Mi… preferido"
+	line "es Rapidash…"
 
-	para "It… cute… lovely…"
-	line "smart… unbearably…"
-	cont "plus… amazing… oh…"
-	cont "you think so?…"
-	cont "Too much… wild…"
-	cont "beautiful… kindly…"
-	cont "love it!"
+	para "Es… gracioso…"
+	line "cariñoso… veloz"
+	cont "e increíble…"
+	cont "¿No crees…? Es"
+	cont "sorprendente…"
+	cont "simpático…"
+	cont "¡Y lo quiero!"
 
-	para "Hug it… when…"
-	line "sleeping… warm and"
-	cont "cuddly… Oh, and…"
-	cont "spectacular…"
-	cont "ravishing… simply"
-	cont "divine…"
-	cont "Oops! Look at the"
-	cont "time! I've kept"
-	cont "you too long!"
+	para "Si lo abrazas…"
+	line "cuando duerme…"
+	cont "es tan cálido…"
+	cont "y mimoso… Es"
+	cont "espectacular…"
+	cont "encantador…"
+	cont "¡Uuups! ¡Mira qué"
+	cont "hora es! ¡Hablo"
+	cont "demasiado!"
 	done
 
 PokemonFanClubChairmanIWantYouToHaveThisText:
-	text "Thanks for hearing"
-	line "me out. I want you"
-	cont "to have this!"
+	text "¡Gracias por"
+	line "escucharme!"
+	cont "¡Toma esto!"
 	done
 
 PokemonFanClubChairmanItsARareCandyText:
-	text "It's a RARE CANDY"
-	line "that makes #MON"
-	cont "stronger."
+	text "Es un Carameloraro"
+	line "que fortalece a"
+	cont "los Pokémon."
 
-	para "I prefer making my"
-	line "#MON stronger"
+	para "Prefiero que mis"
+	line "Pokémon luchen"
 
-	para "by battling, so"
-	line "you can have it."
+	para "para fortalecerse."
+	line "¡Así que toma!"
 	done
 
 PokemonFanClubChairmanMoreTalesToTellText:
-	text "Hello, <PLAY_G>!"
+	text "¡Hola, <PLAY_G>!"
 
-	para "Did you come see"
-	line "me about my #-"
-	cont "MON again?"
+	para "¿Viniste a verme"
+	line "de nuevo por mis"
+	cont "Pokémon?"
 
-	para "No? Oh… I had more"
-	line "tales to tell…"
+	para "¿No? Oh… Tengo"
+	line "más historias que"
+	cont "contar…"
 	done
 
 PokemonFanClubChairmanHowDisappointingText:
-	text "How disappointing…"
+	text "¡Qué pena…!"
 
-	para "Come back if you"
-	line "want to listen."
+	para "¡Vuelve cuando"
+	line "quieras!"
 	done
 
 PokemonFanClubReceptionistText:
-	text "Our CHAIRMAN is"
-	line "very vocal when it"
-	cont "comes to #MON…"
+	text "Al Presidente le"
+	line "encanta hablar"
+
+	para "cuando se trata de"
+	line "Pokémon…"
 	done
 
 PokemonFanClubClefairyGuyClefairyIsSoAdorableText:
-	text "I love the way"
-	line "CLEFAIRY waggles"
+	text "Me encanta el modo"
+	line "en que Clefairy"
 
-	para "its finger when"
-	line "it's trying to use"
+	para "mueve el dedo para"
+	line "usar Metrónomo."
 
-	para "METRONOME."
-	line "It's so adorable!"
+	para "¡Es tan adorable!"
 	done
 
 PokemonFanClubClefairyGuyMakingDoWithADollIFoundText:
-	text "I love CLEFAIRY,"
-	line "but I could never"
+	text "Me gusta Clefairy,"
+	line "pero jamás podría"
 
-	para "catch one. So I'm"
-	line "making do with a"
+	para "atrapar uno."
+	line "Por eso me"
 
-	para "# DOLL that I"
-	line "found."
+	para "conformo con este"
+	line "<POKE>Muñeco"
+	cont "que he encontrado."
 	done
 
 PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
-	text "Oh, I see now. The"
-	line "girl who lost this"
+	text "¡Ah, entiendo! La"
+	line "niña que perdió el"
 
-	para "# DOLL is sad…"
+	para "<POKE>Muñeco está"
+	line "triste…"
 
-	para "OK. Could you take"
-	line "this # DOLL"
+	para "Vale. ¿Podrías"
+	line "devolverle este"
 
-	para "back to that poor"
-	line "little girl?"
+	para "<POKE>Muñeco a"
+	line "esa pobre niña?"
 
-	para "I'll befriend a"
-	line "real CLEFAIRY on"
+	para "Un día me haré"
+	line "amigo de un"
 
-	para "my own one day."
-	line "No worries!"
+	para "Clefairy real."
+	line "¡No te preocupes!"
 	done
 
 PokemonFanClubPlayerReceivedDollText:
-	text "<PLAYER> received"
-	line "# DOLL."
+	text "<PLAYER> recibió"
+	line "el <POKE>Muñeco."
 	done
 
 PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
-	text "You watch. I'm"
-	line "going to get a"
+	text "¡Ya verás! Voy a"
+	line "hacerme amigo de"
 
-	para "real CLEFAIRY as"
-	line "my friend."
+	para "un auténtico"
+	line "Clefairy."
 	done
 
 PokemonFanClubClefairyGuyPackIsJammedFullText:
-	text "Your PACK is"
-	line "jammed full."
+	text "Tu Mochila está"
+	line "repleta."
 	done
 
 PokemonFanClubTeacherText:
-	text "Look at my darling"
-	line "BAYLEEF!"
+	text "¡Mira mi precioso"
+	line "Bayleef!"
 
-	para "The leaf on its"
-	line "head is so cute!"
+	para "¡Lleva una hoja"
+	line "tan mona!"
 	done
 
 PokemonFanClubClefairyDollText:
-	text "It's a CLEFAIRY!"
-	line "Huh?"
+	text "¡Es un Clefairy!"
+	line "¿Verdad?"
 
-	para "Oh, right. It's a"
-	line "CLEFAIRY #"
-	cont "DOLL."
+	para "¡No! Es un <POKE>"
+	line "Muñeco Clefairy."
 	done
 
 PokemonFanClubBayleefText:
-	text "BAYLEEF: Li liif!"
+	text "Bayleef: ¡Liliif!"
 	done
 
 PokemonFanClubListenSignText:
-	text "Let's all listen"
-	line "politely to other"
-	cont "trainers."
+	text "Escuchemos"
+	line "atentamente a"
+	cont "los entrenadores."
 	done
 
 PokemonFanClubBraggingSignText:
-	text "If someone brags,"
-	line "brag right back!"
+	text "Si alguno alardea,"
+	line "hazlo tú también."
 	done
 
 PokemonFanClub_MapEvents:

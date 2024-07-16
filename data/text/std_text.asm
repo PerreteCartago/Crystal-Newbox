@@ -1,61 +1,61 @@
 NurseMornText:
 NurseDayText:
 	text "¡Bienvenido a"
-	line "nuestro CENTRO"
-	cont "#MON!"
+	line "nuestro Centro"
+	cont "Pokémon!"
 	done
 
 NurseNiteText:
 	text "¡Buenas noches!"
 	line "Bienvenido a"
 
-	para "nuestro CENTRO"
-	line "#MON."
+	para "nuestro Centro"
+	line "Pokémon."
 	done
 
 PokeComNurseMornText:
 	text "¡Buenas!"
 
-	para "Éste es el CENTRO"
-	line "de COMUNICACIONES"
+	para "Éste es el Centro"
+	line "de Comunicaciones"
 
-	para "#MON o"
-	line "CENTRO #COM."
+	para "Pokémon o"
+	line "Centro <POKE>com."
 	done
 
 PokeComNurseDayText:
 	text "¡Hola!"
 
-	para "Éste es el CENTRO"
-	line "de COMUNICACIONES"
+	para "Éste es el Centro"
+	line "de Comunicaciones"
 
-	para "#MON o"
-	line "CENTRO #COM."
+	para "Pokémon o"
+	line "Centro <POKE>com."
 	done
 
 PokeComNurseNiteText:
 	text "Te veo trabajando"
 	line "hasta tarde…"
 
-	para "Éste es el CENTRO"
-	line "de COMUNICACIONES"
+	para "Éste es el Centro"
+	line "de Comunicaciones"
 
-	para "#MON o"
-	line "CENTRO #COM."
+	para "Pokémon o"
+	line "Centro <POKE>com."
 	done
 
 NurseAskHealText:
 	text "¿Quieres curar a"
-	line "tus #MON?"
+	line "tus Pokémon?"
 	done
 
 NurseTakePokemonText:
 	text "Muy bien, déjame"
-	line "tus #MON."
+	line "tus Pokémon."
 	done
 
 NurseReturnPokemonText:
-	text "Tus #MON están"
+	text "Tus Pokémon están"
 	line "en plena forma."
 	done
 
@@ -70,13 +70,13 @@ NurseGoodbyeText:
 	done
 
 NursePokerusText:
-	text "Tus #MON"
+	text "Tus Pokémon"
 	line "tienen minúsculas"
 
 	para "formas de vida"
 	line "unidas a ellos."
 
-	para "Tus #MON están"
+	para "Tus Pokémon están"
 	line "sanos y parecen"
 	cont "contentos."
 
@@ -84,17 +84,17 @@ NursePokerusText:
 	line "darte más"
 
 	para "información en un"
-	line "CENTRO #MON."
+	line "Centro Pokémon."
 	done
 
 PokeComNursePokerusText:
-	text "Tus #MON"
+	text "Tus Pokémon"
 	line "tienen minúsculas"
 
 	para "formas de vida"
 	line "unidas a ellos."
 
-	para "Tus #MON están"
+	para "Tus Pokémon están"
 	line "sanos y parecen"
 	cont "contentos."
 
@@ -113,267 +113,269 @@ DifficultBookshelfText:
 PictureBookshelfText:
 	text "¡Una colección de"
 	line "libros ilustrados"
-	cont "de #MON!"
+	cont "de Pokémon!"
 	done
 
 MagazineBookshelfText:
-	text "#MON magazines…"
-	line "#MON PAL,"
+	text "Revistas Pokémon…"
+	line "Televisor Pokémon,"
 
-	para "#MON HANDBOOK,"
-	line "#MON GRAPH…"
+	para "Manual Pokémon,"
+	line "Gráfica Pokémon…"
 	done
 
 TeamRocketOathText:
-	text "TEAM ROCKET OATH"
+	text "Votos Team Rocket"
 
-	para "Steal #MON for"
-	line "profit!"
+	para "Robar Pokémon para"
+	line "enriquecernos."
 
-	para "Exploit #MON"
-	line "for profit!"
+	para "Explotarlos para"
+	line "enriquecernos."
 
-	para "All #MON exist"
-	line "for the glory of"
-	cont "TEAM ROCKET!"
+	para "¡Todo Pokémon"
+	line "existe para gloria"
+	cont "del Team Rocket!"
 	done
 
 IncenseBurnerText:
-	text "What is this?"
+	text "¿Qué es esto?"
 
-	para "Oh, it's an"
-	line "incense burner!"
+	para "¡Oh! ¡Es un"
+	line "pebetero!"
 	done
 
 MerchandiseShelfText:
-	text "Lots of #MON"
-	line "merchandise!"
+	text "¡Cantidad de"
+	line "artículos Pokémon!"
 	done
 
 LookTownMapText:
-	text "It's the TOWN MAP."
+	text "Mapa del Pueblo."
 	done
 
 WindowText:
-	text "My reflection!"
-	line "Lookin' good!"
+	text "¡Mi reflejo!"
+	line "¡Qué guay!"
 	done
 
 TVText:
-	text "It's a TV."
+	text "Es una TV."
 	done
 
 HomepageText:
-	text "#MON JOURNAL"
-	line "HOME PAGE…"
+	text "Página de Inicio"
+	line "Revista Pokémon."
 
-	para "It hasn't been"
-	line "updated…"
+	para "No ha sido"
+	line "actualizada…"
 	done
 
 ; not used
-	text "#MON RADIO!"
+	text "¡Radio Pokémon!"
 
-	para "Call in with your"
-	line "requests now!"
+	para "¡Llámanos con"
+	line "tus peticiones!"
 	done
 
 TrashCanText:
-	text "There's nothing in"
-	line "here…"
+	text "Aquí dentro no"
+	line "hay nada…"
 	done
 
 ; not used
-	text "A #MON may be"
-	line "able to move this."
+	text "Un Pokémon"
+	line "podría moverla."
 	done
 
 ; not used
-	text "Maybe a #MON"
-	line "can break this."
+	text "Un Pokémon"
+	line "podría romperla."
 	done
 
 PokecenterSignText:
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "Cura a tus Pokémon"
+	line "Centro Pokémon"
 	done
 
 MartSignText:
-	text "For All Your"
-	line "#MON Needs"
+	text "Todo lo necesario"
+	line "para tus Pokémon"
 
-	para "#MON MART"
+	para "Tienda Pokémon"
 	done
 
 ContestResults_ReadyToJudgeText:
-	text "We will now judge"
-	line "the #MON you've"
-	cont "caught."
+	text "Vamos a evaluar"
+	line "a tus Pokémon."
 
 	para "<……>"
 	line "<……>"
 
-	para "We have chosen the"
-	line "winners!"
+	para "¡Hemos elegido a"
+	line "los ganadores!"
 
-	para "Are you ready for"
-	line "this?"
+	para "Aquí van…"
 	done
 
 ContestResults_PlayerWonAPrizeText:
-	text "<PLAYER>, the No.@"
+	text "<PLAYER> gana el"
+	line "premio n.°@"
 	text_ram wStringBuffer3
-	text_start
-	line "finisher, wins"
-	cont "@"
+	text ":"
+	cont "¡una @"
 	text_ram wStringBuffer4
 	text "!"
 	done
 
 ReceivedItemText:
-	text "<PLAYER> received"
+	text "<PLAYER> recibió"
 	line "@"
 	text_ram wStringBuffer4
 	text "."
 	done
 
 ContestResults_JoinUsNextTimeText:
-	text "Please join us for"
-	line "the next Contest!"
+	text "¡Participa en el"
+	line "próximo concurso!"
 	done
 
 ContestResults_ConsolationPrizeText:
-	text "Everyone else gets"
-	line "a BERRY as a con-"
-	cont "solation prize!"
+	text "¡Todos los demás"
+	line "reciben una baya"
+	cont "como consolación!"
 	done
 
 ContestResults_DidNotWinText:
-	text "We hope you do"
-	line "better next time."
+	text "A ver si mejoras"
+	line "la próxima vez."
 	done
 
 ContestResults_ReturnPartyText:
-	text "We'll return the"
-	line "#MON we kept"
+	text "Aquí tienes los"
+	line "Pokémon que"
 
-	para "for you."
-	line "Here you go!"
+	para "te estábamos"
+	line "cuidando."
 	done
 
 ContestResults_PartyFullText:
-	text "Your party's full,"
-	line "so the #MON was"
+	text "¡Equipo completo!"
+	line "El Pokémon fue"
 
-	para "sent to your BOX"
-	line "in BILL's PC."
+	para "enviado a tu caja"
+	line "en el PC de BILL."
 	done
 
 GymStatue_CityGymText:
+	text "GIMNASIO Pokémon"
+	line "DE @"
 	text_ram wStringBuffer3
-	text_start
-	line "#MON GYM"
-	done
+	text_end
+
+	text_end ; unused
 
 GymStatue_WinningTrainersText:
-	text "LEADER: @"
+	text "LÍDER: @"
 	text_ram wStringBuffer4
 	text_start
-	para "WINNING TRAINERS:"
+
+	para "Ganadores:"
 	line "<PLAYER>"
 	done
 
 CoinVendor_WelcomeText:
-	text "Welcome to the"
-	line "GAME CORNER."
+	text "Bienvenidos al"
+	line "Casino."
 	done
 
 CoinVendor_NoCoinCaseText:
-	text "Do you need game"
-	line "coins?"
+	text "¿Necesitas fichas"
+	line "de juego?"
 
-	para "Oh, you don't have"
-	line "a COIN CASE for"
-	cont "your coins."
+	para "¡Oh! No tienes"
+	line "un monedero"
+	cont "para tus fichas."
 	done
 
 CoinVendor_IntroText:
-	text "Do you need some"
-	line "game coins?"
+	text "¿Necesitas fichas"
+	line "de juego?"
 
-	para "It costs ¥1000 for"
-	line "50 coins. Do you"
-	cont "want some?"
+	para "50 fichas por"
+	line "1000¥. ¿Quieres"
+	cont "comprar?"
 	done
 
 CoinVendor_Buy50CoinsText:
-	text "Thank you!"
-	line "Here are 50 coins."
+	text "¡Gracias! Aquí"
+	line "tienes 50 fichas."
 	done
 
 CoinVendor_Buy500CoinsText:
-	text "Thank you! Here"
-	line "are 500 coins."
+	text "¡Gracias! Aquí"
+	line "tienes 500 fichas."
 	done
 
 CoinVendor_NotEnoughMoneyText:
-	text "You don't have"
-	line "enough money."
+	text "No tienes"
+	line "bastante dinero."
 	done
 
 CoinVendor_CoinCaseFullText:
-	text "Whoops! Your COIN"
-	line "CASE is full."
+	text "¡Uups! Tu monedero"
+	line "está lleno."
 	done
 
 CoinVendor_CancelText:
-	text "No coins for you?"
-	line "Come again!"
+	text "¿No quieres"
+	line "fichas? Vuelve"
+	cont "cuando quieras."
 	done
 
 BugContestPrizeNoRoomText:
-	text "Oh? Your PACK is"
-	line "full."
+	text "¡Oh! Tu mochila"
+	line "está llena."
 
-	para "We'll keep this"
-	line "for you today, so"
+	para "Te guardaremos"
+	line "esto. Vuelve"
 
-	para "come back when you"
-	line "make room for it."
+	para "cuando tengas"
+	line "sitio."
 	done
 
 HappinessText3:
-	text "Wow! You and your"
-	line "#MON are really"
-	cont "close!"
+	text "¡Uauu! ¡Tú y tus"
+	line "Pokémon estáis"
+	cont "muy unidos!"
 	done
 
 HappinessText2:
-	text "#MON get more"
-	line "friendly if you"
+	text "Cuanto más tiempo"
+	line "pases con los"
 
-	para "spend time with"
-	line "them."
+	para "Pokémon, más"
+	line "te querrán."
 	done
 
 HappinessText1:
-	text "You haven't tamed"
-	line "your #MON."
+	text "No has domesticado"
+	line "a tu Pokémon."
 
-	para "If you aren't"
-	line "nice, it'll pout."
+	para "Si no eres amable,"
+	line "éste se enfadará."
 	done
 
 RegisteredNumber1Text:
-	text "<PLAYER> registered"
-	line "@"
+	text "<PLAYER> grabó el"
+	line "n.° de @"
 	text_ram wStringBuffer3
-	text "'s number."
+	text "."
 	done
 
 RegisteredNumber2Text:
-	text "<PLAYER> registered"
-	line "@"
+	text "<PLAYER> grabó el"
+	line "n.° de @"
 	text_ram wStringBuffer3
-	text "'s number."
+	text "."
 	done

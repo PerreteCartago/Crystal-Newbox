@@ -83,8 +83,8 @@ SandstormHitsText:
 	prompt
 
 PerishCountText:
-	text "El CONTADOR DE"
-	line "MUERTE de"
+	text "El Contador de"
+	line "Muerte de"
 
 	para "<USER>"
 	line "está en @"
@@ -124,7 +124,7 @@ BattleText_MonsLightScreenFell:
 	text "¡Pantalla luz de"
 	line "@"
 	text_ram wStringBuffer1
-	text " #MON"
+	text " Pokémon"
 	cont "ha caído!"
 	prompt
 
@@ -132,7 +132,7 @@ BattleText_MonsReflectFaded:
 	text "¡REFLEJO de"
 	line "@"
 	text_ram wStringBuffer1
-	text " #MON"
+	text " Pokémon"
 	cont "ha terminado!"
 	prompt
 
@@ -182,7 +182,6 @@ GotMoneyForWinningText:
 	text "¡<PLAYER> ganó"
 	line "@"
 	text_decimal wBattleReward, 3, 6
-	text_start
 	text "¥!"
 	prompt
 
@@ -200,23 +199,23 @@ SentSomeToMomText:
 	text "¡<PLAYER> ganó"
 	line "@"
 	text_decimal wBattleReward, 3, 6
-	text_start
-	cont "Envió algo a MAMÁ."
+	text "¥!"
+	cont "Envió algo a Mamá."
 	prompt
 
 SentHalfToMomText:
 	text "Envió la mitad"
-	line "a MAMÁ."
+	line "a Mamá."
 	prompt
 
 SentAllToMomText:
-	text "Envió todo a MAMÁ."
+	text "Envió todo a Mamá."
 	prompt
 
 UnusedRivalLossText: ; unreferenced
 	text "<RIVAL>: ¡Debería"
 	line "haber elegido a"
-	cont "tu #MON!"
+	cont "tu Pokémon!"
 	prompt
 
 BattleText_MonFainted:
@@ -228,7 +227,7 @@ BattleText_MonFainted:
 
 BattleText_UseNextMon:
 	text "¿Usas el siguiente"
-	line "#MON?"
+	line "Pokémon?"
 	done
 
 UnusedRivalWinText: ; unreferenced
@@ -236,7 +235,7 @@ UnusedRivalWinText: ; unreferenced
 	line "¡Creo que he"
 
 	para "elegido un buen"
-	line "#MON!"
+	line "Pokémon!"
 	prompt
 
 LostAgainstText:
@@ -253,7 +252,7 @@ BattleText_EnemyIsAboutToUseWillPlayerChangeMon:
 
 	para "<PLAYER>,"
 	line "¿quieres cambiar"
-	cont "de #MON?"
+	cont "de Pokémon?"
 	done
 
 BattleText_EnemySentOut:
@@ -269,7 +268,7 @@ BattleText_TheresNoWillToBattle:
 	prompt
 
 BattleText_AnEGGCantBattle:
-	text "¡Los HUEVOS no"
+	text "¡Los huevos no"
 	line "pueden luchar!"
 	prompt
 
@@ -361,7 +360,7 @@ BattleText_MonHasNoMovesLeft:
 
 BattleText_TargetsEncoreEnded:
 	text "¡Finalizó"
-	line "OTRA VEZ de"
+	line "Otra Vez de"
 	cont "<TARGET>!"
 	prompt
 
@@ -819,12 +818,12 @@ EnemyHitTimesText:
 MistText:
 	text "¡<USER>"
 	line "está cubierto"
-	cont "por una NEBLINA!"
+	cont "por una neblina!"
 	prompt
 
 ProtectedByMistText:
 	line "está protegido"
-	cont "por la NEBLINA."
+	cont "por la neblina."
 	prompt
 
 GettingPumpedText:
@@ -840,22 +839,22 @@ RecoilText:
 
 MadeSubstituteText:
 	text "¡<USER>"
-	line "creó un SUSTITUTO!"
+	line "creó un sustituto!"
 	prompt
 
 HasSubstituteText:
 	text "¡<USER>"
-	line "tiene SUSTITUTO!"
+	line "tiene sustituto!"
 	prompt
 
 TooWeakSubText:
 	text "¡Demasiado débil"
 	line "para crear un"
-	cont "SUSTITUTO!"
+	cont "sustituto!"
 	prompt
 
 SubTookDamageText:
-	text "¡El SUSTITUTO"
+	text "¡El sustituto"
 	line "recibe el daño en"
 
 	para "lugar de"
@@ -864,7 +863,7 @@ SubTookDamageText:
 
 SubFadedText:
 	text "¡Cayó el"
-	line "SUSTITUTO de"
+	line "sustituto de"
 	cont "<TARGET>!"
 	prompt
 
@@ -914,20 +913,20 @@ EliminatedStatsText:
 
 TransformedText:
 	text "¡<USER>"
-	line "se TRANSFORMÓ en"
+	line "se transformó en"
 	cont "@"
 	text_ram wStringBuffer1
 	text "!"
 	prompt
 
 LightScreenEffectText:
-	text "¡Subió DEFENSA"
-	line "ESPECIAL de"
+	text "¡Subió Defensa"
+	line "Especial de"
 	cont "<USER>!"
 	prompt
 
 ReflectEffectText:
-	text "¡Subió DEFENSA de"
+	text "¡Subió Defensa de"
 	line "<USER>!"
 	prompt
 
@@ -992,7 +991,7 @@ ProtectedByText:
 	prompt
 
 MirrorMoveFailedText:
-	text "¡El MOV. ESPEJO"
+	text "¡El Mov. Espejo"
 	next "ha fallado!"
 	prompt
 
@@ -1012,7 +1011,7 @@ CantEscapeNowText:
 StartedNightmareText:
 	text "¡<TARGET>"
 	line "empezó a tener"
-	cont "una PESADILLA!"
+	cont "una Pesadilla!"
 	prompt
 
 WasDefrostedText:
@@ -1024,25 +1023,25 @@ PutACurseText:
 	text "¡<USER>"
 	line "reduce sus PS y"
 
-	para "MALDICE a"
+	para "maldice a"
 	line "<TARGET>!"
 	prompt
 
 ProtectedItselfText:
 	text "¡<USER>"
-	line "se ha PROTEGIDO!"
+	line "se ha protegido!"
 	prompt
 
 ProtectingItselfText:
 	text "¡<TARGET>"
 	line "se está"
-	cont "PROTEGIENDO!"
+	cont "protegiendo!"
 	done
 
 SpikesText:
 	text "¡<TARGET>"
 	line "está rodeado"
-	cont "de PÚAS!"
+	cont "de púas!"
 	prompt
 
 IdentifiedText:
@@ -1052,14 +1051,14 @@ IdentifiedText:
 	prompt
 
 StartPerishText:
-	text "¡Ambos #MON se"
+	text "¡Ambos Pokémon se"
 	line "debilitarán en"
 	cont "3 turnos!"
 	prompt
 
 SandstormBrewedText:
 	text "¡Se acerca una"
-	line "TORMENTA de ARENA!"
+	line "Tormenta de Arena!"
 	prompt
 
 BracedItselfText:
@@ -1081,7 +1080,7 @@ CoveredByVeilText:
 SafeguardProtectText:
 	text "¡<TARGET>"
 	line "está protegido por"
-	cont "el VELO SAGRADO!"
+	cont "el Velo Sagrado!"
 	prompt
 
 MagnitudeText:
@@ -1098,12 +1097,12 @@ ReleasedByText:
 
 ShedLeechSeedText:
 	text "¡<USER>"
-	line "rompió DRENADORAS!"
+	line "rompió drenadoras!"
 	prompt
 
 BlewSpikesText:
 	text "¡<USER>"
-	line "rompió PÚAS!"
+	line "rompió púas!"
 	prompt
 
 DownpourText:
@@ -1120,7 +1119,7 @@ BellyDrumText:
 	text "¡<USER>"
 	line "redujo sus PS y"
 
-	para "mejoró su ATAQUE!"
+	para "mejoró su ataque!"
 	prompt
 
 CopiedStatsText:

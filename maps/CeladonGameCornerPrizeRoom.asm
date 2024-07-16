@@ -116,10 +116,10 @@ CeladonPrizeRoom_TMMenuHeader:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "TM32    {d:CELADONGAMECORNERPRIZEROOM_TM32_COINS}@"
-	db "TM29    {d:CELADONGAMECORNERPRIZEROOM_TM29_COINS}@"
-	db "TM15    {d:CELADONGAMECORNERPRIZEROOM_TM15_COINS}@"
-	db "CANCEL@"
+	db "MT32    {d:CELADONGAMECORNERPRIZEROOM_TM32_COINS}@"
+	db "MT29    {d:CELADONGAMECORNERPRIZEROOM_TM29_COINS}@"
+	db "MT15    {d:CELADONGAMECORNERPRIZEROOM_TM15_COINS}@"
+	db "Salir@"
 
 CeladonGameCornerPrizeRoomPokemonVendor:
 	faceplayer
@@ -202,76 +202,70 @@ CeladonGameCornerPrizeRoomPokemonVendor:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "PIKACHU    {d:CELADONGAMECORNERPRIZEROOM_PIKACHU_COINS}@"
-	db "PORYGON    {d:CELADONGAMECORNERPRIZEROOM_PORYGON_COINS}@"
-	db "LARVITAR   {d:CELADONGAMECORNERPRIZEROOM_LARVITAR_COINS}@"
-	db "CANCEL@"
+	db "Pikachu    {d:CELADONGAMECORNERPRIZEROOM_PIKACHU_COINS}@"
+	db "Porygon    {d:CELADONGAMECORNERPRIZEROOM_PORYGON_COINS}@"
+	db "Larvitar   {d:CELADONGAMECORNERPRIZEROOM_LARVITAR_COINS}@"
+	db "Salir@"
 
 CeladonGameCornerPrizeRoomGentlemanText:
-	text "I wanted PORYGON,"
-	line "but I was short by"
-	cont "100 coins…"
+	text "Quería un Porygon,"
+	line "pero sólo tenía"
+	cont "100 fichas…"
 	done
 
 CeladonGameCornerPrizeRoomPharmacistText:
-if DEF(_CRYSTAL_AU)
-	text "I don't want to"
-	line "lose my coins."
-	done
-else
-	text "Whew…"
+	text "¡Uauu…!"
 
-	para "I've got to stay"
-	line "calm and cool…"
+	para "Debo permanecer"
+	line "tranquilo…"
 
-	para "I can't lose my"
-	line "cool, or I'll lose"
-	cont "all my money…"
+	para "No puedo perder la"
+	line "cabeza o lo echaré"
+	cont "todo a perder…"
 	done
-endc
 
 CeladonPrizeRoom_PrizeVendorIntroText:
-	text "Welcome!"
+	text "¡Hola!"
+	line "¡Aquí te cambiamos"
 
-	para "We exchange your"
-	line "coins for fabulous"
-	cont "prizes!"
+	para "tus fichas por"
+	line "premios fabulosos!"
 	done
 
 CeladonPrizeRoom_AskWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "¿Qué premio"
+	line "quieres?"
 	done
 
 CeladonPrizeRoom_ConfirmPurchaseText:
-	text "OK, so you wanted"
-	line "a @"
+	text "De acuerdo,"
+	line "¿@"
 	text_ram wStringBuffer3
 	text "?"
 	done
 
 CeladonPrizeRoom_HereYouGoText:
-	text "Here you go!"
+	text "¡Aquí tienes!"
 	done
 
 CeladonPrizeRoom_NotEnoughCoinsText:
-	text "You don't have"
-	line "enough coins."
+	text "No tienes"
+	line "bastantes fichas."
 	done
 
 CeladonPrizeRoom_NotEnoughRoomText:
-	text "You have no room"
-	line "for it."
+	text "No tienes espacio"
+	line "suficiente."
 	done
 
 CeladonPrizeRoom_ComeAgainText:
-	text "Oh. Please come"
-	line "back with coins!"
+	text "¡Vuelve cuando"
+	line "tengas fichas!"
 	done
 
 CeladonPrizeRoom_NoCoinCaseText:
-	text "Oh? You don't have"
-	line "a COIN CASE."
+	text "¡Vaya! No tienes"
+	line "Monedero."
 	done
 
 CeladonGameCornerPrizeRoom_MapEvents:

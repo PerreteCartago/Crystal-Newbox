@@ -52,7 +52,7 @@ Route32Pokecenter1FFishingGuruText_Question:
 	cont "¿Y tú?"
 
 	para "¿Quieres una de"
-	line "mis CAÑAS?"
+	line "mis cañas?"
 	done
 
 Route32Pokecenter1FFishingGuruText_Yes:
@@ -69,7 +69,7 @@ Route32Pokecenter1FFishingGuruText_GiveOldRod:
 	line "sea el mar o un"
 
 	para "río, utiliza tu"
-	line "CAÑA."
+	line "caña."
 	done
 
 Route32Pokecenter1FFishingGuruText_No:
@@ -84,11 +84,11 @@ Route32Pokecenter1FFishingGuruText_After:
 
 Route32Pokecenter1FCooltrainerFText:
 	text "¿Cómo equipar a"
-	line "mi #MON?"
+	line "mi Pokémon?"
 
 	para "Quizá con un"
 	line "objeto que aumente"
-	cont "su ATAQUE…"
+	cont "su Ataque…"
 	done
 
 Route32Pokecenter1F_MapEvents:

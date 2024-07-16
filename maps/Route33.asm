@@ -45,29 +45,17 @@ TrainerHikerAnthony:
 .Rematch:
 	scall .RematchStd
 	winlosstext HikerAnthony2BeatenText, 0
-	readmem wAnthonyFightCount
-	ifequal 4, .Fight4
-	ifequal 3, .Fight3
-	ifequal 2, .Fight2
-	ifequal 1, .Fight1
-	ifequal 0, .LoadFight0
-.Fight4:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
 	iftrue .LoadFight4
-.Fight3:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
-.Fight2:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight2
-.Fight1:
 	checkflag ENGINE_FLYPOINT_OLIVINE
 	iftrue .LoadFight1
-.LoadFight0:
 	loadtrainer HIKER, ANTHONY2
 	startbattle
 	reloadmapafterbattle
-	loadmem wAnthonyFightCount, 1
 	clearflag ENGINE_ANTHONY_READY_FOR_REMATCH
 	end
 
@@ -75,7 +63,6 @@ TrainerHikerAnthony:
 	loadtrainer HIKER, ANTHONY1
 	startbattle
 	reloadmapafterbattle
-	loadmem wAnthonyFightCount, 2
 	clearflag ENGINE_ANTHONY_READY_FOR_REMATCH
 	end
 
@@ -83,7 +70,6 @@ TrainerHikerAnthony:
 	loadtrainer HIKER, ANTHONY3
 	startbattle
 	reloadmapafterbattle
-	loadmem wAnthonyFightCount, 3
 	clearflag ENGINE_ANTHONY_READY_FOR_REMATCH
 	end
 
@@ -91,7 +77,6 @@ TrainerHikerAnthony:
 	loadtrainer HIKER, ANTHONY4
 	startbattle
 	reloadmapafterbattle
-	loadmem wAnthonyFightCount, 4
 	clearflag ENGINE_ANTHONY_READY_FOR_REMATCH
 	end
 
@@ -143,53 +128,49 @@ Route33FruitTree:
 	fruittree FRUITTREE_ROUTE_33
 
 HikerAnthony2SeenText:
-	text "I came through the"
-	line "tunnel, but I"
-
-	para "still have plenty"
-	line "of energy left."
+	text "Crucé el túnel y"
+	line "todavía me queda"
+	cont "mucha energía."
 	done
 
 HikerAnthony2BeatenText:
-	text "Whoa! You've got"
-	line "more zip than me!"
+	text "¡Guau! ¡Tienes más"
+	line "fuerza que yo!"
 	done
 
 HikerAnthony2AfterText:
-	text "We HIKERS are at"
-	line "our best in the"
-	cont "mountains."
+	text "Los montañeros"
+	line "somos felices en"
+	cont "las montañas."
 	done
 
 HikerAnthonyDunsparceText:
-	text "Hey, did you get a"
-	line "DUNSPARCE?"
+	text "¿Conseguiste un"
+	line "Dunsparce?"
 
-	para "I caught one too."
+	para "Yo también."
 
-	para "Take a look at it"
-	line "in the light. It's"
-	cont "got a funny face!"
+	para "Míralo a la luz."
+	line "¡Pone una cara muy"
+	cont "divertida!"
 	done
 
 Route33LassText:
-	text "Pant, pant…"
+	text "Uff, uff…"
 
-	para "I finally got"
-	line "through that cave."
+	para "Por fin he atrave-"
+	line "sado esa cueva."
 
-	para "It was much bigger"
-	line "than I'd expected."
+	para "Era más grande de"
+	line "lo que esperaba."
 
-	para "I got too tired to"
-	line "explore the whole"
-
-	para "thing, so I came"
-	line "outside."
+	para "Estaba tan cansada"
+	line "de explorarla, que"
+	cont "he salido fuera."
 	done
 
 Route33SignText:
-	text "ROUTE 33"
+	text "Ruta 33"
 	done
 
 Route33_MapEvents:

@@ -27,7 +27,7 @@ RuinsOfAlphAerodactylItemRoomAncientReplica:
 RuinsOfAlphAerodactylItemRoomAncientReplicaText:
 	text "Es una réplica"
 	line "de un antiguo"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 RuinsOfAlphAerodactylItemRoom_MapEvents:

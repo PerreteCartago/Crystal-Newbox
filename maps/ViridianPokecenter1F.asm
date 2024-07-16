@@ -35,38 +35,48 @@ ViridianPokecenter1FBugCatcherScript:
 	jumptextfaceplayer ViridianPokecenter1FBugCatcherText
 
 ViridianPokecenter1FCooltrainerMText:
-	text "Where in the world"
-	line "is VIRIDIAN's GYM"
+	text "¿Dónde estará el"
+	line "Líder del Gimnasio"
 
-	para "LEADER? I wanted"
-	line "to challenge him."
+	para "de Ciudad Verde?"
+	line "Quería desafiarle."
 	done
 
 ViridianPokecenter1FCooltrainerMText_BlueReturned:
-	text "There are no GYM"
-	line "TRAINERS at the"
-	cont "VIRIDIAN GYM."
+	text "No hay ningún"
+	line "Entrenador en el"
 
-	para "The LEADER claims"
-	line "his policy is to"
+	para "Gimnasio de Ciudad"
+	line "Verde."
 
-	para "win without having"
-	line "any underlings."
+	para "El Líder dice que"
+	line "su política es"
+
+	para "ganar sin tener"
+	line "subordinados."
 	done
 
 ViridianPokecenter1FCooltrainerFText:
-	text "I heard that the"
-	line "GYM in CINNABAR is"
-	cont "gone."
+	text "Dicen que el"
+	line "Gimnasio de Isla"
 
-	para "I wonder what be-"
-	line "came of BLAINE,"
-	cont "the GYM LEADER."
+	para "Canela está"
+	line "destruido."
+
+	para "Me pregunto qué"
+	line "habrá sido de"
+	cont "Blaine, su Líder."
 	done
 
 ViridianPokecenter1FBugCatcherText:
-	text "My dream is to be-"
-	line "come a GYM LEADER."
+	text "Mi sueño es ser"
+	line "Líder de Gimnasio."
+	
+	para "pero en Kanto no hay"
+	line "Gimnasios Bicho."
+
+	para "Quizá me mude a"
+	line "Johto."
 	done
 
 ViridianPokecenter1F_MapEvents:

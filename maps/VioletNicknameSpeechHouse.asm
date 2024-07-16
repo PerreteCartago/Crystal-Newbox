@@ -30,16 +30,16 @@ VioletNicknameSpeechHouseTeacherText:
 
 	para "Quiero decir,"
 	line "como motes para"
-	cont "sus #MON."
+	cont "sus Pokémon."
 	done
 
 VioletNicknameSpeechHouseLassText:
 	text "¡A mi Pidgey le"
-	line "llamo FRESITA!"
+	line "llamo Fresita!"
 	done
 
 VioletNicknameSpeechHouseBirdText:
-	text "STRAWBERRY: Pijji!"
+	text "Fresita: Pijji!"
 	done
 
 VioletNicknameSpeechHouse_MapEvents:

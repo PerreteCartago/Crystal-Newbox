@@ -21,27 +21,28 @@ BlackthornMartBlackBeltScript:
 	jumptextfaceplayer BlackthornMartBlackBeltText
 
 BlackthornMartCooltrainerMText:
-	text "You can't buy MAX"
-	line "REVIVE, but it"
+	text "No puedes comprar"
+	line "Máx. Revivir, pero"
 
-	para "fully restores a"
-	line "fainted #MON."
+	para "éste reanima"
+	line "a un Pokémon"
+	cont "debilitado."
 
-	para "Beware--it won't"
-	line "restore PP, the"
+	para "Atención: No"
+	line "restaura los PP o"
 
-	para "POWER POINTS"
-	line "needed for moves."
+	para "Puntos de Poder de"
+	line "los movimientos."
 	done
 
 BlackthornMartBlackBeltText:
-	text "MAX REPEL keeps"
-	line "weak #MON away"
-	cont "from you."
+	text "Máx. Repel evita"
+	line "que se acerquen"
+	cont "Pokémon débiles."
 
-	para "It's the longest"
-	line "lasting of the"
-	cont "REPEL sprays."
+	para "Es el repelente"
+	line "más duradero"
+	cont "de todos."
 	done
 
 BlackthornMart_MapEvents:

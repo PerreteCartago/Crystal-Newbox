@@ -38,41 +38,41 @@ GoldenrodDeptStore4FElevatorButton:
 	jumpstd ElevatorButtonScript
 
 GoldenrodDeptStore4FCooltrainerMText:
-	text "Hey. I love strong"
-	line "#MON."
+	text "Me encantan los"
+	line "Pokémon fuertes."
 
-	para "I feed them PRO-"
-	line "TEIN to crank up"
-	cont "their ATTACK."
+	para "Les doy Proteínas"
+	line "para mejorar su"
+	cont "Ataque."
 	done
 
 GoldenrodDeptStore4FBugCatcherText:
-	text "IRON adds to your"
-	line "#MON's DEFENSE."
+	text "El Hierro mejora"
+	line "su Defensa."
 	done
 
 GoldenrodDeptStore4FGameboyKidText:
-	text "Some #MON"
-	line "evolve only by"
+	text "Algunos Pokémon"
+	line "sólo evolucionan"
 
-	para "being traded via a"
-	line "Game Link cable."
+	para "al intercambiarlos"
+	line "con el Game Link."
 
-	para "I know of four:"
-	line "MACHOKE, KADABRA,"
+	para "Por ejemplo:"
+	line "Machoke, Kadabra,"
 
-	para "HAUNTER and, um,"
-	line "GRAVELER."
+	para "Haunter y"
+	line "Graveler."
 
-	para "I heard there are"
-	line "others too."
+	para "Dicen que hay"
+	line "otros también."
 	done
 
 GoldenrodDeptStore4FDirectoryText:
-	text "Let Us Pump Up"
-	line "Your #MON!"
+	text "¡Fortalecemos a"
+	line "tus Pokémon!"
 
-	para "4F MEDICINE BOX"
+	para "P3 Botiquín"
 	done
 
 GoldenrodDeptStore4F_MapEvents:

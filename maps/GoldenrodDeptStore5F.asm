@@ -139,80 +139,84 @@ GoldenrodDeptStore5FElevatorButton:
 	jumpstd ElevatorButtonScript
 
 GoldenrodDeptStore5FReceptionistOhYourMonDotDotDotText:
-	text "Hello. Oh, your"
-	line "#MON…"
+	text "Hola. ¡Oh, tu"
+	line "Pokémon…!"
 	done
 
 GoldenrodDeptStore5FReceptionistThisMoveShouldBePerfectText:
-	text "It's very attached"
-	line "to you."
+	text "Está muy unido a"
+	line "ti."
 
-	para "This move should"
-	line "be perfect for a"
-	cont "pair like you."
+	para "Este movimiento"
+	line "sería perfecto"
+	cont "para vosotros."
 	done
 
 GoldenrodDeptStore5FReceptionistItsAdorableText:
-	text "It's adorable!"
+	text "¡Es adorable!"
 
-	para "You should teach"
-	line "it good TM moves."
+	para "Enséñale unas"
+	line "potentes MT."
 	done
 
 GoldenrodDeptStore5FReceptionistItLooksEvilHowAboutThisTMText:
-	text "It looks evil. How"
-	line "about this TM for"
-	cont "it?"
+	text "Parece malvado."
+	line "¿Qué te parece"
+	cont "esta MT para él?"
 	done
 
 GoldenrodDeptStore5FReceptionistThereAreTMsPerfectForMonText:
-	text "There are sure to"
-	line "be TMs that are"
+	text "Seguro que hay MT"
+	line "que serían"
 
-	para "just perfect for"
-	line "your #MON."
+	para "perfectas para tus"
+	line "Pokémon."
 	done
 
 GoldenrodDeptStore5FCarrieMysteryGiftExplanationText:
-	text "MYSTERY GIFT."
+	text "Regalo Misterioso."
 
-	para "With just a"
-	line "little beep, you"
-	cont "get a gift."
+	para "Con un simple bip,"
+	line "recibes un regalo."
+
+	para "Búscalo en el"
+	line "menú."
 	done
 
 GoldenrodDeptStore5FCarrieMysteryGiftRequiresGBCText:
-	text "The MYSTERY GIFT"
-	line "option requires a"
+	text "La opción Regalo"
+	line "Misterioso es para"
 	cont "Game Boy Color."
 	done
 
 GoldenrodDeptStore5FLassText:
-	text "On Sundays, a lady"
-	line "comes to check out"
-	cont "#MON."
+	text "Los domingos, una"
+	line "señora viene a ver"
+	cont "Pokémon."
 
-	para "She even gives"
-	line "away TMs!"
+	para "¡Incluso regala"
+	line "MT!"
 	done
 
 GoldenrodDeptStore5FPokefanMText:
-	text "You can't rename a"
-	line "#MON you get in"
-	cont "a trade."
+	text "No puedes cambiar"
+	line "el nombre de un"
 
-	para "The name is a re-"
-	line "flection of the"
+	para "Pokémon que has"
+	line "intercambiado."
 
-	para "original trainer's"
-	line "feelings for it."
+	para "El nombre refleja"
+	line "los sentimientos"
+
+	para "del entrenador"
+	line "original."
 	done
 
 GoldenrodDeptStore5FDirectoryText:
-	text "Customize Your"
-	line "#MON"
+	text "Personaliza a tus"
+	line "Pokémon"
 
-	para "5F TM CORNER"
+	para "P4 Tienda de MT"
 	done
 
 GoldenrodDeptStore5F_MapEvents:

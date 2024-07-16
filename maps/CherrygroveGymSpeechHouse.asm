@@ -19,22 +19,22 @@ CherrygroveGymSpeechHouseBookshelf:
 CherrygroveGymSpeechHousePokefanMText:
 	text "¿Quieres saber si"
 	line "vales o no con los"
-	cont "#MON?"
+	cont "Pokémon?"
 
 	para "Pues vete a los"
-	line "GIMNASIOS #MON"
+	line "Gimnasios Pokémon"
 
-	para "de JOHTO y gana"
-	line "muchas MEDALLAS."
+	para "de Johto y gana"
+	line "muchas medallas."
 	done
 
 CherrygroveGymSpeechHouseBugCatcherText:
 	text "¡Cuando sea mayor,"
-	line "voy a ser un LÍDER"
-	cont "de GIMNASIO!"
+	line "voy a ser un Líder"
+	cont "de Gimnasio!"
 
 	para "¡Hago luchar a mis"
-	line "#MON contra los"
+	line "Pokémon contra los"
 
 	para "de mi amigo para"
 	line "fortalecerlos!"

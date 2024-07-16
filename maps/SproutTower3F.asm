@@ -152,9 +152,9 @@ SproutTower3FRivalLeavesElderMovement:
 	step_end
 
 SproutTowerElderLecturesRivalText:
-	text "ANCIANO: Eres muy"
+	text "Anciano: Eres muy"
 	line "hábil entrenando"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "Como te prometí,"
 	line "aquí tienes tu MO."
@@ -163,12 +163,12 @@ SproutTowerElderLecturesRivalText:
 	line "diga que deberías"
 
 	para "tratar mejor a"
-	line "tus #MON."
+	line "tus Pokémon."
 
 	para "Luchas de forma"
 	line "muy violenta."
 
-	para "Los #MON no son"
+	para "Los Pokémon no son"
 	line "armas de guerra."
 	done
 
@@ -178,7 +178,7 @@ SproutTowerRivalOnlyCareAboutStrongText:
 	para "¡Bah!"
 	line "Afirma ser el"
 
-	para "ANCIANO, pero"
+	para "Anciano, pero"
 	line "es muy débil."
 
 	para "Es evidente."
@@ -188,14 +188,14 @@ SproutTowerRivalOnlyCareAboutStrongText:
 
 	para "que hay que ser"
 	line "bueno con los"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "Sólo me interesan"
-	line "los #MON"
+	line "los Pokémon"
 	cont "ganadores."
 
 	para "Paso de los"
-	line "#MON débiles."
+	line "Pokémon débiles."
 	done
 
 SproutTowerRivalUsedEscapeRopeText:
@@ -212,7 +212,7 @@ SageLiSeenText:
 	cont "entrenamiento."
 
 	para "La gente y los"
-	line "#MON evalúan"
+	line "Pokémon evalúan"
 
 	para "sus vínculos para"
 	line "construir juntos"
@@ -223,7 +223,7 @@ SageLiSeenText:
 
 	para "¡Déjame evaluar"
 	line "tus vínculos con"
-	cont "los #MON!"
+	cont "los Pokémon!"
 	done
 
 SageLiBeatenText:
@@ -231,7 +231,7 @@ SageLiBeatenText:
 	done
 
 SageLiTakeThisFlashText:
-	text "Tú y tus #MON"
+	text "Tú y tus Pokémon"
 	line "no deberíais tener"
 
 	para "problemas con este"
@@ -246,8 +246,8 @@ SageLiFlashExplanationText:
 	line "hasta el lugar más"
 	cont "oscuro."
 
-	para "Y, con la MEDALLA"
-	line "de CIUDAD MALVA,"
+	para "Y, con la Medalla"
+	line "de Ciudad Malva,"
 
 	para "podrás usarlo"
 	line "fuera del combate."
@@ -262,7 +262,7 @@ SageLiAfterBattleText:
 SageJinSeenText:
 	text "¡Entreno para"
 	line "saberlo todo"
-	cont "sobre los #MON!"
+	cont "sobre los Pokémon!"
 	done
 
 SageJinBeatenText:
@@ -272,7 +272,7 @@ SageJinBeatenText:
 
 SageJinAfterBattleText:
 	text "Cuánto más fuerte"
-	line "sea el #MON,"
+	line "sea el Pokémon,"
 
 	para "más fuerte será"
 	line "su entrenador."
@@ -281,13 +281,13 @@ SageJinAfterBattleText:
 	line "más fuerte sea el"
 
 	para "entrenador, más"
-	line "fuerte el #MON."
+	line "fuerte el Pokémon."
 	done
 
 SageTroySeenText:
 	text "A ver cuanto"
 	line "confías en tus"
-	cont "#MON."
+	cont "Pokémon."
 	done
 
 SageTroyBeatenText:
@@ -297,11 +297,11 @@ SageTroyBeatenText:
 
 SageTroyAfterBattleText:
 	text "No estás lejos del"
-	line "ANCIANO."
+	line "Anciano."
 	done
 
 SageNealSeenText:
-	text "La MO del ANCIANO"
+	text "La MO del Anciano"
 	line "alumbra hasta lo"
 	cont "más oscuro."
 	done
@@ -323,7 +323,7 @@ SproutTower3FPaintingText:
 	done
 
 SproutTower3FStatueText:
-	text "Una estatua #MON"
+	text "Una estatua Pokémon"
 	line "muy desgastada."
 
 	para "Debería ser verde"

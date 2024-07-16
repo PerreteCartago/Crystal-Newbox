@@ -149,32 +149,32 @@ RuinsOfAlphOutsidePlayerEnterLabMovement:
 
 RuinsOfAlphOutsideScientistText:
 	text "¿Eh? Es una"
-	line "#DEX, ¿verdad?"
+	line "<POKE>dex, ¿verdad?"
 	cont "¿Puedo verla?"
 
 	para "Hay muchos tipos"
-	line "de #MON."
+	line "de Pokémon."
 
 	para "¿Y esto qué es?"
 
 	para "¿Cuál es este"
-	line "#MON?"
+	line "Pokémon?"
 
 	para "Se parece a las"
 	line "raras escrituras"
 
 	para "de las paredes"
-	line "de las RUINAS."
+	line "de las Ruinas."
 
 	para "Si esos dibujos"
-	line "son #MON,"
+	line "son Pokémon,"
 
 	para "debería haber"
 	line "muchos más."
 
 	para "¡Ya sé! Voy a"
 	line "actualizar tu"
-	cont "#DEX. Sígueme."
+	cont "<POKE>dex. Sígueme."
 	done
 
 SuperNerdStanSeenText:
@@ -192,7 +192,7 @@ SuperNerdStanBeatenText:
 	done
 
 SuperNerdStanAfterBattleText:
-	text "Las RUINAS datan"
+	text "Las Ruinas datan"
 	line "de hace unos"
 	cont "1.500 años."
 
@@ -202,7 +202,7 @@ SuperNerdStanAfterBattleText:
 	para "Y tampoco sabemos"
 	line "si las estatuas"
 
-	para "de los #MON"
+	para "de los Pokémon"
 	line "significan algo."
 
 	para "Es un gran"
@@ -224,26 +224,26 @@ PsychicNathanAfterBattleText:
 	done
 
 RuinsOfAlphOutsideMysteryChamberSignText:
-	text "SALA DEL PANEL DE"
-	line "PIEDRA MISTERIOSO"
+	text "Sala del Panel de"
+	line "Piedra Misterioso"
 	done
 
 RuinsOfAlphSignText:
-	text "RUINAS ALFA"
+	text "Ruinas Alfa"
 	line "¡Bienvenidos!"
 	done
 
 RuinsOfAlphResearchCenterSignText:
-	text "C. INVESTIGACIÓN"
-	line "DE LAS RUINAS ALFA"
+	text "C. Investigación"
+	line "de las Ruinas Alfa"
 
 	para "La Autoridad en"
-	line "las RUINAS ALFA"
+	line "las Ruinas Alfa"
 	done
 
 RuinsOfAlphOutsideFisherText1:
 	text "Mientras explorá-"
-	line "bamos las RUINAS,"
+	line "bamos las Ruinas,"
 
 	para "de repente notamos"
 	line "una extraña"
@@ -257,7 +257,7 @@ RuinsOfAlphOutsideFisherText1:
 	done
 
 RuinsOfAlphOutsideFisherText2:
-	text "¡Las RUINAS"
+	text "¡Las Ruinas"
 	line "esconden un gran"
 	cont "secreto!"
 

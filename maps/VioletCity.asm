@@ -179,10 +179,10 @@ VioletCitySpinningEarl_MovementData:
 
 Text_EarlAsksIfYouBeatFalkner:
 	text "¡Hola! ¿Entrenas"
-	line "#MON? ¿Has"
+	line "Pokémon? ¿Has"
 
-	para "ganado al LÍDER"
-	line "del GIMNASIO?"
+	para "ganado al Líder"
+	line "del Gimnasio?"
 	done
 
 Text_VeryNiceIndeed:
@@ -207,7 +207,7 @@ VioletCityLassText:
 	line "Torre Bellsprout"
 	cont "hay fantasmas."
 
-	para "Y que los #MON"
+	para "Y que los Pokémon"
 	line "de tipo normal no"
 
 	para "afectan a los"
@@ -215,7 +215,7 @@ VioletCityLassText:
 	done
 
 VioletCitySuperNerdText:
-	text "¿Entrenas #MON?"
+	text "¿Entrenas Pokémon?"
 
 	para "¡Si ganas a este"
 	line "Líder de Gimnasio,"
@@ -225,8 +225,8 @@ VioletCitySuperNerdText:
 	done
 
 VioletCityGrampsText:
-	text "¡Pegaso, del"
-	line "Gimnasio #MON"
+	text "¡Antón, del"
+	line "Gimnasio Pokémon"
 
 	para "de Ciudad Malva,"
 	line "es magnífico!"
@@ -249,7 +249,7 @@ VioletCityYoungsterText:
 	done
 
 VioletCitySignText:
-	text "CIUDAD MALVA"
+	text "Ciudad Malva"
 
 	para "La ciudad de los"
 	line "aromas nostálgicos"
@@ -257,12 +257,12 @@ VioletCitySignText:
 
 VioletGymSignText:
 	text "Líder del Gimnasio"
-	line "#MON de Ciudad"
-	cont "Malva: Pegaso"
+	line "Pokémon de Ciudad"
+	cont "Malva: Antón"
 
-	para "El elegante"
-	line "maestro de los"
-	cont "#MON voladores"
+	para "La enciclopedia"
+	line "andante de los"
+	cont "Pokémon bicho"
 	done
 
 SproutTowerSignText:
@@ -273,7 +273,7 @@ SproutTowerSignText:
 	done
 
 EarlsPokemonAcademySignText:
-	text "Academia #MON"
+	text "Academia Pokémon"
 	line "De Primo"
 	done
 
@@ -282,7 +282,7 @@ VioletCity_MapEvents:
 
 	def_warp_events
 	warp_event  9, 21, VIOLET_MART, 2
-	warp_event 18, 23, VIOLET_GYM, 1
+	warp_event 18, 23, AZALEA_GYM, 1
 	warp_event 30, 23, EARLS_POKEMON_ACADEMY, 1
 	warp_event  3, 19, VIOLET_NICKNAME_SPEECH_HOUSE, 1
 	warp_event 33, 31, VIOLET_POKECENTER_1F, 1

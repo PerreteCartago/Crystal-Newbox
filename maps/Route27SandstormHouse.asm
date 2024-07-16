@@ -40,56 +40,62 @@ SandstormHouseBookshelf:
 	jumpstd MagazineBookshelfScript
 
 SandstormHouseWomanText1:
-	text "Where are you off"
-	line "to with #MON?"
+	text "¿Adónde vas con"
+	line "los Pokémon?"
 
-	para "#MON LEAGUE?"
+	para "¿A la Liga"
+	line "Pokémon?"
 
-	para "Are your #MON"
-	line "loyal enough for"
-	cont "you to win?"
+	para "¿Son tus Pokémon"
+	line "lo bastante fieles"
 
-	para "Let me see…"
+	para "como para permi-"
+	line "tirte ganar?"
+
+	para "Déjame ver…"
 	done
 
 SandstormHouseWomanLoyalText:
-	text "Ah! Your #MON"
-	line "trusts you very"
-	cont "much."
+	text "¡Ah! Tus Pokémon"
+	line "confían mucho"
+	cont "en ti."
 
-	para "It's nice to see a"
-	line "good trainer."
+	para "Da gusto ver a"
+	line "alguien tan bueno."
 
-	para "Here. A gift for"
-	line "your journey."
+	para "Toma. Un regalo"
+	line "para el viaje."
 	done
 
 SandstormHouseSandstormDescription:
-	text "TM37 happens to be"
-	line "SANDSTORM."
+	text "MT37 contiene"
+	line "Tormenta Arena."
 
-	para "It's a move that"
-	line "inflicts damage on"
-	cont "both battlers."
+	para "Este movimiento"
+	line "daña a ambos"
+	cont "combatientes."
 
-	para "It's for advanced"
-	line "trainers only."
+	para "Es para entrena-"
+	line "dores avanzados."
 
-	para "Use it if you"
-	line "dare. Good luck!"
+	para "Úsala si te"
+	line "atreves. ¡Suerte!"
 	done
 
 SandstormHouseWomanDisloyalText:
-	text "If it doesn't come"
-	line "to trust you some"
+	text "Si no confían más"
+	line "en ti, tendras"
 
-	para "more, it could be"
-	line "tough going."
+	para "problemas para"
+	line "ganar."
 
-	para "Trust is the tie"
-	line "that binds #MON"
-	cont "and trainers."
+	para "La confianza es el"
+	line "vínculo entre los"
+
+	para "Pokémon y sus"
+	line "entrenadores."
 	done
+
 
 Route27SandstormHouse_MapEvents:
 	db 0, 0 ; filler

@@ -5,27 +5,27 @@ _NoPhotoText::
 	done
 
 _EggPhotoText::
-	text "¿Un HUEVO? Mi ta-"
+	text "¿Un huevo? Mi ta-"
 	line "lento vale más"
 	cont "que eso…"
 	done
 
 _NameRaterHelloText::
 	text "¡Hola a todos!"
-	line "Soy el INSPECTOR"
+	line "Soy el Inspector"
 
 	para "de los motes."
 	line "Evalúo los nombres"
-	cont "de los #MON."
+	cont "de los Pokemon."
 
 	para "¿Quieres evaluar"
 	line "el nombre de"
-	cont "algún #MON?"
+	cont "algún Pokemon?"
 	done
 
 _NameRaterWhichMonText::
 	text "¿Qué nombre de"
-	line "#MON debería"
+	line "Pokemon debería"
 	cont "evaluar?"
 	prompt
 
@@ -79,7 +79,7 @@ _NameRaterPerfectNameText::
 
 _NameRaterEggText::
 	text "¡Uauu…! Eso es"
-	line "un HUEVO."
+	line "un huevo."
 	done
 
 _NameRaterSameNameText::
@@ -94,13 +94,14 @@ _NameRaterSameNameText::
 
 _NameRaterNamedText::
 	text "Muy bien. Ahora"
-	line "este #MON se"
+	line "este Pokemon se"
 	cont "llama @"
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 Text_Gained::
+	text "¡@"
 	text_ram wStringBuffer1
 	text " ganó@"
 	text_end
@@ -186,7 +187,7 @@ _ContainedMoveText::
 	line "@"
 	text_ram wStringBuffer2
 	text_start
-	cont "a un #MON?"
+	cont "a un Pokemon?"
 	done
 
 _TMHMNotCompatibleText::
@@ -230,8 +231,8 @@ _MysteryGiftCommErrorText::
 
 _RetrieveMysteryGiftText::
 	text "Debes recoger el"
-	line "REGALO en el"
-	cont "CENTRO #MON."
+	line "regalo en el"
+	cont "Centro Pokemon."
 	prompt
 
 _YourFriendIsNotReadyText::
@@ -241,12 +242,12 @@ _YourFriendIsNotReadyText::
 
 _MysteryGiftFiveADayText::
 	text "Lo siento. Sólo"
-	line "5 REGALOS al día."
+	line "5 regalos al día."
 	prompt
 
 _MysteryGiftOneADayText::
 	text "Lo siento. Sólo un"
-	line "REGALO al día por"
+	line "regalo al día por"
 	cont "persona."
 	prompt
 
@@ -304,7 +305,7 @@ _NameCardLinkCommErrorText::
 
 _BadgeRequiredText::
 	text "Necesitas una"
-	line "nueva MEDALLA."
+	line "nueva medalla."
 	prompt
 
 _CantUseItemText::
@@ -316,16 +317,16 @@ _UseCutText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó CORTE!"
+	line "usó corte!"
 	prompt
 
 _CutNothingText::
 	text "Aquí no hay nada"
-	line "que CORTAR."
+	line "que cortar."
 	prompt
 
 _BlindingFlashText::
-	text "¡Un DESTELLO"
+	text "¡Un destello"
 	line "ilumina la zona!@"
 	text_promptbutton
 	text_end
@@ -336,30 +337,30 @@ _UsedSurfText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó SURF!"
+	line "usó surf!"
 	done
 
 _CantSurfText::
 	text "Aquí no puedes"
-	line "hacer SURF."
+	line "hacer surf."
 	prompt
 
 _AlreadySurfingText::
 	text "Ya estás"
-	line "haciendo SURF."
+	line "haciendo surf."
 	prompt
 
 _AskSurfText::
 	text "El agua está en"
 	line "calma. ¿Quieres"
-	cont "hacer SURF?"
+	cont "hacer surf?"
 	done
 
 _UseWaterfallText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó CASCADA!"
+	line "usó cascada!"
 	done
 
 _HugeWaterfallText::
@@ -369,19 +370,19 @@ _HugeWaterfallText::
 
 _AskWaterfallText::
 	text "¿Quieres usar"
-	line "CASCADA?"
+	line "cascada?"
 	done
 
 _UseDigText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó EXCAVAR!"
+	line "usó excavar!"
 	done
 
 _UseEscapeRopeText::
 	text "<PLAYER>"
-	line "usó CUERDA HUIDA."
+	line "usó cuerda huida."
 	done
 
 _CantUseDigText::
@@ -391,7 +392,7 @@ _CantUseDigText::
 
 _TeleportReturnText::
 	text "Vuelta al último"
-	line "CENTRO #MON."
+	line "Centro Pokemon."
 	done
 
 _CantUseTeleportText::
@@ -400,15 +401,15 @@ _CantUseTeleportText::
 	prompt
 
 _AlreadyUsingStrengthText::
-	text "Ya hay un #MON"
-	line "usando FUERZA."
+	text "Ya hay un Pokemon"
+	line "usando fuerza."
 	prompt
 
 _UseStrengthText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó FUERZA!"
+	line "usó fuerza!"
 	done
 
 _MoveBoulderText::
@@ -418,11 +419,11 @@ _MoveBoulderText::
 	prompt
 
 _AskStrengthText::
-	text "Un #MON podría"
+	text "Un Pokemon podría"
 	line "moverla."
 
 	para "¿Quieres usar"
-	line "FUERZA?"
+	line "fuerza?"
 	done
 
 _BouldersMoveText::
@@ -431,7 +432,7 @@ _BouldersMoveText::
 	done
 
 _BouldersMayMoveText::
-	text "Un #MON podría"
+	text "Un Pokemon podría"
 	line "moverla."
 	done
 
@@ -439,14 +440,14 @@ _UseWhirlpoolText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó TORBELLINO!"
+	line "usó torbellino!"
 	prompt
 
 _MayPassWhirlpoolText::
 	text "¡Un horrible"
 	line "torbellino!"
 
-	para "Un #MON"
+	para "Un Pokemon"
 	line "podría cruzarlo."
 	done
 
@@ -455,14 +456,14 @@ _AskWhirlpoolText::
 	line "en el camino."
 
 	para "¿Quieres usar"
-	line "TORBELLINO?"
+	line "torbellino?"
 	done
 
 _UseHeadbuttText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó GOLPE CABEZA!"
+	line "usó golpe cabeza!"
 	prompt
 
 _HeadbuttNothingText::
@@ -472,21 +473,21 @@ _HeadbuttNothingText::
 _AskHeadbuttText::
 	text "En este árbol"
 	line "podría haber un"
-	cont "#MON."
+	cont "Pokemon."
 
 	para "¿Quieres usar"
-	line "GOLPE CABEZA?"
+	line "golpe cabeza?"
 	done
 
 _UseRockSmashText::
 	text "¡@"
 	text_ram wStringBuffer2
 	text_start
-	line "usó GOLPE ROCA!"
+	line "usó golpe roca!"
 	prompt
 
 _MaySmashText::
-	text "Un #MON"
+	text "Un Pokemon"
 	line "podría romperla."
 	done
 
@@ -495,7 +496,7 @@ _AskRockSmashText::
 	line "romper."
 
 	para "¿Quieres usar el"
-	line "GOLPE ROCA?"
+	line "golpe roca?"
 	done
 
 _RodBiteText::
@@ -535,14 +536,14 @@ _GotOffBikeText::
 
 _AskCutText::
 	text "¡Este árbol se"
-	line "puede CORTAR!"
+	line "puede cortar!"
 
-	para "¿Utilizas CORTE?"
+	para "¿Utilizas corte?"
 	done
 
 _CanCutText::
 	text "¡Este árbol se"
-	line "puede CORTAR!"
+	line "puede cortar!"
 	done
 
 _FoundItemText::
@@ -560,20 +561,20 @@ _CantCarryItemText::
 
 _WhitedOutText::
 	text "¡A <PLAYER> no le"
-	line "quedan #MON!"
+	line "quedan Pokemon!"
 
 	para "¡<PLAYER> perdió"
 	line "el conocimiento!"
 	done
 
 _ItemfinderItemNearbyText::
-	text "El BUSCAOBJETOS"
+	text "El buscaobjetos"
 	line "indica que hay un"
 	cont "objeto cerca."
 	prompt
 
 _ItemfinderNopeText::
-	text "El BUSCAOBJETOS"
+	text "El buscaobjetos"
 	line "no responde."
 	prompt
 
@@ -586,7 +587,7 @@ _PoisonFaintText::
 
 _PoisonWhiteoutText::
 	text "¡A <PLAYER> no le"
-	line "quedan #MON!"
+	line "quedan Pokemon!"
 
 	para "¡<PLAYER> perdió"
 	line "el conocimiento!"
@@ -596,7 +597,7 @@ _UseSweetScentText::
 	text "¡@"
 	text_ram wStringBuffer3
 	text_start
-	line "usó DULCE AROMA!"
+	line "usó Dulce Aroma!"
 	done
 
 _SweetScentNothingText::
@@ -611,13 +612,13 @@ _SquirtbottleNothingText::
 	done
 
 _UseSacredAshText::
-	text "¡Todos los #MON"
+	text "¡Todos los Pokemon"
 	line "de <PLAYER> fueron"
 	cont "curados!"
 	done
 
 _AnEggCantHoldAnItemText::
-	text "Un HUEVO no puede"
+	text "Un huevo no puede"
 	line "llevar un objeto."
 	prompt
 
@@ -648,20 +649,20 @@ _ThrewAwayText::
 	prompt
 
 _OakThisIsntTheTimeText::
-	text "OAK: ¡<PLAYER>!"
+	text "Oak: ¡<PLAYER>!"
 	line "¡Éste no es el"
 	cont "momento de usarlo!"
 	prompt
 
 _YouDontHaveAMonText::
 	text "¡No tienes"
-	line "ningún #MON!"
+	line "ningún Pokemon!"
 	prompt
 
 _RegisteredItemText::
 	text_ram wStringBuffer2
 	text_start
-	line "asig. a SELECT."
+	line "asig. a Select."
 	prompt
 
 _CantRegisterText::
@@ -820,7 +821,7 @@ _BreedEggHatchText::
 	text_ram wStringBuffer1
 	text_start
 	line "salió del"
-	cont "HUEVO!@"
+	cont "huevo!@"
 	sound_caught_mon
 	text_promptbutton
 	text_end
@@ -841,8 +842,8 @@ _LeftWithDayCareLadyText::
 	text_start
 	line "que dejé con la"
 
-	para "ENCARGADA de la"
-	line "GUARDERÍA."
+	para "encargada de la"
+	line "Guardería."
 	done
 
 _LeftWithDayCareManText::
@@ -851,8 +852,8 @@ _LeftWithDayCareManText::
 	text_start
 	line "que dejé con el"
 
-	para "ENCARGADO de la"
-	line "GUARDERÍA."
+	para "encargado de la"
+	line "Guardería."
 	done
 
 _BreedBrimmingWithEnergyText::
@@ -890,22 +891,22 @@ _BreedShowsInterestText::
 
 _EmptyMailboxText::
 	text "Aquí no hay"
-	line "ninguna CARTA."
+	line "ninguna carta."
 	prompt
 
 _MailClearedPutAwayText::
-	text "La CARTA fue"
+	text "La carta fue"
 	line "enviada."
 	prompt
 
 _MailPackFullText::
-	text "¡MOCHILA llena!"
+	text "¡Mochila llena!"
 	prompt
 
 _MailMessageLostText::
 	text "Perderás el"
 	line "mensaje de la"
-	cont "CARTA. ¿Vale?"
+	cont "carta. ¿Vale?"
 	done
 
 _MailAlreadyHoldingItemText::
@@ -914,13 +915,13 @@ _MailAlreadyHoldingItemText::
 	prompt
 
 _MailEggText::
-	text "Un HUEVO no puede"
-	line "llevar CARTAS."
+	text "Un huevo no puede"
+	line "llevar cartas."
 	prompt
 
 _MailMovedFromBoxText::
-	text "La CARTA fue"
-	line "sacada del BUZÓN."
+	text "La carta fue"
+	line "sacada del buzón."
 	prompt
 
 _YesPromptText:: ; unreferenced
@@ -943,7 +944,7 @@ _AnimationTypeText:: ; unreferenced
 	text_end ; unreferenced
 
 _MonNumberText::
-	text "¿NUM de #MON?"
+	text "¿NUM de Pokemon?"
 	done
 
 _WasSentToBillsPCText::
@@ -954,7 +955,7 @@ _WasSentToBillsPCText::
 	prompt
 
 _PCGottaHavePokemonText::
-	text "¡Necesitas #MON"
+	text "¡Necesitas Pokemon"
 	line "a los que llamar!"
 	prompt
 
@@ -964,26 +965,26 @@ _PCWhatText::
 	done
 
 _PCMonHoldingMailText::
-	text "Hay un #MON que"
-	line "lleva una CARTA."
+	text "Hay un Pokemon que"
+	line "lleva una carta."
 
 	para "Por favor, quita"
-	line "la CARTA."
+	line "la carta."
 	prompt
 
 _PCNoSingleMonText::
 	text "¡No tienes ni un"
-	line "solo #MON!"
+	line "solo Pokemon!"
 	prompt
 
 _PCCantDepositLastMonText::
 	text "¡No puedes dejar"
-	line "tu último #MON!"
+	line "tu último Pokemon!"
 	prompt
 
 _PCCantTakeText::
 	text "No puedes recoger"
-	line "más #MON."
+	line "más Pokemon."
 	prompt
 
 _ContestCaughtMonText::
@@ -994,7 +995,7 @@ _ContestCaughtMonText::
 	prompt
 
 _ContestAskSwitchText::
-	text "¿Cambiar #MON?"
+	text "¿Cambiar Pokemon?"
 	done
 
 _ContestAlreadyCaughtText::
@@ -1081,7 +1082,7 @@ _ContestJudging_ThirdPlaceScoreText::
 
 _MagikarpGuruMeasureText::
 	text "Déjame que mida a"
-	line "ese MAGIKARP."
+	line "ese Magikarp."
 
 	para "¡Mmmmm…! Mide"
 	line "@"
@@ -1140,7 +1141,7 @@ _CaughtAskNicknameText::
 _PokecenterPCCantUseText::
 	text "¡Bzzzz! ¡Para usar"
 	line "esto necesitas un"
-	cont "#MON!"
+	cont "Pokemon!"
 	prompt
 
 _PlayersPCTurnOnText::
@@ -1209,11 +1210,11 @@ _PokecenterPCWhoseText::
 
 _PokecenterBillsPCText::
 	text "Accedes al PC de"
-	line "BILL."
+	line "Bill."
 
 	para "Accedes al Sistema"
 	line "de Almacenamiento"
-	cont "de los #MON."
+	cont "de los Pokemon."
 	prompt
 
 _PokecenterPlayersPCText::
@@ -1226,11 +1227,11 @@ _PokecenterPlayersPCText::
 
 _PokecenterOaksPCText::
 	text "Accedes al PC del"
-	line "PROF. OAK."
+	line "Prof. Oak."
 
 	para "Accedes al Sistema"
 	line "de Evaluación de"
-	cont "la #DEX."
+	cont "la <POKE>dex."
 	prompt
 
 _PokecenterPCOaksClosedText::
@@ -1239,35 +1240,35 @@ _PokecenterPCOaksClosedText::
 
 _OakPCText1::
 	text "¿Quieres evaluar"
-	line "tu #DEX?"
+	line "tu <POKE>dex?"
 	done
 
 _OakPCText2::
 	text "Nivel actual de"
-	line "la #DEX:"
+	line "la <POKE>dex:"
 	prompt
 
 _OakPCText3::
 	text "Viste: @"
 	text_ram wStringBuffer3
-	text " #MON"
+	text " Pokemon"
 	line "Tuyos: @"
 	text_ram wStringBuffer4
-	text " #MON"
+	text " Pokemon"
 
 	para "Evaluación del"
-	line "PROF. OAK:"
+	line "Prof. Oak:"
 	done
 
 _OakRating01::
-	text "¡Busca #MON en"
+	text "¡Busca Pokemon en"
 	line "zonas de hierba!"
 	done
 
 _OakRating02::
 	text "Bien. Ya veo que"
 	line "sabes cómo usar"
-	cont "las # BALL."
+	cont "las <POKE>ball."
 	done
 
 _OakRating03::
@@ -1280,33 +1281,33 @@ _OakRating03::
 
 _OakRating04::
 	text "Debes completar la"
-	line "#DEX. Atrapa"
+	line "<POKE>dex. Atrapa"
 
 	para "diferentes tipos"
-	line "de #MON."
+	line "de Pokemon."
 	done
 
 _OakRating05::
 	text "Ya veo que te"
 	line "estás esforzando."
 
-	para "Tu #DEX empieza"
+	para "Tu <POKE>dex empieza"
 	line "a llenarse."
 	done
 
 _OakRating06::
 	text "Para evolucionar,"
-	line "algunos #MON"
+	line "algunos Pokemon"
 
 	para "crecen y otros"
-	line "usan las PIEDRAS."
+	line "usan las piedras."
 	done
 
 _OakRating07::
-	text "¿Tienes una CAÑA?"
+	text "¿Tienes una caña?"
 	line "Puedes atrapar"
 
-	para "algunos #MON"
+	para "algunos Pokemon"
 	line "pescando."
 	done
 
@@ -1319,7 +1320,7 @@ _OakRating08::
 	done
 
 _OakRating09::
-	text "Algunos #MON"
+	text "Algunos Pokemon"
 	line "sólo aparecen a"
 
 	para "ciertas horas del"
@@ -1327,7 +1328,7 @@ _OakRating09::
 	done
 
 _OakRating10::
-	text "Tu #DEX se"
+	text "Tu <POKE>dex se"
 	line "está llenando."
 	cont "¡Sigue así!"
 	done
@@ -1336,13 +1337,13 @@ _OakRating11::
 	text "¡Impresionante!"
 	line "No sólo atrapas"
 
-	para "#MON, también"
+	para "Pokemon, también"
 	line "evolucionan."
 	done
 
 _OakRating12::
 	text "¿Conoces a CÉSAR?"
-	line "Sus # BALL"
+	line "Sus <POKE>ball"
 
 	para "personalizadas son"
 	line "de gran ayuda."
@@ -1350,15 +1351,15 @@ _OakRating12::
 
 _OakRating13::
 	text "¡Uauu! Tienes más"
-	line "#MON que en"
+	line "Pokemon que en"
 
-	para "la #DEX"
+	para "la <POKE>dex"
 	line "anterior."
 	done
 
 _OakRating14::
 	text "¿Estás cambiando"
-	line "tus #MON?"
+	line "tus Pokemon?"
 
 	para "¡Es duro hacerlo"
 	line "en solitario!"
@@ -1366,13 +1367,13 @@ _OakRating14::
 
 _OakRating15::
 	text "¡Uau! ¡Tienes 200!"
-	line "¡Tu #DEX es"
+	line "¡Tu <POKE>dex es"
 	cont "estupenda!"
 	done
 
 _OakRating16::
 	text "¡Tienes tantos"
-	line "#MON! ¡Me"
+	line "Pokemon! ¡Me"
 
 	para "has ayudado mucho"
 	line "en mis estudios!"
@@ -1382,12 +1383,12 @@ _OakRating17::
 	text "¡Genial! ¡Podrías"
 	line "convertirte en un"
 
-	para "profesor #MON"
+	para "profesor Pokemon"
 	line "ahora mismo!"
 	done
 
 _OakRating18::
-	text "¡Tu #DEX es"
+	text "¡Tu <POKE>dex es"
 	line "increíble!"
 
 	para "¡Eres muy"
@@ -1395,7 +1396,7 @@ _OakRating18::
 	done
 
 _OakRating19::
-	text "¡Uau! ¡Una #DEX"
+	text "¡Uau! ¡Una <POKE>dex"
 	line "perfecta! ¡Mi"
 
 	para "sueño cumplido!"
@@ -1404,7 +1405,7 @@ _OakRating19::
 
 _OakPCText4::
 	text "Cerrado enlace al"
-	line "PC del PROF. OAK."
+	line "PC del Prof. Oak."
 	done
 
 _TrainerRankingExplanationText:: ; unreferenced
@@ -1472,7 +1473,7 @@ _ItemsTooImportantText::
 	prompt
 
 _ItemsOakWarningText::
-	text "OAK: ¡<PLAYER>!"
+	text "Oak: ¡<PLAYER>!"
 	line "¡Éste no es el"
 	cont "momento de usarlo!"
 	done
@@ -1504,7 +1505,7 @@ _PokemonHoldItemText::
 
 _PokemonRemoveMailText::
 	text "Primero quita"
-	line "la CARTA."
+	line "la carta."
 	prompt
 
 _PokemonNotHoldingText::
@@ -1555,7 +1556,7 @@ _MailLoseMessageText::
 	done
 
 _MailDetachedText::
-	text "Quitada CARTA de"
+	text "Quitada carta de"
 	line "@"
 	text_ram wStringBuffer1
 	text "."
@@ -1564,21 +1565,21 @@ _MailDetachedText::
 _MailNoSpaceText::
 	text "No hay bastante"
 	line "espacio para"
-	cont "quitar la CARTA."
+	cont "quitar la carta."
 	prompt
 
 _MailAskSendToPCText::
 	text "¿Enviar la"
-	line "CARTA a tu PC?"
+	line "carta a tu PC?"
 	done
 
 _MailboxFullText::
-	text "El BUZÓN de tu"
+	text "El Buzón de tu"
 	line "PC está lleno."
 	prompt
 
 _MailSentToPCText::
-	text "La CARTA fue"
+	text "La carta fue"
 	line "enviada a tu PC."
 	prompt
 
@@ -1590,8 +1591,8 @@ _MayRegisterItemText::
 	text "Puedes asignar un"
 	line "objeto de tu"
 
-	para "MOCHILA al botón"
-	line "SELECT."
+	para "mochila al botón"
+	line "Select."
 	done
 
 _OakText1::
@@ -1600,12 +1601,12 @@ _OakText1::
 
 	para "¡Estás en el"
 	line "mundo de los"
-	cont "#MON!"
+	cont "Pokemon!"
 
-	para "Me llamo OAK."
+	para "Me llamo Oak."
 
 	para "Pero me llaman"
-	line "PROFESOR #MON."
+	line "profesor Pokemon."
 	prompt
 
 _OakText2::
@@ -1613,7 +1614,7 @@ _OakText2::
 	line "habitado por unas"
 
 	para "criaturas llamadas"
-	line "#MON.@"
+	line "Pokemon.@"
 	text_end
 
 _OakText3::
@@ -1624,13 +1625,13 @@ _OakText3::
 
 _OakText4::
 	text "La gente y los"
-	line "#MON conviven"
+	line "Pokemon conviven"
 
 	para "ayudándose unos"
 	line "a otros."
 
 	para "Algunos juegan con"
-	line "los #MON, otros"
+	line "los Pokemon, otros"
 	cont "luchan con ellos."
 	prompt
 
@@ -1644,5 +1645,5 @@ _OakText5::
 	cont "resolver. Por eso"
 
 	para "estudio a diario"
-	line "a los #MON."
+	line "a los Pokemon."
 	prompt

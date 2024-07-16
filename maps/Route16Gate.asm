@@ -34,29 +34,30 @@ Route16GateCannotPassMovement:
 	step_end
 
 Route16GateOfficerText:
-	text "CYCLING ROAD"
-	line "starts here."
+	text "Aquí empieza el"
+	line "Camino de Bicis."
 
-	para "It's all downhill,"
-	line "so it's totally"
-	cont "exhilarating."
+	para "Es todo cuesta"
+	line "abajo. Es muy"
+	cont "emocionante."
 
-	para "It's a great sort"
-	line "of feeling that"
+	para "Es una sensación"
+	line "que no se"
 
-	para "you can't get from"
-	line "a ship or train."
+	para "experimenta en"
+	line "barco o en tren."
 	done
 
 Route16GateCannotPassText:
-	text "Hey! Whoa! Stop!"
+	text "¡Eh! ¡Alto!"
 
-	para "You can't go out"
-	line "on the CYCLING"
+	para "No puedes pasar"
+	line "por el Camino de"
 
-	para "ROAD without a"
-	line "BICYCLE."
+	para "Bicis si no vas"
+	line "en Bicicleta."
 	done
+
 
 Route16Gate_MapEvents:
 	db 0, 0 ; filler

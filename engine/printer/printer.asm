@@ -530,7 +530,7 @@ PlacePrinterStatusStringBorderless: ; unreferenced
 	ret
 
 String_PressBToCancel:
-	db "Press B to Cancel@"
+	db "B para cancelar@"
 
 PrinterStatusStringPointers:
 	dw GBPrinterString_Null ; @

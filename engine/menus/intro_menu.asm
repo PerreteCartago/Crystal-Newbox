@@ -28,16 +28,16 @@ PrintDayOfWeek:
 	ret
 
 .Days:
-	db "SUN@"
-	db "MON@"
-	db "TUES@"
-	db "WEDNES@"
-	db "THURS@"
-	db "FRI@"
-	db "SATUR@"
+	db "Domingo@"
+	db "Lunes@"
+	db "Martes@"
+	db "Miércoles@"
+	db "Jueves@"
+	db "Viernes@"
+	db "Sábado@"
 
 .Day:
-	db "DAY@"
+	db "@"
 
 NewGame_ClearTilemapEtc:
 	xor a
@@ -231,16 +231,16 @@ endc
 
 InitializeMagikarpHouse:
 	ld hl, wBestMagikarpLengthFeet
-	ld a, $3
+	ld a, $4
 	ld [hli], a
-	ld a, $6
+	ld a, $1d
 	ld [hli], a
 	ld de, .Ralph
 	call CopyName2
 	ret
 
 .Ralph:
-	db "RALPH@"
+	db "Joserra@"
 
 InitializeNPCNames:
 	ld hl, .Rival
@@ -263,10 +263,10 @@ InitializeNPCNames:
 	call CopyBytes
 	ret
 
-.Rival:  db "???@"
-.Red:    db "RED@"
-.Green:  db "GREEN@"
-.Mom:    db "MOM@"
+.Rival:  db "¿¿??@"
+.Red:    db "Rojo@"
+.Green:  db "Verde@"
+.Mom:    db "Mamá@"
 
 InitializeWorld:
 	call ShrinkPlayer
@@ -445,17 +445,17 @@ DisplaySaveInfoOnContinue:
 	call CheckRTCStatus
 	and %10000000
 	jr z, .clock_ok
-	lb de, 4, 8
+	lb de, 2, 8
 	call DisplayContinueDataWithRTCError
 	ret
 
 .clock_ok
-	lb de, 4, 8
+	lb de, 2, 8
 	call DisplayNormalContinueData
 	ret
 
 DisplaySaveInfoOnSave:
-	lb de, 4, 0
+	lb de, 2, 0
 	jr DisplayNormalContinueData
 
 DisplayNormalContinueData:
@@ -491,21 +491,21 @@ Continue_LoadMenuHeader:
 
 .MenuHeader_Dex:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 17, 9
 	dw .MenuData_Dex
 	db 1 ; default option
 
 .MenuData_Dex:
 	db 0 ; flags
 	db 4 ; items
-	db "PLAYER@"
-	db "BADGES@"
-	db "#DEX@"
-	db "TIME@"
+	db "Jugad.@"
+	db "Medallas@"
+	db "<POKE>dex@"
+	db "Tiempo J.@"
 
 .MenuHeader_NoDex:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 17, 9
 	dw .MenuData_NoDex
 	db 1 ; default option
 
@@ -520,17 +520,17 @@ Continue_LoadMenuHeader:
 Continue_DisplayBadgesDexPlayerName:
 	call MenuBoxCoord2Tile
 	push hl
-	decoord 13, 4, 0
+	decoord 15, 4, 0
 	add hl, de
 	call Continue_DisplayBadgeCount
 	pop hl
 	push hl
-	decoord 12, 6, 0
+	decoord 14, 6, 0
 	add hl, de
 	call Continue_DisplayPokedexNumCaught
 	pop hl
 	push hl
-	decoord 8, 2, 0
+	decoord 10, 2, 0
 	add hl, de
 	ld de, .Player
 	call PlaceString
@@ -541,20 +541,20 @@ Continue_DisplayBadgesDexPlayerName:
 	db "<PLAYER>@"
 
 Continue_PrintGameTime:
-	decoord 9, 8, 0
+	decoord 11, 8, 0
 	add hl, de
 	call Continue_DisplayGameTime
 	ret
 
 Continue_UnknownGameTime:
-	decoord 9, 8, 0
+	decoord 11, 8, 0
 	add hl, de
 	ld de, .three_question_marks
 	call PlaceString
 	ret
 
 .three_question_marks
-	db " ???@"
+	db " ¿?@"
 
 Continue_DisplayBadgeCount:
 	push hl
@@ -745,9 +745,9 @@ NamePlayer:
 	ret
 
 .Chris:
-	db "CHRIS@@@@@@"
+	db "Antonio@@@@"
 .Kris:
-	db "KRIS@@@@@@@"
+	db "Cris@@@@@@@"
 
 GSShowPlayerNamingChoices: ; unreferenced
 	call LoadMenuHeader

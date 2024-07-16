@@ -491,313 +491,326 @@ GoldenrodPokecomCenterNewsMachineExplanationText: ; unreferenced
 	done
 
 GoldenrodPokecomCenterWouldYouLikeTheNewsText: ; unreferenced
-	text "Would you like to"
-	line "get the NEWS?"
+	text "¿Quieres leer las"
+	line "Noticias?"
 	done
 
 GoldenrodPokecomCenterReadingTheLatestNewsText: ; unreferenced
-	text "Reading the latest"
-	line "NEWS… Please wait."
+	text "Leyendo las"
+	line "últimas Noticias…"
+	cont "Espera, por favor."
 	done
 
 GoldenrodPokecomCenterNoOldNewsText: ; unreferenced
-	text "There is no old"
-	line "NEWS…"
+	text "No hay Noticias"
+	line "antiguas…"
 	done
 
 GoldenrodPokecomCenterCorruptedNewsDataText: ; unreferenced
-	text "The NEWS data is"
-	line "corrupted."
+	text "Los datos de las"
+	line "Noticias están"
+	cont "dañados."
 
-	para "Please download"
-	line "the NEWS again."
+	para "Por favor, baja"
+	line "las Noticias otra"
+	cont "vez."
 	done
 
 GoldenrodPokecomCenterMakingPreparationsText: ; unreferenced
-	text "We're making"
-	line "preparations."
+	text "Estamos en los"
+	line "preparativos."
 
-	para "Please come back"
-	line "later."
-	done
+	para "Por favor, vuelve"
+	line "más tarde"
+	cont
 
 GoldenrodPokecomCenterSaveBeforeNewsMachineText: ; unreferenced
-	text "We will SAVE your"
-	line "progress before"
+	text "GUARDAREMOS tu"
+	line "progreso antes de"
 
-	para "starting the NEWS"
-	line "MACHINE."
+	para "poner en marcha la"
+	line "Máquina de las"
+	cont "Noticias."
 	done
 
 GoldenrodPokecomCenterPerson1Text: ; unreferenced
-	text "Whoa, this #MON"
-	line "CENTER is huge."
+	text "Uau, este CENTRO"
+	line "pokémon es enorme."
 
-	para "They just built"
-	line "this place. They"
+	para "Lo acaban de"
+	line "construir. También"
 
-	para "installed lots of"
-	line "new machines too."
+	para "han instalado"
+	line "muchas máquinas"
+	cont "nuevas."
 	done
 
 GoldenrodPokecomCenterPerson2Text: ; unreferenced
-	text "I thought up a fun"
-	line "new thing for the"
-	cont "TRADE CORNER!"
+	text "¡Ideé algo nuevo"
+	line "para el Centro de"
+	cont "Cambio!"
 
-	para "I make a PIDGEY"
-	line "hold MAIL, then"
+	para "¡Equipo a Pidgey"
+	line "con una Carta y"
 
-	para "put it up for"
-	line "trade for another"
-	cont "one!"
+	para "después preparo el"
+	line "intercambio con"
+	cont "otro Pokémon!"
 
-	para "If everyone did"
-	line "that, MAIL could"
+	para "¡Si todo el mundo"
+	line "lo hiciera, la"
 
-	para "be traded with all"
-	line "sorts of people!"
+	para "Carta llegaría a"
+	line "todo tipo de"
+	cont "gente!"
 
-	para "I call it PIDGEY"
-	line "MAIL!"
+	para "¡Lo llamo Carta"
+	line "Pidgey!"
 
-	para "If it becomes"
-	line "popular, I might"
+	para "¡Si se vuelve"
+	line "popular, voy a"
 
-	para "make lots of new"
-	line "friends!"
+	para "hacer un montón de"
+	line "nuevos amigos!"
 	done
 
 GoldenrodPokecomCenterPerson3Text: ; unreferenced
-	text "They said you can"
-	line "trade #MON with"
+	text "Se dice que puedes"
+	line "cambiar Pokémon"
 
-	para "total strangers up"
-	line "here."
+	para "hasta con"
+	line "desconocidos."
 
-	para "But they're still"
-	line "adjusting things."
+	para "Pero todavía están"
+	line "con preparativos."
 	done
 
 GoldenrodPokecomCenterPerson4Text: ; unreferenced
-	text "Some girl I don't"
-	line "know sent me her"
+	text "Una chica que no"
+	line "conozco me envió"
 
-	para "HOPPIP."
-	line "You should trade"
+	para "su Hoppip."
+	line "Deberías cambiar"
 
-	para "for a #MON that"
-	line "you want."
+	para "un Pokémon por"
+	line "otro que quieras."
 	done
 
 GoldenrodPokecomCenterPerson5Text: ; unreferenced
-	text "I received a"
-	line "female HOPPIP, but"
-	cont "its named STANLEY!"
+	text "¡Recibí un Hoppip"
+	line "hembra, pero se"
+	cont "llama Stanley!"
 
-	para "That's my dad's"
-	line "name!"
+	para "¡Así se llama mi"
+	line "padre!"
 	done
 
 GoldenrodPokecomCenterPerson6Text: ; unreferenced
-	text "What is the NEWS"
-	line "MACHINE?"
+	text "¿Qué es la Máquina"
+	line "de las Noticias?"
 
-	para "Does it get news"
-	line "from a wider area"
-	cont "than the radio?"
+	para "¿Recoge noticias"
+	line "de un área más"
+
+	para "amplia que la"
+	line "radio?"
 	done
 
 GoldenrodPokecomCenterPerson7Text: ; unreferenced
-	text "The #COM CENTER"
-	line "will link with all"
+	text "El Centro Pokémon"
+	line "se enlazará con"
 
-	para "#MON CENTERS in"
-	line "a wireless net."
+	para "los otros Centros"
+	line "Pokémon por"
 
-	para "That must mean"
-	line "I'll be able to"
+	para "medio de una red"
+	line "inalámbrica."
 
-	para "link with all"
-	line "sorts of people."
+	para "Lo que significa"
+	line "que podré conec-"
+	cont "tarme con todo"
+	line "tipo de gente."
 	done
 
 GoldenrodPokecomCenterPerson8Text: ; unreferenced
-	text "The machines here"
-	line "can't be used yet."
+	text "Las máquinas no"
+	line "están en uso"
+	cont "todavía."
 
-	para "Still, it's nice"
-	line "coming to a trendy"
+	para "Aunque mola venir"
+	line "a un sitio tan"
 
-	para "place before other"
-	line "people."
+	para "chulo antes que"
+	line "nadie."
 	done
 
 GoldenrodPokecomCenterPerson9Text: ; unreferenced
-	text "My friend was in"
-	line "the NEWS a while"
+	text "Mi amigo salió en"
+	line "las Noticias hace"
 
-	para "back. I was really"
-	line "surprised!"
+	para "poco. ¡No me lo"
+	line "podía creer!"
 	done
 
 GoldenrodPokecomCenterPerson10Text: ; unreferenced
-	text "I get anxious if I"
-	line "don't check out"
-	cont "the latest NEWS!"
+	text "¡No puedo dejar de"
+	line "leer las últimas"
+	cont "Noticias!"
 	done
 
 GoldenrodPokecomCenterPerson11Text: ; unreferenced
-	text "If I get in the"
-	line "NEWS and become"
+	text "Si aparezco en las"
+	line "Noticias y me hago"
 
-	para "famous, I bet I'll"
-	line "be adored."
+	para "famoso, supongo"
+	line "que me adorarán."
 
-	para "I wonder how I"
-	line "could get in the"
-	cont "NEWS?"
+	para "Estoy tramando"
+	line "cómo podría salir"
+	cont "en las Noticias…"
 	done
 
 GoldenrodPokecenter1FGameboyKidText:
-	text "The COLOSSEUM"
-	line "upstairs is for"
-	cont "link battles."
+	text "En el Coliseo de"
+	line "arriba se lucha"
+	cont "enlazado."
 
-	para "Battle records are"
-	line "posted on the"
+	para "Los récords se"
+	line "apuntan en la"
 
-	para "wall, so I can't"
-	line "afford to lose."
+	para "pared, así que no"
+	line "puedo perder."
 	done
 
 GoldenrodPokecomCenterPerson12Text: ; unreferenced
-	text "I came over here"
-	line "when I got word"
+	text "Vine por aquí"
+	line "cuando me enteré"
 
-	para "that GOLDENROD's"
-	line "#MON CENTER has"
+	para "de que el Centro"
+	line "Pokémon de Trigal"
 
-	para "new machines that"
-	line "no one's ever seen"
-	cont "before."
+	para "tenía máquinas"
+	line "nuevas que nadie"
+	cont "había visto antes."
 
-	para "But it looks like"
-	line "they're still busy"
+	para "Pero parece que"
+	line "siguen ocupados"
 
-	para "with all their"
-	line "preparations…"
+	para "con todos los"
+	line "preparativos…"
 	done
 
 GoldenrodPokecomCenterPerson13Text: ; unreferenced
-	text "Just seeing all"
-	line "these new things"
+	text "¡Sólo de ver todas"
+	line "estas cosas nuevas"
 
-	para "here makes me feel"
-	line "younger!"
+	para "me siento mucho"
+	line "más joven!"
 	done
 
 GoldenrodPokecenter1FLassText:
-	text "A higher level"
-	line "#MON doesn't"
-	cont "always win."
+	text "Un Pokémon de"
+	line "nivel superior no"
+	cont "siempre gana."
 
-	para "After all, it may"
-	line "have a type dis-"
-	cont "advantage."
+	para "Aun así, su tipo"
+	line "puede tener alguna"
+	cont "desventaja."
 
-	para "I don't think"
-	line "there is a single"
+	para "No creo que haya"
+	line "un único Pokémon"
 
-	para "#MON that is"
-	line "the toughest."
+	para "que sea el más"
+	line "fuerte."
 	done
 
 GoldenrodPokeCenter1FLinkReceptionistPleaseAcceptGSBallText:
-	text "<PLAYER>, isn't it?"
+	text "<PLAYER>, ¿no?"
 
-	para "Congratulations!"
+	para "¡Felicidades!"
 
-	para "As a special deal,"
-	line "a GS BALL has been"
-	cont "sent just for you!"
+	para "¡Estamos de"
+	line "promoción, hemos"
 
-	para "Please accept it!"
+	para "recibido una GS"
+	line "BALL para ti!"
+
+	para "¡Por favor,"
+	line "acéptala!"
 	done
 
 GoldenrodPokeCenter1FLinkReceptionistPleaseDoComeAgainText:
-	text "Please do come"
-	line "again!"
+	text "¡Vuelve cuando"
+	line "quieras!"
 	done
 
 GoldenrodPokecomCenterSignText: ; unreferenced
-	text "#COM CENTER"
-	line "1F INFORMATION"
+	text "Centro <POKE>com"
+	line "PB Información"
 
-	para "Left:"
-	line "ADMINISTRATION"
+	para "Izquierda:"
+	line "Administración"
 
-	para "Center:"
-	line "TRADE CORNER"
+	para "Centro:"
+	line "Centro de Cambio"
 
-	para "Right:"
-	line "#MON NEWS"
+	para "Derecha:"
+	line "Noticias  Pokémon!"
 	done
 
 GoldenrodPokecomCenterNewsMachineNotYetText: ; unreferenced
-	text "It's a #MON"
-	line "NEWS MACHINE!"
+	text "¡Es una Máquina de"
+	line "Noticias Pokémon!"
 
-	para "It's not in"
-	line "operation yet…"
-	done
+	para "No está operativa"
+	line "todavía…"
 
 GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
-	text "Oh my, your pack"
-	line "looks so heavy!"
+	text "¡Llevas mucho peso"
+	line "en la mochila!"
 
-	para "Oh! Do you happen"
-	line "to have something"
-	cont "named EON MAIL?"
+	para "¡Oye! ¿No tendrás"
+	line "algo llamado"
+	cont "Carta Eón?"
 
-	para "My daughter is"
-	line "after one."
+	para "Mi hija está"
+	line "buscando una."
 
-	para "You can part with"
-	line "one, can't you?"
+	para "Puedes darme una,"
+	line "¿verdad?"
 	done
 
 GoldenrodPokecenter1FAskGiveAwayAnEonMailText:
-	text "Give away an EON"
-	line "MAIL?"
+	text "¿Entregas una"
+	line "Carta Eón?"
 	done
 
 GoldenrodPokecenter1FPokefanFThisIsForYouText:
-	text "Oh, that's great!"
-	line "Thank you, honey!"
+	text "¡Oh, genial!"
+	line "¡Gracias, cariño!"
 
-	para "Here, this is for"
-	line "you in return!"
+	para "¡Toma esto en"
+	line "agradecimiento!"
 	done
 
 GoldenrodPokecenter1FPokefanFDaughterWillBeDelightedText:
-	text "My daughter will"
-	line "be delighted!"
+	text "¡A mi hija le"
+	line "encantará!"
 	done
 
 GoldenrodPokecenter1FPokefanFTooBadText:
-	text "Oh? You don't have"
-	line "one? Too bad."
+	text "¿Oh? ¿No tienes?"
+	line "Qué lástima…"
 	done
 
 GoldenrodPokecenter1FPokefanFAnotherTimeThenText:
-	text "Oh… Well, another"
-	line "time, then."
+	text "Oh… Bueno, en otra"
+	line "ocasión será."
 	done
 
 GoldenrodPokecenter1FPlayerGaveAwayTheEonMailText:
-	text "<PLAYER> gave away"
-	line "the EON MAIL."
+	text "<PLAYER> entrega"
+	line "la Carta Eón."
 	done
 
 GoldenrodPokecenter1F_MapEvents:

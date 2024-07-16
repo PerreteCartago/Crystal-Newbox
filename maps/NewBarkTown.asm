@@ -187,7 +187,7 @@ NewBarkTown_RivalReturnsToTheShadowsMovement:
 	step_end
 
 Text_GearIsImpressive:
-	text "¡Uau! ¡Tu #GEAR"
+	text "¡Uau! ¡Tu <POKE>gear"
 	line "es impresionante!"
 
 	para "¿Te la ha dado tu"
@@ -207,17 +207,17 @@ Text_WhatDoYouThinkYoureDoing:
 Text_ItsDangerousToGoAlone:
 	text "¡Es peligroso"
 	line "salir sin un"
-	cont "#MON!"
+	cont "Pokémon!"
 
 	para "De camino hacia la"
 	line "siguiente ciudad"
 
 	para "te encontrarás"
-	line "#MON salvajes."
+	line "Pokémon salvajes."
 	done
 
 Text_YourMonIsAdorable:
-	text "¡Oh, tu #MON es"
+	text "¡Oh, tu Pokémon es"
 	line "adorable! ¡Ojalá"
 	cont "tuviera yo uno!"
 	done
@@ -233,7 +233,7 @@ Text_TellMomIfLeaving:
 
 Text_CallMomOnGear:
 	text "Llama a tu madre"
-	line "con el #GEAR"
+	line "con el <POKE>gear"
 
 	para "y cuéntale cómo"
 	line "te va."
@@ -242,17 +242,17 @@ Text_CallMomOnGear:
 Text_ElmDiscoveredNewMon:
 	text "¡Hola, <PLAYER>!"
 
-	para "Dicen que el PROF."
-	line "ELM ha descubierto"
-	cont "nuevos #MON."
+	para "Dicen que el Prof."
+	line "Elm ha descubierto"
+	cont "nuevos Pokémon."
 	done
 
 NewBarkTownRivalText1:
 	text "<……>"
 
 	para "Así que éste es el"
-	line "famoso LABORATORIO"
-	cont "#MON de ELM…"
+	line "famoso Laboratorio"
+	cont "Pokémon de Elm…"
 	done
 
 NewBarkTownRivalText2:
@@ -273,11 +273,11 @@ NewBarkTownPlayersHouseSignText:
 	done
 
 NewBarkTownElmsLabSignText:
-	text "LABORATORIO DE ELM"
+	text "Laboratorio de Elm"
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "CASA DE ELM"
+	text "Casa de Elm"
 	done
 
 

@@ -21,51 +21,53 @@ DayOfWeekSiblingsHousePokedexScript:
 	end
 
 DayOfWeekSiblingsHousePokedexText1:
-	text "There's something"
-	line "written here."
+	text "Aquí hay algo"
+	line "escrito."
 
-	para "Read it?"
+	para "¿Quieres leerlo?"
 	done
 
 DayOfWeekSiblingsHousePokedexText2:
-	text "To my brothers and"
-	line "sisters:"
+	text "A mis hermanos y"
+	line "hermanas:"
 
-	para "We take pride in"
-	line "serving #MON"
-	cont "trainers."
+	para "Nos enorgullece"
+	line "ayudar a los"
 
-	para "When trainers talk"
-	line "to you, give them"
-	cont "something useful."
+	para "entrenadores"
+	line "Pokémon."
 
-	para "Love,"
-	line "MONICA"
+	para "Cuando habléis con"
+	line "los entrenadores,"
+	cont "dadles algo útil."
 
-	para "Keep reading?"
+	para "Besos,"
+	line "Luna"
+
+	para "¿Sigues leyendo?"
 	done
 
 DayOfWeekSiblingsHousePokedexText3:
-	text "Monday, MONICA"
-	line "ROUTE 40"
+	text "Lunes, Luna"
+	line "Ruta 40"
 
-	para "Tuesday, TUSCANY"
-	line "ROUTE 29"
+	para "Martes, Marta"
+	line "Ruta 29"
 
-	para "Wednesday, WESLEY"
-	line "LAKE OF RAGE"
+	para "Miércoles, Miguel"
+	line "Lago de la Furia"
 
-	para "Thursday, ARTHUR"
-	line "ROUTE 36"
+	para "Jueves, Josué"
+	line "Ruta 36"
 
-	para "Friday, FRIEDA"
-	line "ROUTE 32"
+	para "Viernes, Vicki"
+	line "Ruta 32"
 
-	para "Saturday, SANTOS"
-	line "BLACKTHORN CITY"
+	para "Sábado, Sabino"
+	line "Ciudad Endrino"
 
-	para "Sunday, SUNNY"
-	line "ROUTE 37"
+	para "Domingo, Domingo"
+	line "Ruta 37"
 	done
 
 DayOfWeekSiblingsHouse_MapEvents:

@@ -39,6 +39,8 @@ AzaleaGymBugsyScript:
 	setevent EVENT_BEAT_BUG_CATCHER_BENNY
 	setevent EVENT_BEAT_BUG_CATCHER_AL
 	setevent EVENT_BEAT_BUG_CATCHER_JOSH
+	clearevent EVENT_BEAT_BIRD_KEEPER_ROD
+	clearevent EVENT_BEAT_BIRD_KEEPER_ABE
 	writetext BugsyText_HiveBadgeSpeech
 	promptbutton
 	verbosegiveitem TM_FURY_CUTTER
@@ -148,138 +150,137 @@ AzaleaGymStatue:
 	jumpstd GymStatue2Script
 
 BugsyText_INeverLose:
-	text "I'm BUGSY!"
-	line "I never lose when"
+	text "¡Soy Antón!"
+	line "Soy invencible"
 
-	para "it comes to bug"
-	line "#MON."
+	para "con los Pokémon"
+	line "bicho."
 
-	para "My research is"
-	line "going to make me"
+	para "¡Mis estudios me"
+	line "van a convertir en"
 
-	para "the authority on"
-	line "bug #MON!"
+	para "una autoridad en"
+	line "los Pokémon bicho!"
 
-	para "Let me demonstrate"
-	line "what I've learned"
-	cont "from my studies."
+	para "Te enseñaré lo"
+	line "que he aprendido."
 	done
 
+
 BugsyText_ResearchIncomplete:
-	text "Whoa, amazing!"
-	line "You're an expert"
-	cont "on #MON!"
+	text "¡Uauu, increíble!"
+	line "¡No hay Pokémon"
+	cont "que se te resista!"
 
-	para "My research isn't"
-	line "complete yet."
+	para "Mi investigación"
+	line "aún no ha acabado."
 
-	para "OK, you win. Take"
-	line "this BADGE."
+	para "Vale, tú ganas."
+	line "Toma esta Medalla."
 	done
 
 Text_ReceivedHiveBadge:
-	text "<PLAYER> received"
-	line "HIVEBADGE."
+	text "<PLAYER> recibió la"
+	line "Medalla Colmena."
 	done
 
 BugsyText_HiveBadgeSpeech:
-	text "Do you know the"
-	line "benefits of HIVE-"
-	cont "BADGE?"
+	text "¿Conoces las"
+	line "ventajas de la"
+	cont "Medalla Colmena?"
 
-	para "If you have it,"
-	line "#MON up to L30"
+	para "Si la tienes, los"
+	line "Pokémon hasta N.30"
+	cont "te obedecerán."
 
-	para "will obey you,"
-	line "even traded ones."
+	para "Y los Pokémon"
+	line "que sepan Corte"
 
-	para "#MON that know"
-	line "CUT will be able"
+	para "podrán usarlo"
+	line "fuera del combate."
 
-	para "to use it outside"
-	line "of battle too."
-
-	para "Here, I also want"
-	line "you to have this."
+	para "Mira, también te"
+	line "daré esto."
 	done
 
 BugsyText_FuryCutterSpeech:
-	text "TM49 contains"
-	line "FURY CUTTER."
+	text "Mt49 contiene"
+	line "Cortefuria."
 
-	para "If you don't miss,"
-	line "it gets stronger"
-	cont "every turn."
+	para "Si no fallas, se"
+	line "hace cada vez más"
+	cont "fuerte."
 
-	para "The longer your"
-	line "battle goes, the"
-	cont "better it gets."
+	para "Cuanto más dure"
+	line "el combate, más"
+	cont "fuerte será."
 
-	para "Isn't that great?"
-	line "I discovered it!"
+	para "¿No es genial?"
+	line "¡Lo descubrí yo!"
 	done
 
 BugsyText_BugMonsAreDeep:
-	text "Bug #MON are"
-	line "deep. There are"
+	text "Los Pokémon bicho"
+	line "son muy complejos."
 
-	para "many mysteries to"
-	line "be explored."
+	para "Quedan muchos"
+	line "misterios por"
+	cont "resolver."
 
-	para "Study your favor-"
-	line "ites thoroughly."
+	para "Estudia a fondo"
+	line "tus favoritos."
 	done
 
 BugCatcherBennySeenText:
-	text "Bug #MON evolve"
-	line "young. So they get"
+	text "Los Pokémon bicho"
+	line "evolucionan pronto"
 
-	para "stronger that much"
-	line "faster."
+	para "y se hacen fuertes"
+	line "mucho antes."
 	done
 
 BugCatcherBennyBeatenText:
-	text "Just evolving"
-	line "isn't enough!"
+	text "¡No se trata sólo"
+	line "de evolucionar!"
 	done
 
 BugCatcherBennyAfterBattleText:
-	text "#MON become"
-	line "stronger if they"
-	cont "evolve. Really!"
+	text "Los Pokémon se"
+	line "hacen más fuertes"
+	cont "si evolucionan."
 	done
 
 BugCatcherAlSeenText:
-	text "Bug #MON are"
-	line "cool and tough!"
+	text "¡Los Pokémon bicho"
+	line "son buenos y muy"
 
-	para "I'll prove it to"
-	line "you!"
+	para "fuertes! ¡Te lo"
+	line "demostraré!"
 	done
 
 BugCatcherAlBeatenText:
-	text "You proved how"
-	line "tough you are…"
+	text "Has demostrado lo"
+	line "fuerte que eres…"
 	done
 
 BugCatcherAlAfterBattleText:
-	text "They're so cool,"
-	line "but most girls"
+	text "Son geniales,"
+	line "pero la mayoría de"
 
-	para "don't like bug"
-	line "#MON."
+	para "las chicas odian"
+	line "los Pokémon bicho."
 
-	para "I don't know why…"
+	para "No sé por qué…"
 	done
 
 BugCatcherJoshSeenText:
-	text "You saved all the"
-	line "SLOWPOKE? Whew,"
-	cont "you're mighty!"
+	text "¿Has salvado a los"
+	line "Slowpooke? ¡Uauu!"
+	cont "¡Eres muy fuerte!"
 
-	para "But my grown-up"
-	line "#MON are pretty"
-	cont "tough too!"
+	para "¡Pero mis Pokémon"
+	line "entrenados también"
+	cont "lo son!"
 	done
 
 BugCatcherJoshBeatenText:
@@ -287,84 +288,86 @@ BugCatcherJoshBeatenText:
 	done
 
 BugCatcherJoshAfterBattleText:
-	text "I guess I should"
-	line "teach them better"
-	cont "moves…"
+	text "Supongo que"
+	line "debería enseñarles"
+	cont "mejores ataques…"
 	done
 
 TwinsAmyandmay1SeenText:
-	text "AMY: Hi! Are you"
-	line "challenging the"
-	cont "LEADER? No way!"
+	text "Amy: ¡Hola! ¿Estás"
+	line "retando al Líder?"
+	cont "¡No puede ser!"
 	done
 
 TwinsAmyandmay1BeatenText:
-	text "AMY & MAY: Oh,"
-	line "double goodness!"
+	text "Amy-May: ¡Oh,"
+	line "madre mía!"
 	done
 
 TwinsAmyandmay1AfterBattleText:
-	text "AMY: You're"
-	line "really strong!"
+	text "Amy: ¡Eres muy"
+	line "fuerte!"
 	done
 
 TwinsAmyandmay2SeenText:
-	text "MAY: You want to"
-	line "see the LEADER?"
-	cont "We come first!"
+	text "May: ¿Quieres ver"
+	line "al Líder? ¡Antes"
+	cont "vamos nosotras!"
 	done
 
 TwinsAmyandmay2BeatenText:
-	text "AMY & MAY: Oh,"
-	line "double goodness!"
+	text "Amy-May: ¡Oh,"
+	line "madre mía!"
 	done
 
 TwinsAmyandmay2AfterBattleText:
-	text "MAY: Our bug #-"
-	line "MON lost! Oh, what"
-	cont "a shame."
+	text "May: Han perdido"
+	line "nuestros Pokémon."
+	cont "¡Qué lástima!"
 	done
 
 AzaleaGymGuideText:
-	text "Yo, challenger!"
+	text "¡Hola, valiente!"
 
-	para "BUGSY's young, but"
-	line "his knowledge of"
+	para "Antón es joven,"
+	line "pero conoce muy"
 
-	para "bug #MON is for"
-	line "real."
+	para "bien a los Pokémon"
+	line "bicho."
 
-	para "It's going to be"
-	line "tough without my"
-	cont "advice."
+	para "Y sin mis consejos"
+	line "te resultaría aún"
+	cont "más duro."
 
-	para "Let's see… Bug"
-	line "#MON don't like"
-	cont "fire."
+	para "Veamos… A los"
+	line "Pokémon bicho no"
+	cont "les va el fuego."
 
-	para "Flying-type moves"
-	line "are super-effec-"
-	cont "tive too."
+	para "Y los ataques de"
+	line "tipo volador son"
+	cont "muy efectivos."
 	done
 
 AzaleaGymGuideWinText:
-	text "Well done! That"
-	line "was a great clash"
+	text "¡Eso es! Ha sido"
+	line "un gran encuentro"
 
-	para "of talented young"
-	line "trainers."
+	para "entre jóvenes con"
+	line "talento."
 
-	para "With people like"
-	line "you, the future of"
-	cont "#MON is bright!"
+	para "Con gente como tú,"
+	line "¡el futuro de los"
+
+	para "Pokémon será"
+	line "maravilloso!"
 	done
 
 AzaleaGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4, 15, AZALEA_TOWN, 5
-	warp_event  5, 15, AZALEA_TOWN, 5
+	warp_event  4, 15, VIOLET_CITY, 2
+	warp_event  5, 15, VIOLET_CITY, 2
 
 	def_coord_events
 

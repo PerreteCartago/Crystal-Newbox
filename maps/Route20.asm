@@ -50,64 +50,67 @@ CinnabarGymSign:
 	jumptext CinnabarGymSignText
 
 SwimmerfNicoleSeenText:
-	text "I feel so much"
-	line "lighter in water."
+	text "Me siento más"
+	line "ligera en el agua."
 	done
 
 SwimmerfNicoleBeatenText:
-	text "Oh, no!"
+	text "¡Oh, no!"
 	done
 
 SwimmerfNicoleAfterBattleText:
-	text "Swimming exercises"
-	line "your full body."
-
-	para "It's really good"
-	line "for you."
+	text "La natación forta-"
+	line "lece todo tu cuer-"
+	cont "po. ¡Es muy sana!"
 	done
 
 SwimmerfLoriSeenText:
-	text "What an impressive"
-	line "collection of GYM"
+	text "¡Vaya colección de"
+	line "Medallas de"
 
-	para "BADGES. We should"
-	line "battle!"
+	para "Gimnasio!"
+	line "¡Luchemos!"
 	done
 
 SwimmerfLoriBeatenText:
-	text "No!"
+	text "¡No!"
 	done
 
 SwimmerfLoriAfterBattleText:
-	text "SURF is no longer"
-	line "the only HM move"
-	cont "you use in water."
+	text "Surf ya no es el"
+	line "único movimiento"
+
+	para "que se utiliza en"
+	line "el agua."
 	done
 
 SwimmermCameronSeenText:
-	text "I guess it's im-"
-	line "possible to swim"
+	text "Supongo que es"
+	line "imposible ir"
 
-	para "all the way to"
-	line "JOHTO."
+	para "nadando hasta"
+	line "Johto."
 	done
 
 SwimmermCameronBeatenText:
-	text "Aiyah!"
+	text "¡Aiyaa!"
 	done
 
 SwimmermCameronAfterBattleText:
-	text "Besides the sea, I"
-	line "can also swim in"
-	cont "ponds and rivers."
+	text "Además de nadar"
+	line "en el mar, puedo"
+
+	para "nadar en estanques"
+	line "y ríos."
 	done
 
 CinnabarGymSignText:
-	text "What does this"
-	line "sign say?"
+	text "¿Qué pone en este"
+	line "letrero?"
 
-	para "CINNABAR GYM"
-	line "LEADER: BLAINE"
+	para "Líder del Gimnasio"
+	line "de Isla Canela:"
+	cont "Blaine"
 	done
 
 Route20_MapEvents:

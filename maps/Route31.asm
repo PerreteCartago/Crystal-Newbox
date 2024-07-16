@@ -226,7 +226,7 @@ Route31MailRecipientScript:
 	end
 
 ReceivedSpearowMailText:
-	db   "CUEVA OSCURA da"
+	db   "Cueva Oscura da"
 	next "a otro camino  @"
 
 Route31YoungsterScript:
@@ -253,7 +253,7 @@ Route31PokeBall:
 Route31CooltrainerMText:
 	text "CUEVA OSCURA…"
 
-	para "Si los #MON"
+	para "Si los Pokémon"
 	line "pudieran"
 
 	para "iluminarla,"
@@ -262,7 +262,7 @@ Route31CooltrainerMText:
 
 BugCatcherWade1SeenText:
 	text "He atrapado un"
-	line "montón de #MON."
+	line "montón de Pokémon."
 	cont "¡Luchemos!"
 	done
 
@@ -272,7 +272,7 @@ BugCatcherWade1BeatenText:
 
 BugCatcherWade1AfterText:
 	text "Puedes atrapar"
-	line "#MON aunque"
+	line "Pokémon aunque"
 
 	para "ya lleves seis"
 	line "contigo."
@@ -287,13 +287,13 @@ Text_Route31SleepyMan:
 
 	para "Hoy he caminado"
 	line "mucho buscando"
-	cont "#MON."
+	cont "Pokémon."
 
 	para "Me duelen los pies"
 	line "y tengo sueño…"
 
 	para "Si fuera un"
-	line "#MON salvaje,"
+	line "Pokémon salvaje,"
 
 	para "sería fácil"
 	line "atraparme…"
@@ -310,7 +310,7 @@ Text_Route31SleepyManGotMail:
 
 Text_Route31HandOverMailMon:
 	text "<PLAYER> entregó"
-	line "el #MON que"
+	line "el Pokémon que"
 	cont "lleva la Carta."
 	done
 
@@ -360,7 +360,7 @@ Text_Route31WrongMail:
 
 Text_Route31MissingMail:
 	text "¿Por qué es espe-"
-	line "cial este #MON?"
+	line "cial este Pokémon?"
 
 	para "No tiene ninguna"
 	line "Carta."
@@ -373,7 +373,7 @@ Text_Route31DeclinedToHandOverMail:
 
 Text_Route31CantTakeLastMon:
 	text "Si te quito ese"
-	line "#MON, ¿qué"
+	line "Pokémon, ¿qué"
 
 	para "vas a usar en los"
 	line "combates?"
@@ -381,7 +381,7 @@ Text_Route31CantTakeLastMon:
 
 Route31YoungsterText:
 	text "He encontrado un"
-	line "buen #MON en"
+	line "buen Pokémon en"
 	cont "la Cueva Oscura."
 
 	para "Voy a criarlo"
@@ -396,12 +396,12 @@ Route31YoungsterText:
 Route31SignText:
 	text "RUTA 31"
 
-	para "CIUDAD MALVA -"
-	line "CIUDAD CEREZO"
+	para "Ciudad Malva -"
+	line "Ciudad Cerezo"
 	done
 
 DarkCaveSignText:
-	text "CUEVA OSCURA"
+	text "Cueva Oscura"
 	done
 
 Route31_MapEvents:

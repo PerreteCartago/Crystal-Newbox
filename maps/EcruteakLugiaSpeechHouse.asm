@@ -17,29 +17,29 @@ LugiaSpeechHouseRadio:
 	jumpstd Radio2Script
 
 EcruteakLugiaSpeechHouseGrampsText:
-	text "This happened when"
-	line "I was young."
+	text "Sucedió cuando era"
+	line "joven."
 
-	para "The sky suddenly"
-	line "turned black. A"
+	para "El cielo se oscu-"
+	line "reció de repente."
 
-	para "giant flying #-"
-	line "MON was blocking"
-	cont "out the sun."
+	para "Un enorme Pokémon"
+	line "estaba tapando el"
+	cont "sol."
 
-	para "I wonder what that"
-	line "#MON was? "
+	para "Me pregunto qué"
+	line "sería ese Pokémon,"
 
-	para "It was like a bird"
-	line "and a dragon."
+	para "mezcla de pájaro y"
+	line "dragón."
 	done
 
 EcruteakLugiaSpeechHouseYoungsterText:
-	text "Is there really a"
-	line "#MON that big?"
+	text "¿Existe un Pokémon"
+	line "tan grande? Si"
 
-	para "If it exists, it"
-	line "must be powerful."
+	para "existe, debe de"
+	line "ser muy fuerte."
 	done
 
 EcruteakLugiaSpeechHouse_MapEvents:

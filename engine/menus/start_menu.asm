@@ -186,15 +186,15 @@ StartMenu::
 	dw StartMenu_Pokegear, .PokegearString, .EmptyDesc
 	dw StartMenu_Quit,     .QuitString,     .EmptyDesc
 
-.PokedexString:  db "#DEX@"
-.PartyString:    db "#MON@"
-.PackString:     db "PACK@"
+.PokedexString:  db "<POKE>dex@"
+.PartyString:    db "<POKE>mon@"
+.PackString:     db "Mochila@"
 .StatusString:   db "<PLAYER>@"
-.SaveString:     db "SAVE@"
-.OptionString:   db "OPTION@"
-.ExitString:     db "EXIT@"
-.PokegearString: db "<POKE>GEAR@"
-.QuitString:     db "QUIT@"
+.SaveString:     db "Guardar@"
+.OptionString:   db "Opción@"
+.ExitString:     db "Salir@"
+.PokegearString: db "<POKE>gear@"
+.QuitString:     db "Hecho@"
 
 .EmptyDesc:
 	db   "@"

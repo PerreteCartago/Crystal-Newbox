@@ -22,7 +22,7 @@ VioletMartCooltrainerMScript:
 
 VioletMartGrannyText:
 	text "Cuando atrapas un"
-	line "#MON, puede"
+	line "Pokémon, puede"
 	cont "estar débil."
 
 	para "Pero éste crecerá"
@@ -32,16 +32,16 @@ VioletMartGrannyText:
 	para "Es importante"
 	line "tratar a todos los"
 
-	para "#MON con mucho"
+	para "Pokémon con mucho"
 	line "cariño."
 	done
 
 VioletMartCooltrainerMText:
-	text "Los #MON pueden"
+	text "Los Pokémon pueden"
 	line "ir equipados con"
 
 	para "objetos como"
-	line "POCIÓN y ANTÍDOTO."
+	line "Poción y Antídoto."
 
 	para "Pero parece que"
 	line "no saben usar los"
