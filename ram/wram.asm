@@ -3190,30 +3190,7 @@ wNumBalls:: db
 wBalls: ds MAX_BALLS * 2 + 1
 
 ; fight counts
-wJackFightCount::    db
-	ds 1
-wHueyFightCount::    db
-wGavenFightCount::   db
-wBethFightCount::    db
-wJoseFightCount::    db
-wReenaFightCount::   db
-	ds 5
-wToddFightCount::    db
-wGinaFightCount::    db
-	ds 1
-wArnieFightCount::   db
-	ds 1
-wDanaFightCount::    db
-wChadFightCount::    db
-	ds 1
-wTullyFightCount::   db
-wBrentFightCount::   db
-wTiffanyFightCount:: db
-wVanceFightCount::   db
-wWiltonFightCount::  db
-	ds 1
-wParryFightCount::   db
-wErinFightCount::    db
+	ds 28
 
 wNumPCItems:: db
 wPCItems:: ds MAX_PC_ITEMS * 2 + 1

@@ -1,15 +1,2 @@
-Cambios
-Eliminados los boosts de combate tras ganar medallas pokemon y la posibilidad del 25% de la IA  de fallar ataques de estado
-Evento de Celebi activado
-Menu de movimientos muestra la precisión, probabilidad de activar efecto secundario (si tiene) y si el ataque es físico, especial o de estado
-Diferentes paletas en batallas en función del clima y hora del día
-kurt hace las apricorn instantáneamente
-Guardado rápido
-No hace falta llegar a Goldenrod para contraer Pokerus
-
-Otras generaciones
-Sistema de almacentamiento pokemon mejorado
-Separación de físico y especial
-Tipo hada
-Recordador de movimientos (totalmente accesible pero en fase beta)
+Bugs: Segundo Menú de cargar partida se ve raro si se utiliza antes de recibir la Pokédex
 

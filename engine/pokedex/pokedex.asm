@@ -1232,19 +1232,19 @@ Pokedex_DrawOptionScreenBG:
 	db $3b, " Opción ", $3c, -1
 
 .NewMode:
-	db "M. #DEX NUEVA"
+	db "M. <POKE>dex Nueva@"
 
 .OldMode:
-	db "M. #DEX VIEJA"
+	db "M. <POKE>dex Vieja@"
 
 .AtoZMode:
-	db "MODO A a Z"
+	db "Modo A a Z@"
 	
 .Color:
-	db "Color <POKE>dex@"
+	db "Color de la <POKE>dex@"
 
 .UnownMode:
-	db "UNOWN MODE@"
+	db "Modo Unown@"
 
 Pokedex_DrawSearchScreenBG:
 	call Pokedex_FillBackgroundColor2
@@ -1779,12 +1779,12 @@ Pokedex_DisplayModeDescription:
 	next "alfabéticamente.@"
 
 .Color:
-	db   "Change the color"
-	next "of the border.@"
+	db   "Cambia el color de"
+	next "los bordes.@"
 
 .UnownMode:
-	db   "UNOWN ordenados"
-	next "según capturados.@"
+	db   "Unown ordenados por"
+	next "orden captura.@"
 
  Pokedex_DrawColorScreenBG:
 	call Pokedex_FillBackgroundColor2

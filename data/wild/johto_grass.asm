@@ -290,24 +290,24 @@ JohtoGrassWildMons:
 	db 15, RATTATA
 	db 14, ZUBAT
 	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; day
 	db 13, RATTATA
 	db 14, KOFFING
 	db 15, RATTATA
 	db 14, ZUBAT
 	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; nite
 	db 13, RATTATA
 	db 14, KOFFING
 	db 15, RATTATA
 	db 14, ZUBAT
 	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_B1F
@@ -319,7 +319,7 @@ JohtoGrassWildMons:
 	db 15, ZUBAT
 	db 12, KOFFING
 	db 16, KOFFING
-	db 16, WEEZING
+	db 35, WEEZING
 	; day
 	db 14, RATTATA
 	db 14, KOFFING
@@ -327,7 +327,7 @@ JohtoGrassWildMons:
 	db 15, ZUBAT
 	db 12, KOFFING
 	db 16, KOFFING
-	db 16, WEEZING
+	db 35, WEEZING
 	; nite
 	db 14, RATTATA
 	db 14, KOFFING
@@ -335,7 +335,7 @@ JohtoGrassWildMons:
 	db 15, ZUBAT
 	db 12, KOFFING
 	db 16, KOFFING
-	db 16, WEEZING
+	db 35, WEEZING
 	end_grass_wildmons
 
 	def_grass_wildmons NATIONAL_PARK
@@ -596,26 +596,26 @@ JohtoGrassWildMons:
 	db 14, RATTATA
 	db 13, ZUBAT
 	db 14, MACHOP
-	db 13, GOLBAT
+	db 22, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; day
 	db 14, RATTATA
 	db 13, ZUBAT
 	db 14, MACHOP
-	db 13, GOLBAT
+	db 22, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; nite
 	db 14, RATTATA
 	db 13, ZUBAT
 	db 14, MARILL
-	db 13, GOLBAT
+	db 22, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
@@ -624,26 +624,26 @@ JohtoGrassWildMons:
 	db 13, GEODUDE
 	db 14, RATTATA
 	db 15, MACHOP
-	db 14, RATICATE
+	db 20, RATICATE
 	db 15, ZUBAT
-	db 15, GOLBAT
-	db 15, GOLBAT
+	db 22, GOLBAT
+	db 22, GOLBAT
 	; day
 	db 13, GEODUDE
 	db 14, RATTATA
 	db 15, MACHOP
-	db 14, RATICATE
+	db 20, RATICATE
 	db 15, ZUBAT
-	db 15, GOLBAT
-	db 15, GOLBAT
+	db 22, GOLBAT
+	db 22, GOLBAT
 	; nite
 	db 13, GEODUDE
 	db 14, RATTATA
-	db 15, RATICATE
+	db 20, RATICATE
 	db 14, ZUBAT
 	db 15, MARILL
-	db 15, GOLBAT
-	db 15, GOLBAT
+	db 22, GOLBAT
+	db 22, GOLBAT
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_2F_INSIDE
@@ -679,27 +679,27 @@ JohtoGrassWildMons:
 	; morn
 	db 15, ZUBAT
 	db 17, ZUBAT
-	db 17, GOLBAT
+	db 22, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; day
 	db 15, ZUBAT
 	db 17, ZUBAT
-	db 17, GOLBAT
+	db 22, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	; nite
 	db 15, ZUBAT
 	db 17, ZUBAT
-	db 17, GOLBAT
+	db 22, GOLBAT
 	db 16, MARILL
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 20, RATICATE
+	db 20, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_1F
@@ -1212,7 +1212,7 @@ JohtoGrassWildMons:
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
-	db 25, URSARING
+	db 30, URSARING
 	db 20, TEDDIURSA
 	db 23, GOLBAT
 	db 23, GOLBAT
@@ -1220,7 +1220,7 @@ JohtoGrassWildMons:
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
-	db 25, URSARING
+	db 30, URSARING
 	db 30, URSARING
 	db 23, GOLBAT
 	db 23, GOLBAT
@@ -1465,7 +1465,7 @@ JohtoGrassWildMons:
 	db 14, GROWLITHE
 	db 15, PIDGEY
 	db 16, VULPIX
-	db 15, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 15, STANTLER
 	db 15, STANTLER
 	; day
@@ -1473,7 +1473,7 @@ JohtoGrassWildMons:
 	db 14, GROWLITHE
 	db 15, PIDGEY
 	db 16, VULPIX
-	db 15, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 15, STANTLER
 	db 15, STANTLER
 	; nite
@@ -1490,25 +1490,25 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, RATTATA
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 13, TAUROS
 	db 13, MILTANK
 	db 13, MILTANK
 	; day
 	db 16, RATTATA
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 13, TAUROS
 	db 13, MILTANK
 	db 13, MILTANK
 	; nite
 	db 16, MEOWTH
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, NOCTOWL
+	db 20, NOCTOWL
 	db 16, MEOWTH
 	db 16, MEOWTH
 	db 16, MEOWTH
@@ -1518,25 +1518,25 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, RATTATA
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
 	; day
 	db 16, RATTATA
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 18, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
 	; nite
 	db 16, MEOWTH
-	db 16, RATICATE
+	db 20, RATICATE
 	db 16, MAGNEMITE
-	db 16, NOCTOWL
+	db 20, NOCTOWL
 	db 18, MEOWTH
 	db 18, MEOWTH
 	db 18, MEOWTH

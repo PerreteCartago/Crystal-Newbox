@@ -15,8 +15,8 @@
 	RGB 00, 00, 00
 ; city (boy)
 	RGB 28, 31, 20
-	RGB 31, 15, 00
-	RGB 15, 07, 00
+	RGB 08, 25, 24
+	RGB 00, 16, 18
 	RGB 00, 00, 00
 ; point of interest
 	RGB 28, 31, 20

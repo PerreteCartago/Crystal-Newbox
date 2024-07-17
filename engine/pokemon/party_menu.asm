@@ -759,7 +759,7 @@ TeachWhichPKMNString:
 	db "¿Enseñar a quién?@"
 
 MoveToWhereString:
-	db "¿Mover adónde?@"
+	db "¿Mover dónde?@"
 
 ChooseAFemalePKMNString:
 ; unused

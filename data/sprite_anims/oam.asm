@@ -72,8 +72,8 @@ SpriteAnimOAMData:
 	spriteanimoam $00, .OAMData_PartyMonWithMail2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_MAIL_2
 	spriteanimoam $00, .OAMData_PartyMonWithItem1        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_1
 	spriteanimoam $00, .OAMData_PartyMonWithItem2        ; SPRITE_ANIM_OAMSET_PARTY_MON_WITH_ITEM_2
-	spriteanimoam $00, .OAMData_MagnetTrainRed           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_1
-	spriteanimoam $04, .OAMData_MagnetTrainRed           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_RED_2
+	spriteanimoam $00, .OAMData_MagnetTrainGreen           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_1
+	spriteanimoam $04, .OAMData_MagnetTrainGreen           ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_2
 	spriteanimoam $00, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_43
 	spriteanimoam $30, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_44
 	spriteanimoam $03, .OAMData_Unused43_4A              ; SPRITE_ANIM_OAMSET_UNUSED_45
@@ -106,10 +106,10 @@ SpriteAnimOAMData:
 	spriteanimoam $00, .OAMData_EZChatCursor5            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_5
 	spriteanimoam $00, .OAMData_EZChatCursor6            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_6
 	spriteanimoam $00, .OAMData_EZChatCursor7            ; SPRITE_ANIM_OAMSET_EZCHAT_CURSOR_7
-	spriteanimoam $00, .OAMData_BlueWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_1
-	spriteanimoam $04, .OAMData_BlueWalk                 ; SPRITE_ANIM_OAMSET_BLUE_WALK_2
-	spriteanimoam $00, .OAMData_MagnetTrainBlue          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_1
-	spriteanimoam $04, .OAMData_MagnetTrainBlue          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_BLUE_2
+	spriteanimoam $00, .OAMData_PinkWalk                 ; SPRITE_ANIM_OAMSET_PINK_WALK_1
+	spriteanimoam $04, .OAMData_PinkWalk                 ; SPRITE_ANIM_OAMSET_PINK_WALK_2
+	spriteanimoam $00, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PINK_1
+	spriteanimoam $04, .OAMData_MagnetTrainPink          ; SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PINK_2
 	spriteanimoam $20, .OAMData_MobileTradeCableBulge    ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_CABLE_BULGE_1
 	spriteanimoam $21, .OAMData_MobileTradeCableBulge    ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_CABLE_BULGE_2
 	spriteanimoam $22, .OAMData_MobileTradePing1         ; SPRITE_ANIM_OAMSET_MOBILE_TRADE_PING_1
@@ -155,6 +155,8 @@ SpriteAnimOAMData:
 	spriteanimoam $00, .OAMData_PCMode                   ; SPRITE_ANIM_OAMSET_PC_MODE
 	spriteanimoam $00, .OAMData_PCMode2                  ; SPRITE_ANIM_OAMSET_PC_MODE2
 	spriteanimoam $00, .OAMData_PCPack                   ; SPRITE_ANIM_OAMSET_PC_PACK
+	spriteanimoam $00, .OAMData_GreenWalk                ; SPRITE_ANIM_OAMSET_GREEN_WALK_1
+	spriteanimoam $04, .OAMData_GreenWalk                ; SPRITE_ANIM_OAMSET_GREEN_WALK_2
 	assert_table_length NUM_SPRITE_ANIM_OAMSETS
 
 .OAMData_1x1_Palette0:
@@ -762,19 +764,19 @@ SpriteAnimOAMData:
 	dbsprite  0,  0,  0,  0, $32, 0
 	dbsprite  0,  1,  0,  0, $35, 0
 
-.OAMData_BlueWalk:
+.OAMData_PinkWalk:
 	db 4
-	dbsprite -1, -1,  0,  0, $00, PAL_OW_BLUE
-	dbsprite  0, -1,  0,  0, $01, PAL_OW_BLUE
-	dbsprite -1,  0,  0,  0, $02, PAL_OW_BLUE
-	dbsprite  0,  0,  0,  0, $03, PAL_OW_BLUE
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_PINK
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_PINK
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_PINK
+	dbsprite  0,  0,  0,  0, $03, PAL_OW_PINK
 
-.OAMData_MagnetTrainBlue:
+.OAMData_MagnetTrainPink:
 	db 4
-	dbsprite -1, -1,  0,  0, $00, PAL_OW_BLUE | PRIORITY
-	dbsprite  0, -1,  0,  0, $01, PAL_OW_BLUE | PRIORITY
-	dbsprite -1,  0,  0,  0, $02, PAL_OW_BLUE | PRIORITY
-	dbsprite  0,  0,  0,  0, $03, PAL_OW_BLUE | PRIORITY
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_PINK | PRIORITY
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_PINK | PRIORITY
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_PINK | PRIORITY
+	dbsprite  0,  0,  0,  0, $03, PAL_OW_PINK | PRIORITY
 
 .OAMData_MobileTradeCableBulge:
 	db 1
@@ -1197,3 +1199,17 @@ SpriteAnimOAMData:
 	dsprite  0,  0,  1,  0, $30, $4 | VRAM_BANK_1
 	dsprite  1,  0,  0,  0, $31, $4 | VRAM_BANK_1
 	dsprite  1,  0,  1,  0, $32, $4 | VRAM_BANK_1
+
+.OAMData_GreenWalk:
+	db 4
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_GREEN
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_GREEN
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_GREEN
+	dbsprite  0,  0,  0,  0, $03, PAL_OW_GREEN
+
+.OAMData_MagnetTrainGreen:
+	db 4
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_GREEN | PRIORITY
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_GREEN | PRIORITY
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_GREEN | PRIORITY
+	dbsprite  0,  0,  0,  0, $03, PAL_OW_GREEN | PRIORITY

@@ -5926,11 +5926,11 @@ MoveInfoBox:
 
 	ld h, b
 	ld l, c
-	ld [hl], "/"
+	ld [hl], " "
 
 	ld a, [wPlayerMoveStruct + MOVE_ANIM]
 	ld b, a
-	hlcoord 2, 10
+	hlcoord 1, 10
 	predef PrintMoveType
 
 .done

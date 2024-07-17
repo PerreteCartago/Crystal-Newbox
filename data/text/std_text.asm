@@ -220,7 +220,7 @@ ContestResults_ReadyToJudgeText:
 
 ContestResults_PlayerWonAPrizeText:
 	text "<PLAYER> gana el"
-	line "premio n.°@"
+	line "premio NUM @"
 	text_ram wStringBuffer3
 	text ":"
 	cont "¡una @"
@@ -368,14 +368,14 @@ HappinessText1:
 
 RegisteredNumber1Text:
 	text "<PLAYER> grabó el"
-	line "n.° de @"
+	line "NUM de @"
 	text_ram wStringBuffer3
 	text "."
 	done
 
 RegisteredNumber2Text:
 	text "<PLAYER> grabó el"
-	line "n.° de @"
+	line "NUM de @"
 	text_ram wStringBuffer3
 	text "."
 	done

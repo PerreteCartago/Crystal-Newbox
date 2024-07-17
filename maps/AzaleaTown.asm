@@ -448,10 +448,8 @@ CharcoalKilnSignText:
 	done
 
 AzaleaTownIlexForestSignText:
-	text "El Encinar"
-
-	para "Entra por la"
-	line "puerta"
+	text "El Encinar."
+	line "Entrada Sur."
 	done
 
 AzaleaTown_MapEvents:

@@ -655,11 +655,11 @@ PokegearMap_ContinueMap:
 PokegearMap_InitPlayerIcon:
 	push af
 	depixel 0, 0
-	ld b, SPRITE_ANIM_OBJ_RED_WALK
+	ld b, SPRITE_ANIM_OBJ_GREEN_WALK
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_OBJ_BLUE_WALK
+	ld b, SPRITE_ANIM_OBJ_PINK_WALK
 .got_gender
 	ld a, b
 	call InitSpriteAnimStruct
@@ -2535,11 +2535,11 @@ Pokedex_GetArea:
 	ld [hli], a ; tile id
 	inc de
 	push bc
-	ld c, PAL_OW_RED
+	ld c, PAL_OW_GREEN
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .male
-	inc c ; PAL_OW_BLUE
+	ld c, PAL_OW_GREEN
 .male
 	ld a, c
 	ld [hli], a ; attributes
@@ -2748,11 +2748,11 @@ TownMapPlayerIcon:
 	call Request2bpp
 ; Animation/palette
 	depixel 0, 0
-	ld b, SPRITE_ANIM_OBJ_RED_WALK ; Male
+	ld b, SPRITE_ANIM_OBJ_GREEN_WALK ; Male
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_OBJ_BLUE_WALK ; Female
+	ld b, SPRITE_ANIM_OBJ_PINK_WALK ; Female
 .got_gender
 	ld a, b
 	call InitSpriteAnimStruct

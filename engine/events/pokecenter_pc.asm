@@ -283,7 +283,7 @@ PlayersPCMenuData:
 
 .WithdrawItem: db "Sacar Objeto@"
 .DepositItem:  db "Dejar Objeto@"
-.TossItem:     db "Tirar Objetto@"
+.TossItem:     db "Tirar Objeto@"
 .MailBox:      db "Buzón@"
 .Decoration:   db "Decoración@"
 .TurnOff:      db "Desconexión@"
