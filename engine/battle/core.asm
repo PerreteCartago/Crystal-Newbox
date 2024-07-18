@@ -4796,6 +4796,7 @@ UpdatePlayerHUD::
 	push bc
 	call DrawPlayerHUD
 	call UpdatePlayerHPPal
+	call LoadPlayerStatusIcon
 	call CheckDanger
 	pop bc
 	pop de
@@ -4909,25 +4910,21 @@ PrintPlayerHUD:
 	ld a, "♀"
 
 .got_gender_char
-	hlcoord 17, 8
+	hlcoord 19, 8
 	ld [hl], a
-	hlcoord 14, 8
-	push af ; back up gender
-	push hl
-	ld de, wBattleMonStatus
-	predef PlaceNonFaintStatus
-	pop hl
-	pop bc
-	ret nz
-	ld a, b
-	cp " "
-	jr nz, .copy_level ; male or female
-	dec hl ; genderless
+	hlcoord 10, 8
+	call PlacePlayerStatusIcon
 
-.copy_level
+	hlcoord 14, 8
 	ld a, [wBattleMonLevel]
 	ld [wTempMonLevel], a
 	jp PrintLevel
+
+PlacePlayerStatusIcon:
+	ld [hl], $71
+	inc hl
+	ld [hl], $72
+	ret
 
 UpdateEnemyHUD::
 	push hl
@@ -4935,6 +4932,7 @@ UpdateEnemyHUD::
 	push bc
 	call DrawEnemyHUD
 	call UpdateEnemyHPPal
+	call LoadEnemyStatusIcon
 	pop bc
 	pop de
 	pop hl
@@ -4988,23 +4986,13 @@ DrawEnemyHUD:
 	hlcoord 9, 1
 	ld [hl], a
 
+	hlcoord 2, 1
+	call PlaceEnemyStatusIcon
+
 	hlcoord 6, 1
-	push af
-	push hl
-	ld de, wEnemyMonStatus
-	predef PlaceNonFaintStatus
-	pop hl
-	pop bc
-	jr nz, .skip_level
-	ld a, b
-	cp " "
-	jr nz, .print_level
-	dec hl
-.print_level
 	ld a, [wEnemyMonLevel]
 	ld [wTempMonLevel], a
 	call PrintLevel
-.skip_level
 
 	ld hl, wEnemyMonHP
 	ld a, [hli]
@@ -5070,6 +5058,12 @@ DrawEnemyHUD:
 	hlcoord 2, 2
 	ld b, 0
 	call DrawBattleHPBar
+	ret
+
+PlaceEnemyStatusIcon:
+	ld [hl], $68
+	inc hl
+	ld [hl], $69
 	ret
 
 UpdateEnemyHPPal:
@@ -9390,3 +9384,52 @@ GetWeatherImage:
 	db $88, $14 ; y/x - bottom left
 	db $80, $1c ; y/x - top right
 	db $80, $14 ; y/x - top left
+
+
+LoadPlayerStatusIcon:
+	ld a, [wBattleMonStatus]
+	ld de, StatusIconGFX + 2 tiles
+	bit PSN, a
+	jr nz, .load
+	ld de, StatusIconGFX + 4 tiles
+	bit BRN, a
+	jr nz, .load
+	ld de, StatusIconGFX + 6 tiles
+	bit FRZ, a
+	jr nz, .load
+	ld de, StatusIconGFX + 8 tiles
+	bit PAR, a
+	jr nz, .load
+	ld de, StatusIconGFX + 10 tiles
+	and SLP_MASK
+	jr nz, .load
+	ld de, StatusIconGFX + 0 tiles
+.load
+	ld hl, vTiles2 tile $71
+	lb bc, BANK(StatusIconGFX), 2
+	call Request2bpp
+	ret
+
+LoadEnemyStatusIcon:
+	ld a, [wEnemyMonStatus]
+	ld de, StatusIconGFX + 2 tiles
+	bit PSN, a
+	jr nz, .load
+	ld de, StatusIconGFX + 4 tiles
+	bit BRN, a
+	jr nz, .load
+	ld de, StatusIconGFX + 6 tiles
+	bit FRZ, a
+	jr nz, .load
+	ld de, StatusIconGFX + 8 tiles
+	bit PAR, a
+	jr nz, .load
+	ld de, StatusIconGFX + 10 tiles
+	and SLP_MASK
+	jr nz, .load
+	ld de, StatusIconGFX + 0 tiles
+.load
+	ld hl, vTiles2 tile $68
+	lb bc, BANK(StatusIconGFX), 2
+	call Request2bpp
+	ret

@@ -1386,10 +1386,13 @@ _NPCTradeCableText::
 Text_NPCTraded::
 	text "<PLAYER>"
 	line "cambió a"
-	text_ram wMonOrItemNameBuffer
-	text " por"
-	cont "@"
+
+	para "@"
 	text_ram wStringBuffer2
+	text_start
+	line "por"
+	cont "@"
+	text_ram wMonOrItemNameBuffer
 	text ".@"
 	text_end
 

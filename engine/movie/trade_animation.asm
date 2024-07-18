@@ -939,8 +939,8 @@ TrademonStats_MonTemplate:
 .OTMonData:
 	db   "─── №."
 	next ""
-	next "EO/"
-	next "№<ID> @"
+	next "OT/"
+	next "<ID>№.@"
 
 TrademonStats_Egg:
 	call WaitTop

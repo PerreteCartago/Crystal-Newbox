@@ -50,3 +50,6 @@ INCBIN "gfx/mobile/phone_tiles.2bpp"
 
 
 INCLUDE "gfx/footprints.asm"
+
+StatusIconGFX:
+INCBIN "gfx/battle/status.2bpp"
