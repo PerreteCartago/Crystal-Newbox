@@ -1,3 +1,7 @@
+DEF EARLSPOKEMONACADEMY_FRESH_WATER_PRICE EQU 200
+DEF EARLSPOKEMONACADEMY_SODA_POP_PRICE    EQU 300
+DEF EARLSPOKEMONACADEMY_LEMONADE_PRICE    EQU 350
+
 	object_const_def
 	const EARLSPOKEMONACADEMY_EARL
 	const EARLSPOKEMONACADEMY_YOUNGSTER1
@@ -10,6 +14,79 @@ EarlsPokemonAcademy_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+
+EarlVendingMachine:
+	opentext
+	writetext EarlVendingText
+.Start:
+	special PlaceMoneyTopRight
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .FreshWater
+	ifequal 2, .SodaPop
+	ifequal 3, .Lemonade
+	closetext
+	end
+
+.FreshWater:
+	checkmoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_FRESH_WATER_PRICE
+	ifequal HAVE_LESS, .NotEnoughMoney
+	giveitem FRESH_WATER
+	iffalse .NotEnoughSpace
+	takemoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_FRESH_WATER_PRICE
+	getitemname STRING_BUFFER_3, FRESH_WATER
+	sjump .VendItem
+
+.SodaPop:
+	checkmoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_SODA_POP_PRICE
+	ifequal HAVE_LESS, .NotEnoughMoney
+	giveitem SODA_POP
+	iffalse .NotEnoughSpace
+	takemoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_SODA_POP_PRICE
+	getitemname STRING_BUFFER_3, SODA_POP
+	sjump .VendItem
+
+.Lemonade:
+	checkmoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_LEMONADE_PRICE
+	ifequal HAVE_LESS, .NotEnoughMoney
+	giveitem LEMONADE
+	iffalse .NotEnoughSpace
+	takemoney YOUR_MONEY, GOLDENRODDEPTSTORE6F_LEMONADE_PRICE
+	getitemname STRING_BUFFER_3, LEMONADE
+	sjump .VendItem
+
+.VendItem:
+	pause 10
+	playsound SFX_ENTER_DOOR
+	writetext EarlClangText
+	promptbutton
+	itemnotify
+	sjump .Start
+
+.NotEnoughMoney:
+	writetext EarlVendingNoMoneyText
+	waitbutton
+	sjump .Start
+
+.NotEnoughSpace:
+	writetext EarlVendingNoSpaceText
+	waitbutton
+	sjump .Start
+
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 2, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 4 ; items
+	db "Agua Fresca  ¥{d:EARLSPOKEMONACADEMY_FRESH_WATER_PRICE}@"
+	db "Refresco     ¥{d:EARLSPOKEMONACADEMY_SODA_POP_PRICE}@"
+	db "Limonada     ¥{d:EARLSPOKEMONACADEMY_LEMONADE_PRICE}@"
+	db "Salir@"
 
 AcademyEarl:
 	applymovement EARLSPOKEMONACADEMY_EARL, AcademyEarlSpinMovement
@@ -159,6 +236,29 @@ AcademyEarlSpinMovement:
 	turn_head RIGHT
 	turn_head DOWN
 	step_end
+
+EarlVendingText:
+	text "¡Una máquina"
+	line "expendedora!"
+	done
+
+EarlClangText:
+	text "¡Clang! ¡Salió"
+	line "una lata de"
+	cont "@"
+	text_ram wStringBuffer3
+	text "!"
+	done
+
+EarlVendingNoMoneyText:
+	text "¡Uups! No tienes"
+	line "bastante dinero."
+	done
+
+EarlVendingNoSpaceText:
+	text "No hay sitio para"
+	line "nada más."
+	done
 
 AcademyEarlIntroText:
 	text "¡Soy yo, Primo!"
@@ -428,6 +528,8 @@ EarlsPokemonAcademy_MapEvents:
 	bg_event  1,  1, BGEVENT_READ, AcademyBookshelf
 	bg_event  3,  0, BGEVENT_READ, AcademyBlackboard
 	bg_event  4,  0, BGEVENT_READ, AcademyBlackboard
+	bg_event  6,  2, BGEVENT_UP, EarlVendingMachine
+	bg_event  7,  2, BGEVENT_UP, EarlVendingMachine
 
 	def_object_events
 	object_event  4,  2, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, AcademyEarl, EVENT_EARLS_ACADEMY_EARL

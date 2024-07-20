@@ -85,11 +85,6 @@ BugsyGroup:
 		dw $2FFF, $2FFF, $2FFF, $2FFF, $2FFF ; hp, atk, def, spd, spc
 		db BERRY_JUICE
 		db DEFENSE_CURL, EARTH_POWER, REST, ENCORE
-	db  12, VENONAT
-		db PERFECT_DV, $de ; atk|def, spd|spc
-		dw $2FFF, $2FFF, $2FFF, $2FFF, $2FFF ; hp, atk, def, spd, spc
-		db GOLD_BERRY
-		db DISABLE, SLEEP_POWDER, ZEN_HEADBUTT, SILVER_WIND
 	db  12, BEEDRILL
 		db PERFECT_DV, $de ; atk|def, spd|spc
 		dw $2FFF, $2FFF, $2FFF, $2FFF, $2FFF ; hp, atk, def, spd, spc
@@ -1658,7 +1653,6 @@ BugCatcherGroup:
 	db "Tino@", TRAINERTYPE_NORMAL
 	db 10, YANMA
 	db 10, SPINARAK
-	db 10, LEDYBA
 	db 10, SHUCKLE
 	db 10, BEEDRILL
 	db -1 ; end
@@ -1668,13 +1662,11 @@ BugCatcherGroup:
 	db 10, BUTTERFREE
 	db 10, SPINARAK
 	db 10, VENONAT
-	db 10, SCYTHER
 	db 10, PARAS
 	db -1 ; end
 
 	; BUG_CATCHER (7)
 	db "Kai@", TRAINERTYPE_NORMAL
-	db 10, PARAS
 	db 10, YANMA
 	db 10, VENONAT
 	db 10, SCYTHER
@@ -3586,9 +3578,7 @@ TwinsGroup:
 	db "Amy & May@", TRAINERTYPE_NORMAL
 	db 10, SPINARAK
 	db 10, LEDYBA
-	db 10, SHUCKLE
 	db 10, YANMA
-	db 10, LEDYBA
 	db 10, VENONAT
 	db -1 ; end
 
@@ -3608,9 +3598,7 @@ TwinsGroup:
 	db "Amy & May@", TRAINERTYPE_NORMAL
 	db 10, SPINARAK
 	db 10, LEDYBA
-	db 10, SHUCKLE
 	db 10, YANMA
-	db 10, LEDYBA
 	db 10, VENONAT
 	db -1 ; end
 

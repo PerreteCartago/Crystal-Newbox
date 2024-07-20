@@ -86,6 +86,9 @@ VioletCityPokecenterSign:
 VioletCityMartSign:
 	jumpstd MartSignScript
 
+VioletCityMailPost:
+	jumptext VioletCityMailPostText
+
 VioletCityPPUp:
 	itemball PP_UP
 
@@ -99,6 +102,8 @@ VioletCityHiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_VIOLET_CITY_HIDDEN_HYPER_POTION
 
 VioletCityFollowEarl_MovementData:
+	big_step DOWN
+	big_step DOWN
 	big_step DOWN
 	big_step DOWN
 	turn_head DOWN
@@ -277,6 +282,11 @@ EarlsPokemonAcademySignText:
 	line "De Primo"
 	done
 
+VioletCityMailPostText:
+	text "El buzón está"
+	line "cerrado con llave."
+	done
+
 VioletCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -300,12 +310,13 @@ VioletCity_MapEvents:
 	bg_event 27, 23, BGEVENT_READ, EarlsPokemonAcademySign
 	bg_event 34, 31, BGEVENT_READ, VioletCityPokecenterSign
 	bg_event 10, 21, BGEVENT_READ, VioletCityMartSign
+	bg_event 24, 35, BGEVENT_READ, VioletCityMailPost
 	bg_event 37, 18, BGEVENT_ITEM, VioletCityHiddenHyperPotion
 
 	def_object_events
 	object_event 13, 20, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityEarlScript, EVENT_VIOLET_CITY_EARL
 	object_event 26, 36, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityLassScript, -1
-	object_event 27, 25, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VioletCitySuperNerdScript, -1
+	object_event 27, 29, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VioletCitySuperNerdScript, -1
 	object_event 15, 26, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityGrampsScript, -1
 	object_event  5, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityYoungsterScript, -1
 	object_event 14, 33, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree, -1
