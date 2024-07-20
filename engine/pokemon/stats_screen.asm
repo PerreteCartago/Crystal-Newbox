@@ -1003,12 +1003,12 @@ StatsScreen_placeCaughtLocation:
 	ld e, a
 	farcall GetLandmarkName
 	ld de, wStringBuffer1
-	hlcoord 7, 8
+	hlcoord 2, 9
 	call PlaceString
 	ret
 .unknown_location:
 	ld de, .MetUnknownMapString
-	hlcoord 7, 8
+	hlcoord 2, 9
 	call PlaceString
 	ret
 .MetAtMapString:
@@ -1031,7 +1031,7 @@ StatsScreen_placeCaughtTime:
 	ld e, l
 	call CopyName1
 	ld de, wStringBuffer2
-	hlcoord 2, 9
+	hlcoord 7, 8
 	call PlaceString
 	ret
 
@@ -1043,7 +1043,7 @@ StatsScreen_placeCaughtTime:
 	ld e, l
 	call CopyName1
 	ld de, wStringBuffer2
-	hlcoord 1, 9
+	hlcoord 7, 8
 	call PlaceString
 	ret
 .times
