@@ -308,7 +308,7 @@ OakTimeWhatTimeIsItText:
 	text_end
 
 String_oclock:
-	db "en punto@"
+	db "de la@"
 
 OakTimeWhatHoursText:
 	; What?@ @
@@ -736,9 +736,9 @@ GetTimeOfDayString:
 	ld de, .day_string
 	ret
 
-.nite_string: db "NOCH@"
-.morn_string: db "MAÑ@"
-.day_string:  db "DÍA@"
+.nite_string: db "Noche@"
+.morn_string: db "Mañana@"
+.day_string:  db "Tarde@"
 
 PrintAdjustedHour:
 	push bc

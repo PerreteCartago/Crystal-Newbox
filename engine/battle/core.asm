@@ -3709,7 +3709,7 @@ OfferSwitch:
 	callfar Battle_GetTrainerName
 	ld hl, BattleText_EnemyIsAboutToUseWillPlayerChangeMon
 	call StdBattleTextbox
-	lb bc, 1, 7
+	lb bc, 0, 7
 	call PlaceYesNoBox
 	ld a, [wMenuCursorY]
 	dec a

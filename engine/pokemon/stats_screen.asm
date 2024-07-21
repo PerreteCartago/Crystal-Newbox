@@ -775,7 +775,7 @@ LoadGreenPage:
 	db "Movim.@"
 
 LoadBluePage:
-	call .PlaceOTInfo
+	call StatsScreen_PrintDVs
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
 	ld b, 10
@@ -790,82 +790,20 @@ LoadBluePage:
 	predef PrintTempMonStats
 	ret
 
-.PlaceOTInfo:
-	ld de, IDNoString
-	hlcoord 0, 9
-	call PlaceString
-	ld de, OTString
-	hlcoord 0, 12
-	call PlaceString
-	hlcoord 2, 10
-	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
-	ld de, wTempMonID
-	call PrintNum
-	ld hl, .OTNamePointers
-	call GetNicknamePointer
-	call CopyNickname
-	farcall CorrectNickErrors
-	hlcoord 2, 13
-	call PlaceString
-	ld a, [wTempMonCaughtGender]
-	and a
-	jr z, .done
-	cp $7f
-	jr z, .done
-	and CAUGHT_GENDER_MASK
-	ld a, "♂"
-	jr z, .got_gender
-	ld a, "♀"
-.got_gender
-	hlcoord 9, 13
-	ld [hl], a
-.done
-	ret
-
-.OTNamePointers:
-	dw wPartyMonOTs
-	dw wOTPartyMonOTs
-	dw wBufferMonOT ; unused
-	dw wBufferMonOT ; unused
-	dw wBufferMonOT ; unused
-	dw wBufferMonOT
-
-LoadOrangePage:
-	call StatsScreen_placeCaughtLevel
-	call StatsScreen_placeCaughtTime
-	call StatsScreen_placeCaughtLocation
-	call StatsScreen_PrintDVs
-	ret
-
-StatsScreen_PrintHappiness:
-	hlcoord 1, 15
-	ld [hl], $34 ; heart icon
-
-	hlcoord 3, 15
-	lb bc, 1, 3
-	ld de, wTempMonHappiness
-	call PrintNum
-	ld de, .outofMaxLoveString
-	hlcoord 4, 16
-	call PlaceString
-	ret
-.outofMaxLoveString:
-	db "/255@"
-
 StatsScreen_PrintDVs:
-	hlcoord 0, 13
+	hlcoord 0, 8
 	ld de, .DVstring1
 	call PlaceString
-	hlcoord 0, 15
+	hlcoord 0, 10
 	ld de, .DVstring2
 	call PlaceString
-	hlcoord 0, 17
+	hlcoord 0, 12
 	ld de, .DVstring3
 	call PlaceString
-	hlcoord 12, 13
+	hlcoord 0, 14
 	ld de, .DVstring4
 	call PlaceString
-	hlcoord 12, 15
+	hlcoord 0, 16
 	ld de, .DVstring5
 	call PlaceString
 
@@ -888,7 +826,7 @@ StatsScreen_PrintDVs:
 	push bc
 	ld de, wPokedexStatus
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 7, 13
+	hlcoord 8, 9
 	call PrintNum
 
 	; DEF DV
@@ -908,7 +846,7 @@ StatsScreen_PrintDVs:
 	push bc
 	ld de, wPokedexStatus
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 8, 15
+	hlcoord 8, 11
 	call PrintNum
 
 	; SPE DV
@@ -929,7 +867,7 @@ StatsScreen_PrintDVs:
 	push bc
 	ld de, wPokedexStatus
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 10, 17 ; 1, 5, 9, 13
+	hlcoord 8, 17 ; 1, 5, 9, 13
 	call PrintNum
 
 ; SPC DV
@@ -949,7 +887,7 @@ and %00001111 ; least significant nybble, don't need to swap the bits of the byt
 	push bc
 	ld de, wPokedexStatus
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 16, 13
+	hlcoord 8, 15
 	call PrintNum
 	; hlcoord 18, 15 ; 1, 4, 7, 10, 13
 	; call PrintNum
@@ -970,21 +908,86 @@ and %00001111 ; least significant nybble, don't need to swap the bits of the byt
 	ld [wPokedexStatus], a
 	ld de, wPokedexStatus
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 17, 15 ; 1, 4, 7, 10, 13
+	hlcoord 8, 13 ; 1, 4, 7, 10, 13
 	call PrintNum
 	ret
 
 .DVstring1:
-	db "Ataque:@"
+	db "Ataque@"
 .DVstring2:
-	db "Defensa:@"
+	db "Defensa@"
 .DVstring3:
-	db "Velocidad:@"
+	db "Vida@"
 .DVstring4:
-	db "Esp:@"
+	db "Especial@"
 .DVstring5:
-	db "Vida:@"
+	db "Velocidad@"
 
+LoadOrangePage:
+	call .PlaceOTInfo
+	call StatsScreen_PrintHappiness
+	call StatsScreen_placeCaughtLevel
+	call StatsScreen_placeCaughtTime
+	call StatsScreen_placeCaughtLocation
+	ret
+
+.PlaceOTInfo:
+	ld de, IDNoString
+	hlcoord 0, 15
+	call PlaceString
+	ld de, OTString
+	hlcoord 0, 13
+	call PlaceString
+	hlcoord 12, 15
+	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+	ld de, wTempMonID
+	call PrintNum
+	ld hl, .OTNamePointers
+	call GetNicknamePointer
+	call CopyNickname
+	farcall CorrectNickErrors
+	hlcoord 12, 13
+	call PlaceString
+	ld a, [wTempMonCaughtGender]
+	and a
+	jr z, .done
+	cp $7f
+	jr z, .done
+	and CAUGHT_GENDER_MASK
+	ld a, "♂"
+	jr z, .got_gender
+	ld a, "♀"
+.got_gender
+	hlcoord 19, 13
+	ld [hl], a
+.done
+	ret
+
+.OTNamePointers:
+	dw wPartyMonOTs
+	dw wOTPartyMonOTs
+	dw wBufferMonOT ; unused
+	dw wBufferMonOT ; unused
+	dw wBufferMonOT ; unused
+	dw wBufferMonOT
+
+StatsScreen_PrintHappiness:
+	ld de, .HappinessString
+	hlcoord 0, 17
+	call PlaceString
+	hlcoord 8, 17
+	lb bc, 1, 3
+	ld de, wTempMonHappiness
+	call PrintNum
+	ld de, .outofMaxLoveString
+	hlcoord 11, 17
+	call PlaceString
+	ret
+
+.HappinessString:
+	db "Amistad:@"
+.outofMaxLoveString:
+	db "(máx 255)@"
 
 StatsScreen_placeCaughtLocation:
 	ld de, .MetAtMapString
@@ -1080,10 +1083,10 @@ StatsScreen_placeCaughtLevel:
 	db "@"
 
 IDNoString:
-	db "<ID>№.@"
+	db "Núm. de ID:@"
 
 OTString:
-	db "OT/@"
+	db "Entrenador:@"
 
 StatsScreen_PlaceFrontpic:
 	ld hl, wTempMonDVs
