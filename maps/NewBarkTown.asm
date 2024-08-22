@@ -137,6 +137,9 @@ NewBarkTownElmsLabSign:
 NewBarkTownElmsHouseSign:
 	jumptext NewBarkTownElmsHouseSignText
 
+BicicleSign:
+	jumptext BicicleSignText
+
 NewBarkTown_TeacherRunsToYouMovement1:
 	step LEFT
 	step LEFT
@@ -280,6 +283,14 @@ NewBarkTownElmsHouseSignText:
 	text "Casa de Elm"
 	done
 
+BicicleSignText:
+	text "La vieja bici de"
+	line "mi padre..."
+
+	para "Debería arreglarla"
+	line "algún día."
+	done
+
 
 NewBarkTown_MapEvents:
 	db 0, 0 ; filler
@@ -299,6 +310,8 @@ NewBarkTown_MapEvents:
 	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
 	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
+	bg_event 14,  6, BGEVENT_READ, BicicleSign
+	bg_event 15,  6, BGEVENT_READ, BicicleSign
 
 	def_object_events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1

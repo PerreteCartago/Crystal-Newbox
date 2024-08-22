@@ -1249,23 +1249,23 @@ EggStatsScreen:
 	call GetSGBLayout
 	call StatsScreen_PlaceHorizontalDivider
 	ld de, EggString
-	hlcoord 8, 1
+	hlcoord 7, 1
 	call PlaceString
 	ld de, IDNoString
-	hlcoord 8, 3
+	hlcoord 7, 3
 	call PlaceString
 	ld de, OTString
-	hlcoord 8, 5
+	hlcoord 7, 5
 	call PlaceString
 	ld de, FiveQMarkString
-	hlcoord 11, 3
+	hlcoord 18, 3
 	call PlaceString
 	ld de, FiveQMarkString
-	hlcoord 11, 5
+	hlcoord 18, 5
 	call PlaceString
 if DEF(_DEBUG)
 	ld de, .PushStartString
-	hlcoord 8, 17
+	hlcoord 7, 17
 	call PlaceString
 	jr .placed_push_start
 
@@ -1305,31 +1305,33 @@ endc
 	ret
 
 EggString:
-	db "EGG@"
+	db "Huevo@"
 
 FiveQMarkString:
-	db "?????@"
+	db "¿?@"
 
 EggSoonString:
-	db   "It's making sounds"
-	next "inside. It's going"
-	next "to hatch soon!@"
+	db   "Se oyen ruidos"
+	next "dentro. ¡Pronto"
+	next "se abrirá!@"
 
 EggCloseString:
-	db   "It moves around"
-	next "inside sometimes."
-	next "It must be close"
-	next "to hatching.@"
+	db   "A veces se"
+	next "mueve. Debe de"
+	next "estar a punto"
+	next "de abrirse.@"
 
 EggMoreTimeString:
-	db   "Wonder what's"
-	next "inside? It needs"
-	next "more time, though.@"
+	db   "¿Qué habrá"
+	next "dentro? Tendrás"
+	next "que esperar un"
+	next "poco más.@"
 
 EggALotMoreTimeString:
-	db   "This EGG needs a"
-	next "lot more time to"
-	next "hatch.@"
+	db   "Este Huevo"
+	next "necesita mucho"
+	next "más tiempo"
+	next "para abrirse.@"
 
 StatsScreen_AnimateEgg:
 	call StatsScreen_GetAnimationParam

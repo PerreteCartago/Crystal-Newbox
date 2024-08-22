@@ -869,7 +869,7 @@ Function100597:
 
 MenuHeader_1005b2:
 	db MENU_BACKUP_TILES ; flags
-	db 6, 14
+	db 6, 15
 	db 10, 19
 	dw MenuData_1005ba
 	db 1 ; default option

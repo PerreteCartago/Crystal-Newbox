@@ -140,3 +140,9 @@
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 8b
 	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 8c
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 8d
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 8e
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 8f
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 90
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 91
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 92
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 93

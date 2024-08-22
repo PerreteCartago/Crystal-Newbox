@@ -277,6 +277,7 @@ ENDM
 	map_const ILEX_FOREST_AZALEA_GATE,                      5,  4 ; 22
 	map_const ROUTE_34_ILEX_FOREST_GATE,                    5,  4 ; 23
 	map_const DAY_CARE,                                     5,  4 ; 24
+	map_const SCALD_HOUSE,                                  4,  4 ; 24
 	endgroup
 
 	newgroup VERMILION                                            ; 12
@@ -460,7 +461,7 @@ ENDM
 	map_const ROUTE_29,                                    30,  9 ;  3
 	map_const NEW_BARK_TOWN,                               10,  9 ;  4
 	map_const ELMS_LAB,                                     5,  6 ;  5
-	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
+	map_const PLAYERS_HOUSE_1F,                            10,  4 ;  6
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7
 	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  8
 	map_const ELMS_HOUSE,                                   4,  4 ;  9

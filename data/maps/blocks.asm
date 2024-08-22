@@ -995,6 +995,7 @@ SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
+ScaldHouse_Blocks:
 Route30BusyManHouse_Blocks:
 OlivineTimsHouse_Blocks:
 OlivineHouseBeta_Blocks:

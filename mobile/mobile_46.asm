@@ -4635,13 +4635,13 @@ String_11a2d3:
 
 MenuHeader_11a2d6: ; unreferenced
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 15, 6, SCREEN_WIDTH - 1, 10
+	menu_coords 16, 6, SCREEN_WIDTH - 1, 10
 	dw NULL
 	db 0 ; default option
 
 MenuHeader_11a2de:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 15, 7, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	menu_coords 16, 7, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
 	dw NULL
 	db 0 ; default option
 
@@ -4968,10 +4968,10 @@ Function11a536:
 	jr z, .asm_11a54d
 	xor a
 	ld [wMobileInactivityTimerMinutes], a
-	hlcoord 15, 7
+	hlcoord 16, 7
 	ld a, $ed
 	ld [hl], a
-	hlcoord 15, 9
+	hlcoord 16, 9
 	ld a, $7f
 	ld [hl], a
 	jr .asm_11a54d
@@ -4985,10 +4985,10 @@ Function11a536:
 	jr nz, .asm_11a54d
 	inc a
 	ld [wMobileInactivityTimerMinutes], a
-	hlcoord 15, 7
+	hlcoord 16, 7
 	ld a, $7f
 	ld [hl], a
-	hlcoord 15, 9
+	hlcoord 16, 9
 	ld a, $ed
 	ld [hl], a
 	jr .asm_11a54d
@@ -5036,7 +5036,7 @@ Function11a5b9:
 	ret
 
 Function11a5f5:
-	ld a, $e
+	ld a, $f
 	ld [wMenuBorderLeftCoord], a
 	ld a, $13
 	ld [wMenuBorderRightCoord], a
@@ -5045,20 +5045,20 @@ Function11a5f5:
 	ld a, $a
 	ld [wMenuBorderBottomCoord], a
 	call PushWindow
-	hlcoord 14, 6, wAttrmap
+	hlcoord 15, 6, wAttrmap
 	ld b, $5
 	ld c, $6
-	hlcoord 14, 6
+	hlcoord 15, 6
 	ld b, $3
-	ld c, $4
+	ld c, $3
 	call Function3eea
-	hlcoord 16, 7
+	hlcoord 17, 7
 	ld de, String_11a2cf
 	call PlaceString
-	hlcoord 16, 9
+	hlcoord 17, 9
 	ld de, String_11a2d3
 	call PlaceString
-	hlcoord 15, 7
+	hlcoord 16, 7
 	ld a, $ed
 	ld [hl], a
 	farcall HDMATransferTilemapAndAttrmap_Overworld

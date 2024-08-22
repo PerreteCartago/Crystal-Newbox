@@ -98,6 +98,9 @@ VioletCityRareCandy:
 VioletCityFruitTree:
 	fruittree FRUITTREE_VIOLET_CITY
 
+VioletCityFruitTree2:
+	fruittree FRUITTREE_VIOLET_CITY_2
+
 VioletCityHiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_VIOLET_CITY_HIDDEN_HYPER_POTION
 
@@ -262,12 +265,12 @@ VioletCitySignText:
 
 VioletGymSignText:
 	text "Líder del Gimnasio"
-	line "Pokémon de Ciudad"
-	cont "Malva: Antón"
+	line "Pokémon de Pueblo"
+	cont "Azalea: Pegaso"
 
-	para "La enciclopedia"
-	line "andante de los"
-	cont "Pokémon bicho"
+	para "El elegante"
+	line "maestro de los"
+	cont "Pokémon voladores"
 	done
 
 SproutTowerSignText:
@@ -292,7 +295,7 @@ VioletCity_MapEvents:
 
 	def_warp_events
 	warp_event  9, 21, VIOLET_MART, 2
-	warp_event 18, 23, AZALEA_GYM, 1
+	warp_event 18, 23, VIOLET_GYM, 1
 	warp_event 30, 23, EARLS_POKEMON_ACADEMY, 1
 	warp_event  3, 19, VIOLET_NICKNAME_SPEECH_HOUSE, 1
 	warp_event 33, 31, VIOLET_POKECENTER_1F, 1
@@ -320,5 +323,6 @@ VioletCity_MapEvents:
 	object_event 15, 26, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityGrampsScript, -1
 	object_event  5, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityYoungsterScript, -1
 	object_event 14, 33, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree, -1
-	object_event 12,  0, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityPPUp, EVENT_VIOLET_CITY_PP_UP
+	object_event  9,  1, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree2, -1
+	object_event 11,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityPPUp, EVENT_VIOLET_CITY_PP_UP
 	object_event 35, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityRareCandy, EVENT_VIOLET_CITY_RARE_CANDY

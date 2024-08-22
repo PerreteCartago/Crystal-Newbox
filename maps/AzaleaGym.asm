@@ -364,8 +364,8 @@ AzaleaGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4, 15, VIOLET_CITY, 2
-	warp_event  5, 15, VIOLET_CITY, 2
+	warp_event  4, 15, AZALEA_TOWN, 5
+	warp_event  5, 15, AZALEA_TOWN, 5
 
 	def_coord_events
 
