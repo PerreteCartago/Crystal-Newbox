@@ -2919,7 +2919,7 @@ AskUseNextPokemon:
 	ld hl, BattleText_UseNextMon
 	call StdBattleTextbox
 .loop
-	lb bc, 1, 7
+	lb bc, 0, 7
 	call PlaceYesNoBox
 	ld a, [wMenuCursorY]
 	jr c, .pressed_b

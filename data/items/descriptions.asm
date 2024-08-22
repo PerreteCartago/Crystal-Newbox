@@ -25,7 +25,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw DuskBallDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -45,7 +45,7 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw TeruSama3Desc
+	dw XSpDefDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -135,7 +135,7 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw PassDesc
-	dw TeruSama9Desc
+	dw EvioliteDesc
 	dw TeruSama10Desc
 	dw TeruSama11Desc
 	dw CharcoalDesc
@@ -354,8 +354,9 @@ WaterStoneDesc:
 	db   "Evoluciona ciertos"
 	next "tipos de #MON.@"
 
-TeruSama2Desc:
-	db   "¿?@"
+DuskBallDesc:
+	db   "Funciona mejor de"
+	next "noche y en cuevas@"
 
 HPUpDesc:
 	db   "Aumenta los PS de"
@@ -386,7 +387,7 @@ RareCandyDesc:
 	next "un #MON.@"
 
 XAccuracyDesc:
-	db   "Sube la PRECISIÓN."
+	db   "Sube la precisión."
 	next "(1 Niv)@"
 
 LeafStoneDesc:
@@ -433,8 +434,9 @@ DireHitDesc:
 	db   "Sube prob. golpe"
 	next "crítico. (1 Niv)@"
 
-TeruSama3Desc:
-	db   "¿?@"
+XSpDefDesc:
+	db   "Sube la Defensa."
+	next "Especial (1 Niv).@"
 
 FreshWaterDesc:
 	db   "Restaura 50 PS de"
@@ -782,8 +784,9 @@ PassDesc:
 	db   "Un ticket para"
 	next "el MAGNETOTRÉN.@"
 
-TeruSama9Desc:
-	db   "¿?@"
+EvioliteDesc:
+	db   "Sube defensas de"
+	next "<POKE>mon no evoluc.@" 
 
 TeruSama10Desc:
 	db   "¿?@"

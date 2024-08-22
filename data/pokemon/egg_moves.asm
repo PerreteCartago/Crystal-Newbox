@@ -760,6 +760,10 @@ StantlerEggMoves:
 	db DISABLE
 	db LIGHT_SCREEN
 	db BITE
+	db DOUBLE_KICK
+	db THRASH
+	db MEGAHORN
+	db RAGE
 	db -1 ; end
 
 TyrogueEggMoves:

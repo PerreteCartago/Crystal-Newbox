@@ -432,7 +432,7 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (3)
-	db "Arturno@", TRAINERTYPE_NORMAL
+	db "Arturo@", TRAINERTYPE_NORMAL
 	db 16, TANGELA
 	db -1 ; end
 

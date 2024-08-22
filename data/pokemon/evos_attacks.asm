@@ -457,6 +457,7 @@ NidokingEvosAttacks:
 	db 1, DOUBLE_KICK
 	db 1, POISON_JAB
 	db 23, THRASH
+	db 43, MEGAHORN
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -1542,6 +1543,7 @@ RhyhornEvosAttacks:
 	db 45, STONE_EDGE
 	db 49, TAKE_DOWN
 	db 55, EARTHQUAKE
+	db 57, MEGAHORN
 	db 0 ; no more level-up moves
 
 RhydonEvosAttacks:
@@ -1556,6 +1558,7 @@ RhydonEvosAttacks:
 	db 37, HORN_DRILL
 	db 54, TAKE_DOWN
 	db 65, EARTHQUAKE
+	db 66, MEGAHORN
 	db 0 ; no more level-up moves
 
 ChanseyEvosAttacks:
@@ -1638,6 +1641,7 @@ GoldeenEvosAttacks:
 	db 38, WATERFALL
 	db 43, HORN_DRILL
 	db 52, AGILITY
+	db 57, MEGAHORN
 	db 0 ; no more level-up moves
 
 SeakingEvosAttacks:
@@ -1651,6 +1655,7 @@ SeakingEvosAttacks:
 	db 41, WATERFALL
 	db 49, HORN_DRILL
 	db 61, AGILITY
+	db 69, MEGAHORN
 	db 0 ; no more level-up moves
 
 StaryuEvosAttacks:
@@ -1718,11 +1723,13 @@ JynxEvosAttacks:
 	db 1, POWDER_SNOW
 	db 9, LOVELY_KISS
 	db 13, POWDER_SNOW
+	db 21, CONFUSION
 	db 21, DOUBLESLAP
 	db 25, ICE_PUNCH
 	db 33, AVALANCHE
 	db 35, MEAN_LOOK
 	db 41, BODY_SLAM
+	db 49, PSYCHIC_M
 	db 51, PERISH_SONG
 	db 57, BLIZZARD
 	db 0 ; no more level-up moves
@@ -3240,12 +3247,17 @@ SmoochumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, LICK
+	db 6, DRAIN_KISS
 	db 9, SWEET_KISS
+	db 9, LOVELY_KISS
 	db 13, POWDER_SNOW
 	db 21, CONFUSION
+	db 21, DOUBLESLAP
 	db 25, SING
+	db 25, ICE_PUNCH
 	db 31, AVALANCHE
 	db 33, MEAN_LOOK
+	db 35, BODY_SLAM
 	db 37, PSYCHIC_M
 	db 45, PERISH_SONG
 	db 49, BLIZZARD
