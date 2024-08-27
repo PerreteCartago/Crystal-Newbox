@@ -79,6 +79,9 @@ EcruteakDanceTheaterSign:
 BurnedTowerSign:
 	jumptext BurnedTowerSignText
 
+EcruteakWillOWispSign:
+	jumptext EcruteakWillOWispSignText
+
 EcruteakCityPokecenterSign:
 	jumpstd PokecenterSignScript
 
@@ -87,6 +90,7 @@ EcruteakCityMartSign:
 
 EcruteakCityHiddenHyperPotion:
 	hiddenitem HYPER_POTION, EVENT_ECRUTEAK_CITY_HIDDEN_HYPER_POTION
+
 
 UnusedMissingDaughterText:
 ; unused
@@ -250,6 +254,11 @@ EcruteakDanceTheaterSignText:
 	line "Ciudad Iris"
 	done
 
+EcruteakWillOWispSignText:
+	text "Casa del Cuenta-"
+	line "cuentos."
+	done
+
 BurnedTowerSignText:
 	text "Torre Quemada"
 
@@ -280,17 +289,19 @@ EcruteakCity_MapEvents:
 	warp_event  5,  5, BURNED_TOWER_1F, 1
 	warp_event  0, 18, ROUTE_38_ECRUTEAK_GATE, 3
 	warp_event  0, 19, ROUTE_38_ECRUTEAK_GATE, 4
+	warp_event 23, 21, ECRUTEAK_WILL_O_WISP_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 15, 21, BGEVENT_READ, EcruteakCitySign
-	bg_event 38, 10, BGEVENT_READ, TinTowerSign
-	bg_event  8, 28, BGEVENT_READ, EcruteakGymSign
+	bg_event 38,  8, BGEVENT_READ, TinTowerSign
+	bg_event  3, 27, BGEVENT_READ, EcruteakGymSign
 	bg_event 10, 10, BGEVENT_READ, EcruteakDanceTheaterSign
 	bg_event  6,  6, BGEVENT_READ, BurnedTowerSign
 	bg_event 24, 27, BGEVENT_READ, EcruteakCityPokecenterSign
 	bg_event 30, 21, BGEVENT_READ, EcruteakCityMartSign
+	bg_event 21, 21, BGEVENT_READ, EcruteakWillOWispSign
 	bg_event 23, 14, BGEVENT_ITEM, EcruteakCityHiddenHyperPotion
 
 	def_object_events
