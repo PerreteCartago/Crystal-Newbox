@@ -1052,3 +1052,11 @@ Route30BerryHouse_Blocks:
 	INCBIN "maps/House1.blk"
 
 ENDSECTION
+
+
+SECTION "Map Blocks 4", ROMX
+
+CianwoodCave_Blocks:
+	INCBIN "maps/CianwoodCave.blk"
+
+ENDSECTION

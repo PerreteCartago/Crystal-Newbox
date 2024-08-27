@@ -1710,4 +1710,32 @@ JohtoGrassWildMons:
 	db 44, GOLBAT
 	end_grass_wildmons
 
+	def_grass_wildmons CIANWOOD_CAVE
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 20, GEODUDE
+	db 21, SANDSHREW
+	db 22, ZUBAT
+	db 22, ONIX
+	db 23, LARVITAR
+	db 24, LARVITAR
+	db 24, KRABBY
+	; day
+	db 20, GEODUDE
+	db 21, SANDSHREW
+	db 22, ZUBAT
+	db 22, ONIX
+	db 23, LARVITAR
+	db 24, LARVITAR
+	db 24, KRABBY
+	; nite
+	db 20, GEODUDE
+	db 21, QUAGSIRE
+	db 22, ONIX
+	db 25, RATICATE
+	db 23, LARVITAR
+	db 24, LARVITAR
+	db 24, KRABBY
+	end_grass_wildmons
+
 	db -1 ; end

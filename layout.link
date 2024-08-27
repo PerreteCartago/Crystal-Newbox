@@ -44,7 +44,6 @@ ROMX $06
 ROMX $07
 	"Roofs"
 	"Tileset Data 2"
-	"Extra Songs 1"
 ROMX $08
 	"Clock Reset"
 	"Tileset Data 3"
@@ -114,6 +113,7 @@ ROMX $24
 	"bank24"
 ROMX $25
 	"Maps"
+	"Extra Songs 1"
 ROMX $26
 	"Map Scripts 11"
 ROMX $27

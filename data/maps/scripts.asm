@@ -489,5 +489,6 @@ INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/ScaldHouse.asm"
 INCLUDE "maps/EcruteakWillOWispHouse.asm"
 INCLUDE "maps/Route38RivalPokemonHouse.asm"
+INCLUDE "maps/CianwoodCave.asm"
 
 ENDSECTION

@@ -41,6 +41,7 @@ Landmarks:
 	landmark  28,  92, WhirlIslandsName
 	landmark  28, 100, Route41Name
 	landmark  20, 100, CianwoodCityName
+	landmark  18,  98, CianwoodCave
 	landmark  92,  44, Route42Name
 	landmark  84,  44, MtMortarName
 	landmark 108,  44, MahoganyTownName
@@ -114,6 +115,7 @@ GoldenrodCityName:   db "Ciudad<BSP>Trigal@"
 EcruteakCityName:    db "Ciudad<BSP>Iris@"
 OlivineCityName:     db "Ciudad<BSP>Olivo@"
 CianwoodCityName:    db "Ciudad<BSP>Orquídea@"
+CianwoodCave:        db "Cueva<BSP>Cascada@"
 MahoganyTownName:    db "Pueblo<BSP>Caoba@"
 BlackthornCityName:  db "Ciudad<BSP>Endrino@"
 LakeOfRageName:      db "Lago de<BSP>la furia@"

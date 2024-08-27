@@ -700,3 +700,4 @@ ENDM
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes Route44House, ROUTE_44_HOUSE, $00, 0
 	map_attributes Route38RivalPokemonHouse, ROUTE_38_POKEMON_RIVAL_HOUSE, $00, 0
+	map_attributes CianwoodCave, CIANWOOD_CAVE, $09, 0
