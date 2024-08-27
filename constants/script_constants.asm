@@ -239,6 +239,7 @@ DEF EMOTE_LENGTH EQU 6
 	const FRUITTREE_PEWTER_CITY_2 ; 1d
 	const FRUITTREE_FUCHSIA_CITY  ; 1e
 	const FRUITTREE_VIOLET_CITY_2 ; 1f
+	const FRUITTREE_OLIVINE_CITY  ; 20
 DEF NUM_FRUIT_TREES EQU const_value - 1
 
 ; describedecoration arguments

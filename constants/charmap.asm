@@ -132,6 +132,7 @@
 	charmap "Ñ",         $c7
 	charmap "ú",         $c8
 	charmap "Ó",         $c9
+	charmap "ü",         $ca
 	charmap "′",         $ce
 	charmap "″",         $cf
 

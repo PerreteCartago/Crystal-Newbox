@@ -324,7 +324,6 @@ INCLUDE "data/tilesets/kanto_collision.asm"
 SECTION "Tileset Data A", ROMX
 
 TilesetJohtoModernGFX::
-TilesetBattleTowerOutsideGFX::
 INCBIN "gfx/tilesets/johto_modern.2bpp.lz"
 
 TilesetJohtoModernMeta::
@@ -341,3 +340,6 @@ INCBIN "data/tilesets/traditional_house_metatiles.bin"
 
 TilesetTraditionalHouseColl::
 INCLUDE "data/tilesets/traditional_house_collision.asm"
+
+TilesetBattleTowerOutsideGFX::
+INCBIN "gfx/tilesets/battle_tower_outside.2bpp.lz"

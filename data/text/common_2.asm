@@ -413,7 +413,9 @@ _UseStrengthText::
 	done
 
 _MoveBoulderText::
+	text "¡@"
 	text_ram wStringBuffer1
+	text_start
 	line "puede mover las"
 	cont "piedras."
 	prompt

@@ -490,6 +490,7 @@ ENDM
 	map_attributes EcruteakMart, ECRUTEAK_MART, $00, 0
 	map_attributes EcruteakGym, ECRUTEAK_GYM, $00, 0
 	map_attributes EcruteakItemfinderHouse, ECRUTEAK_ITEMFINDER_HOUSE, $00, 0
+	map_attributes EcruteakWillOWispHouse, ECRUTEAK_WILL_O_WISP_HOUSE, $00, 0
 	map_attributes BlackthornGym1F, BLACKTHORN_GYM_1F, $00, 0
 	map_attributes BlackthornGym2F, BLACKTHORN_GYM_2F, $00, 0
 	map_attributes BlackthornDragonSpeechHouse, BLACKTHORN_DRAGON_SPEECH_HOUSE, $00, 0
@@ -698,3 +699,4 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes Route44House, ROUTE_44_HOUSE, $00, 0
+	map_attributes Route38RivalPokemonHouse, ROUTE_38_POKEMON_RIVAL_HOUSE, $00, 0

@@ -362,6 +362,7 @@ TradeCenter_Blocks:
 TimeCapsule_Blocks:
 	INCBIN "maps/TradeCenter.blk"
 
+EcruteakWillOWispHouse_Blocks:
 EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
 VioletNicknameSpeechHouse_Blocks:
@@ -995,6 +996,7 @@ SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
+Route38RivalPokemonHouse_Blocks:
 ScaldHouse_Blocks:
 Route30BusyManHouse_Blocks:
 OlivineTimsHouse_Blocks:

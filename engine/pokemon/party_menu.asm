@@ -750,7 +750,7 @@ ChooseAMonString:
 	db "Elige un Pokémon.@"
 
 UseOnWhichPKMNString:
-	db "¿Usar en qué Pokémon?@"
+	db "¿En qué Pokémon?@"
 
 WhichPKMNString:
 	db "¿Qué Pokémon?@"
