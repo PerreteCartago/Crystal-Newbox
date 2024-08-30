@@ -190,7 +190,7 @@ MoveNames::
 	li "Bomba lodo"
 	li "Bofetón lodo"
 	li "Pulpocañón"
-	li "Puas"
+	li "Púas"
 	li "Voltio cruel"
 	li "Profecía"
 	li "Mismodestino"

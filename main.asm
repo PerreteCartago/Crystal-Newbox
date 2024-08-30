@@ -171,7 +171,6 @@ INCLUDE "data/battle/effect_command_pointers.asm"
 
 SECTION "bank10", ROMX
 
-INCLUDE "engine/pokedex/pokedex.asm"
 INCLUDE "data/moves/moves.asm"
 INCLUDE "engine/pokemon/evolve.asm"
 
@@ -717,6 +716,12 @@ INCLUDE "gfx/timeofday_images.asm"
 SECTION "Battle Weather Images", ROMX
 
 INCLUDE "gfx/weather_images.asm"
+
+
+SECTION "Pokedex", ROMX
+
+INCLUDE "engine/pokedex/pokedex.asm" ; movido de bank10
+
 
 
 SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]

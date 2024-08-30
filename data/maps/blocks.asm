@@ -148,7 +148,6 @@ Route38_Blocks:
 BetaCianwoodCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaCianwoodCity.blk"
 
-Route44House_Blocks:
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
 Route43MahoganyGate_Blocks:
@@ -879,6 +878,7 @@ SafariZoneBeta_Blocks:
 UndergroundPath_Blocks:
 	INCBIN "maps/UndergroundPath.blk"
 
+Route44House_Blocks:
 Route39Barn_Blocks:
 	INCBIN "maps/Route39Barn.blk"
 

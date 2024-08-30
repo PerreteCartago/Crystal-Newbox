@@ -1724,7 +1724,7 @@ JohtoGrassWildMons:
 	db 20, GEODUDE
 	db 21, SANDSHREW
 	db 22, ZUBAT
-	db 22, ONIX
+	db 25, RATICATE
 	db 23, LARVITAR
 	db 24, LARVITAR
 	db 24, KRABBY
@@ -1732,7 +1732,7 @@ JohtoGrassWildMons:
 	db 20, GEODUDE
 	db 21, QUAGSIRE
 	db 22, ONIX
-	db 25, RATICATE
+	db 22, MACHOP
 	db 23, LARVITAR
 	db 24, LARVITAR
 	db 24, KRABBY
