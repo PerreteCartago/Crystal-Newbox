@@ -23,11 +23,43 @@ OlivineCafeStrengthSailorScript:
 	closetext
 	end
 
+OlivineCafeSlotsMachineScript:
+	random 6
+	ifequal 0, OlivineCafeLuckySlotsMachineScript
+	reanchormap
+	setval FALSE
+	special SlotMachine
+	closetext
+	end
+
+OlivineCafeLuckySlotsMachineScript:
+	reanchormap
+	setval TRUE
+	special SlotMachine
+	closetext
+	end
+
+OlivineCafeMachineSailorScript:
+	jumptextfaceplayer OlivineCafeMachineText
+
 OlivineCafeFishingGuruScript:
 	jumptextfaceplayer OlivineCafeFishingGuruText
 
 OlivineCafeSailorScript:
 	jumptextfaceplayer OlivineCafeSailorText
+
+OlivineCafeMachineText:
+	text "Si quieres jugar"
+	line "a la tragaperras"
+	cont "necesitas fichas."
+
+	para "Aquí no venden."
+
+	para "Puedes comprar en"
+	line "el Casino de"
+	cont "Ciudad Trigal."
+	done
+
 
 OlivineCafeStrengthSailorText:
 	text "¡Ja! ¡Tus Pokémon"
@@ -78,14 +110,17 @@ OlivineCafe_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  7, OLIVINE_CITY, 7
-	warp_event  3,  7, OLIVINE_CITY, 7
+	warp_event  6, 15, OLIVINE_CITY, 7
+	warp_event  7, 15, OLIVINE_CITY, 7
 
 	def_coord_events
 
 	def_bg_events
+	bg_event 10,  1, BGEVENT_READ, OlivineCafeSlotsMachineScript
+	bg_event 11,  1, BGEVENT_READ, OlivineCafeSlotsMachineScript
 
 	def_object_events
-	object_event  4,  3, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeStrengthSailorScript, -1
-	object_event  7,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeFishingGuruScript, -1
-	object_event  6,  6, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeSailorScript, -1
+	object_event 10, 10, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeStrengthSailorScript, -1
+	object_event 15,  7, SPRITE_FISHING_GURU, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeFishingGuruScript, -1
+	object_event  9, 12, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeSailorScript, -1
+	object_event 13,  2, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCafeMachineSailorScript, -1

@@ -390,6 +390,7 @@ OlivinePort_MapEvents:
 	def_warp_events
 	warp_event 11,  7, OLIVINE_PORT_PASSAGE, 5
 	warp_event  7, 23, FAST_SHIP_1F, 1
+	warp_event 10,  7, OLIVINE_PORT_PASSAGE, 5
 
 	def_coord_events
 	coord_event  7, 15, SCENE_OLIVINEPORT_ASK_ENTER_SHIP, OlivinePortWalkUpToShipScript

@@ -42,14 +42,14 @@ ENDM
 	map_const OLIVINE_HOUSE_BETA,                           4,  4 ;  4
 	map_const OLIVINE_PUNISHMENT_SPEECH_HOUSE,              4,  4 ;  5
 	map_const OLIVINE_GOOD_ROD_HOUSE,                       4,  4 ;  6
-	map_const OLIVINE_CAFE,                                 4,  4 ;  7
+	map_const OLIVINE_CAFE,                                 8,  8 ;  7
 	map_const OLIVINE_MART,                                 6,  4 ;  8
 	map_const ROUTE_38_ECRUTEAK_GATE,                       5,  4 ;  9
 	map_const ROUTE_39_BARN,                                4,  4 ; 10
 	map_const ROUTE_39_FARMHOUSE,                           4,  4 ; 11
 	map_const ROUTE_38,                                    20,  9 ; 12
 	map_const ROUTE_39,                                    10, 18 ; 13
-	map_const OLIVINE_CITY,                                20, 18 ; 14
+	map_const OLIVINE_CITY,                                22, 18 ; 14
 	map_const ROUTE_38_POKEMON_RIVAL_HOUSE,                 4,  4 ; 15
 	endgroup
 
