@@ -1630,7 +1630,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 23, GEODUDE
-	db 23, GRAVELER
+	db 25, GRAVELER
 	db 24, GLIGAR
 	db 25, DONPHAN
 	db 20, PHANPY
@@ -1638,7 +1638,7 @@ JohtoGrassWildMons:
 	db 27, SKARMORY
 	; day
 	db 23, GEODUDE
-	db 23, GRAVELER
+	db 25, GRAVELER
 	db 24, GLIGAR
 	db 25, DONPHAN
 	db 30, DONPHAN
@@ -1646,7 +1646,7 @@ JohtoGrassWildMons:
 	db 27, SKARMORY
 	; nite
 	db 23, GEODUDE
-	db 23, GRAVELER
+	db 25, GRAVELER
 	db 24, GLIGAR
 	db 25, GRAVELER
 	db 27, GRAVELER

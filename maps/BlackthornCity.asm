@@ -130,6 +130,9 @@ BlackthornGymSign:
 MoveDeletersHouseSign:
 	jumptext MoveDeletersHouseSignText
 
+MoveReminderHouseSign:
+	jumptext MoveReminderHouseSignText
+
 DragonDensSign:
 	jumptext DragonDensSignText
 
@@ -145,21 +148,21 @@ BlackthornCityMartSign:
 Text_ClairIsOut:
 	text "Lo siento."
 
-	para "DÉBORA, la LÍDER"
-	line "del GIMNASIO, está"
+	para "Débora, la Líder"
+	line "del Gimnasio, está"
 
-	para "en la GUARIDA"
-	line "DRAGÓN, detrás del"
-	cont "GIMNASIO."
+	para "en la Guarida"
+	line "Dragón, detrás del"
+	cont "Gimnasio."
 
 	para "No tengo ni idea"
 	line "de cuándo volverá"
-	cont "nuestra LÍDER."
+	cont "nuestra Líder."
 	done
 
 Text_ClairIsIn:
-	text "DÉBORA, la LÍDER"
-	line "del GIMNASIO, te"
+	text "Débora, la Líder"
+	line "del Gimnasio, te"
 	cont "espera."
 
 	para "Aunque, a alguien"
@@ -169,7 +172,7 @@ Text_ClairIsIn:
 
 Text_ClairIsBeaten:
 	text "¿Has vencido a"
-	line "DÉBORA?"
+	line "Débora?"
 
 	para "¡Impresionante!"
 
@@ -177,7 +180,7 @@ Text_ClairIsBeaten:
 	line "perdiera contra"
 
 	para "nadie, excepto"
-	line "contra LANCE."
+	line "contra Lance."
 	done
 
 BlackthornGrampsRefusesEntryText:
@@ -189,11 +192,11 @@ BlackthornGrampsRefusesEntryText:
 	done
 
 BlackthornGrampsGrantsEntryText:
-	text "Si DÉBORA lo"
+	text "Si Débora lo"
 	line "permite, su"
 
 	para "abuelo, nuestro"
-	line "MAESTRO, también."
+	line "Maestro, también."
 
 	para "Puedes entrar."
 	done
@@ -214,22 +217,22 @@ BlackBeltText_VoicesInMyHead:
 
 BlackthornCooltrainerF1Text:
 	text "¿Quieres que tus"
-	line "#MON olviden"
+	line "<POKE>mon olviden"
 	cont "algún movimiento?"
 	done
 
 BlackthornYoungsterText:
 	text "Todos los expertos"
 	line "en dragones vienen"
-	cont "de CIUDAD ENDRINO."
+	cont "de Ciudad Endrino."
 	done
 
 MeetSantosText:
-	text "SABINO: …"
+	text "Sabino: …"
 
 	para "Es sábado…"
 
-	para "Soy SABINO, por"
+	para "Soy Sabino, por"
 	line "sábado…"
 	done
 
@@ -238,9 +241,9 @@ SantosGivesGiftText:
 	done
 
 SantosGaveGiftText:
-	text "SABINO: …"
+	text "Sabino: …"
 
-	para "HECHIZO…"
+	para "Hechizo…"
 
 	para "Mejora los"
 	line "movimientos de"
@@ -250,7 +253,7 @@ SantosGaveGiftText:
 	done
 
 SantosSaturdayText:
-	text "SABINO: …"
+	text "Sabino: …"
 
 	para "Nos vemos otro"
 	line "sábado…"
@@ -260,14 +263,14 @@ SantosSaturdayText:
 	done
 
 SantosNotSaturdayText:
-	text "SABINO: Hoy no es"
+	text "Sabino: Hoy no es"
 	line "sábado…"
 	done
 
 BlackthornCooltrainerF2Text:
 	text "¡Uau! ¿Has venido"
-	line "por la RUTA"
-	cont "HELADA?"
+	line "por la Ruta"
+	cont "Helada?"
 
 	para "¡Debes de ser"
 	line "genial!"
@@ -281,17 +284,22 @@ BlackthornCitySignText:
 	done
 
 BlackthornGymSignText:
-	text "LÍDER DEL GIMNASIO"
-	line "#MON DE CIUDAD"
-	cont "ENDRINO: DÉBORA"
+	text "Líder del Gimnasio"
+	line "<POKE>mon DE CIUDAD"
+	cont "ENDRINO: Débora"
 
 	para "La gran experta en"
-	line "#MON dragón"
+	line "<POKE>mon dragón"
 	done
 
 MoveDeletersHouseSignText:
-	text "CASA DEL"
-	line "QUITA-MOVIMIENTOS"
+	text "Casa del Quita-"
+	line "Movimientos."
+	done
+
+MoveReminderHouseSignText:
+	text "Casa del Recuerda-"
+	line "Movimientos."
 	done
 
 DragonDensSignText:
@@ -302,10 +310,10 @@ DragonDensSignText:
 BlackthornCityTrainerTipsText:
 	text "PISTAS ENTRENADOR"
 
-	para "Todo #MON que"
+	para "Todo <POKE>mon que"
 	line "vaya equipado con"
 
-	para "una BAYA MILAGRO"
+	para "una Baya Milagro"
 	line "se curará a sí"
 	cont "mismo en combate"
 	done
@@ -322,6 +330,7 @@ BlackthornCity_MapEvents:
 	warp_event  9, 31, MOVE_DELETERS_HOUSE, 1
 	warp_event 36,  9, ICE_PATH_1F, 2
 	warp_event 20,  1, DRAGONS_DEN_1F, 1
+	warp_event  5, 29, MOVE_REMINDER_HOUSE, 1
 
 	def_coord_events
 
@@ -333,6 +342,7 @@ BlackthornCity_MapEvents:
 	bg_event  5, 25, BGEVENT_READ, BlackthornCityTrainerTips
 	bg_event 16, 29, BGEVENT_READ, BlackthornCityMartSign
 	bg_event 22, 29, BGEVENT_READ, BlackthornCityPokecenterSign
+	bg_event  3, 29, BGEVENT_READ, MoveDeletersHouseSign
 
 	def_object_events
 	object_event 18, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, BlackthornSuperNerdScript, EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM

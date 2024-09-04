@@ -1496,11 +1496,10 @@ _PokemonSwapItemText::
 	prompt
 
 _PokemonHoldItemText::
-	text "Equipar a"
-	line "@"
 	text_ram wMonOrItemNameBuffer
 	text_start
-	line "con @"
+	line "lleva ahora"
+	cont "@"
 	text_ram wStringBuffer2
 	text "."
 	prompt
@@ -1526,7 +1525,7 @@ _PokemonTookItemText::
 	line "@"
 	text_ram wStringBuffer1
 	text_start
-	cont "de @"
+	cont "a @"
 	text_ram wMonOrItemNameBuffer
 	text "."
 	prompt

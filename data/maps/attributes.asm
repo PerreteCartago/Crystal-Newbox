@@ -701,3 +701,4 @@ ENDM
 	map_attributes Route44House, ROUTE_44_HOUSE, $00, 0
 	map_attributes Route38RivalPokemonHouse, ROUTE_38_POKEMON_RIVAL_HOUSE, $00, 0
 	map_attributes CianwoodCave, CIANWOOD_CAVE, $09, 0
+	map_attributes MoveReminderHouse, MOVE_REMINDER_HOUSE, $00, 0

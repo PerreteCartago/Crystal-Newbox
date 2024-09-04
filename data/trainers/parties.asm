@@ -1346,7 +1346,7 @@ GruntMGroup:
 
 	; GRUNTM (17)
 	db "Soldado@", TRAINERTYPE_NORMAL
-	db 18, GOLBAT
+	db 22, GOLBAT
 	db -1 ; end
 
 	; GRUNTM (18)
@@ -1410,7 +1410,7 @@ GruntMGroup:
 
 	; GRUNTM (28)
 	db "Soldado@", TRAINERTYPE_NORMAL
-	db 19, RATICATE
+	db 20, RATICATE
 	db -1 ; end
 
 	; GRUNTM (29)
@@ -2031,20 +2031,20 @@ SwimmerFGroup:
 SailorGroup:
 	; SAILOR (1)
 	db "Moncho@", TRAINERTYPE_NORMAL
-	db 17, POLIWHIRL
-	db 17, RATICATE
+	db 25, POLIWHIRL
+	db 20, RATICATE
 	db 19, KRABBY
 	db -1 ; end
 
 	; SAILOR (2)
 	db "Ken@", TRAINERTYPE_NORMAL
 	db 18, POLIWAG
-	db 18, POLIWHIRL
+	db 25, POLIWHIRL
 	db -1 ; end
 
 	; SAILOR (3)
 	db "Leal@", TRAINERTYPE_NORMAL
-	db 20, POLIWHIRL
+	db 25, POLIWHIRL
 	db -1 ; end
 
 	; SAILOR (4)
@@ -2057,7 +2057,7 @@ SailorGroup:
 	db "Cosme@", TRAINERTYPE_NORMAL
 	db 18, MACHOP
 	db 18, MACHOP
-	db 18, POLIWHIRL
+	db 25, POLIWHIRL
 	db -1 ; end
 
 	; SAILOR (6)

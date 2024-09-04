@@ -32,9 +32,12 @@ OlivinePunishmentSpeechHouseDadText:
 	done
 
 OlivinePunishmentSpeechHouseDaughterText:
-	text "Cuando me meto en"
-	line "líos, papá siempre"
-	cont "se enfada."
+	text "Cuando se cabrea,"
+	line "mi papá siempre se"
+	cont "inventa historias."
+
+	para "Cree que así me"
+	line "asusta."
 	done
 
 OlivinePunishmentSpeechHouse_MapEvents:

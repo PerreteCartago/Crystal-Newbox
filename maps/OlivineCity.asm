@@ -3,6 +3,8 @@
 	const OLIVINECITY_STANDING_YOUNGSTER
 	const OLIVINECITY_SAILOR2
 	const OLIVINECITY_OLIVINE_RIVAL
+	const OLIVINECITY_SAILOR3
+	const OLIVINECITY_SAILOR4
 
 OlivineCity_MapScripts:
 	def_scene_scripts
@@ -68,6 +70,12 @@ OlivineCityRivalSceneBottom:
 
 OlivineCitySailor1Script:
 	jumptextfaceplayer OlivineCitySailor1Text
+
+OlivineCitySailor3Script:
+	jumptextfaceplayer OlivineCitySailor3Text
+
+OlivineCitySailor4Script:
+	jumptextfaceplayer OlivineCitySailor4Text
 
 OlivineCityStandingYoungsterScript:
 	faceplayer
@@ -219,6 +227,24 @@ OlivineCitySailor1Text:
 	line "podrían navegar."
 	done
 
+OlivineCitySailor3Text:
+	text "No hay servicio de"
+	line "mesa, chaval."
+
+	para "Si quieres pedir"
+	line "algo, tendrás que"
+	cont "ir a la barra."
+	done
+
+OlivineCitySailor4Text:
+	text "No entro porque"
+	line "solo quiero café."
+
+	para "Además, si entro"
+	line "jugaré a las"
+	cont "tragaperras."
+	done
+
 OlivineCityStandingYoungsterPokegearText:
 	text "Eso que tienes es"
 	line "un <POKE>gear,"
@@ -271,7 +297,7 @@ OlivineLighthouseSignText:
 	line "También conocido"
 
 	para "como el Faro"
-	line "Brillante"
+	line "Brillante."
 	done
 
 OlivineCityBattleTowerSignText:
@@ -292,15 +318,15 @@ OlivineCity_MapEvents:
 	def_warp_events
 	warp_event 13, 21, OLIVINE_POKECENTER_1F, 1
 	warp_event 10, 11, OLIVINE_GYM, 1
-	warp_event 23, 11, OLIVINE_TIMS_HOUSE, 1
+	warp_event 23, 23, OLIVINE_TIMS_HOUSE, 1
 	warp_event 29, 25, OLIVINE_HOUSE_BETA, 1 ; inaccessible
-	warp_event 27, 11, OLIVINE_PUNISHMENT_SPEECH_HOUSE, 1
+	warp_event 25, 11, OLIVINE_PUNISHMENT_SPEECH_HOUSE, 1
 	warp_event 13, 15, OLIVINE_GOOD_ROD_HOUSE, 1
 	warp_event  7, 21, OLIVINE_CAFE, 1
 	warp_event 19, 17, OLIVINE_MART, 2
 	warp_event 31, 18, OLIVINE_LIGHTHOUSE_1F, 1
 	warp_event 19, 27, OLIVINE_PORT_PASSAGE, 1
-	warp_event 20, 27, OLIVINE_PORT_PASSAGE, 2
+	warp_event 20, 27, OLIVINE_PORT_PASSAGE, 1
 
 	def_coord_events
 	coord_event 13, 12, SCENE_OLIVINECITY_RIVAL_ENCOUNTER, OlivineCityRivalSceneTop
@@ -321,3 +347,6 @@ OlivineCity_MapEvents:
 	object_event 17, 21, SPRITE_SAILOR, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCitySailor2Script, -1
 	object_event 10, 11, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_OLIVINE_CITY
 	object_event 29,  2, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineCityFruitTree, -1
+	object_event  9, 25, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, OlivineCitySailor3Script, -1
+	object_event  5, 25, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 1, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, OlivineCitySailor4Script, -1
+	object_event -4, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route40StandingYoungsterScript, EVENT_BATTLE_TOWER_OPEN_CIVILIANS

@@ -996,6 +996,7 @@ SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
+MoveReminderHouse_Blocks:
 Route38RivalPokemonHouse_Blocks:
 ScaldHouse_Blocks:
 Route30BusyManHouse_Blocks:
