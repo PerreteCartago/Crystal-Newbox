@@ -154,10 +154,12 @@ TrainerFisherWilton1:
 .Script:
 	loadvar VAR_CALLERID, PHONE_FISHER_WILTON
 	opentext
-	checkflag ENGINE_WILTON_READY_FOR_REMATCH
-	iftrue .WantsBattle
 	checkflag ENGINE_WILTON_HAS_ITEM
 	iftrue .HasItem
+	checkflag ENGINE_REMORAID_SWARM
+	iftrue .Swarm
+	checkflag ENGINE_WILTON_READY_FOR_REMATCH
+	iftrue .WantsBattle
 	checkcellnum PHONE_FISHER_WILTON
 	iftrue Route44NumberAcceptedM
 	checkevent EVENT_WILTON_ASKED_FOR_PHONE_NUMBER
@@ -203,6 +205,12 @@ TrainerFisherWilton1:
 	startbattle
 	reloadmapafterbattle
 	clearflag ENGINE_WILTON_READY_FOR_REMATCH
+	end
+
+.Swarm:
+	writetext FisherWiltonSwarmText
+	waitbutton
+	closetext
 	end
 
 .HasItem:
@@ -297,6 +305,17 @@ Route44MaxRepel:
 
 Route44HiddenElixer:
 	hiddenitem ELIXER, EVENT_ROUTE_44_HIDDEN_ELIXER
+
+FisherWiltonSwarmText:
+	text "One, two, three…"
+	line "Muahahaha, what a"
+
+	para "great haul!"
+	line "I'm done! Go ahead"
+
+	para "and catch as many"
+	line "as you can, kid!"
+	done
 
 FisherWilton1SeenText:
 	text "¡Me has hecho"

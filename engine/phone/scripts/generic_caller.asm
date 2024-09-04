@@ -959,3 +959,12 @@ KenjiCallingPhoneScript:
 	farwritetext KenjiRemainDedicatedText
 	promptbutton
 	sjump PhoneScript_HangUpText_Male
+
+WiltonItemScript:
+	farwritetext WiltonItemText
+	promptbutton
+	sjump PhoneScript_HangUpText_Male
+
+WiltonHurryScript:
+	farwritetext WiltonHurryText
+	end
