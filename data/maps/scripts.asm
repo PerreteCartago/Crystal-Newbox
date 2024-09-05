@@ -491,5 +491,7 @@ INCLUDE "maps/EcruteakWillOWispHouse.asm"
 INCLUDE "maps/Route38RivalPokemonHouse.asm"
 INCLUDE "maps/CianwoodCave.asm"
 INCLUDE "maps/MoveReminderHouse.asm"
+INCLUDE "maps/GoldenrodLab.asm"
+INCLUDE "maps/GoldenrodLabB1.asm"
 
 ENDSECTION

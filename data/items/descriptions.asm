@@ -147,9 +147,9 @@ ItemDescriptions:
 	dw DragonFangDesc
 	dw TeruSama14Desc
 	dw LeftoversDesc
-	dw TeruSama15Desc
-	dw TeruSama16Desc
-	dw TeruSama17Desc
+	dw OldAmberDesc
+	dw DomeFossilDesc
+	dw HelixFossilDesc
 	dw MysteryBerryDesc
 	dw DragonScaleDesc
 	dw BerserkGeneDesc
@@ -827,14 +827,17 @@ LeftoversDesc:
 	db   "Restaura PS en"
 	next "el combate. (EQ.)@"
 
-TeruSama15Desc:
-	db   "¿?@"
+OldAmberDesc:
+	db   "Genes fosilizados"
+	next "en ámbar.@"
 
-TeruSama16Desc:
-	db   "¿?@"
+DomeFossilDesc:
+	db   "Genes fosilizados"
+	next "de un caparazón.@"
 
-TeruSama17Desc:
-	db   "¿?@"
+HelixFossilDesc:
+	db   "Genes fosilizados"
+	next "de una concha.@"
 
 MysteryBerryDesc:
 	db   "Restaura PP auto-"

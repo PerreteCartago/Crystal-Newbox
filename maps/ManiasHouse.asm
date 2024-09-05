@@ -29,8 +29,8 @@ ManiaScript:
 	end
 
 .alreadyhaveshuckie
-	checkevent EVENT_BEAT_CLAIR
-	iftrue .returnshuckie
+	checkflag ENGINE_GOT_SHUCKIE_TODAY
+	iffalse .returnshuckie
 	writetext ManiaText_TakeCareOfShuckle
 	waitbutton
 	closetext
@@ -83,7 +83,7 @@ ManiaScript:
 	closetext
 	end
 
-.nothingleft
+.nothingleft ; unreferenced
 	writetext ManiaText_ShuckleIsYourLastMon
 	waitbutton
 	closetext

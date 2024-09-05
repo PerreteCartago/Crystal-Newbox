@@ -702,3 +702,5 @@ ENDM
 	map_attributes Route38RivalPokemonHouse, ROUTE_38_POKEMON_RIVAL_HOUSE, $00, 0
 	map_attributes CianwoodCave, CIANWOOD_CAVE, $09, 0
 	map_attributes MoveReminderHouse, MOVE_REMINDER_HOUSE, $00, 0
+	map_attributes GoldenrodLab, GOLDENROD_LAB, $00, 0
+	map_attributes GoldenrodLabB1, GOLDENROD_LAB_B1, $00, 0

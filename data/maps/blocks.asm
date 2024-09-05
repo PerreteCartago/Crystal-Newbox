@@ -1060,4 +1060,10 @@ SECTION "Map Blocks 4", ROMX
 CianwoodCave_Blocks:
 	INCBIN "maps/CianwoodCave.blk"
 
+GoldenrodLab_Blocks:
+	INCBIN "maps/GoldenrodLab.blk"
+
+GoldenrodLabB1_Blocks:
+	INCBIN "maps/GoldenrodLabB1.blk"
+
 ENDSECTION

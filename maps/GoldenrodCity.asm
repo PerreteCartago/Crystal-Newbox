@@ -14,6 +14,8 @@
 	const GOLDENRODCITY_ROCKET5
 	const GOLDENRODCITY_ROCKET6
 	const GOLDENRODCITY_MOVETUTOR
+	const GOLDENRODCITY_MADERO
+
 
 GoldenrodCity_MapScripts:
 	def_scene_scripts
@@ -199,6 +201,9 @@ GoldenrodCityYoungster2Script:
 GoldenrodCityLassScript:
 	jumptextfaceplayer GoldenrodCityLassText
 
+ControlAccesoScript:
+	jumptextfaceplayer ControlAccesoText
+
 GoldenrodCityGrampsScript:
 	jumptextfaceplayer GoldenrodCityGrampsText
 
@@ -283,6 +288,15 @@ GoldenrodCityMoveTutorWalkAroundPlayerThenEnterGameCornerMovement:
 	step UP
 	step UP
 	step_end
+
+ControlAccesoText:
+	text "ALTO. Seguridad"
+	line "del Campus."
+
+	para "Solo se permite el"
+	line "acceso a los estu-"
+	cont "diantes."
+	done
 
 ScaldSignText:
 	text "Casa del pescador"
@@ -570,7 +584,7 @@ GoldenrodCity_MapEvents:
 	warp_event  9, 13, GOLDENROD_MAGNET_TRAIN_STATION, 2
 	warp_event 29,  5, GOLDENROD_FLOWER_SHOP, 1
 	warp_event 33,  9, GOLDENROD_PP_SPEECH_HOUSE, 1
-	warp_event 15,  7, GOLDENROD_NAME_RATER, 1
+	warp_event  7, 21, GOLDENROD_NAME_RATER, 1
 	warp_event 24, 27, GOLDENROD_DEPT_STORE_1F, 1
 	warp_event 14, 21, GOLDENROD_GAME_CORNER, 1
 	warp_event  5, 15, RADIO_TOWER_1F, 1
@@ -580,6 +594,8 @@ GoldenrodCity_MapEvents:
 	warp_event 15, 27, GOLDENROD_POKECENTER_1F, 1
 	warp_event  5, 29, SCALD_HOUSE, 1
 	warp_event 20,  1, ROUTE_35_GOLDENROD_GATE, 4
+	warp_event 14,  7, GOLDENROD_LAB, 1
+	warp_event 15,  7, GOLDENROD_LAB, 2
 
 	def_coord_events
 
@@ -591,8 +607,8 @@ GoldenrodCity_MapEvents:
 	bg_event  4, 30, BGEVENT_READ, ScaldSign
 	bg_event 22, 18, BGEVENT_READ, GoldenrodCitySign
 	bg_event 28, 30, BGEVENT_READ, GoldenrodCityBikeShopSign
-	bg_event 16, 22, BGEVENT_READ, GoldenrodCityGameCornerSign
-	bg_event 12,  7, BGEVENT_READ, GoldenrodCityNameRaterSign
+	bg_event 11, 21, BGEVENT_READ, GoldenrodCityGameCornerSign
+	bg_event 10, 21, BGEVENT_READ, GoldenrodCityNameRaterSign
 	bg_event  6,  6, BGEVENT_READ, GoldenrodCityUndergroundSignNorth
 	bg_event 12, 30, BGEVENT_READ, GoldenrodCityUndergroundSignSouth
 	bg_event 16, 27, BGEVENT_UP, GoldenrodCityPokecenterSign
@@ -614,3 +630,4 @@ GoldenrodCity_MapEvents:
 	object_event 29,  7, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityRocket5Script, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 31, 10, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodCityRocket6Script, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 12, 22, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, MoveTutorScript, EVENT_GOLDENROD_CITY_MOVE_TUTOR
+	object_event 11,  5, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, ControlAccesoScript, -1

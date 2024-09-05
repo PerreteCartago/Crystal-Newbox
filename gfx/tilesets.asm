@@ -98,15 +98,6 @@ INCBIN "data/tilesets/tower_metatiles.bin"
 TilesetTowerColl::
 INCLUDE "data/tilesets/tower_collision.asm"
 
-TilesetLabGFX::
-INCBIN "gfx/tilesets/lab.2bpp.lz"
-
-TilesetLabMeta::
-INCBIN "data/tilesets/lab_metatiles.bin"
-
-TilesetLabColl::
-INCLUDE "data/tilesets/lab_collision.asm"
-
 TilesetMartGFX::
 INCBIN "gfx/tilesets/mart.2bpp.lz"
 
@@ -319,6 +310,15 @@ INCBIN "data/tilesets/kanto_metatiles.bin"
 
 TilesetKantoColl::
 INCLUDE "data/tilesets/kanto_collision.asm"
+
+TilesetLabGFX::
+INCBIN "gfx/tilesets/lab.2bpp.lz"
+
+TilesetLabMeta::
+INCBIN "data/tilesets/lab_metatiles.bin"
+
+TilesetLabColl::
+INCLUDE "data/tilesets/lab_collision.asm"
 
 
 SECTION "Tileset Data A", ROMX
