@@ -62,7 +62,7 @@ DEF COLL_PIT               EQU $60
 DEF COLL_VIRTUAL_BOY       EQU $61 ; garbage
 DEF COLL_64                EQU $64 ; garbage
 DEF COLL_65                EQU $65 ; garbage
-DEF COLL_PIT_68            EQU $68 ; unused
+DEF COLL_WATER_PIT         EQU $68 ; unused
 DEF COLL_WARP_CARPET_DOWN  EQU $70
 DEF COLL_DOOR              EQU $71
 DEF COLL_LADDER            EQU $72
@@ -87,7 +87,7 @@ DEF COLL_TOWN_MAP          EQU $95
 DEF COLL_MART_SHELF        EQU $96
 DEF COLL_TV                EQU $97
 DEF COLL_COUNTER_98        EQU $98 ; unused
-DEF COLL_9C                EQU $9c ; garbage
+DEF COLL_BUZON             EQU $9c ; garbage
 DEF COLL_WINDOW            EQU $9d
 DEF COLL_INCENSE_BURNER    EQU $9f
 DEF COLL_HOP_RIGHT         EQU $a0

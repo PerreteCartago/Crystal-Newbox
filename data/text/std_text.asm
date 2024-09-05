@@ -379,3 +379,11 @@ RegisteredNumber2Text:
 	text_ram wStringBuffer3
 	text "."
 	done
+
+BuzonText:
+	text "Estos buzones los"
+	line "hacen en Hoenn."
+
+	para "En Johto Hay muy"
+	line "pocos."
+	done

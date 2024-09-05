@@ -189,8 +189,16 @@ FossilScientistNoText:
 	done
 
 FossilScientistPartyFullText:
-	text "No puedes llevar"
-	line "más Pokémon."
+	text "Todo fue como la"
+	line "seda."
+
+	para "Mis estudiantes y"
+	line "yo hemos revivido"
+	cont "este Pokémon."
+	cont "Que ahora es tuyo."
+
+	para "¡Espera! No puedes"
+	line "llevar más <POKE>mon."
 	done
 
 FossilScientistTimeText:
@@ -203,13 +211,13 @@ FossilScientistTimeText:
 	done
 
 FossilScientistDoneText:
-	text "Todo ha ido genial"
+	text "Todo fue como la"
+	line "seda."
 
 	para "Mis estudiantes y"
 	line "yo hemos revivido"
 	cont "este Pokémon."
-
-	para "Que ahora es tuyo."
+	cont "Que ahora es tuyo."
 	done
 
 FossilScientistMonText:
@@ -219,7 +227,7 @@ FossilScientistMonText:
 	line "@"
 	text_ram wStringBuffer3
 	text ", un"
-	cont "<POKE>mon extinto."
+	cont "Pokémon extinto."
 
 	para "Mis estudiantes y"
 	line "yo podemos devol-"

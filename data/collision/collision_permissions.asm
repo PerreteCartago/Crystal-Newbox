@@ -105,7 +105,7 @@ CollisionPermissionTable::
 	db LAND_TILE         ; COLL_65
 	db LAND_TILE         ; 66
 	db LAND_TILE         ; 67
-	db LAND_TILE         ; COLL_PIT_68
+	db WATER_TILE        ; COLL_WATER_PIT
 	db LAND_TILE         ; 69
 	db WALL_TILE         ; 6a
 	db LAND_TILE         ; 6b
@@ -157,7 +157,7 @@ CollisionPermissionTable::
 	db WALL_TILE         ; 99
 	db WALL_TILE         ; 9a
 	db WALL_TILE         ; 9b
-	db WALL_TILE         ; COLL_9C
+	db WALL_TILE         ; COLL_BUZON
 	db WALL_TILE         ; COLL_WINDOW
 	db WALL_TILE         ; 9e
 	db WALL_TILE         ; COLL_INCENSE_BURNER
