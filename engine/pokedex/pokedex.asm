@@ -1189,9 +1189,9 @@ Pokedex_DrawDexEntryScreenBG:
 	ret
 
 .Height:
-	db "AL ¿? m", -1
+	db "AL  ¿? m", -1
 .Weight:
-	db "PE ¿? kg", -1
+	db "PE  ¿? kg", -1
 .MenuItems:
 	db $3b, " PÁG ÁREA GRIT IMPR", -1
 

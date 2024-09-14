@@ -18,12 +18,10 @@ SpriteMons:
 	db PIKACHU
 	db CLEFAIRY
 	db CHARMANDER
-	db JYNX
 	db STARMIE
 	db BULBASAUR
 	db JIGGLYPUFF
 	db GRIMER
-	db EKANS
 	db PARAS
 	db TENTACOOL
 	db TAUROS
@@ -37,4 +35,6 @@ SpriteMons:
 	db LUGIA
 	db HO_OH
 	db AMPHAROS
+	db ABRA
+	db DRAGONAIR
 	assert_table_length NUM_POKEMON_SPRITES

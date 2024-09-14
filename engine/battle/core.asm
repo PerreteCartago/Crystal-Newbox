@@ -3687,6 +3687,11 @@ CheckWhetherToAskSwitch:
 	ld a, [wOptions]
 	bit BATTLE_SHIFT, a
 	jr nz, .return_nc
+	ld a, [wBattleType]
+	cp BATTLETYPE_SET
+	jr z, .return_nc
+	cp BATTLETYPE_SETNOITEMS
+	jr z, .return_nc
 	ld a, [wCurPartyMon]
 	push af
 	ld a, [wCurBattleMon]
@@ -5171,7 +5176,11 @@ BattleMenu_Pack:
 	ld a, [wLinkMode]
 	and a
 	jp nz, .ItemsCantBeUsed
-
+	ld a, [wBattleType]
+	cp BATTLETYPE_SETNOITEMS
+	jp z, .ItemsCantBeUsed
+	cp BATTLETYPE_NOITEMS
+	jp z, .ItemsCantBeUsed
 	ld a, [wInBattleTowerBattle]
 	and a
 	jp nz, .ItemsCantBeUsed

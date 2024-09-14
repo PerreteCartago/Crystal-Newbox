@@ -128,25 +128,25 @@ DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_PIKACHU ; 8e
 	const SPRITE_CLEFAIRY ; 8f
 	const SPRITE_CHARMANDER ; 90
-	const SPRITE_JYNX ; 91
-	const SPRITE_STARMIE ; 92
-	const SPRITE_BULBASAUR ; 93
-	const SPRITE_JIGGLYPUFF ; 94
-	const SPRITE_GRIMER ; 95
-	const SPRITE_EKANS ; 96
-	const SPRITE_PARAS ; 97
-	const SPRITE_TENTACOOL ; 98
-	const SPRITE_TAUROS ; 99
-	const SPRITE_MACHOP ; 9a
-	const SPRITE_VOLTORB ; 9b
-	const SPRITE_LAPRAS ; 9c
-	const SPRITE_RHYDON ; 9d
-	const SPRITE_MOLTRES ; 9e
-	const SPRITE_SNORLAX ; 9f
-	const SPRITE_GYARADOS ; a0
-	const SPRITE_LUGIA ; a1
-	const SPRITE_HO_OH ; a2
-	const SPRITE_AMPHAROS ; a3
+	const SPRITE_STARMIE ; 91
+	const SPRITE_BULBASAUR ; 92
+	const SPRITE_JIGGLYPUFF ; 93
+	const SPRITE_GRIMER ; 94
+	const SPRITE_PARAS ; 95
+	const SPRITE_TENTACOOL ; 96
+	const SPRITE_TAUROS ; 97
+	const SPRITE_MACHOP ; 98
+	const SPRITE_VOLTORB ; 99
+	const SPRITE_LAPRAS ; 9a
+	const SPRITE_RHYDON ; 9b
+	const SPRITE_MOLTRES ; 9c
+	const SPRITE_SNORLAX ; 9d
+	const SPRITE_GYARADOS ; 9e
+	const SPRITE_LUGIA ; 9f
+	const SPRITE_HO_OH ; a0
+	const SPRITE_AMPHAROS ; a1
+	const SPRITE_ABRA ; a2
+	const SPRITE_DRAGONAIR ; a3
 DEF NUM_POKEMON_SPRITES EQU const_value - SPRITE_POKEMON
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)

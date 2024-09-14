@@ -33,7 +33,7 @@ ItemNames::
 	li "Calcio"
 	li "Carameloraro"
 	li "Precisión X"
-	li "Pedra Hoja"
+	li "Piedra Hoja"
 	li "Polvometálico"
 	li "Pepita"
 	li "Poké Muñeca" ; VWF can't print "# DOLL"

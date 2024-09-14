@@ -38,6 +38,7 @@ BlackthornGymClairScript:
 	closetext
 	winlosstext ClairWinText, 0
 	loadtrainer CLAIR, CLAIR1
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SET
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_CLAIR
@@ -189,18 +190,18 @@ ClairText_GoToDragonsDen:
 	para "He podido perder,"
 	line "pero todavía no"
 
-	para "podrás con la LIGA"
+	para "podrás con la Liga"
 	line "Pokémon."
 
 	para "Ya sé. Deberías"
 	line "enfrentarte al"
 	cont "desafío dragón."
 
-	para "Tras este GIMNASIO"
+	para "Tras este Gimnasio"
 	line "existe un lugar"
 
-	para "llamado GUARIDA"
-	line "DRAGÓN."
+	para "llamado Guarida"
+	line "Dragón."
 
 	para "Hay un pequeño"
 	line "santuario en su"
@@ -212,8 +213,8 @@ ClairText_GoToDragonsDen:
 	line "valía, reconoceré"
 
 	para "que te mereces la"
-	line "MEDALLA del"
-	cont "GIMNASIO!"
+	line "Medalla del"
+	cont "Gimnasio!"
 	done
 
 ClairText_TooMuchToExpect:
@@ -237,7 +238,7 @@ BlackthornGymText_ReceivedTM24:
 
 BlackthornGymClairText_DescribeTM24:
 	text "Esta MT contiene"
-	line "DRAGOALIENTO."
+	line "Dragoaliento."
 
 	para "No, no tiene nada"
 	line "que ver con mi"
@@ -300,7 +301,7 @@ CooltrainermPaulBeatenText:
 	done
 
 CooltrainermPaulAfterBattleText:
-	text "¿LANCE te dijo que"
+	text "¿Lance te dijo que"
 	line "quería verte de"
 
 	para "nuevo?"

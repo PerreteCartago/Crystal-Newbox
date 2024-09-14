@@ -204,7 +204,7 @@ MoveNames::
 	li "Gigadrenado"
 	li "Aguante"
 	li "Encanto"
-	li "Desenrrollar"
+	li "Desenrollar"
 	li "Falsotortazo"
 	li "Contoneo"
 	li "Batido"

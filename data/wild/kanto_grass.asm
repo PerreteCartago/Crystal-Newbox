@@ -118,24 +118,24 @@ KantoGrassWildMons:
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	db 34, GRAVELER
-	db 32, RHYHORN
+	db 35, RHYHORN
 	db 33, ONIX
 	db 34, GOLBAT
 	db 35, SANDSLASH
-	db 35, RHYDON
-	db 35, RHYDON
+	db 42, RHYDON
+	db 42, RHYDON
 	; day
 	db 34, GRAVELER
-	db 32, RHYHORN
+	db 35, RHYHORN
 	db 33, ONIX
 	db 34, GOLBAT
 	db 35, SANDSLASH
-	db 35, RHYDON
-	db 35, RHYDON
+	db 42, RHYDON
+	db 42, RHYDON
 	; nite
 	db 34, GOLBAT
-	db 34, GRAVELER
-	db 32, ONIX
+	db 34, ONIX
+	db 35, RHYHORN
 	db 36, GRAVELER
 	db 38, GRAVELER
 	db 40, GRAVELER

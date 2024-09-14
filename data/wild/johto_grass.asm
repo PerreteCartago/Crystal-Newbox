@@ -1715,7 +1715,7 @@ JohtoGrassWildMons:
 	; morn
 	db 20, GEODUDE
 	db 21, SANDSHREW
-	db 22, ZUBAT
+	db 22, RHYHORN
 	db 22, ONIX
 	db 23, LARVITAR
 	db 24, LARVITAR
@@ -1723,13 +1723,13 @@ JohtoGrassWildMons:
 	; day
 	db 20, GEODUDE
 	db 21, SANDSHREW
-	db 22, ZUBAT
+	db 22, RHYHORN
 	db 25, RATICATE
 	db 23, LARVITAR
 	db 24, LARVITAR
 	db 24, KRABBY
 	; nite
-	db 20, GEODUDE
+	db 20, RHYHORN
 	db 21, QUAGSIRE
 	db 22, ONIX
 	db 22, MACHOP
