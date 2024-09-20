@@ -92,6 +92,9 @@ Binoculars3:
 PokeDollVendingMachine:
 	jumptext PokeDollVendingMachineText
 
+PokeDollVendingMachine2:
+	jumptext PokeDollVendingMachineText
+
 GoldenrodDeptStoreRoofPokefanFText:
 	text "Uf, estoy cansada."
 	line "A veces vengo a la"
@@ -229,6 +232,7 @@ GoldenrodDeptStoreRoof_MapEvents:
 	bg_event 15,  5, BGEVENT_RIGHT, Binoculars2
 	bg_event 15,  6, BGEVENT_RIGHT, Binoculars3
 	bg_event  3,  0, BGEVENT_UP, PokeDollVendingMachine
+	bg_event  4,  0, BGEVENT_UP, PokeDollVendingMachine2
 
 	def_object_events
 	object_event  1,  4, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodDeptStoreRoofClerkScript, EVENT_GOLDENROD_SALE_OFF

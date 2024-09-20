@@ -495,6 +495,9 @@ Defined in [macros/scripts/battle_commands.asm](https://github.com/pret/pokecrys
 ## `$A4`: `allstatsup`
 
 
+## `$A5`: `bidefailtext`
+
+
 ## `$A6`: `raisesubnoanim`
 
 

@@ -1135,6 +1135,7 @@ Mimic:
 	mimic
 	endmove
 
+Bide:
 Metronome:
 	checkobedience
 	usedmovetext
