@@ -221,11 +221,12 @@ ViridianCity_MapEvents:
 	warp_event 23, 15, TRAINER_HOUSE_1F, 1
 	warp_event 29, 19, VIRIDIAN_MART, 2
 	warp_event 23, 25, VIRIDIAN_POKECENTER_1F, 1
+	warp_event 13, 15, VIRIDIAN_SCHOOL_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 17, 17, BGEVENT_READ, ViridianCitySign
+	bg_event 21, 19, BGEVENT_READ, ViridianCitySign
 	bg_event 27,  7, BGEVENT_READ, ViridianGymSign
 	bg_event 19,  1, BGEVENT_READ, ViridianCityWelcomeSign
 	bg_event 21, 15, BGEVENT_READ, TrainerHouseSign

@@ -704,3 +704,4 @@ ENDM
 	map_attributes MoveReminderHouse, MOVE_REMINDER_HOUSE, $00, 0
 	map_attributes GoldenrodLab, GOLDENROD_LAB, $00, 0
 	map_attributes GoldenrodLabB1, GOLDENROD_LAB_B1, $00, 0
+	map_attributes ViridianSchoolHouse, VIRIDIAN_SCHOOL_HOUSE, $00, 0
