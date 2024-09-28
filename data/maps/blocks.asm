@@ -112,6 +112,8 @@ FuchsiaCity_Blocks:
 Route38_Blocks:
 	INCBIN "maps/Route38.blk"
 
+ViridianNorthGate_Blocks:
+ViridianSouthGate_Blocks:
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
 Route43MahoganyGate_Blocks:
@@ -936,5 +938,8 @@ GoldenrodLabB1_Blocks:
 
 ViridianSchoolHouse_Blocks:
 	INCBIN "maps/ViridianSchoolHouse.blk"
+
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.blk"
 
 ENDSECTION

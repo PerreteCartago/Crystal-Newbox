@@ -705,3 +705,8 @@ ENDM
 	map_attributes GoldenrodLab, GOLDENROD_LAB, $00, 0
 	map_attributes GoldenrodLabB1, GOLDENROD_LAB_B1, $00, 0
 	map_attributes ViridianSchoolHouse, VIRIDIAN_SCHOOL_HOUSE, $00, 0
+	map_attributes ViridianNorthGate, VIRIDIAN_NORTH_GATE, $00, 0
+	map_attributes ViridianSouthGate, VIRIDIAN_SOUTH_GATE, $00, 0
+	map_attributes ViridianForest, VIRIDIAN_FOREST, $09, 0
+
+	

@@ -494,5 +494,8 @@ INCLUDE "maps/MoveReminderHouse.asm"
 INCLUDE "maps/GoldenrodLab.asm"
 INCLUDE "maps/GoldenrodLabB1.asm"
 INCLUDE "maps/ViridianSchoolHouse.asm"
+INCLUDE "maps/ViridianNorthGate.asm"
+INCLUDE "maps/ViridianSouthGate.asm"
+INCLUDE "maps/ViridianForest.asm"
 
 ENDSECTION

@@ -460,6 +460,9 @@ ENDM
 	map_const ROUTE_2_GATE,                                 5,  4 ; 12
 	map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
 	map_const VIRIDIAN_SCHOOL_HOUSE,                        4,  4 ; 14
+	map_const VIRIDIAN_NORTH_GATE,                          5,  4 ; 12
+	map_const VIRIDIAN_SOUTH_GATE,                          5,  4 ; 12
+	map_const VIRIDIAN_FOREST,                             17, 24 ; 12
 	endgroup
 
 	newgroup NEW_BARK                                             ; 24
