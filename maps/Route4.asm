@@ -42,6 +42,12 @@ TrainerPicnickerSharon:
 	closetext
 	end
 
+MtMoonPokecenterSign:
+	jumpstd PokecenterSignScript
+
+Route3MtMoonSquareSign:
+	jumptext Route3MtMoonSquareSignText
+
 MtMoonSquareSign:
 	jumptext MtMoonSquareSignText
 
@@ -120,20 +126,31 @@ MtMoonSquareSignText:
 	line "escaleras"
 	done
 
+Route3MtMoonSquareSignText:
+	text "Plaza Mt. Moon"
+
+	para "Sube las"
+	line "escaleras"
+	done
+
 Route4_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  5, MOUNT_MOON, 2
+	warp_event 26,  5, MOUNT_MOON, 2
+	warp_event 18,  5, MOUNT_MOON, 1
+	warp_event 11,  5, MTMOON_POKECENTER, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  7, BGEVENT_READ, MtMoonSquareSign
-	bg_event 10,  3, BGEVENT_ITEM, Route4HiddenUltraBall
+	bg_event 27,  7, BGEVENT_READ, MtMoonSquareSign
+	bg_event 40,  3, BGEVENT_ITEM, Route4HiddenUltraBall
+	bg_event 17,  7, BGEVENT_READ, Route3MtMoonSquareSign
+	bg_event 12,  5, BGEVENT_READ, MtMoonPokecenterSign
 
 	def_object_events
-	object_event 17,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperHank, -1
-	object_event  9,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerHope, -1
-	object_event 21,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerSharon, -1
-	object_event 26,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4HPUp, EVENT_ROUTE_4_HP_UP
+	object_event 56,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperHank, -1
+	object_event 32,  7, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerHope, -1
+	object_event 47, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerSharon, -1
+	object_event 70,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4HPUp, EVENT_ROUTE_4_HP_UP

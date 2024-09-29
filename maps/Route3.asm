@@ -53,9 +53,6 @@ TrainerFirebreatherBurt:
 	closetext
 	end
 
-Route3MtMoonSquareSign:
-	jumptext Route3MtMoonSquareSignText
-
 FirebreatherOtisSeenText:
 	text "¡Ah! Hace un"
 	line "tiempo estupendo."
@@ -124,27 +121,18 @@ FirebreatherBurtAfterBattleText:
 	line "entrenador…"
 	done
 
-Route3MtMoonSquareSignText:
-	text "Plaza Mt. Moon"
-
-	para "Sube las"
-	line "escaleras"
-	done
-
 
 Route3_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 52,  1, MOUNT_MOON, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 49, 13, BGEVENT_READ, Route3MtMoonSquareSign
 
 	def_object_events
-	object_event 26, 12, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
-	object_event 10,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
-	object_event 16,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
-	object_event 49,  5, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1
+	object_event 36, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
+	object_event 15,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
+	object_event 20,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
+	object_event 62, 11, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1

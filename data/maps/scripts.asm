@@ -497,5 +497,8 @@ INCLUDE "maps/ViridianSchoolHouse.asm"
 INCLUDE "maps/ViridianNorthGate.asm"
 INCLUDE "maps/ViridianSouthGate.asm"
 INCLUDE "maps/ViridianForest.asm"
+INCLUDE "maps/Museum1F.asm"
+INCLUDE "maps/Museum2F.asm"
+INCLUDE "maps/MtMoonPokecenter1F.asm"
 
 ENDSECTION

@@ -197,6 +197,8 @@ Route14_Blocks:
 Route10North_Blocks:
 	INCBIN "maps/Route10North.blk"
 
+
+MtMoonPokecenter1F_Blocks:
 OlivinePokecenter1F_Blocks:
 MahoganyPokecenter1F_Blocks:
 EcruteakPokecenter1F_Blocks:
@@ -941,5 +943,11 @@ ViridianSchoolHouse_Blocks:
 
 ViridianForest_Blocks:
 	INCBIN "maps/ViridianForest.blk"
+
+Museum1F_Blocks:
+	INCBIN "maps/Museum1F.blk"
+
+Museum2F_Blocks:
+	INCBIN "maps/Museum2F.blk"
 
 ENDSECTION

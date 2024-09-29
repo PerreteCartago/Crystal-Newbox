@@ -320,6 +320,15 @@ INCBIN "data/tilesets/lab_metatiles.bin"
 TilesetLabColl::
 INCLUDE "data/tilesets/lab_collision.asm"
 
+TilesetMuseumGFX::
+INCBIN "gfx/tilesets/museum.2bpp.lz"
+
+TilesetMuseumMeta::
+INCBIN "data/tilesets/museum_metatiles.bin"
+
+TilesetMuseumColl::
+INCLUDE "data/tilesets/museum_collision.asm"
+
 
 SECTION "Tileset Data A", ROMX
 
