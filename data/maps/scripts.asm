@@ -500,5 +500,8 @@ INCLUDE "maps/ViridianForest.asm"
 INCLUDE "maps/Museum1F.asm"
 INCLUDE "maps/Museum2F.asm"
 INCLUDE "maps/MtMoonPokecenter1F.asm"
+INCLUDE "maps/CeruleanCave1F.asm"
+INCLUDE "maps/CeruleanCave2F.asm"
+INCLUDE "maps/CeruleanCaveB1F.asm"
 
 ENDSECTION

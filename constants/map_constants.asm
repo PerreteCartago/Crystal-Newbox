@@ -157,6 +157,9 @@ ENDM
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
 	map_const CIANWOOD_CAVE,                               17,  9 ; 92
+	map_const CERULEAN_CAVE_1F,                            20, 14 ; 92
+	map_const CERULEAN_CAVE_2F,                            20, 14 ; 93
+	map_const CERULEAN_CAVE_B1F,                           20, 14 ; 94
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -213,7 +216,7 @@ ENDM
 	map_const ROUTE_9,                                     30,  9 ; 13
 	map_const ROUTE_10_NORTH,                              10,  9 ; 14
 	map_const ROUTE_24,                                    10,  9 ; 15
-	map_const ROUTE_25,                                    30,  9 ; 16
+	map_const ROUTE_25,                                    39,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
 	map_const MTMOON_POKECENTER,                         6,  4 ;  4
 	endgroup
@@ -485,7 +488,7 @@ ENDM
 	endgroup
 
 	newgroup SAFFRON                                              ; 25
-	map_const ROUTE_5,                                     10,  9 ;  1
+	map_const ROUTE_5,                                     10, 16 ;  1
 	map_const SAFFRON_CITY,                                20, 18 ;  2
 	map_const FIGHTING_DOJO,                                5,  6 ;  3
 	map_const SAFFRON_GYM,                                 10,  9 ;  4

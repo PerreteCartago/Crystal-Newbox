@@ -37,4 +37,6 @@ SpriteMons:
 	db AMPHAROS
 	db ABRA
 	db DRAGONAIR
+	db MEWTWO
+	db ARTICUNO
 	assert_table_length NUM_POKEMON_SPRITES

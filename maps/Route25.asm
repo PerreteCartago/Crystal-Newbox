@@ -76,6 +76,32 @@ Route25MistyDate2Script:
 	special RestartMapMusic
 	end
 
+Route25MistyDate3Script:
+	showemote EMOTE_HEART, ROUTE25_MISTY, 15
+	pause 30
+	showemote EMOTE_SHOCK, ROUTE25_COOLTRAINER_M1, 10
+	turnobject ROUTE25_MISTY, DOWN
+	applymovement ROUTE25_COOLTRAINER_M1, Route25MistysDateLeavesMovement1
+	disappear ROUTE25_COOLTRAINER_M1
+	pause 15
+	playmusic MUSIC_BEAUTY_ENCOUNTER
+	turnobject ROUTE25_MISTY, UP
+	pause 10
+	applymovement ROUTE25_MISTY, Route25MistyApproachesPlayerMovement3
+	opentext
+	writetext Route25MistyDateText
+	waitbutton
+	closetext
+	turnobject PLAYER, DOWN
+	applymovement ROUTE25_MISTY, Route25MistyLeavesPlayerMovement1
+	turnobject PLAYER, LEFT
+	applymovement ROUTE25_MISTY, Route25MistyLeavesMovement
+	disappear ROUTE25_MISTY
+	clearevent EVENT_TRAINERS_IN_CERULEAN_GYM
+	setscene SCENE_ROUTE25_NOOP
+	special RestartMapMusic
+	end
+
 TrainerSchoolboyDudley:
 	trainer SCHOOLBOY, DUDLEY, EVENT_BEAT_SCHOOLBOY_DUDLEY, SchoolboyDudleySeenText, SchoolboyDudleyBeatenText, 0, .Script
 
@@ -198,6 +224,17 @@ Route25MistysDateLeavesMovement1:
 Route25MistysDateLeavesMovement2:
 	big_step DOWN
 	big_step DOWN
+	step_end
+
+
+Route25MistyApproachesPlayerMovement3:
+	step UP
+	step UP
+	step UP
+	step UP
+	step LEFT
+	step LEFT
+	step LEFT
 	step_end
 
 Route25MistyApproachesPlayerMovement1:
@@ -430,25 +467,26 @@ Route25_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 47,  5, BILLS_HOUSE, 1
+	warp_event 63,  3, BILLS_HOUSE, 1
 
 	def_coord_events
-	coord_event 42,  6, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate1Script
-	coord_event 42,  7, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate2Script
+	coord_event 58,  5, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate3Script
+	coord_event 58,  6, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate1Script
+	coord_event 58,  7, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate2Script
 
 	def_bg_events
-	bg_event 45,  5, BGEVENT_READ, BillsHouseSign
+	bg_event 61,  3, BGEVENT_READ, BillsHouseSign
 	bg_event  4,  5, BGEVENT_ITEM, Route25HiddenPotion
 
 	def_object_events
-	object_event 46,  9, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
-	object_event 46, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
-	object_event 12,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyDudley, -1
-	object_event 16, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassEllen, -1
-	object_event 21,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyJoe, -1
-	object_event 22,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassLaura, -1
-	object_event 25,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperLloyd, -1
-	object_event 28, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassShannon, -1
-	object_event 31,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
-	object_event 37,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
-	object_event 32,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN
+	object_event 62,  9, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
+	object_event 62, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
+	object_event 12,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyDudley, -1
+	object_event 35,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassEllen, -1
+	object_event 31,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyJoe, -1
+	object_event 40,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassLaura, -1
+	object_event 36,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperLloyd, -1
+	object_event 32,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassShannon, -1
+	object_event 42,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
+	object_event 48,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
+	object_event 53,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN

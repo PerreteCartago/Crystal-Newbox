@@ -66,6 +66,7 @@ Landmarks:
 	landmark  76,  52, MtMoonName
 	landmark  88,  52, Route4Name
 	landmark 100,  52, CeruleanCityName
+	landmark  94,  52, CeruleanCaveName
 	landmark 100,  44, Route24Name
 	landmark 108,  36, Route25Name
 	landmark 100,  60, Route5Name
@@ -154,7 +155,7 @@ SilphCoName:         db "SILPH<BSP>S.A.@" ; unreferenced
 SafariZoneName:      db "Zona<BSP>Safari@" ; unreferenced
 SeafoamIslandsName:  db "Islas<BSP>Espuma@"
 PokemonMansionName:  db "Mansión<BSP><POKE>mon@" ; unreferenced
-CeruleanCaveName:    db "Cueva<BSP>Celeste@" ; unreferenced
+CeruleanCaveName:    db "Mazmorra<BSP>Rara@"
 Route1Name:          db "Ruta 1@"
 Route2Name:          db "Ruta 2@"
 Route3Name:          db "Ruta 3@"
