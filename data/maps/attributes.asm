@@ -307,7 +307,7 @@ ENDM
 	connection south, Route14, ROUTE_14, 0
 
 	map_attributes Route12, ROUTE_12, $43, NORTH | SOUTH | WEST
-	connection north, LavenderTown, LAVENDER_TOWN, 0
+	connection north, LavenderTown, LAVENDER_TOWN, -1
 	connection south, Route13, ROUTE_13, -20
 	connection west, Route11, ROUTE_11, 9
 
@@ -316,8 +316,8 @@ ENDM
 	connection east, Route12, ROUTE_12, -9
 
 	map_attributes LavenderTown, LAVENDER_TOWN, $2c, NORTH | SOUTH | WEST
-	connection north, Route10South, ROUTE_10_SOUTH, 0
-	connection south, Route12, ROUTE_12, 0
+	connection north, Route10South, ROUTE_10_SOUTH, 1
+	connection south, Route12, ROUTE_12, 1
 	connection west, Route8, ROUTE_8, 0
 
 	map_attributes VermilionCity, VERMILION_CITY, $43, NORTH | EAST
@@ -332,7 +332,7 @@ ENDM
 	connection north, Route5, ROUTE_5, 5
 	connection south, Route6, ROUTE_6, 5
 	connection west, Route7, ROUTE_7, 9
-	connection east, Route8, ROUTE_8, 9
+	connection east, Route8, ROUTE_8, 7
 
 	map_attributes Route5, ROUTE_5, $0f, NORTH | SOUTH
 	connection north, CeruleanCity, CERULEAN_CITY, -5
@@ -342,11 +342,11 @@ ENDM
 	connection north, Route24, ROUTE_24, 6
 	connection south, Route5, ROUTE_5, 5
 	connection west, Route4, ROUTE_4, 5
-	connection east, Route9, ROUTE_9, 9
+	connection east, Route9, ROUTE_9, 7
 
 	map_attributes Route9, ROUTE_9, $2c, SOUTH | WEST
-	connection south, Route10North, ROUTE_10_NORTH, 20
-	connection west, CeruleanCity, CERULEAN_CITY, -9
+	connection south, Route10North, ROUTE_10_NORTH, 30
+	connection west, CeruleanCity, CERULEAN_CITY, -7
 
 	map_attributes Route24, ROUTE_24, $2c, NORTH | SOUTH
 	connection north, Route25, ROUTE_25, 0
@@ -364,16 +364,16 @@ ENDM
 	connection east, CeruleanCity, CERULEAN_CITY, -5
 
 	map_attributes Route8, ROUTE_8, $2c, WEST | EAST
-	connection west, SaffronCity, SAFFRON_CITY, -9
+	connection west, SaffronCity, SAFFRON_CITY, -7
 	connection east, LavenderTown, LAVENDER_TOWN, 0
 
 	map_attributes Route10North, ROUTE_10_NORTH, $2c, NORTH | SOUTH
-	connection north, Route9, ROUTE_9, -20
+	connection north, Route9, ROUTE_9, -30
 	connection south, Route10South, ROUTE_10_SOUTH, 0
 
 	map_attributes Route10South, ROUTE_10_SOUTH, $2c, NORTH | SOUTH
 	connection north, Route10North, ROUTE_10_NORTH, 0
-	connection south, LavenderTown, LAVENDER_TOWN, 0
+	connection south, LavenderTown, LAVENDER_TOWN, -1
 
 	map_attributes Route23, ROUTE_23, $0f, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
@@ -477,8 +477,8 @@ ENDM
 	map_attributes DiglettsCave, DIGLETTS_CAVE, $09, 0
 	map_attributes MountMoon, MOUNT_MOON, $09, 0
 	map_attributes UndergroundPath, UNDERGROUND_PATH, $00, 0
-	map_attributes RockTunnel1F, ROCK_TUNNEL_1F, $09, 0
-	map_attributes RockTunnelB1F, ROCK_TUNNEL_B1F, $09, 0
+	map_attributes RockTunnel1F, ROCK_TUNNEL_1F, $00, 0
+	map_attributes RockTunnelB1F, ROCK_TUNNEL_B1F, $00, 0
 	map_attributes SafariZoneFuchsiaGateBeta, SAFARI_ZONE_FUCHSIA_GATE_BETA, $00, 0
 	map_attributes SafariZoneBeta, SAFARI_ZONE_BETA, $13, 0
 	map_attributes VictoryRoad, VICTORY_ROAD, $1d, 0
@@ -714,5 +714,13 @@ ENDM
 	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $09, 0
 	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $09, 0
 	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $09, 0
+	map_attributes PokemonTower1F, POKEMON_TOWER_1F, $01, 0
+	map_attributes PokemonTower2F, POKEMON_TOWER_2F, $01, 0
+	map_attributes PokemonTower3F, POKEMON_TOWER_3F, $01, 0
+	map_attributes PokemonTower4F, POKEMON_TOWER_4F, $01, 0
+	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $01, 0
+	map_attributes PokemonTower6F, POKEMON_TOWER_6F, $01, 0
+	map_attributes PokemonTower7F, POKEMON_TOWER_7F, $01, 0
+
 
 	

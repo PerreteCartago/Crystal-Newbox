@@ -504,4 +504,16 @@ INCLUDE "maps/CeruleanCave1F.asm"
 INCLUDE "maps/CeruleanCave2F.asm"
 INCLUDE "maps/CeruleanCaveB1F.asm"
 
+
+SECTION "Map Scripts 26", ROMX
+
+INCLUDE "maps/PokemonTower1F.asm"
+INCLUDE "maps/PokemonTower2F.asm"
+INCLUDE "maps/PokemonTower3F.asm"
+INCLUDE "maps/PokemonTower4F.asm"
+INCLUDE "maps/PokemonTower5F.asm"
+INCLUDE "maps/PokemonTower6F.asm"
+INCLUDE "maps/PokemonTower7F.asm"
+
+
 ENDSECTION

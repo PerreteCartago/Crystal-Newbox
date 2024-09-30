@@ -19,12 +19,12 @@ Route10North_MapEvents:
 
 	def_warp_events
 	warp_event 11,  1, ROUTE_10_POKECENTER_1F, 1
-	warp_event  3,  9, POWER_PLANT, 1
+	warp_event  6, 21, POWER_PLANT, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  5, 11, BGEVENT_READ, PowerPlantSign
+	bg_event  5, 41, BGEVENT_READ, PowerPlantSign
 	bg_event 12,  1, BGEVENT_READ, Route10PokecenterSign
 
 	def_object_events

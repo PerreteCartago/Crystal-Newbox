@@ -151,8 +151,8 @@ ENDM
 	map_const DIGLETTS_CAVE,                               10, 18 ; 84
 	map_const MOUNT_MOON,                                  15,  9 ; 85
 	map_const UNDERGROUND_PATH,                             3, 14 ; 86
-	map_const ROCK_TUNNEL_1F,                              15, 18 ; 87
-	map_const ROCK_TUNNEL_B1F,                             15, 18 ; 88
+	map_const ROCK_TUNNEL_1F,                              20, 18 ; 87
+	map_const ROCK_TUNNEL_B1F,                             20, 18 ; 88
 	map_const SAFARI_ZONE_FUCHSIA_GATE_BETA,                5,  4 ; 89
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
@@ -160,6 +160,13 @@ ENDM
 	map_const CERULEAN_CAVE_1F,                            20, 14 ; 92
 	map_const CERULEAN_CAVE_2F,                            20, 14 ; 93
 	map_const CERULEAN_CAVE_B1F,                           20, 14 ; 94
+	map_const POKEMON_TOWER_1F,                            10,  9 ; 
+	map_const POKEMON_TOWER_2F,                            10,  9 ; 
+	map_const POKEMON_TOWER_3F,                            10,  9 ; 
+	map_const POKEMON_TOWER_4F,                            10,  9 ; 
+	map_const POKEMON_TOWER_5F,                            10,  9 ; 
+	map_const POKEMON_TOWER_6F,                            10,  9 ; 
+	map_const POKEMON_TOWER_7F,                            10,  9 ; 
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -213,8 +220,8 @@ ENDM
 	map_const POWER_PLANT,                                 10,  9 ; 10
 	map_const BILLS_HOUSE,                                  4,  4 ; 11
 	map_const ROUTE_4,                                     45,  9 ; 12
-	map_const ROUTE_9,                                     30,  9 ; 13
-	map_const ROUTE_10_NORTH,                              10,  9 ; 14
+	map_const ROUTE_9,                                     40,  9 ; 13
+	map_const ROUTE_10_NORTH,                              10, 17 ; 14
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    39,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
@@ -371,10 +378,10 @@ ENDM
 	endgroup
 
 	newgroup LAVENDER                                             ; 18
-	map_const ROUTE_8,                                     20,  9 ;  1
+	map_const ROUTE_8,                                     30, 10 ;  1
 	map_const ROUTE_12,                                    10, 27 ;  2
-	map_const ROUTE_10_SOUTH,                              10,  9 ;  3
-	map_const LAVENDER_TOWN,                               10,  9 ;  4
+	map_const ROUTE_10_SOUTH,                              10, 13 ;  3
+	map_const LAVENDER_TOWN,                               11, 11 ;  4
 	map_const LAVENDER_POKECENTER_1F,                       6,  4 ;  5
 	map_const LAVENDER_POKECENTER_2F_BETA,                  8,  4 ;  6
 	map_const MR_FUJIS_HOUSE,                               5,  4 ;  7
@@ -488,7 +495,7 @@ ENDM
 	endgroup
 
 	newgroup SAFFRON                                              ; 25
-	map_const ROUTE_5,                                     10, 16 ;  1
+	map_const ROUTE_5,                                     10, 17 ;  1
 	map_const SAFFRON_CITY,                                20, 18 ;  2
 	map_const FIGHTING_DOJO,                                5,  6 ;  3
 	map_const SAFFRON_GYM,                                 10,  9 ;  4

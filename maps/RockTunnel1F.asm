@@ -23,19 +23,19 @@ RockTunnel1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 15,  3, ROUTE_9, 1
-	warp_event 11, 25, ROUTE_10_SOUTH, 1
-	warp_event  5,  3, ROCK_TUNNEL_B1F, 3
-	warp_event 15,  9, ROCK_TUNNEL_B1F, 2
-	warp_event 27,  3, ROCK_TUNNEL_B1F, 4
-	warp_event 27, 13, ROCK_TUNNEL_B1F, 1
+	warp_event 17,  3, ROUTE_9, 1
+	warp_event 15, 31, ROUTE_10_SOUTH, 1
+	warp_event 37,  3, ROCK_TUNNEL_B1F, 3
+	warp_event 17, 11, ROCK_TUNNEL_B1F, 2
+	warp_event 37, 17, ROCK_TUNNEL_B1F, 4
+	warp_event  5,  3, ROCK_TUNNEL_B1F, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 24,  4, BGEVENT_ITEM, RockTunnel1FHiddenXAccuracy
-	bg_event 21, 15, BGEVENT_ITEM, RockTunnel1FHiddenXDefend
+	bg_event  7,  8, BGEVENT_ITEM, RockTunnel1FHiddenXAccuracy
+	bg_event 27, 12, BGEVENT_ITEM, RockTunnel1FHiddenXDefend
 
 	def_object_events
 	object_event  4, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FElixer, EVENT_ROCK_TUNNEL_1F_ELIXER
-	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FTMSteelWing, EVENT_ROCK_TUNNEL_1F_TM_STEEL_WING
+	object_event 19, 19, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RockTunnel1FTMSteelWing, EVENT_ROCK_TUNNEL_1F_TM_STEEL_WING

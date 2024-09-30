@@ -139,3 +139,10 @@
 	tilecoll WALL, FLOOR, WALL, WARP_CARPET_DOWN ; 8a
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 8b
 	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 8c
+	tilecoll FLOOR, FLOOR, WALL, WALL ; 8d
+	tilecoll WALL, WALL, WALL, WALL ; 8e
+	tilecoll WALL, WALL, WALL, WALL ; 8f
+	tilecoll WALL, WALL, WALL, WALL ; 90
+	tilecoll WALL, WALL, WALL, WALL ; 91
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 92
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 93

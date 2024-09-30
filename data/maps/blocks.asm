@@ -959,4 +959,25 @@ CeruleanCave2F_Blocks:
 CeruleanCaveB1F_Blocks:
 	INCBIN "maps/CeruleanCaveB1F.blk"
 
+PokemonTower1F_Blocks:
+	INCBIN "maps/PokemonTower1F.blk"
+
+PokemonTower2F_Blocks:
+	INCBIN "maps/PokemonTower2F.blk"
+
+PokemonTower3F_Blocks:
+	INCBIN "maps/PokemonTower3F.blk"
+
+PokemonTower4F_Blocks:
+	INCBIN "maps/PokemonTower4F.blk"
+
+PokemonTower5F_Blocks:
+	INCBIN "maps/PokemonTower5F.blk"
+
+PokemonTower6F_Blocks:
+	INCBIN "maps/PokemonTower6F.blk"
+
+PokemonTower7F_Blocks:
+	INCBIN "maps/PokemonTower7F.blk"
+
 ENDSECTION
