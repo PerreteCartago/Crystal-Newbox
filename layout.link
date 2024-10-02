@@ -52,7 +52,6 @@ ROMX $09
 	"bank9"
 ROMX $0a
 	"bankA"
-	"Trainer Backpics"
 ROMX $0b
 	"bankB"
 ROMX $0c
@@ -298,6 +297,7 @@ ROMX $74
 	"Pokedex Entries 193-251"
 ROMX $75
 	"Events"
+	"Trainer Backpics"
 ROMX $77
 	"Unown Font"
 	"Print Party"

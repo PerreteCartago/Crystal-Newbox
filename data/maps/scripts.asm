@@ -94,6 +94,10 @@ INCLUDE "maps/TeamRocketBaseB1F.asm"
 INCLUDE "maps/TeamRocketBaseB2F.asm"
 INCLUDE "maps/TeamRocketBaseB3F.asm"
 INCLUDE "maps/IlexForest.asm"
+INCLUDE "maps/Route12Gate1F.asm"
+INCLUDE "maps/Route12Gate2F.asm"
+INCLUDE "maps/Route11Gate1F.asm"
+INCLUDE "maps/Route11Gate2F.asm"
 
 
 SECTION "Map Scripts 7", ROMX
@@ -514,6 +518,21 @@ INCLUDE "maps/PokemonTower4F.asm"
 INCLUDE "maps/PokemonTower5F.asm"
 INCLUDE "maps/PokemonTower6F.asm"
 INCLUDE "maps/PokemonTower7F.asm"
+INCLUDE "maps/CinnabarMart.asm"
+INCLUDE "maps/PokemonMansion1F.asm"
+INCLUDE "maps/PokemonMansion2F.asm"
+INCLUDE "maps/PokemonMansion3F.asm"
+INCLUDE "maps/PokemonMansionB1F.asm"
+
+
+SECTION "Map Scripts 27", ROMX
+
+INCLUDE "maps/SeafoamIslands.asm"
+INCLUDE "maps/SeafoamIslandsB1F.asm"
+INCLUDE "maps/SeafoamIslandsB2F.asm"
+INCLUDE "maps/SeafoamIslandsB3F.asm"
+INCLUDE "maps/SeafoamIslandsB4F.asm"
+INCLUDE "maps/PowerPlantGrande.asm"
 
 
 ENDSECTION

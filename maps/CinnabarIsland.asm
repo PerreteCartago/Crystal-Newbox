@@ -32,6 +32,9 @@ CinnabarIslandSign:
 CinnabarIslandPokecenterSign:
 	jumpstd PokecenterSignScript
 
+CinnabarIslandShopSign:
+	jumptext CinnabarIslandShopSignText
+
 CinnabarIslandHiddenRareCandy:
 	hiddenitem RARE_CANDY, EVENT_CINNABAR_ISLAND_HIDDEN_RARE_CANDY
 
@@ -40,104 +43,112 @@ CinnabarIslandBlueTeleport:
 	step_end
 
 CinnabarIslandBlueText:
-	text "¿Quién eres tú?"
+	text "Who are you?"
 
-	para "Es evidente que"
-	line "entrenas Pokémon…"
+	para "Well, it's plain"
+	line "to see that you're"
+	cont "a trainer…"
 
-	para "Me llamo Azul."
+	para "My name's BLUE."
 
-	para "Y una vez fui el"
-	line "Campeón, pero sólo"
+	para "I was once the"
+	line "CHAMPION, although"
 
-	para "durante poco"
-	line "tiempo…"
+	para "it was for only a"
+	line "short time…"
 
-	para "El entrometido de"
-	line "Rojo me ganó…"
+	para "That meddling RED"
+	line "did me in…"
 
-	para "¡Pero qué más da!"
-	line "¿Y tú qué quieres?"
+	para "Anyway, what do"
+	line "you want? You want"
 
-	para "¿Has venido a"
-	line "desafiarme?"
+	para "to challenge me or"
+	line "something?"
 
-	para "Lo siento, pero"
-	line "no, ahora no tengo"
-	cont "ganas de luchar."
+	para "…I hate to say"
+	line "it, but I'm not in"
 
-	para "Echa un vistazo a"
-	line "tu alrededor…"
+	para "the mood for a"
+	line "battle now."
 
-	para "Un volcán entra en"
-	line "erupción y una"
+	para "Take a good look"
+	line "around you…"
 
-	para "ciudad entera"
-	line "desaparece."
+	para "A volcano erupts,"
+	line "and just like"
 
-	para "En Pokémon se"
-	line "puede ganar o"
+	para "that, a whole town"
+	line "disappears."
 
-	para "perder, pero si se"
-	line "tuercen las cosas"
+	para "We can go on win-"
+	line "ning and losing in"
 
-	para "se puede perder"
-	line "enseguida."
+	para "#MON. But if"
+	line "nature so much as"
+
+	para "twitches, we can"
+	line "lose in a second."
 
 	para "…"
 
-	para "Así son las cosas…"
+	para "That's the way it"
+	line "is…"
 
-	para "Sin embargo, sigo"
-	line "siendo entrenador."
+	para "But, anyway, I'm"
+	line "still a trainer."
 
-	para "Y encontrarme con"
-	line "un rival fuerte me"
-	cont "anima a luchar."
+	para "If I see a strong"
+	line "opponent, it makes"
+	cont "me want to battle."
 
-	para "Si quieres luchar"
-	line "contra mí, ven al"
+	para "If you want to"
+	line "battle me, come to"
+	cont "the VIRIDIAN GYM."
 
-	para "Gimnasio de la"
-	line "Ciudad Verde."
-
-	para "Y aceptaré tu"
-	line "desafío…"
-	done
-
-CinnabarIslandGymSignText:
-	text "Aquí hay una nota…"
-
-	para "El Gumnasio de"
-	line "Isla Canela se ha"
-
-	para "trasladado a Islas"
-	line "Espuma."
-
-	para "Blaine"
+	para "I'll take you on"
+	line "then."
 	done
 
 CinnabarIslandSignText:
-	text "Isla Canela"
+	text "CINNABAR ISLAND"
 
-	para "La abrasadora isla"
-	line "del ardiente deseo"
+	para "The Fiery Town of"
+	line "Burning Desire"
 	done
 
+CinnabarIslandGymSignText:
+	text "Cinnabar Gym"
+
+	para "There and back"
+	line "again"
+	done
+
+CinnabarIslandShopSignText:
+	text "Cinnabar PokeMart"
+
+	para "Your not destroyed"
+	line "by a volcano favou-"
+	cont "rite shop"
+	done
 
 CinnabarIsland_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
 	warp_event 11, 11, CINNABAR_POKECENTER_1F, 1
+	warp_event 15, 11, CINNABAR_MART, 2
+	warp_event 18,  3, SEAFOAM_GYM, 1
+	warp_event  5,  3, POKEMON_MANSION_1F, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 12, 11, BGEVENT_READ, CinnabarIslandPokecenterSign
-	bg_event  9, 11, BGEVENT_READ, CinnabarIslandGymSign
-	bg_event  7,  7, BGEVENT_READ, CinnabarIslandSign
-	bg_event  9,  1, BGEVENT_ITEM, CinnabarIslandHiddenRareCandy
+	bg_event  9, 11, BGEVENT_READ, CinnabarIslandSign
+	bg_event 16, 11, BGEVENT_READ, CinnabarIslandShopSign
+	bg_event 13,  3, BGEVENT_READ, CinnabarIslandGymSign
+	bg_event 11,  1, BGEVENT_ITEM, CinnabarIslandHiddenRareCandy
 
 	def_object_events
-	object_event  9,  6, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event  7, 10, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR

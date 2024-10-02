@@ -263,31 +263,31 @@ ENDM
 
 	map_attributes Route20, ROUTE_20, $43, WEST | EAST
 	connection west, CinnabarIsland, CINNABAR_ISLAND, 0
-	connection east, Route19, ROUTE_19, -9
+	connection east, Route19, ROUTE_19, -21
 
 	map_attributes Route19, ROUTE_19, $43, NORTH | WEST
 	connection north, FuchsiaCity, FUCHSIA_CITY, 0
-	connection west, Route20, ROUTE_20, 9
+	connection west, Route20, ROUTE_20, 21
 
 	map_attributes FuchsiaCity, FUCHSIA_CITY, $0f, SOUTH | WEST | EAST
 	connection south, Route19, ROUTE_19, 0
-	connection west, Route18, ROUTE_18, 7
-	connection east, Route15, ROUTE_15, 9
+	connection west, Route18, ROUTE_18, 4
+	connection east, Route15, ROUTE_15, 7
 
 	map_attributes Route18, ROUTE_18, $43, WEST | EAST
-	connection west, Route17, ROUTE_17, -38
-	connection east, FuchsiaCity, FUCHSIA_CITY, -7
+	connection west, Route17, ROUTE_17, -72
+	connection east, FuchsiaCity, FUCHSIA_CITY, -4
 
 	map_attributes Route17, ROUTE_17, $43, NORTH | EAST
 	connection north, Route16, ROUTE_16, 0
-	connection east, Route18, ROUTE_18, 38
+	connection east, Route18, ROUTE_18, 72
 
 	map_attributes Route16, ROUTE_16, $0f, SOUTH | EAST
 	connection south, Route17, ROUTE_17, 0
-	connection east, CeladonCity, CELADON_CITY, -9
+	connection east, CeladonCity, CELADON_CITY, -7
 
 	map_attributes CeladonCity, CELADON_CITY, $0f, WEST | EAST
-	connection west, Route16, ROUTE_16, 9
+	connection west, Route16, ROUTE_16, 7
 	connection east, Route7, ROUTE_7, 5
 
 	map_attributes Route7, ROUTE_7, $0f, WEST | EAST
@@ -295,7 +295,7 @@ ENDM
 	connection east, SaffronCity, SAFFRON_CITY, -9
 
 	map_attributes Route15, ROUTE_15, $0f, WEST | EAST
-	connection west, FuchsiaCity, FUCHSIA_CITY, -9
+	connection west, FuchsiaCity, FUCHSIA_CITY, -7
 	connection east, Route14, ROUTE_14, -9
 
 	map_attributes Route14, ROUTE_14, $43, NORTH | WEST
@@ -303,17 +303,17 @@ ENDM
 	connection west, Route15, ROUTE_15, 9
 
 	map_attributes Route13, ROUTE_13, $43, NORTH | SOUTH
-	connection north, Route12, ROUTE_12, 20
+	connection north, Route12, ROUTE_12, 30
 	connection south, Route14, ROUTE_14, 0
 
 	map_attributes Route12, ROUTE_12, $43, NORTH | SOUTH | WEST
 	connection north, LavenderTown, LAVENDER_TOWN, -1
-	connection south, Route13, ROUTE_13, -20
-	connection west, Route11, ROUTE_11, 9
+	connection south, Route13, ROUTE_13, -30
+	connection west, Route11, ROUTE_11, 27
 
 	map_attributes Route11, ROUTE_11, $0f, WEST | EAST
-	connection west, VermilionCity, VERMILION_CITY, 0
-	connection east, Route12, ROUTE_12, -9
+	connection west, VermilionCity, VERMILION_CITY, -4
+	connection east, Route12, ROUTE_12, -27
 
 	map_attributes LavenderTown, LAVENDER_TOWN, $2c, NORTH | SOUTH | WEST
 	connection north, Route10South, ROUTE_10_SOUTH, 1
@@ -322,7 +322,7 @@ ENDM
 
 	map_attributes VermilionCity, VERMILION_CITY, $43, NORTH | EAST
 	connection north, Route6, ROUTE_6, 5
-	connection east, Route11, ROUTE_11, 0
+	connection east, Route11, ROUTE_11, 4
 
 	map_attributes Route6, ROUTE_6, $0f, NORTH | SOUTH
 	connection north, SaffronCity, SAFFRON_CITY, -5
@@ -721,6 +721,18 @@ ENDM
 	map_attributes PokemonTower5F, POKEMON_TOWER_5F, $01, 0
 	map_attributes PokemonTower6F, POKEMON_TOWER_6F, $01, 0
 	map_attributes PokemonTower7F, POKEMON_TOWER_7F, $01, 0
-
-
-	
+	map_attributes Route12Gate1F, ROUTE_12_GATE_1F, $00, 0
+	map_attributes Route12Gate2F, ROUTE_12_GATE_2F, $00, 0
+	map_attributes Route11Gate1F, ROUTE_11_GATE_1F, $00, 0
+	map_attributes Route11Gate2F, ROUTE_11_GATE_2F, $00, 0
+	map_attributes CinnabarMart, CINNABAR_MART, $00, 0
+	map_attributes PokemonMansion1F, POKEMON_MANSION_1F, $00, 0
+	map_attributes PokemonMansion2F, POKEMON_MANSION_2F, $00, 0
+	map_attributes PokemonMansion3F, POKEMON_MANSION_3F, $00, 0
+	map_attributes PokemonMansionB1F, POKEMON_MANSION_B1F, $00, 0
+	map_attributes SeafoamIslands, SEAFOAM_ISLANDS, $00, 0
+	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $00, 0
+	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $00, 0
+	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $00, 0
+	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $00, 0
+	map_attributes PowerPlantGrande, POWER_PLANT_GRANDE, $00, 0

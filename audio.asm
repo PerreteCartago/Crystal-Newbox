@@ -143,6 +143,7 @@ SECTION "Extra Songs 1", ROMX
 INCLUDE "audio/music/credits.asm"
 INCLUDE "audio/music/clair.asm"
 INCLUDE "audio/music/mobileadapter.asm"
+INCLUDE "audio/music/PokemonMansion.asm"
 
 
 SECTION "Extra Songs 2", ROMX

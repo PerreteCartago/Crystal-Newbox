@@ -97,6 +97,7 @@ Landmarks:
 	landmark  76, 132, Route20Name
 	landmark  68, 132, SeafoamIslandsName
 	landmark  52, 132, CinnabarIslandName
+	landmark  52, 130, PokemonMansionName
 	landmark  52, 120, Route21Name
 	landmark  36,  68, Route22Name
 	landmark  28,  52, VictoryRoadName
@@ -154,7 +155,7 @@ LavRadioTowerName:   db "Torre<BSP>Lavanda@"
 SilphCoName:         db "SILPH<BSP>S.A.@" ; unreferenced
 SafariZoneName:      db "Zona<BSP>Safari@" ; unreferenced
 SeafoamIslandsName:  db "Islas<BSP>Espuma@"
-PokemonMansionName:  db "Mansión<BSP><POKE>mon@" ; unreferenced
+PokemonMansionName:  db "Mansión<BSP><POKE>mon@"
 CeruleanCaveName:    db "Mazmorra<BSP>Rara@"
 Route1Name:          db "Ruta 1@"
 Route2Name:          db "Ruta 2@"

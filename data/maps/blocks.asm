@@ -853,6 +853,7 @@ Route17Route18Gate_Blocks:
 Route31VioletGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
 
+CinnabarMart_Blocks:
 OlivineMart_Blocks:
 EcruteakMart_Blocks:
 BlackthornMart_Blocks:
@@ -979,5 +980,45 @@ PokemonTower6F_Blocks:
 
 PokemonTower7F_Blocks:
 	INCBIN "maps/PokemonTower7F.blk"
+
+Route11Gate2F_Blocks:
+Route12Gate2F_Blocks:
+	INCBIN "maps/KantoGate2F.blk"
+
+Route12Gate1F_Blocks:
+	INCBIN "maps/KantoNorthGate1F.blk"
+
+Route11Gate1F_Blocks:
+	INCBIN "maps/KantoWestGate1F.blk"
+
+PokemonMansion1F_Blocks:
+	INCBIN "maps/PokemonMansion1F.blk"
+
+PokemonMansion2F_Blocks:
+	INCBIN "maps/PokemonMansion2F.blk"
+
+PokemonMansion3F_Blocks:
+	INCBIN "maps/PokemonMansion3F.blk"
+
+PokemonMansionB1F_Blocks:
+	INCBIN "maps/PokemonMansionB1F.blk"
+
+SeafoamIslands_Blocks:
+	INCBIN "maps/SeafoamIslands.blk"
+
+SeafoamIslandsB1F_Blocks:
+	INCBIN "maps/SeafoamIslandsB1F.blk"
+
+SeafoamIslandsB2F_Blocks:
+	INCBIN "maps/SeafoamIslandsB2F.blk"
+
+SeafoamIslandsB3F_Blocks:
+	INCBIN "maps/SeafoamIslandsB3F.blk"
+
+SeafoamIslandsB4F_Blocks:
+	INCBIN "maps/SeafoamIslandsB4F.blk"
+
+PowerPlantGrande_Blocks:
+	INCBIN "maps/PowerPlantGrande.blk"
 
 ENDSECTION
