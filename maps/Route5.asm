@@ -1,5 +1,6 @@
 	object_const_def
 	const ROUTE5_POKEFAN_M
+	const ROUTE5_TEACHER
 
 Route5_MapScripts:
 	def_scene_scripts
@@ -14,6 +15,17 @@ Route5UndergroundPathSign:
 
 HouseForSaleSign:
 	jumptext HouseForSaleSignText
+
+Route5UndergroundPathEntranceTeacherScript:
+	jumptextfaceplayer Route5UndergroundPathEntranceTeacherText
+
+Route5UndergroundPathEntranceTeacherText:
+	text "Muchas ciudades de"
+	line "Johto están llenas"
+
+	para "de historia. ¡Cómo"
+	line "me gustaría ir!"
+	done
 
 Route5PokefanMText:
 	text "La carretera está"
@@ -43,8 +55,8 @@ Route5_MapEvents:
 
 	def_warp_events
 	warp_event 17, 29, ROUTE_5_UNDERGROUND_PATH_ENTRANCE, 1
-	warp_event  8, 33, ROUTE_5_SAFFRON_GATE, 1
-	warp_event  9, 33, ROUTE_5_SAFFRON_GATE, 2
+	warp_event  8, 33, ROUTE_5_SAFFRON_GATE_1F, 1
+	warp_event  9, 33, ROUTE_5_SAFFRON_GATE_1F, 2
 	warp_event 10, 21, ROUTE_5_CLEANSE_TAG_HOUSE, 1
 
 	def_coord_events
@@ -55,3 +67,4 @@ Route5_MapEvents:
 
 	def_object_events
 	object_event 17, 30, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route5PokefanMScript, EVENT_ROUTE_5_6_POKEFAN_M_BLOCKS_UNDERGROUND_PATH
+	object_event 12, 12, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route5UndergroundPathEntranceTeacherScript, -1

@@ -276,7 +276,7 @@ SaffronCity_MapEvents:
 	warp_event  8,  3, SAFFRON_MAGNET_TRAIN_STATION, 2
 	warp_event 18, 21, SILPH_CO_1F, 1
 	warp_event  9, 11, COPYCATS_HOUSE_1F, 1
-	warp_event 18,  3, ROUTE_5_SAFFRON_GATE, 3
+	warp_event 18,  3, ROUTE_5_SAFFRON_GATE_1F, 3
 	warp_event  0, 24, ROUTE_7_SAFFRON_GATE, 3
 	warp_event  0, 25, ROUTE_7_SAFFRON_GATE, 4
 	warp_event 16, 33, ROUTE_6_SAFFRON_GATE, 1

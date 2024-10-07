@@ -14,13 +14,25 @@ DEF NPCTRADE_STRUCT_LENGTH EQU _RS
 
 ; NPCTrades indexes (see data/events/npc_trades.asm)
 	const_def
-	const NPC_TRADE_MIKE   ; 0
-	const NPC_TRADE_KYLE   ; 1
-	const NPC_TRADE_TIM    ; 2
-	const NPC_TRADE_EMY    ; 3
-	const NPC_TRADE_CHRIS  ; 4
-	const NPC_TRADE_KIM    ; 5
-	const NPC_TRADE_FOREST ; 6
+	const NPC_TRADE_MIKE         ; 0
+	const NPC_TRADE_KYLE         ; 1
+	const NPC_TRADE_TIM          ; 2
+	const NPC_TRADE_EMY          ; 3
+	const NPC_TRADE_CHRIS        ; 4
+	const NPC_TRADE_KIM          ; 5
+	const NPC_TRADE_FOREST       ; 6
+	const NPC_TRADE_VERMILION    ; 7
+	const NPC_TRADE_ROUTE_2      ; 8
+	const NPC_TRADE_ROUTE_5      ; 9
+	const NPC_TRADE_ROUTE_FEMALE ; 10
+	const NPC_TRADE_ROUTE_MALE   ; 11
+	const NPC_TRADE_ROUTE_11     ; 12
+	const NPC_TRADE_ROUTE_18     ; 13
+;	const NPC_TRADE_LAB1      ;11
+;	const NPC_TRADE_LAB2      ;12
+;	const NPC_TRADE_LAB3      ;13
+;	const NPC_TRADE_CERULEAN  ;13
+;	const NPC_TRADE_SUB       ;14
 DEF NUM_NPC_TRADES EQU const_value
 
 ; trade gender limits

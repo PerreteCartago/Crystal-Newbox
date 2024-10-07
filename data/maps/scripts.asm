@@ -67,6 +67,8 @@ INCLUDE "maps/PokecomCenterAdminOfficeMobile.asm"
 INCLUDE "maps/IlexForestAzaleaGate.asm"
 INCLUDE "maps/Route34IlexForestGate.asm"
 INCLUDE "maps/DayCare.asm"
+INCLUDE "maps/VermilionTradeHouse.asm"
+INCLUDE "maps/VermilionPidgeyHouse.asm"
 
 
 SECTION "Map Scripts 5", ROMX
@@ -297,7 +299,7 @@ INCLUDE "maps/SilphCo1F.asm"
 INCLUDE "maps/CopycatsHouse1F.asm"
 INCLUDE "maps/CopycatsHouse2F.asm"
 INCLUDE "maps/Route5UndergroundPathEntrance.asm"
-INCLUDE "maps/Route5SaffronGate.asm"
+INCLUDE "maps/Route5SaffronGate1F.asm"
 INCLUDE "maps/Route5CleanseTagHouse.asm"
 
 
@@ -500,7 +502,6 @@ INCLUDE "maps/GoldenrodLabB1.asm"
 INCLUDE "maps/ViridianSchoolHouse.asm"
 INCLUDE "maps/ViridianNorthGate.asm"
 INCLUDE "maps/ViridianSouthGate.asm"
-INCLUDE "maps/ViridianForest.asm"
 INCLUDE "maps/Museum1F.asm"
 INCLUDE "maps/Museum2F.asm"
 INCLUDE "maps/MtMoonPokecenter1F.asm"
@@ -533,6 +534,9 @@ INCLUDE "maps/SeafoamIslandsB2F.asm"
 INCLUDE "maps/SeafoamIslandsB3F.asm"
 INCLUDE "maps/SeafoamIslandsB4F.asm"
 INCLUDE "maps/PowerPlantGrande.asm"
+INCLUDE "maps/ViridianForest.asm"
+INCLUDE "maps/Route5SaffronGate2F.asm"
+INCLUDE "maps/Route17Route18Gate2F.asm"
 
 
 ENDSECTION

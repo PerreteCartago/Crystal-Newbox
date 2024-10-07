@@ -324,6 +324,8 @@ ENDM
 	map_const ROUTE_6_UNDERGROUND_PATH_ENTRANCE,            4,  4 ; 13
 	map_const ROUTE_11_GATE_1F,                             4,  5 ; 14
 	map_const ROUTE_11_GATE_2F,                             4,  4 ; 15
+	map_const VERMILION_PIDGEY_HOUSE,                       4,  4 ; 16
+	map_const VERMILION_TRADE_HOUSE,                        4,  4 ; 17
 	endgroup
 
 	newgroup PALLET                                               ; 13
@@ -451,7 +453,8 @@ ENDM
 	map_const ROUTE_16_FUCHSIA_SPEECH_HOUSE,                4,  4 ; 23
 	map_const ROUTE_16_GATE,                                5,  4 ; 24
 	map_const ROUTE_7_SAFFRON_GATE,                         5,  4 ; 25
-	map_const ROUTE_17_ROUTE_18_GATE,                       5,  4 ; 26
+	map_const ROUTE_17_ROUTE_18_GATE,                       5,  5 ; 26
+	map_const ROUTE_17_ROUTE_18_GATE_2F,                    4,  4 ; 27
 	endgroup
 
 	newgroup CIANWOOD                                             ; 22
@@ -523,8 +526,9 @@ ENDM
 	map_const COPYCATS_HOUSE_1F,                            4,  4 ; 11
 	map_const COPYCATS_HOUSE_2F,                            5,  3 ; 12
 	map_const ROUTE_5_UNDERGROUND_PATH_ENTRANCE,            4,  4 ; 13
-	map_const ROUTE_5_SAFFRON_GATE,                         5,  4 ; 14
-	map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 15
+	map_const ROUTE_5_SAFFRON_GATE_1F,                      5,  4 ; 14
+	map_const ROUTE_5_SAFFRON_GATE_2F,                      4,  4 ; 15
+	map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 16
 	endgroup
 
 	newgroup CHERRYGROVE                                          ; 26

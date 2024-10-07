@@ -58,7 +58,7 @@ GoldenRodCityTutorScaldText2:
 	text "¡Ajá!"
 	line "¡Y sí!"
 
-	text "Puedo enseñar a"
+	para "Puedo enseñar a"
 	line "un Pokemon de tu"
 	cont "equipo cómo escal-"
 	cont "dar a sus enemigos"

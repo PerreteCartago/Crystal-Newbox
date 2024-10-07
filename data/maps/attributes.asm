@@ -687,7 +687,7 @@ ENDM
 	map_attributes CopycatsHouse1F, COPYCATS_HOUSE_1F, $00, 0
 	map_attributes CopycatsHouse2F, COPYCATS_HOUSE_2F, $00, 0
 	map_attributes Route5UndergroundPathEntrance, ROUTE_5_UNDERGROUND_PATH_ENTRANCE, $00, 0
-	map_attributes Route5SaffronGate, ROUTE_5_SAFFRON_GATE, $00, 0
+	map_attributes Route5SaffronGate1F, ROUTE_5_SAFFRON_GATE_1F, $00, 0
 	map_attributes Route5CleanseTagHouse, ROUTE_5_CLEANSE_TAG_HOUSE, $00, 0
 	map_attributes CherrygroveMart, CHERRYGROVE_MART, $00, 0
 	map_attributes CherrygrovePokecenter1F, CHERRYGROVE_POKECENTER_1F, $00, 0
@@ -736,3 +736,7 @@ ENDM
 	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $00, 0
 	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $00, 0
 	map_attributes PowerPlantGrande, POWER_PLANT_GRANDE, $00, 0
+	map_attributes VermilionPidgeyHouse, VERMILION_PIDGEY_HOUSE, $00, 0
+	map_attributes VermilionTradeHouse, VERMILION_TRADE_HOUSE, $00, 0
+	map_attributes Route5SaffronGate2F, ROUTE_5_SAFFRON_GATE_2F, $00, 0
+	map_attributes Route17Route18Gate2F, ROUTE_17_ROUTE_18_GATE_2F, $00, 0

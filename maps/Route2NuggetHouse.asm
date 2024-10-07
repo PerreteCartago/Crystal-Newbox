@@ -1,5 +1,7 @@
 	object_const_def
 	const ROUTE2NUGGETHOUSE_FISHER
+	const ROUTE2NUGGETHOUSE_SCIENTIST
+
 
 Route2NuggetHouse_MapScripts:
 	def_scene_scripts
@@ -25,6 +27,14 @@ Route2NuggetHouseFisherScript:
 
 Route2NuggetHouseBookshelf: ; unreferenced
 	jumpstd DifficultBookshelfScript
+
+Ruteo:
+	faceplayer
+	opentext
+	trade NPC_TRADE_ROUTE_2
+	waitbutton
+	closetext
+	end
 
 Route2NuggetHouseFisherText:
 	text "¡Hola! Me alegro"
@@ -66,4 +76,5 @@ Route2NuggetHouse_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  2,  4, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route2NuggetHouseFisherScript, -1
+	object_event  1,  4, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route2NuggetHouseFisherScript, -1
+	object_event  2,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Ruteo, -1

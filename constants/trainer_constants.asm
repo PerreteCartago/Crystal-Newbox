@@ -347,6 +347,11 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const ARNIE4
 	const ARNIE5
 	const WAYNE
+	const CIRILO
+	const LINO
+	const AMADEO
+	const ASIER
+	const MANLIO
 
 	trainerclass FISHER ; 25
 	const JUSTIN

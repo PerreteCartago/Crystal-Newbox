@@ -40,4 +40,5 @@ SpriteMons:
 	db MEWTWO
 	db ARTICUNO
 	db ZAPDOS
+	db PIDGEY
 	assert_table_length NUM_POKEMON_SPRITES

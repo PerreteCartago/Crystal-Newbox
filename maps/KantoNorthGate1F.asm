@@ -14,7 +14,7 @@ Route30BusyManHouse_MapEvents:
 	warp_event  5,  0, PUERTA_NORTE, 3
 	warp_event  4,  7, PUERTA_SUR, 3
 	warp_event  5,  7, PUERTA_SUR, 3
-	warp_event  8,  6, SEGUNDA_PLANTA, 3
+	warp_event  8,  6, SEGUNDA_PLANTA, 1
 
 	def_coord_events
 

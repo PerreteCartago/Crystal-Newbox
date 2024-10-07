@@ -125,7 +125,6 @@ Route6SaffronGate_Blocks:
 Route40BattleTowerGate_Blocks:
 Route2Gate_Blocks:
 Route29Route46Gate_Blocks:
-Route5SaffronGate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 
 CinnabarIsland_Blocks:
@@ -849,9 +848,11 @@ Route15FuchsiaGate_Blocks:
 Route8SaffronGate_Blocks:
 Route16Gate_Blocks:
 Route7SaffronGate_Blocks:
-Route17Route18Gate_Blocks:
 Route31VioletGate_Blocks:
 	INCBIN "maps/EastWestGate.blk"
+
+Route17Route18Gate_Blocks:
+	INCBIN "maps/Route17Route18Gate.blk"
 
 CinnabarMart_Blocks:
 OlivineMart_Blocks:
@@ -869,6 +870,8 @@ SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
+VermilionTradeHouse_Blocks:
+VermilionPidgeyHouse_Blocks:
 MoveReminderHouse_Blocks:
 Route38RivalPokemonHouse_Blocks:
 ScaldHouse_Blocks:
@@ -981,10 +984,13 @@ PokemonTower6F_Blocks:
 PokemonTower7F_Blocks:
 	INCBIN "maps/PokemonTower7F.blk"
 
+Route17Route18Gate2F_Blocks:
+Route5SaffronGate2F_Blocks:
 Route11Gate2F_Blocks:
 Route12Gate2F_Blocks:
 	INCBIN "maps/KantoGate2F.blk"
 
+Route5SaffronGate1F_Blocks:
 Route12Gate1F_Blocks:
 	INCBIN "maps/KantoNorthGate1F.blk"
 
