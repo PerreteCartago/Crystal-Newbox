@@ -20,8 +20,8 @@ FindFirstAliveMonAndStartBattle:
 	ld b, a	
 	ld a, [wMapNumber]
 	ld c, a
-	call GetWorldMapLocation
-	cp LANDMARK_ILEX_FOREST
+	call GetMapEnvironment
+	cp FOREST
 	jr z, .forestpal
 
 	call GetMapEnvironment

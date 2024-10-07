@@ -740,3 +740,7 @@ ENDM
 	map_attributes VermilionTradeHouse, VERMILION_TRADE_HOUSE, $00, 0
 	map_attributes Route5SaffronGate2F, ROUTE_5_SAFFRON_GATE_2F, $00, 0
 	map_attributes Route17Route18Gate2F, ROUTE_17_ROUTE_18_GATE_2F, $00, 0
+	map_attributes CinnabarLab, CINNABAR_LAB, $00, 0
+	map_attributes CinnabarLabFossilRoom, CINNABAR_LAB_FOSSIL_ROOM, $00, 0
+	map_attributes CinnabarLabMetronomeRoom, CINNABAR_LAB_METRONOME_ROOM, $00, 0
+	map_attributes CinnabarLabTradeRoom, CINNABAR_LAB_TRADE_ROOM, $00, 0

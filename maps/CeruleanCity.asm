@@ -5,6 +5,8 @@
 	const CERULEANCITY_COOLTRAINER_F
 	const CERULEANCITY_FISHER
 	const CERULEANCITY_YOUNGSTER
+	const CERULEANCITY_YOUNGSTER1
+	const CERULEANCITY_LASS1
 
 CeruleanCity_MapScripts:
 	def_scene_scripts
@@ -273,7 +275,7 @@ CeruleanPoliceSignText:
 
 CeruleanCapeSignText:
 	text "Hacia el"
-	line "Cabo Celeste"
+	line "Puente Pepita."
 	done
 
 CeruleanLockedDoorText:
@@ -312,3 +314,5 @@ CeruleanCity_MapEvents:
 	object_event 21, 24, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeruleanCityCooltrainerFScript, -1
 	object_event 30, 26, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityFisherScript, -1
 	object_event  6, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityYoungsterScript, -1
+	object_event 20, -2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyDudley, -1
+	object_event 21, -5, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassEllen, -1

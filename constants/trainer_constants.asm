@@ -124,6 +124,9 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const JASON
 	const JOEY4
 	const JOEY5
+	const CIRO
+	const DANE
+	const PEPE
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -185,7 +188,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const DANA1
 	const ELLEN
 	const CONNIE2 ; unused
-	const CONNIE3 ; unused
+	const CONNIE3
 	const DANA2
 	const DANA3
 	const DANA4
@@ -212,7 +215,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const TYLER ; unused
 	const SEAN
 	const KEVIN
-	const STEVE ; unused
+	const STEVE
 	const ALLEN
 	const DARIN
 
@@ -238,6 +241,7 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const REENA2
 	const REENA3
 	const CARA
+	const ELIA
 
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
@@ -490,6 +494,9 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const PARRY3
 	const ANTHONY4
 	const ANTHONY5
+	const FRANCIS
+	const UBALDO
+	const NOBORU
 
 	trainerclass BIKER ; 2d
 	const BIKER_BENNY ; unused

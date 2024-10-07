@@ -312,6 +312,7 @@ DEF MT01 EQU const_value
 	add_mt SCALD
 	add_mt AVALANCHE
 	add_mt FLASH_CANNON
+	add_mt METRONOME
 DEF NUM_TUTORS = __tmhm_value__ - NUM_TMS - NUM_HMS - 1
 
 DEF NUM_TM_HM_TUTOR EQU NUM_TMS + NUM_HMS + NUM_TUTORS

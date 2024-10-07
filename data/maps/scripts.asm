@@ -539,4 +539,13 @@ INCLUDE "maps/Route5SaffronGate2F.asm"
 INCLUDE "maps/Route17Route18Gate2F.asm"
 
 
+SECTION "Map Scripts 28", ROMX
+
+INCLUDE "maps/CinnabarLab.asm"
+INCLUDE "maps/CinnabarLabFossilRoom.asm"
+INCLUDE "maps/CinnabarLabMetronomeRoom.asm"
+INCLUDE "maps/CinnabarLabTradeRoom.asm"
+
+
+
 ENDSECTION

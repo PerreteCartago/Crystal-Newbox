@@ -416,6 +416,23 @@ YoungsterGroup:
 	db 37, RATICATE,   HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
 	db -1 ; end
 
+	; YOUNGSTER (15)
+	db "Ciro@", TRAINERTYPE_NORMAL
+	db 40, ARBOK
+	db 42, SANDSLASH
+	db -1 ; end
+
+	; YOUNGSTER (16)
+	db "Dane@", TRAINERTYPE_NORMAL
+	db 45, SLOWBRO
+	db -1 ; end
+
+	; YOUNGSTER (17)
+	db "Pepe@", TRAINERTYPE_NORMAL
+	db 40, RATICATE
+	db 42, FEAROW
+	db -1 ; end
+
 SchoolboyGroup:
 	; SCHOOLBOY (1)
 	db "Aitor@", TRAINERTYPE_NORMAL
@@ -765,8 +782,10 @@ LassGroup:
 	db -1 ; end
 
 	; LASS (13)
-	db "Ángela@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db "Herminia@", TRAINERTYPE_NORMAL
+	db 41, VILEPLUME
+	db 41, BELLOSSOM
+	db 41, PIDGEOT
 	db -1 ; end
 
 	; LASS (14)
@@ -917,10 +936,9 @@ CooltrainerMGroup:
 	db -1 ; end
 
 	; COOLTRAINERM (18)
-	db "Tito@", TRAINERTYPE_NORMAL
-	db 14, BULBASAUR
-	db 14, CHARMANDER
-	db 14, SQUIRTLE
+	db "Fidel@", TRAINERTYPE_NORMAL
+	db 41, RATICATE
+	db 41, ARBOK
 	db -1 ; end
 
 	; COOLTRAINERM (19)
@@ -1062,6 +1080,12 @@ CooltrainerFGroup:
 	db 33, HORSEA,     SMOKESCREEN, LEER, WHIRLPOOL, TWISTER
 	db 33, HORSEA,     SMOKESCREEN, LEER, WHIRLPOOL, TWISTER
 	db 35, SEADRA,     SWIFT, LEER, WATERFALL, TWISTER
+	db -1 ; end
+
+	; COOLTRAINERF (22)
+	db "Elia@", TRAINERTYPE_NORMAL
+	db 43, NIDOKING
+	db 43, NIDOQUEEN
 	db -1 ; end
 
 BeautyGroup:
@@ -2445,6 +2469,25 @@ HikerGroup:
 	db 34, GRAVELER,   MAGNITUDE, SELFDESTRUCT, DEFENSE_CURL, ROLLOUT
 	db 36, GOLEM,      MAGNITUDE, SELFDESTRUCT, DEFENSE_CURL, ROLLOUT
 	db 34, MACHOKE,    KARATE_CHOP, VITAL_THROW, HEADBUTT, DIG
+	db -1 ; end
+
+	; HIKER (23)
+	db "Francis@", TRAINERTYPE_NORMAL
+	db 43, GRAVELER
+	db 43, MACHOKE
+	db -1 ; end
+
+	; HIKER (24)
+	db "Ubaldo@", TRAINERTYPE_NORMAL
+	db 45, STEELIX
+	db -1 ; end
+
+	; HIKER (25)
+	db "Noboru@", TRAINERTYPE_NORMAL
+	db 40, GRAVELER
+	db 40, GOLEM
+	db 40, MACHOKE
+	db 40, MACHAMP
 	db -1 ; end
 
 BikerGroup:

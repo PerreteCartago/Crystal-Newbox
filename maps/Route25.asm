@@ -1,15 +1,21 @@
 	object_const_def
 	const ROUTE25_MISTY
 	const ROUTE25_COOLTRAINER_M1
-	const ROUTE25_YOUNGSTER1
-	const ROUTE25_LASS1
-	const ROUTE25_YOUNGSTER2
-	const ROUTE25_LASS2
-	const ROUTE25_YOUNGSTER3
-	const ROUTE25_LASS3
 	const ROUTE25_SUPER_NERD
 	const ROUTE25_COOLTRAINER_M2
 	const ROUTE25_POKE_BALL
+	const ROUTE25_POKEFAN_M
+	const ROUTE25_LASS1
+	const ROUTE25_YOUNGSTER4
+	const ROUTE25_LASS2
+	const ROUTE25_YOUNGSTER1
+	const ROUTE25_YOUNGSTER2
+	const ROUTE25_YOUNGSTER3
+	const ROUTE25_COOLTRAINER_M3
+	const ROUTE25_POKEFAN_M2
+;	const ROUTE25_POKEFAN_M3
+	const ROUTE25_POKEFAN_M4
+	const ROUTE25_COOLTRAINER_F
 
 Route25_MapScripts:
 	def_scene_scripts
@@ -102,72 +108,6 @@ Route25MistyDate3Script:
 	special RestartMapMusic
 	end
 
-TrainerSchoolboyDudley:
-	trainer SCHOOLBOY, DUDLEY, EVENT_BEAT_SCHOOLBOY_DUDLEY, SchoolboyDudleySeenText, SchoolboyDudleyBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext SchoolboyDudleyAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerLassEllen:
-	trainer LASS, ELLEN, EVENT_BEAT_LASS_ELLEN, LassEllenSeenText, LassEllenBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassEllenAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerSchoolboyJoe:
-	trainer SCHOOLBOY, JOE, EVENT_BEAT_SCHOOLBOY_JOE, SchoolboyJoeSeenText, SchoolboyJoeBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext SchoolboyJoeAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerLassLaura:
-	trainer LASS, LAURA, EVENT_BEAT_LASS_LAURA, LassLauraSeenText, LassLauraBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassLauraAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerCamperLloyd:
-	trainer CAMPER, LLOYD, EVENT_BEAT_CAMPER_LLOYD, CamperLloydSeenText, CamperLloydBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext CamperLloydAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerLassShannon:
-	trainer LASS, SHANNON, EVENT_BEAT_LASS_SHANNON, LassShannonSeenText, LassShannonBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassShannonAfterBattleText
-	waitbutton
-	closetext
-	end
-
 TrainerSupernerdPat:
 	trainer SUPER_NERD, PAT, EVENT_BEAT_SUPER_NERD_PAT, SupernerdPatSeenText, SupernerdPatBeatenText, 0, .Script
 
@@ -205,6 +145,39 @@ TrainerCooltrainermKevin:
 	writetext CooltrainermKevinAfterBattleText
 	waitbutton
 .NoRoomForNugget:
+	closetext
+	end
+
+CharmanderScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_CHARMANDER
+	iftrue .GotCharmander
+	writetext YouTakeThisCharmanderText
+	yesorno
+	iffalse .Refused
+	writetext ThanksText
+	promptbutton
+	waitsfx
+	writetext ReceivedCharmanderText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	givepoke CHARMANDER, 5
+	setevent EVENT_GOT_CHARMANDER
+	writetext CharmanderAlternatetiveText
+	waitbutton
+	closetext
+	end
+
+.Refused:
+	writetext NoCharmanderText
+	waitbutton
+	closetext
+	end
+
+.GotCharmander:
+	writetext AfterGiveAwayText
+	waitbutton
 	closetext
 	end
 
@@ -272,6 +245,268 @@ Route25MistyLeavesMovement:
 	step LEFT
 	step_end
 
+TrainerHerminia:
+	trainer LASS, CONNIE3, EVENT_BEAT_CONNIE3, HerminiaSeenText, HerminiaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HerminiaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerCiro:
+	trainer YOUNGSTER, CIRO, EVENT_BEAT_CIRO, CiroSeenText, CiroBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CiroAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerDane:
+	trainer YOUNGSTER, DANE, EVENT_BEAT_DANE, DaneSeenText, DaneBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext DaneAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerFidel:
+	trainer COOLTRAINERM, STEVE, EVENT_BEAT_STEVE, FidelSeenText, FidelBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext FidelAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPepe:
+	trainer YOUNGSTER, PEPE, EVENT_BEAT_PEPE, PepeSeenText, PepeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PepeAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerFrancis:
+	trainer HIKER, FRANCIS, EVENT_BEAT_FRANCIS, FrancisSeenText, FrancisBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext FrancisAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerUbaldo:
+	trainer HIKER, UBALDO, EVENT_BEAT_UBALDO, UbaldoSeenText, UbaldoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext UbaldoAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerNoboru:
+	trainer HIKER, NOBORU, EVENT_BEAT_NOBORU, NoboruSeenText, NoboruBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext NoboruAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerElia:
+	trainer COOLTRAINERF, ELIA, EVENT_BEAT_ELIA, EliaSeenText, EliaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext EliaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+EliaSeenText:
+	text "¡Hola!"
+
+	para "Mi chico es"
+	line "genial."
+	done
+
+EliaBeatenText:
+	text "¡No estaba en muy"
+	line "buena forma."
+	done
+
+EliaAfterBattleText:
+	text "¡Ojalá mi chico"
+	line "fuera tan bueno"
+	cont "como tú."
+	done
+
+NoboruSeenText:
+	text "¿Estoy buscando a"
+	line "un coleccionista"
+	cont "que vive en el"
+	cont "Cabo Celeste."
+	done
+
+NoboruBeatenText:
+	text "¡Me has ganado!"
+	done
+
+NoboruAfterBattleText:
+	text "El coleccionista"
+	line "tiene muchos"
+	cont "Pokémon raros."
+	done
+
+UbaldoSeenText:
+	text "¿Vas a casa de"
+	line "Bill?"
+
+	para "¡Pues luchemos"
+	line "primero."
+	done
+
+UbaldoBeatenText:
+	text "¡Me rindo!"
+	done
+
+UbaldoAfterBattleText:
+	text "El camino de abajo"
+	line "es un atajo a"
+	cont "Ciudad Celeste."
+	done
+
+FrancisSeenText:
+	text "Acabo de bajar del"
+	line "Monte Moon, pero"
+	cont "estoy listo."
+	done
+
+FrancisBeatenText:
+	text "¡Te has esforzado"
+	line "mucho."
+	done
+
+FrancisAfterBattleText:
+	text "¡Aaaaaaaargh!"
+
+	para "Me ha mordido un"
+	line "Zubat."
+	done
+
+FidelSeenText:
+	text "Soy un buen"
+	line "chico"
+
+	para "Y tengo novia."
+	done
+
+FidelBeatenText:
+	text "Vaya..."
+	done
+
+FidelAfterBattleText:
+	text "Bueno, mi chica"
+	line "me animará."
+	done
+
+PepeSeenText:
+	text "Los entrenadores"
+	line "de la zona vienen"
+	cont "aquí a practicar."
+	done
+
+PepeBeatenText:
+	text "¡Eres"
+	line "espectacular!"
+	done
+
+PepeAfterBattleText:
+	text "Todo Pokémon tiene"
+	line "puntos débiles."
+
+	para "Por eso me gusta"
+	line "entrenar varios"
+	cont "tipos."
+	done
+
+DaneSeenText:
+	text "Mi padre me llevó"
+	line "a una gran fiesta"
+	cont "en el SS Anne, en"
+	cont "Ciudad Carmín."
+	done
+
+DaneBeatenText:
+	text "¡No estoy"
+	line "enfadado!"
+	done
+
+DaneAfterBattleText:
+	text "En el SS Anne vi"
+	line "entrenadores de"
+	cont "todo el mundo."
+	done
+
+CiroSeenText:
+	text "¡Sabía que tenía"
+	line "que luchar"
+	cont "contigo!"
+	done
+
+CiroBeatenText:
+	text "¡Sabía que iba a"
+	line "perder!"
+	done
+
+CiroAfterBattleText:
+	text "Si tu Pokémon"
+	line "está confuso lo"
+	cont "mejor es cambiarlo"
+	done
+
+HerminiaSeenText:
+	text "Mi amigo tiene"
+	line "unos Pokémon muy"
+	cont "monos."
+
+	para "¡Qué envidia!"
+	done
+
+HerminiaBeatenText:
+	text "¡No estoy"
+	line "enfadada!"
+	done
+
+HerminiaAfterBattleText:
+	text "¿Vienes del Monte"
+	line "Moon?"
+
+	para "¿Me das un"
+	line "Clefairy?"
+	done
+
 Route25MistyDateText:
 	text "Misty: ¡Auuu!"
 	line "¿Por qué has"
@@ -303,97 +538,6 @@ Route25MistyDateText:
 	para "Soy Misty, la"
 	line "Líder de Gimnasio"
 	cont "de Ciudad Celeste."
-	done
-
-SchoolboyDudleySeenText:
-	text "¡Véncenos a los"
-	line "seis para ganar"
-
-	para "un fantástico"
-	line "premio!"
-
-	para "¿Lo conseguirás?"
-	done
-
-SchoolboyDudleyBeatenText:
-	text "¡Uau! Muy bien."
-	done
-
-SchoolboyDudleyAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
-	done
-
-LassEllenSeenText:
-	text "Ahora me toca a"
-	line "mí. ¡En guardia!"
-	done
-
-LassEllenBeatenText:
-	text "¿Cómo he podido"
-	line "perder?"
-	done
-
-LassEllenAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
-	done
-
-SchoolboyJoeSeenText:
-	text "¡Soy el tercero!"
-	line "Y no será fácil."
-	done
-
-SchoolboyJoeBeatenText:
-	text "¡Au! ¡Se acabó!"
-	done
-
-SchoolboyJoeAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
-	done
-
-LassLauraSeenText:
-	text "¡Yo soy la cuarta!"
-	line "¿No puedes más?"
-	done
-
-LassLauraBeatenText:
-	text "He perdido…"
-	done
-
-LassLauraAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
-	done
-
-CamperLloydSeenText:
-	text "Yo soy el quinto."
-	line "¡Te machacaré!"
-	done
-
-CamperLloydBeatenText:
-	text "¡Uau! Demasiado."
-	done
-
-CamperLloydAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
-	done
-
-LassShannonSeenText:
-	text "Y por último yo,"
-	line "pero te lo aviso,"
-	cont "¡soy la mejor!"
-	done
-
-LassShannonBeatenText:
-	text "¿Estás bromeando?"
-	done
-
-LassShannonAfterBattleText:
-	text "Hice lo que pude."
-	line "No me arrepiento."
 	done
 
 SupernerdPatSeenText:
@@ -459,8 +603,42 @@ BillsHouseSignText:
 	line "Casa de Bill"
 	done
 
-; unused
-	text "Casa de Bill"
+YouTakeThisCharmanderText:
+	text "No soy bueno como"
+	line "entrenador de"
+	cont "Pokémon."
+
+	para "Debo soltar a mi"
+	line "Charmander porque"
+	cont "no lo he cuidado"
+	cont "bien."
+
+	para "Si prometes"
+	line "cuidarlo"
+	cont "es tuyo."
+	done
+
+ThanksText:
+	text "Bien."
+	done
+
+ReceivedCharmanderText:
+	text "<PLAYER> recibió"
+	line "a Charmander."
+	done
+
+NoCharmanderText:
+	text "Vaya..."
+	done
+
+CharmanderAlternatetiveText:
+	text "Cuida bien a mi"
+	line "Charmander."
+	done
+
+AfterGiveAwayText:
+	text "¿Qué tal le va"
+	line "a Charmander?"
 	done
 
 Route25_MapEvents:
@@ -481,12 +659,18 @@ Route25_MapEvents:
 	def_object_events
 	object_event 62,  9, SPRITE_MISTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
 	object_event 62, 10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_25_MISTY_BOYFRIEND
-	object_event 12,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyDudley, -1
-	object_event 35,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassEllen, -1
-	object_event 31,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyJoe, -1
-	object_event 40,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassLaura, -1
-	object_event 36,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerCamperLloyd, -1
-	object_event 32,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassShannon, -1
-	object_event 42,  2, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
-	object_event 48,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
-	object_event 53,  9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN
+	object_event  8, 16, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT,  0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
+	object_event  9, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
+	object_event 42,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN
+	object_event  8,  5, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, CharmanderScript, -1
+	object_event  9, 19, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassShannon, -1
+	object_event  8, 22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerCamperLloyd, -1
+	object_event 27,  4, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 5, TrainerHerminia, -1
+	object_event 31,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerCiro, -1
+	object_event 36,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerDane, -1
+	object_event 42,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 1, TrainerPepe, -1
+	object_event 69,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerFidel, -1
+	object_event 47,  3, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerFrancis, -1
+;	object_event 52,  7, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerUbaldo, -1
+	object_event 33,  9, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerNoboru, -1
+	object_event 70,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerElia, -1

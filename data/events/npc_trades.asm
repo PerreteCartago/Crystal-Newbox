@@ -21,5 +21,11 @@ NPCTrades:
 	npctrade TRADE_DIALOGSET_GIRL,      NIDORAN_F,  NIDORAN_M,  "Nidrana@@@@", $96, $66, GOLD_BERRY,   63184, "Quica@@@@@@", TRADE_GENDER_EITHER
 	npctrade TRADE_DIALOGSET_NEWBIE,    NIDORAN_M,  NIDORAN_F,  "Nidrán@@@@@", $37, $66, SMOKE_BALL,   13637, "Onzano@@@@@", TRADE_GENDER_EITHER
 	npctrade TRADE_DIALOGSET_COLLECTOR, RHYDON,     KANGASKHAN, "Onori@@@@@@", $37, $66, KINGS_ROCK,   32063, "Jonán@@@@@@", TRADE_GENDER_EITHER
-	npctrade TRADE_DIALOGSET_NEWBIE,    NIDORAN_M,  NIDORAN_F,  "Nidrán@@@@@", $37, $66, SMOKE_BALL,   13637, "Onzano@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_NEWBIE,    GOLDUCK,    LICKITUNG,  "Licikitito@", $37, $66, LEFTOVERS,    01239, "Diocho@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_HAPPY,     PERSIAN,    TAUROS,     "Ratón@@@@@@", $37, $66, GOLD_BERRY,   23891, "Santi@@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_COLLECTOR, RAICHU,     ELECTRODE,  "Bolichi@@@@", $37, $66, GOLD_BERRY,   50298, "Canel@@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_COLLECTOR, PONYTA,     SEEL,       "Seelin@@@@@", $37, $66, GOLD_BERRY,   09853, "Goyo@@@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_COLLECTOR, VENONAT,    TANGELA,    "Tangelito@@", $37, $66, STARDUST,     60042, "Dulce@@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_GIRL,      POLIWHIRL,  JYNX,       "Morritos@@@", $96, $66, GOLD_BERRY,   63184, "Goiz@@@@@@@", TRADE_GENDER_EITHER
+	npctrade TRADE_DIALOGSET_GIRL,      GLOOM,      RAPIDASH,   "Rapid@@@@@@", $96, $66, MYSTERYBERRY, 16156, "Goiz@@@@@@@", TRADE_GENDER_EITHER
 	assert_table_length NUM_NPC_TRADES

@@ -28,11 +28,12 @@ DEF NPCTRADE_STRUCT_LENGTH EQU _RS
 	const NPC_TRADE_ROUTE_MALE   ; 11
 	const NPC_TRADE_ROUTE_11     ; 12
 	const NPC_TRADE_ROUTE_18     ; 13
-;	const NPC_TRADE_LAB1      ;11
-;	const NPC_TRADE_LAB2      ;12
-;	const NPC_TRADE_LAB3      ;13
-;	const NPC_TRADE_CERULEAN  ;13
-;	const NPC_TRADE_SUB       ;14
+	const NPC_TRADE_ROUTE_18_2   ; 14
+	const NPC_TRADE_LAB1          ;15	
+	const NPC_TRADE_LAB2          ;16
+	const NPC_TRADE_LAB3          ;17
+	const NPC_TRADE_CERULEAN      ;18
+	const NPC_TRADE_SILVER        ;19
 DEF NUM_NPC_TRADES EQU const_value
 
 ; trade gender limits

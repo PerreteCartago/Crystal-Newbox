@@ -1,5 +1,8 @@
 	object_const_def
 	const CINNABARISLAND_BLUE
+	const CINNABARISLAND_COOLTRAINER_F
+	const CINNABARISLAND_YOUNGSTER
+	const CINNABARISLAND_GRAMPS
 
 CinnabarIsland_MapScripts:
 	def_scene_scripts
@@ -42,94 +45,126 @@ CinnabarIslandBlueTeleport:
 	teleport_from
 	step_end
 
+Cayetana:
+	jumptextfaceplayer _Lab2Text1
+
+CinnabarYoungster:
+	jumptextfaceplayer _CinnabarIslandText1
+
+CinnabarGramps:
+	jumptextfaceplayer _CinnabarIslandText2
+
+_CinnabarIslandText1:
+	text "Blaine, del "
+	line "Gimnasio Canela,"
+	cont "es un hombre raro"
+
+	para "Mi padre dice que"
+	line "lleva décadas"
+	cont "viviendo aquí."
+	done
+
+_CinnabarIslandText2:
+	text "Ninguno de ellos"
+	line "lo reconocerá,"
+
+	para "pero los cientí-"
+	line "ficos hacen sus"
+	cont "exprimentos en el"
+	cont "edificio quemado."
+
+	para "Las mayores atro-"
+	line "cidades son en"
+	cont "nombre de la"
+	cont "ciencia."
+	done
+
+_Lab2Text1::
+	text "¡Encontré un"
+	line "fósil raro en"
+	cont "el Monte Moon!"
+
+	para "¡Creo que es un"
+	line "prehistórico y"
+	cont "raro Pokémon!"
+
+	para "Lo he dejado en"
+	line "el Laboratorio."
+
+	para "No sé qué me"
+	line "darán, solo"
+	cont "espero que sea"
+	cont "achuchable."
+	done
+
 CinnabarIslandBlueText:
-	text "Who are you?"
+	text "¿Quién eres tú?"
 
-	para "Well, it's plain"
-	line "to see that you're"
-	cont "a trainer…"
+	para "Es evidente que"
+	line "entrenas <POKE>mon…"
 
-	para "My name's BLUE."
+	para "Me llamo Azul."
 
-	para "I was once the"
-	line "CHAMPION, although"
+	para "Y una vez fui el"
+	line "Campeón, pero sólo"
 
-	para "it was for only a"
-	line "short time…"
+	para "durante poco"
+	line "tiempo…"
 
-	para "That meddling RED"
-	line "did me in…"
+	para "El entrometido de"
+	line "Rojo me ganó…"
 
-	para "Anyway, what do"
-	line "you want? You want"
+	para "¡Pero qué más da!"
+	line "¿Y tú qué quieres?"
 
-	para "to challenge me or"
-	line "something?"
+	para "¿Has venido a"
+	line "desafiarme?"
 
-	para "…I hate to say"
-	line "it, but I'm not in"
+	para "Lo siento, pero"
+	line "salí de mi Gimna-"
+	cont "sio porque oí que"
+	cont "un volcán destruyó"
+	cont "esta Isla."
 
-	para "the mood for a"
-	line "battle now."
+	para "Lo sentí mucho por"
+	line "Blaine y vine a"
+	cont "verle."
 
-	para "Take a good look"
-	line "around you…"
+	para "Pero mira a tu"
+	line "tu alrededor…"
 
-	para "A volcano erupts,"
-	line "and just like"
+	para "La isla sigue"
+	line "aquí."
 
-	para "that, a whole town"
-	line "disappears."
+	para "Si quieres luchar"
+	line "contra mí, vuelve"
 
-	para "We can go on win-"
-	line "ning and losing in"
+	para "al Gimnasio de"
+	line "Ciudad Verde."
 
-	para "#MON. But if"
-	line "nature so much as"
-
-	para "twitches, we can"
-	line "lose in a second."
-
-	para "…"
-
-	para "That's the way it"
-	line "is…"
-
-	para "But, anyway, I'm"
-	line "still a trainer."
-
-	para "If I see a strong"
-	line "opponent, it makes"
-	cont "me want to battle."
-
-	para "If you want to"
-	line "battle me, come to"
-	cont "the VIRIDIAN GYM."
-
-	para "I'll take you on"
-	line "then."
+	para "Y aceptaré tu"
+	line "desafío…"
 	done
 
 CinnabarIslandSignText:
-	text "CINNABAR ISLAND"
+	text "Isla Canela"
 
-	para "The Fiery Town of"
-	line "Burning Desire"
+	para "La feroz ciudad"
+	line "del ardiente"
+	cont "deseo."
 	done
 
 CinnabarIslandGymSignText:
-	text "Cinnabar Gym"
+	text "Líder del Gimnasio"
+	line "Pokémon de Isla"
+	cont "Canela: Blaine"
 
-	para "There and back"
-	line "again"
+	para "¡El maestro de"
+	line "los acertijos!"
 	done
 
 CinnabarIslandShopSignText:
-	text "Cinnabar PokeMart"
-
-	para "Your not destroyed"
-	line "by a volcano favou-"
-	cont "rite shop"
+	text "Laboratorio"
 	done
 
 CinnabarIsland_MapEvents:
@@ -140,15 +175,20 @@ CinnabarIsland_MapEvents:
 	warp_event 15, 11, CINNABAR_MART, 2
 	warp_event 18,  3, SEAFOAM_GYM, 1
 	warp_event  5,  3, POKEMON_MANSION_1F, 1
+	warp_event  7, 11, CINNABAR_LAB, 2
+	warp_event  6, 11, CINNABAR_LAB, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 12, 11, BGEVENT_READ, CinnabarIslandPokecenterSign
-	bg_event  9, 11, BGEVENT_READ, CinnabarIslandSign
-	bg_event 16, 11, BGEVENT_READ, CinnabarIslandShopSign
+	bg_event 11,  7, BGEVENT_READ, CinnabarIslandSign
+	bg_event  9, 13, BGEVENT_READ, CinnabarIslandShopSign
 	bg_event 13,  3, BGEVENT_READ, CinnabarIslandGymSign
 	bg_event 11,  1, BGEVENT_ITEM, CinnabarIslandHiddenRareCandy
 
 	def_object_events
-	object_event  7, 10, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event 11,  5, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event  5, 13, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Cayetana, -1
+	object_event 13,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarYoungster, -1
+	object_event  7,  5, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarGramps, -1

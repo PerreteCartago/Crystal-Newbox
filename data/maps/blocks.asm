@@ -1027,4 +1027,17 @@ SeafoamIslandsB4F_Blocks:
 PowerPlantGrande_Blocks:
 	INCBIN "maps/PowerPlantGrande.blk"
 
+CinnabarLab_Blocks:
+	INCBIN "maps/CinnabarLab.blk"
+
+CinnabarLabFossilRoom_Blocks:
+	INCBIN "maps/CinnabarLabFossilRoom.blk"
+
+CinnabarLabMetronomeRoom_Blocks:
+	INCBIN "maps/CinnabarLabMetronomeRoom.blk"
+
+CinnabarLabTradeRoom_Blocks:
+	INCBIN "maps/CinnabarLabTradeRoom.blk"
+
+
 ENDSECTION

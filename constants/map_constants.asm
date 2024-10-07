@@ -216,6 +216,10 @@ ENDM
 	map_const POKEMON_MANSION_2F,                          15, 14 ; 11
 	map_const POKEMON_MANSION_3F,                          15,  9 ; 12
 	map_const POKEMON_MANSION_B1F,                         15, 14 ; 13
+	map_const CINNABAR_LAB,                                 9,  4 ; 14
+	map_const CINNABAR_LAB_FOSSIL_ROOM,                     4,  4 ; 15
+	map_const CINNABAR_LAB_METRONOME_ROOM,                  4,  4 ; 16
+	map_const CINNABAR_LAB_TRADE_ROOM,                      4,  4 ; 17
 	endgroup
 
 	newgroup CERULEAN                                             ;  7

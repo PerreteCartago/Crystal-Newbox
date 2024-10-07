@@ -156,9 +156,6 @@ INCBIN "data/tilesets/underground_metatiles.bin"
 TilesetUndergroundColl::
 INCLUDE "data/tilesets/underground_collision.asm"
 
-TilesetDarkCaveGFX::
-INCBIN "gfx/tilesets/dark_cave.2bpp.lz"
-
 UnusedTilesetJohtoMeta:: ; unreferenced
 INCBIN "data/tilesets/unused_johto_metatiles.bin"
 
@@ -338,6 +335,9 @@ SECTION "Tileset Data B", ROMX
 
 TilesetCaveGFX::
 INCBIN "gfx/tilesets/cave.2bpp.lz"
+
+TilesetDarkCaveGFX::
+INCBIN "gfx/tilesets/dark_cave.2bpp.lz"
 
 TilesetCaveMeta::
 TilesetDarkCaveMeta::

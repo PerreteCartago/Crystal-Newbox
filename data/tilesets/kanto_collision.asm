@@ -3,7 +3,7 @@
 	tilecoll WALL, WALL, WALL, DOOR ; 02
 	tilecoll WALL, WALL, WALL, WALL ; 03
 	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 04
-	tilecoll LADDER, LADDER, LADDER, LADDER ; 05
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 05
 	tilecoll FLOOR, FLOOR, CAVE, WALL ; 06
 	tilecoll HOP_DOWN, HOP_DOWN, WALL, WALL ; 07
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 08
@@ -160,3 +160,12 @@
 	tilecoll WALL, WALL, WALL, WALL ; 9f
 	tilecoll WALL, WALL, WALL, WALL ; a0
 	tilecoll WALL, WALL, WALL, WALL ; a1
+	tilecoll WALL, WALL, WALL, WALL ; a2
+	tilecoll WALL, WALL, DOOR, DOOR ; a3
+	tilecoll WALL, WALL, WALL, WALL ; a4
+	tilecoll WALL, WALL, WALL, WALL ; a5
+	tilecoll WALL, WALL, WALL, WALL ; a6
+	tilecoll WALL, WALL, WALL, WALL ; a7
+	tilecoll FLOOR, FLOOR, WALL, WALL ; a8
+	tilecoll FLOOR, FLOOR, WALL, WALL ; a9
+	tilecoll FLOOR, FLOOR, WALL, WALL ; aa
