@@ -167,22 +167,23 @@ Route12_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 11, 77, ROUTE_12_SUPER_ROD_HOUSE, 1
-	warp_event 10, 15, ROUTE_12_GATE_1F, 1
-	warp_event 11, 15, ROUTE_12_GATE_1F, 2
-	warp_event 10, 21, ROUTE_12_GATE_1F, 3
-
+	warp_event 13, 77, ROUTE_12_SUPER_ROD_HOUSE, 1
+	warp_event 12, 15, ROUTE_12_GATE_1F, 1
+	warp_event 13, 15, ROUTE_12_GATE_1F, 2
+	warp_event 12, 21, ROUTE_12_GATE_1F, 3
+	warp_event  0, 62, ROUTE_11_GATE_1F, 3
+	warp_event  0, 63, ROUTE_11_GATE_1F, 4
 	def_coord_events
 
 	def_bg_events
-	bg_event 11, 27, BGEVENT_READ, Route12Sign
-	bg_event 13, 13, BGEVENT_READ, FishingSpotSign
-	bg_event  5, 30, BGEVENT_ITEM, Route12HiddenElixer
+	bg_event 13, 27, BGEVENT_READ, Route12Sign
+	bg_event 15, 13, BGEVENT_READ, FishingSpotSign
+	bg_event  7, 30, BGEVENT_ITEM, Route12HiddenElixer
 
 	def_object_events
-	object_event  5, 34, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherMartin, -1
-	object_event 13, 44, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherStephen, -1
-	object_event 15, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerFisherBarney, -1
-	object_event 10, 30, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherKyle, -1
-	object_event  4, 89, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Calcium, EVENT_ROUTE_12_CALCIUM
-	object_event 15, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Nugget, EVENT_ROUTE_12_NUGGET
+	object_event  7, 34, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherMartin, -1
+	object_event 15, 44, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherStephen, -1
+	object_event 17, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerFisherBarney, -1
+	object_event 12, 30, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherKyle, -1
+	object_event  6, 89, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Calcium, EVENT_ROUTE_12_CALCIUM
+	object_event 17, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Nugget, EVENT_ROUTE_12_NUGGET

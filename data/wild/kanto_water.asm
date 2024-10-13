@@ -16,7 +16,7 @@ KantoWaterWildMons:
 	db 35, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_4
+	def_water_wildmons ROUTE_4_EAST
 	db 4 percent ; encounter rate
 	db 10, GOLDEEN
 	db 5, GOLDEEN

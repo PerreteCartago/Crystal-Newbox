@@ -111,6 +111,7 @@
 	const SPRITE_BALDING_GUY ; 6b
 	const SPRITE_GIRL ; 6c
 	const SPRITE_FIREBREATHER ; 6d
+	const SPRITE_BURGLAR ; 6e
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

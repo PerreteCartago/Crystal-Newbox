@@ -254,7 +254,7 @@ KantoGrassWildMons:
 	db 6, CLEFAIRY
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_4
+	def_grass_wildmons ROUTE_4_EAST
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 5, SPEAROW

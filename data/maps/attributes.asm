@@ -318,7 +318,7 @@ ENDM
 	map_attributes LavenderTown, LAVENDER_TOWN, $2c, NORTH | SOUTH | WEST
 	connection north, Route10South, ROUTE_10_SOUTH, 1
 	connection south, Route12, ROUTE_12, 1
-	connection west, Route8, ROUTE_8, 0
+	connection west, Route8, ROUTE_8, 2
 
 	map_attributes VermilionCity, VERMILION_CITY, $43, NORTH | EAST
 	connection north, Route6, ROUTE_6, 5
@@ -341,7 +341,7 @@ ENDM
 	map_attributes CeruleanCity, CERULEAN_CITY, $0f, NORTH | SOUTH | WEST | EAST
 	connection north, Route24, ROUTE_24, 6
 	connection south, Route5, ROUTE_5, 5
-	connection west, Route4, ROUTE_4, 5
+	connection west, Route4East, ROUTE_4_EAST, 5
 	connection east, Route9, ROUTE_9, 7
 
 	map_attributes Route9, ROUTE_9, $2c, SOUTH | WEST
@@ -356,16 +356,20 @@ ENDM
 	connection south, Route24, ROUTE_24, 0
 
 	map_attributes Route3, ROUTE_3, $2c, NORTH | WEST
-	connection north, Route4, ROUTE_4, 25
+	connection north, Route4West, ROUTE_4_WEST, 25
 	connection west, PewterCity, PEWTER_CITY, -4
 
-	map_attributes Route4, ROUTE_4, $2c, SOUTH | EAST
+	map_attributes Route4West, ROUTE_4_WEST, $2c, SOUTH | EAST
 	connection south, Route3, ROUTE_3, -25
+	connection east, Route4East, ROUTE_4_EAST, 0
+
+	map_attributes Route4East, ROUTE_4_EAST, $2c, WEST | EAST
+	connection west, Route4West, ROUTE_4_WEST, 0
 	connection east, CeruleanCity, CERULEAN_CITY, -5
 
 	map_attributes Route8, ROUTE_8, $2c, WEST | EAST
 	connection west, SaffronCity, SAFFRON_CITY, -7
-	connection east, LavenderTown, LAVENDER_TOWN, 0
+	connection east, LavenderTown, LAVENDER_TOWN, -2
 
 	map_attributes Route10North, ROUTE_10_NORTH, $2c, NORTH | SOUTH
 	connection north, Route9, ROUTE_9, -30
@@ -501,7 +505,7 @@ ENDM
 	map_attributes CinnabarPokecenter1F, CINNABAR_POKECENTER_1F, $00, 0
 	map_attributes CinnabarPokecenter2FBeta, CINNABAR_POKECENTER_2F_BETA, $00, 0
 	map_attributes Route19FuchsiaGate, ROUTE_19_FUCHSIA_GATE, $00, 0
-	map_attributes SeafoamGym, SEAFOAM_GYM, $09, 0
+	map_attributes SeafoamGym, SEAFOAM_GYM, $00, 0
 	map_attributes CeruleanGymBadgeSpeechHouse, CERULEAN_GYM_BADGE_SPEECH_HOUSE, $00, 0
 	map_attributes CeruleanPoliceStation, CERULEAN_POLICE_STATION, $00, 0
 	map_attributes CeruleanTradeSpeechHouse, CERULEAN_TRADE_SPEECH_HOUSE, $00, 0

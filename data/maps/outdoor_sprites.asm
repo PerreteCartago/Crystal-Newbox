@@ -60,60 +60,75 @@ CinnabarGroupSprites:
 
 ; CeruleanCity and Route5 are connected
 CeruleanGroupSprites:
-; Route4, Route9, Route10North, Route24, Route25, CeruleanCity
-SaffronGroupSprites:
-; Route5, SaffronCity
+; Route4, Route9, Route10North, Route24, Route25, CeruleanCity, Route 5
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_SUPER_NERD
-	db SPRITE_COOLTRAINER_F
 	db SPRITE_FISHER
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_HIKER
 	db SPRITE_ROCKET
 	db SPRITE_MISTY
-	; max 9 of 9 walking sprites
+	; max 8 of 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_SLOWPOKE
 	db SPRITE_BEAUTY
 	db SPRITE_POKEFAN_M
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_TEACHER
 	db 0 ; end
 
 CeladonGroupSprites:
 ; Route7, Route16, Route17, CeladonCity
 	db SPRITE_FISHER
 	db SPRITE_TEACHER
-	db SPRITE_GRAMPS
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	db SPRITE_BIKER
-	; 6 of max 9 walking sprites
+	; 5 of max 9 walking sprites
 	db SPRITE_POLIWAG
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_GRAMPS
 	db 0 ; end
 
 ; Route11, Route12 and Route13 are connected
-VermilionGroupSprites:
-; Route6, Route11, VermilionCity
 LavenderGroupSprites:
 ; Route8, Route12, Route10South, LavenderTown
-FuchsiaGroupSprites:
-; Route13, Route14, Route15, Route18, FuchsiaCity
 	db SPRITE_POKEFAN_M
-	db SPRITE_GRAMPS
 	db SPRITE_YOUNGSTER
+	db SPRITE_HIKER
 	db SPRITE_FISHER
 	db SPRITE_TEACHER
 	db SPRITE_SUPER_NERD
 	db SPRITE_BIKER
-	db SPRITE_HIKER
-	; 8 of max 9 walking sprites
-	db SPRITE_BIG_SNORLAX
-	db SPRITE_MACHOP
+	; 7 of max 9 walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+	db SPRITE_GRAMPS
+	db 0 ; end
+
+FuchsiaGroupSprites:
+; Route13, Route14, Route15, Route18, FuchsiaCity
+	db SPRITE_POKEFAN_M
+	db SPRITE_YOUNGSTER
+	db SPRITE_TEACHER
+	; 3 of max 9 walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
+
+VermilionGroupSprites:
+; Route6, Route11, VermilionCity
+	db SPRITE_YOUNGSTER
+	db SPRITE_TEACHER
+	db SPRITE_SUPER_NERD
+	db SPRITE_POKEFAN_M
+	; 4 of max 9 walking sprites
+	db SPRITE_FRUIT_TREE
+	db SPRITE_GRAMPS
+	db SPRITE_BIG_SNORLAX
+	db SPRITE_MACHOP
 
 IndigoGroupSprites:
 ; Route23
@@ -298,4 +313,14 @@ FastShipGroupSprites:
 CableClubGroupSprites:
 ; (no outdoor maps)
 	; 0 of max 9 walking sprites
+	db 0 ; end
+
+SaffronGroupSprites:
+; SaffronCity
+	db SPRITE_GIRL
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_FISHER
+	db SPRITE_YOUNGSTER
+	; max 5 of 9 walking sprites
 	db 0 ; end

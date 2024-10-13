@@ -2179,21 +2179,23 @@ SuperNerdGroup:
 	db -1 ; end
 
 	; SUPER_NERD (3)
-	db "Nato@", TRAINERTYPE_NORMAL
-	db 20, MAGNEMITE
-	db 20, MAGNEMITE
-	db 20, MAGNEMITE
+	db "Enrique@", TRAINERTYPE_NORMAL
+	db 39,NINETALES
+	db 39, NINETALES
+	db 39, RAPIDASH
 	db -1 ; end
 
 	; SUPER_NERD (4)
-	db "Cano@", TRAINERTYPE_NORMAL
-	db 22, KOFFING
-	db 22, KOFFING
+	db "Avero@", TRAINERTYPE_NORMAL
+	db 39, RAPIDASH
+	db 39, CHARMELEON
+	db 39, ARCANINE
+	db 39, RAPIDASH
 	db -1 ; end
 
 	; SUPER_NERD (5)
-	db "Ruy@", TRAINERTYPE_NORMAL
-	db 24, DITTO
+	db "Dante@", TRAINERTYPE_NORMAL
+	db 42, RAPIDASH
 	db -1 ; end
 
 	; SUPER_NERD (6)
@@ -2230,10 +2232,9 @@ SuperNerdGroup:
 	db -1 ; end
 
 	; SUPER_NERD (11)
-	db "Edu@", TRAINERTYPE_NORMAL
-	db 27, MAGNEMITE
-	db 27, MAGNEMITE
-	db 27, MAGNEMITE
+	db "Zac@", TRAINERTYPE_NORMAL
+	db 40, ARCANINE
+	db 40, RAPIDASH
 	db -1 ; end
 
 	; SUPER_NERD (12)
@@ -2588,6 +2589,24 @@ BurglarGroup:
 	db 28, MAGMAR
 	db 25, KOFFING
 	db 30, KOFFING
+	db -1 ; end
+
+	; BURGLAR (4)
+	db "Octavio@", TRAINERTYPE_NORMAL
+	db 39, ARCANINE
+	db 39, RAPIDASH
+	db 39, RAPIDASH
+	db -1 ; end
+
+	; BURGLAR (5)
+	db "Ramón@", TRAINERTYPE_MOVES
+	db 43, ARCANINE,  ROAR, FIRE_BLAST, EXTREMESPEED, SWORDS_DANCE
+	db -1 ; end
+
+	; BURGLAR (6)
+	db "Dacio@", TRAINERTYPE_NORMAL
+	db 42, RAPIDASH
+	db 42, ARCANINE
 	db -1 ; end
 
 FirebreatherGroup:

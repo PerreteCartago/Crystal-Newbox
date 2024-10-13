@@ -116,4 +116,5 @@ OverworldSprites:
 	overworld_sprite BaldingGuySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite FireBreatherSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite BurglarSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
 	assert_table_length NUM_OVERWORLD_SPRITES

@@ -446,15 +446,15 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	trainerclass SUPER_NERD ; 29
 	const STAN
 	const ERIC
-	const GREGG ; unused
-	const JAY ; unused
-	const DAVE ; unused
+	const ENRIQUE
+	const AVERO
+	const DANTE
 	const SAM
 	const TOM
 	const PAT
 	const SHAWN
 	const TERU
-	const RUSS ; unused
+	const ZAC
 	const NORTON ; unused
 	const HUGH
 	const MARKUS
@@ -518,6 +518,9 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const DUNCAN
 	const EDDIE
 	const COREY
+	const OCTAVIO
+	const RAMON
+	const DACIO
 
 	trainerclass FIREBREATHER ; 30
 	const OTIS

@@ -12,8 +12,8 @@ Route11Gate1F_MapEvents:
 	def_warp_events
 	warp_event  0,  4, ROUTE_11, 1
 	warp_event  0,  5, ROUTE_11, 2
-	warp_event  7,  4, ROUTE_11, 3
-	warp_event  7,  5, ROUTE_11, 4
+	warp_event  7,  4, ROUTE_12, 5
+	warp_event  7,  5, ROUTE_12, 6
 	warp_event  6,  8, ROUTE_11_GATE_2F, 1
 
 	def_coord_events

@@ -69,14 +69,16 @@ _CinnabarIslandText2:
 	line "lo reconocerá,"
 
 	para "pero los cientí-"
-	line "ficos hacen sus"
-	cont "exprimentos en el"
-	cont "edificio quemado."
+	line "ficos hacen"
+	cont "exprimentos en la"
+	cont "Mansión."
 
-	para "Las mayores atro-"
-	line "cidades son en"
-	cont "nombre de la"
-	cont "ciencia."
+	para "Unos sicópatas con"
+	line "bata blanca es lo"
+	cont "que son."
+
+	para "No te fíes de"
+	cont "ellos."
 	done
 
 _Lab2Text1::
@@ -101,7 +103,7 @@ CinnabarIslandBlueText:
 	text "¿Quién eres tú?"
 
 	para "Es evidente que"
-	line "entrenas <POKE>mon…"
+	line "entrenas Pokémon…"
 
 	para "Me llamo Azul."
 

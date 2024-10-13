@@ -459,7 +459,6 @@ INCLUDE "maps/Route9.asm"
 INCLUDE "maps/CinnabarPokecenter1F.asm"
 INCLUDE "maps/CinnabarPokecenter2FBeta.asm"
 INCLUDE "maps/Route19FuchsiaGate.asm"
-INCLUDE "maps/CinnabarGym.asm"
 
 
 SECTION "Map Scripts 24", ROMX
@@ -481,7 +480,8 @@ INCLUDE "maps/Route6.asm"
 INCLUDE "maps/Route5.asm"
 INCLUDE "maps/Route24.asm"
 INCLUDE "maps/Route3.asm"
-INCLUDE "maps/Route4.asm"
+INCLUDE "maps/Route4West.asm"
+INCLUDE "maps/Route4East.asm"
 INCLUDE "maps/Route10South.asm"
 INCLUDE "maps/Route23.asm"
 INCLUDE "maps/SilverCavePokecenter1F.asm"
@@ -547,6 +547,7 @@ INCLUDE "maps/CinnabarLabMetronomeRoom.asm"
 INCLUDE "maps/CinnabarLabTradeRoom.asm"
 INCLUDE "maps/CeruleanBulbasaurHouse.asm"
 INCLUDE "maps/CeruleanBikeShop.asm"
+INCLUDE "maps/CinnabarGym.asm"
 
 
 ENDSECTION

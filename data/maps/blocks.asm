@@ -130,8 +130,11 @@ Route29Route46Gate_Blocks:
 CinnabarIsland_Blocks:
 	INCBIN "maps/CinnabarIsland.blk"
 
-Route4_Blocks:
-	INCBIN "maps/Route4.blk"
+Route4East_Blocks:
+	INCBIN "maps/Route4East.blk"
+
+Route4West_Blocks:
+	INCBIN "maps/Route4West.blk"
 
 Route8_Blocks:
 	INCBIN "maps/Route8.blk"
