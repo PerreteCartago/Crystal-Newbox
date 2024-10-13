@@ -166,3 +166,19 @@ SECTION "Cries", ROMX
 INCLUDE "data/pokemon/cries.asm"
 
 INCLUDE "audio/cries.asm"
+
+
+SECTION "Songs 6", ROMX
+
+INCLUDE "audio/music/pokemontower.asm"
+INCLUDE "audio/music/dungeon1.asm"
+INCLUDE "audio/music/dungeon2.asm"
+INCLUDE "audio/music/silphco.asm"
+INCLUDE "audio/music/cinnabar.asm"
+INCLUDE "audio/music/cities2.asm"
+INCLUDE "audio/music/routes2.asm"
+INCLUDE "audio/music/dungeon3.asm"
+INCLUDE "audio/music/pokemoncenterkanto.asm"
+INCLUDE "audio/music/gymkanto.asm"
+INCLUDE "audio/music/victoryroadkanto.asm"
+

@@ -954,34 +954,6 @@ KantoGrassWildMons:
 	db 61, WOBBUFFET
 	end_grass_wildmons
 
-	def_grass_wildmons POKEMON_TOWER_1F
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	; morn
-	db 20, GASTLY
-	db 22, GASTLY
-	db 25, HAUNTER
-	db 22, MISDREAVUS
-	db 21, GASTLY
-	db 20, CUBONE
-	db 30, GENGAR
-	; day
-	db 20, GASTLY
-	db 22, GASTLY
-	db 25, HAUNTER
-	db 22, MISDREAVUS
-	db 21, GASTLY
-	db 20, CUBONE
-	db 30, GENGAR
-	; nite
-	db 20, GASTLY
-	db 22, GASTLY
-	db 25, HAUNTER
-	db 22, MISDREAVUS
-	db 21, GASTLY
-	db 20, CUBONE
-	db 30, GENGAR
-	end_grass_wildmons
-
 	def_grass_wildmons POKEMON_TOWER_2F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn

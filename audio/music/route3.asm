@@ -1,503 +1,523 @@
 Music_Route3:
 	channel_count 4
-	channel 1, Music_Route3_Ch1
-	channel 2, Music_Route3_Ch2
-	channel 3, Music_Route3_Ch3
-	channel 4, Music_Route3_Ch4
+	channel 1, Music_Routes3_Ch1
+	channel 2, Music_Routes3_Ch2
+	channel 3, Music_Routes3_Ch3
+	channel 4, Music_Routes3_Ch4
 
-Music_Route3_Ch1:
-	stereo_panning FALSE, TRUE
-	tempo 160
+Music_Routes3_Ch1::
+	tempo 148
 	volume 7, 7
-	note_type 12, 9, 1
-	rest 10
-	duty_cycle 0
-	vibrato 20, 0, 6
-	octave 3
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note F_, 1
-	note D_, 1
-	note F_, 1
-	note D_, 1
-	note F_, 1
-	note D_, 1
-	note F_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note F#, 1
-	note G#, 1
-.mainloop:
-	sound_call .sub1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	volume_envelope 6, -7
-	note G_, 1
-	note D_, 1
-	volume_envelope 7, 7
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	note G_, 1
-	note D_, 1
-	note E_, 1
-	note G#, 1
-	note B_, 4
-	volume_envelope 6, -7
-	octave 3
-	note G#, 2
-	note E_, 2
-	note A_, 2
-	note G#, 2
-	note A_, 2
-	note E_, 8
-	note D#, 1
-	note E_, 1
-	note G#, 2
-	octave 2
-	note B_, 4
-	octave 3
-	note D_, 2
-	note E_, 2
-	note G#, 2
-	note B_, 2
-	note A_, 1
-	note G#, 1
-	note F_, 3
-	note E_, 3
-	note D_, 2
-	octave 2
-	note A_, 2
-	octave 3
-	note D_, 2
-	note E_, 2
-	note F_, 2
-	volume_envelope 9, 1
-	note F#, 1
-	note D_, 1
-	octave 2
-	note A_, 1
-	octave 3
-	note D_, 1
-	note F#, 1
-	note A_, 1
-	note F#, 1
-	note A_, 1
-	note B_, 1
-	note G#, 1
-	note E_, 1
-	note G#, 1
-	note E_, 1
-	note G#, 1
-	note B_, 1
-	octave 4
-	note D_, 1
-	sound_loop 0, .mainloop
-
-.sub1:
-.sub1loop1:
-	octave 3
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	sound_loop 3, .sub1loop1
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-.sub1loop2:
-	note A_, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-	sound_loop 3, .sub1loop2
-	note C#, 1
-	note E_, 1
-	note C#, 1
-	note E_, 1
-.sub1loop3:
-	note G_, 1
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	sound_loop 3, .sub1loop3
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	octave 2
-	note B_, 1
-	octave 3
-	note D_, 1
-	sound_ret
-
-Music_Route3_Ch2:
-	stereo_panning TRUE, FALSE
-	note_type 12, 5, -6
-	duty_cycle 2
-	vibrato 6, 0, 3
-	octave 4
-	note E_, 1
-	note G_, 1
-	note G#, 6
-	volume_envelope 8, 7
-	note F#, 1
-	note G#, 1
-	note A_, 1
-	rest 7
-	note C#, 4
-	note E_, 4
-	note D_, 4
-	octave 3
-	note B_, 4
-	octave 4
-	note C#, 4
-	volume_envelope 10, 7
-	duty_cycle 2
-	octave 3
-	note A_, 1
-	octave 4
-	note C#, 1
-	note E_, 1
-	note G#, 1
-.mainloop:
-	volume_envelope 7, -5
-	sound_call .sub1
-	note G_, 1
-	note B_, 10
-	volume_envelope 11, 7
-	note B_, 6
-	volume_envelope 7, -5
-	rest 4
 	duty_cycle 3
-	note G#, 4
-	sound_call .sub1
-	note B_, 1
-	volume_envelope 7, -5
-	octave 5
-	note D_, 5
-	volume_envelope 11, 7
-	octave 5
-	note D_, 5
-	duty_cycle 0
+	vibrato 6, 3, 4
+	pitch_offset 1 ; toggle_perfect_pitch
+	note_type 12, 11, 5
 	octave 3
-	note D_, 1
-	note G_, 1
-	note B_, 1
-	rest 1
-	note G_, 1
-	note B_, 1
-	octave 4
-	note D_, 4
-	volume_envelope 8, -7
-	duty_cycle 2
-	octave 4
-	note E_, 2
-	note D_, 2
-	note C#, 2
-	octave 3
-	note B_, 2
-	octave 4
-	note C#, 2
-	octave 3
-	note A_, 8
-	note G#, 1
-	note A_, 1
-	note B_, 2
-	note E_, 4
-	octave 4
-	note E_, 8
-	note D_, 1
-	note C#, 1
-	note D_, 3
-	note C#, 3
-	octave 3
-	note A_, 10
-	duty_cycle 2
-	octave 4
-	note F#, 6
 	note E_, 1
 	note F#, 1
-	note G#, 6
-	note F#, 1
-	note G#, 1
-	sound_loop 0, .mainloop
-
-.sub1:
-	note A_, 6
-	note E_, 1
-	note A_, 1
-	octave 5
-	note C#, 7
-	volume_envelope 11, 7
-	octave 5
-	note C#, 3
-	volume_envelope 7, -5
-	octave 4
-	note E_, 2
-	note A_, 2
-	octave 5
-	note E_, 2
-	note D_, 2
-	note C#, 2
-	octave 4
-	note B_, 2
-	note A_, 2
 	note G_, 6
-	note D_, 1
-	sound_ret
+	note F_, 1
+	note G_, 1
+	note E_, 1
+	rest 16
+	rest 15
 
-Music_Route3_Ch3:
-	stereo_panning TRUE, TRUE
-	vibrato 6, 0, 3
-	note_type 12, 1, 3
-	octave 3
-	note B_, 1
-	octave 4
-	note D_, 1
+Music_Routes3_branch_9fc3::
+	note_type 12, 11, 5
 	note E_, 6
 	note D_, 1
+	note E_, 1
+	note C_, 4
+	note E_, 4
+	note C_, 6
+	note D_, 1
+	note E_, 1
+	note F_, 2
+	note G_, 2
+	note G_, 2
+	note A_, 2
+	note_type 12, 10, 7
+	note A#, 8
+	note F_, 8
+	note D_, 8
+	note F_, 8
+	note_type 12, 11, 5
+	note E_, 6
+	note D_, 1
+	note E_, 1
+	note C_, 4
+	note E_, 4
+	note C_, 6
+	note D_, 1
+	note E_, 1
+	note F_, 2
+	note G_, 2
+	note G_, 2
+	note A_, 2
+	note_type 12, 10, 7
+	note A#, 8
+	note A#, 8
+	note D_, 8
+	note F_, 8
+	note_type 12, 11, 5
+	note E_, 4
+	note E_, 2
+	note F_, 2
+	note G_, 4
+	note F_, 2
+	note E_, 2
+	note B_, 2
+	octave 2
+	note G_, 4
+	octave 3
+	note B_, 8
+	note A_, 2
+	note_type 8, 12, 3
+	note A_, 4
+	note F_, 4
+	note A_, 4
+	note_type 8, 4, -7
+	note A_, 12
+	note_type 8, 9, 0
+	note F_, 12
+	note G_, 12
+	sound_loop 0, Music_Routes3_branch_9fc3
+
+
+Music_Routes3_Ch2::
+	vibrato 8, 2, 3
+	duty_cycle 2
+	note_type 12, 12, 7
+	octave 3
+	note G_, 1
+	note A#, 1
+	note B_, 6
+	note A_, 1
+	note B_, 1
+	octave 4
+	note C_, 1
+	rest 15
+	rest 16
+
+Music_Routes3_branch_a01a::
+	note_type 12, 12, 7
+	duty_cycle 2
+	octave 4
+	note C_, 6
+	octave 3
+	note G_, 1
+	octave 4
+	note C_, 1
+	note E_, 10
+	octave 3
+	note G_, 2
+	octave 4
+	note C_, 2
+	note G_, 2
+	note F_, 2
+	note E_, 2
+	note D_, 2
+	note C_, 2
+	note D_, 8
+	note F_, 8
+	note_type 12, 12, 5
+	duty_cycle 3
+	octave 3
+	note A#, 8
+	note A_, 8
+	note_type 12, 12, 7
+	duty_cycle 2
+	octave 4
+	note C_, 6
+	octave 3
+	note G_, 1
+	octave 4
+	note C_, 1
+	note E_, 10
+	octave 3
+	note G_, 2
+	octave 4
+	note C_, 2
+	note G_, 2
+	note F_, 2
+	note E_, 2
+	note D_, 2
+	note C_, 2
+	note D_, 8
+	note F_, 8
+	note_type 12, 12, 5
+	duty_cycle 3
+	octave 3
+	note A#, 8
+	octave 4
+	note D_, 6
+	note_type 12, 12, 7
+	duty_cycle 2
+	note C_, 1
+	note D_, 1
+	note E_, 2
+	note D_, 2
+	note E_, 2
+	note C_, 8
 	octave 3
 	note B_, 1
-	volume_envelope 1, 4
-	octave 3
-	note A_, 1
-	rest 1
-	octave 2
-	note A_, 2
-	rest 2
-	note A_, 1
-	note A_, 1
-	note A_, 1
-	rest 1
-	note A_, 1
-	rest 1
-	note A_, 1
-	rest 1
-	note G#, 2
-	sound_call .sub1
-.mainloop:
-	volume_envelope 1, 4
-	sound_call .sub1
-	sound_call .sub1
-	sound_call .sub2
-	sound_call .sub1
-	sound_call .sub1
-	sound_call .sub2
-	note A_, 2
-	octave 3
-	note C#, 2
-	note E_, 2
-	note A_, 6
-	note G#, 2
-	note F#, 2
-	note E_, 2
+	octave 4
+	note C_, 1
 	note D_, 2
-	octave 2
-	note B_, 2
-	note G#, 2
+	octave 3
+	note G_, 4
+	octave 4
+	note G_, 8
+	note F_, 1
 	note E_, 1
-	rest 1
-	note E_, 2
-	note B_, 2
+	note_type 8, 13, 3
+	note F_, 4
+	note E_, 4
+	note_type 8, 12, 4
+	note C_, 4
+	note_type 8, 12, 5
+	note C_, 12
+	note_type 12, 10, 0
+	duty_cycle 3
 	octave 3
-	note E_, 2
-	note F_, 6
-	note E_, 2
-	note D_, 2
-	octave 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	note C#, 2
-	note D_, 1
-	rest 1
-	note D_, 2
-	rest 2
-	note D_, 1
-	note D_, 1
-	note E_, 1
-	rest 1
-	note E_, 2
-	rest 2
-	note F#, 1
-	note G#, 1
-	sound_loop 0, .mainloop
+	note A_, 8
+	note B_, 8
+	sound_loop 0, Music_Routes3_branch_a01a
 
-.sub1:
-	octave 3
-	note A_, 1
-	rest 1
-	octave 2
-	note A_, 2
-	rest 2
-	note A_, 1
-	note A_, 1
-	note A_, 1
-	rest 1
-	note A_, 1
-	rest 1
-	octave 3
-	note A_, 2
-	octave 2
-	note G#, 2
-	sound_ret
 
-.sub2:
-	octave 3
-	note G_, 1
-	rest 1
-	octave 2
-	note A_, 2
-	rest 2
-	note A_, 1
-	note A_, 1
-	note A_, 1
-	rest 1
-	note A_, 1
-	rest 1
-	octave 3
-	note D_, 2
+Music_Routes3_Ch3::
+	vibrato 4, 1, 0
+	note_type 6, 1, 2
+	octave 4
 	note G_, 2
-	note G_, 1
-	rest 1
-	octave 2
+	note A#, 2
+	note B_, 8
+	note A_, 8
 	note G_, 2
 	rest 2
-	note G_, 1
-	note G_, 1
-	note E_, 1
+	note G_, 7
 	rest 1
-	note E_, 1
+	note G_, 1
 	rest 1
-	note G#, 2
-	note B_, 2
-	sound_ret
+	note G_, 1
+	rest 1
+	note G_, 2
+	rest 2
+	note G_, 2
+	rest 2
+	note G_, 8
+	note G_, 2
+	rest 2
+	note G_, 7
+	rest 1
+	note G_, 1
+	rest 1
+	note G_, 1
+	rest 1
+	note G_, 2
+	rest 2
+	note G_, 2
+	rest 2
+	note G_, 8
 
-Music_Route3_Ch4:
-	toggle_noise 4
-	drum_speed 12
-	rest 10
-.mainloop:
-	drum_speed 12
-	drum_note 3, 2
-	drum_note 3, 4
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 2
-	drum_note 3, 2
+Music_Routes3_branch_a0a3::
+	note_type 12, 1, 2
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	note E_, 1
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	note E_, 1
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note G_, 2
+	note A_, 2
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	note A#, 2
+	note F_, 2
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	note E_, 1
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	rest 1
+	note G_, 4
+	note E_, 1
+	note E_, 1
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note G_, 2
+	note A_, 2
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	rest 1
+	note A#, 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	note A#, 2
+	note A_, 2
+	note G_, 1
+	rest 1
+	octave 5
+	note C_, 4
+	octave 4
+	note G_, 1
+	note G_, 1
+	note G_, 1
+	rest 1
+	note G_, 1
+	rest 1
+	octave 5
+	note C_, 4
+	octave 4
+	note G_, 1
+	rest 1
+	octave 5
+	note D_, 4
+	octave 4
+	note G_, 1
+	note G_, 1
+	note G_, 1
+	rest 1
+	note G_, 1
+	rest 1
+	octave 5
+	note D_, 4
+	octave 4
+	note F_, 1
+	rest 1
+	octave 5
+	note C_, 4
+	octave 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	octave 5
+	note C_, 4
+	octave 4
+	note F_, 1
+	rest 1
+	note A_, 4
+	note F_, 1
+	note F_, 1
+	note F_, 1
+	rest 1
+	note F_, 1
+	rest 1
+	note A_, 4
+	sound_loop 0, Music_Routes3_branch_a0a3
+
+
+Music_Routes3_Ch4::
+	toggle_noise 1
 	drum_speed 6
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	drum_note 2, 1
-	sound_loop 0, .mainloop
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 8
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 11, 2
+	drum_note 10, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 11, 2
+	drum_note 10, 4
+	drum_note 11, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+
+Music_Routes3_branch_a17a::
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 11, 2
+	drum_note 10, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 8
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 11, 2
+	drum_note 10, 4
+	drum_note 10, 10
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 12, 2
+	drum_note 10, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 8
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 10
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 8
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 10
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 8
+	drum_note 11, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 12, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 8
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 10, 12
+	drum_note 10, 2
+	drum_note 10, 2
+	drum_note 10, 4
+	drum_note 10, 4
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 12, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	drum_note 11, 1
+	sound_loop 0, Music_Routes3_branch_a17a

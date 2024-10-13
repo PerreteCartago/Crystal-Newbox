@@ -11,7 +11,7 @@ PokemonMansion2F_MapScripts:
 .Dummyscene3
 	checkevent EVENT_MANSION_SWITCH_ON
 	iftrue .Donothing
-	changeblock  8,  4, $07 ; clear
+	changeblock  8,  4, $7b ; clear
 	changeblock 18,  8, $1F ; gate2
 	changeblock  6, 22, $79 ; gate3
 .Done:
@@ -19,8 +19,8 @@ PokemonMansion2F_MapScripts:
 
 .Donothing
 	changeblock  8,  4, $79 ; gate3
-	changeblock 18,  8, $07 ; clear
-	changeblock  6, 22, $07 ; clear
+	changeblock 18,  8, $7b ; clear
+	changeblock  6, 22, $7b ; clear
 	return
 
 SwitchesScript2F:
@@ -36,7 +36,7 @@ SwitchesScript2F:
 
 .Cosacierta:
 	clearevent EVENT_MANSION_SWITCH_ON
-	changeblock  8,  4, $07 ; clear
+	changeblock  8,  4, $7b ; clear
 	changeblock 18,  8, $1F ; gate2
 	changeblock  6, 22, $79 ; gate3
 	end
@@ -44,8 +44,8 @@ SwitchesScript2F:
 .Cosafalsa:
 	setevent EVENT_MANSION_SWITCH_ON
 	changeblock  8,  4, $79 ; gate3
-	changeblock 18,  8, $07 ; clear
-	changeblock  6, 22, $07 ; clear
+	changeblock 18,  8, $7b ; clear
+	changeblock  6, 22, $7b ; clear
 	end
 
 PressButton2FText:

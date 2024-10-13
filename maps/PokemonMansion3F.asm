@@ -13,13 +13,13 @@ PokemonMansion3F_MapScripts:
 	checkevent EVENT_MANSION_SWITCH_ON
 	iftrue .Donothing
 	changeblock 14,  4, $07 ; clear
-	changeblock 14, 10, $79 ; gate3
+	changeblock 14, 10, $7b ; gate3
 .Done:
 	return
 
 .Donothing
 	changeblock 14,  4, $79 ; gate3
-	changeblock 14, 10, $07 ; clear
+	changeblock 14, 10, $7b ; clear
 	return
 
 SwitchesScript3F:
@@ -35,14 +35,14 @@ SwitchesScript3F:
 
 .Cosacierta:
 	clearevent EVENT_MANSION_SWITCH_ON
-	changeblock 14,  4, $07 ; clear
+	changeblock 14,  4, $7b ; clear
 	changeblock 14, 10, $79 ; gate3
 	end
 
 .Cosafalsa:
 	setevent EVENT_MANSION_SWITCH_ON
 	changeblock 14,  4, $79 ; gate3
-	changeblock 14, 10, $07 ; clear
+	changeblock 14, 10, $7b ; clear
 	end
 
 PressButton3FText:

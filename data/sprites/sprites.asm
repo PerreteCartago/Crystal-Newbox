@@ -111,4 +111,9 @@ OverworldSprites:
  	overworld_sprite KrisRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
  	overworld_sprite ChrisSurfSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
  	overworld_sprite KrisSurfSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
+	overworld_sprite HikerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite ChannelerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PINK
+	overworld_sprite BaldingGuySpriteGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite GirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite FireBreatherSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	assert_table_length NUM_OVERWORLD_SPRITES

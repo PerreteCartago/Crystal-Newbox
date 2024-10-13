@@ -602,6 +602,7 @@ DarkCaveBlackthornEntrance_Blocks:
 RuinsOfAlphResearchCenter_Blocks:
 	INCBIN "maps/RuinsOfAlphResearchCenter.blk"
 
+CeruleanBikeShop_Blocks:
 GoldenrodBikeShop_Blocks:
 	INCBIN "maps/GoldenrodBikeShop.blk"
 
@@ -728,7 +729,7 @@ MountMoon_Blocks:
 	INCBIN "maps/MountMoon.blk"
 
 SeafoamGym_Blocks:
-	INCBIN "maps/SeafoamGym.blk"
+	INCBIN "maps/CinnabarGym.blk"
 
 MrPokemonsHouse_Blocks:
 	INCBIN "maps/MrPokemonsHouse.blk"
@@ -870,6 +871,7 @@ SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
+CeruleanBulbasaurHouse_Blocks:
 VermilionTradeHouse_Blocks:
 VermilionPidgeyHouse_Blocks:
 MoveReminderHouse_Blocks:

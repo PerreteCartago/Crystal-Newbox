@@ -138,6 +138,7 @@ IndigoPlateauPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 IndigoPlateauPokecenter1FClerkScript:
+	faceplayer
 	opentext
 	pokemart MARTTYPE_STANDARD, MART_INDIGO_PLATEAU
 	closetext

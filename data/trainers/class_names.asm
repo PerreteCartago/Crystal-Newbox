@@ -68,4 +68,6 @@ TrainerClassNames::
 	li "Policía"
 	li "Rocket"
 	li "Místico"
+	li "Exorcista"
+	li "Calvo"
 	assert_list_length NUM_TRAINER_CLASSES

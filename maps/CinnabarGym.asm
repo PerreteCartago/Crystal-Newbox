@@ -46,16 +46,15 @@ SeafoamGymBlaineScript:
 SeafoamGymGuideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_TALKED_TO_SEAFOAM_GYM_GUIDE_ONCE
+	checkevent EVENT_BEAT_BLAINE
 	iftrue .TalkedToSeafoamGymGuideScript
-	writetext SeafoamGymGuideWinText
+	writetext SeafoamGymGuideIntroText
 	waitbutton
 	closetext
-	setevent EVENT_TALKED_TO_SEAFOAM_GYM_GUIDE_ONCE
 	end
 
 .TalkedToSeafoamGymGuideScript:
-	writetext SeafoamGymGuideWinText2
+	writetext SeafoamGymGuideWinText
 	waitbutton
 	closetext
 	end
@@ -130,11 +129,7 @@ SeafoamGymGuideWinText:
 
 	para "¡Lo siento!"
 
-	para "El Gimnasio de"
-	line "Isla Canela ya no"
-
-	para "existe y no sabía"
-	line "dónde encontrarte."
+	para "No pude verlo."
 
 	para "Pero eres fuerte"
 	line "hasta sin mis"
@@ -143,27 +138,25 @@ SeafoamGymGuideWinText:
 	line "que ganarías!"
 	done
 
-SeafoamGymGuideWinText2:
-	text "Los Gimnasios"
-	line "Pokémon están allí"
+SeafoamGymGuideIntroText:
+	text "Las puertas se"
+	line "abren al derrotar"
+	cont "a sus guardianes."
 
-	para "donde se encuentre"
-	line "su Líder."
-
-	para "No es necesario"
-	line "un edificio."
+	para "Buena Suerte"
 	done
 
 SeafoamGym_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  5,  5, CINNABAR_ISLAND, 3
+	warp_event 16, 19, CINNABAR_ISLAND, 3
+	warp_event 17, 19, CINNABAR_ISLAND, 3
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event  5,  2, SPRITE_BLAINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SeafoamGymBlaineScript, -1
-	object_event  6,  5, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SeafoamGymGuideScript, EVENT_SEAFOAM_GYM_GYM_GUIDE
+	object_event  3,  5, SPRITE_BLAINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SeafoamGymBlaineScript, -1
+	object_event 17, 15, SPRITE_GYM_GUIDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SeafoamGymGuideScript, -1

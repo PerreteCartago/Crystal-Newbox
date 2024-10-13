@@ -16,7 +16,7 @@
 	const MUSIC_OFFICER_ENCOUNTER            ; 0c
 	const MUSIC_HEAL                         ; 0d
 	const MUSIC_LAVENDER_TOWN                ; 0e
-	const MUSIC_ROUTE_2                      ; 0f
+	const MUSIC_ROUTE_2                      ; 0f ; unused
 	const MUSIC_MT_MOON                      ; 10
 	const MUSIC_SHOW_ME_AROUND               ; 11
 	const MUSIC_GAME_CORNER                  ; 12
@@ -105,7 +105,19 @@
 	const MUSIC_SUICUNE_BATTLE               ; 64
 	const MUSIC_BATTLE_TOWER_LOBBY           ; 65
 	const MUSIC_MOBILE_CENTER                ; 66
+; new to Crystal-Newbox
 	const MUSIC_POKEMON_MANSION              ; 67
+	const MUSIC_POKEMON_TOWER                ; 68
+	const MUSIC_DUNGEONS_1                   ; 69
+	const MUSIC_DUNGEONS_2                   ; 6a
+	const MUSIC_SILPH_CO                     ; 6b
+	const MUSIC_CINNABAR                     ; 6c
+	const MUSIC_CITIES_2                     ; 6d
+	const MUSIC_ROUTES_2                     ; 6e
+	const MUSIC_DUNGEONS_3                   ; 6f
+	const MUSIC_POKEMON_CENTER_KANTO         ; 70
+	const MUSIC_GYM_KANTO                    ; 71
+	const MUSIC_VICTORY_ROAD_KANTO           ; 71
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

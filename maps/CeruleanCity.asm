@@ -7,6 +7,7 @@
 	const CERULEANCITY_YOUNGSTER
 	const CERULEANCITY_YOUNGSTER1
 	const CERULEANCITY_LASS1
+	const CERULEANCITY_HIKER
 
 CeruleanCity_MapScripts:
 	def_scene_scripts
@@ -33,6 +34,9 @@ CeruleanCityCooltrainerMScript:
 	waitbutton
 	closetext
 	end
+
+CeruleanCityHikerScript:
+	jumptextfaceplayer CeruleanCityHikerText
 
 CeruleanCitySuperNerdScript:
 	jumptextfaceplayer CeruleanCitySuperNerdText
@@ -137,9 +141,6 @@ CeruleanPoliceSign:
 CeruleanCapeSign:
 	jumptext CeruleanCapeSignText
 
-CeruleanLockedDoor:
-	jumptext CeruleanLockedDoorText
-
 CeruleanCityPokecenterSign:
 	jumpstd PokecenterSignScript
 
@@ -162,6 +163,14 @@ CeruleanCityCooltrainerMText1:
 	para "Creo que hubo"
 	line "algún tipo de"
 	cont "accidente allí."
+	done
+
+CeruleanCityHikerText:
+	text "Esta tienda no es"
+	line "como la de Johto."
+
+	para "Siempre está llena"
+	line "de gente."
 	done
 
 CeruleanCityCooltrainerMText2:
@@ -278,9 +287,6 @@ CeruleanCapeSignText:
 	line "Puente Pepita."
 	done
 
-CeruleanLockedDoorText:
-	text "Está cerrado…"
-	done
 
 CeruleanCity_MapEvents:
 	db 0, 0 ; filler
@@ -293,16 +299,17 @@ CeruleanCity_MapEvents:
 	warp_event 30, 23, CERULEAN_GYM, 1
 	warp_event 25, 29, CERULEAN_MART, 2
 	warp_event  2, 13, CERULEAN_CAVE_1F, 1
+	warp_event 15, 29, CERULEAN_BULBASAUR_HOUSE, 1
+	warp_event 12, 29, CERULEAN_BIKE_SHOP, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 23, 23, BGEVENT_READ, CeruleanCitySign
 	bg_event 27, 25, BGEVENT_READ, CeruleanGymSign
-	bg_event 11, 29, BGEVENT_READ, CeruleanBikeShopSign
+	bg_event  9, 29, BGEVENT_READ, CeruleanBikeShopSign
 	bg_event 25, 17, BGEVENT_READ, CeruleanPoliceSign
 	bg_event 23,  7, BGEVENT_READ, CeruleanCapeSign
-	bg_event 14, 29, BGEVENT_READ, CeruleanLockedDoor
 	bg_event 20, 21, BGEVENT_READ, CeruleanCityPokecenterSign
 	bg_event 26, 29, BGEVENT_READ, CeruleanCityMartSign
 	bg_event  2, 14, BGEVENT_ITEM, CeruleanCityHiddenBerserkGene
@@ -313,6 +320,8 @@ CeruleanCity_MapEvents:
 	object_event 20, 24, SPRITE_SLOWPOKE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeruleanCitySlowbro, -1
 	object_event 21, 24, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeruleanCityCooltrainerFScript, -1
 	object_event 30, 26, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityFisherScript, -1
-	object_event  6, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityYoungsterScript, -1
+	object_event  6, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeruleanCityYoungsterScript, -1
 	object_event 20, -2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSchoolboyDudley, -1
 	object_event 21, -5, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassEllen, -1
+	object_event  7, 26, SPRITE_HIKER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CeruleanCityHikerScript, -1
+

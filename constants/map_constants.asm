@@ -207,7 +207,7 @@ ENDM
 	map_const CINNABAR_POKECENTER_2F_BETA,                  8,  4 ;  2
 	map_const CINNABAR_MART,                                6,  4 ;  3
 	map_const ROUTE_19_FUCHSIA_GATE,                        5,  4 ;  4
-	map_const SEAFOAM_GYM,                                  5,  4 ;  5
+	map_const SEAFOAM_GYM,                                 10, 10 ;  5
 	map_const ROUTE_19,                                    10, 30 ;  6
 	map_const ROUTE_20,                                    50,  9 ;  7
 	map_const ROUTE_21,                                    10, 45 ;  8
@@ -240,7 +240,9 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    39,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
-	map_const MTMOON_POKECENTER,                         6,  4 ;  4
+	map_const MTMOON_POKECENTER,                            6,  4 ; 18
+	map_const CERULEAN_BULBASAUR_HOUSE,                     4,  4 ; 19
+	map_const CERULEAN_BIKE_SHOP,                           4,  4 ; 19
 	endgroup
 
 	newgroup AZALEA                                               ;  8

@@ -18,7 +18,7 @@ Music:
 	dba Music_LookOfficer
 	dba Music_HealPokemon
 	dba Music_LavenderTown
-	dba Music_Route2
+	dba Music_Route2 ; unused
 	dba Music_MtMoon
 	dba Music_ShowMeAround
 	dba Music_GameCorner
@@ -107,5 +107,17 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+; new to Crystal-Newbox
 	dba Music_PokemonMansion
+	dba Music_PokemonTower
+	dba Music_Dungeons1
+	dba Music_Dungeons2
+	dba Music_SilphCo
+	dba Music_Cinnabar
+	dba Music_Cities2
+	dba Music_Routes2
+	dba Music_Dungeons3
+	dba Music_PokemonCenterKanto
+	dba Music_GymKanto
+	dba Music_VictoryRoadKanto
 	assert_table_length NUM_MUSIC_SONGS

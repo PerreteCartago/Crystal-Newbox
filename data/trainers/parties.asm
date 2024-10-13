@@ -2492,17 +2492,17 @@ HikerGroup:
 
 BikerGroup:
 	; BIKER (1)
-	db "Tino@", TRAINERTYPE_NORMAL
-	db 20, KOFFING
-	db 20, KOFFING
-	db 20, KOFFING
+	db "Virgilio@", TRAINERTYPE_NORMAL
+	db 45, WEEZING
+	db 45, WEEZING
+	db 45, MUK
 	db -1 ; end
 
 	; BIKER (2)
-	db "Gabi@", TRAINERTYPE_NORMAL
-	db 20, KOFFING
-	db 20, KOFFING
-	db 20, KOFFING
+	db "Rubén@", TRAINERTYPE_NORMAL
+	db 45, MUK
+	db 45, MUK
+	db 45, WEEZING
 	db -1 ; end
 
 	; BIKER (3)
@@ -2547,6 +2547,17 @@ BikerGroup:
 	db 28, KOFFING
 	db 30, MAGMAR
 	db 32, WEEZING
+	db -1 ; end
+
+	; BIKER (10)
+	db "Hideo@", TRAINERTYPE_NORMAL
+	db 49, WEEZING
+	db -1 ; end
+
+	; BIKER (11)
+	db "Lao@", TRAINERTYPE_NORMAL
+	db 47, WEEZING
+	db 47, MUK
 	db -1 ; end
 
 BlaineGroup:
@@ -3566,6 +3577,9 @@ GruntFGroup:
 	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
 	db -1 ; end
 
+
+SECTION "Enemy Trainer Parties 2", ROMX
+
 MysticalmanGroup:
 	; MYSTICALMAN (1)
 	db "Eusine@", TRAINERTYPE_MOVES
@@ -3573,3 +3587,158 @@ MysticalmanGroup:
 	db 23, HAUNTER,    LICK, HYPNOSIS, MEAN_LOOK, CURSE
 	db 25, ELECTRODE,  SCREECH, WILD_CHARGE, THUNDER, ROLLOUT
 	db -1 ; end
+
+ChannelerGroup:
+	; CHANNELER (1)
+	db "Cari@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, HAUNTER
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (2)
+	db "Patricia@", TRAINERTYPE_NORMAL
+	db 39, GASTLY
+	db 42, HAUNTER
+	db 45, GENGAR
+	db -1 ; end
+
+	; CHANNELER (3)
+	db "Espe@", TRAINERTYPE_NORMAL
+	db 41, HAUNTER
+	db 41, HAUNTER
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (4)
+	db "Lorena@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, MISDREAVUS
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (5)
+	db "Jimena@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, GENGAR
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (6)
+	db "Paula@", TRAINERTYPE_NORMAL
+	db 41, HAUNTER
+	db 41, HAUNTER
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (7)
+	db "Renata@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, MISDREAVUS
+	db 43, HYPNO
+	db -1 ; end
+
+	; CHANNELER (8)
+	db "Lina@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, HAUNTER
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (9)
+	db "Jana@", TRAINERTYPE_NORMAL
+	db 41, GENGAR
+	db 41, GENGAR
+	db 43, MISDREAVUS
+	db -1 ; end
+
+	; CHANNELER (10)
+	db "Tamara@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, MISDREAVUS
+	db 43, HAUNTER
+	db -1 ; end
+
+	; CHANNELER (11)
+	db "Angélica@", TRAINERTYPE_NORMAL
+	db 39, GASTLY
+	db 41, HAUNTER
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (12)
+	db "Juliana@", TRAINERTYPE_NORMAL
+	db 41, MISDREAVUS
+	db 41, HYPNO
+	db 43, GENGAR
+	db -1 ; end
+
+	; CHANNELER (13)
+	db "Emilia@", TRAINERTYPE_NORMAL
+	db 39, GASTLY
+	db 39, DROWZEE
+	db 41, HAUNTER
+	db 41, HYPNO
+	db 43, GENGAR
+	db -1 ; end
+
+BaldGroup:
+	; BALD (1)
+	db "Isaías@", TRAINERTYPE_NORMAL
+	db 47, MACHOKE
+	db 47, MACHAMP
+	db -1 ; end
+
+	; BALD (2)
+	db "Rale@", TRAINERTYPE_NORMAL
+	db 47, PRIMEAPE
+	db 47, HITMONCHAN
+	db -1 ; end
+
+	; BALD (3)
+	db "Dero@", TRAINERTYPE_NORMAL
+	db 49, MACHAMP
+	db -1 ; end
+
+	; BALD (4)
+	db "Javi@", TRAINERTYPE_NORMAL
+	db 44, MACHOKE
+	db 44, MACHAMP
+	db 44, PRIMEAPE
+	db 44, HITMONLEE
+	db -1 ; end
+
+	; BALD (5)
+	db "Cefe@", TRAINERTYPE_NORMAL
+	db 45, PRIMEAPE
+	db 45, MACHAMP
+	db 45, HITMONTOP
+	db -1 ; end
+
+	; BALD (6)
+	db "Cadel@", TRAINERTYPE_NORMAL
+	db 47, PRIMEAPE
+	db 47, MACHAMP
+	db -1 ; end
+
+	; BALD (7)
+	db "Leo@", TRAINERTYPE_NORMAL
+	db 47, PRIMEAPE
+	db 47, MACHAMP
+	db -1 ; end
+
+	; BALD (8)
+	db "Koji@", TRAINERTYPE_NORMAL
+	db 45, PRIMEAPE
+	db 45, MACHOKE
+	db 45, MACHAMP
+	db -1 ; end
+
+
+
+
+
+
+
+
+

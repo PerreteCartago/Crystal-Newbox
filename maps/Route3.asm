@@ -1,8 +1,8 @@
 	object_const_def
-	const ROUTE3_FISHER1
+	const ROUTE3_FIREBREATHER1
 	const ROUTE3_YOUNGSTER1
 	const ROUTE3_YOUNGSTER2
-	const ROUTE3_FISHER2
+	const ROUTE3_FIREBREATHER2
 
 Route3_MapScripts:
 	def_scene_scripts
@@ -132,7 +132,7 @@ Route3_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event 36, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
+	object_event 36, 11, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFirebreatherOtis, -1
 	object_event 15,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
 	object_event 20,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
-	object_event 62, 11, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1
+	object_event 62, 11, SPRITE_FIREBREATHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerFirebreatherBurt, -1

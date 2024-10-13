@@ -499,8 +499,8 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const NOBORU
 
 	trainerclass BIKER ; 2d
-	const BIKER_BENNY ; unused
-	const KAZU ; unused
+	const BIKER_BENNY
+	const KAZU
 	const DWAYNE
 	const HARRIS
 	const ZEKE
@@ -508,6 +508,8 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const RILEY
 	const JOEL
 	const GLENN
+	const HIDEO
+	const BIKER_LAO
 
 	trainerclass BLAINE ; 2e
 	const BLAINE1
@@ -713,6 +715,31 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+
+	trainerclass CHANNELER ; 44
+	const CARI
+	const PATRICIA
+	const ESPE
+	const LORENA
+	const JIMENA
+	const PAULA_CHANNELER
+	const RENATA
+	const LINA
+	const JANA
+	const TAMARA
+	const ANGELICA_CHANNELER
+	const JULIANA
+	const EMILIA
+
+	trainerclass BALD ; 43
+	const ISAIAS
+	const RALE
+	const DERO
+	const JAVI
+	const CEFE
+	const CADEL
+	const LEO
+	const BALD_KOJI
 
 DEF KRIS EQU __trainer_class__
 

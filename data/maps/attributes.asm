@@ -744,3 +744,5 @@ ENDM
 	map_attributes CinnabarLabFossilRoom, CINNABAR_LAB_FOSSIL_ROOM, $00, 0
 	map_attributes CinnabarLabMetronomeRoom, CINNABAR_LAB_METRONOME_ROOM, $00, 0
 	map_attributes CinnabarLabTradeRoom, CINNABAR_LAB_TRADE_ROOM, $00, 0
+	map_attributes CeruleanBulbasaurHouse, CERULEAN_BULBASAUR_HOUSE, $00, 0
+	map_attributes CeruleanBikeShop, CERULEAN_BIKE_SHOP, $00, 0
