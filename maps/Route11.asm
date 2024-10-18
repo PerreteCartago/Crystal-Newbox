@@ -4,6 +4,13 @@
 	const ROUTE11_YOUNGSTER3
 	const ROUTE11_YOUNGSTER4
 	const ROUTE11_FRUIT_TREE
+	const ROUTE11_YOUNGSTER5
+	const ROUTE11_PI1
+	const ROUTE11_PI2
+	const ROUTE11_PI3
+	const ROUTE11_PI4
+	const ROUTE11_ENGINEER1
+	const ROUTE11_ENGINEER2
 
 Route11_MapScripts:
 	def_scene_scripts
@@ -50,6 +57,83 @@ TrainerPsychicFidel:
 	endifjustbattled
 	opentext
 	writetext PsychicFidelAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerDavi:
+	trainer YOUNGSTER, DAVI, EVENT_BEAT_DAVI, DaviSeenText, DaviBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext DaviAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerHugue:
+	trainer PI, HUGUE, EVENT_BEAT_HUGUE, HugueSeenText, HugueBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext HugueAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerJaren:
+	trainer PI, JAREN, EVENT_BEAT_JAREN, JarenSeenText, JarenBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext JarenAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerDarian:
+	trainer PI, DARIAN, EVENT_BEAT_DARIAN, DarianSeenText, DarianBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext DarianAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerGaspar:
+	trainer PI, GASPAR, EVENT_BEAT_GASPAR, GasparSeenText, GasparBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GasparAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerBernardo:
+	trainer ENGINEER, BERNARDO, EVENT_BEAT_BERNARDO, BernardoSeenText, BernardoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BernardoAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPerico:
+	trainer ENGINEER, PERICO, EVENT_BEAT_PERICO, PericoSeenText, PericoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PericoAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -143,6 +227,116 @@ Route11SignText:
 	text "Ruta 11"
 	done
 
+HugueSeenText::
+	text "¡Gana, pierde o"
+	line "empata!"
+	done
+
+HugueBeatenText::
+	text "¡Vale!"
+	line "¡Has ganado!"
+	done
+
+HugueAfterBattleText::
+	text "¡Los Pokémon son"
+	line "vida! ¡Y vivir"
+	cont "es jugar!"
+	done
+
+JarenSeenText::
+	text "¡Competición!"
+	line "¡No me canso de"
+	cont "competir!"
+	done
+
+JarenBeatenText::
+	text "¡Tuve"
+	line "una oportunidad!"
+	done
+
+JarenAfterBattleText::
+	text "¡No puedes ser un"
+	line "cobarde en el"
+	cont "mundo Pokémon!"
+	done
+
+DaviSeenText::
+	text "¡Vamos allá, pero"
+	line "no hagas trampas!"
+	done
+
+DaviBeatenText::
+	text "¿Qué?"
+	line "¡No puede ser!"
+	done
+
+DaviAfterBattleText::
+	text "¡Hice todo lo que"
+	line "pude! ¡Y no me"
+	cont "arrepiento!"
+	done
+
+BernardoSeenText::
+	text "¡Cuidado! ¡Estoy"
+	line "colocando unos"
+	cont "cables!"
+	done
+
+BernardoBeatenText::
+	text "¡Muy"
+	line "eléctrico!"
+	done
+
+BernardoAfterBattleText::
+	text "¡Di a todos"
+	line "que ahorren"
+	cont "energía!"
+	done
+
+GasparSeenText::
+	text "¡JAJAJA! ¡No he"
+	line "perdido nunca!"
+	done
+
+GasparBeatenText::
+	text "¡La primera"
+	line "vez que pierdo!"
+	done
+
+GasparAfterBattleText::
+	text "¡Has tenido mucha"
+	line "suerte!"
+	done
+
+DarianSeenText::
+	text "Nunca he ganado..."
+	done
+
+DarianBeatenText::
+	text "Se veía"
+	line "venir..."
+	done
+
+DarianAfterBattleText::
+	text "Tengo mala"
+	line "suerte."
+	done
+
+PericoSeenText::
+	text "¡Cuidado con"
+	line "esos cables!"
+	done
+
+PericoBeatenText::
+	text "¡Uaauu!"
+	line "¡Vaya chispazo!"
+	done
+
+PericoAfterBattleText::
+	text "¡Mejor volvamos"
+	line "al trabajo!"
+	done
+
 Route11_MapEvents:
 	db 0, 0 ; filler
 
@@ -159,6 +353,13 @@ Route11_MapEvents:
 	def_object_events
 	object_event 22, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterOwen, -1
 	object_event 14,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterJason, -1
-	object_event 22,  0, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerPsychicHerman, -1
-	object_event 11,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicFidel, -1
+	object_event 22,  0, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerPsychicHerman, -1
+	object_event 11,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicFidel, -1
 	object_event 42, 15, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route11FruitTree, -1
+	object_event 43,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerDavi, -1
+	object_event 26,  9, SPRITE_PI, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerHugue, -1
+	object_event 37, 17, SPRITE_PI, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerJaren, -1
+	object_event  7,  4, SPRITE_PI, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerDarian, -1
+	object_event 33,  0, SPRITE_PI, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerGaspar, -1
+	object_event 23,  5, SPRITE_ENGINEER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_TRAINER, 4, TrainerBernardo, -1
+	object_event  2, 16, SPRITE_ENGINEER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_TRAINER, 3, TrainerPerico, -1

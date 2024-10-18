@@ -74,9 +74,9 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const WILL1
 
 	trainerclass CAL ; c
-	const CAL1 ; unused
-	const CAL2
-	const CAL3
+	const CAL1 ; 1 unused
+	const CAL2 ; 2 
+	const CAL3 ; 3
 
 	trainerclass BRUNO ; d
 	const BRUNO1
@@ -100,124 +100,141 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const LT_SURGE1
 
 	trainerclass SCIENTIST ; 14
-	const ROSS
-	const MITCH
-	const JED
-	const MARC
-	const RICH
+	const ROSS ; 1
+	const MITCH ; 2
+	const JED ; 3
+	const MARC ; 4
+	const RICH ; 5
+	const MIGUEL ; 6
+	const ALBERT2 ; 7
 
 	trainerclass ERIKA ; 15
 	const ERIKA1
 
 	trainerclass YOUNGSTER ; 16
-	const JOEY1
-	const MIKEY
-	const ALBERT
-	const GORDON
-	const SAMUEL
-	const IAN
-	const JOEY2
-	const JOEY3
-	const WARREN
-	const JIMMY
-	const OWEN
-	const JASON
-	const JOEY4
-	const JOEY5
-	const CIRO
-	const DANE
-	const PEPE
+	const JOEY1 ; 1 
+	const MIKEY ; 2
+	const ALBERT ; 3
+	const GORDON ; 4
+	const SAMUEL ; 5
+	const IAN ; 6
+	const JOEY2 ; 7
+	const JOEY3 ; 8
+	const WARREN ; 9
+	const JIMMY ; 10
+	const OWEN ; 11
+	const JASON ; 12
+	const JOEY4 ; 13
+	const JOEY5 ; 14
+	const CIRO ; 15
+	const DANE ; 16
+	const PEPE ; 17
+	const DAVI ; 18
+	const JOSE ; 19
 
 	trainerclass SCHOOLBOY ; 17
-	const JACK1
-	const KIPP
-	const ALAN1
-	const JOHNNY
-	const DANNY
-	const TOMMY
-	const DUDLEY
-	const JOE
-	const BILLY
-	const CHAD1
-	const NATE
-	const RICKY
-	const JACK2
-	const JACK3
-	const ALAN2
-	const ALAN3
-	const CHAD2
-	const CHAD3
-	const JACK4
-	const JACK5
-	const ALAN4
-	const ALAN5
-	const CHAD4
-	const CHAD5
+	const JACK1 ; 1
+	const KIPP ; 2
+	const ALAN1 ; 3
+	const JOHNNY ; 4
+	const DANNY ; 5
+	const TOMMY ; 6
+	const DUDLEY ; 7
+	const JOE ; 8
+	const BILLY ; 9
+	const CHAD1 ; 10
+	const NATE ; 11
+	const RICKY ; 12
+	const JACK2 ; 13
+	const JACK3 ; 14
+	const ALAN2 ; 15
+	const ALAN3 ; 16
+	const CHAD2 ; 17
+	const CHAD3 ; 18
+	const JACK4 ; 19
+	const JACK5 ; 20
+	const ALAN4 ; 21
+	const ALAN5 ; 22
+	const CHAD4 ; 23
+	const CHAD5 ; 24
 
 	trainerclass BIRD_KEEPER ; 18
-	const ROD
-	const ABE
-	const BRYAN
-	const THEO
-	const TOBY
-	const DENIS
-	const VANCE1
-	const HANK
-	const ROY
-	const BORIS
-	const BOB
-	const JOSE1
-	const PETER
-	const JOSE2
-	const PERRY
-	const BRET
-	const JOSE3
-	const VANCE2
-	const VANCE3
+	const ROD ; 1
+	const ABE ; 2
+	const BRYAN ; 3
+	const THEO ; 4
+	const TOBY ; 5
+	const DENIS ; 6
+	const VANCE1 ; 7
+	const HANK ; 8
+	const ROY ; 9
+	const BORIS ; 10
+	const BOB ; 11
+	const JOSE1 ; 12
+	const PETER ; 13
+	const JOSE2 ; 14
+	const PERRY ; 15
+	const BRET ; 16
+	const JOSE3 ; 17
+	const VANCE2 ; 18
+	const VANCE3 ; 19
+	const ROGE ; 20
+	const SEBASTIAN ; 21
+	const PASTOR ; 22
+	const ROBERTO ; 23
+	const MAURO ; 24
+	const BENI ; 25
+	const CELSO ; 26
+	const EDGARDO ; 27
 
 	trainerclass LASS ; 19
-	const CARRIE
-	const BRIDGET
-	const ALICE
-	const KRISE
-	const CONNIE1
-	const LINDA
-	const LAURA
-	const SHANNON
-	const MICHELLE
-	const DANA1
-	const ELLEN
-	const CONNIE2 ; unused
-	const CONNIE3
-	const DANA2
-	const DANA3
-	const DANA4
-	const DANA5
+	const CARRIE ;1
+	const BRIDGET ;2
+	const ALICE ;3
+	const KRISE ; 4
+	const CONNIE1 ; 5
+	const LINDA ; 6
+	const LAURA ; 7
+	const SHANNON ; 8
+	const MICHELLE ; 9
+	const DANA1 ; 10
+	const ELLEN ; 11
+	const CONNIE3 ; 12
+	const DANA2 ; 13
+	const DANA3 ; 14
+	const DANA4 ; 15
+	const DANA5 ; 16
+	const GENO ; 17
+	const LULU ; 18
+	const ANDREA ; 19
+	const VEVA ; 20
+	const MIRNA ; 21
+	const IRIS ; 22
 
 	trainerclass JANINE ; 1a
 	const JANINE1
 
 	trainerclass COOLTRAINERM ; 1b
-	const NICK
-	const AARON
-	const PAUL
-	const CODY
-	const MIKE
-	const GAVEN1
-	const GAVEN2
-	const RYAN
-	const JAKE
-	const GAVEN3
-	const BLAKE
-	const BRIAN
-	const ERICK ; unused
-	const ANDY ; unused
-	const TYLER ; unused
-	const SEAN
-	const KEVIN
-	const STEVE
-	const ALLEN
-	const DARIN
+	const NICK ; 1
+	const AARON ; 2
+	const PAUL ; 3
+	const CODY ; 4
+	const MIKE ; 5
+	const GAVEN1 ; 6
+	const GAVEN2 ; 7
+	const RYAN ; 8
+	const JAKE ; 9
+	const GAVEN3 ; 10
+	const BLAKE ; 11
+	const BRIAN ; 12
+	const ERICK ; 13
+	const ANDY ; 14
+	const ELIAS ; 15
+	const SEAN ; 16
+	const KEVIN ; 17
+	const STEVE ; 18
+	const ALLEN ; 19
+	const DARIN ; 20
 
 	trainerclass COOLTRAINERF ; 1c
 	const GWEN
@@ -244,14 +261,14 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const ELIA
 
 	trainerclass BEAUTY ; 1d
-	const VICTORIA
-	const SAMANTHA
-	const JULIE ; unused
-	const JACLYN ; unused
-	const BRENDA ; unused
-	const CASSIE
-	const CAROLINE ; unused
-	const CARLENE ; unused
+	const VICTORIA ; 1
+	const SAMANTHA ; 2
+	const LUCRECIA ; 3
+	const SUSANA ; 4
+	const ROBERTA ; 5
+	const CASSIE ; 6
+	const MANOLA ; 7
+	const SOL ; 8
 	const JESSICA ; unused
 	const RACHAEL ; unused
 	const ANGELICA ; unused
@@ -263,21 +280,28 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const OLIVIA
 
 	trainerclass POKEMANIAC ; 1e
-	const LARRY
-	const ANDREW
-	const CALVIN
-	const SHANE
-	const BEN
-	const BRENT1
-	const RON
-	const ETHAN
-	const BRENT2
-	const BRENT3
-	const ISSAC
-	const DONALD
-	const ZACH
-	const BRENT4
-	const MILLER
+	const LARRY ; 1
+	const ANDREW ; 2
+	const CALVIN ; 3
+	const SHANE ; 4
+	const BEN ; 5
+	const BRENT1 ; 6
+	const RON ; 7
+	const ETHAN ; 8
+	const BRENT2 ; 9
+	const BRENT3 ; 10
+	const ISSAC ; 11
+	const DONALD ; 12
+	const ZACH ; 13
+	const BRENT4 ; 14
+	const MILLER ; 15
+	const HERNANDO ; 16
+	const MARCO ; 17
+	const JOHN2 ; 18
+	const BASILIO ; 19
+	const DANI ; 20
+	const ESTEBAN ; 21
+	const JULIAN ; 22
 
 	trainerclass GRUNTM ; 1f
 	const GRUNTM_1
@@ -313,11 +337,11 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GRUNTM_31
 
 	trainerclass GENTLEMAN ; 20
-	const PRESTON
-	const EDWARD
-	const GREGORY
-	const VIRGIL ; unused
-	const ALFRED
+	const PRESTON ; 1
+	const EDWARD ; 2
+	const GREGORY ; 3
+	const VIRGIL ; 4
+	const ALFRED ; 5
 
 	trainerclass SKIER ; 21
 	const ROXANNE
@@ -327,35 +351,45 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const COLETTE
 	const HILLARY
 	const SHIRLEY
+	const GRACIA
 
 	trainerclass SABRINA ; 23
 	const SABRINA1
 
 	trainerclass BUG_CATCHER ; 24
-	const DON
-	const ROB
-	const ED
-	const WADE1
-	const BUG_CATCHER_BENNY
-	const AL
-	const JOSH
-	const ARNIE1
-	const KEN
-	const WADE2
-	const WADE3
-	const DOUG
-	const ARNIE2
-	const ARNIE3
-	const WADE4
-	const WADE5
-	const ARNIE4
-	const ARNIE5
-	const WAYNE
-	const CIRILO
-	const LINO
-	const AMADEO
-	const ASIER
-	const MANLIO
+	const DON ; 1
+	const ROB ; 2
+	const ED ; 3
+	const WADE1 ; 4
+	const BUG_CATCHER_BENNY ; 5
+	const AL ; 6
+	const JOSH ; 7
+	const ARNIE1 ; 8
+	const KEN ; 9
+	const WADE2 ; 10
+	const WADE3 ; 11
+	const DOUG ; 12
+	const ARNIE2 ; 13
+	const ARNIE3 ; 14
+	const WADE4 ; 15
+	const WADE5 ; 16
+	const ARNIE4 ; 17
+	const ARNIE5 ; 18
+	const WAYNE ; 19
+	const CIRILO ; 20
+	const LINO ; 21
+	const AMADEO ; 22
+	const ASIER ; 23
+	const MANLIO ; 24
+	const KEIGO ; 25
+	const ELIJAH ; 26
+	const CORNELIO ; 27
+	const GREGORIO ; 28
+	const BUG_CATCHER_JAIME ; 29
+	const BERNABE ; 30
+	const ARIEL ; 31
+	const ROBI ; 32
+	const CASIMIRO ; 33
 
 	trainerclass FISHER ; 25
 	const JUSTIN
@@ -383,6 +417,12 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const RALPH4
 	const RALPH5
 	const TULLY4
+	const NARCISO
+	const CLAUDIO
+	const GUIDO
+	const RONALDO
+	const CHICHO
+	const NESTOR
 
 	trainerclass SWIMMERM ; 26
 	const HAROLD
@@ -393,19 +433,23 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const BERKE
 	const KIRK
 	const MATHEW
-	const HAL ; unused
-	const PATON ; unused
-	const DARYL ; unused
-	const WALTER ; unused
-	const TONY ; unused
+	const ROMAN
+	const JEROMO
+	const OMAR
+	const SERGIO
+	const SWIMMER_BORIS
 	const JEROME
 	const TUCKER
-	const RICK ; unused
+	const DINO
 	const CAMERON
 	const SETH
-	const JAMES ; unused
-	const LEWIS ; unused
+	const DARIO
+	const RICARDO
 	const PARKER
+	const MARCELO
+	const TONI
+	const MATEO
+	const ALEJO
 
 	trainerclass SWIMMERF ; 27
 	const ELAINE
@@ -415,49 +459,52 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const DENISE
 	const KARA
 	const WENDY
-	const LISA ; unused
-	const JILL ; unused
-	const MARY ; unused
-	const KATIE ; unused
+	const TANIA
+	const TIZIANA
+	const NORA
+	const MELISA
 	const DAWN
-	const TARA ; unused
+	const ALICIA
 	const NICOLE
 	const LORI
-	const JODY ; unused
+	const CORO
 	const NIKKI
 	const DIANA
 	const BRIANA
+	const ANIA
 
 	trainerclass SAILOR ; 28
-	const EUGENE
-	const HUEY1
-	const TERRELL
-	const KENT
-	const ERNEST
-	const JEFF
-	const GARRETT
-	const KENNETH
-	const STANLY
-	const HARRY
-	const HUEY2
-	const HUEY3
-	const HUEY4
+	const EUGENE ; 1
+	const HUEY1 ; 2
+	const TERRELL ; 3
+	const KENT ; 4
+	const ERNEST ; 5
+	const JEFF ; 6
+	const GARRETT ; 7
+	const KENNETH ; 8
+	const STANLY ; 9
+	const HARRY ; 10
+	const HUEY2 ; 11
+	const HUEY3 ; 12
+	const HUEY4 ; 13
 
 	trainerclass SUPER_NERD ; 29
-	const STAN
-	const ERIC
-	const ENRIQUE
-	const AVERO
-	const DANTE
-	const SAM
-	const TOM
-	const PAT
-	const SHAWN
-	const TERU
-	const ZAC
-	const NORTON ; unused
-	const HUGH
-	const MARKUS
+	const STAN ; 1
+	const ERIC ; 2
+	const ENRIQUE ; 3
+	const AVERO ; 4
+	const DANTE ; 5
+	const SAM ; 6
+	const TOM ; 7
+	const PAT ; 8
+	const SHAWN ; 9
+	const TERU ; 10
+	const ZAC ; 11
+	const LADIS ; 12
+	const HUGH ; 13
+	const MARKUS ; 14
+	const ADRIAN ; 15
+	const GUSTAVO ; 16
 
 	trainerclass RIVAL2 ; 2a
 	const RIVAL2_1_CHIKORITA
@@ -468,69 +515,86 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const RIVAL2_2_TOTODILE
 
 	trainerclass GUITARIST ; 2b
-	const CLYDE
-	const VINCENT
+	const CLYDE ; 1
+	const VINCENT ; 2
+	const MONE ; 3
 
 	trainerclass HIKER ; 2c
-	const ANTHONY1
-	const RUSSELL
-	const PHILLIP
-	const LEONARD
-	const ANTHONY2
-	const BENJAMIN
-	const ERIK
-	const MICHAEL
-	const PARRY1
-	const TIMOTHY
-	const BAILEY
-	const ANTHONY3
-	const TIM
-	const NOLAND
-	const SIDNEY
-	const KENNY
-	const JIM
-	const DANIEL
-	const PARRY2
-	const PARRY3
-	const ANTHONY4
-	const ANTHONY5
-	const FRANCIS
-	const UBALDO
-	const NOBORU
+	const ANTHONY1 ; 1
+	const RUSSELL ; 2
+	const PHILLIP ; 3
+	const LEONARD ; 4
+	const ANTHONY2 ; 5
+	const BENJAMIN ; 6
+	const ERIK ; 7
+	const MICHAEL ; 8
+	const PARRY1 ; 9
+	const TIMOTHY ; 10
+	const BAILEY ; 11
+	const ANTHONY3 ; 12
+	const TIM ; 13
+	const NOLAND ; 14
+	const SIDNEY ; 15
+	const KENNY ; 16
+	const JIM ; 17
+	const DANIEL ; 18
+	const PARRY2 ; 19
+	const PARRY3 ; 20
+	const ANTHONY4 ; 21
+	const ANTHONY5 ; 22
+	const FRANCIS ; 23
+	const UBALDO ; 24
+	const NOBORU ; 25
+	const ADOLFO ; 26
+	const ALFONSO ; 27
+	const BALTASAR ; 28
+	const MARCOS ; 29
+	const LUCIANO ; 30
+	const OSCAR ; 31
+	const LUCAS ; 32
+	const ALFREDO ; 33
+	const EVARISTO ; 34
+	const DINIO ; 35
 
 	trainerclass BIKER ; 2d
-	const BIKER_BENNY
-	const KAZU
-	const DWAYNE
-	const HARRIS
-	const ZEKE
-	const CHARLES
-	const RILEY
-	const JOEL
-	const GLENN
-	const HIDEO
-	const BIKER_LAO
+	const BIKER_BENNY ; 1
+	const KAZU ; 2
+	const DWAYNE ; 3
+	const HARRIS ; 4
+	const ZEKE ; 5
+	const CHARLES ; 6
+	const RILEY ; 7
+	const JOEL ; 8
+	const GLENN ; 9
+	const HIDEO ; 10
+	const BIKER_LAO ; 11
+	const GERARDO ; 12
+	const ISAAC ; 13
+	const MALEN ; 14
+	const LUCIO ; 15
+	const ERNESTO ; 16
+	const SANDRO ; 17
 
 	trainerclass BLAINE ; 2e
 	const BLAINE1
 
 	trainerclass BURGLAR ; 2f
-	const DUNCAN
-	const EDDIE
-	const COREY
-	const OCTAVIO
-	const RAMON
-	const DACIO
+	const DUNCAN ; 1
+	const EDDIE ; 2
+	const COREY ; 3
+	const OCTAVIO ; 4
+	const RAMON ; 5
+	const DACIO ; 6
 
 	trainerclass FIREBREATHER ; 30
-	const OTIS
-	const DICK ; unused
-	const NED ; unused
-	const BURT
-	const BILL
-	const WALT
-	const RAY
-	const LYLE
+	const OTIS ; 1
+	const DARIO2 ; 2
+	const NERON ; 3
+	const BURT ; 4
+	const BILL ; 5
+	const WALT ; 6
+	const RAY ; 7
+	const LYLE ; 8
 
 	trainerclass JUGGLER ; 31
 	const IRWIN1
@@ -572,50 +636,66 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const RODNEY
 
 	trainerclass PICNICKER ; 35
-	const LIZ1
-	const GINA1
-	const BROOKE
-	const KIM
-	const CINDY
-	const HOPE
-	const SHARON
-	const DEBRA
-	const GINA2
-	const ERIN1
-	const LIZ2
-	const LIZ3
-	const HEIDI
-	const EDNA
-	const GINA3
-	const TIFFANY1
-	const TIFFANY2
-	const ERIN2
-	const TANYA
-	const TIFFANY3
-	const ERIN3
-	const LIZ4
-	const LIZ5
-	const GINA4
-	const GINA5
-	const TIFFANY4
+	const LIZ1 ; 1
+	const GINA1 ; 2
+	const BROOKE ; 3
+	const KIM ; 4
+	const CINDY ; 5
+	const HOPE ; 6
+	const SHARON ; 7
+	const DEBRA ; 8
+	const GINA2 ; 9
+	const ERIN1 ; 10
+	const LIZ2 ; 11
+	const LIZ3 ; 12
+	const HEIDI ; 13
+	const EDNA ; 14
+	const GINA3 ; 15
+	const TIFFANY1 ; 16
+	const TIFFANY2 ; 17
+	const ERIN2 ; 18
+	const TANYA ; 19
+	const TIFFANY3 ; 20
+	const ERIN3 ; 21
+	const LIZ4 ; 22
+	const LIZ5 ; 23
+	const GINA4 ; 24
+	const GINA5 ; 25
+	const TIFFANY4 ; 26
+	const PICNICKER_IRENE ; 27
+	const MERCE ; 28
+	const NEREA ; 29
+	const CHIO ; 30
+	const NELI ; 31
+	const NOE ; 32
+	const HILARIA ; 33
+	const ALMA ; 34
+	const SUSI ; 35
+	const VALERIA ; 36
+	const GEMA ; 37
+	const LEA ; 38
+	const ARIANA ; 39
+	const DORA ; 40
+	const MARTA ; 41
+	const SOFIA ; 42
 
 	trainerclass CAMPER ; 36
-	const ROLAND
-	const TODD1
-	const IVAN
-	const ELLIOT
-	const BARRY
-	const LLOYD
-	const DEAN
-	const SID
-	const HARVEY ; unused
-	const DALE ; unused
-	const TED
-	const TODD2
-	const TODD3
-	const THOMAS ; unused
-	const LEROY ; unused
-	const DAVID ; unused
+	const ROLAND ; 1
+	const TODD1 ; 2
+	const IVAN ; 3
+	const ELLIOT ; 4
+	const BARRY ; 5
+	const LLOYD ; 6
+	const DEAN ; 7
+	const SID ; 8
+	const RICHI ; 9
+	const GENARO ; 10
+	const TED ; 11
+	const TODD2 ; 12
+	const TODD3 ; 13
+	const CRIS ; 14
+	const DOROTEO ; 15
+	const JUSTI ; 16
 	const JOHN ; unused
 	const JERRY
 	const SPENCER
@@ -720,30 +800,49 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const EUSINE
 
 	trainerclass CHANNELER ; 44
-	const CARI
-	const PATRICIA
-	const ESPE
-	const LORENA
-	const JIMENA
-	const PAULA_CHANNELER
-	const RENATA
-	const LINA
-	const JANA
-	const TAMARA
-	const ANGELICA_CHANNELER
-	const JULIANA
-	const EMILIA
+	const CARI ; 1
+	const PATRICIA ; 2
+	const ESPE ; 3
+	const LORENA ; 4
+	const JIMENA ; 5
+	const PAULA_CHANNELER ; 6
+	const RENATA ; 7
+	const LINA ; 8
+	const JANA ; 9
+	const TAMARA ; 10
+	const ANGELICA_CHANNELER ; 11
+	const JULIANA ; 12
+	const EMILIA ; 13
 
-	trainerclass BALD ; 43
-	const ISAIAS
-	const RALE
-	const DERO
-	const JAVI
-	const CEFE
-	const CADEL
-	const LEO
-	const BALD_KOJI
+	trainerclass BALD ; 45
+	const ISAIAS ; 1
+	const RALE ; 2
+	const DERO ; 3
+	const JAVI ; 4
+	const CEFE ; 5
+	const CADEL ; 6
+	const LEO ; 7
+	const BALD_KOJI ; 8
+	const EMILIO ; 9
+	const JAVIER ; 10
 
+	trainerclass PI ; 46
+	const HUGUE ; 1
+	const JAREN ; 2
+	const DARIAN ; 3
+	const GASPAR ; 4
+	const NORBER ; 5
+	const EUSEBIO ; 6
+
+	trainerclass ENGINEER ; 47
+	const BERNARDO ; 1
+	const PERICO ; 2
+
+	trainerclass SCHOOLGIRL ; 48
+	const BETINA ; 1
+	const CLEO ; 2
+	const CELIA ; 3
+	
 DEF KRIS EQU __trainer_class__
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

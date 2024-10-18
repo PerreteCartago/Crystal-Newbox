@@ -1,9 +1,19 @@
 	object_const_def
-	const ROUTE13_YOUNGSTER1
-	const ROUTE13_YOUNGSTER2
+	const ROUTE13_BIRD_KEEPER1
+	const ROUTE13_BIRD_KEEPER2
 	const ROUTE13_POKEFAN_M1
 	const ROUTE13_HIKER1
 	const ROUTE13_HIKER2
+	const ROUTE13_BIRD_KEEPER3
+	const ROUTE13_BIRD_KEEPER4
+	const ROUTE13_BIRD_KEEPER5
+	const ROUTE13_STANDING_PICNICKER1
+	const ROUTE13_STANDING_PICNICKER2
+	const ROUTE13_STANDING_PICNICKER3
+	const ROUTE13_STANDING_PICNICKER4
+	const ROUTE13_STANDING_BALDING_GUY
+	const ROUTE13_STANDING_BEAUTY1
+	const ROUTE13_STANDING_BEAUTY2
 
 Route13_MapScripts:
 	def_scene_scripts
@@ -61,6 +71,116 @@ TrainerHikerKenny:
 	endifjustbattled
 	opentext
 	writetext HikerKennyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerLola:
+	trainer BEAUTY, MANOLA, EVENT_BEAT_MANOLA, LolaSeenText, LolaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LolaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerSol:
+	trainer BEAUTY, SOL, EVENT_BEAT_SOL, SolSeenText, SolBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SolAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerJavier:
+	trainer BALD, JAVIER, EVENT_BEAT_JAVIER, JavierSeenText, JavierBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext JavierAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerSebastian:
+	trainer BIRD_KEEPER, SEBASTIAN, EVENT_BEAT_SEBASTIAN, SebastianSeenText, SebastianBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SebastianAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerPastor:
+	trainer BIRD_KEEPER, PASTOR, EVENT_BEAT_PASTOR, PastorSeenText, PastorBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext PastorAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerRoberto:
+	trainer BIRD_KEEPER, ROBERTO, EVENT_BEAT_ROBERTO, RobertoSeenText, RobertoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext RobertoAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerAlma:
+	trainer PICNICKER, ALMA, EVENT_BEAT_ALMA, AlmaSeenText, AlmaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext AlmaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerSusi:
+	trainer PICNICKER, SUSI, EVENT_BEAT_SUSI, SusiSeenText, SusiBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SusiAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerValeria:
+	trainer PICNICKER, VALERIA, EVENT_BEAT_VALERIA, ValeriaSeenText, ValeriaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext ValeriaAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerGema:
+	trainer PICNICKER, GEMA, EVENT_BEAT_GEMA, GemaSeenText, GemaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GemaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -188,6 +308,174 @@ Route13DirectionsSignText:
 	line "A Ciudad Fucsia"
 	done
 
+SebastianSeenText::
+	text "¡Mis pájaros"
+	line "#MON quieren"
+	cont "pelear!"
+	done
+
+SebastianBeatenText::
+	text_start
+	line "¿Perdió mi"
+	cont "combinación"
+	cont "de pájaros?"
+	prompt
+
+SebastianAfterBattleText::
+	text "Mis #MON"
+	line "parecen felices"
+	cont "aunque hayan"
+	cont "perdido."
+	done
+
+SusiSeenText::
+	text "¡Dicen que soy"
+	line "muy buena para"
+	cont "ser una niña!"
+	done
+
+SusiBeatenText::
+	text "¡Oh! ¡He perdido!"
+	done
+
+SusiAfterBattleText::
+	text "Quiero ser una"
+	line "gran entrenadora."
+	cont "Trabajaré duro."
+	done
+
+ValeriaSeenText::
+	text "¡Qué chulas son"
+	line "tus medallas!"
+	done
+
+ValeriaBeatenText::
+	text "¡No fue"
+	line "suficiente!"
+	done
+
+ValeriaAfterBattleText::
+	text "¡Sé que lograste"
+	line "esas medallas de"
+	cont "los líderes del"
+	cont "gimnasio!"
+	done
+
+GemaSeenText::
+	text "Mis simpáticos"
+	line "Pokémon desean"
+	cont "conocerte."
+	done
+
+GemaBeatenText::
+	text "¡Uauu! ¡Me has"
+	line "machacado!"
+	done
+
+GemaAfterBattleText::
+	text "¡Tienes que hacer"
+	line "luchar a tus"
+	cont "Pokémon para"
+	cont "fortalecerlos!"
+	done
+
+AlmaSeenText::
+	text "¡Una vez encontré"
+	line "caburante en"
+	cont "una cueva!"
+	done
+
+AlmaBeatenText::
+	text "¡Lo hice fatal!"
+	done
+
+AlmaAfterBattleText::
+	text "El carburante"
+	line "aumentó la"
+	cont "velocidad de"
+	cont "mis Pokémon."
+	done
+
+PastorSeenText::
+	text "¡El viento sopla"
+	line "en mi dirección!"
+	done
+
+PastorBeatenText::
+	text "¡El viento"
+	line "cambió!"
+	done
+
+PastorAfterBattleText::
+	text "Perdí. Creo que"
+	line "volaré a casa."
+	done
+
+SolSeenText::
+	text "¡Claro que"
+	line "jugaré contigo!"
+	done
+
+SolBeatenText::
+	text "¡Oh!"
+	line "¡Qué bruto eres!"
+	done
+
+SolAfterBattleText::
+	text "¿Cuál es más"
+	line "fuerte, un"
+	cont "Pokémon femenino"
+	cont "o masculino?"
+	done
+
+LolaSeenText::
+	text "¿Quieres jugar"
+	line "conmigo a los"
+	cont "Pokémon?"
+	done
+
+LolaBeatenText::
+	text "¿Ya se ha"
+	line "terminado?"
+	done
+
+LolaAfterBattleText::
+	text "¡No sé nada sobre"
+	line "los Pokémon!"
+
+	para "¡Me gustan los"
+	line "más chulos!"
+	done
+
+JavierSeenText::
+	text "¿Y tú"
+	line "qué miras?"
+	done
+
+JavierBeatenText::
+	text "¡Vaya"
+	line "patinazo!"
+	done
+
+JavierAfterBattleText::
+	text "¡Olvídame!"
+	done
+
+RobertoSeenText::
+	text "¡Me encantan los"
+	line "pájaros Pokémon!"
+	done
+
+RobertoBeatenText::
+	text "¡Me he quedado"
+	line "sin energía!"
+	done
+
+RobertoAfterBattleText::
+	text "Ojalá pudiera"
+	line "volar como Pidgey."
+	done
+
 Route13_MapEvents:
 	db 0, 0 ; filler
 
@@ -202,8 +490,20 @@ Route13_MapEvents:
 	bg_event 21, 15, BGEVENT_ITEM, Route13HiddenCalcium
 
 	def_object_events
-	object_event 34,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeperPerry, -1
-	object_event 27, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeperBret, -1
-	object_event 25, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmJoshua, -1
-	object_event 60,  7, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerHikerKenny, -1
-	object_event  4,  8, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerPokefanmAlex, -1
+	object_event 57,  9, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperPerry, -1
+	object_event 27, 12, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerBirdKeeperBret, -1
+	object_event 35,  8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmJoshua, -1
+	object_event 15, 14, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerHikerKenny, -1
+	object_event  4, 12, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerPokefanmAlex, -1
+	object_event 62, 12, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 5, TrainerSebastian, -1
+	object_event 66,  7, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 3, TrainerPastor, -1
+	object_event  4, 10, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 3, TrainerRoberto, -1
+	object_event  4,  6, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerAlma, -1
+	object_event 45,  6, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerSusi, -1
+	object_event 47, 10, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerValeria, -1
+	object_event 25, 12, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerGema, -1
+	object_event 31, 10, SPRITE_BALDING_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerJavier, -1
+	object_event 43, 12, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerLola, -1
+	object_event 55, 14, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerSol, -1
+
+

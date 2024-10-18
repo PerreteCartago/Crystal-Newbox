@@ -72,4 +72,7 @@ TrainerPicPointers::
 	dba_pic MysticalmanPic
 	dba_pic ChannelerPic
 	dba_pic BaldPic
+	dba_pic PiPic
+	dba_pic EngineerPic
+	dba_pic SchoolgirlPic
 	assert_table_length NUM_TRAINER_CLASSES

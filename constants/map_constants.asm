@@ -173,6 +173,9 @@ ENDM
 	map_const SEAFOAM_ISLANDS_B3F,                         17, 11 ; 
 	map_const SEAFOAM_ISLANDS_B4F,                         15,  9 ; 
 	map_const POWER_PLANT_GRANDE,                          20, 18 ; 
+	map_const MONTE_MOON_GRANDE_1F,                        20, 21 ; 
+	map_const MONTE_MOON_GRANDE_B1F,                       16, 14 ; 
+	map_const MONTE_MOON_GRANDE_B2F,                       20, 18 ; 
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -234,7 +237,7 @@ ENDM
 	map_const ROUTE_10_POKECENTER_2F_BETA,                  8,  4 ;  9
 	map_const POWER_PLANT,                                 10,  9 ; 10
 	map_const BILLS_HOUSE,                                  4,  4 ; 11
-	map_const ROUTE_4_EAST,                                34,  9 ; 12
+	map_const ROUTE_4_EAST,                                35, 11 ; 12
 	map_const ROUTE_9,                                     40,  9 ; 13
 	map_const ROUTE_10_NORTH,                              10, 17 ; 14
 	map_const ROUTE_24,                                    10,  9 ; 15
@@ -359,7 +362,7 @@ ENDM
 	map_const PEWTER_SNOOZE_SPEECH_HOUSE,                   4,  4 ;  8
 	map_const MUSEUM_1F,                                   10,  4 ;  9
 	map_const MUSEUM_2F,                                    7,  4 ;  8
-	map_const ROUTE_4_WEST,                                12,  9 ; 12
+	map_const ROUTE_4_WEST,                                12, 14 ; 12
 	endgroup
 
 	newgroup FAST_SHIP                                            ; 15
@@ -389,7 +392,7 @@ ENDM
 	endgroup
 
 	newgroup FUCHSIA                                              ; 17
-	map_const ROUTE_18,                                    15,  9 ;  4
+	map_const ROUTE_18,                                    25,  9 ;  4
 	map_const FUCHSIA_CITY,                                20, 18 ;  5
 	map_const FUCHSIA_MART,                                 6,  4 ;  6
 	map_const SAFARI_ZONE_MAIN_OFFICE,                      4,  4 ;  7

@@ -72,4 +72,7 @@ BTTrainerClassGenders:
 	db MALE   ; MYSTICALMAN
 	db FEMALE ; CHANNELER
 	db MALE   ; BALD
+	db MALE   ; PI
+	db MALE   ; ENGINEER
+	db FEMALE ; SCHOOLGIRL
 	assert_table_length NUM_TRAINER_CLASSES

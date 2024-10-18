@@ -73,6 +73,9 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; mysticalman
 	db MUSIC_KIMONO_ENCOUNTER      ; channeler
 	db MUSIC_HIKER_ENCOUNTER       ; bald
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; pi
+	db MUSIC_HIKER_ENCOUNTER       ; engineer
+	db MUSIC_BEAUTY_ENCOUNTER      ; schoolgirl
 	assert_table_length NUM_TRAINER_CLASSES + 1
 	db MUSIC_HIKER_ENCOUNTER       ; unused
 	db MUSIC_HIKER_ENCOUNTER       ; unused

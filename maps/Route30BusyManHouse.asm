@@ -22,12 +22,20 @@ LastStarterPokemonScript:
 	writetext LastPokemonTotodileText
 	promptbutton
 	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
 	writetext ReceivedLastTotodileText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	givepoke CYNDAQUIL, 5
 	setevent EVENT_GOT_LAST_STARTER
 	writetext AlternatetiveLastText
+	waitbutton
+	closetext
+	end
+
+.NoRoom
+	writetext Rival2PartyFullText
 	waitbutton
 	closetext
 	end
@@ -48,6 +56,8 @@ LastStarterPokemonScript:
 	writetext LastPokemonChikoritaText
 	promptbutton
 	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
 	writetext ReceivedLastChikoritaText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -62,6 +72,8 @@ LastStarterPokemonScript:
 	writetext LastPokemonCyndaquilText
 	promptbutton
 	waitsfx
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
 	writetext ReceivedLastCyndaquilText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -71,6 +83,12 @@ LastStarterPokemonScript:
 	waitbutton
 	closetext
 	end
+
+Rival2PartyFullText:
+	text "¡Espera!"
+	line "No puedes llevar"
+	cont "más Pokémon."
+	done
 
 AcceptedLastText:
 	text "¿Eres tú el chaval"

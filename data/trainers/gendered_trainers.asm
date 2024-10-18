@@ -27,6 +27,8 @@ MaleTrainers:
 	db BIKER
 	db SCIENTIST
 	db BALD
+	db PI
+	db ENGINEER
 .End
 
 FemaleTrainers:
@@ -41,4 +43,5 @@ FemaleTrainers:
 	db POKEFANF
 	db COOLTRAINERF
 	db CHANNELER
+	db SCHOOLGIRL
 .End

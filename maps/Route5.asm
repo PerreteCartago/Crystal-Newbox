@@ -1,14 +1,14 @@
 	object_const_def
-	const ROUTE5_POKEFAN_M
-	const ROUTE5_TEACHER
+	const ROUTE5_OFFICER
+	const ROUTE5_PICNICKER
 
 Route5_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-Route5PokefanMScript:
-	jumptextfaceplayer Route5PokefanMText
+Route5OfficerScript:
+	jumptextfaceplayer Route5OfficerText
 
 Route5UndergroundPathSign:
 	jumptext Route5UndergroundPathSignText
@@ -27,7 +27,7 @@ Route5UndergroundPathEntranceTeacherText:
 	line "me gustaría ir!"
 	done
 
-Route5PokefanMText:
+Route5OfficerText:
 	text "La carretera está"
 	line "cortada hasta que"
 
@@ -66,5 +66,5 @@ Route5_MapEvents:
 	bg_event 10, 21, BGEVENT_READ, HouseForSaleSign
 
 	def_object_events
-	object_event 17, 30, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route5PokefanMScript, EVENT_ROUTE_5_6_POKEFAN_M_BLOCKS_UNDERGROUND_PATH
-	object_event 14, 28, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route5UndergroundPathEntranceTeacherScript, -1
+	object_event 17, 30, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route5OfficerScript, EVENT_ROUTE_5_6_POKEFAN_M_BLOCKS_UNDERGROUND_PATH
+	object_event 12, 28, SPRITE_PICNICKER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route5UndergroundPathEntranceTeacherScript, -1

@@ -79,6 +79,9 @@ INCBIN "gfx/trainers/grunt_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/mysticalman.gbcpal", middle_colors
 INCBIN "gfx/trainers/channeler.gbcpal", middle_colors
 INCBIN "gfx/trainers/bald.gbcpal", middle_colors
+INCBIN "gfx/trainers/pi.gbcpal", middle_colors
+INCBIN "gfx/trainers/engineer.gbcpal", middle_colors
+INCBIN "gfx/trainers/schoolgirl.gbcpal", middle_colors
 KrisPalette:
 INCLUDE "gfx/player/kris.pal"
 	assert_table_length NUM_TRAINER_CLASSES + 2

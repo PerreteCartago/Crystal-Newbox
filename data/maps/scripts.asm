@@ -73,7 +73,6 @@ INCLUDE "maps/VermilionPidgeyHouse.asm"
 
 SECTION "Map Scripts 5", ROMX
 
-INCLUDE "maps/Route11.asm"
 INCLUDE "maps/VioletMart.asm"
 INCLUDE "maps/VioletGym.asm"
 INCLUDE "maps/EarlsPokemonAcademy.asm"
@@ -453,7 +452,6 @@ INCLUDE "maps/Route42.asm"
 INCLUDE "maps/Route46.asm"
 INCLUDE "maps/ViridianCity.asm"
 INCLUDE "maps/CeladonCity.asm"
-INCLUDE "maps/Route15.asm"
 INCLUDE "maps/VermilionCity.asm"
 INCLUDE "maps/Route9.asm"
 INCLUDE "maps/CinnabarPokecenter1F.asm"
@@ -474,12 +472,10 @@ INCLUDE "maps/Route18.asm"
 INCLUDE "maps/Route17.asm"
 INCLUDE "maps/Route16.asm"
 INCLUDE "maps/Route7.asm"
-INCLUDE "maps/Route14.asm"
 INCLUDE "maps/LavenderTown.asm"
 INCLUDE "maps/Route6.asm"
 INCLUDE "maps/Route5.asm"
 INCLUDE "maps/Route24.asm"
-INCLUDE "maps/Route3.asm"
 INCLUDE "maps/Route4West.asm"
 INCLUDE "maps/Route4East.asm"
 INCLUDE "maps/Route10South.asm"
@@ -504,7 +500,6 @@ INCLUDE "maps/ViridianNorthGate.asm"
 INCLUDE "maps/ViridianSouthGate.asm"
 INCLUDE "maps/Museum1F.asm"
 INCLUDE "maps/Museum2F.asm"
-INCLUDE "maps/MtMoonPokecenter1F.asm"
 INCLUDE "maps/CeruleanCave1F.asm"
 INCLUDE "maps/CeruleanCave2F.asm"
 INCLUDE "maps/CeruleanCaveB1F.asm"
@@ -537,6 +532,7 @@ INCLUDE "maps/PowerPlantGrande.asm"
 INCLUDE "maps/ViridianForest.asm"
 INCLUDE "maps/Route5SaffronGate2F.asm"
 INCLUDE "maps/Route17Route18Gate2F.asm"
+INCLUDE "maps/Route3.asm"
 
 
 SECTION "Map Scripts 28", ROMX
@@ -548,6 +544,17 @@ INCLUDE "maps/CinnabarLabTradeRoom.asm"
 INCLUDE "maps/CeruleanBulbasaurHouse.asm"
 INCLUDE "maps/CeruleanBikeShop.asm"
 INCLUDE "maps/CinnabarGym.asm"
+INCLUDE "maps/Route11.asm"
+INCLUDE "maps/Route14.asm"
+INCLUDE "maps/MonteMoonGrandeB1F.asm"
+INCLUDE "maps/MonteMoonGrandeB2F.asm"
 
+
+
+SECTION "Map Scripts 29", ROMX
+
+INCLUDE "maps/Route15.asm"
+INCLUDE "maps/MonteMoonGrande1F.asm"
+INCLUDE "maps/MtMoonPokecenter1F.asm"
 
 ENDSECTION

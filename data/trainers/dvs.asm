@@ -71,4 +71,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; MYSTICALMAN
 	dn 13,  8, 10,  8 ; CHANNELER
 	dn  9,  8,  8,  8 ; BALD
+	dn 13,  8, 12,  8 ; PI
+	dn  7, 12, 12,  8 ; ENGINEER
+	dn  9,  8,  8,  8 ; SCHOOLGIRL
 	assert_table_length NUM_TRAINER_CLASSES

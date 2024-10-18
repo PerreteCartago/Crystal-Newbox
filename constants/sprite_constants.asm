@@ -112,6 +112,14 @@
 	const SPRITE_GIRL ; 6c
 	const SPRITE_FIREBREATHER ; 6d
 	const SPRITE_BURGLAR ; 6e
+	const SPRITE_BIRD_KEEPER ; 6f
+	const SPRITE_CAMPER ;70
+	const SPRITE_PICNICKER ;71
+	const SPRITE_PI ;72
+	const SPRITE_ENGINEER ;73
+	const SPRITE_POKEMANIAC ;74
+	const SPRITE_SCHOOL_BOY ;75
+	const SPRITE_SCHOOL_GIRL ;76
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

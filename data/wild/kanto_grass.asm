@@ -1262,4 +1262,88 @@ KantoGrassWildMons:
 	db 42, MUK
 	end_grass_wildmons
 
+	def_grass_wildmons MONTE_MOON_GRANDE_1F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; day
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; nite
+	db 20, ZUBAT
+	db 28, GOLBAT
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	end_grass_wildmons
+
+	def_grass_wildmons MONTE_MOON_GRANDE_B1F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; day
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; nite
+	db 20, ZUBAT
+	db 28, GOLBAT
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	end_grass_wildmons
+
+	def_grass_wildmons MONTE_MOON_GRANDE_B2F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; day
+	db 20, SANDSHREW
+	db 28, SANDSLASH
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	; nite
+	db 20, ZUBAT
+	db 28, GOLBAT
+	db 20, GEODUDE
+	db 30, GRAVELER
+	db 25, PARAS
+	db 20, CLEFAIRY
+	db 25, CLEFAIRY
+	end_grass_wildmons
+
 	db -1 ; end

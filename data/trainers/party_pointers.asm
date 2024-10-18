@@ -72,4 +72,7 @@ TrainerGroups:
 	dba MysticalmanGroup
 	dba ChannelerGroup
 	dba BaldGroup
+	dba PiGroup
+	dba EngineerGroup
+	dba SchoolgirlGroup
 	assert_table_length NUM_TRAINER_CLASSES

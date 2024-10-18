@@ -341,7 +341,7 @@ ENDM
 	map_attributes CeruleanCity, CERULEAN_CITY, $0f, NORTH | SOUTH | WEST | EAST
 	connection north, Route24, ROUTE_24, 6
 	connection south, Route5, ROUTE_5, 5
-	connection west, Route4East, ROUTE_4_EAST, 5
+	connection west, Route4East, ROUTE_4_EAST, 3
 	connection east, Route9, ROUTE_9, 7
 
 	map_attributes Route9, ROUTE_9, $2c, SOUTH | WEST
@@ -365,7 +365,7 @@ ENDM
 
 	map_attributes Route4East, ROUTE_4_EAST, $2c, WEST | EAST
 	connection west, Route4West, ROUTE_4_WEST, 0
-	connection east, CeruleanCity, CERULEAN_CITY, -5
+	connection east, CeruleanCity, CERULEAN_CITY, -3
 
 	map_attributes Route8, ROUTE_8, $2c, WEST | EAST
 	connection west, SaffronCity, SAFFRON_CITY, -7
@@ -750,3 +750,6 @@ ENDM
 	map_attributes CinnabarLabTradeRoom, CINNABAR_LAB_TRADE_ROOM, $00, 0
 	map_attributes CeruleanBulbasaurHouse, CERULEAN_BULBASAUR_HOUSE, $00, 0
 	map_attributes CeruleanBikeShop, CERULEAN_BIKE_SHOP, $00, 0
+	map_attributes MonteMoonGrande1F, MONTE_MOON_GRANDE_1F, $00, 0
+	map_attributes MonteMoonGrandeB1F, MONTE_MOON_GRANDE_B1F, $00, 0
+	map_attributes MonteMoonGrandeB2F, MONTE_MOON_GRANDE_B2F, $00, 0

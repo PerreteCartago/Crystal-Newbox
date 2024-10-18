@@ -2,7 +2,7 @@
 	const LAVENDERTOWN_POKEFAN_M
 	const LAVENDERTOWN_TEACHER
 	const LAVENDERTOWN_GRAMPS
-	const LAVENDERTOWN_YOUNGSTER
+	const LAVENDERTOWN_SCHOOL_BOY
 
 LavenderTown_MapScripts:
 	def_scene_scripts
@@ -76,6 +76,9 @@ LavenderTownYoungsterText:
 	para "sintoniza Flauta"
 	line "Pokémon."
 
+	para "Me lo enseñaron en"
+	line "la escuela."
+
 	para "¡Todo entrenador"
 	line "debería saberlo!"
 	done
@@ -137,4 +140,4 @@ LavenderTown_MapEvents:
 	object_event  6, 23, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LavenderTownPokefanMScript, -1
 	object_event 12, 11, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LavenderTownTeacherScript, -1
 	object_event  4, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LavenderTownGrampsScript, -1
-	object_event  9, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 1, LavenderTownYoungsterScript, -1
+	object_event  9, 17, SPRITE_SCHOOL_BOY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 1, LavenderTownYoungsterScript, -1

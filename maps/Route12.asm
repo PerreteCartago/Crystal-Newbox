@@ -5,6 +5,10 @@
 	const ROUTE12_FISHER4
 	const ROUTE12_POKE_BALL1
 	const ROUTE12_POKE_BALL2
+	const ROUTE12_FISHER5
+	const ROUTE12_FISHER6
+	const ROUTE12_STANDIND_CAMPER
+	const ROUTE12_STANDING_ROCKER
 
 Route12_MapScripts:
 	def_scene_scripts
@@ -51,6 +55,50 @@ TrainerFisherBarney:
 	endifjustbattled
 	opentext
 	writetext FisherBarneyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerJusti:
+	trainer CAMPER, JUSTI, EVENT_BEAT_JUSTI, JustiSeenText, JustiBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext JustiAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerMone:
+	trainer GUITARIST, MONE, EVENT_BEAT_MONE, MoneSeenText, MoneBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext MoneAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerNestor:
+	trainer FISHER, NESTOR, EVENT_BEAT_NESTOR, NestorSeenText, NestorBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext NestorAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerChicho:
+	trainer FISHER, CHICHO, EVENT_BEAT_CHICHO, ChichoSeenText, ChichoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext ChichoAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -163,6 +211,73 @@ FishingSpotSignText:
 	text "Coto de Pesca"
 	done
 
+ChichoSeenText::
+	text "¡Bien! ¡Ha"
+	line "picado algo!"
+	done
+
+ChichoBeatenText::
+	text "¡Bah! ¡Era muy"
+	line "pequeñajo!"
+	done
+
+ChichoAfterBattleText::
+	text "¡Alto! ¡Mi sedal"
+	line "está enganchado!"
+	done
+
+NestorSeenText::
+	text "¡Ten paciencia!"
+	line "¡Pescar requiere"
+	cont "tiempo!"
+	done
+
+NestorBeatenText::
+	text "¡Ese"
+	line "se escapó!"
+	done
+
+NestorAfterBattleText::
+	text "¡Con una caña"
+	line "mejor podría"
+	cont "pescar mejores"
+	cont "Pokémon!"
+	done
+
+JustiSeenText::
+	text "¿Has encontrado"
+	line "una Piedra Lunar?"
+	done
+
+JustiBeatenText::
+	text "¡Auuuu!"
+	done
+
+JustiAfterBattleText::
+	text "¡Podría haber"
+	line "transformado a"
+	cont "mis Pokémon con"
+	cont "una Piedra Lunar!"
+	done
+
+MoneSeenText::
+	text "¡Soy un experto"
+	line "en electricidad!"
+	done
+
+MoneBeatenText::
+	text "¡Se acabó!"
+	done
+
+MoneAfterBattleText::
+	text "El agua conduce"
+	line "la electricidad."
+
+	para "¡Deberías poder"
+	line "atrapar a los"
+	cont "Pokémon del mar!"
+	done
+
 Route12_MapEvents:
 	db 0, 0 ; filler
 
@@ -181,9 +296,13 @@ Route12_MapEvents:
 	bg_event  7, 30, BGEVENT_ITEM, Route12HiddenElixer
 
 	def_object_events
-	object_event  7, 34, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherMartin, -1
-	object_event 15, 44, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherStephen, -1
-	object_event 17, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerFisherBarney, -1
-	object_event 12, 30, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherKyle, -1
+	object_event 15, 40, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerFisherMartin, -1
+	object_event  8, 76, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerFisherStephen, -1
+	object_event 17, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 5, TrainerFisherBarney, -1
+	object_event 12, 30, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherKyle, -1
 	object_event  6, 89, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Calcium, EVENT_ROUTE_12_CALCIUM
 	object_event 17, 36, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route12Nugget, EVENT_ROUTE_12_NUGGET
+	object_event 15, 90, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, -1, OBJECTTYPE_TRAINER, 1, TrainerChicho, -1
+	object_event  7, 17, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, -1, OBJECTTYPE_TRAINER, 1, TrainerNestor, -1
+	object_event  6, 88, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerJusti, -1
+	object_event 15, 52, SPRITE_ROCKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, -1, OBJECTTYPE_TRAINER, 1, TrainerMone, -1

@@ -645,8 +645,10 @@ OlivinePort_Blocks:
 VermilionPort_Blocks:
 	INCBIN "maps/VermilionPort.blk"
 
-OlivineCafe_Blocks:
 SafariZoneMainOffice_Blocks:
+	INCBIN "maps/SafariZoneMainOffice.blk"
+
+OlivineCafe_Blocks:
 	INCBIN "maps/OlivineCafe.blk"
 
 PlayersHouse2F_Blocks:
@@ -1044,5 +1046,13 @@ CinnabarLabMetronomeRoom_Blocks:
 CinnabarLabTradeRoom_Blocks:
 	INCBIN "maps/CinnabarLabTradeRoom.blk"
 
+MonteMoonGrande1F_Blocks:
+	INCBIN "maps/MonteMoonGrande1F.blk"
+
+MonteMoonGrandeB1F_Blocks:
+	INCBIN "maps/MonteMoonGrandeB1F.blk"
+
+MonteMoonGrandeB2F_Blocks:
+	INCBIN "maps/MonteMoonGrandeB2F.blk"
 
 ENDSECTION

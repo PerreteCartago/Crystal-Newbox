@@ -714,7 +714,9 @@ GliscorBackpic:  INCBIN "gfx/pokemon/gliscor/back.2bpp.lz"
 ChannelerPic:    INCBIN "gfx/trainers/Channeler.2bpp.lz"
 OmastarBackpic:  INCBIN "gfx/pokemon/omastar/back.2bpp.lz"
 BaldPic:         INCBIN "gfx/trainers/bald.2bpp.lz"
-
+PiPic:           INCBIN "gfx/trainers/pi.2bpp.lz"
+EngineerPic:     INCBIN "gfx/trainers/engineer.2bpp.lz"
+SchoolgirlPic:   INCBIN "gfx/trainers/schoolgirl.2bpp.lz"
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
 ; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
