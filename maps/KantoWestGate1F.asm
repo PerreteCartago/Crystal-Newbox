@@ -10,11 +10,11 @@ Route30BusyManHouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  0,  4, PUERTA_OESTE, 3
-	warp_event  0,  5, PUERTA_OESTE, 3
-	warp_event  7,  4, PUERTA_ESTE, 3
-	warp_event  7,  5, PUERTA_ESTE, 3
-	warp_event  6,  8, SEGUNDA_PLANTA, 3
+	warp_event  0,  6, PUERTA_OESTE, 3
+	warp_event  0,  7, PUERTA_OESTE, 3
+	warp_event 13,  6, PUERTA_ESTE, 3
+	warp_event 13,  7, PUERTA_ESTE, 3
+	warp_event 12, 12, SEGUNDA_PLANTA, 3
 
 	def_coord_events
 

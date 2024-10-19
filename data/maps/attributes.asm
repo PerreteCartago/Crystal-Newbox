@@ -753,3 +753,4 @@ ENDM
 	map_attributes MonteMoonGrande1F, MONTE_MOON_GRANDE_1F, $00, 0
 	map_attributes MonteMoonGrandeB1F, MONTE_MOON_GRANDE_B1F, $00, 0
 	map_attributes MonteMoonGrandeB2F, MONTE_MOON_GRANDE_B2F, $00, 0
+	map_attributes Route2Gate2F, ROUTE_2_GATE_2F, $00, 0

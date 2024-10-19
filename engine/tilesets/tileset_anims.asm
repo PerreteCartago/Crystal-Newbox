@@ -120,6 +120,7 @@ UnusedTilesetAnim2: ; unreferenced
 	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation
 
+TilesetPlateauAnim:
 TilesetPortAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation

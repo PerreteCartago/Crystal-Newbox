@@ -255,7 +255,7 @@ ViridianForest_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 17, 47, VIRIDIAN_SOUTH_GATE, 1
+	warp_event 17, 47, VIRIDIAN_SOUTH_GATE, 2
 	warp_event 16, 47, VIRIDIAN_SOUTH_GATE, 2
 	warp_event  1,  0, VIRIDIAN_NORTH_GATE, 3
 	warp_event  2,  0, VIRIDIAN_NORTH_GATE, 4

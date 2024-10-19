@@ -114,6 +114,8 @@ Route38_Blocks:
 
 ViridianNorthGate_Blocks:
 ViridianSouthGate_Blocks:
+	INCBIN "maps/ViridianForestGate.blk"
+
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
 Route43MahoganyGate_Blocks:
@@ -123,7 +125,6 @@ Route36RuinsOfAlphGate_Blocks:
 Route34IlexForestGate_Blocks:
 Route6SaffronGate_Blocks:
 Route40BattleTowerGate_Blocks:
-Route2Gate_Blocks:
 Route29Route46Gate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 
@@ -991,12 +992,14 @@ PokemonTower6F_Blocks:
 PokemonTower7F_Blocks:
 	INCBIN "maps/PokemonTower7F.blk"
 
+Route2Gate2F_Blocks:
 Route17Route18Gate2F_Blocks:
 Route5SaffronGate2F_Blocks:
 Route11Gate2F_Blocks:
 Route12Gate2F_Blocks:
 	INCBIN "maps/KantoGate2F.blk"
 
+Route2Gate_Blocks:
 Route5SaffronGate1F_Blocks:
 Route12Gate1F_Blocks:
 	INCBIN "maps/KantoNorthGate1F.blk"

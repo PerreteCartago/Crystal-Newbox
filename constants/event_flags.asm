@@ -290,7 +290,8 @@
 	const EVENT_MEWTWO_APPEAR
 	const EVENT_FOUGHT_MEWTWO
 	const EVENT_GOT_CHARMANDER
-; Unused: next 322 events
+	const EVENT_GOT_MUSEUM_OLD_AMBER
+; Unused: next 321 events
 
 	const_next 600
 ; Kurt Apricorn events

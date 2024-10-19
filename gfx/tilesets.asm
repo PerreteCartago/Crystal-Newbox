@@ -355,3 +355,15 @@ INCBIN "data/tilesets/facility_metatiles.bin"
 
 TilesetFacilityColl::
 INCLUDE "data/tilesets/facility_collision.asm"
+
+
+SECTION "Tileset Data C", ROMX
+
+TilesetPlateauGFX::
+INCBIN "gfx/tilesets/plateau.2bpp.lz"
+
+TilesetPlateauMeta::
+INCBIN "data/tilesets/plateau_metatiles.bin"
+
+TilesetPlateauColl::
+INCLUDE "data/tilesets/plateau_collision.asm"

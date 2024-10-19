@@ -125,4 +125,6 @@ OverworldSprites:
 	overworld_sprite PokemaniacSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite SchoolBoySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SchoolGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite OldAmberSpriteGFX, 12, STILL_SPRITE, PAL_OW_RED
+	overworld_sprite GuardSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	assert_table_length NUM_OVERWORLD_SPRITES
