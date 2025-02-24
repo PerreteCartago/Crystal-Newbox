@@ -1058,4 +1058,14 @@ MonteMoonGrandeB1F_Blocks:
 MonteMoonGrandeB2F_Blocks:
 	INCBIN "maps/MonteMoonGrandeB2F.blk"
 
+Route22Gate_Blocks:
+	INCBIN "maps/Route22Gate.blk"
+
+Ruta23Kanto_Blocks:
+	INCBIN "maps/Ruta23Kanto.blk"
+
+IndigoPlateauKanto_Blocks:
+	INCBIN "maps/IndigoPlateauKanto.blk"
+
+
 ENDSECTION

@@ -30,6 +30,7 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw PlateauGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 ; Route1 and ViridianCity are connected
@@ -362,4 +363,10 @@ SaffronGroupSprites:
 	db SPRITE_FISHER
 	db SPRITE_YOUNGSTER
 	; max 5 of 9 walking sprites
+	db 0 ; end
+
+PlateauGroupSprites:
+; Route28, SilverCaveOutside
+	; 0 of max 9 walking sprites
+	db SPRITE_GUARD
 	db 0 ; end

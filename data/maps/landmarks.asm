@@ -7,54 +7,57 @@ ENDM
 Landmarks:
 ; entries correspond to constants/landmark_constants.asm
 	table_width 4, Landmarks
-	landmark  -8, -16, SpecialMapName
-	landmark 140, 100, NewBarkTownName
-	landmark 128, 100, Route29Name
-	landmark 100, 100, CherrygroveCityName
-	landmark 100,  80, Route30Name
-	landmark  96,  60, Route31Name
-	landmark  84,  60, VioletCityName
-	landmark  85,  58, SproutTowerName
-	landmark  84,  92, Route32Name
-	landmark  76,  76, RuinsOfAlphName
-	landmark  84, 124, UnionCaveName
-	landmark  82, 124, Route33Name
-	landmark  68, 124, AzaleaTownName
-	landmark  70, 122, SlowpokeWellName
-	landmark  52, 120, IlexForestName
-	landmark  52, 112, Route34Name
-	landmark  52,  92, GoldenrodCityName
-	landmark  50,  92, RadioTowerName
-	landmark  52,  76, Route35Name
-	landmark  52,  60, NationalParkName
-	landmark  64,  60, Route36Name
-	landmark  68,  52, Route37Name
-	landmark  68,  44, EcruteakCityName
-	landmark  70,  42, TinTowerName
-	landmark  66,  42, BurnedTowerName
-	landmark  52,  44, Route38Name
-	landmark  36,  48, Route39Name
-	landmark  36,  60, OlivineCityName
-	landmark  38,  62, LighthouseName
-	landmark  28,  56, BattleTowerName
-	landmark  28,  64, Route40Name
-	landmark  28,  92, WhirlIslandsName
-	landmark  28, 100, Route41Name
-	landmark  20, 100, CianwoodCityName
-	landmark  18,  98, CianwoodCave
-	landmark  92,  44, Route42Name
-	landmark  84,  44, MtMortarName
-	landmark 108,  44, MahoganyTownName
-	landmark 108,  36, Route43Name
-	landmark 108,  28, LakeOfRageName
-	landmark 120,  44, Route44Name
-	landmark 130,  38, IcePathName
-	landmark 132,  44, BlackthornCityName
-	landmark 132,  36, DragonsDenName
-	landmark 132,  64, Route45Name
-	landmark 112,  72, DarkCaveName
-	landmark 124,  88, Route46Name
-	landmark 148,  68, SilverCaveName
+	landmark  -8, -16, SpecialMapName ; 0
+	landmark 124, 100, NewBarkTownName ; 1
+	landmark 108, 100, Route29Name ; 2
+	landmark  92, 100, CherrygroveCityName; 3
+	landmark  92,  76, Route30Name ; 4
+	landmark  96,  60, Route31Name ; 5
+	landmark  76,  60, VioletCityName ; 6
+	landmark  76,  56, SproutTowerName ; 7
+	landmark  76,  92, Route32Name ; 8
+	landmark  68,  76, RuinsOfAlphName ; 9
+	landmark  76, 124, UnionCaveName ; 0a
+	landmark  68, 124, Route33Name ; 0b
+	landmark  60, 124, AzaleaTownName ; 0c
+	landmark  64, 120, SlowpokeWellName ; 0d
+	landmark  44, 124, IlexForestName ; 0e
+	landmark  44, 108, Route34Name ; 0f
+	landmark  44,  92, GoldenrodCityName ; 10
+	landmark  40,  88, RadioTowerName ; 11
+	landmark  44,  76, Route35Name ; 12
+	landmark  44,  60, NationalParkName ; 13
+	landmark  52,  60, Route36Name ; 14
+	landmark  60,  52, Route37Name ; 15
+	landmark  60,  44, EcruteakCityName ; 16
+	landmark  64,  40, TinTowerName ; 17
+	landmark  56,  40, BurnedTowerName
+	landmark  44,  44, Route38Name
+	landmark  28,  44, Route39Name
+	landmark  28,  60, OlivineCityName
+	landmark  32,  64, LighthouseName
+	landmark  20,  52, BattleTowerName
+	landmark  20,  68, Route40Name
+	landmark  20,  92, WhirlIslandsName
+	landmark  20, 100, Route41Name
+	landmark  12, 100, CianwoodCityName
+	landmark   4,  84, CianwoodCave
+	landmark  84,  44, Route42Name
+	landmark  76,  44, MtMortarName
+	landmark  92,  44, MahoganyTownName
+	landmark  92,  36, Route43Name
+	landmark  92,  28, LakeOfRageName
+	landmark 104,  44, Route44Name
+	landmark 110,  36, IcePathName
+	landmark 116,  60, BlackthornCityName
+	landmark 116,  36, DragonsDenName
+	landmark 116,  64, Route45Name
+	landmark 100,  86, DarkCaveName
+	landmark 108,  88, Route46Name
+	landmark 148, 100, Route27Name
+	landmark 156, 100, TohjoFallsName
+	landmark 148,  68, Route28Name
+	landmark 132,  68, SilverCaveName
 	assert_table_length KANTO_LANDMARK
 	landmark  52, 108, PalletTownName
 	landmark  52,  92, Route1Name
@@ -99,14 +102,12 @@ Landmarks:
 	landmark  52, 132, CinnabarIslandName
 	landmark  52, 130, PokemonMansionName
 	landmark  52, 120, Route21Name
-	landmark  36,  68, Route22Name
-	landmark  28,  52, VictoryRoadName
-	landmark  28,  44, Route23Name
-	landmark  28,  36, IndigoPlateauName
-	landmark  28,  92, Route26Name
-	landmark  20, 100, Route27Name
-	landmark  12, 100, TohjoFallsName
-	landmark  20,  68, Route28Name
+	landmark  36,  76, Route22Name
+	landmark  12,  84, Route26Name
+	landmark  12,  52, VictoryRoadName
+	landmark  12,  44, Route23Name
+	landmark  12,  36, IndigoPlateauName
+	landmark   4,  68, Route28Name
 	landmark 140, 116, FastShipName
 	assert_table_length NUM_LANDMARKS
 

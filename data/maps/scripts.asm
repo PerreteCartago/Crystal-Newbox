@@ -546,7 +546,6 @@ INCLUDE "maps/MonteMoonGrandeB1F.asm"
 INCLUDE "maps/MonteMoonGrandeB2F.asm"
 
 
-
 SECTION "Map Scripts 29", ROMX
 
 INCLUDE "maps/Route15.asm"
@@ -557,5 +556,8 @@ INCLUDE "maps/Museum2F.asm"
 INCLUDE "maps/Route2Gate.asm"
 INCLUDE "maps/ViridianNorthGate.asm"
 INCLUDE "maps/ViridianSouthGate.asm"
+INCLUDE "maps/Route22Gate.asm"
+INCLUDE "maps/Ruta23Kanto.asm"
+INCLUDE "maps/IndigoPlateauKanto.asm"
 
 ENDSECTION

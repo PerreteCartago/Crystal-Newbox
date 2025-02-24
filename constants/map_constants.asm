@@ -557,4 +557,10 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 12
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+	newgroup PLATEAU                                              ; 27
+	map_const ROUTE_22_GATE,                               11,  7 ;  1
+	map_const RUTA_23_KANTO,                               10, 72 ;  2
+	map_const INDIGO_PLATEAU_KANTO,                        10,  9 ;  3
+	endgroup
+
+DEF NUM_MAP_GROUPS EQU const_value ; 27

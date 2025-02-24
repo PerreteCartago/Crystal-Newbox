@@ -379,6 +379,12 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, -1
 
+	map_attributes Ruta23Kanto, RUTA_23_KANTO, $0f, NORTH
+	connection north, IndigoPlateauKanto, INDIGO_PLATEAU_KANTO, 0
+
+	map_attributes IndigoPlateauKanto, INDIGO_PLATEAU_KANTO, $0f, SOUTH
+	connection south, Ruta23Kanto, RUTA_23_KANTO, 0
+
 	map_attributes Route23, ROUTE_23, $0f, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
 	map_attributes SproutTower2F, SPROUT_TOWER_2F, $00, 0
@@ -754,3 +760,4 @@ ENDM
 	map_attributes MonteMoonGrandeB1F, MONTE_MOON_GRANDE_B1F, $00, 0
 	map_attributes MonteMoonGrandeB2F, MONTE_MOON_GRANDE_B2F, $00, 0
 	map_attributes Route2Gate2F, ROUTE_2_GATE_2F, $00, 0
+	map_attributes Route22Gate, ROUTE_22_GATE, $00, 0

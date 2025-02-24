@@ -48,6 +48,9 @@
 	const LANDMARK_ROUTE_45          ; 2b
 	const LANDMARK_DARK_CAVE         ; 2c
 	const LANDMARK_ROUTE_46          ; 2d
+	const LANDMARK_ROUTE_27          ; 5c
+	const LANDMARK_TOHJO_FALLS       ; 5d
+	const LANDMARK_RUTA_28           ; 2e
 	const LANDMARK_SILVER_CAVE       ; 2e
 DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_PALLET_TOWN       ; 2f
@@ -94,12 +97,10 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_#MON_MANSION
 	const LANDMARK_ROUTE_21          ; 56
 	const LANDMARK_ROUTE_22          ; 57
+	const LANDMARK_ROUTE_26          ; 5b
 	const LANDMARK_VICTORY_ROAD      ; 58
 	const LANDMARK_ROUTE_23          ; 59
 	const LANDMARK_INDIGO_PLATEAU    ; 5a
-	const LANDMARK_ROUTE_26          ; 5b
-	const LANDMARK_ROUTE_27          ; 5c
-	const LANDMARK_TOHJO_FALLS       ; 5d
 	const LANDMARK_ROUTE_28          ; 5e
 	const LANDMARK_FAST_SHIP         ; 5f
 DEF NUM_LANDMARKS EQU const_value
